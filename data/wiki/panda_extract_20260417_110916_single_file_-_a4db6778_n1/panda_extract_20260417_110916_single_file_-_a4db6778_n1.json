@@ -1,0 +1,308 @@
+{
+  "mode": "single_file",
+  "source_file": "D:\\anyclaw\\docs\\熊猫知识\\【熊猫知识】大熊猫历史 - 成都大熊猫繁育研究基地.md",
+  "source_dir": "",
+  "files_count": 1,
+  "files": [
+    {
+      "source_file": "D:\\anyclaw\\docs\\熊猫知识\\【熊猫知识】大熊猫历史 - 成都大熊猫繁育研究基地.md",
+      "topic": "历史背景",
+      "extracted": {
+        "topic": "历史背景",
+        "times": [
+          "800万年前",
+          "1869年3月",
+          "1869年4月1日",
+          "1869年",
+          "1826.9.7",
+          "1900.11.10"
+        ],
+        "person_entities": [
+          "阿尔芒·戴维神父",
+          "阿尔封斯·米勒·爱德华兹",
+          "李时珍"
+        ],
+        "place_entities": [
+          "云南禄丰",
+          "云南元谋",
+          "四川雅安宝兴县邓池沟",
+          "四川雅安宝兴县",
+          "穆坪",
+          "法国",
+          "巴黎"
+        ],
+        "panda_aliases": [
+          "貔",
+          "白羆",
+          "貔貅",
+          "貉",
+          "貘",
+          "白熊",
+          "花熊",
+          "猫熊"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "relation_triples": [
+          {
+            "subject": "始熊猫",
+            "predicate": "化石出土地",
+            "object": "云南禄丰",
+            "object_type": "Place",
+            "evidence": "迄今所发现的最古老大熊猫成员——始熊猫的化石出土于我国云南禄丰和元谋两地，地质年代约为800万年前中新世晚期。"
+          },
+          {
+            "subject": "始熊猫",
+            "predicate": "化石出土地",
+            "object": "云南元谋",
+            "object_type": "Place",
+            "evidence": "迄今所发现的最古老大熊猫成员——始熊猫的化石出土于我国云南禄丰和元谋两地，地质年代约为800万年前中新世晚期。"
+          },
+          {
+            "subject": "始熊猫",
+            "predicate": "生存年代",
+            "object": "800万年前",
+            "object_type": "Other",
+            "evidence": "迄今所发现的最古老大熊猫成员——始熊猫的化石出土于我国云南禄丰和元谋两地，地质年代约为800万年前中新世晚期。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "大熊猫",
+            "object_type": "Alias",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "大熊猫",
+            "object_type": "Alias",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "大熊猫",
+            "object_type": "Alias",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "大熊猫",
+            "object_type": "Alias",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "大熊猫",
+            "object_type": "Alias",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "阿尔芒·戴维神父",
+            "predicate": "发现时间",
+            "object": "1869年3月",
+            "object_type": "Other",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "阿尔芒·戴维神父",
+            "predicate": "发现地点",
+            "object": "四川雅安宝兴县邓池沟",
+            "object_type": "Place",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "当地称谓",
+            "object": "大熊猫",
+            "object_type": "Alias",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "当地称谓",
+            "object": "大熊猫",
+            "object_type": "Alias",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "阿尔芒·戴维神父",
+            "predicate": "标本采集时间",
+            "object": "1869年4月1日",
+            "object_type": "Other",
+            "evidence": "通过当地猎人的帮助，4月1日，他采集到白熊标本……"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "鉴定者",
+            "object": "阿尔封斯·米勒·爱德华兹",
+            "object_type": "Person",
+            "evidence": "他把标本和骨骼运到法国，经巴黎自然历史博物馆科学家阿尔封斯·米勒·爱德华兹鉴定，‘黑白熊’是一个新物种，定名为‘猫熊’……"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "正式定名",
+            "object": "大熊猫",
+            "object_type": "Alias",
+            "evidence": "他把标本和骨骼运到法国，经巴黎自然历史博物馆科学家阿尔封斯·米勒·爱德华兹鉴定，‘黑白熊’是一个新物种，定名为‘猫熊’……"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "科学命名发表时间",
+            "object": "1869年",
+            "object_type": "Other",
+            "evidence": "鉴定报告发表在1869年《巴黎自然历史博物馆之新文档》第五卷"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "记载者",
+            "object": "李时珍",
+            "object_type": "Person",
+            "evidence": "李时珍的《本草纲目》称貘"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "文献出处",
+            "object": "《书经》",
+            "object_type": "Other",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "文献出处",
+            "object": "《毛诗》",
+            "object_type": "Other",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "文献出处",
+            "object": "《峨眉山志》",
+            "object_type": "Other",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "文献出处",
+            "object": "《兽经》",
+            "object_type": "Other",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "文献出处",
+            "object": "《本草纲目》",
+            "object_type": "Other",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘，等等。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "800万年前",
+          "1869年3月",
+          "1869年4月1日",
+          "1869年",
+          "1826.9.7",
+          "1900.11.10"
+        ],
+        "人物": [
+          "阿尔芒·戴维神父",
+          "阿尔封斯·米勒·爱德华兹",
+          "李时珍"
+        ],
+        "地点": [
+          "云南禄丰",
+          "云南元谋",
+          "四川雅安宝兴县邓池沟",
+          "四川雅安宝兴县",
+          "穆坪",
+          "法国",
+          "巴黎"
+        ],
+        "熊猫曾用名": [
+          "貔",
+          "白羆",
+          "貔貅",
+          "貉",
+          "貘",
+          "白熊",
+          "花熊",
+          "猫熊"
+        ]
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "食铁兽": "大熊猫",
+    "白熊": "大熊猫",
+    "猫熊": "大熊猫",
+    "花熊": "大熊猫",
+    "熊猫": "大熊猫",
+    "黑白熊": "大熊猫",
+    "貔": "大熊猫",
+    "白羆": "大熊猫",
+    "貔貅": "大熊猫",
+    "貉": "大熊猫",
+    "貘": "大熊猫"
+  },
+  "summary": {
+    "times": [
+      "1826.9.7",
+      "1869年",
+      "1869年3月",
+      "1869年4月1日",
+      "1900.11.10",
+      "800万年前"
+    ],
+    "person_entities": [
+      "李时珍",
+      "阿尔封斯·米勒·爱德华兹",
+      "阿尔芒·戴维神父"
+    ],
+    "place_entities": [
+      "云南元谋",
+      "云南禄丰",
+      "四川雅安宝兴县",
+      "四川雅安宝兴县邓池沟",
+      "巴黎",
+      "法国",
+      "穆坪"
+    ],
+    "panda_aliases": [
+      "猫熊",
+      "白熊",
+      "白羆",
+      "花熊",
+      "貉",
+      "貔",
+      "貔貅",
+      "貘"
+    ],
+    "companion_species": [],
+    "predator_species": [],
+    "habitats": [],
+    "biology_terms": [],
+    "behavior_terms": [],
+    "disease_terms": [],
+    "treatment_terms": []
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\anyclaw\\data\\wiki\\panda_extract_20260417_110916_single_file_-_a4db6778_n1\\panda_extract_20260417_110916_single_file_-_a4db6778_n1_nodes.csv",
+    "rels_csv_path": "D:\\anyclaw\\data\\wiki\\panda_extract_20260417_110916_single_file_-_a4db6778_n1\\panda_extract_20260417_110916_single_file_-_a4db6778_n1_rels.csv",
+    "cypher_path": "D:\\anyclaw\\data\\wiki\\panda_extract_20260417_110916_single_file_-_a4db6778_n1\\panda_extract_20260417_110916_single_file_-_a4db6778_n1_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\anyclaw\\data\\wiki\\panda_extract_20260417_110916_single_file_-_a4db6778_n1",
+  "result_file_path": "",
+  "timestamp": "2026-04-17T11:08:21.418647"
+}

@@ -1,18 +1,12 @@
-# USER.md - 用户画像与偏好
+# USER.md - 用户偏好
 
-## 用户偏好（可编辑）
-- preference: 平衡
-- prefer_confirm: true
-- auto_retry: true
-- max_retry: 2
-- report_length: 中篇
-- report_tone: 专业
+## 当前偏好
+- 语言：中文
+- 风格：直接、可执行、少空话
+- 输出：先给命令和结论，再给解释
+- 质量要求：关注“能否跑通”和“证据可回溯”
 
-## 关注方向（可编辑）
-- topics: []
-- industries: []
-- regions: []
-
-## 交互偏好（可编辑）
-- show_intermediate_results: true
-- verbose_logging: true
+## 交互偏好
+- 接受增量迭代优化，不要求一次性大改完美。
+- 接受在终端输出中保留必要进度与失败信息。
+- 偏好可选参数明确（例如 `--interactive`、`--persona`、`--show-sources`）。

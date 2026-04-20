@@ -1,4 +1,4 @@
-# .env 与模型配置
+# 环境与配置
 python-dotenv>=1.0.0
 PyYAML>=6.0
 requests>=2.28.0
@@ -17,7 +17,10 @@ dashscope>=1.20.0
 # CLI 颜色支持
 colorama>=0.4.6
 
-# CLI 框架和美化
+# CLI 与交互
 typer>=0.9.0
 rich>=13.7.0
 prompt-toolkit>=3.0.43
+
+# 图数据库
+neo4j>=5.0.0
