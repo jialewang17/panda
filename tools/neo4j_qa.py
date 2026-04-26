@@ -9,7 +9,11 @@ import json
 import os
 import re
 import sys
+import textwrap
+import unicodedata
 from dataclasses import dataclass
+from datetime import datetime
+from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
 from langchain_core.messages import HumanMessage, SystemMessage
@@ -150,6 +154,10 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["交流", "沟通", "气味标记", "声音交流", "叫声", "标记"])
     if any(token in q for token in ["生长", "发育", "生长发育", "周期", "月龄", "幼仔", "亚成年", "成年", "性成熟"]):
         terms.extend(["生长", "发育", "生长发育", "周期", "月龄", "幼仔", "亚成年", "成年", "性成熟", "体重", "恒牙"])
+    if any(token in q for token in ["寿命", "最长寿", "年龄", "几岁", "活多久", "存活"]):
+        terms.extend(["寿命", "最长寿", "年龄", "岁", "野外", "圈养", "存活"])
+    if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢"]):
+        terms.extend(["节约能量", "能量", "减少社会活动", "减小活动范围", "消耗", "代谢"])
     deduped: List[str] = []
     seen: set[str] = set()
     for term in terms:
@@ -182,6 +190,10 @@ def _detect_intent(question: str) -> str:
         return "communication"
     if any(token in q for token in ["生长", "发育", "生长发育", "周期", "月龄", "幼仔", "亚成年", "成年", "性成熟"]):
         return "development"
+    if any(token in q for token in ["寿命", "最长寿", "年龄", "几岁", "活多久", "存活"]):
+        return "lifespan"
+    if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢"]):
+        return "energy"
     return "general"
 
 
@@ -198,6 +210,8 @@ def _build_intent_predicates(intent: str) -> List[str]:
         "digestion": ["消化", "胃", "肠", "盲肠", "消化道", "营养吸收"],
         "communication": ["交流", "沟通", "气味标记", "标记", "声音", "叫声", "发情"],
         "development": ["生长", "发育", "成长", "阶段", "月龄", "体重", "性成熟", "恒牙", "独立生活", "成年"],
+        "lifespan": ["寿命", "最长寿", "年龄", "活", "存活", "出生于"],
+        "energy": ["节约能量", "减少社会活动", "减小活动范围", "缩短怀孕期", "消耗", "代谢"],
     }
     return mapping.get(intent, [])
 
@@ -220,6 +234,10 @@ def _build_topic_filters(question: str, intent: str) -> List[str]:
         topics.extend(["生理构造", "行为习性"])
     if intent == "development":
         topics.extend(["生理构造", "行为习性", "个体档案"])
+    if intent == "lifespan":
+        topics.extend(["个体档案", "行为习性", "生理构造"])
+    if intent == "energy":
+        topics.extend(["生理构造", "行为习性"])
 
     if any(token in q for token in ["生长", "发育", "月龄", "体重", "幼仔", "成年", "性成熟"]):
         topics.extend(["生理构造", "行为习性", "个体档案"])
@@ -254,6 +272,40 @@ def _rank_and_dedup_rows(rows: List[Dict[str, str]]) -> List[Dict[str, str]]:
     deduped = list(by_key.values())
     deduped.sort(key=lambda x: float(x.get("total_score", 0) or 0), reverse=True)
     return deduped
+
+
+def _prepare_query_keywords(keywords: List[str]) -> List[str]:
+    """去除过于泛化的词，避免检索被“大熊猫”等高频词污染。"""
+    deduped: List[str] = []
+    seen: set[str] = set()
+    for token in keywords:
+        item = str(token).strip()
+        if not item or item in seen:
+            continue
+        seen.add(item)
+        deduped.append(item)
+    if len(deduped) <= 1:
+        return deduped
+    generic = {"大熊猫", "熊猫"}
+    narrowed = [token for token in deduped if token not in generic]
+    return narrowed or deduped
+
+
+def _merge_query_terms(*term_groups: List[str]) -> List[str]:
+    """合并查询词并去重，过滤过长噪音词。"""
+    merged: List[str] = []
+    seen: set[str] = set()
+    for group in term_groups:
+        for token in group:
+            item = str(token).strip()
+            if not item or item in seen:
+                continue
+            # 过长中文串通常是整句误分词，检索价值低。
+            if len(item) > 12 and re.fullmatch(r"[\u4e00-\u9fff]+", item):
+                continue
+            seen.add(item)
+            merged.append(item)
+    return merged[:30]
 
 
 def _select_candidate_sources(
@@ -304,12 +356,17 @@ def _fetch_knowledge(question: str, top_k: int, database: str) -> List[Dict[str,
     intent_terms = _build_intent_terms(question)
     intent_predicates = _build_intent_predicates(intent)
     topic_filters = _build_topic_filters(question, intent)
-    if "大熊猫" not in keywords:
+    if not keywords:
         keywords.append("大熊猫")
+    keywords = _prepare_query_keywords(keywords)
+    query_terms = _merge_query_terms(keywords, intent_terms, intent_predicates)
+    if not query_terms:
+        query_terms = keywords or ["大熊猫"]
     require_intent = len(intent_terms) > 0
+    min_total_score = 4 if len(query_terms) >= 2 else 1
 
     query = """
-UNWIND $keywords AS kw
+UNWIND $query_terms AS kw
 MATCH (s)-[r]->(o)
 WITH s, r, o, kw,
   (
@@ -340,6 +397,7 @@ WITH s, r, o, score, intent_score,
   ) AS predicate_bias
 WHERE ((NOT $require_intent) OR intent_score > 0)
   AND ((NOT $require_topic) OR coalesce(r.topic, '') IN $topic_filters)
+  AND (score + intent_score + topic_bias + predicate_bias) >= $min_total_score
 RETURN
   coalesce(s.id, '') AS subject,
   coalesce(r.predicate, type(r)) AS predicate,
@@ -349,18 +407,6 @@ RETURN
   coalesce(r.topic, '') AS topic,
   (score + intent_score + topic_bias + predicate_bias) AS total_score
 ORDER BY total_score DESC, size(coalesce(r.evidence, '')) DESC
-LIMIT $top_k
-"""
-    fallback_query = """
-MATCH (s)-[r]->(o)
-RETURN
-  coalesce(s.id, '') AS subject,
-  coalesce(r.predicate, type(r)) AS predicate,
-  coalesce(o.id, '') AS object,
-  coalesce(r.evidence, '') AS evidence,
-  coalesce(r.source_file, '') AS source_file,
-  coalesce(r.topic, '') AS topic,
-  0 AS total_score
 LIMIT $top_k
 """
     try:
@@ -378,13 +424,14 @@ LIMIT $top_k
                     dict(record)
                     for record in session.run(
                         query,
-                        keywords=keywords,
+                        query_terms=query_terms,
                         candidate_sources=candidate_sources,
                         intent_terms=intent_terms,
                         intent_predicates=intent_predicates,
                         topic_filters=topic_filters,
                         require_intent=require_intent,
                         require_topic=require_topic,
+                        min_total_score=min_total_score,
                         top_k=max(1, top_k),
                     )
                 ]
@@ -392,7 +439,7 @@ LIMIT $top_k
                     break
             if rows:
                 return _rank_and_dedup_rows(rows)
-            return _rank_and_dedup_rows([dict(record) for record in session.run(fallback_query, top_k=max(1, top_k))])
+            return []
     finally:
         driver.close()
 
@@ -490,6 +537,140 @@ def _get_console(*, use_rich: bool) -> Any:
     return None
 
 
+def _is_small_screen(console: Any) -> bool:
+    """根据终端宽度判断是否应使用紧凑布局。"""
+    if console is None:
+        return False
+    try:
+        return int(console.size.width) < 120
+    except Exception:
+        return False
+
+
+def _strip_markdown_for_terminal(text: str) -> str:
+    """将模型输出的 Markdown 简化为终端友好的纯文本。"""
+    normalized = (text or "").replace("\r\n", "\n").replace("\r", "\n")
+    normalized = re.sub(r"^\s{0,3}#{1,6}\s*", "", normalized, flags=re.MULTILINE)
+    normalized = normalized.replace("**", "").replace("__", "")
+    normalized = normalized.replace("`", "")
+    # Windows 默认编码可能无法打印 '•'，改用 ASCII '-' 保证兼容。
+    normalized = re.sub(r"^\s*[-*]\s+", "- ", normalized, flags=re.MULTILINE)
+    normalized = re.sub(r"\n{3,}", "\n\n", normalized)
+    return normalized.strip()
+
+
+def _wrap_for_terminal(text: str, console: Any) -> str:
+    """按终端宽度硬换行，避免视觉截断。"""
+    raw = _strip_markdown_for_terminal(text)
+    if not raw:
+        return ""
+    width = 88
+    if console is not None:
+        try:
+            width = max(40, int(console.size.width) - 4)
+        except Exception:
+            width = 88
+    # 先按自然段切分，再对每个段内的行做折行，尽量保留原有的段落结构。
+    paragraphs = re.split(r"\n\s*\n", raw)
+    wrapped_paragraphs: List[str] = []
+    for paragraph in paragraphs:
+        lines = [ln.strip() for ln in paragraph.split("\n") if ln.strip()]
+        if not lines:
+            continue
+        wrapped_lines = [_hard_wrap_by_display_width(line, width=width) for line in lines]
+        wrapped_paragraphs.append("\n".join(wrapped_lines))
+    return "\n\n".join(wrapped_paragraphs).strip()
+
+
+def _char_display_width(ch: str) -> int:
+    """估算字符显示宽度：中日韩宽字符按 2，其余按 1。"""
+    if not ch:
+        return 0
+    if unicodedata.east_asian_width(ch) in {"W", "F"}:
+        return 2
+    return 1
+
+
+def _hard_wrap_by_display_width(text: str, width: int) -> str:
+    """按显示宽度硬换行，避免终端自动换行导致的截断。"""
+    line = text or ""
+    if width <= 0:
+        return line
+    out_lines: List[str] = []
+    current: List[str] = []
+    current_width = 0
+    for ch in line:
+        ch_w = _char_display_width(ch)
+        if current and current_width + ch_w > width:
+            out_lines.append("".join(current))
+            current = [ch]
+            current_width = ch_w
+        else:
+            current.append(ch)
+            current_width += ch_w
+    if current:
+        out_lines.append("".join(current))
+    return "\n".join(out_lines)
+
+
+def _print_text_module(console: Any, title: str, content: str, style: str = "cyan") -> None:
+    """统一的模块化文本输出。"""
+    content_text = (content or "").strip() or "(空)"
+    if console is None:
+        print(f"\n=== {title} ===")
+        print(_wrap_for_terminal(content_text, console=None))
+        return
+    console.print(Rule(title, style=style))
+    wrapped = _wrap_for_terminal(content_text, console=console)
+    for line in wrapped.split("\n"):
+        console.print(line, soft_wrap=False, overflow="ignore")
+
+
+def _summarize_list_lines(items: Any, *, limit: int, label: str) -> List[str]:
+    """将列表摘要为多行，避免单行过长。"""
+    if not isinstance(items, list):
+        return [f"{label}: (none)"]
+    cleaned = [str(x).strip() for x in items if str(x).strip()]
+    if not cleaned:
+        return [f"{label}: (none)"]
+    shown = cleaned[: max(1, limit)]
+    lines: List[str] = [f"{label}[{idx+1}]: {value}" for idx, value in enumerate(shown)]
+    remaining = len(cleaned) - len(shown)
+    if remaining > 0:
+        lines.append(f"{label}: ... +{remaining} more")
+    return lines
+
+
+def _build_session_dir(session_name: str = "") -> Path:
+    """创建 JSON 会话输出目录。"""
+    base_dir = Path("sandbox") / "qa_sessions"
+    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    safe_name = re.sub(r"[^0-9A-Za-z_\-]+", "_", (session_name or "").strip()).strip("_")
+    session_id = safe_name or f"session_{stamp}"
+    session_dir = base_dir / session_id
+    session_dir.mkdir(parents=True, exist_ok=True)
+    return session_dir
+
+
+def _save_query_result(
+    *,
+    session_dir: Path,
+    turn_index: int,
+    question: str,
+    parsed: Dict[str, Any],
+) -> Path:
+    """保存单轮问答结果为 JSON。"""
+    payload = {
+        "saved_at": datetime.now().isoformat(timespec="seconds"),
+        "turn_index": turn_index,
+        "question": question,
+        "result": parsed,
+    }
+    file_path = session_dir / f"turn_{turn_index:03d}.json"
+    file_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return file_path
+
+
 def _print_cli_result(
     *,
     parsed: Dict[str, Any],
@@ -499,13 +680,36 @@ def _print_cli_result(
     console = _get_console(use_rich=use_rich)
     status = "OK" if parsed.get("ok") else "ERROR"
     if console is None:
-        print("=== neo4j_qa ===")
-        print(f"status: {status}")
-        print(f"database: {parsed.get('database', '')}")
-        print(f"persona: {parsed.get('persona', '')}")
-        print(f"rows_count: {parsed.get('rows_count', 0)}")
-        print("answer:")
-        print(parsed.get("answer", ""))
+        header = (
+            f"status: {status}\n"
+            f"database: {parsed.get('database', '')}\n"
+            f"persona: {parsed.get('persona', '')}\n"
+            f"rows_count: {parsed.get('rows_count', 0)}"
+        )
+        query_plan = parsed.get("query_plan", {})
+        hit_graph = parsed.get("hit_graph", {})
+        quality = parsed.get("quality", {})
+        if isinstance(quality, dict) and quality:
+            header += f"\nquality: {quality.get('score_0_100', 0)} ({quality.get('level', 'n/a')})"
+        _print_text_module(console, "运行信息", header, style="cyan")
+        if isinstance(query_plan, dict) and query_plan:
+            query_text = (
+                f"{str(query_plan.get('cypher', '')).strip()}\n\n"
+                f"params: {json.dumps(query_plan.get('params', {}), ensure_ascii=False)}"
+            )
+            _print_text_module(console, "Cypher 解析", query_text, style="blue")
+        if isinstance(hit_graph, dict) and hit_graph:
+            graph_lines: List[str] = [f"triple_hits: {hit_graph.get('triple_hits', 0)}"]
+            graph_lines.extend(_summarize_list_lines(hit_graph.get("relationships", []), limit=10, label="relationships"))
+            graph_lines.extend(_summarize_list_lines(hit_graph.get("subject_nodes", []), limit=10, label="subject_nodes"))
+            graph_lines.extend(_summarize_list_lines(hit_graph.get("object_nodes", []), limit=10, label="object_nodes"))
+            _print_text_module(console, "命中节点与关系", "\n".join(graph_lines), style="blue")
+        _print_text_module(
+            console,
+            "回答",
+            str(parsed.get("answer", "") or ""),
+            style="green",
+        )
         if show_sources:
             evidences = parsed.get("evidences", [])
             if isinstance(evidences, list):
@@ -514,26 +718,45 @@ def _print_cli_result(
                     evidences=evidences,
                     limit=10,
                 )
-                print("supporting_source_files:")
+                source_text = "supporting_source_files:"
                 if source_files:
                     for source in source_files:
-                        print(f"  - {source}")
+                        source_text += f"\n- {source}"
                 else:
-                    print("  - (no supporting source found in answer text)")
+                    source_text += "\n- (no supporting source found in answer text)"
+                _print_text_module(console, "依据来源（文档）", source_text, style="yellow")
         if parsed.get("error"):
-            print(f"error: {parsed['error']}")
+            _print_text_module(console, "错误", f"{parsed['error']}", style="red")
         return
 
     console.print(Rule("neo4j_qa", style="cyan"))
-    table = Table(show_header=False, box=None, padding=(0, 1))
-    table.add_row("status", status)
-    table.add_row("database", str(parsed.get("database", "")))
-    table.add_row("persona", str(parsed.get("persona", "")))
-    table.add_row("rows_count", str(parsed.get("rows_count", 0)))
-    console.print(Panel(table, title="运行信息", border_style="cyan"))
+    header = (
+        f"status: {status}\n"
+        f"database: {parsed.get('database', '')}\n"
+        f"persona: {parsed.get('persona', '')}\n"
+        f"rows_count: {parsed.get('rows_count', 0)}"
+    )
+    quality = parsed.get("quality", {})
+    if isinstance(quality, dict) and quality:
+        header += f"\nquality: {quality.get('score_0_100', 0)} ({quality.get('level', 'n/a')})"
+    _print_text_module(console, "运行信息", header, style="cyan")
 
-    answer_text = str(parsed.get("answer", "") or "")
-    console.print(Panel(Markdown(answer_text), title="回答", border_style="green"))
+    query_plan = parsed.get("query_plan", {})
+    if isinstance(query_plan, dict) and query_plan:
+        cypher_text = str(query_plan.get("cypher", "")).strip()
+        params_text = json.dumps(query_plan.get("params", {}), ensure_ascii=False)
+        query_text = f"{cypher_text}\n\nparams: {params_text}"
+        _print_text_module(console, "Cypher 解析", query_text, style="blue")
+
+    hit_graph = parsed.get("hit_graph", {})
+    if isinstance(hit_graph, dict) and hit_graph:
+        graph_lines: List[str] = [f"triple_hits: {hit_graph.get('triple_hits', 0)}"]
+        graph_lines.extend(_summarize_list_lines(hit_graph.get("relationships", []), limit=10, label="relationships"))
+        graph_lines.extend(_summarize_list_lines(hit_graph.get("subject_nodes", []), limit=10, label="subject_nodes"))
+        graph_lines.extend(_summarize_list_lines(hit_graph.get("object_nodes", []), limit=10, label="object_nodes"))
+        _print_text_module(console, "命中节点与关系", "\n".join(graph_lines), style="blue")
+
+    _print_text_module(console, "回答", str(parsed.get("answer", "") or ""), style="green")
 
     if show_sources:
         evidences = parsed.get("evidences", [])
@@ -545,13 +768,15 @@ def _print_cli_result(
                 limit=10,
             )
         if source_files:
-            lines = "\n".join(f"- `{path}`" for path in source_files)
-            console.print(Panel(Markdown(lines), title="依据来源（文档）", border_style="yellow"))
+            source_text = ""
+            for path in source_files:
+                source_text += f"- {path}\n"
+            _print_text_module(console, "依据来源（文档）", source_text.strip(), style="yellow")
         else:
-            console.print(Panel("(本轮未匹配到可展示的来源文件)", title="依据来源（文档）", border_style="yellow"))
+            _print_text_module(console, "依据来源（文档）", "(本轮未匹配到可展示的来源文件)", style="yellow")
 
     if parsed.get("error"):
-        console.print(Panel(str(parsed["error"]), title="错误", border_style="red"))
+        _print_text_module(console, "错误", str(parsed["error"]), style="red")
 
 
 def _generate_answer(question: str, rows: List[Dict[str, str]], strict_mode: bool, persona: str) -> str:
@@ -569,11 +794,15 @@ def _generate_answer(question: str, rows: List[Dict[str, str]], strict_mode: boo
         "digestion": "优先回答消化系统结构、消化相关行为与证据边界。",
         "communication": "优先回答交流方式（气味标记/声音）及其作用场景。",
         "development": "优先回答生长发育阶段（如月龄、体重、独立与性成熟等）并按时间线组织。",
+        "lifespan": "优先回答野外与圈养寿命范围、最长寿个体及相关数字信息。",
+        "energy": "优先回答节约能量策略（减少活动、缩小活动范围等）及其原因。",
     }.get(intent, "优先回答与问题最相关的事实。")
     system_prompt = (
         "你是熊猫知识库问答助手。你只能基于给定知识作答，不得编造。"
-        "回答要简洁清晰，并在末尾列出“依据”要点（引用关系和证据句）。"
-        "避免重复证据，优先引用高相关条目。"
+        "回答应尽量全面，优先覆盖定义、要点、场景差异和补充说明。"
+        "当问题可分维度时，使用分点结构，不要只给一句话结论。"
+        "依据部分保持最小化，只标注文档来源，不展开长证据句。"
+        "避免机械重复。"
         f"{_persona_instructions(persona)}"
     )
     if strict_mode:
@@ -583,11 +812,175 @@ def _generate_answer(question: str, rows: List[Dict[str, str]], strict_mode: boo
         f"知识库检索结果（最多 {len(rows)} 条）：\n{context_text}\n\n"
         f"回答偏好：{intent_hint}\n\n"
         "请输出：\n"
-        "1) 直接回答\n"
-        "2) 依据（2-6条，格式：关系 -> 证据）"
+        "1) 全面回答（建议 3-6 个要点，必要时分“野外/圈养”“原因/影响”等小节）\n"
+        "2) 依据来源（精简列出 2-8 个来源文档，格式：- 来源：<source_file>）\n"
+        "要求：依据只标注来源，不要复述大段证据原文。\n"
+        "如果证据不足，直接回答“知识库暂无足够依据”。"
     )
     response = llm.invoke([SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)])
     return _llm_content_to_text(response.content).strip()
+
+
+def _generate_fallback_answer(question: str, persona: str) -> str:
+    """
+    当知识库证据不足时，调用通用大模型能力进行兜底回答。
+    """
+    llm = get_text_generation_model()
+    system_prompt = (
+        "你是熊猫科普助手。当前知识库未命中证据。"
+        "请基于通用知识谨慎回答，明确这是“非知识库证据回答”，避免编造具体数字与细节。"
+        "若不确定，请明确说明不确定性。"
+        f"{_persona_instructions(persona)}"
+    )
+    user_prompt = (
+        f"问题：{question}\n\n"
+        "请输出：\n"
+        "1) 先给出简洁回答（可分点）\n"
+        "2) 再单独给出“说明：以下内容来自通用知识，不是当前知识库证据”\n"
+    )
+    response = llm.invoke([SystemMessage(content=system_prompt), HumanMessage(content=user_prompt)])
+    return _llm_content_to_text(response.content).strip()
+
+
+def _build_cypher_preview(question: str, intent: str, top_k: int) -> Dict[str, Any]:
+    """由大模型生成 Cypher 查询预览（用于展示，不直接执行）。"""
+    llm = get_text_generation_model()
+    prompt = (
+        "你是 Neo4j 查询规划助手。根据用户问题输出简洁 Cypher 方案。"
+        "只输出 JSON，字段为 cypher, params。"
+        "cypher 仅使用 MATCH (s)-[r]->(o) 这种结构，并尽量使用 predicate/evidence/source_file 条件。\n"
+        f"question: {question}\nintent: {intent}\nlimit: {max(1, top_k)}\n"
+        '仅输出：{"cypher":"MATCH ... RETURN ... LIMIT $top_k","params":{"top_k":20,"keywords":["..."]}}'
+    )
+    response = llm.invoke(
+        [
+            SystemMessage(content="你只输出合法 JSON。"),
+            HumanMessage(content=prompt),
+        ]
+    )
+    text = _llm_content_to_text(response.content).strip()
+    start = text.find("{")
+    end = text.rfind("}")
+    if start < 0 or end <= start:
+        raise ValueError(f"Cypher 预览生成失败：{text}")
+    parsed = json.loads(text[start : end + 1])
+    cypher = str(parsed.get("cypher", "")).strip()
+    params = parsed.get("params", {})
+    if not isinstance(params, dict):
+        params = {}
+    if not cypher:
+        raise ValueError("Cypher 预览为空")
+    return {"cypher": cypher, "params": params}
+
+
+def _build_hit_graph(rows: List[Dict[str, str]]) -> Dict[str, Any]:
+    """从命中三元组提取节点与关系摘要。"""
+    subjects: List[str] = []
+    objects: List[str] = []
+    relationships: List[str] = []
+    seen_s: set[str] = set()
+    seen_o: set[str] = set()
+    seen_r: set[str] = set()
+    for item in rows:
+        s = str(item.get("subject", "")).strip()
+        o = str(item.get("object", "")).strip()
+        r = str(item.get("predicate", "")).strip()
+        if s and s not in seen_s:
+            seen_s.add(s)
+            subjects.append(s)
+        if o and o not in seen_o:
+            seen_o.add(o)
+            objects.append(o)
+        if r and r not in seen_r:
+            seen_r.add(r)
+            relationships.append(r)
+    return {
+        "triple_hits": len(rows),
+        "subject_nodes": subjects[:20],
+        "object_nodes": objects[:20],
+        "relationships": relationships[:20],
+    }
+
+
+def _score_to_level(score_0_100: float) -> str:
+    if score_0_100 >= 85:
+        return "excellent"
+    if score_0_100 >= 70:
+        return "good"
+    if score_0_100 >= 50:
+        return "fair"
+    return "poor"
+
+
+def _build_quality_prompt(question: str, answer: str, evidences: List[Dict[str, Any]]) -> str:
+    evidence_lines: List[str] = []
+    for idx, item in enumerate(evidences[:12], start=1):
+        evidence_lines.append(
+            f"{idx}. {item.get('subject', '')} -[{item.get('predicate', '')}]-> {item.get('object', '')} | 证据: {item.get('evidence', '')}"
+        )
+    evidence_text = "\n".join(evidence_lines) if evidence_lines else "(无检索证据)"
+    return (
+        "请你作为熊猫知识库问答质量评估器，按如下维度进行 0-5 打分并只输出 JSON：\n"
+        "- correctness: 回答事实正确性\n"
+        "- completeness: 对问题覆盖完整性\n"
+        "- groundedness: 回答与给定证据一致性\n"
+        "- concise_clarity: 表达清晰度与简洁度\n"
+        "- reason: 一句话说明\n\n"
+        f"question: {question}\n"
+        f"answer: {answer}\n"
+        f"evidences:\n{evidence_text}\n\n"
+        '仅输出：{"correctness": number, "completeness": number, "groundedness": number, "concise_clarity": number, "reason": "..."}'
+    )
+
+
+def _evaluate_quality_by_llm(question: str, answer: str, evidences: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """使用大模型对本轮回答进行质量评估。"""
+    # 规则护栏：若直接拒答/暂无依据，则质量分必须很低（避免出现“拒答=满分”的误判）。
+    no_evidence_phrase = "知识库暂无足够依据。"
+    normalized_answer = (answer or "").strip()
+    if not normalized_answer or normalized_answer == no_evidence_phrase:
+        score = 10.0 if evidences else 0.0
+        return {
+            "mode": "refusal_guardrail",
+            "score_0_100": float(score),
+            "level": "poor",
+            "correctness_0_5": 0.0,
+            "completeness_0_5": 0.0,
+            "groundedness_0_5": 0.0,
+            "concise_clarity_0_5": 0.0,
+            "reason": "本轮未给出有效回答（暂无依据/拒答），评分按最低档处理。",
+        }
+
+    llm = get_text_generation_model()
+    prompt = _build_quality_prompt(question=question, answer=answer, evidences=evidences)
+    response = llm.invoke(
+        [
+            SystemMessage(content="你是严格评估器，只输出合法 JSON，不要输出其它文本。"),
+            HumanMessage(content=prompt),
+        ]
+    )
+    text = _llm_content_to_text(response.content).strip()
+    start = text.find("{")
+    end = text.rfind("}")
+    if start < 0 or end <= start:
+        raise ValueError(f"质量评估模型输出非 JSON: {text}")
+    obj = json.loads(text[start : end + 1])
+    correctness = max(0.0, min(5.0, float(obj.get("correctness", 0.0))))
+    completeness = max(0.0, min(5.0, float(obj.get("completeness", 0.0))))
+    groundedness = max(0.0, min(5.0, float(obj.get("groundedness", 0.0))))
+    concise_clarity = max(0.0, min(5.0, float(obj.get("concise_clarity", 0.0))))
+    reason = str(obj.get("reason", "")).strip()
+    score_0_100 = ((correctness + completeness + groundedness + concise_clarity) / 20.0) * 100.0
+    return {
+        "mode": "llm_judge",
+        "score_0_100": round(score_0_100, 2),
+        "level": _score_to_level(score_0_100),
+        "correctness_0_5": round(correctness, 4),
+        "completeness_0_5": round(completeness, 4),
+        "groundedness_0_5": round(groundedness, 4),
+        "concise_clarity_0_5": round(concise_clarity, 4),
+        "reason": reason,
+    }
 
 
 @tool
@@ -614,18 +1007,45 @@ def neo4j_qa(
         "top_k": max(1, top_k),
         "database": "",
         "persona": persona.strip() or "default",
+        "answer_mode": "knowledge_base",
         "rows_count": 0,
         "answer": "",
         "evidences": [],
+        "query_plan": {},
+        "hit_graph": {},
+        "quality": {},
     }
     try:
         config = _load_neo4j_config(database_override=database)
         result["database"] = config.database
+        intent = _detect_intent(question=question)
+        try:
+            result["query_plan"] = _build_cypher_preview(
+                question=question,
+                intent=intent,
+                top_k=max(1, top_k),
+            )
+        except Exception as exc:
+            result["query_plan"] = {
+                "cypher": "MATCH (s)-[r]->(o) WHERE ... RETURN s,r,o LIMIT $top_k",
+                "params": {"top_k": max(1, top_k)},
+                "error": f"{type(exc).__name__}: {exc}",
+            }
         rows = _fetch_knowledge(question=question, top_k=max(1, top_k), database=config.database)
         result["rows_count"] = len(rows)
         result["evidences"] = rows
+        result["hit_graph"] = _build_hit_graph(rows)
         if not rows:
-            result["answer"] = "知识库暂无足够依据。"
+            result["answer_mode"] = "llm_fallback"
+            result["answer"] = _generate_fallback_answer(
+                question=question,
+                persona=persona,
+            )
+            result["quality"] = _evaluate_quality_by_llm(
+                question=question,
+                answer=str(result.get("answer", "")),
+                evidences=[],
+            )
             result["ok"] = True
             return json.dumps(result, ensure_ascii=False)
         result["answer"] = _generate_answer(
@@ -633,6 +1053,11 @@ def neo4j_qa(
             rows=rows,
             strict_mode=strict_mode,
             persona=persona,
+        )
+        result["quality"] = _evaluate_quality_by_llm(
+            question=question,
+            answer=str(result.get("answer", "")),
+            evidences=rows,
         )
         result["ok"] = True
     except Exception as exc:
@@ -697,6 +1122,24 @@ def _build_cli_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="输出完整 JSON；默认输出摘要。",
     )
+    parser.add_argument(
+        "--save-json",
+        dest="save_json",
+        action="store_true",
+        help="每轮问答自动保存 JSON 到 sandbox/qa_sessions（默认开启）。",
+    )
+    parser.add_argument(
+        "--no-save-json",
+        dest="save_json",
+        action="store_false",
+        help="关闭自动保存 JSON。",
+    )
+    parser.set_defaults(save_json=True)
+    parser.add_argument(
+        "--session-name",
+        default="",
+        help="会话目录名（仅保留字母数字下划线横线），默认自动生成。",
+    )
     return parser
 
 
@@ -709,6 +1152,9 @@ def _run_one_cli_query(
     show_sources: bool,
     persona: str,
     use_rich: bool,
+    save_json: bool,
+    session_dir: Path | None,
+    turn_index: int,
 ) -> bool:
     result_json = neo4j_qa.invoke(
         {
@@ -729,6 +1175,14 @@ def _run_one_cli_query(
         print(json.dumps(parsed, ensure_ascii=False, indent=2))
     else:
         _print_cli_result(parsed=parsed, show_sources=show_sources, use_rich=use_rich)
+    if save_json and session_dir is not None:
+        save_path = _save_query_result(
+            session_dir=session_dir,
+            turn_index=turn_index,
+            question=question,
+            parsed=parsed,
+        )
+        print(f"[saved] {save_path}")
     return bool(parsed.get("ok"))
 
 
@@ -738,6 +1192,7 @@ def main() -> int:
     use_rich = (not args.plain) and (Console is not None)
     persona = str(args.persona or "default")
     show_sources = bool(args.show_sources)
+    session_dir = _build_session_dir(session_name=str(args.session_name or "")) if args.save_json else None
     if args.interactive:
         if use_rich and Console is not None and Panel is not None and Markdown is not None:
             console = Console(highlight=False, soft_wrap=True)
@@ -751,13 +1206,14 @@ def main() -> int:
                         "- 输入 `:sources on` / `:sources off` 切换是否显示来源文档\n"
                         "- 输入 `:help` 查看帮助"
                     ),
-                    title="AnyClaw · 熊猫知识库问答",
+                    title="Panda · 熊猫知识库问答",
                     border_style="cyan",
                 )
             )
         else:
             print("进入 Neo4j 问答交互模式（输入 exit / quit 退出）")
             print("命令：:persona <default|kid|educator|expert|story>  |  :sources on|off  |  :help")
+        turn_index = 1
         while True:
             try:
                 question = input("\nquestion> ").strip()
@@ -815,7 +1271,11 @@ def main() -> int:
                 show_sources=show_sources,
                 persona=persona,
                 use_rich=use_rich,
+                save_json=bool(args.save_json),
+                session_dir=session_dir,
+                turn_index=turn_index,
             )
+            turn_index += 1
 
     if not args.question.strip():
         parser.error("非交互模式下必须提供 --question，或使用 --interactive")
@@ -828,6 +1288,9 @@ def main() -> int:
         show_sources=args.show_sources,
         persona=persona,
         use_rich=use_rich,
+        save_json=bool(args.save_json),
+        session_dir=session_dir,
+        turn_index=1,
     )
     return 0 if ok else 1
 

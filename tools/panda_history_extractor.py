@@ -173,6 +173,29 @@ def _build_extraction_prompt(topic: str, text: str) -> str:
 """.strip()
 
 
+def _build_targeted_extraction_prompt(topic: str, text: str, questions: List[str]) -> str:
+    """基于细节问题清单构建二次定向抽取提示词。"""
+    question_block = "\n".join(f"- {q}" for q in questions if _clean_label(q))
+    return f"""
+你是熊猫知识图谱“二次定向抽取”助手。文章主题是：{topic}
+你将基于给定问题清单，补抽在第一次抽取中容易遗漏的细节事实（数值、范围、时间、条件、比较关系）。
+
+要求：
+1. 仅基于原文抽取，不得杜撰。
+2. 输出格式仍使用 ExtractionSchema。
+3. relation_triples 必须提供短句 evidence。
+4. 优先覆盖问题中涉及的关键词、数字、时间、阶段。
+5. 如果问题对应信息在原文不存在，相关字段可留空，不要猜测。
+6. 严禁把“问题句”直接作为 predicate（例如“XX是多少”“为什么XX”“是否XX”）。
+
+定向问题清单：
+{question_block if question_block else "- (无)"}
+
+文章正文：
+{text}
+""".strip()
+
+
 def _infer_topic_from_filename(file_path: Path) -> str:
     """根据文件名做轻量主题兜底，减少 topic 误判。"""
     name = file_path.name
@@ -189,6 +212,24 @@ def _infer_topic_from_filename(file_path: Path) -> str:
         if any(key in name for key in keys):
             return topic
     return "其他"
+
+
+def _merge_extracted_payload(base: Dict[str, Any], targeted: Dict[str, Any]) -> Dict[str, Any]:
+    """合并基础抽取与定向抽取结果。"""
+    merged = dict(base)
+    for key, value in targeted.items():
+        if key == "topic":
+            continue
+        if key == "relation_triples":
+            base_triples = merged.get("relation_triples", [])
+            target_triples = value if isinstance(value, list) else []
+            merged["relation_triples"] = base_triples + target_triples
+            continue
+        base_values = merged.get(key, [])
+        target_values = value if isinstance(value, list) else []
+        if isinstance(base_values, list):
+            merged[key] = _as_list([*base_values, *target_values])
+    return merged
 
 
 _ENTITY_STOPWORDS = {
@@ -354,6 +395,9 @@ def _canonicalize_predicate(topic: str, predicate: str, evidence: str) -> Option
     cleaned = _clean_label(predicate).strip("，。；：,.;: ")
     if not cleaned:
         return None
+    # 过滤疑问句式谓词，避免把问句文本写成关系。
+    if any(flag in cleaned for flag in ["？", "?", "多少", "是否", "怎么", "为何", "为什么", "哪", "几"]):
+        return None
     canonical = cleaned
     for pattern, mapped in _PREDICATE_TEMPLATES:
         if pattern.search(cleaned):
@@ -375,6 +419,7 @@ async def _extract_one_markdown_v2_async(
     topic_chain: Any,
     extraction_chain_factory: Any,
     semaphore: asyncio.Semaphore,
+    focus_questions: Optional[List[str]] = None,
 ) -> Dict[str, Any]:
     async with semaphore:
         raw_text = file_path.read_text(encoding="utf-8")
@@ -414,6 +459,38 @@ async def _extract_one_markdown_v2_async(
             "taxonomy_terms": _as_list(extraction_result.taxonomy_terms),
             "relation_triples": [triple.model_dump() for triple in extraction_result.relation_triples],
         }
+
+        # 第二阶段：针对细节问题做定向补抽，提升细粒度问答命中率。
+        cleaned_questions = [q for q in (focus_questions or []) if _clean_label(str(q))]
+        if cleaned_questions:
+            targeted_chain = extraction_chain_factory()
+            targeted_result: ExtractionSchema = await targeted_chain.ainvoke(
+                [HumanMessage(content=_build_targeted_extraction_prompt(topic, markdown_text, cleaned_questions))]
+            )
+            targeted_extracted: Dict[str, Any] = {
+                "topic": topic,
+                "times": _as_list(targeted_result.times),
+                "person_entities": _as_list(targeted_result.person_entities),
+                "place_entities": _as_list(targeted_result.place_entities),
+                "panda_aliases": _as_list(targeted_result.panda_aliases),
+                "companion_species": _as_list(targeted_result.companion_species),
+                "predator_species": _as_list(targeted_result.predator_species),
+                "habitats": _as_list(targeted_result.habitats),
+                "biology_terms": _as_list(targeted_result.biology_terms),
+                "behavior_terms": _as_list(targeted_result.behavior_terms),
+                "disease_terms": _as_list(targeted_result.disease_terms),
+                "treatment_terms": _as_list(targeted_result.treatment_terms),
+                "lifecycle_stages": _as_list(targeted_result.lifecycle_stages),
+                "reproduction_terms": _as_list(targeted_result.reproduction_terms),
+                "communication_terms": _as_list(targeted_result.communication_terms),
+                "threat_factors": _as_list(targeted_result.threat_factors),
+                "food_items": _as_list(targeted_result.food_items),
+                "food_parts": _as_list(targeted_result.food_parts),
+                "population_metrics": _as_list(targeted_result.population_metrics),
+                "taxonomy_terms": _as_list(targeted_result.taxonomy_terms),
+                "relation_triples": [triple.model_dump() for triple in targeted_result.relation_triples],
+            }
+            extracted = _merge_extracted_payload(extracted, targeted_extracted)
 
         legacy = {
             "时间": extracted["times"],
@@ -593,6 +670,7 @@ async def _run_async_pipeline(
     md_files: List[Path],
     llm: Any,
     max_concurrency: int,
+    focus_questions_by_source: Optional[Dict[str, List[str]]] = None,
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, str]]]:
     topic_chain = llm.with_structured_output(TopicResult)
     semaphore = asyncio.Semaphore(max(1, max_concurrency))
@@ -606,6 +684,7 @@ async def _run_async_pipeline(
             topic_chain=topic_chain,
             extraction_chain_factory=extraction_chain_factory,
             semaphore=semaphore,
+            focus_questions=(focus_questions_by_source or {}).get(str(file_path), []),
         )
         for file_path in md_files
     ]
@@ -662,6 +741,39 @@ def _load_checkpoint(run_output_dir: Path) -> Tuple[Dict[str, Dict[str, Any]], D
     return clean_results, clean_errors
 
 
+def _load_focus_questions_map(project_root: Path, focus_questions_json: str) -> Dict[str, List[str]]:
+    """
+    从问题清单 JSON 构建 source_file -> questions 映射。
+
+    支持格式：
+    {
+      "groups": [{"doc_path":"docs/xx.md","questions":[...]}]
+    }
+    """
+    if not focus_questions_json.strip():
+        return {}
+    json_path = (project_root / focus_questions_json).resolve()
+    if not json_path.exists():
+        raise FileNotFoundError(f"focus_questions_json 不存在: {json_path}")
+    raw = json.loads(json_path.read_text(encoding="utf-8"))
+    groups = raw.get("groups", [])
+    if not isinstance(groups, list):
+        raise ValueError("focus_questions_json 格式错误：groups 必须是数组")
+    mapping: Dict[str, List[str]] = {}
+    for item in groups:
+        if not isinstance(item, dict):
+            continue
+        doc_path = str(item.get("doc_path", "")).strip()
+        questions = item.get("questions", [])
+        if not doc_path or not isinstance(questions, list):
+            continue
+        abs_doc = (project_root / doc_path).resolve()
+        cleaned_questions = [_clean_label(str(q)) for q in questions if _clean_label(str(q))]
+        if cleaned_questions:
+            mapping[str(abs_doc)] = cleaned_questions
+    return mapping
+
+
 async def _run_attempt_with_progress(
     md_files: List[Path],
     llm: Any,
@@ -673,6 +785,7 @@ async def _run_attempt_with_progress(
     errors_by_source: Dict[str, str],
     checkpoint_path: Path,
     progress_callback: Optional[Callable[[str], None]] = None,
+    focus_questions_by_source: Optional[Dict[str, List[str]]] = None,
 ) -> List[Path]:
     topic_chain = llm.with_structured_output(TopicResult)
     semaphore = asyncio.Semaphore(max(1, max_concurrency))
@@ -687,6 +800,7 @@ async def _run_attempt_with_progress(
                 topic_chain=topic_chain,
                 extraction_chain_factory=extraction_chain_factory,
                 semaphore=semaphore,
+                focus_questions=(focus_questions_by_source or {}).get(str(file_path), []),
             )
             return file_path, item, None
         except Exception as exc:
@@ -736,6 +850,7 @@ async def _run_with_retry_and_resume_async(
     run_output_dir: Path,
     resume_enabled: bool,
     progress_callback: Optional[Callable[[str], None]] = None,
+    focus_questions_by_source: Optional[Dict[str, List[str]]] = None,
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, str]]]:
     """执行抽取，支持失败重试、断点续传和进度回调。"""
     checkpoint_path = _checkpoint_file_path(run_output_dir)
@@ -772,6 +887,7 @@ async def _run_with_retry_and_resume_async(
             errors_by_source=errors_by_source,
             checkpoint_path=checkpoint_path,
             progress_callback=progress_callback,
+            focus_questions_by_source=focus_questions_by_source,
         )
         pending_files = failed_paths
 
@@ -791,6 +907,7 @@ def panda_history_extractor(
     resume: bool = True,
     show_progress: bool = True,
     resume_run_output_dir: str = "",
+    focus_questions_json: str = "",
 ) -> str:
     """
     描述：主题驱动抽取熊猫知识，支持并发处理、Pydantic 结构化输出，并可导出 Neo4j CSV/Cypher。
@@ -803,6 +920,7 @@ def panda_history_extractor(
     - resume：是否启用断点续传，默认 true。
     - show_progress：是否输出处理进度，默认 true。
     - resume_run_output_dir：指定已有 run_output_dir 进行续跑；为空则自动新建。
+    - focus_questions_json：细节问题清单 JSON（相对项目根）。启用后将做二次定向抽取。
     输出：JSON 字符串，包含抽取结果与导出文件路径。
     """
     result_data: Dict[str, Any] = {
@@ -817,6 +935,8 @@ def panda_history_extractor(
         "file_errors": [],
         "run_output_dir": "",
         "result_file_path": "",
+        "focus_questions_json": "",
+        "focus_questions_enabled_files": 0,
         "timestamp": datetime.now().isoformat(),
     }
 
@@ -824,6 +944,9 @@ def panda_history_extractor(
         _configure_warning_filters()
         project_root = get_project_root()
         llm = get_element_extraction_model()
+        focus_questions_map = _load_focus_questions_map(project_root, focus_questions_json)
+        result_data["focus_questions_json"] = focus_questions_json
+        result_data["focus_questions_enabled_files"] = len(focus_questions_map)
 
         md_files: List[Path] = []
         if md_path.strip():
@@ -874,6 +997,7 @@ def panda_history_extractor(
             run_output_dir=run_output_dir,
             resume_enabled=resume,
             progress_callback=progress_callback,
+            focus_questions_by_source=focus_questions_map,
         ))
 
         result_data["file_errors"] = file_errors
@@ -950,6 +1074,11 @@ def _build_cli_parser() -> argparse.ArgumentParser:
         help="指定已有 run_output_dir 继续处理（相对项目根）。",
     )
     parser.add_argument(
+        "--focus-questions-json",
+        default="",
+        help="细节问题清单 JSON（相对项目根），用于二次定向抽取。",
+    )
+    parser.add_argument(
         "--no-progress",
         dest="show_progress",
         action="store_false",
@@ -980,6 +1109,7 @@ def main() -> int:
             "resume": args.resume,
             "show_progress": args.show_progress,
             "resume_run_output_dir": args.resume_run_output_dir,
+            "focus_questions_json": args.focus_questions_json,
         }
     )
     try:

@@ -1,0 +1,6079 @@
+{
+  "updated_at": "2026-04-24T11:17:33.099352",
+  "results_by_source": {
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫历史 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫历史 - 成都大熊猫繁育研究基地.md",
+      "topic": "历史背景",
+      "extracted": {
+        "topic": "历史背景",
+        "times": [
+          "800万年前中新世晚期",
+          "1869年3月",
+          "1869年4月1日",
+          "1869年",
+          "800万年前"
+        ],
+        "person_entities": [
+          "阿尔芒·戴维神父",
+          "阿尔封斯·米勒·爱德华兹",
+          "李时珍"
+        ],
+        "place_entities": [
+          "云南禄丰",
+          "云南元谋",
+          "四川雅安宝兴县",
+          "邓池沟",
+          "穆坪",
+          "巴黎",
+          "四川雅安宝兴县邓池沟（穆坪）",
+          "法国巴黎"
+        ],
+        "panda_aliases": [
+          "貔",
+          "白羆",
+          "貔貅",
+          "貉",
+          "貘",
+          "白熊",
+          "花熊",
+          "猫熊"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [
+          "中新世晚期",
+          "800万年前",
+          "1869年3月",
+          "1869年4月1日",
+          "1869年"
+        ],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "始熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "始熊猫",
+            "predicate": "化石出土于",
+            "object": "云南禄丰",
+            "object_type": "Place",
+            "evidence": "迄今所发现的最古老大熊猫成员——始熊猫的化石出土于我国云南禄丰和元谋两地，地质年代约为800万年前中新世晚期。"
+          },
+          {
+            "subject": "始熊猫",
+            "predicate": "化石出土于",
+            "object": "云南元谋",
+            "object_type": "Place",
+            "evidence": "迄今所发现的最古老大熊猫成员——始熊猫的化石出土于我国云南禄丰和元谋两地，地质年代约为800万年前中新世晚期。"
+          },
+          {
+            "subject": "始熊猫",
+            "predicate": "生存于",
+            "object": "800万年前中新世晚期",
+            "object_type": "Other",
+            "evidence": "迄今所发现的最古老大熊猫成员——始熊猫的化石出土于我国云南禄丰和元谋两地，地质年代约为800万年前中新世晚期。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "貔",
+            "object_type": "Alias",
+            "evidence": "《书经》称貔"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "白羆",
+            "object_type": "Alias",
+            "evidence": "《毛诗》称白羆（p）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "貔貅",
+            "object_type": "Alias",
+            "evidence": "《峨眉山志》称貔貅"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "貉",
+            "object_type": "Alias",
+            "evidence": "《兽经》称貉"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "貘",
+            "object_type": "Alias",
+            "evidence": "李时珍的《本草纲目》称貘"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "发现者",
+            "object": "阿尔芒·戴维神父",
+            "object_type": "Person",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "历史分布于",
+            "object": "四川雅安宝兴县",
+            "object_type": "Place",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "历史分布于",
+            "object": "邓池沟",
+            "object_type": "Place",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "历史分布于",
+            "object": "穆坪",
+            "object_type": "Place",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "白熊",
+            "object_type": "Alias",
+            "evidence": "通过当地猎人的帮助，4月1日，他采集到白熊标本，毛色有黑有白，脚掌底部多毛，样子像熊，这是他从未见过的奇异动物。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "花熊",
+            "object_type": "Alias",
+            "evidence": "通过当地猎人的帮助，4月1日，他采集到白熊标本，毛色有黑有白，脚掌底部多毛，样子像熊，这是他从未见过的奇异动物。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "定名人",
+            "object": "阿尔封斯·米勒·爱德华兹",
+            "object_type": "Person",
+            "evidence": "他把标本和骨骼运到法国，经巴黎自然历史博物馆科学家阿尔封斯·米勒·爱德华兹鉴定，“黑白熊”是一个新物种，定名为“猫熊”"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "定名",
+            "object": "猫熊",
+            "object_type": "Alias",
+            "evidence": "他把标本和骨骼运到法国，经巴黎自然历史博物馆科学家阿尔封斯·米勒·爱德华兹鉴定，“黑白熊”是一个新物种，定名为“猫熊”"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "科学定名时间",
+            "object": "1869年",
+            "object_type": "Other",
+            "evidence": "鉴定报告发表在1869年《巴黎自然历史博物馆之新文档》第五卷"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "鉴定机构",
+            "object": "巴黎自然历史博物馆",
+            "object_type": "Place",
+            "evidence": "鉴定报告发表在1869年《巴黎自然历史博物馆之新文档》第五卷"
+          },
+          {
+            "subject": "始熊猫",
+            "predicate": "化石发现地",
+            "object": "云南禄丰、云南元谋",
+            "object_type": "Place",
+            "evidence": "迄今所发现的最古老大熊猫成员——始熊猫的化石出土于我国云南禄丰和元谋两地"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "是最古老的大熊猫成员",
+            "object": "始熊猫",
+            "object_type": "Biology",
+            "evidence": "迄今所发现的最古老大熊猫成员——始熊猫"
+          },
+          {
+            "subject": "始熊猫",
+            "predicate": "生存年代约",
+            "object": "800万年前",
+            "object_type": "Treatment",
+            "evidence": "地质年代约为800万年前中新世晚期"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "被称为活化石的原因",
+            "object": "因与同时代多数动物相比未灭绝且形态保守，延续至今",
+            "object_type": "Treatment",
+            "evidence": "在长期严酷的生存竞争和自然选择中，和它们同时代的很多动物都已灭绝，但大熊猫却是强者，处于优势，成为“活化石”保存到了今天。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "古籍中称谓",
+            "object": "貔、白羆、貔貅、貉、貘",
+            "object_type": "Alias",
+            "evidence": "《书经》称貔，《毛诗》称白羆（p），《峨眉山志》称貔貅，《兽经》称貉，李时珍的《本草纲目》称貘"
+          },
+          {
+            "subject": "阿尔芒·戴维神父",
+            "predicate": "发现白熊/花熊踪迹地点",
+            "object": "四川雅安宝兴县邓池沟（穆坪）",
+            "object_type": "Place",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父……在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "阿尔芒·戴维神父",
+            "predicate": "发现白熊/花熊踪迹时间",
+            "object": "1869年3月",
+            "object_type": "Treatment",
+            "evidence": "1869年3月，法国博物学家阿尔芒·戴维神父……在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "阿尔芒·戴维神父",
+            "predicate": "首次采集标本日期",
+            "object": "1869年4月1日",
+            "object_type": "Treatment",
+            "evidence": "通过当地猎人的帮助，4月1日，他采集到白熊标本"
+          },
+          {
+            "subject": "黑白熊",
+            "predicate": "鉴定黑白熊为新物种者",
+            "object": "阿尔封斯·米勒·爱德华兹",
+            "object_type": "Person",
+            "evidence": "他把标本和骨骼运到法国，经巴黎自然历史博物馆科学家阿尔封斯·米勒·爱德华兹鉴定，“黑白熊”是一个新物种"
+          },
+          {
+            "subject": "猫熊",
+            "predicate": "定名猫熊的鉴定结果发表信息",
+            "object": "1869年《巴黎自然历史博物馆之新文档》第五卷",
+            "object_type": "Treatment",
+            "evidence": "定名为“猫熊”，鉴定报告发表在1869年《巴黎自然历史博物馆之新文档》第五卷"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "800万年前中新世晚期",
+          "1869年3月",
+          "1869年4月1日",
+          "1869年",
+          "800万年前"
+        ],
+        "人物": [
+          "阿尔芒·戴维神父",
+          "阿尔封斯·米勒·爱德华兹",
+          "李时珍"
+        ],
+        "地点": [
+          "云南禄丰",
+          "云南元谋",
+          "四川雅安宝兴县",
+          "邓池沟",
+          "穆坪",
+          "巴黎",
+          "四川雅安宝兴县邓池沟（穆坪）",
+          "法国巴黎"
+        ],
+        "熊猫曾用名": [
+          "貔",
+          "白羆",
+          "貔貅",
+          "貉",
+          "貘",
+          "白熊",
+          "花熊",
+          "猫熊"
+        ]
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫生长发育 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫生长发育 - 成都大熊猫繁育研究基地.md",
+      "topic": "生理构造",
+      "extracted": {
+        "topic": "生理构造",
+        "times": [
+          "刚出生",
+          "一到两周",
+          "一个月",
+          "六到八周",
+          "三个月",
+          "半岁",
+          "一岁",
+          "一岁半",
+          "亚成年",
+          "成年",
+          "1~3岁"
+        ],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [
+          "免疫系统",
+          "恒牙",
+          "黑白相间的毛",
+          "粉色的皮肤",
+          "白毛",
+          "肩带",
+          "四肢",
+          "耳朵",
+          "眼睛"
+        ],
+        "behavior_terms": [
+          "玩耍",
+          "探索",
+          "爬树"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "刚出生",
+          "一到两周",
+          "一个月",
+          "六到八周",
+          "三个月",
+          "半岁",
+          "一岁",
+          "一岁半",
+          "亚成年",
+          "成年",
+          "初生"
+        ],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [
+          "竹子",
+          "奶"
+        ],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "初生平均体重",
+            "object": "120克",
+            "object_type": "Other",
+            "evidence": "初生熊猫幼仔体重仅是它母亲体重的千分之一，平均体重仅120克左右，最轻的为51克，最重的为225克。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "初生最轻体重",
+            "object": "51克",
+            "object_type": "Other",
+            "evidence": "初生熊猫幼仔体重仅是它母亲体重的千分之一，平均体重仅120克左右，最轻的为51克，最重的为225克。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "初生最重体重",
+            "object": "225克",
+            "object_type": "Other",
+            "evidence": "初生熊猫幼仔体重仅是它母亲体重的千分之一，平均体重仅120克左右，最轻的为51克，最重的为225克。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "初生体重占母体比例",
+            "object": "千分之一",
+            "object_type": "Other",
+            "evidence": "初生熊猫幼仔体重仅是它母亲体重的千分之一，平均体重仅120克左右，最轻的为51克，最重的为225克。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "未发育完善",
+            "object": "免疫系统",
+            "object_type": "Biology",
+            "evidence": "粉色的皮肤上长着白毛，眼睛和耳朵还没有发育完全，免疫系统的也还未发育完善。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "未发育完全",
+            "object": "眼睛",
+            "object_type": "Biology",
+            "evidence": "粉色的皮肤上长着白毛，眼睛和耳朵还没有发育完全，免疫系统的也还未发育完善。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "未发育完全",
+            "object": "耳朵",
+            "object_type": "Biology",
+            "evidence": "粉色的皮肤上长着白毛，眼睛和耳朵还没有发育完全，免疫系统的也还未发育完善。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "颜色变化阶段起始时间",
+            "object": "肩带",
+            "object_type": "Biology",
+            "evidence": "一到两周：肩带、四肢和耳朵渐渐变黑。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "颜色变化阶段起始时间",
+            "object": "四肢",
+            "object_type": "Biology",
+            "evidence": "一到两周：肩带、四肢和耳朵渐渐变黑。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "颜色变化阶段起始时间",
+            "object": "耳朵",
+            "object_type": "Biology",
+            "evidence": "一到两周：肩带、四肢和耳朵渐渐变黑。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "开始长出时间",
+            "object": "黑白相间的毛",
+            "object_type": "Biology",
+            "evidence": "一个月：长出黑白相间的毛，变得更像妈妈了。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "一个月龄体重范围",
+            "object": "1~2公斤",
+            "object_type": "Other",
+            "evidence": "一个月：体重1~2公斤，还不能行走。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "一个月龄运动能力",
+            "object": "不能行走",
+            "object_type": "Behavior",
+            "evidence": "一个月：体重1~2公斤，还不能行走。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "开始时间",
+            "object": "睁眼",
+            "object_type": "Behavior",
+            "evidence": "六到八周：可以睁眼。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "开始时间",
+            "object": "爬动",
+            "object_type": "Behavior",
+            "evidence": "三个月：可以慢慢的爬动了。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "开始时间",
+            "object": "自由行走",
+            "object_type": "Behavior",
+            "evidence": "半岁：可以自由行走，开始学吃竹子。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "开始采食食物",
+            "object": "竹子",
+            "object_type": "Biology",
+            "evidence": "半岁：可以自由行走，开始学吃竹子。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "开始长出时间",
+            "object": "恒牙",
+            "object_type": "Biology",
+            "evidence": "一岁：开始长出恒牙。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "开始时间",
+            "object": "独立生活",
+            "object_type": "Behavior",
+            "evidence": "一岁半：离开母亲，独立生活。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "亚成年早期主食",
+            "object": "奶",
+            "object_type": "Biology",
+            "evidence": "亚成年：一岁半到性成熟前为亚成年阶段……这一阶段大熊猫的食物从营养丰富的奶为主逐渐过渡到以高纤维、低营养的竹类为主。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "亚成年后期主食",
+            "object": "竹类",
+            "object_type": "Biology",
+            "evidence": "亚成年：一岁半到性成熟前为亚成年阶段……这一阶段大熊猫的食物从营养丰富的奶为主逐渐过渡到以高纤维、低营养的竹类为主。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "亚成年阶段特征",
+            "object": "生理成熟",
+            "object_type": "Biology",
+            "evidence": "亚成年：一岁半到性成熟前为亚成年阶段……生理和心理上也逐渐成熟，即将开始繁育后代。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "亚成年阶段特征",
+            "object": "心理成熟",
+            "object_type": "Biology",
+            "evidence": "亚成年：一岁半到性成熟前为亚成年阶段……生理和心理上也逐渐成熟，即将开始繁育后代。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "1~3岁高频行为",
+            "object": "玩耍",
+            "object_type": "Behavior",
+            "evidence": "大熊猫在1~3岁期间是最为活跃的时期，每天除了采食外，大部分时间都在玩耍、探索和爬树。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "1~3岁高频行为",
+            "object": "探索",
+            "object_type": "Behavior",
+            "evidence": "大熊猫在1~3岁期间是最为活跃的时期，每天除了采食外，大部分时间都在玩耍、探索和爬树。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "1~3岁高频行为",
+            "object": "爬树",
+            "object_type": "Behavior",
+            "evidence": "大熊猫在1~3岁期间是最为活跃的时期，每天除了采食外，大部分时间都在玩耍、探索和爬树。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "成年体长范围",
+            "object": "160~180厘米",
+            "object_type": "Other",
+            "evidence": "成年：体长约160~180厘米，体重约80~150公斤。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "成年体重范围",
+            "object": "80~150公斤",
+            "object_type": "Other",
+            "evidence": "成年：体长约160~180厘米，体重约80~150公斤。"
+          },
+          {
+            "subject": "初生幼仔体重",
+            "predicate": "初生幼仔体重约为母体的几分之几",
+            "object": "千分之一",
+            "object_type": "Other",
+            "evidence": "初生熊猫幼仔体重仅是它母亲体重的千分之一"
+          },
+          {
+            "subject": "初生幼仔",
+            "predicate": "初生幼仔平均体重",
+            "object": "120克",
+            "object_type": "Other",
+            "evidence": "平均体重仅120克左右，最轻的为51克，最重的为225克"
+          },
+          {
+            "subject": "初生幼仔",
+            "predicate": "初生幼仔最轻体重",
+            "object": "51克",
+            "object_type": "Other",
+            "evidence": "平均体重仅120克左右，最轻的为51克，最重的为225克"
+          },
+          {
+            "subject": "初生幼仔",
+            "predicate": "初生幼仔最重体重",
+            "object": "225克",
+            "object_type": "Other",
+            "evidence": "平均体重仅120克左右，最轻的为51克，最重的为225克"
+          },
+          {
+            "subject": "幼仔",
+            "predicate": "幼仔在1-2周会出现什么毛色变化",
+            "object": "肩带、四肢和耳朵渐渐变黑",
+            "object_type": "Other",
+            "evidence": "一到两周：肩带、四肢和耳朵渐渐变黑"
+          },
+          {
+            "subject": "一个月龄幼仔",
+            "predicate": "一个月龄幼仔体重范围",
+            "object": "1~2公斤",
+            "object_type": "Other",
+            "evidence": "一个月：体重1~2公斤，还不能行走"
+          },
+          {
+            "subject": "一个月龄幼仔",
+            "predicate": "一个月龄幼仔行走能力如何",
+            "object": "还不能行走",
+            "object_type": "Other",
+            "evidence": "一个月：体重1~2公斤，还不能行走"
+          },
+          {
+            "subject": "六到八周幼仔",
+            "predicate": "六到八周时出现了什么发育节点",
+            "object": "可以睁眼",
+            "object_type": "Other",
+            "evidence": "六到八周：可以睁眼"
+          },
+          {
+            "subject": "三个月幼仔",
+            "predicate": "三个月幼仔能力变化是什么",
+            "object": "可以慢慢的爬动",
+            "object_type": "Other",
+            "evidence": "三个月：可以慢慢的爬动了"
+          },
+          {
+            "subject": "半岁幼仔",
+            "predicate": "半岁幼仔在运动和食性上有哪些变化",
+            "object": "可以自由行走，开始学吃竹子",
+            "object_type": "Other",
+            "evidence": "半岁：可以自由行走，开始学吃竹子"
+          },
+          {
+            "subject": "一岁幼仔",
+            "predicate": "一岁时会出现什么牙齿发育特征",
+            "object": "开始长出恒牙",
+            "object_type": "Other",
+            "evidence": "一岁：开始长出恒牙"
+          },
+          {
+            "subject": "一岁半幼仔",
+            "predicate": "一岁半通常发生什么独立行为",
+            "object": "离开母亲，独立生活",
+            "object_type": "Other",
+            "evidence": "一岁半：离开母亲，独立生活"
+          },
+          {
+            "subject": "亚成年阶段",
+            "predicate": "亚成年阶段定义是什么",
+            "object": "一岁半到性成熟前",
+            "object_type": "Other",
+            "evidence": "亚成年：一岁半到性成熟前为亚成年阶段"
+          },
+          {
+            "subject": "亚成年阶段",
+            "predicate": "亚成年阶段食物结构如何变化",
+            "object": "从以奶为主逐渐过渡到以竹类为主",
+            "object_type": "Other",
+            "evidence": "这一阶段大熊猫的食物从营养丰富的奶为主逐渐过渡到以高纤维、低营养的竹类为主"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "大熊猫最活跃年龄段是几岁到几岁",
+            "object": "1~3岁",
+            "object_type": "Other",
+            "evidence": "大熊猫在1~3岁期间是最为活跃的时期"
+          },
+          {
+            "subject": "成年大熊猫",
+            "predicate": "成年体长范围",
+            "object": "160~180厘米",
+            "object_type": "Other",
+            "evidence": "成年：体长约160~180厘米，体重约80~150公斤"
+          },
+          {
+            "subject": "成年大熊猫",
+            "predicate": "成年体重范围",
+            "object": "80~150公斤",
+            "object_type": "Other",
+            "evidence": "成年：体长约160~180厘米，体重约80~150公斤"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "刚出生",
+          "一到两周",
+          "一个月",
+          "六到八周",
+          "三个月",
+          "半岁",
+          "一岁",
+          "一岁半",
+          "亚成年",
+          "成年",
+          "1~3岁"
+        ],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫分布和现状 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫分布和现状 - 成都大熊猫繁育研究基地.md",
+      "topic": "生存环境",
+      "extracted": {
+        "topic": "生存环境",
+        "times": [
+          "第四次全国调查",
+          "2014年",
+          "2020年"
+        ],
+        "person_entities": [],
+        "place_entities": [
+          "北京周口店",
+          "两广",
+          "东南亚",
+          "四川",
+          "陕西",
+          "甘肃",
+          "川陕甘3省",
+          "49个县",
+          "日本和歌山白浜野生动物园",
+          "美国亚特兰大动物园",
+          "川",
+          "陕",
+          "甘"
+        ],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "秦岭山系",
+          "岷山山系",
+          "邛崃山系",
+          "凉山山系",
+          "大相岭山系",
+          "小相岭山系",
+          "长江流域",
+          "黄河流域",
+          "珠江流域"
+        ],
+        "biology_terms": [],
+        "behavior_terms": [
+          "栖息地破碎化",
+          "小种群生存危险"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [
+          "栖息地的破碎化",
+          "小种群的生存危险",
+          "栖息地破碎化",
+          "小种群生存危险"
+        ],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [
+          "野生大熊猫1864只",
+          "75%分布于四川境内",
+          "栖息地面积258万公顷",
+          "圈养熊猫633只（截至2020年）",
+          "成都大熊猫繁育研究基地圈养215只",
+          "46.2%的栖息地在自然保护区体系外",
+          "33.2%的种群在自然保护区体系外",
+          "1864只",
+          "75%",
+          "258万公顷",
+          "67个",
+          "27个",
+          "46.2%",
+          "33.2%",
+          "633只",
+          "215只"
+        ],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "历史分布于",
+            "object": "北京周口店",
+            "object_type": "Place",
+            "evidence": "大熊猫曾广泛分布于中国长江、黄河和珠江三大流域，包括从北京附近周口店至两广以及附近的东南亚地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "历史分布于",
+            "object": "两广",
+            "object_type": "Place",
+            "evidence": "大熊猫曾广泛分布于中国长江、黄河和珠江三大流域，包括从北京附近周口店至两广以及附近的东南亚地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "历史分布于",
+            "object": "东南亚",
+            "object_type": "Place",
+            "evidence": "大熊猫曾广泛分布于中国长江、黄河和珠江三大流域，包括从北京附近周口店至两广以及附近的东南亚地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "秦岭山系",
+            "object_type": "Habitat",
+            "evidence": "而现在我们只能在秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系找到它们。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "岷山山系",
+            "object_type": "Habitat",
+            "evidence": "而现在我们只能在秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系找到它们。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "邛崃山系",
+            "object_type": "Habitat",
+            "evidence": "而现在我们只能在秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系找到它们。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "凉山",
+            "object_type": "Habitat",
+            "evidence": "而现在我们只能在秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系找到它们。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "大相岭山系",
+            "object_type": "Habitat",
+            "evidence": "而现在我们只能在秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系找到它们。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "小相岭山系",
+            "object_type": "Habitat",
+            "evidence": "而现在我们只能在秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系找到它们。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "四川",
+            "object_type": "Place",
+            "evidence": "栖息地横跨川、陕、甘3省的49个县"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "陕西",
+            "object_type": "Place",
+            "evidence": "栖息地横跨川、陕、甘3省的49个县"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "甘肃",
+            "object_type": "Place",
+            "evidence": "栖息地横跨川、陕、甘3省的49个县"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "49个县",
+            "object_type": "Place",
+            "evidence": "栖息地横跨川、陕、甘3省的49个县"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野生种群数量",
+            "object": "1864只",
+            "object_type": "Other",
+            "evidence": "据第四次全国大熊猫野外种群调查结果，野生大熊猫仅有1864只，其中大约75%分布于四川境内。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "四川境内分布比例",
+            "object": "75%",
+            "object_type": "Other",
+            "evidence": "据第四次全国大熊猫野外种群调查结果，野生大熊猫仅有1864只，其中大约75%分布于四川境内。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "栖息地面积",
+            "object": "258万公顷",
+            "object_type": "Other",
+            "evidence": "栖息地面积258万公顷。"
+          },
+          {
+            "subject": "中国",
+            "predicate": "大熊猫自然保护区数量",
+            "object": "67个",
+            "object_type": "Other",
+            "evidence": "截止2014年，全国已建立大熊猫自然保护区67个，比三调时增加27个。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "栖息地未受保护区覆盖比例",
+            "object": "46.2%",
+            "object_type": "Other",
+            "evidence": "但仍有46.2%的栖息地、33.2%的种群仍然在自然保护区体系外。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "种群未受保护区覆盖比例",
+            "object": "33.2%",
+            "object_type": "Other",
+            "evidence": "但仍有46.2%的栖息地、33.2%的种群仍然在自然保护区体系外。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养种群数量",
+            "object": "633只",
+            "object_type": "Other",
+            "evidence": "截止2020年，全世界圈养单位共圈养熊猫633只，成都大熊猫繁育研究基地圈养熊猫215只。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "成都大熊猫繁育研究基地圈养数量",
+            "object": "215只",
+            "object_type": "Other",
+            "evidence": "截止2020年，全世界圈养单位共圈养熊猫633只，成都大熊猫繁育研究基地圈养熊猫215只。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养单位",
+            "object": "卧龙中国保护大熊猫研究中心",
+            "object_type": "Place",
+            "evidence": "能够经常维持10只以上饲养种群的单位目前仅有卧龙中国保护大熊猫研究中心、成都大熊猫繁育研究基地、陕西省珍惜野生动物抢救饲养研究中心和北京动物园4家。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养单位",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "能够经常维持10只以上饲养种群的单位目前仅有卧龙中国保护大熊猫研究中心、成都大熊猫繁育研究基地、陕西省珍惜野生动物抢救饲养研究中心和北京动物园4家。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养单位",
+            "object": "陕西省珍惜野生动物抢救饲养研究中心",
+            "object_type": "Place",
+            "evidence": "能够经常维持10只以上饲养种群的单位目前仅有卧龙中国保护大熊猫研究中心、成都大熊猫繁育研究基地、陕西省珍惜野生动物抢救饲养研究中心和北京动物园4家。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养单位",
+            "object": "北京动物园",
+            "object_type": "Place",
+            "evidence": "能够经常维持10只以上饲养种群的单位目前仅有卧龙中国保护大熊猫研究中心、成都大熊猫繁育研究基地、陕西省珍惜野生动物抢救饲养研究中心和北京动物园4家。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养单位",
+            "object": "日本和歌山白浜野生动物园",
+            "object_type": "Place",
+            "evidence": "此外，在日本和歌山白浜野生动物园、美国亚特兰大动物园等40余家圈养保护机构中也生活有大熊猫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养单位",
+            "object": "美国亚特兰大动物园",
+            "object_type": "Place",
+            "evidence": "此外，在日本和歌山白浜野生动物园、美国亚特兰大动物园等40余家圈养保护机构中也生活有大熊猫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "历史分布覆盖",
+            "object": "长江流域、黄河流域、珠江流域、北京周口店、两广、东南亚",
+            "object_type": "Habitat",
+            "evidence": "大熊猫曾广泛分布于中国长江、黄河和珠江三大流域，包括从北京附近周口店至两广以及附近的东南亚地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "现今主要分布于",
+            "object": "秦岭山系、岷山山系、邛崃山系、凉山山系、大相岭山系、小相岭山系",
+            "object_type": "Habitat",
+            "evidence": "而现在我们只能在秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系找到它们。"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "第四次全国调查野生数量为",
+            "object": "1864只",
+            "object_type": "Person",
+            "evidence": "据第四次全国大熊猫野外种群调查结果，野生大熊猫仅有1864只"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "野生个体中分布于四川的比例约为",
+            "object": "75%",
+            "object_type": "Person",
+            "evidence": "其中大约75%分布于四川境内。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "栖息地横跨",
+            "object": "3省49县",
+            "object_type": "Place",
+            "evidence": "栖息地横跨川、陕、甘3省的49个县"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "栖息地总面积为",
+            "object": "258万公顷",
+            "object_type": "Habitat",
+            "evidence": "栖息地面积258万公顷。"
+          },
+          {
+            "subject": "大熊猫自然保护区体系",
+            "predicate": "2014年全国大熊猫自然保护区数量为",
+            "object": "67个",
+            "object_type": "Place",
+            "evidence": "截止2014年，全国已建立大熊猫自然保护区67个"
+          },
+          {
+            "subject": "大熊猫自然保护区体系",
+            "predicate": "与三调相比保护区数量增加",
+            "object": "27个",
+            "object_type": "Place",
+            "evidence": "比三调时增加27个。"
+          },
+          {
+            "subject": "大熊猫栖息地和种群",
+            "predicate": "仍在保护区体系外的比例为",
+            "object": "46.2%的栖息地、33.2%的种群",
+            "object_type": "Habitat",
+            "evidence": "但仍有46.2%的栖息地、33.2%的种群仍然在自然保护区体系外。"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "2020年全球圈养大熊猫总数为",
+            "object": "633只",
+            "object_type": "Person",
+            "evidence": "截止2020年，全世界圈养单位共圈养熊猫633只"
+          },
+          {
+            "subject": "成都大熊猫繁育研究基地",
+            "predicate": "成都基地圈养数量为",
+            "object": "215只",
+            "object_type": "Person",
+            "evidence": "成都大熊猫繁育研究基地圈养熊猫215只。"
+          },
+          {
+            "subject": "圈养单位",
+            "predicate": "能稳定维持10只以上饲养种群的单位包括",
+            "object": "卧龙中国保护大熊猫研究中心、成都大熊猫繁育研究基地、陕西省珍惜野生动物抢救饲养研究中心、北京动物园",
+            "object_type": "Place",
+            "evidence": "能够经常维持10只以上饲养种群的单位目前仅有卧龙中国保护大熊猫研究中心、成都大熊猫繁育研究基地、陕西省珍惜野生动物抢救饲养研究中心和北京动物园4家。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "第四次全国调查",
+          "2014年",
+          "2020年"
+        ],
+        "人物": [],
+        "地点": [
+          "北京周口店",
+          "两广",
+          "东南亚",
+          "四川",
+          "陕西",
+          "甘肃",
+          "川陕甘3省",
+          "49个县",
+          "日本和歌山白浜野生动物园",
+          "美国亚特兰大动物园",
+          "川",
+          "陕",
+          "甘"
+        ],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】伴生动物 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】伴生动物 - 成都大熊猫繁育研究基地.md",
+      "topic": "生态关系",
+      "extracted": {
+        "topic": "生态关系",
+        "times": [
+          "一百万到几百万年以前"
+        ],
+        "person_entities": [],
+        "place_entities": [
+          "我国西南高山深谷"
+        ],
+        "panda_aliases": [],
+        "companion_species": [
+          "金丝猴",
+          "小熊猫",
+          "林麝",
+          "羚牛",
+          "血雉",
+          "红腹锦鸡"
+        ],
+        "predator_species": [
+          "金猫",
+          "豹",
+          "豺",
+          "狼",
+          "黄喉貂"
+        ],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "金丝猴",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "小熊猫",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "林麝",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "羚牛",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "血雉",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "红腹锦鸡",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "共同栖息于",
+            "object": "同一环境",
+            "object_type": "Habitat",
+            "evidence": "这些珍贵动物基本上都与熊猫生活在同一环境中。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "演化起源时间",
+            "object": "一百万到几百万年以前",
+            "object_type": "Other",
+            "evidence": "她们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "演化起源时间",
+            "object": "一百万到几百万年以前",
+            "object_type": "Other",
+            "evidence": "她们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "演化起源时间",
+            "object": "一百万到几百万年以前",
+            "object_type": "Other",
+            "evidence": "她们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "林麝",
+            "predicate": "演化起源时间",
+            "object": "一百万到几百万年以前",
+            "object_type": "Other",
+            "evidence": "她们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "羚牛",
+            "predicate": "演化起源时间",
+            "object": "一百万到几百万年以前",
+            "object_type": "Other",
+            "evidence": "她们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "血雉",
+            "predicate": "演化起源时间",
+            "object": "一百万到几百万年以前",
+            "object_type": "Other",
+            "evidence": "她们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "红腹锦鸡",
+            "predicate": "演化起源时间",
+            "object": "一百万到几百万年以前",
+            "object_type": "Other",
+            "evidence": "她们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "依赖栖息地幸存",
+            "object": "我国西南高山深谷",
+            "object_type": "Habitat",
+            "evidence": "她们都有效地借助于我国西南高山深谷的有利地形而幸存至今。"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "依赖栖息地幸存",
+            "object": "我国西南高山深谷",
+            "object_type": "Habitat",
+            "evidence": "她们都有效地借助于我国西南高山深谷的有利地形而幸存至今。"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "依赖栖息地幸存",
+            "object": "我国西南高山深谷",
+            "object_type": "Habitat",
+            "evidence": "她们都有效地借助于我国西南高山深谷的有利地形而幸存至今。"
+          },
+          {
+            "subject": "林麝",
+            "predicate": "依赖栖息地幸存",
+            "object": "我国西南高山深谷",
+            "object_type": "Habitat",
+            "evidence": "她们都有效地借助于我国西南高山深谷的有利地形而幸存至今。"
+          },
+          {
+            "subject": "羚牛",
+            "predicate": "依赖栖息地幸存",
+            "object": "我国西南高山深谷",
+            "object_type": "Habitat",
+            "evidence": "她们都有效地借助于我国西南高山深谷的有利地形而幸存至今。"
+          },
+          {
+            "subject": "血雉",
+            "predicate": "依赖栖息地幸存",
+            "object": "我国西南高山深谷",
+            "object_type": "Habitat",
+            "evidence": "她们都有效地借助于我国西南高山深谷的有利地形而幸存至今。"
+          },
+          {
+            "subject": "红腹锦鸡",
+            "predicate": "依赖栖息地幸存",
+            "object": "我国西南高山深谷",
+            "object_type": "Habitat",
+            "evidence": "她们都有效地借助于我国西南高山深谷的有利地形而幸存至今。"
+          },
+          {
+            "subject": "大熊猫与伴生动物",
+            "predicate": "生态位分化机制",
+            "object": "营养分工",
+            "object_type": "Behavior",
+            "evidence": "通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "大熊猫与伴生动物",
+            "predicate": "生态位分化机制",
+            "object": "昼夜活动参差协调",
+            "object_type": "Behavior",
+            "evidence": "通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "大熊猫与伴生动物",
+            "predicate": "生态位分化机制",
+            "object": "季节活动参差协调",
+            "object_type": "Behavior",
+            "evidence": "通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "大熊猫与伴生动物",
+            "predicate": "种间联系纽带",
+            "object": "食物",
+            "object_type": "Other",
+            "evidence": "通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "天敌",
+            "object": "金猫",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "天敌",
+            "object": "豹",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "天敌",
+            "object": "豺",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "天敌",
+            "object": "狼",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "天敌",
+            "object": "黄喉貂",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "易受攻击阶段",
+            "object": "幼仔",
+            "object_type": "Biology",
+            "evidence": "但这些动物通常只袭击大熊猫中的幼仔和病弱年老者"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "易受攻击阶段",
+            "object": "病弱年老者",
+            "object_type": "Biology",
+            "evidence": "但这些动物通常只袭击大熊猫中的幼仔和病弱年老者"
+          },
+          {
+            "subject": "金猫",
+            "predicate": "天敌威胁豁免状态",
+            "object": "成年的健康大熊猫",
+            "object_type": "Biology",
+            "evidence": "因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏，对成年的健康大熊猫并不构成威胁。"
+          },
+          {
+            "subject": "豹",
+            "predicate": "天敌威胁豁免状态",
+            "object": "成年的健康大熊猫",
+            "object_type": "Biology",
+            "evidence": "因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏，对成年的健康大熊猫并不构成威胁。"
+          },
+          {
+            "subject": "豺",
+            "predicate": "天敌威胁豁免状态",
+            "object": "成年的健康大熊猫",
+            "object_type": "Biology",
+            "evidence": "因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏，对成年的健康大熊猫并不构成威胁。"
+          },
+          {
+            "subject": "狼",
+            "predicate": "天敌威胁豁免状态",
+            "object": "成年的健康大熊猫",
+            "object_type": "Biology",
+            "evidence": "因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏，对成年的健康大熊猫并不构成威胁。"
+          },
+          {
+            "subject": "黄喉貂",
+            "predicate": "天敌威胁豁免状态",
+            "object": "成年的健康大熊猫",
+            "object_type": "Biology",
+            "evidence": "因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏，对成年的健康大熊猫并不构成威胁。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_companion_animal_of",
+            "object": "金丝猴",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_companion_animal_of",
+            "object": "小熊猫",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_companion_animal_of",
+            "object": "林麝",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_companion_animal_of",
+            "object": "羚牛",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_companion_animal_of",
+            "object": "血雉",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_companion_animal_of",
+            "object": "红腹锦鸡",
+            "object_type": "Species",
+            "evidence": "大熊猫的伴生动物有金丝猴，小熊猫，林麝、羚牛、血雉，红腹锦鸡等。"
+          },
+          {
+            "subject": "伴生动物",
+            "predicate": "has_evolutionary_age_of",
+            "object": "一百万到几百万年",
+            "object_type": "Treatment",
+            "evidence": "从自然历史源源上来看，她们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "伴生动物",
+            "predicate": "exhibits_niche_partitioning_in",
+            "object": "空间",
+            "object_type": "Habitat",
+            "evidence": "她们通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "伴生动物",
+            "predicate": "exhibits_niche_partitioning_in",
+            "object": "营养",
+            "object_type": "Disease",
+            "evidence": "她们通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "伴生动物",
+            "predicate": "exhibits_niche_partitioning_in",
+            "object": "昼夜活动",
+            "object_type": "Behavior",
+            "evidence": "她们通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "伴生动物",
+            "predicate": "exhibits_niche_partitioning_in",
+            "object": "季节",
+            "object_type": "Treatment",
+            "evidence": "她们通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_predator_of",
+            "object": "金猫",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_predator_of",
+            "object": "豹",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_predator_of",
+            "object": "豺",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_predator_of",
+            "object": "狼",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "is_predator_of",
+            "object": "黄喉貂",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等。"
+          },
+          {
+            "subject": "敌害动物",
+            "predicate": "preys_on",
+            "object": "幼仔",
+            "object_type": "Species",
+            "evidence": "但这些动物通常只袭击大熊猫中的幼仔和病弱年老者"
+          },
+          {
+            "subject": "敌害动物",
+            "predicate": "preys_on",
+            "object": "病弱年老者",
+            "object_type": "Species",
+            "evidence": "但这些动物通常只袭击大熊猫中的幼仔和病弱年老者"
+          },
+          {
+            "subject": "敌害动物",
+            "predicate": "is_not_threatened_by",
+            "object": "成年的健康大熊猫",
+            "object_type": "Species",
+            "evidence": "因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏，对成年的健康大熊猫并不构成威胁。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "can_injure_humans",
+            "object": "被激怒的圈养大熊猫",
+            "object_type": "Species",
+            "evidence": "动物园里貌似温顺憨态的大熊猫一旦被激怒，也有伤人事件发生。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "一百万到几百万年以前"
+        ],
+        "人物": [],
+        "地点": [
+          "我国西南高山深谷"
+        ],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】消化 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】消化 - 成都大熊猫繁育研究基地.md",
+      "topic": "生理构造",
+      "extracted": {
+        "topic": "生理构造",
+        "times": [
+          "5~13个小时",
+          "24小时"
+        ],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [
+          "较短消化道",
+          "单室胃",
+          "无盲肠",
+          "锋利犬齿",
+          "锋利爪",
+          "较发达肉垫",
+          "缺乏消化纤维素的微生物",
+          "食物在消化道停留5~13小时",
+          "营养吸收率不足17%",
+          "消化道短",
+          "缺乏纤维素降解微生物",
+          "消化率不足17%",
+          "食物体内停留5~13小时"
+        ],
+        "behavior_terms": [
+          "急促进食",
+          "积聚竹叶后吞咽",
+          "选择最营养部位采食",
+          "减少社会活动",
+          "减小活动范围",
+          "缩短怀孕期",
+          "积聚竹叶后一起吃",
+          "只选择竹子最营养的部分"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [
+          "缩短怀孕期"
+        ],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [
+          "竹子",
+          "竹叶",
+          "竹子最营养的部分"
+        ],
+        "food_parts": [
+          "竹叶",
+          "竹子最营养的部分"
+        ],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "肉食类动物",
+          "植食性动物"
+        ],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "较短消化道",
+            "object_type": "Biology",
+            "evidence": "大熊猫的消化道保留了祖先的特性，与肉食类动物相似，如相对较短的消化道、锋利的犬齿、单室胃，没有盲肠以及相对锋利的爪和较发达的肉垫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "锋利犬齿",
+            "object_type": "Biology",
+            "evidence": "大熊猫的消化道保留了祖先的特性，与肉食类动物相似，如相对较短的消化道、锋利的犬齿、单室胃，没有盲肠以及相对锋利的爪和较发达的肉垫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "单室胃",
+            "object_type": "Biology",
+            "evidence": "大熊猫的消化道保留了祖先的特性，与肉食类动物相似，如相对较短的消化道、锋利的犬齿、单室胃，没有盲肠以及相对锋利的爪和较发达的肉垫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "无盲肠",
+            "object_type": "Biology",
+            "evidence": "大熊猫的消化道保留了祖先的特性，与肉食类动物相似，如相对较短的消化道、锋利的犬齿、单室胃，没有盲肠以及相对锋利的爪和较发达的肉垫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "锋利爪",
+            "object_type": "Biology",
+            "evidence": "大熊猫的消化道保留了祖先的特性，与肉食类动物相似，如相对较短的消化道、锋利的犬齿、单室胃，没有盲肠以及相对锋利的爪和较发达的肉垫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "较发达肉垫",
+            "object_type": "Biology",
+            "evidence": "大熊猫的消化道保留了祖先的特性，与肉食类动物相似，如相对较短的消化道、锋利的犬齿、单室胃，没有盲肠以及相对锋利的爪和较发达的肉垫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "食物在消化道停留时间",
+            "object": "5~13个小时",
+            "object_type": "Other",
+            "evidence": "大熊猫5~13个小时就会排出粪便"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "缺乏消化纤维素的微生物",
+            "object_type": "Biology",
+            "evidence": "它的内脏内缺乏微生物来帮助它消化食物里面粗糙的纤维素。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "营养吸收率",
+            "object": "不足17%",
+            "object_type": "Other",
+            "evidence": "大多数的植食性动物能消化它们食物的80％，而大熊猫不足17％。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "采用",
+            "object": "积聚竹叶后吞咽",
+            "object_type": "Behavior",
+            "evidence": "大熊猫们练就了一种本事，在最短的时间内吃最多的食物。它们将竹叶存在嘴边，积聚到一定数量后再一起吃掉。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "采用",
+            "object": "选择最营养部位采食",
+            "object_type": "Behavior",
+            "evidence": "在这种急促的进食中，大熊猫只选择竹子最营养的部分。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "采用",
+            "object": "减少社会活动",
+            "object_type": "Behavior",
+            "evidence": "大熊猫为了节约能量，尽量减少社会活动，减小活动范围，缩短怀孕期。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "采用",
+            "object": "减小活动范围",
+            "object_type": "Behavior",
+            "evidence": "大熊猫为了节约能量，尽量减少社会活动，减小活动范围，缩短怀孕期。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "采用",
+            "object": "缩短怀孕期",
+            "object_type": "Behavior",
+            "evidence": "大熊猫为了节约能量，尽量减少社会活动，减小活动范围，缩短怀孕期。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "消化道结构相似于",
+            "object": "肉食类动物",
+            "object_type": "Biology",
+            "evidence": "大熊猫的消化道保留了祖先的特性，与肉食类动物相似，如相对较短的消化道、锋利的犬齿、单室胃，没有盲肠以及相对锋利的爪和较发达的肉垫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "消化道长度短于",
+            "object": "典型植食动物",
+            "object_type": "Biology",
+            "evidence": "与其他的植食性动物比较，大熊猫的消化道很短，也就意味着食物不能够在消化道里停留较长的时间，被吸收的营养较少。"
+          },
+          {
+            "subject": "大熊猫（5~13小时）",
+            "predicate": "食物体内停留时长显著短于",
+            "object": "24小时",
+            "object_type": "Treatment",
+            "evidence": "大熊猫5~13个小时就会排出粪便，马或牛的食物要在它们体内停留24小时。"
+          },
+          {
+            "subject": "大熊猫消化道",
+            "predicate": "缺乏",
+            "object": "降解纤维素的微生物",
+            "object_type": "Biology",
+            "evidence": "它的内脏内缺乏微生物来帮助它消化食物里面粗糙的纤维素。"
+          },
+          {
+            "subject": "大熊猫（不足17%）",
+            "predicate": "消化率远低于",
+            "object": "80%",
+            "object_type": "Treatment",
+            "evidence": "大多数的植食性动物能消化它们食物的80％，而大熊猫不足17％。"
+          },
+          {
+            "subject": "消化系统不足",
+            "predicate": "用以弥补",
+            "object": "在最短时间内吃最多食物",
+            "object_type": "Behavior",
+            "evidence": "为了弥补它们在消化系统方面的不足，大熊猫们练就了一种本事，在最短的时间内吃最多的食物。"
+          },
+          {
+            "subject": "积聚竹叶后一起吃",
+            "predicate": "体现",
+            "object": "批量吞咽策略",
+            "object_type": "Behavior",
+            "evidence": "它们将竹叶存在嘴边，积聚到一定数量后再一起吃掉。"
+          },
+          {
+            "subject": "只选择竹子最营养的部分",
+            "predicate": "体现",
+            "object": "营养最大化策略",
+            "object_type": "Behavior",
+            "evidence": "在这种急促的进食中，大熊猫只选择竹子最营养的部分。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "是节约能量的三项行为策略",
+            "object": "减少社会活动；减小活动范围；缩短怀孕期",
+            "object_type": "Behavior",
+            "evidence": "大熊猫为了节约能量，尽量减少社会活动，减小活动范围，缩短怀孕期。"
+          },
+          {
+            "subject": "缩短怀孕期",
+            "predicate": "与能量管理相关的方式为",
+            "object": "降低妊娠期能量消耗",
+            "object_type": "Biology",
+            "evidence": "大熊猫为了节约能量，尽量减少社会活动，减小活动范围，缩短怀孕期。这些都能帮助它们保持这样一个硕大的身体，减少能量散失。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "5~13个小时",
+          "24小时"
+        ],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "extracted": {
+        "topic": "行为习性",
+        "times": [
+          "发情季节",
+          "非发情季节"
+        ],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "高山竹林",
+          "薄雾弥漫的竹林",
+          "高山",
+          "茂密的薄雾弥漫的竹林"
+        ],
+        "biology_terms": [
+          "肛周腺体分泌物",
+          "尿液",
+          "尿液和肛周腺分泌物的混合",
+          "肛周腺体",
+          "圆脸",
+          "短尾巴",
+          "棕毛",
+          "冠部",
+          "耳朵"
+        ],
+        "behavior_terms": [
+          "气味标记",
+          "声音交流",
+          "沉默（无发声）",
+          "晃动头部",
+          "嘴巴半张",
+          "剥树皮",
+          "留下抓痕",
+          "互相回避",
+          "聚到一起",
+          "沉默",
+          "肛周腺分泌物",
+          "尿液",
+          "留抓痕"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "发情季节",
+          "非发情季节"
+        ],
+        "reproduction_terms": [
+          "发情季节",
+          "雌性大熊猫发情期气味",
+          "吸引雄性",
+          "交配准备",
+          "雌性大熊猫做好交配准备"
+        ],
+        "communication_terms": [
+          "气味标记",
+          "声音交流",
+          "沉默（无发声）",
+          "可见信号",
+          "沉默"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "主要交流方式",
+            "object": "气味标记",
+            "object_type": "Behavior",
+            "evidence": "大熊猫大多数的交流都是通过留在栖息地的气味标记来实现的。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "触发条件",
+            "object": "发情季节",
+            "object_type": "Biology",
+            "evidence": "当它们想见面的时候，通常是发情季节，就会通过气味标记找到彼此。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "行为转换",
+            "object": "声音交流",
+            "object_type": "Behavior",
+            "evidence": "一旦它们见面以后，就转为声音交流。"
+          },
+          {
+            "subject": "声音交流",
+            "predicate": "功能",
+            "object": "情绪表达（多情到生气）",
+            "object_type": "Behavior",
+            "evidence": "大熊猫依靠它们丰富的“语言”来表达从多情到生气的情绪。"
+          },
+          {
+            "subject": "友好/玩耍状态",
+            "predicate": "行为表现",
+            "object": "无发声（沉默）",
+            "object_type": "Behavior",
+            "evidence": "当大熊猫在玩，或是简单地表示友好，没有交配或好斗的想法的时候，它们不会发出任何声音。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "功能",
+            "object": "标记领土",
+            "object_type": "Behavior",
+            "evidence": "用气味来标记领土是大熊猫在竹林里保持和平的秘诀。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "使用物质",
+            "object": "肛周腺体的分泌物",
+            "object_type": "Biology",
+            "evidence": "大熊猫将肛周腺体的分泌物涂在柱子、树桩、墙上、地上以及它们经常经过的地方。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "标记位置",
+            "object": "柱子、树桩、墙上、地上、经常经过的地方",
+            "object_type": "Place",
+            "evidence": "大熊猫将肛周腺体的分泌物涂在柱子、树桩、墙上、地上以及它们经常经过的地方。"
+          },
+          {
+            "subject": "陌生熊猫气味",
+            "predicate": "响应方式",
+            "object": "回避行为",
+            "object_type": "Behavior",
+            "evidence": "在非发情季节的时候，一闻到陌生熊猫的气味它们就会走开。"
+          },
+          {
+            "subject": "雌性大熊猫发情期气味",
+            "predicate": "功能",
+            "object": "吸引雄性",
+            "object_type": "Behavior",
+            "evidence": "发情季节的时候，一只雌性大熊猫的气味可能就表示她已经做好交配的准备，并且希望吸引雄性前来。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "使用物质",
+            "object": "尿液",
+            "object_type": "Biology",
+            "evidence": "大熊猫有好几种做标记的方式。它们经常用尿液，或尿液和肛周腺分泌物的混合来做标记。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "使用物质",
+            "object": "尿液和肛周腺分泌物的混合",
+            "object_type": "Biology",
+            "evidence": "大熊猫有好几种做标记的方式。它们经常用尿液，或尿液和肛周腺分泌物的混合来做标记。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "伴随动作",
+            "object": "晃动头部",
+            "object_type": "Behavior",
+            "evidence": "当它们做标记的时候，它们会晃动头部，嘴巴半张。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "伴随动作",
+            "object": "嘴巴半张",
+            "object_type": "Behavior",
+            "evidence": "当它们做标记的时候，它们会晃动头部，嘴巴半张。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "强化行为",
+            "object": "剥树皮",
+            "object_type": "Behavior",
+            "evidence": "做了标记以后，它们会在做标记的地方剥掉树皮，或留下抓痕，以引起其他大熊猫的注意。"
+          },
+          {
+            "subject": "气味标记",
+            "predicate": "强化行为",
+            "object": "留下抓痕",
+            "object_type": "Behavior",
+            "evidence": "做了标记以后，它们会在做标记的地方剥掉树皮，或留下抓痕，以引起其他大熊猫的注意。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "栖息环境",
+            "object": "高山竹林",
+            "object_type": "Habitat",
+            "evidence": "大熊猫常年生活在高山上茂密的薄雾弥漫的竹林里面、看不见彼此而造成的。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "栖息环境",
+            "object": "薄雾弥漫的竹林",
+            "object_type": "Habitat",
+            "evidence": "大熊猫常年生活在高山上茂密的薄雾弥漫的竹林里面、看不见彼此而造成的。"
+          },
+          {
+            "subject": "可见信号对大熊猫意义较小",
+            "predicate": "导致可见信号失效的环境条件",
+            "object": "高山、茂密的薄雾弥漫的竹林",
+            "object_type": "Habitat",
+            "evidence": "它们的圆脸缺乏表情，尾巴很短，没有冠部或棕毛来展开，耳朵可以竖起放下但也不够灵活。这都是因为大熊猫常年生活在高山上茂密的薄雾弥漫的竹林里面、看不见彼此而造成的。"
+          },
+          {
+            "subject": "可见信号对大熊猫意义较小",
+            "predicate": "生理限制导致可见信号无效",
+            "object": "圆脸缺乏表情；短尾巴；无冠部或棕毛展开能力；耳朵不够灵活",
+            "object_type": "Biology",
+            "evidence": "对大熊猫种群来说，可以看见的信号对它们来是毫无意义的：它们的圆脸缺乏表情，尾巴很短，没有冠部或棕毛来展开，耳朵可以竖起放下但也不够灵活。这都是因为大熊猫常年生活在高山上茂密的薄雾弥漫的竹林里面、看不见彼此而造成的。"
+          },
+          {
+            "subject": "大熊猫主要依赖气味标记交流",
+            "predicate": "主要依赖气味标记交流的原因",
+            "object": "栖息地",
+            "object_type": "Habitat",
+            "evidence": "大熊猫大多数的交流都是通过留在栖息地的气味标记来实现的。"
+          },
+          {
+            "subject": "发情季与非发情季对陌生气味的反应",
+            "predicate": "发情季与非发情季对陌生气味的反应差异",
+            "object": "非发情季节：回避陌生气味；发情季节：被雌性气味吸引",
+            "object_type": "Behavior",
+            "evidence": "在非发情季节的时候，一闻到陌生熊猫的气味它们就会走开。发情季节的时候，一只雌性大熊猫的气味可能就表示她已经做好交配的准备，并且希望吸引雄性前来。"
+          },
+          {
+            "subject": "气味标记通常涂抹位置",
+            "predicate": "气味标记涂抹位置",
+            "object": "柱子、树桩、墙上、地上、经常经过的地方",
+            "object_type": "Habitat",
+            "evidence": "大熊猫将肛周腺体的分泌物涂在柱子、树桩、墙上、地上以及它们经常经过的地方。"
+          },
+          {
+            "subject": "大熊猫利用气味标记实现和平共处",
+            "predicate": "利用气味标记实现和平共处的方式",
+            "object": "通过气味标记实现回避或聚集，避免直接接触",
+            "object_type": "Behavior",
+            "evidence": "用气味来标记领土是大熊猫在竹林里保持和平的秘诀。这些气味标记能让它们互相回避或聚到一起。"
+          },
+          {
+            "subject": "常见做标记材料",
+            "predicate": "常见做标记材料",
+            "object": "尿液；尿液和肛周腺分泌物的混合",
+            "object_type": "Behavior",
+            "evidence": "大熊猫有好几种做标记的方式。它们经常用尿液，或尿液和肛周腺分泌物的混合来做标记。"
+          },
+          {
+            "subject": "做标记时典型动作",
+            "predicate": "做标记时典型动作",
+            "object": "晃动头部；嘴巴半张",
+            "object_type": "Behavior",
+            "evidence": "当它们做标记的时候，它们会晃动头部，嘴巴半张。"
+          },
+          {
+            "subject": "标记后剥树皮/留抓痕的原因",
+            "predicate": "标记后剥树皮/留抓痕的目的",
+            "object": "剥掉树皮；留下抓痕",
+            "object_type": "Behavior",
+            "evidence": "做了标记以后，它们会在做标记的地方剥掉树皮，或留下抓痕，以引起其他大熊猫的注意。"
+          },
+          {
+            "subject": "转为声音交流的场景",
+            "predicate": "转为声音交流的场景",
+            "object": "发情季节见面后",
+            "object_type": "Behavior",
+            "evidence": "当它们想见面的时候，通常是发情季节，就会通过气味标记找到彼此。一旦它们见面以后，就转为声音交流。"
+          },
+          {
+            "subject": "沉默在大熊猫行为中的含义",
+            "predicate": "沉默在行为中的含义",
+            "object": "玩耍；表示友好；无交配或好斗意图",
+            "object_type": "Behavior",
+            "evidence": "沉默是另一种交流方式。当大熊猫在玩，或是简单地表示友好，没有交配或好斗的想法的时候，它们不会发出任何声音。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "发情季节",
+          "非发情季节"
+        ],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】生存环境 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】生存环境 - 成都大熊猫繁育研究基地.md",
+      "topic": "生存环境",
+      "extracted": {
+        "topic": "生存环境",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [
+          "长江上游",
+          "秦岭山系"
+        ],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "茂密竹林",
+          "坳沟",
+          "山腹洼地",
+          "河谷阶地",
+          "高山深谷",
+          "竹林"
+        ],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [
+          "人为的干扰",
+          "人为干扰"
+        ],
+        "food_items": [
+          "竹子"
+        ],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "栖息海拔范围",
+            "object": "1600米至3500米",
+            "object_type": "Other",
+            "evidence": "大熊猫不惧寒湿、从不冬眠，它们生活在海拔约1600米至3500米的茂密竹林里"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "长江上游",
+            "object_type": "Place",
+            "evidence": "大熊猫不惧寒湿、从不冬眠，它们生活在海拔约1600米至3500米的茂密竹林里，那里位于长江上游的高山深谷"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "栖息于",
+            "object": "高山深谷",
+            "object_type": "Habitat",
+            "evidence": "大熊猫不惧寒湿、从不冬眠，它们生活在海拔约1600米至3500米的茂密竹林里，那里位于长江上游的高山深谷"
+          },
+          {
+            "subject": "大熊猫生存环境",
+            "predicate": "气候特征",
+            "object": "温凉潮湿",
+            "object_type": "Other",
+            "evidence": "常年空气稀薄，云雾缭绕，为东南季风的迎风面，气候温凉潮湿，湿度常在80%以上，气温低于20摄氏度"
+          },
+          {
+            "subject": "大熊猫生存环境",
+            "predicate": "湿度范围",
+            "object": "80%以上",
+            "object_type": "Other",
+            "evidence": "常年空气稀薄，云雾缭绕，为东南季风的迎风面，气候温凉潮湿，湿度常在80%以上，气温低于20摄氏度"
+          },
+          {
+            "subject": "大熊猫生存环境",
+            "predicate": "气温上限",
+            "object": "低于20摄氏度",
+            "object_type": "Other",
+            "evidence": "常年空气稀薄，云雾缭绕，为东南季风的迎风面，气候温凉潮湿，湿度常在80%以上，气温低于20摄氏度"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "活动于",
+            "object": "坳沟",
+            "object_type": "Habitat",
+            "evidence": "大熊猫活动的区域多在坳沟、山腹洼地、河谷阶地等20以下的缓坡地形"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "活动于",
+            "object": "山腹洼地",
+            "object_type": "Habitat",
+            "evidence": "大熊猫活动的区域多在坳沟、山腹洼地、河谷阶地等20以下的缓坡地形"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "活动于",
+            "object": "河谷阶地",
+            "object_type": "Habitat",
+            "evidence": "大熊猫活动的区域多在坳沟、山腹洼地、河谷阶地等20以下的缓坡地形"
+          },
+          {
+            "subject": "大熊猫活动区域",
+            "predicate": "地形坡度限制",
+            "object": "20以下的缓坡地形",
+            "object_type": "Other",
+            "evidence": "大熊猫活动的区域多在坳沟、山腹洼地、河谷阶地等20以下的缓坡地形"
+          },
+          {
+            "subject": "大熊猫栖息地",
+            "predicate": "植被特征",
+            "object": "森林茂盛",
+            "object_type": "Biology",
+            "evidence": "这些地方森林茂盛，竹类生长良好，气温相对较为稳定，隐蔽条件良好，食物资源和水源都很丰富"
+          },
+          {
+            "subject": "大熊猫栖息地",
+            "predicate": "植被特征",
+            "object": "竹类生长良好",
+            "object_type": "Biology",
+            "evidence": "这些地方森林茂盛，竹类生长良好，气温相对较为稳定，隐蔽条件良好，食物资源和水源都很丰富"
+          },
+          {
+            "subject": "大熊猫栖息地",
+            "predicate": "微气候特征",
+            "object": "气温相对较为稳定",
+            "object_type": "Other",
+            "evidence": "这些地方森林茂盛，竹类生长良好，气温相对较为稳定，隐蔽条件良好，食物资源和水源都很丰富"
+          },
+          {
+            "subject": "大熊猫栖息地",
+            "predicate": "栖息地质量指标",
+            "object": "隐蔽条件良好",
+            "object_type": "Other",
+            "evidence": "这些地方森林茂盛，竹类生长良好，气温相对较为稳定，隐蔽条件良好，食物资源和水源都很丰富"
+          },
+          {
+            "subject": "野外大熊猫分布和密度",
+            "predicate": "影响因素",
+            "object": "竹子分布",
+            "object_type": "Other",
+            "evidence": "竹子、地形、水源的分布，是否有藏身处和哺育幼仔的巢穴以及山势等因素也会影响野外大熊猫的分布和密度"
+          },
+          {
+            "subject": "野外大熊猫分布和密度",
+            "predicate": "影响因素",
+            "object": "地形分布",
+            "object_type": "Other",
+            "evidence": "竹子、地形、水源的分布，是否有藏身处和哺育幼仔的巢穴以及山势等因素也会影响野外大熊猫的分布和密度"
+          },
+          {
+            "subject": "野外大熊猫分布和密度",
+            "predicate": "影响因素",
+            "object": "水源分布",
+            "object_type": "Other",
+            "evidence": "竹子、地形、水源的分布，是否有藏身处和哺育幼仔的巢穴以及山势等因素也会影响野外大熊猫的分布和密度"
+          },
+          {
+            "subject": "野外大熊猫分布和密度",
+            "predicate": "影响因素",
+            "object": "藏身处",
+            "object_type": "Other",
+            "evidence": "竹子、地形、水源的分布，是否有藏身处和哺育幼仔的巢穴以及山势等因素也会影响野外大熊猫的分布和密度"
+          },
+          {
+            "subject": "野外大熊猫分布和密度",
+            "predicate": "影响因素",
+            "object": "哺育幼仔的巢穴",
+            "object_type": "Other",
+            "evidence": "竹子、地形、水源的分布，是否有藏身处和哺育幼仔的巢穴以及山势等因素也会影响野外大熊猫的分布和密度"
+          },
+          {
+            "subject": "野外大熊猫分布和密度",
+            "predicate": "影响因素",
+            "object": "山势",
+            "object_type": "Other",
+            "evidence": "竹子、地形、水源的分布，是否有藏身处和哺育幼仔的巢穴以及山势等因素也会影响野外大熊猫的分布和密度"
+          },
+          {
+            "subject": "大熊猫分布",
+            "predicate": "主要影响因素",
+            "object": "人为的干扰",
+            "object_type": "Other",
+            "evidence": "人为的干扰是现今影响大熊猫分布的主要因素"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有生理特性",
+            "object": "不惧寒湿且不冬眠",
+            "object_type": "Behavior",
+            "evidence": "大熊猫不惧寒湿、从不冬眠"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "典型栖息海拔范围",
+            "object": "1600米至3500米",
+            "object_type": "Alias",
+            "evidence": "生活在海拔约1600米至3500米的茂密竹林里"
+          },
+          {
+            "subject": "大熊猫栖息地",
+            "predicate": "栖息地气候关键词",
+            "object": "温凉、潮湿、云雾缭绕、空气稀薄",
+            "object_type": "Habitat",
+            "evidence": "常年空气稀薄，云雾缭绕，为东南季风的迎风面，气候温凉潮湿，湿度常在80%以上，气温低于20摄氏度"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "活动区域地形坡度特点",
+            "object": "20°以下的缓坡",
+            "object_type": "Habitat",
+            "evidence": "活动的区域多在坳沟、山腹洼地、河谷阶地等20以下的缓坡地形"
+          },
+          {
+            "subject": "大熊猫活动区域",
+            "predicate": "常见微地形",
+            "object": "坳沟、山腹洼地、河谷阶地",
+            "object_type": "Habitat",
+            "evidence": "活动的区域多在坳沟、山腹洼地、河谷阶地等20以下的缓坡地形"
+          },
+          {
+            "subject": "竹子、地形、水源",
+            "predicate": "影响分布密度的因素",
+            "object": "竹子分布、地形适宜性、水源可及性共同正向影响分布密度",
+            "object_type": "Habitat",
+            "evidence": "竹子、地形、水源的分布，是否有藏身处和哺育幼仔的巢穴以及山势等因素也会影响野外大熊猫的分布和密度"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "藏身处和育幼巢穴对分布的影响",
+            "object": "存在藏身处和育幼巢穴是分布必要条件之一",
+            "object_type": "Habitat",
+            "evidence": "竹子、地形、水源的分布，是否有藏身处和哺育幼仔的巢穴以及山势等因素也会影响野外大熊猫的分布和密度"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "当前影响分布的主要人为因素",
+            "object": "人为干扰",
+            "object_type": "Habitat",
+            "evidence": "人为的干扰是现今影响大熊猫分布的主要因素"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [
+          "长江上游",
+          "秦岭山系"
+        ],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫的朋友 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫的朋友 - 成都大熊猫繁育研究基地.md",
+      "topic": "生态关系",
+      "extracted": {
+        "topic": "生态关系",
+        "times": [
+          "秋季",
+          "春夏",
+          "1869年",
+          "1870年",
+          "1年"
+        ],
+        "person_entities": [
+          "戴维",
+          "夏勒"
+        ],
+        "place_entities": [
+          "我国西南",
+          "喜马拉雅至横断山脉一带",
+          "四川西部",
+          "熊猫家园"
+        ],
+        "panda_aliases": [],
+        "companion_species": [
+          "金丝猴",
+          "扭角羚",
+          "小熊猫",
+          "毛冠鹿"
+        ],
+        "predator_species": [],
+        "habitats": [
+          "西南高山深谷",
+          "郁郁葱葱的树冠",
+          "森林、灌丛和草甸之间",
+          "密林和竹丛",
+          "高山深谷",
+          "平缓的阴坡",
+          "陡峭的阳坡"
+        ],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [
+          "竹叶",
+          "野樱桃",
+          "花揪",
+          "竹笋",
+          "幼芽嫩叶",
+          "丝状地衣松萝",
+          "块状的地衣",
+          "灌丛植物的芽、叶、树皮",
+          "青草",
+          "枯萎的竹叶",
+          "草类",
+          "小径竹笋",
+          "较大径的竹笋",
+          "竹子上部的枝叶",
+          "较低部位的竹叶"
+        ],
+        "food_parts": [
+          "竹子上部的枝叶",
+          "较低部位的竹叶",
+          "较大径的竹笋",
+          "小径竹笋",
+          "幼芽嫩叶",
+          "树皮",
+          "灌丛植物的芽、叶、树皮",
+          "竹叶",
+          "竹笋"
+        ],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "金丝猴",
+            "object_type": "Species",
+            "evidence": "熊猫的近邻主要有金丝猴、扭角羚、小熊猫、毛冠鹿等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "扭角羚",
+            "object_type": "Species",
+            "evidence": "熊猫的近邻主要有金丝猴、扭角羚、小熊猫、毛冠鹿等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "小熊猫",
+            "object_type": "Species",
+            "evidence": "熊猫的近邻主要有金丝猴、扭角羚、小熊猫、毛冠鹿等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伴生动物",
+            "object": "毛冠鹿",
+            "object_type": "Species",
+            "evidence": "熊猫的近邻主要有金丝猴、扭角羚、小熊猫、毛冠鹿等。"
+          },
+          {
+            "subject": "金丝猴、扭角羚、小熊猫、毛冠鹿、大熊猫",
+            "predicate": "演化起源时间",
+            "object": "一百万到几百万年以前",
+            "object_type": "Other",
+            "evidence": "它们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "金丝猴、扭角羚、小熊猫、毛冠鹿、大熊猫",
+            "predicate": "依赖栖息地幸存",
+            "object": "我国西南高山深谷",
+            "object_type": "Habitat",
+            "evidence": "它们都有效地借助于我国西南高山深谷的有利地形而幸存至今。"
+          },
+          {
+            "subject": "金丝猴、扭角羚、小熊猫、毛冠鹿、大熊猫",
+            "predicate": "生态位分化机制",
+            "object": "营养分工",
+            "object_type": "Behavior",
+            "evidence": "通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "金丝猴、扭角羚、小熊猫、毛冠鹿、大熊猫",
+            "predicate": "共栖分布",
+            "object": "同一区域",
+            "object_type": "Habitat",
+            "evidence": "通过长期共存，协调地共同生活于同一区域，但各自占有自己的空间，在营养上有分工，昼夜活动和季节上也参差协调，通过食物作为联系的纽带，组成一个较为稳定的动物群。"
+          },
+          {
+            "subject": "大熊猫与小熊猫",
+            "predicate": "生态位分化表现",
+            "object": "食物资源利用差异",
+            "object_type": "Behavior",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "小熊猫主食（秋季）",
+            "object": "野樱桃、花揪等各种野果",
+            "object_type": "Species",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "小熊猫优选采食部位",
+            "object": "小径竹笋",
+            "object_type": "Species",
+            "evidence": "大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "小熊猫优选采食部位",
+            "object": "较低部位的竹叶",
+            "object_type": "Species",
+            "evidence": "大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "小熊猫采食生境偏好",
+            "object": "陡峭的阳坡",
+            "object_type": "Habitat",
+            "evidence": "大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "金丝猴主要活动空间",
+            "object": "郁郁葱葱的树冠",
+            "object_type": "Habitat",
+            "evidence": "它们在熊猫家园里所占有的空间主要是在郁郁葱葱的树冠以及树的幼芽嫩叶，和挂着附生的丝状地衣松萝，以及树皮上附生的块状的衣等为食。"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "金丝猴食物来源",
+            "object": "幼芽嫩叶、丝状地衣松萝、块状的地衣",
+            "object_type": "Species",
+            "evidence": "它们在熊猫家园里所占有的空间主要是在郁郁葱葱的树冠以及树的幼芽嫩叶，和挂着附生的丝状地衣松萝，以及树皮上附生的块状的衣等为食。"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "行为协同功能",
+            "object": "警戒情报提供",
+            "object_type": "Behavior",
+            "evidence": "如发现异常的情况，会发出警报声，猴群听到立即鸦雀无声，同时也给视觉差的熊猫，提供了警戒的情报。"
+          },
+          {
+            "subject": "扭角羚",
+            "predicate": "扭角羚栖息地类型",
+            "object": "森林、灌丛和草甸之间",
+            "object_type": "Habitat",
+            "evidence": "又叫牛羚或扭角羚，是森林、灌丛和草甸之间的游民。"
+          },
+          {
+            "subject": "扭角羚",
+            "predicate": "扭角羚冬季集群规模",
+            "object": "上百的大群",
+            "object_type": "Other",
+            "evidence": "在冬季可结成上百的大群"
+          },
+          {
+            "subject": "扭角羚",
+            "predicate": "扭角羚食物组成",
+            "object": "灌丛植物的芽、叶、树皮、青草、枯萎的竹叶",
+            "object_type": "Species",
+            "evidence": "喜食许多灌丛植物的芽、叶、树皮以及各种青草，在冬季它们还吃熊猫不吃已枯萎的竹叶。"
+          },
+          {
+            "subject": "毛冠鹿",
+            "predicate": "毛冠鹿栖息地",
+            "object": "密林和竹丛",
+            "object_type": "Habitat",
+            "evidence": "毛冠鹿是密林和竹丛中以草类为食的君子"
+          },
+          {
+            "subject": "毛冠鹿",
+            "predicate": "毛冠鹿主食",
+            "object": "草类",
+            "object_type": "Species",
+            "evidence": "毛冠鹿是密林和竹丛中以草类为食的君子"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "是熊猫的近邻",
+            "object": "金丝猴、扭角羚、小熊猫、毛冠鹿",
+            "object_type": "Species",
+            "evidence": "熊猫的近邻主要有金丝猴、扭角羚、小熊猫、毛冠鹿等。"
+          },
+          {
+            "subject": "金丝猴、扭角羚、小熊猫、毛冠鹿",
+            "predicate": "演化历史可追溯至",
+            "object": "一百万到几百万年",
+            "object_type": "Treatment",
+            "evidence": "它们都是一百万到几百万年以前的古老动物。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "大熊猫主要采食竹叶的季节",
+            "object": "秋季",
+            "object_type": "Treatment",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "大熊猫主要采食较大径竹笋的季节",
+            "object": "春夏",
+            "object_type": "Treatment",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "小熊猫在秋季的主要食物",
+            "object": "野樱桃、花揪等各种野果",
+            "object_type": "Treatment",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "小熊猫主要采食的竹笋类型（区别于大熊猫）",
+            "object": "小径竹笋",
+            "object_type": "Treatment",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "大熊猫主要采食的竹子部位",
+            "object": "竹子上部的枝叶",
+            "object_type": "Treatment",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "小熊猫主要采食的竹子部位",
+            "object": "较低部位的竹叶",
+            "object_type": "Treatment",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "大熊猫主要采食地形",
+            "object": "平缓的阴坡",
+            "object_type": "Treatment",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "小熊猫主要采食地形",
+            "object": "陡峭的阳坡",
+            "object_type": "Treatment",
+            "evidence": "大熊猫在秋季爱吃竹叶，这时小熊猫却主要是吃野樱桃、花揪等各种野果；大熊猫在春夏爱吃较大径的竹笋，而小熊猫则主要吃大熊猫不吃的小径竹笋；大熊猫多吃竹子上部的枝叶，小熊猫采食在较低部位的竹叶；大熊猫采食地点多在平缓的阴坡，而小熊猫多在陡峭的阳坡采食。"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "被称作",
+            "object": "栖于树上的金发女郎",
+            "object_type": "Alias",
+            "evidence": "金丝猴是栖于树上的金发女郎。"
+          },
+          {
+            "subject": "戴维",
+            "predicate": "戴维发现大熊猫与发现金丝猴的时间差",
+            "object": "1年",
+            "object_type": "Treatment",
+            "evidence": "法国神父戴维不仅在1869年发现了大熊猫，也在1870年发现了它。"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "金丝猴面部形态特征",
+            "object": "鼻孔向上",
+            "object_type": "Biology",
+            "evidence": "它的科学名，由法国巴黎自然博物馆主任，根据一个著名的俄国美女而订的。这个美丽的金发女郎，有个唯一的缺陷是鼻孔有点向上。"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "间接帮助大熊猫的方式",
+            "object": "通过放哨猴发出警报声为视觉较差的大熊猫提供警戒情报",
+            "object_type": "Behavior",
+            "evidence": "她们的视觉很灵敏，在一群猴中，常有几个雄性的放哨猴，如发现异常的情况，会发出警报声，猴群听到立即鸦雀无声，同时也给视觉差的熊猫，提供了警戒的情报。"
+          },
+          {
+            "subject": "扭角羚",
+            "predicate": "被称作",
+            "object": "六不象",
+            "object_type": "Alias",
+            "evidence": "美国著名动物学家夏勒称它为“六不象”"
+          },
+          {
+            "subject": "扭角羚",
+            "predicate": "扭角羚冬季取食但大熊猫不取食的食物",
+            "object": "已枯萎的竹叶",
+            "object_type": "Treatment",
+            "evidence": "在冬季它们还吃熊猫不吃已枯萎的竹叶。"
+          },
+          {
+            "subject": "毛冠鹿",
+            "predicate": "当地俗称",
+            "object": "青鹿",
+            "object_type": "Alias",
+            "evidence": "毛冠鹿是密林和竹丛中以草类为食的君子，当地村民叫它做青鹿"
+          },
+          {
+            "subject": "毛冠鹿",
+            "predicate": "主要食性",
+            "object": "草类",
+            "object_type": "Treatment",
+            "evidence": "毛冠鹿是密林和竹丛中以草类为食的君子，当地村民叫它做青鹿"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "秋季",
+          "春夏",
+          "1869年",
+          "1870年",
+          "1年"
+        ],
+        "人物": [
+          "戴维",
+          "夏勒"
+        ],
+        "地点": [
+          "我国西南",
+          "喜马拉雅至横断山脉一带",
+          "四川西部",
+          "熊猫家园"
+        ],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】疾病 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】疾病 - 成都大熊猫繁育研究基地.md",
+      "topic": "疾病健康",
+      "extracted": {
+        "topic": "疾病健康",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [
+          "熊猫犬瘟热病",
+          "细小病毒感染",
+          "真菌感染",
+          "急性胃肠炎",
+          "呕吐",
+          "腹泻",
+          "便血",
+          "口炎",
+          "龋齿",
+          "肠梗阻",
+          "肠扭转",
+          "胃及十二指肠溃疡",
+          "肝部病变",
+          "感冒",
+          "支气管炎",
+          "肺炎",
+          "肾炎",
+          "肾衰竭",
+          "癫痫病",
+          "营养不良综合征",
+          "腹水",
+          "低血糖",
+          "糖尿病",
+          "甲状腺功能减退",
+          "过敏",
+          "中暑",
+          "溶血性贫血",
+          "心包炎",
+          "动脉硬化",
+          "出血性肠炎",
+          "寄生虫病",
+          "皮肤病",
+          "外伤",
+          "消化系统疾病",
+          "呼吸系统疾病",
+          "神经系统疾病",
+          "造血系统疾病",
+          "肿瘤",
+          "体内外寄生虫病"
+        ],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [
+          "疾病",
+          "寄生虫",
+          "感染性疾病",
+          "消化系统疾病",
+          "呼吸系统疾病",
+          "泌尿系统疾病",
+          "神经系统疾病",
+          "营养代谢异常",
+          "造血系统疾病"
+        ],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "疾病",
+            "predicate": "影响生存",
+            "object": "大熊猫",
+            "object_type": "Species",
+            "evidence": "疾病可能是影响大熊猫生存的最大危害"
+          },
+          {
+            "subject": "疾病",
+            "predicate": "是致命疾病",
+            "object": "消化系统疾病",
+            "object_type": "Disease",
+            "evidence": "消化、呼吸、神经、造血系统的疾病往往是致命的"
+          },
+          {
+            "subject": "疾病",
+            "predicate": "是致命疾病",
+            "object": "呼吸系统疾病",
+            "object_type": "Disease",
+            "evidence": "消化、呼吸、神经、造血系统的疾病往往是致命的"
+          },
+          {
+            "subject": "疾病",
+            "predicate": "是致命疾病",
+            "object": "神经系统疾病",
+            "object_type": "Disease",
+            "evidence": "消化、呼吸、神经、造血系统的疾病往往是致命的"
+          },
+          {
+            "subject": "疾病",
+            "predicate": "是致命疾病",
+            "object": "造血系统疾病",
+            "object_type": "Disease",
+            "evidence": "消化、呼吸、神经、造血系统的疾病往往是致命的"
+          },
+          {
+            "subject": "肿瘤",
+            "predicate": "影响健康和寿命",
+            "object": "大熊猫",
+            "object_type": "Species",
+            "evidence": "还会出现各种肿瘤、体内外寄生虫病和皮肤病以及外伤等，都会影响大熊猫的健康和寿命"
+          },
+          {
+            "subject": "体内外寄生虫病",
+            "predicate": "影响健康和寿命",
+            "object": "大熊猫",
+            "object_type": "Species",
+            "evidence": "还会出现各种肿瘤、体内外寄生虫病和皮肤病以及外伤等，都会影响大熊猫的健康和寿命"
+          },
+          {
+            "subject": "皮肤病",
+            "predicate": "影响健康和寿命",
+            "object": "大熊猫",
+            "object_type": "Species",
+            "evidence": "还会出现各种肿瘤、体内外寄生虫病和皮肤病以及外伤等，都会影响大熊猫的健康和寿命"
+          },
+          {
+            "subject": "外伤",
+            "predicate": "影响健康和寿命",
+            "object": "大熊猫",
+            "object_type": "Species",
+            "evidence": "还会出现各种肿瘤、体内外寄生虫病和皮肤病以及外伤等，都会影响大熊猫的健康和寿命"
+          },
+          {
+            "subject": "腹泻",
+            "predicate": "引起",
+            "object": "大肠杆菌",
+            "object_type": "Biology",
+            "evidence": "由大肠杆菌引起的腹泻、出血性肠炎"
+          },
+          {
+            "subject": "出血性肠炎",
+            "predicate": "引起",
+            "object": "大肠杆菌",
+            "object_type": "Biology",
+            "evidence": "由大肠杆菌引起的腹泻、出血性肠炎"
+          },
+          {
+            "subject": "熊猫犬瘟热病",
+            "predicate": "引起",
+            "object": "犬瘟热病毒",
+            "object_type": "Biology",
+            "evidence": "由犬瘟热病毒引起的熊猫犬瘟热病"
+          },
+          {
+            "subject": "细小病毒感染",
+            "predicate": "引起",
+            "object": "细小病毒",
+            "object_type": "Biology",
+            "evidence": "细小病毒感染"
+          },
+          {
+            "subject": "真菌感染",
+            "predicate": "引起",
+            "object": "真菌",
+            "object_type": "Biology",
+            "evidence": "真菌感染"
+          },
+          {
+            "subject": "寄生虫",
+            "predicate": "是寄生虫",
+            "object": "熊猫蛔虫",
+            "object_type": "Biology",
+            "evidence": "寄生虫：熊猫蛔虫、蜱（p）、螨等"
+          },
+          {
+            "subject": "寄生虫",
+            "predicate": "是寄生虫",
+            "object": "蜱",
+            "object_type": "Biology",
+            "evidence": "寄生虫：熊猫蛔虫、蜱（p）、螨等"
+          },
+          {
+            "subject": "寄生虫",
+            "predicate": "是寄生虫",
+            "object": "螨",
+            "object_type": "Biology",
+            "evidence": "寄生虫：熊猫蛔虫、蜱（p）、螨等"
+          },
+          {
+            "subject": "疾病",
+            "predicate": "是自然状态下最大生存危害",
+            "object": "大熊猫",
+            "object_type": "Species",
+            "evidence": "在自然状况下，疾病可能是影响大熊猫生存的最大危害"
+          },
+          {
+            "subject": "消化系统疾病、呼吸系统疾病、神经系统疾病、造血系统疾病",
+            "predicate": "往往导致",
+            "object": "致命",
+            "object_type": "Disease",
+            "evidence": "消化、呼吸、神经、造血系统的疾病往往是致命的"
+          },
+          {
+            "subject": "寄生虫",
+            "predicate": "是常见寄生虫",
+            "object": "熊猫蛔虫、蜱、螨",
+            "object_type": "Species",
+            "evidence": "寄生虫：熊猫蛔虫、蜱（p）、螨等"
+          },
+          {
+            "subject": "大肠杆菌",
+            "predicate": "可引发",
+            "object": "腹泻、出血性肠炎",
+            "object_type": "Disease",
+            "evidence": "由大肠杆菌引起的腹泻、出血性肠炎"
+          },
+          {
+            "subject": "犬瘟热",
+            "predicate": "相关病毒是",
+            "object": "犬瘟热病毒",
+            "object_type": "Species",
+            "evidence": "由犬瘟热病毒引起的熊猫犬瘟热病"
+          },
+          {
+            "subject": "消化系统疾病",
+            "predicate": "是消化系统常见病",
+            "object": "急性胃肠炎、呕吐、腹泻、便血、口炎、龋齿、肠梗阻、肠扭转、胃及十二指肠溃疡、肝部病变",
+            "object_type": "Disease",
+            "evidence": "消化系统疾病：急性胃肠炎、呕吐、腹泻、便血、口炎、龋齿、肠梗阻、肠扭转、胃及十二指肠溃疡、肝部病变等"
+          },
+          {
+            "subject": "呼吸系统疾病",
+            "predicate": "是呼吸系统常见病",
+            "object": "感冒、支气管炎、肺炎",
+            "object_type": "Disease",
+            "evidence": "呼吸系统疾病：感冒、支气管炎、肺炎等"
+          },
+          {
+            "subject": "泌尿系统疾病",
+            "predicate": "是泌尿系统常见病",
+            "object": "肾炎、肾衰竭",
+            "object_type": "Disease",
+            "evidence": "泌尿系统疾病：肾炎、肾衰竭"
+          },
+          {
+            "subject": "神经系统疾病",
+            "predicate": "是神经系统代表性疾病",
+            "object": "癫痫病",
+            "object_type": "Disease",
+            "evidence": "神经系统疾病：癫痫病"
+          },
+          {
+            "subject": "营养代谢",
+            "predicate": "是营养代谢问题典型类型",
+            "object": "营养不良综合征、腹水、低血糖、糖尿病、甲状腺功能减退、过敏、中暑",
+            "object_type": "Disease",
+            "evidence": "营养代谢：营养不良综合征、腹水、低血糖、糖尿病、甲状腺功能减退、过敏、中暑"
+          },
+          {
+            "subject": "造血系统疾病",
+            "predicate": "是造血系统常见病",
+            "object": "溶血性贫血、心包炎、动脉硬化",
+            "object_type": "Disease",
+            "evidence": "造血系统疾病：溶血性贫血、心包炎、动脉硬化"
+          },
+          {
+            "subject": "疾病",
+            "predicate": "同时影响",
+            "object": "健康和寿命",
+            "object_type": "Biology",
+            "evidence": "都会影响大熊猫的健康和寿命"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】致危因素 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】致危因素 - 成都大熊猫繁育研究基地.md",
+      "topic": "生存环境",
+      "extracted": {
+        "topic": "生存环境",
+        "times": [
+          "日益"
+        ],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "森林",
+          "竹林"
+        ],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "开花",
+          "枯死"
+        ],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [
+          "栖息地大量丧失",
+          "栖息地高度破碎",
+          "人口数量激增",
+          "过度消费",
+          "农业垦殖",
+          "森林和竹林毁灭",
+          "修筑公路",
+          "观光旅游",
+          "竹子开花",
+          "栖息地高度破碎（孤岛化）",
+          "竹子开花（在孤岛化条件下）"
+        ],
+        "food_items": [
+          "竹子"
+        ],
+        "food_parts": [
+          "竹子（整体作为食物）"
+        ],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "致危因素",
+            "object": "栖息地大量丧失且高度破碎",
+            "object_type": "Habitat",
+            "evidence": "大熊猫的分布区及种群数量日益缩减，最重要的原因是栖息地大量丧失，而且高度破碎（即相互隔离成孤岛状）。"
+          },
+          {
+            "subject": "栖息地丧失",
+            "predicate": "导致",
+            "object": "人口数量激增、过度消费、农业垦殖、修筑公路、观光旅游",
+            "object_type": "Other",
+            "evidence": "栖息地丧失的原因又在于人口数量激增，过度消费，农业垦殖所引起的大片森林和竹林的毁灭，以及人们修筑公路，观光旅游等活动。"
+          },
+          {
+            "subject": "竹子开花",
+            "predicate": "导致",
+            "object": "缺乏食物",
+            "object_type": "Other",
+            "evidence": "竹子开花使得很多大熊猫缺乏食物"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "可进行",
+            "object": "迁徙寻找其他竹子食用",
+            "object_type": "Behavior",
+            "evidence": "竹子开花本不应该威胁到大熊猫的生存，各种竹子有着不同的开花周期，当其中一种开花，大熊猫还可以迁徙寻找其他竹子食用"
+          },
+          {
+            "subject": "大熊猫缺少食物",
+            "predicate": "导致",
+            "object": "栖息地极小且相互隔离",
+            "object_type": "Habitat",
+            "evidence": "目前由于大熊猫栖息地极小且相互隔离，使得一旦竹子开花，而生活在“孤岛”上的大熊猫，就面临着缺少食物的困境。"
+          },
+          {
+            "subject": "大熊猫栖息地",
+            "predicate": "描述为",
+            "object": "孤岛",
+            "object_type": "Habitat",
+            "evidence": "目前由于大熊猫栖息地极小且相互隔离，使得一旦竹子开花，而生活在“孤岛”上的大熊猫，就面临着缺少食物的困境。"
+          },
+          {
+            "subject": "竹子大面积开花、枯死",
+            "predicate": "生态功能是",
+            "object": "促进其他植物更新、保持物种及生态系统多样性",
+            "object_type": "Biology",
+            "evidence": "竹子大面积开花、枯死，可以促进其他植物的更新，这在保持物种及生态系统的多样性方面也是一个必要的进程。"
+          },
+          {
+            "subject": "大熊猫分布与种群缩减",
+            "predicate": "是...首要原因",
+            "object": "栖息地大量丧失且高度破碎",
+            "object_type": "Habitat",
+            "evidence": "大熊猫的分布区及种群数量日益缩减，最重要的原因是栖息地大量丧失，而且高度破碎（即相互隔离成孤岛状）。"
+          },
+          {
+            "subject": "栖息地丧失",
+            "predicate": "导致",
+            "object": "人口数量激增、农业垦殖、修筑公路、观光旅游",
+            "object_type": "Species",
+            "evidence": "栖息地丧失的原因又在于人口数量激增，过度消费，农业垦殖所引起的大片森林和竹林的毁灭，以及人们修筑公路，观光旅游等活动。"
+          },
+          {
+            "subject": "农业垦殖、修筑公路、观光旅游",
+            "predicate": "是...直接结果",
+            "object": "大片森林和竹林的毁灭",
+            "object_type": "Habitat",
+            "evidence": "栖息地丧失的原因又在于人口数量激增，过度消费，农业垦殖所引起的大片森林和竹林的毁灭，以及人们修筑公路，观光旅游等活动。"
+          },
+          {
+            "subject": "竹子开花",
+            "predicate": "是",
+            "object": "正常生命周期中必须经历的阶段",
+            "object_type": "Biology",
+            "evidence": "竹子开花使得很多大熊猫缺乏食物，但这是其正常的生命周期中必须经历的阶段。"
+          },
+          {
+            "subject": "竹子大面积开花、枯死",
+            "predicate": "具有生态意义",
+            "object": "促进其他植物更新；保持物种及生态系统多样性",
+            "object_type": "Biology",
+            "evidence": "从群落生物学的角度来看，竹子大面积开花、枯死，可以促进其他植物的更新，这在保持物种及生态系统的多样性方面也是一个必要的进程。"
+          },
+          {
+            "subject": "竹子开花",
+            "predicate": "构成理想条件下无威胁的前提",
+            "object": "各种竹子开花周期不同；大熊猫可迁徙觅食",
+            "object_type": "Biology",
+            "evidence": "竹子开花本不应该威胁到大熊猫的生存，各种竹子有着不同的开花周期，当其中一种开花，大熊猫还可以迁徙寻找其他竹子食用"
+          },
+          {
+            "subject": "竹子开花",
+            "predicate": "使...成为生存危机",
+            "object": "栖息地极小且相互隔离",
+            "object_type": "Habitat",
+            "evidence": "目前由于大熊猫栖息地极小且相互隔离，使得一旦竹子开花，而生活在“孤岛”上的大熊猫，就面临着缺少食物的困境。"
+          },
+          {
+            "subject": "栖息地孤岛化",
+            "predicate": "导致",
+            "object": "难以完成食物迁移",
+            "object_type": "Behavior",
+            "evidence": "目前由于大熊猫栖息地极小且相互隔离，使得一旦竹子开花，而生活在“孤岛”上的大熊猫，就面临着缺少食物的困境。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "日益"
+        ],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】繁殖 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】繁殖 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "extracted": {
+        "topic": "行为习性",
+        "times": [
+          "每年3~5月",
+          "发情高峰期2~3天",
+          "圈养下雌性5岁左右性成熟",
+          "圈养下雄性6岁左右性成熟",
+          "3~5月",
+          "2~3天",
+          "5岁左右",
+          "6岁左右"
+        ],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [
+          "性成熟",
+          "发情",
+          "发情高峰期",
+          "妊娠",
+          "分娩",
+          "育幼",
+          "繁殖",
+          "交配"
+        ],
+        "behavior_terms": [
+          "独居",
+          "气味标记",
+          "嗅闻标记",
+          "咩叫",
+          "待配姿势",
+          "打斗竞争交配权",
+          "观摩学习",
+          "多雄多雌制",
+          "妊娠、分娩和育幼由雌性独自完成",
+          "行为习性"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "幼年阶段",
+          "性成熟阶段",
+          "发情期",
+          "妊娠期",
+          "分娩期",
+          "育幼期",
+          "亚成年阶段",
+          "性成熟",
+          "发情",
+          "妊娠",
+          "分娩",
+          "育幼"
+        ],
+        "reproduction_terms": [
+          "性成熟",
+          "发情",
+          "发情高峰期",
+          "交配",
+          "妊娠",
+          "分娩",
+          "育幼",
+          "打斗竞争交配权",
+          "多雄多雌制"
+        ],
+        "communication_terms": [
+          "气味嗅觉通讯",
+          "听觉通讯",
+          "视觉通讯",
+          "气味嗅觉",
+          "咩叫声",
+          "待配姿势"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "雌性大熊猫性成熟年龄",
+            "object": "5岁左右",
+            "object_type": "Other",
+            "evidence": "圈养条件下雌性大熊猫5岁左右，雄性大熊猫6岁左右进入性成熟，野外大熊猫性成熟稍晚。"
+          },
+          {
+            "subject": "雄性大熊猫",
+            "predicate": "雄性大熊猫性成熟年龄",
+            "object": "6岁左右",
+            "object_type": "Other",
+            "evidence": "圈养条件下雌性大熊猫5岁左右，雄性大熊猫6岁左右进入性成熟，野外大熊猫性成熟稍晚。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日常社会行为",
+            "object": "独居",
+            "object_type": "Behavior",
+            "evidence": "大熊猫除发情配种季节外，其他时候一般是独居，各有其活动的区域。"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "雌性发情频率",
+            "object": "每年一次",
+            "object_type": "Other",
+            "evidence": "雌性大熊猫每年发情一次，每次发情高峰期只有短暂的2~3天，发情时期通常在在每年的3~5月。"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "雌性发情高峰期持续时间",
+            "object": "2~3天",
+            "object_type": "Other",
+            "evidence": "雌性大熊猫每年发情一次，每次发情高峰期只有短暂的2~3天，发情时期通常在在每年的3~5月。"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "雌性发情发生月份",
+            "object": "3~5月",
+            "object_type": "Other",
+            "evidence": "雌性大熊猫每年发情一次，每次发情高峰期只有短暂的2~3天，发情时期通常在在每年的3~5月。"
+          },
+          {
+            "subject": "成年雌雄大熊猫",
+            "predicate": "主要通讯方式",
+            "object": "气味嗅觉",
+            "object_type": "Biology",
+            "evidence": "成年雌雄大熊猫相互间主要通过气味嗅觉（通过留下气味标记和嗅闻标记）的通讯方式逐渐聚集在一个地方并相互了解、相互吸引"
+          },
+          {
+            "subject": "成年雌雄大熊猫",
+            "predicate": "通讯行为",
+            "object": "气味标记",
+            "object_type": "Behavior",
+            "evidence": "通过留下气味标记和嗅闻标记"
+          },
+          {
+            "subject": "成年雌雄大熊猫",
+            "predicate": "通讯行为",
+            "object": "嗅闻标记",
+            "object_type": "Behavior",
+            "evidence": "通过留下气味标记和嗅闻标记"
+          },
+          {
+            "subject": "成年雌雄大熊猫",
+            "predicate": "发情高潮期通讯行为",
+            "object": "咩叫声",
+            "object_type": "Behavior",
+            "evidence": "到发情高潮时相互间通过连续不断的咩叫声以及待配姿势等听觉、视觉通讯方式表达爱意并达成配对交配。"
+          },
+          {
+            "subject": "成年雌雄大熊猫",
+            "predicate": "发情高潮期通讯行为",
+            "object": "待配姿势",
+            "object_type": "Behavior",
+            "evidence": "到发情高潮时相互间通过连续不断的咩叫声以及待配姿势等听觉、视觉通讯方式表达爱意并达成配对交配。"
+          },
+          {
+            "subject": "雄性大熊猫",
+            "predicate": "参与打斗竞争的雄性数量",
+            "object": "2~5只",
+            "object_type": "Other",
+            "evidence": "在大熊猫野外交配场地，有时有多达2~5只雄性大熊猫通过打斗竞争优先交配权，并先后都与同一雌性大熊猫成功交配的情况"
+          },
+          {
+            "subject": "雄性大熊猫",
+            "predicate": "雄性交配前行为",
+            "object": "打斗竞争优先交配权",
+            "object_type": "Behavior",
+            "evidence": "在大熊猫野外交配场地，有时有多达2~5只雄性大熊猫通过打斗竞争优先交配权，并先后都与同一雌性大熊猫成功交配的情况"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "主要交配场所",
+            "object": "地上",
+            "object_type": "Habitat",
+            "evidence": "交配多在地上，也有在树上进行。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "次要交配场所",
+            "object": "树上",
+            "object_type": "Habitat",
+            "evidence": "交配多在地上，也有在树上进行。"
+          },
+          {
+            "subject": "亚成年大熊猫",
+            "predicate": "亚成年行为",
+            "object": "观摩学习",
+            "object_type": "Behavior",
+            "evidence": "在交配现场也有亚成年以及交配能力弱的大熊猫在旁观摩学习。"
+          },
+          {
+            "subject": "雄性大熊猫",
+            "predicate": "雄性发情行为触发条件",
+            "object": "随雌性发情行为发生而发生",
+            "object_type": "Behavior",
+            "evidence": "雄性大熊猫的发情行为随雌性大熊猫的发情行为发生而发生，也随其达高潮而达高潮。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "交配制度",
+            "object": "多雄多雌制",
+            "object_type": "Behavior",
+            "evidence": "在同一发情季节，一只雄性大熊猫可与多只雌性大熊猫交配，同样一只雌性大熊猫也可接受多只雄性的交配，因此在大熊猫世界的婚姻是多雄多雌制。"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "育幼责任归属",
+            "object": "妊娠、分娩和育幼由雌性独自完成",
+            "object_type": "Behavior",
+            "evidence": "交配完成后雌雄大熊猫再次分开单独生活，妊娠、分娩和育幼等工作由雌性大熊猫独自完成。"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "圈养雌性性成熟年龄",
+            "object": "5岁左右",
+            "object_type": "Disease",
+            "evidence": "圈养条件下雌性大熊猫5岁左右，雄性大熊猫6岁左右进入性成熟"
+          },
+          {
+            "subject": "雄性大熊猫",
+            "predicate": "圈养雄性性成熟年龄",
+            "object": "6岁左右",
+            "object_type": "Disease",
+            "evidence": "圈养条件下雌性大熊猫5岁左右，雄性大熊猫6岁左右进入性成熟"
+          },
+          {
+            "subject": "野外大熊猫",
+            "predicate": "野外性成熟相较圈养",
+            "object": "更晚",
+            "object_type": "Disease",
+            "evidence": "野外大熊猫性成熟稍晚"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "雌性年发情次数",
+            "object": "1次",
+            "object_type": "Disease",
+            "evidence": "雌性大熊猫每年发情一次，每次发情高峰期只有短暂的2~3天"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "雌性发情高峰期持续时间",
+            "object": "2~3天",
+            "object_type": "Disease",
+            "evidence": "雌性大熊猫每年发情一次，每次发情高峰期只有短暂的2~3天"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "雌性发情集中月份",
+            "object": "3~5月",
+            "object_type": "Disease",
+            "evidence": "发情时期通常在在每年的3~5月"
+          },
+          {
+            "subject": "成年雌雄大熊猫",
+            "predicate": "配对前主要通讯方式",
+            "object": "气味嗅觉（留下气味标记和嗅闻标记）",
+            "object_type": "Disease",
+            "evidence": "成年雌雄大熊猫相互间主要通过气味嗅觉（通过留下气味标记和嗅闻标记）的通讯方式逐渐聚集在一个地方"
+          },
+          {
+            "subject": "雌雄大熊猫",
+            "predicate": "发情高潮时主要听觉/视觉信号",
+            "object": "咩叫声、待配姿势",
+            "object_type": "Disease",
+            "evidence": "到发情高潮时相互间通过连续不断的咩叫声以及待配姿势等听觉、视觉通讯方式表达爱意并达成配对交配"
+          },
+          {
+            "subject": "雄性大熊猫",
+            "predicate": "野外交配中雄性竞争规模",
+            "object": "2~5只",
+            "object_type": "Disease",
+            "evidence": "在大熊猫野外交配场地，有时有多达2~5只雄性大熊猫通过打斗竞争优先交配权"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "交配地点",
+            "object": "地上为主，偶在树上",
+            "object_type": "Disease",
+            "evidence": "交配多在地上，也有在树上进行"
+          },
+          {
+            "subject": "大熊猫婚配制度",
+            "predicate": "多雄多雌制定义依据",
+            "object": "一只雄性可交配多只雌性，且一只雌性可接受多只雄性交配",
+            "object_type": "Disease",
+            "evidence": "在同一发情季节，一只雄性大熊猫可与多只雌性大熊猫交配，同样一只雌性大熊猫也可接受多只雄性的交配，因此在大熊猫世界的婚姻是多雄多雌制"
+          },
+          {
+            "subject": "交配后",
+            "predicate": "妊娠、分娩、育幼承担者",
+            "object": "雌性大熊猫",
+            "object_type": "Disease",
+            "evidence": "交配完成后雌雄大熊猫再次分开单独生活，妊娠、分娩和育幼等工作由雌性大熊猫独自完成"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "每年3~5月",
+          "发情高峰期2~3天",
+          "圈养下雌性5岁左右性成熟",
+          "圈养下雄性6岁左右性成熟",
+          "3~5月",
+          "2~3天",
+          "5岁左右",
+          "6岁左右"
+        ],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】行为富化 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】行为富化 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "extracted": {
+        "topic": "行为习性",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [
+          "刻板行为",
+          "不停地走来走去",
+          "摇晃脑袋",
+          "环境丰容",
+          "行为丰容",
+          "丰容"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [
+          "环境丰容",
+          "行为丰容"
+        ],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [
+          "圈养条件",
+          "生活条件不如野外",
+          "无聊",
+          "孤单"
+        ],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "刻板行为",
+            "predicate": "仅发生于",
+            "object": "圈养条件",
+            "object_type": "Habitat",
+            "evidence": "刻板行为是野外没有，而在圈养条件下出现的，不属于该物种的一些重复、毫无意义的行为。"
+          },
+          {
+            "subject": "大熊猫的刻板行为",
+            "predicate": "表现为",
+            "object": "不停地走来走去",
+            "object_type": "Behavior",
+            "evidence": "大熊猫的刻板行为可能是在兽舍里不停地走来走去，摇晃脑袋等。"
+          },
+          {
+            "subject": "大熊猫的刻板行为",
+            "predicate": "表现为",
+            "object": "摇晃脑袋",
+            "object_type": "Behavior",
+            "evidence": "大熊猫的刻板行为可能是在兽舍里不停地走来走去，摇晃脑袋等。"
+          },
+          {
+            "subject": "刻板行为",
+            "predicate": "由_引发",
+            "object": "无聊",
+            "object_type": "Behavior",
+            "evidence": "虽然我们竭力给圈养大熊猫创造良好的生活条件，但毕竟比不上野外，它们仍会感到无聊、孤单，于是就出现了各式各样的刻板行为。"
+          },
+          {
+            "subject": "刻板行为",
+            "predicate": "由_引发",
+            "object": "孤单",
+            "object_type": "Behavior",
+            "evidence": "虽然我们竭力给圈养大熊猫创造良好的生活条件，但毕竟比不上野外，它们仍会感到无聊、孤单，于是就出现了各式各样的刻板行为。"
+          },
+          {
+            "subject": "刻板行为",
+            "predicate": "用于减少",
+            "object": "环境丰容",
+            "object_type": "Behavior",
+            "evidence": "为了大熊猫的身体和心理健康，减少刻板行为，我们向它们提供了各种各样的环境丰容和行为丰容。"
+          },
+          {
+            "subject": "刻板行为",
+            "predicate": "用于减少",
+            "object": "行为丰容",
+            "object_type": "Behavior",
+            "evidence": "为了大熊猫的身体和心理健康，减少刻板行为，我们向它们提供了各种各样的环境丰容和行为丰容。"
+          },
+          {
+            "subject": "环境丰容",
+            "predicate": "定义为",
+            "object": "构建和改变圈养动物的生活环境",
+            "object_type": "Behavior",
+            "evidence": "丰容是指通过构建和改变圈养动物的生活环境，改进喂食策略，使动物表现出正常的行为，为动物提供更多的选择机会，提高它们的生活质量。"
+          },
+          {
+            "subject": "行为丰容",
+            "predicate": "定义为",
+            "object": "改进喂食策略",
+            "object_type": "Behavior",
+            "evidence": "丰容是指通过构建和改变圈养动物的生活环境，改进喂食策略，使动物表现出正常的行为，为动物提供更多的选择机会，提高它们的生活质量。"
+          },
+          {
+            "subject": "丰容",
+            "predicate": "目的为",
+            "object": "使动物表现出正常的行为",
+            "object_type": "Behavior",
+            "evidence": "丰容是指通过构建和改变圈养动物的生活环境，改进喂食策略，使动物表现出正常的行为，为动物提供更多的选择机会，提高它们的生活质量。"
+          },
+          {
+            "subject": "刻板行为",
+            "predicate": "出现条件",
+            "object": "圈养条件",
+            "object_type": "Habitat",
+            "evidence": "刻板行为是野外没有，而在圈养条件下出现的，不属于该物种的一些重复、毫无意义的行为。"
+          },
+          {
+            "subject": "刻板行为",
+            "predicate": "野外基本没有",
+            "object": "野外",
+            "object_type": "Habitat",
+            "evidence": "刻板行为是野外没有，而在圈养条件下出现的，不属于该物种的一些重复、毫无意义的行为。"
+          },
+          {
+            "subject": "刻板行为",
+            "predicate": "圈养易出现",
+            "object": "圈养条件",
+            "object_type": "Habitat",
+            "evidence": "刻板行为是野外没有，而在圈养条件下出现的，不属于该物种的一些重复、毫无意义的行为。"
+          },
+          {
+            "subject": "大熊猫刻板行为",
+            "predicate": "常见例子",
+            "object": "在兽舍里不停地走来走去、摇晃脑袋",
+            "object_type": "Behavior",
+            "evidence": "大熊猫的刻板行为可能是在兽舍里不停地走来走去，摇晃脑袋等。"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "圈养条件改善后仍出现无聊/孤单的原因",
+            "object": "生活条件虽良好但比不上野外",
+            "object_type": "Habitat",
+            "evidence": "虽然我们竭力给圈养大熊猫创造良好的生活条件，但毕竟比不上野外，它们仍会感到无聊、孤单，于是就出现了各式各样的刻板行为。"
+          },
+          {
+            "subject": "丰容",
+            "predicate": "定义",
+            "object": "通过构建和改变圈养动物的生活环境，改进喂食策略，使动物表现出正常的行为",
+            "object_type": "Behavior",
+            "evidence": "丰容是指通过构建和改变圈养动物的生活环境，改进喂食策略，使动物表现出正常的行为，为动物提供更多的选择机会，提高它们的生活质量。"
+          },
+          {
+            "subject": "环境丰容与行为丰容",
+            "predicate": "行为丰容和环境丰容共同改善的目标",
+            "object": "身体和心理健康、刻板行为",
+            "object_type": "Biology",
+            "evidence": "为了大熊猫的身体和心理健康，减少刻板行为，我们向它们提供了各种各样的环境丰容和行为丰容。"
+          },
+          {
+            "subject": "丰容",
+            "predicate": "丰容的作用效果",
+            "object": "提供更多的选择机会，提高生活质量",
+            "object_type": "Behavior",
+            "evidence": "丰容是指通过构建和改变圈养动物的生活环境，改进喂食策略，使动物表现出正常的行为，为动物提供更多的选择机会，提高它们的生活质量。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】认识大熊猫 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】认识大熊猫 - 成都大熊猫繁育研究基地.md",
+      "topic": "历史背景",
+      "extracted": {
+        "topic": "历史背景",
+        "times": [
+          "1978年",
+          "至少800万年",
+          "800万年",
+          "18--20岁",
+          "超过30岁"
+        ],
+        "person_entities": [
+          "佳佳"
+        ],
+        "place_entities": [
+          "香港海洋公园"
+        ],
+        "panda_aliases": [
+          "活化石",
+          "中国国宝"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [
+          "牙齿和消化道还保持原样",
+          "属于食肉目",
+          "圆圆的脸颊",
+          "大大的黑眼圈",
+          "胖嘟嘟的身体",
+          "解剖刀般锋利的爪子"
+        ],
+        "behavior_terms": [
+          "独居",
+          "内八字的行走方式"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "幼年阶段",
+          "性成熟",
+          "妊娠期"
+        ],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [
+          "竹子"
+        ],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "动物界（Animalia）",
+          "脊索动物门（Chordata）",
+          "哺乳动物纲（Mammalia）",
+          "食肉目（Carnivora）",
+          "熊科（Ursidae）",
+          "大熊猫属（Ailuropoda）",
+          "大熊猫（Ailuropoda melanoleuca）"
+        ],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "生存时长",
+            "object": "800万年",
+            "object_type": "Other",
+            "evidence": "大熊猫已在地球上生存了至少800万年"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "属于",
+            "object": "动物界（Animalia）",
+            "object_type": "Biology",
+            "evidence": "大熊猫属于:动物界（Animalia），脊索动物门（Chordata），哺乳动物纲（Mammalia），食肉目（Carnivora），熊科（Ursidae），大熊猫属（Ailuropoda），大熊猫（Ailuropoda melanoleuca）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "属于",
+            "object": "脊索动物门（Chordata）",
+            "object_type": "Biology",
+            "evidence": "大熊猫属于:动物界（Animalia），脊索动物门（Chordata），哺乳动物纲（Mammalia），食肉目（Carnivora），熊科（Ursidae），大熊猫属（Ailuropoda），大熊猫（Ailuropoda melanoleuca）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "属于",
+            "object": "哺乳动物纲（Mammalia）",
+            "object_type": "Biology",
+            "evidence": "大熊猫属于:动物界（Animalia），脊索动物门（Chordata），哺乳动物纲（Mammalia），食肉目（Carnivora），熊科（Ursidae），大熊猫属（Ailuropoda），大熊猫（Ailuropoda melanoleuca）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "属于",
+            "object": "食肉目（Carnivora）",
+            "object_type": "Biology",
+            "evidence": "大熊猫属于:动物界（Animalia），脊索动物门（Chordata），哺乳动物纲（Mammalia），食肉目（Carnivora），熊科（Ursidae），大熊猫属（Ailuropoda），大熊猫（Ailuropoda melanoleuca）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "属于",
+            "object": "熊科（Ursidae）",
+            "object_type": "Biology",
+            "evidence": "大熊猫属于:动物界（Animalia），脊索动物门（Chordata），哺乳动物纲（Mammalia），食肉目（Carnivora），熊科（Ursidae），大熊猫属（Ailuropoda），大熊猫（Ailuropoda melanoleuca）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "属于",
+            "object": "大熊猫属（Ailuropoda）",
+            "object_type": "Biology",
+            "evidence": "大熊猫属于:动物界（Animalia），脊索动物门（Chordata），哺乳动物纲（Mammalia），食肉目（Carnivora），熊科（Ursidae），大熊猫属（Ailuropoda），大熊猫（Ailuropoda melanoleuca）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "学名",
+            "object": "大熊猫（Ailuropoda melanoleuca）",
+            "object_type": "Biology",
+            "evidence": "大熊猫属于:动物界（Animalia），脊索动物门（Chordata），哺乳动物纲（Mammalia），食肉目（Carnivora），熊科（Ursidae），大熊猫属（Ailuropoda），大熊猫（Ailuropoda melanoleuca）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "活化石",
+            "object_type": "Alias",
+            "evidence": "被誉为“活化石”和“中国国宝”"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名",
+            "object": "中国国宝",
+            "object_type": "Alias",
+            "evidence": "被誉为“活化石”和“中国国宝”"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "历史食性",
+            "object": "吃肉",
+            "object_type": "Behavior",
+            "evidence": "大熊猫在很久很久以前是吃肉的"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "主食",
+            "object": "竹子",
+            "object_type": "Other",
+            "evidence": "现在的大熊猫99％的食物都是竹子了"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外寿命范围",
+            "object": "18--20岁",
+            "object_type": "Other",
+            "evidence": "野外大熊猫的寿命一般为18--20岁，圈养状态下因为有很好的饲养管理和医疗，有的可以超过30岁"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养最长寿命",
+            "object": "超过30岁",
+            "object_type": "Other",
+            "evidence": "野外大熊猫的寿命一般为18--20岁，圈养状态下因为有很好的饲养管理和医疗，有的可以超过30岁"
+          },
+          {
+            "subject": "佳佳",
+            "predicate": "出生时间",
+            "object": "1978年",
+            "object_type": "Other",
+            "evidence": "香港海洋公园的佳佳，出生于1978年，是目前全世界最长寿的大熊猫"
+          },
+          {
+            "subject": "佳佳",
+            "predicate": "所在地",
+            "object": "香港海洋公园",
+            "object_type": "Place",
+            "evidence": "香港海洋公园的佳佳，出生于1978年，是目前全世界最长寿的大熊猫"
+          },
+          {
+            "subject": "佳佳",
+            "predicate": "称号",
+            "object": "最长寿的大熊猫",
+            "object_type": "Alias",
+            "evidence": "香港海洋公园的佳佳，出生于1978年，是目前全世界最长寿的大熊猫"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "内八字的行走方式",
+            "object_type": "Behavior",
+            "evidence": "它有着圆圆的脸颊，大大的黑眼圈，胖嘟嘟的身体，标志性的内八字的行走方式，也有解剖刀般锋利的爪子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "圆圆的脸颊",
+            "object_type": "Biology",
+            "evidence": "它有着圆圆的脸颊，大大的黑眼圈，胖嘟嘟的身体，标志性的内八字的行走方式，也有解剖刀般锋利的爪子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "大大的黑眼圈",
+            "object_type": "Biology",
+            "evidence": "它有着圆圆的脸颊，大大的黑眼圈，胖嘟嘟的身体，标志性的内八字的行走方式，也有解剖刀般锋利的爪子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "胖嘟嘟的身体",
+            "object_type": "Biology",
+            "evidence": "它有着圆圆的脸颊，大大的黑眼圈，胖嘟嘟的身体，标志性的内八字的行走方式，也有解剖刀般锋利的爪子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "解剖刀般锋利的爪子",
+            "object_type": "Biology",
+            "evidence": "它有着圆圆的脸颊，大大的黑眼圈，胖嘟嘟的身体，标志性的内八字的行走方式，也有解剖刀般锋利的爪子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "生存时长至少为",
+            "object": "800万年",
+            "object_type": "Other",
+            "evidence": "大熊猫已在地球上生存了至少800万年，被誉为“活化石”和“中国国宝”"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "被称为",
+            "object": "活化石",
+            "object_type": "Alias",
+            "evidence": "大熊猫已在地球上生存了至少800万年，被誉为“活化石”和“中国国宝”"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "被称为",
+            "object": "中国国宝",
+            "object_type": "Alias",
+            "evidence": "大熊猫已在地球上生存了至少800万年，被誉为“活化石”和“中国国宝”"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "完整分类层级为",
+            "object": "动物界（Animalia）→脊索动物门（Chordata）→哺乳动物纲（Mammalia）→食肉目（Carnivora）→熊科（Ursidae）→大熊猫属（Ailuropoda）→大熊猫（Ailuropoda melanoleuca）",
+            "object_type": "Other",
+            "evidence": "大熊猫属于:动物界（Animalia），脊索动物门（Chordata），哺乳动物纲（Mammalia），食肉目（Carnivora），熊科（Ursidae），大熊猫属（Ailuropoda），大熊猫（Ailuropoda melanoleuca）。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "食物构成中",
+            "object": "99％的食物都是竹子",
+            "object_type": "Other",
+            "evidence": "虽然经过进化，现在的大熊猫99％的食物都是竹子了，但它们的牙齿和消化道还保持原样，所以我们仍然把它们划分为食肉目。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "保留",
+            "object": "牙齿和消化道还保持原样",
+            "object_type": "Biology",
+            "evidence": "虽然经过进化，现在的大熊猫99％的食物都是竹子了，但它们的牙齿和消化道还保持原样，所以我们仍然把它们划分为食肉目。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外寿命一般为",
+            "object": "18--20岁",
+            "object_type": "Other",
+            "evidence": "野外大熊猫的寿命一般为18--20岁"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养寿命通常可达到",
+            "object": "超过30岁",
+            "object_type": "Other",
+            "evidence": "圈养状态下因为有很好的饲养管理和医疗，有的可以超过30岁。"
+          },
+          {
+            "subject": "佳佳",
+            "predicate": "出生于",
+            "object": "1978年",
+            "object_type": "Other",
+            "evidence": "香港海洋公园的佳佳，出生于1978年"
+          },
+          {
+            "subject": "佳佳",
+            "predicate": "被称为",
+            "object": "目前全世界最长寿的大熊猫",
+            "object_type": "Alias",
+            "evidence": "香港海洋公园的佳佳，出生于1978年，是目前全世界最长寿的大熊猫。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "1978年",
+          "至少800万年",
+          "800万年",
+          "18--20岁",
+          "超过30岁"
+        ],
+        "人物": [
+          "佳佳"
+        ],
+        "地点": [
+          "香港海洋公园"
+        ],
+        "熊猫曾用名": [
+          "活化石",
+          "中国国宝"
+        ]
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】育幼生长 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】育幼生长 - 成都大熊猫繁育研究基地.md",
+      "topic": "个体档案",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "一年半到两年",
+          "隔年",
+          "83~200余天",
+          "324天",
+          "7~9月",
+          "一岁半前",
+          "一到两周",
+          "一个月",
+          "六到八周",
+          "三个月",
+          "半岁",
+          "一岁",
+          "一岁半",
+          "一岁半至性成熟前",
+          "1~3岁",
+          "一岁半到性成熟前",
+          "性成熟后"
+        ],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [
+          "天敌"
+        ],
+        "habitats": [
+          "树洞",
+          "岩洞"
+        ],
+        "biology_terms": [
+          "新生儿发育极不成熟",
+          "初生幼仔免疫系统未发育完善",
+          "初乳含人工无法合成的抗体",
+          "初乳促进免疫系统发育",
+          "亚成年期食物从奶为主过渡到竹类为主",
+          "消化系统适应高纤维低营养竹类的过程",
+          "初乳",
+          "免疫系统",
+          "妊娠期",
+          "排便",
+          "会阴部",
+          "新生儿",
+          "双胞胎",
+          "恒牙",
+          "肩带",
+          "黑白相间毛",
+          "树洞",
+          "岩洞",
+          "干草",
+          "树枝",
+          "叫声",
+          "育幼行为",
+          "换仔技术"
+        ],
+        "behavior_terms": [
+          "育幼期间母熊猫寸步不离怀抱幼仔",
+          "移动时衔幼仔于口中",
+          "用舌头舔幼仔会阴部刺激排便",
+          "通过幼仔不同叫声识别其需求（吃奶、排便、冷热不适等）",
+          "野外双胞胎中通常忽视或拒绝较弱个体",
+          "圈养下采用换仔技术使双胞胎均获母乳与行为学习机会",
+          "一岁半前与母亲长时间共处",
+          "一岁半离开母亲独立生活",
+          "亚成年期大量玩耍、探索、爬树"
+        ],
+        "disease_terms": [
+          "新生儿易受疾病侵害",
+          "初乳抗体帮助抵抗各种疾病",
+          "疾病"
+        ],
+        "treatment_terms": [
+          "换仔技术",
+          "人工饲养（针对双胞胎）"
+        ],
+        "lifecycle_stages": [
+          "幼年（一岁半前）",
+          "初生（出生即刻）",
+          "一到两周",
+          "一个月",
+          "六到八周",
+          "三个月",
+          "半岁",
+          "一岁",
+          "一岁半",
+          "亚成年（一岁半至性成熟前）",
+          "成年（性成熟后）",
+          "初生幼仔",
+          "幼年",
+          "亚成年",
+          "成年",
+          "性成熟"
+        ],
+        "reproduction_terms": [
+          "隔年产子",
+          "妊娠期83~200余天（含324天特例）",
+          "7~9月出生",
+          "双胞胎（圈养下近50%）",
+          "野外双胞胎选择性育幼",
+          "圈养换仔技术",
+          "性成熟后进入成年阶段",
+          "繁殖率偏低",
+          "双胞胎",
+          "换仔技术",
+          "性成熟",
+          "初乳",
+          "妊娠期",
+          "育幼"
+        ],
+        "communication_terms": [
+          "幼仔叫声是母仔间重要通讯工具",
+          "不同叫声对应不同需求：吃奶、排便、受冷、过热、其他不适",
+          "叫声",
+          "母仔通讯"
+        ],
+        "threat_factors": [
+          "新生儿发育不成熟",
+          "免疫系统未发育完善",
+          "野外双胞胎存活率受限于母体选择"
+        ],
+        "food_items": [
+          "母乳（尤其初乳）",
+          "竹子",
+          "奶",
+          "初乳"
+        ],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "育幼周期",
+            "object": "一年半到两年",
+            "object_type": "Other",
+            "evidence": "大熊猫妈妈通常需要一年半到两年的时间来照顾她的孩子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "繁殖间隔",
+            "object": "隔年",
+            "object_type": "Other",
+            "evidence": "大熊猫一般是隔年产子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "妊娠期",
+            "object": "83~200余天",
+            "object_type": "Other",
+            "evidence": "大熊猫妊娠期为83~200余天，甚至出现了324天的特例。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "妊娠期（特例）",
+            "object": "324天",
+            "object_type": "Other",
+            "evidence": "甚至出现了324天的特例。"
+          },
+          {
+            "subject": "大熊猫幼子",
+            "predicate": "出生月份",
+            "object": "7~9月",
+            "object_type": "Other",
+            "evidence": "幼子通常在7~9月出生"
+          },
+          {
+            "subject": "大熊猫幼子",
+            "predicate": "出生场所",
+            "object": "隐蔽的树洞",
+            "object_type": "Habitat",
+            "evidence": "出生的巢穴通常是一个隐蔽的树洞，或天然的岩洞"
+          },
+          {
+            "subject": "大熊猫幼子",
+            "predicate": "出生场所",
+            "object": "天然的岩洞",
+            "object_type": "Habitat",
+            "evidence": "出生的巢穴通常是一个隐蔽的树洞，或天然的岩洞"
+          },
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "育幼行为",
+            "object": "怀抱幼仔",
+            "object_type": "Behavior",
+            "evidence": "刚出生的几周里，大熊猫妈妈会一直将孩子抱在怀里，温暖它、保护它，几乎寸步不离，移动的时候就把它衔在嘴里。"
+          },
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "移动时育幼方式",
+            "object": "衔幼仔于口中",
+            "object_type": "Behavior",
+            "evidence": "移动的时候就把它衔在嘴里。"
+          },
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "排便辅助行为",
+            "object": "舔会阴部刺激排便",
+            "object_type": "Behavior",
+            "evidence": "由于新生儿还没有自主排出大、小便的能力，熊猫妈妈会用舌头舔新生儿的会阴部，有效地刺激他们排便。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "声音通讯功能",
+            "object": "不同叫声对应不同生理需求",
+            "object_type": "Behavior",
+            "evidence": "大熊猫育幼期间，幼仔的叫声是母仔间联系非常重要的通讯工具，幼仔想吃奶、想排便、受冷或过热或其他原因的不适，幼仔都通过不同叫声提醒妈妈满足其不同需要。"
+          },
+          {
+            "subject": "初乳",
+            "predicate": "免疫保护机制",
+            "object": "初乳含人工无法合成的抗体",
+            "object_type": "Biology",
+            "evidence": "母乳是大熊猫宝宝的最佳营养来源，尤其是初乳，除了有十分丰富的必须营养物质如蛋白质、脂肪、维生素和各种酶外，还含有大量人工无法合成的抗体，帮助宝宝有效抵抗各种疾病的侵害，并有助于宝宝免疫系统的发育。"
+          },
+          {
+            "subject": "初乳",
+            "predicate": "生物学功能",
+            "object": "促进免疫系统发育",
+            "object_type": "Biology",
+            "evidence": "母乳是大熊猫宝宝的最佳营养来源，尤其是初乳……并有助于宝宝免疫系统的发育。"
+          },
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "野外双胞胎育幼策略",
+            "object": "忽视或拒绝较弱双胞胎个体",
+            "object_type": "Behavior",
+            "evidence": "在野外，如果出生的是双胞胎（圈养下大熊猫产双胞胎比例近50%），大熊猫妈妈通常会忽视或拒绝较弱的一个，这能保证至少一只成活。"
+          },
+          {
+            "subject": "圈养大熊猫管理方",
+            "predicate": "圈养双胞胎保育措施",
+            "object": "换仔技术",
+            "object_type": "Treatment",
+            "evidence": "在圈养情况下会通过人工饲养并采用换仔技术，让两个宝宝都有吃母乳和从妈妈身上学习行为技能的机会，尽量使所有的大熊猫幼仔都能成活。"
+          },
+          {
+            "subject": "大熊猫初生幼仔",
+            "predicate": "初生平均体重",
+            "object": "120克",
+            "object_type": "Other",
+            "evidence": "刚出生：初生幼仔体重仅仅是母亲体重的1%，平均体重仅120克左右，最轻的为42.8克，最重的为225克。"
+          },
+          {
+            "subject": "大熊猫初生幼仔",
+            "predicate": "初生最低体重",
+            "object": "42.8克",
+            "object_type": "Other",
+            "evidence": "最轻的为42.8克"
+          },
+          {
+            "subject": "大熊猫初生幼仔",
+            "predicate": "初生最高体重",
+            "object": "225克",
+            "object_type": "Other",
+            "evidence": "最重的为225克。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "体色发育阶段特征",
+            "object": "肩带、四肢和耳朵变黑",
+            "object_type": "Biology",
+            "evidence": "一到两周：肩带、四肢和耳朵渐渐变黑。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "一个月龄体重范围",
+            "object": "1~2公斤",
+            "object_type": "Other",
+            "evidence": "一个月：体重1~2公斤。长出黑白相间的毛，变得更像妈妈。但还不能行走。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "睁眼时间",
+            "object": "六到八周",
+            "object_type": "Other",
+            "evidence": "六到八周：可以睁眼。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "运动能力出现时间",
+            "object": "爬动",
+            "object_type": "Behavior",
+            "evidence": "三个月：可以慢慢地爬动了。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "运动能力成熟时间",
+            "object": "自由行走",
+            "object_type": "Behavior",
+            "evidence": "半岁：可以自由行走，开始学吃竹子。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "食性过渡起始时间",
+            "object": "学吃竹子",
+            "object_type": "Behavior",
+            "evidence": "半岁：可以自由行走，开始学吃竹子。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "牙齿发育事件",
+            "object": "长出恒牙",
+            "object_type": "Biology",
+            "evidence": "一岁：开始长出恒牙。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "独立生活起始时间",
+            "object": "一岁半",
+            "object_type": "Other",
+            "evidence": "一岁半：离开母亲，独立生活。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "行为活跃期",
+            "object": "1~3岁",
+            "object_type": "Other",
+            "evidence": "亚成年：一岁半到性成熟前为亚成年阶段……大熊猫在1~3岁期间是最为活跃的时期，每天除了采食外，大部分时间都在玩耍、探索和爬树。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "成年体长范围",
+            "object": "160~180厘米",
+            "object_type": "Other",
+            "evidence": "成年：性成熟后为成年阶段。体长约160~180厘米，体重约80~120公斤。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "成年体重范围",
+            "object": "80~120公斤",
+            "object_type": "Other",
+            "evidence": "成年：性成熟后为成年阶段。体长约160~180厘米，体重约80~120公斤。"
+          },
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "母兽通常需要多久照顾幼仔",
+            "object": "一年半到两年",
+            "object_type": "Disease",
+            "evidence": "大熊猫的繁殖率比较低。因为大熊猫妈妈通常需要一年半到两年的时间来照顾她的孩子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "为什么常见隔年产子",
+            "object": "育幼期间不再繁殖",
+            "object_type": "Disease",
+            "evidence": "大熊猫在育幼期间不会再繁殖，所以大熊猫一般是隔年产子。"
+          },
+          {
+            "subject": "大熊猫幼仔",
+            "predicate": "幼仔在母亲处能学到哪些关键生存技能",
+            "object": "寻找食物和水源；躲避天敌；抵御疾病；谈情说爱；生儿育女；成为真正的大熊猫",
+            "object_type": "Disease",
+            "evidence": "大熊猫幼仔能从它们的妈妈那里学到很多东西：比如怎样寻找食物和水源，怎样躲避天敌，抵御疾病，怎样谈情说爱，生儿育女，怎样成为一只真正的大熊猫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "妊娠期范围是多少？有哪些特例？",
+            "object": "83~200余天；特例324天",
+            "object_type": "Disease",
+            "evidence": "大熊猫妊娠期为83~200余天，甚至出现了324天的特例。"
+          },
+          {
+            "subject": "大熊猫幼子",
+            "predicate": "幼子通常在哪几月出生？",
+            "object": "7~9月",
+            "object_type": "Disease",
+            "evidence": "幼子通常在7~9月出生"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "产仔巢穴通常是什么类型？",
+            "object": "隐蔽的树洞或天然的岩洞",
+            "object_type": "Disease",
+            "evidence": "出生的巢穴通常是一个隐蔽的树洞，或天然的岩洞，里面有大熊猫妈妈精心铺垫的树枝和干草。"
+          },
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "刚出生几周母兽育幼行为有哪些？",
+            "object": "怀抱保暖保护；衔于口中移动",
+            "object_type": "Disease",
+            "evidence": "在大熊猫刚出生的几周里，大熊猫妈妈会一直将孩子抱在怀里，温暖它、保护它，几乎寸步不离，移动的时候就把它衔在嘴里。"
+          },
+          {
+            "subject": "幼仔叫声",
+            "predicate": "幼仔叫声在母仔通讯中承担什么功能？",
+            "object": "提示吃奶、排便、体温异常及其他不适",
+            "object_type": "Disease",
+            "evidence": "大熊猫育幼期间，幼仔的叫声是母仔间联系非常重要的通讯工具，幼仔想吃奶、想排便、受冷或过热或其他原因的不适，幼仔都通过不同叫声提醒妈妈满足其不同需要。"
+          },
+          {
+            "subject": "熊猫妈妈",
+            "predicate": "母兽如何帮助新生儿排便？",
+            "object": "用舌头舔会阴部以刺激排便",
+            "object_type": "Disease",
+            "evidence": "由于新生儿还没有自主排出大、小便的能力，熊猫妈妈会用舌头舔新生儿的会阴部，有效地刺激他们排便。"
+          },
+          {
+            "subject": "初乳",
+            "predicate": "初乳有哪些不可替代价值？",
+            "object": "富含蛋白质、脂肪、维生素、酶；含人工无法合成的抗体；增强抗病力；促进免疫系统发育",
+            "object_type": "Disease",
+            "evidence": "尤其是初乳，除了有十分丰富的必须营养物质如蛋白质、脂肪、维生素和各种酶外，还含有大量人工无法合成的抗体，帮助宝宝有效抵抗各种疾病的侵害，并有助于宝宝免疫系统的发育。"
+          },
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "野外双胞胎时母兽常见策略是什么？",
+            "object": "忽视或拒绝较弱的一只，确保至少一只成活",
+            "object_type": "Disease",
+            "evidence": "在野外，如果出生的是双胞胎……大熊猫妈妈通常会忽视或拒绝较弱的一个，这能保证至少一只成活。"
+          },
+          {
+            "subject": "圈养大熊猫繁育管理",
+            "predicate": "圈养双胞胎比例近50%时如何提升双仔成活率？",
+            "object": "人工饲养+换仔技术，保障双仔均获母乳与行为学习机会",
+            "object_type": "Disease",
+            "evidence": "在圈养情况下会通过人工饲养并采用换仔技术，让两个宝宝都有吃母乳和从妈妈身上学习行为技能的机会，尽量使所有的大熊猫幼仔都能成活。"
+          },
+          {
+            "subject": "换仔技术",
+            "predicate": "换仔技术解决的核心问题是什么？",
+            "object": "解决母兽哺乳能力与行为教学资源有限无法兼顾双仔的问题",
+            "object_type": "Disease",
+            "evidence": "在圈养情况下会通过人工饲养并采用换仔技术，让两个宝宝都有吃母乳和从妈妈身上学习行为技能的机会，尽量使所有的大熊猫幼仔都能成活。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "幼年/亚成年/成年阶段分界分别是什么？",
+            "object": "幼年：0–1.5岁；亚成年：1.5岁–性成熟；成年：性成熟后",
+            "object_type": "Disease",
+            "evidence": "· 幼年：一岁半前为幼年阶段。\n· 亚成年：一岁半到性成熟前为亚成年阶段……\n· 成年：性成熟后为成年阶段。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "1-3岁最活跃具体表现在哪里？",
+            "object": "玩耍、探索、爬树",
+            "object_type": "Disease",
+            "evidence": "大熊猫在1~3岁期间是最为活跃的时期，每天除了采食外，大部分时间都在玩耍、探索和爬树。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "一年半到两年",
+          "隔年",
+          "83~200余天",
+          "324天",
+          "7~9月",
+          "一岁半前",
+          "一到两周",
+          "一个月",
+          "六到八周",
+          "三个月",
+          "半岁",
+          "一岁",
+          "一岁半",
+          "一岁半至性成熟前",
+          "1~3岁",
+          "一岁半到性成熟前",
+          "性成熟后"
+        ],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】行为特点 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】行为特点 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "extracted": {
+        "topic": "行为习性",
+        "times": [
+          "每天",
+          "每两次进食的中间",
+          "发情季节",
+          "求婚期临近时"
+        ],
+        "person_entities": [],
+        "place_entities": [
+          "山村小寨",
+          "山谷",
+          "住宅"
+        ],
+        "panda_aliases": [],
+        "companion_species": [
+          "羊",
+          "猪"
+        ],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [
+          "低能量的食物",
+          "保存能量"
+        ],
+        "behavior_terms": [
+          "睡觉",
+          "进食",
+          "爬树",
+          "嬉戏",
+          "回避",
+          "修饰",
+          "伸展",
+          "打哈欠",
+          "抖水",
+          "发情期冲突",
+          "争斗",
+          "进食时间占比",
+          "休息时间占比",
+          "两次进食间睡眠时长",
+          "睡姿类型",
+          "腿撑树+手遮眼行为归类",
+          "内八字慢行功能",
+          "爬树目的",
+          "求婚期爬树频次变化原因",
+          "人兽/器物互动现象",
+          "育幼期攻击性增强原因",
+          "求适行为类型",
+          "野外冲突高发季节与情境",
+          "圈养冲突常见诱因"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "育幼期",
+          "求婚期",
+          "发情季节"
+        ],
+        "reproduction_terms": [
+          "发情季节",
+          "求婚期",
+          "雄性竞配",
+          "雌性发情"
+        ],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "每日行为时长占比",
+            "object": "睡觉",
+            "object_type": "Behavior",
+            "evidence": "大熊猫每天除去一半进食的时间，剩下的一半时间多数便是在睡梦中度过。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "单次睡眠时长",
+            "object": "2~4个小时",
+            "object_type": "Other",
+            "evidence": "在野外，大熊猫在每两次进食的中间睡2~4个小时"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "睡觉姿势",
+            "object": "平躺",
+            "object_type": "Behavior",
+            "evidence": "平躺、侧躺、俯卧、伸展或蜷成一团都是它们喜好的睡觉方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "睡觉姿势",
+            "object": "侧躺",
+            "object_type": "Behavior",
+            "evidence": "平躺、侧躺、俯卧、伸展或蜷成一团都是它们喜好的睡觉方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "睡觉姿势",
+            "object": "俯卧",
+            "object_type": "Behavior",
+            "evidence": "平躺、侧躺、俯卧、伸展或蜷成一团都是它们喜好的睡觉方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "睡觉姿势",
+            "object": "伸展",
+            "object_type": "Behavior",
+            "evidence": "平躺、侧躺、俯卧、伸展或蜷成一团都是它们喜好的睡觉方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "睡觉姿势",
+            "object": "蜷成一团",
+            "object_type": "Behavior",
+            "evidence": "平躺、侧躺、俯卧、伸展或蜷成一团都是它们喜好的睡觉方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "最喜爱睡觉姿势",
+            "object": "腿撑在树上并用手遮住眼睛",
+            "object_type": "Behavior",
+            "evidence": "他们最喜欢的姿势便是腿撑在树上，并用手遮住眼睛。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "典型移动方式",
+            "object": "内八字慢吞吞的行走方式",
+            "object_type": "Behavior",
+            "evidence": "大熊猫最可爱的特点是它那胖嘟嘟的身体和他那内八字慢吞吞的行走方式。"
+          },
+          {
+            "subject": "慢吞吞的行走方式",
+            "predicate": "行为功能",
+            "object": "保存能量",
+            "object_type": "Biology",
+            "evidence": "正是它这种慢吞吞的动作使它能够保存能量，以适应低能量的食物。"
+          },
+          {
+            "subject": "慢吞吞的行走方式",
+            "predicate": "适应对象",
+            "object": "低能量的食物",
+            "object_type": "Biology",
+            "evidence": "正是它这种慢吞吞的动作使它能够保存能量，以适应低能量的食物。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "爬树目的",
+            "object": "侦察情况",
+            "object_type": "Behavior",
+            "evidence": "它们有时候也会爬树侦察情况，逃避入侵者，或是打盹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "爬树目的",
+            "object": "逃避入侵者",
+            "object_type": "Behavior",
+            "evidence": "它们有时候也会爬树侦察情况，逃避入侵者，或是打盹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "爬树目的",
+            "object": "打盹",
+            "object_type": "Behavior",
+            "evidence": "它们有时候也会爬树侦察情况，逃避入侵者，或是打盹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "爬树触发条件",
+            "object": "临近求婚期",
+            "object_type": "Other",
+            "evidence": "爬树的行为一般是临近求婚期，或逃避危险，或彼此相遇时弱者借以回避强者的一种方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "爬树触发条件",
+            "object": "逃避危险",
+            "object_type": "Behavior",
+            "evidence": "爬树的行为一般是临近求婚期，或逃避危险，或彼此相遇时弱者借以回避强者的一种方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "爬树触发条件",
+            "object": "彼此相遇时弱者回避强者",
+            "object_type": "Behavior",
+            "evidence": "爬树的行为一般是临近求婚期，或逃避危险，或彼此相遇时弱者借以回避强者的一种方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "嬉戏内容",
+            "object": "把锅盆桶具尤其是圆形器皿当玩具",
+            "object_type": "Behavior",
+            "evidence": "熊猫有时还下到山谷，串入到山村小寨或住宅，把锅盆桶具，尤其是圆形的器皿当成玩具，玩耍后弃置山野。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "嬉戏发生地",
+            "object": "山谷",
+            "object_type": "Place",
+            "evidence": "熊猫有时还下到山谷，串入到山村小寨或住宅，把锅盆桶具，尤其是圆形的器皿当成玩具，玩耍后弃置山野。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "嬉戏发生地",
+            "object": "山村小寨",
+            "object_type": "Place",
+            "evidence": "熊猫有时还下到山谷，串入到山村小寨或住宅，把锅盆桶具，尤其是圆形的器皿当成玩具，玩耍后弃置山野。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "嬉戏发生地",
+            "object": "住宅",
+            "object_type": "Place",
+            "evidence": "熊猫有时还下到山谷，串入到山村小寨或住宅，把锅盆桶具，尤其是圆形的器皿当成玩具，玩耍后弃置山野。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "共处物种",
+            "object": "羊",
+            "object_type": "Species",
+            "evidence": "有时它们还和羊、猪等家养的牲畜亲善，随着同吃同住。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "共处物种",
+            "object": "猪",
+            "object_type": "Species",
+            "evidence": "有时它们还和羊、猪等家养的牲畜亲善，随着同吃同住。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "应激回避行为",
+            "object": "前掌蒙面",
+            "object_type": "Behavior",
+            "evidence": "通常情况下，大熊猫性情总是十分温顺，好似闺阁深院的淑女，初次见人，常用前掌蒙面，或把头低下，不露真容。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "应激回避行为",
+            "object": "把头低下",
+            "object_type": "Behavior",
+            "evidence": "通常情况下，大熊猫性情总是十分温顺，好似闺阁深院的淑女，初次见人，常用前掌蒙面，或把头低下，不露真容。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "相遇应对策略",
+            "object": "回避",
+            "object_type": "Behavior",
+            "evidence": "它们很少主动地攻击其他动物或人，在野外偶然相遇时，总是采用回避的方式。"
+          },
+          {
+            "subject": "母大熊猫",
+            "predicate": "育幼防御行为",
+            "object": "张牙舞爪，动手动脚",
+            "object_type": "Behavior",
+            "evidence": "但一但当上了妈妈，其小宝贝就是神圣不可侵犯的，即便是关怀看望，也会惹怒母亲大动肝火，张牙舞爪，动手动脚。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "修饰行为",
+            "object": "把身体伸直，前身伸展，后半身抬起",
+            "object_type": "Behavior",
+            "evidence": "可以象猫一样把身体伸直，前身伸展，后半身抬起，让身躯灵活舒展，或睡醒以后，前肢直伸打哈欠。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "修饰行为",
+            "object": "打哈欠",
+            "object_type": "Behavior",
+            "evidence": "可以象猫一样把身体伸直，前身伸展，后半身抬起，让身躯灵活舒展，或睡醒以后，前肢直伸打哈欠。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "理毛/清洁行为",
+            "object": "抖掉身上水",
+            "object_type": "Behavior",
+            "evidence": "如果被水沾湿或过河涉水后，也可以象狗一样把身上的水抖掉。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "冲突发生时期",
+            "object": "发情季节",
+            "object_type": "Other",
+            "evidence": "在野外，大熊猫通常在发情季节发生冲突，特别是当三到四只雄性追求一只发情的雌性时。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "冲突诱发情境",
+            "object": "三到四只雄性追求一只发情的雌性",
+            "object_type": "Other",
+            "evidence": "在野外，大熊猫通常在发情季节发生冲突，特别是当三到四只雄性追求一只发情的雌性时。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "冲突类型",
+            "object": "雌性和雄性争斗",
+            "object_type": "Behavior",
+            "evidence": "有时候，雌性和雄性也会发生争斗。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "争斗诱因",
+            "object": "水",
+            "object_type": "Other",
+            "evidence": "在动物园，它们的争斗通常是因为水，食物或某只大熊猫占据了好的地盘。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "争斗诱因",
+            "object": "食物",
+            "object_type": "Other",
+            "evidence": "在动物园，它们的争斗通常是因为水，食物或某只大熊猫占据了好的地盘。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "争斗诱因",
+            "object": "占据好的地盘",
+            "object_type": "Behavior",
+            "evidence": "在动物园，它们的争斗通常是因为水，食物或某只大熊猫占据了好的地盘。"
+          },
+          {
+            "subject": "大熊猫一天中",
+            "predicate": "进食与休息时间比例",
+            "object": "1:1",
+            "object_type": "Disease",
+            "evidence": "大熊猫每天除去一半进食的时间，剩下的一半时间多数便是在睡梦中度过。"
+          },
+          {
+            "subject": "野外大熊猫",
+            "predicate": "两次进食间睡眠时长",
+            "object": "2~4小时",
+            "object_type": "Disease",
+            "evidence": "在野外，大熊猫在每两次进食的中间睡2~4个小时"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "常见睡姿",
+            "object": "平躺、侧躺、俯卧、伸展、蜷成一团",
+            "object_type": "Disease",
+            "evidence": "平躺、侧躺、俯卧、伸展或蜷成一团都是它们喜好的睡觉方式。"
+          },
+          {
+            "subject": "腿撑树+手遮眼",
+            "predicate": "腿撑树+手遮眼行为归类",
+            "object": "偏好性睡姿/自我遮蔽行为",
+            "object_type": "Disease",
+            "evidence": "它们最喜欢的姿势便是腿撑在树上，并用手遮住眼睛。"
+          },
+          {
+            "subject": "内八字慢行",
+            "predicate": "内八字慢行功能",
+            "object": "保存能量以适应低能量食物",
+            "object_type": "Disease",
+            "evidence": "正是它这种慢吞吞的动作使它能够保存能量，以适应低能量的食物。"
+          },
+          {
+            "subject": "大熊猫爬树",
+            "predicate": "爬树目的",
+            "object": "临近求婚期、逃避危险、回避强者",
+            "object_type": "Disease",
+            "evidence": "爬树的行为一般是临近求婚期，或逃避危险，或彼此相遇时弱者借以回避强者的一种方式。"
+          },
+          {
+            "subject": "求婚期附近爬树更常见",
+            "predicate": "求婚期爬树频次变化原因",
+            "object": "临近求婚期时为侦察、回避或社交调节需求增加",
+            "object_type": "Disease",
+            "evidence": "爬树的行为一般是临近求婚期……的一种方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "人兽/器物互动现象",
+            "object": "串入山村小寨/住宅；把锅盆桶具（尤圆形器皿）当玩具；与羊、猪等家畜亲善并同吃同住",
+            "object_type": "Disease",
+            "evidence": "熊猫有时还下到山谷，串入到山村小寨或住宅，把锅盆桶具，尤其是圆形的器皿当成玩具，玩耍后弃置山野。有时它们还和羊、猪等家养的牲畜亲善，随着同吃同住。"
+          },
+          {
+            "subject": "育幼期攻击性可能增强",
+            "predicate": "育幼期攻击性增强原因",
+            "object": "育幼期母体对幼崽保护本能触发高度防御性攻击",
+            "object_type": "Disease",
+            "evidence": "但一但当上了妈妈，其小宝贝就是神圣不可侵犯的，即便是关怀看望，也会惹怒母亲大动肝火，张牙舞爪，动手动脚。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "求适行为类型",
+            "object": "伸展（前身伸展/后半身抬起）、打哈欠（前肢直伸）、抖水",
+            "object_type": "Disease",
+            "evidence": "有时它们还爱作一些修饰及其他一些求适活动。可以象猫一样把身体伸直，前身伸展，后半身抬起……或睡醒以后，前肢直伸打哈欠。如果被水沾湿或过河涉水后，也可以象狗一样把身上的水抖掉。"
+          },
+          {
+            "subject": "野外大熊猫冲突",
+            "predicate": "野外冲突高发季节与情境",
+            "object": "发情季节；多雄竞配情境（3–4只雄性追逐1只发情雌性）",
+            "object_type": "Disease",
+            "evidence": "在野外，大熊猫通常在发情季节发生冲突，特别是当三到四只雄性追求一只发情的雌性时。"
+          },
+          {
+            "subject": "圈养大熊猫冲突",
+            "predicate": "圈养冲突常见诱因",
+            "object": "水源争夺、食物竞争、优质栖息位点（地盘）占取",
+            "object_type": "Disease",
+            "evidence": "在动物园，它们的争斗通常是因为水，食物或某只大熊猫占据了好的地盘。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "每天",
+          "每两次进食的中间",
+          "发情季节",
+          "求婚期临近时"
+        ],
+        "人物": [],
+        "地点": [
+          "山村小寨",
+          "山谷",
+          "住宅"
+        ],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】进食 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】进食 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "extracted": {
+        "topic": "行为习性",
+        "times": [
+          "夏季",
+          "秋冬",
+          "每天"
+        ],
+        "person_entities": [],
+        "place_entities": [
+          "高山",
+          "中低山地区"
+        ],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "高山",
+          "中低山地区"
+        ],
+        "biology_terms": [
+          "咬肌发达",
+          "齿冠齿突发达",
+          "伪拇指",
+          "对握结构",
+          "食物在体内停留时间短",
+          "消化速度很快",
+          "消化利用率较低",
+          "咬肌",
+          "齿冠齿突",
+          "前爪五趾"
+        ],
+        "behavior_terms": [
+          "垂直迁移",
+          "撵笋觅食",
+          "大量进食",
+          "快速排出",
+          "优选采食（竹笋＞嫩竹＞竹秆）",
+          "握竹",
+          "采食策略",
+          "大量进食+快速排出",
+          "季节性迁移",
+          "握竹行为"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [
+          "竹子",
+          "竹笋",
+          "嫩竹",
+          "竹秆",
+          "竹叶"
+        ],
+        "food_parts": [
+          "竹笋",
+          "嫩竹",
+          "竹秆",
+          "竹叶"
+        ],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "夏季迁移至",
+            "object": "高山",
+            "object_type": "Habitat",
+            "evidence": "大熊猫还有垂直迁移习性，夏季上移高山、撵笋觅食，秋冬高山积雪则下移到中低山地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "秋冬迁移至",
+            "object": "中低山地区",
+            "object_type": "Habitat",
+            "evidence": "大熊猫还有垂直迁移习性，夏季上移高山、撵笋觅食，秋冬高山积雪则下移到中低山地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "优选采食顺序首位",
+            "object": "竹笋",
+            "object_type": "Behavior",
+            "evidence": "优选采食的顺序为竹笋，嫩竹，竹竿。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "优选采食顺序次位",
+            "object": "嫩竹",
+            "object_type": "Behavior",
+            "evidence": "优选采食的顺序为竹笋，嫩竹，竹竿。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "优选采食顺序末位",
+            "object": "竹竿",
+            "object_type": "Behavior",
+            "evidence": "优选采食的顺序为竹笋，嫩竹，竹竿。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日采食竹笋量",
+            "object": "23~40kg",
+            "object_type": "Behavior",
+            "evidence": "每天的采食量大致如下：竹笋约23~40kg；或竹叶约10~14kg；或竹秆约17kg。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日采食竹叶量",
+            "object": "10~14kg",
+            "object_type": "Behavior",
+            "evidence": "每天的采食量大致如下：竹笋约23~40kg；或竹叶约10~14kg；或竹秆约17kg。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日采食竹秆量",
+            "object": "17kg",
+            "object_type": "Behavior",
+            "evidence": "每天的采食量大致如下：竹笋约23~40kg；或竹叶约10~14kg；或竹秆约17kg。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日进食时长",
+            "object": "10多个小时",
+            "object_type": "Behavior",
+            "evidence": "每天花10多个小时或更多时间来进食大约20公斤竹子并不稀奇。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "典型日进食竹子量",
+            "object": "20公斤",
+            "object_type": "Behavior",
+            "evidence": "每天花10多个小时或更多时间来进食大约20公斤竹子并不稀奇。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "适应结构用于",
+            "object": "伪拇指",
+            "object_type": "Biology",
+            "evidence": "前爪除有五趾外还演变出“伪拇指”组成对握结构以便于握竹。"
+          },
+          {
+            "subject": "伪拇指",
+            "predicate": "功能目的",
+            "object": "握竹",
+            "object_type": "Behavior",
+            "evidence": "前爪除有五趾外还演变出“伪拇指”组成对握结构以便于握竹。"
+          },
+          {
+            "subject": "消化利用率较低",
+            "predicate": "应对策略",
+            "object": "大量进食",
+            "object_type": "Behavior",
+            "evidence": "食物在体内停留的时间短，消化速度很快，对竹类的消化利用率较低，因而采取大量进食、快速排出的方式"
+          },
+          {
+            "subject": "消化利用率较低",
+            "predicate": "应对策略",
+            "object": "快速排出",
+            "object_type": "Behavior",
+            "evidence": "食物在体内停留的时间短，消化速度很快，对竹类的消化利用率较低，因而采取大量进食、快速排出的方式"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "占据绝大部分时间的行为",
+            "object": "进食和消化",
+            "object_type": "Behavior",
+            "evidence": "大熊猫将绝大部分的时间都花在进食和消化上"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "是适应竹食的解剖结构",
+            "object": "咬肌",
+            "object_type": "Biology",
+            "evidence": "在漫长的进化过程中，大熊猫逐渐演变成以高纤维的竹类为主食，并演化一些适应以竹为生的结构特点，如咬肌、齿冠齿突发达，前爪除有五趾外还演变出“伪拇指”组成对握结构以便于握竹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "是适应竹食的解剖结构",
+            "object": "齿冠齿突",
+            "object_type": "Biology",
+            "evidence": "在漫长的进化过程中，大熊猫逐渐演变成以高纤维的竹类为主食，并演化一些适应以竹为生的结构特点，如咬肌、齿冠齿突发达，前爪除有五趾外还演变出“伪拇指”组成对握结构以便于握竹。"
+          },
+          {
+            "subject": "大熊猫前爪",
+            "predicate": "组成对握结构以便于握竹",
+            "object": "伪拇指",
+            "object_type": "Biology",
+            "evidence": "在漫长的进化过程中，大熊猫逐渐演变成以高纤维的竹类为主食，并演化一些适应以竹为生的结构特点，如咬肌、齿冠齿突发达，前爪除有五趾外还演变出“伪拇指”组成对握结构以便于握竹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "优选采食顺序",
+            "object": "竹笋 > 嫩竹 > 竹竿",
+            "object_type": "Behavior",
+            "evidence": "它们不但选择区域内营养价值最好的竹子种类，而且还优先选择营养价值最高的部位。优选采食的顺序为竹笋，嫩竹，竹竿。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "每日竹笋采食量范围",
+            "object": "23~40kg",
+            "object_type": "Behavior",
+            "evidence": "根据不同季节大熊猫采食竹子部位的不同，其每天的采食量大致如下：竹笋约23~40kg；或竹叶约10~14kg；或竹秆约17kg。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "每日竹叶采食量范围",
+            "object": "10~14kg",
+            "object_type": "Behavior",
+            "evidence": "根据不同季节大熊猫采食竹子部位的不同，其每天的采食量大致如下：竹笋约23~40kg；或竹叶约10~14kg；或竹秆约17kg。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "每日竹秆采食量（典型值）",
+            "object": "17kg",
+            "object_type": "Behavior",
+            "evidence": "根据不同季节大熊猫采食竹子部位的不同，其每天的采食量大致如下：竹笋约23~40kg；或竹叶约10~14kg；或竹秆约17kg。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "季节性垂直迁移方向差异",
+            "object": "夏季上移高山；秋冬下移到中低山地区",
+            "object_type": "Behavior",
+            "evidence": "随着气候和食物分布的变化，大熊猫还有垂直迁移习性，夏季上移高山、撵笋觅食，秋冬高山积雪则下移到中低山地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "夏季垂直迁移驱动原因",
+            "object": "撵笋觅食",
+            "object_type": "Behavior",
+            "evidence": "随着气候和食物分布的变化，大熊猫还有垂直迁移习性，夏季上移高山、撵笋觅食，秋冬高山积雪则下移到中低山地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "秋冬垂直迁移驱动条件",
+            "object": "高山积雪",
+            "object_type": "Habitat",
+            "evidence": "随着气候和食物分布的变化，大熊猫还有垂直迁移习性，夏季上移高山、撵笋觅食，秋冬高山积雪则下移到中低山地区。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "采用大量进食+快速排出的原因",
+            "object": "食物在体内停留时间短、消化速度快、消化利用率低",
+            "object_type": "Biology",
+            "evidence": "大熊猫的食物在体内停留的时间短，消化速度很快，对竹类的消化利用率较低，因而采取大量进食、快速排出的方式，来保证它们吃得更多，获得足够能量以满足其需求。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "每日进食时长",
+            "object": "10多个小时或更多",
+            "object_type": "Behavior",
+            "evidence": "所以大熊猫将绝大部分的时间都花在进食和消化上，每天花10多个小时或更多时间来进食大约20公斤竹子并不稀奇。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "支撑日食20公斤竹子的生理行为基础",
+            "object": "将绝大部分时间用于进食和消化",
+            "object_type": "Behavior",
+            "evidence": "所以大熊猫将绝大部分的时间都花在进食和消化上，每天花10多个小时或更多时间来进食大约20公斤竹子并不稀奇。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "夏季",
+          "秋冬",
+          "每天"
+        ],
+        "人物": [],
+        "地点": [
+          "高山",
+          "中低山地区"
+        ],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】野外天敌 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】野外天敌 - 成都大熊猫繁育研究基地.md",
+      "topic": "生态关系",
+      "extracted": {
+        "topic": "生态关系",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [
+          "金猫",
+          "豹",
+          "豺",
+          "狼",
+          "黄喉貂"
+        ],
+        "predator_species": [
+          "金猫",
+          "豹",
+          "豺",
+          "狼",
+          "黄喉貂"
+        ],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [
+          "袭击",
+          "爬上其脊背",
+          "挖眼",
+          "抓肛门将肠拉出"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "幼仔",
+          "少年",
+          "病弱年老者",
+          "年老病弱个体",
+          "病弱老年",
+          "年老病弱",
+          "成年健壮"
+        ],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [
+          "幼仔阶段易受攻击",
+          "病弱年老阶段易受攻击"
+        ],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "豺",
+            "predicate": "袭击",
+            "object": "少年大熊猫",
+            "object_type": "Species",
+            "evidence": "豺：主要袭击少年大熊猫或病弱老年个体。"
+          },
+          {
+            "subject": "豺",
+            "predicate": "袭击",
+            "object": "病弱老年个体",
+            "object_type": "Species",
+            "evidence": "豺：主要袭击少年大熊猫或病弱老年个体。"
+          },
+          {
+            "subject": "豺",
+            "predicate": "捕猎绝招",
+            "object": "爬上其脊背",
+            "object_type": "Behavior",
+            "evidence": "豺：捕猎绝招是爬上其脊背，先挖眼，后抓肛门将肠拉出，故称“掏狗”。"
+          },
+          {
+            "subject": "豺",
+            "predicate": "捕猎绝招",
+            "object": "挖眼",
+            "object_type": "Behavior",
+            "evidence": "豺：捕猎绝招是爬上其脊背，先挖眼，后抓肛门将肠拉出，故称“掏狗”。"
+          },
+          {
+            "subject": "豺",
+            "predicate": "捕猎绝招",
+            "object": "抓肛门将肠拉出",
+            "object_type": "Behavior",
+            "evidence": "豺：捕猎绝招是爬上其脊背，先挖眼，后抓肛门将肠拉出，故称“掏狗”。"
+          },
+          {
+            "subject": "豹",
+            "predicate": "袭击",
+            "object": "少年大熊猫",
+            "object_type": "Species",
+            "evidence": "豹：袭击少年大熊猫及年老病弱个体。"
+          },
+          {
+            "subject": "豹",
+            "predicate": "袭击",
+            "object": "年老病弱个体",
+            "object_type": "Species",
+            "evidence": "豹：袭击少年大熊猫及年老病弱个体。"
+          },
+          {
+            "subject": "金猫",
+            "predicate": "袭击",
+            "object": "大熊猫幼仔",
+            "object_type": "Species",
+            "evidence": "金猫：常袭击大熊猫幼仔。"
+          },
+          {
+            "subject": "金猫",
+            "predicate": "袭击",
+            "object": "大熊猫幼仔",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "金猫",
+            "predicate": "袭击",
+            "object": "病弱年老者",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "豹",
+            "predicate": "袭击",
+            "object": "大熊猫幼仔",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "豹",
+            "predicate": "袭击",
+            "object": "病弱年老者",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "豺",
+            "predicate": "袭击",
+            "object": "大熊猫幼仔",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "豺",
+            "predicate": "袭击",
+            "object": "病弱年老者",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "狼",
+            "predicate": "袭击",
+            "object": "大熊猫幼仔",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "狼",
+            "predicate": "袭击",
+            "object": "病弱年老者",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "黄喉貂",
+            "predicate": "袭击",
+            "object": "大熊猫幼仔",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "黄喉貂",
+            "predicate": "袭击",
+            "object": "病弱年老者",
+            "object_type": "Species",
+            "evidence": "尽管大熊猫与世无争，但在它的栖息领域里，还是有一些与它们为敌的动物，如金猫、豹、豺、狼、黄喉貂等，但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          },
+          {
+            "subject": "豺",
+            "predicate": "主要袭击",
+            "object": "少年大熊猫、病弱老年个体",
+            "object_type": "Person",
+            "evidence": "豺：主要袭击少年大熊猫或病弱老年个体。"
+          },
+          {
+            "subject": "豺",
+            "predicate": "捕猎绝招为",
+            "object": "爬上脊背→挖眼→抓肛门拉肠",
+            "object_type": "Behavior",
+            "evidence": "豺：主要袭击少年大熊猫或病弱老年个体。捕猎绝招是爬上其脊背，先挖眼，后抓肛门将肠拉出，故称“掏狗”。"
+          },
+          {
+            "subject": "豺的捕猎方式",
+            "predicate": "别称",
+            "object": "掏狗",
+            "object_type": "Behavior",
+            "evidence": "豺：……故称“掏狗”。"
+          },
+          {
+            "subject": "豹",
+            "predicate": "袭击",
+            "object": "少年大熊猫、年老病弱个体",
+            "object_type": "Person",
+            "evidence": "豹：袭击少年大熊猫及年老病弱个体。"
+          },
+          {
+            "subject": "金猫",
+            "predicate": "常袭击",
+            "object": "大熊猫幼仔",
+            "object_type": "Person",
+            "evidence": "金猫：常袭击大熊猫幼仔。"
+          },
+          {
+            "subject": "野外天敌（金猫、豹、豺、狼、黄喉貂）",
+            "predicate": "主要袭击对象",
+            "object": "幼仔、病弱年老者",
+            "object_type": "Person",
+            "evidence": "它们主要是袭击大熊猫的幼仔和病弱年老者，因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏。"
+          },
+          {
+            "subject": "成年健壮大熊猫",
+            "predicate": "成年健壮个体受威胁较小的原因",
+            "object": "年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏",
+            "object_type": "Biology",
+            "evidence": "它们主要是袭击大熊猫的幼仔和病弱年老者，因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏。"
+          },
+          {
+            "subject": "野外天敌",
+            "predicate": "天敌主要袭击幼仔与病弱老年个体的原因",
+            "object": "幼仔与病弱老年个体缺乏自卫能力、体型小、行动迟缓、易被围攻",
+            "object_type": "Biology",
+            "evidence": "它们主要是袭击大熊猫的幼仔和病弱年老者，因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏。"
+          },
+          {
+            "subject": "黄喉貂",
+            "predicate": "在天敌谱系中属于",
+            "object": "天敌",
+            "object_type": "Person",
+            "evidence": "野外天敌-黄喉貂"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】食物 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】食物 - 成都大熊猫繁育研究基地.md",
+      "topic": "生态关系",
+      "extracted": {
+        "topic": "生态关系",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "亚高山暗针叶林",
+          "山地暗针叶林",
+          "山地针阔叶混交林",
+          "山地常绿阔叶林"
+        ],
+        "biology_terms": [
+          "消化特征：99%食物为竹子",
+          "营养摄入不足或不均衡（圈养条件下）"
+        ],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [
+          "竹子",
+          "冷箭竹",
+          "八月竹",
+          "实竹子",
+          "筇竹",
+          "大叶筇竹",
+          "箬竹",
+          "少花箭竹",
+          "短锥玉山竹",
+          "北背玉山竹",
+          "峨热竹",
+          "巴山木竹",
+          "糙花箭竹",
+          "缺苞箭竹",
+          "华桔竹",
+          "刺竹",
+          "白夹竹",
+          "箬叶竹",
+          "淡竹",
+          "苦竹",
+          "阔叶箬竹",
+          "毛竹（孟宗竹）",
+          "拐棍竹",
+          "矢竹",
+          "三月竹笋",
+          "方竹笋",
+          "动物尸体",
+          "其它植物",
+          "蜂蜜",
+          "玉米",
+          "大豆",
+          "大米",
+          "小麦",
+          "水果",
+          "维生素",
+          "微量元素"
+        ],
+        "food_parts": [
+          "竹笋",
+          "竹叶",
+          "竹竿"
+        ],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "是关键食物来源",
+            "object": "竹类",
+            "object_type": "Other",
+            "evidence": "竹类是大熊猫生长发育、身体健康和正常繁育的关键所在。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "主食占比",
+            "object": "竹子",
+            "object_type": "Other",
+            "evidence": "大熊猫99%的食物都是竹子"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "可食竹类多样性",
+            "object": "12属、60多种",
+            "object_type": "Other",
+            "evidence": "可供大熊猫食用的竹类植物共有12属、60多种。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "冷箭竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "八月竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "实竹子",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "筇竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "大叶筇竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "箬竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "少花箭竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "短锥玉山竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "北背玉山竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "峨热竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "巴山木竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "糙花箭竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "缺苞箭竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外食用竹种类",
+            "object": "华桔竹",
+            "object_type": "Species",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "大熊猫食用竹",
+            "predicate": "栖息环境关联竹类",
+            "object": "亚高山暗针叶林",
+            "object_type": "Habitat",
+            "evidence": "这些竹子长期生长在亚高山暗针叶林、山地暗针叶林、山地针阔叶混交林及山地常绿阔叶林的林冠下，分布海拔从700m到3500m不等。"
+          },
+          {
+            "subject": "大熊猫食用竹",
+            "predicate": "栖息环境关联竹类",
+            "object": "山地暗针叶林",
+            "object_type": "Habitat",
+            "evidence": "这些竹子长期生长在亚高山暗针叶林、山地暗针叶林、山地针阔叶混交林及山地常绿阔叶林的林冠下，分布海拔从700m到3500m不等。"
+          },
+          {
+            "subject": "大熊猫食用竹",
+            "predicate": "栖息环境关联竹类",
+            "object": "山地针阔叶混交林",
+            "object_type": "Habitat",
+            "evidence": "这些竹子长期生长在亚高山暗针叶林、山地暗针叶林、山地针阔叶混交林及山地常绿阔叶林的林冠下，分布海拔从700m到3500m不等。"
+          },
+          {
+            "subject": "大熊猫食用竹",
+            "predicate": "栖息环境关联竹类",
+            "object": "山地常绿阔叶林",
+            "object_type": "Habitat",
+            "evidence": "这些竹子长期生长在亚高山暗针叶林、山地暗针叶林、山地针阔叶混交林及山地常绿阔叶林的林冠下，分布海拔从700m到3500m不等。"
+          },
+          {
+            "subject": "大熊猫食用竹",
+            "predicate": "垂直分布范围",
+            "object": "700m到3500m",
+            "object_type": "Other",
+            "evidence": "这些竹子长期生长在亚高山暗针叶林、山地暗针叶林、山地针阔叶混交林及山地常绿阔叶林的林冠下，分布海拔从700m到3500m不等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "食谱变化影响因素",
+            "object": "山系和季节",
+            "object_type": "Other",
+            "evidence": "大熊猫的食谱随山系和季节而有变化，在不同的季节采食不同种类的竹子或同种竹子的不同部位。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "春夏季主食部位",
+            "object": "竹笋",
+            "object_type": "Other",
+            "evidence": "春夏季最爱吃不同种类的竹笋，秋季多以竹叶为主食，冬季以竹竿为主食。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "秋季主食部位",
+            "object": "竹叶",
+            "object_type": "Other",
+            "evidence": "春夏季最爱吃不同种类的竹笋，秋季多以竹叶为主食，冬季以竹竿为主食。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "冬季主食部位",
+            "object": "竹竿",
+            "object_type": "Other",
+            "evidence": "春夏季最爱吃不同种类的竹笋，秋季多以竹叶为主食，冬季以竹竿为主食。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "巴山木竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "刺竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "白夹竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "箬叶竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "淡竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "苦竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "阔叶箬竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "毛竹（孟宗竹）",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "冷箭竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "拐棍竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "矢竹",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "三月竹笋",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种类",
+            "object": "方竹笋",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养补充食物类型",
+            "object": "精饲料",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫除了主要采食竹类外，还可获得少量的以谷物类为主所调制的精饲料、水果以及维生素和微量元素。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养补充食物类型",
+            "object": "水果",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫除了主要采食竹类外，还可获得少量的以谷物类为主所调制的精饲料、水果以及维生素和微量元素。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养补充食物类型",
+            "object": "维生素",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫除了主要采食竹类外，还可获得少量的以谷物类为主所调制的精饲料、水果以及维生素和微量元素。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养补充食物类型",
+            "object": "微量元素",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫除了主要采食竹类外，还可获得少量的以谷物类为主所调制的精饲料、水果以及维生素和微量元素。"
+          },
+          {
+            "subject": "大熊猫圈养精饲料",
+            "predicate": "精饲料原料",
+            "object": "玉米",
+            "object_type": "Species",
+            "evidence": "精饲料主要原料包括玉米、大豆、大米、小麦等。"
+          },
+          {
+            "subject": "大熊猫圈养精饲料",
+            "predicate": "精饲料原料",
+            "object": "大豆",
+            "object_type": "Species",
+            "evidence": "精饲料主要原料包括玉米、大豆、大米、小麦等。"
+          },
+          {
+            "subject": "大熊猫圈养精饲料",
+            "predicate": "精饲料原料",
+            "object": "大米",
+            "object_type": "Species",
+            "evidence": "精饲料主要原料包括玉米、大豆、大米、小麦等。"
+          },
+          {
+            "subject": "大熊猫圈养精饲料",
+            "predicate": "精饲料原料",
+            "object": "小麦",
+            "object_type": "Species",
+            "evidence": "精饲料主要原料包括玉米、大豆、大米、小麦等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养导致问题",
+            "object": "营养摄入不足或不均衡",
+            "object_type": "Biology",
+            "evidence": "这主要是因为圈养条件下大熊猫不能完全自由采食，存在营养摄入不足或不均衡。"
+          },
+          {
+            "subject": "大熊猫食物",
+            "predicate": "食物准入机制",
+            "object": "安全及营养检测",
+            "object_type": "Other",
+            "evidence": "大熊猫的所有食物都有严格的选择标准，在使用前都需要经过安全及营养检测。只有符合要求的食物才能被最终提供给大熊猫。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "可食竹类植物涉及",
+            "object": "12属、60多种",
+            "object_type": "Treatment",
+            "evidence": "大熊猫99%的食物都是竹子，可供大熊猫食用的竹类植物共有12属、60多种。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外偶食",
+            "object": "动物尸体、其它植物、蜂蜜",
+            "object_type": "Treatment",
+            "evidence": "野生大熊猫还偶食一些动物尸体或其它植物、蜂蜜等。"
+          },
+          {
+            "subject": "大熊猫食性认知",
+            "predicate": "箭竹=唯一食物是误解的原因",
+            "object": "箭竹只是常见种类之一，非唯一",
+            "object_type": "Treatment",
+            "evidence": "许多人认为大熊猫的食物就是箭竹，其实大熊猫喜欢吃的竹子种类比较多，箭竹只是其中一个比较常见的种类。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外常见食用竹种代表",
+            "object": "冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹",
+            "object_type": "Treatment",
+            "evidence": "野外大熊猫常见的食用竹种类包括：冷箭竹、八月竹、实竹子、筇竹、大叶筇竹、箬竹、少花箭竹、短锥玉山竹、北背玉山竹、峨热竹、巴山木竹、糙花箭竹、缺苞箭竹、华桔竹等。"
+          },
+          {
+            "subject": "可食竹类植物",
+            "predicate": "竹类分布海拔范围",
+            "object": "700m–3500m",
+            "object_type": "Habitat",
+            "evidence": "这些竹子……分布海拔从700m到3500m不等。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "不同山系主食竹类是否相同",
+            "object": "不同",
+            "object_type": "Treatment",
+            "evidence": "不同山系的大熊猫主食竹类不同。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "四季竹子部位偏好",
+            "object": "春夏季：竹笋；秋季：竹叶；冬季：竹竿",
+            "object_type": "Treatment",
+            "evidence": "大熊猫的食谱随山系和季节而有变化，在不同的季节采食不同种类的竹子或同种竹子的不同部位。春夏季最爱吃不同种类的竹笋，秋季多以竹叶为主食，冬季以竹竿为主食。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养主食竹种代表",
+            "object": "巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹（孟宗竹）、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋",
+            "object_type": "Treatment",
+            "evidence": "圈养大熊猫主要以某一种或几种低山平坝竹为主食，如巴山木竹、刺竹、白夹竹、箬叶竹、淡竹、苦竹、阔叶箬竹、毛竹又名孟宗竹、冷箭竹、拐棍竹、矢竹、三月竹笋、方竹笋等。"
+          },
+          {
+            "subject": "圈养管理",
+            "predicate": "圈养强调提供高山/亚高山喜食竹的原因",
+            "object": "保障身体健康和正常繁育",
+            "object_type": "Treatment",
+            "evidence": "近年来随着大熊猫饲养技术的提高，逐渐认识到为大熊猫提供喜食的高山或亚高山竹类对于其身体健康和正常繁育的重要作用；加上交通条件的改善，圈养条件下，也能人工为大熊猫提供大量高山或亚高山的喜食竹类。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养补充食物类别",
+            "object": "精饲料、水果、维生素、微量元素",
+            "object_type": "Treatment",
+            "evidence": "圈养大熊猫除了主要采食竹类外，还可获得少量的以谷物类为主所调制的精饲料、水果以及维生素和微量元素。"
+          },
+          {
+            "subject": "圈养精饲料",
+            "predicate": "精饲料主要原料",
+            "object": "玉米、大豆、大米、小麦",
+            "object_type": "Treatment",
+            "evidence": "精饲料主要原料包括玉米、大豆、大米、小麦等。"
+          },
+          {
+            "subject": "圈养食物管理",
+            "predicate": "所有圈养食物做安全与营养检测的原因",
+            "object": "确保食品安全与营养均衡，满足健康与繁育需求",
+            "object_type": "Treatment",
+            "evidence": "大熊猫的所有食物都有严格的选择标准，在使用前都需要经过安全及营养检测。只有符合要求的食物才能被最终提供给大熊猫。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\docs\\熊猫知识\\【熊猫知识】外形特征 - 成都大熊猫繁育研究基地.md": {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】外形特征 - 成都大熊猫繁育研究基地.md",
+      "topic": "生理构造",
+      "extracted": {
+        "topic": "生理构造",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [
+          "秦岭地区",
+          "岷山",
+          "青川平武",
+          "凉山",
+          "秦岭",
+          "青川",
+          "平武"
+        ],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [
+          "天敌"
+        ],
+        "habitats": [],
+        "biology_terms": [
+          "皮肤厚",
+          "皮肤最厚处可达10毫米",
+          "皮肤平均厚度约为5mm",
+          "体背部皮肤厚于腹侧",
+          "体外侧皮肤厚于体内侧",
+          "皮肤色白而富有弹性和韧性",
+          "皮毛厚而粗糙"
+        ],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "皮肤最厚处达",
+            "object": "10毫米",
+            "object_type": "Other",
+            "evidence": "大熊猫皮肤厚，最厚处可达10毫米。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "皮肤平均厚度为",
+            "object": "5mm",
+            "object_type": "Other",
+            "evidence": "皮肤的平均厚度约为5mm"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "皮肤厚度存在解剖学差异",
+            "object": "体背部厚于腹侧，体外侧厚于体内侧",
+            "object_type": "Biology",
+            "evidence": "身体不同部分的皮肤厚度也不一样，体背部厚于腹侧，体外侧厚于体内侧"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "皮肤物理特性为",
+            "object": "色白而富有弹性和韧性",
+            "object_type": "Biology",
+            "evidence": "皮肤色白而富有弹性和韧性"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "厚而粗糙的皮毛具有",
+            "object": "帮助度过严冬",
+            "object_type": "Biology",
+            "evidence": "它们厚而粗糙的皮毛能帮助它们度过严冬。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "相对锋利的爪和发达有力的前后肢支持",
+            "object": "快速爬上高大的乔木",
+            "object_type": "Behavior",
+            "evidence": "相对锋利的爪和发达有力的前后肢，有利于大熊猫能快速爬上高大的乔木。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "黑白相间外表具有",
+            "object": "隐蔽在密林的树上和积雪的地面而不易被天敌发现",
+            "object_type": "Behavior",
+            "evidence": "黑白相间的外表，有利于隐蔽在密林的树上和积雪的地面而不易被天敌发现。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "头躯长",
+            "object": "1200～1800mm",
+            "object_type": "Person",
+            "evidence": "头躯长1200～1800mm，尾长100～120mm。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "尾长",
+            "object": "100～120mm",
+            "object_type": "Person",
+            "evidence": "头躯长1200～1800mm，尾长100～120mm。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "体重范围",
+            "object": "80～120kg",
+            "object_type": "Person",
+            "evidence": "体重80～120kg，最重可达180kg，人工饲养的熊猫略重，一般雄性个体稍大于雌性。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "最重个体可达",
+            "object": "180kg",
+            "object_type": "Person",
+            "evidence": "体重80～120kg，最重可达180kg，人工饲养的熊猫略重，一般雄性个体稍大于雌性。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "雌雄体型差异",
+            "object": "雄性个体稍大于雌性",
+            "object_type": "Person",
+            "evidence": "体重80～120kg，最重可达180kg，人工饲养的熊猫略重，一般雄性个体稍大于雌性。"
+          },
+          {
+            "subject": "大熊猫毛色",
+            "predicate": "黑白并非纯黑纯白具体体现",
+            "object": "黑中透褐，白中带黄",
+            "object_type": "Person",
+            "evidence": "头部和身体毛色黑白相间分明，但黑非纯黑，白也不是纯白，而是黑中透褐，白中带黄。"
+          },
+          {
+            "subject": "大熊猫地理种群",
+            "predicate": "秦岭与岷山个体在体型和毛质上的差异",
+            "object": "秦岭个体偏大、体毛粗糙、腹毛略呈棕色；岷山（青川、平武）个体较小、体毛较细、腹毛棕色不明显",
+            "object_type": "Person",
+            "evidence": "秦岭地区的个体偏大，体毛粗糙，腹毛略呈棕色色泽。岷山（尤以青川平武）则个体较小，体毛也较前者为细，腹毛棕色不明显，但凉山的个体并不偏小。"
+          },
+          {
+            "subject": "大熊猫黑白外观",
+            "predicate": "黑白外观如何帮助隐蔽",
+            "object": "隐蔽在密林的树上和积雪的地面而不易被天敌发现",
+            "object_type": "Person",
+            "evidence": "黑白相间的外表，有利于隐蔽在密林的树上和积雪的地面而不易被天敌发现。"
+          },
+          {
+            "subject": "大熊猫爪与前后肢",
+            "predicate": "爪和肢体发达如何帮助爬树",
+            "object": "能快速爬上高大的乔木",
+            "object_type": "Person",
+            "evidence": "相对锋利的爪和发达有力的前后肢，有利于大熊猫能快速爬上高大的乔木。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "皮肤最厚可达",
+            "object": "10毫米",
+            "object_type": "Person",
+            "evidence": "大熊猫皮肤厚，最厚处可达10毫米。"
+          },
+          {
+            "subject": "大熊猫皮肤",
+            "predicate": "身体不同部位皮肤厚度差异",
+            "object": "体背部厚于腹侧，体外侧厚于体内侧，平均厚度约5mm",
+            "object_type": "Person",
+            "evidence": "身体不同部分的皮肤厚度也不一样，体背部厚于腹侧，体外侧厚于体内侧，皮肤的平均厚度约为5mm。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "大熊猫冬季不需冬眠的原因",
+            "object": "厚而粗糙的皮毛能帮助度过严冬，且仍可雪地觅食",
+            "object_type": "Person",
+            "evidence": "它们厚而粗糙的皮毛能帮助它们度过严冬。它们不需要冬眠，即使是寒冷的冬天，它们仍然在雪地里觅食。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [
+          "秦岭地区",
+          "岷山",
+          "青川平武",
+          "凉山",
+          "秦岭",
+          "青川",
+          "平武"
+        ],
+        "熊猫曾用名": []
+      }
+    }
+  },
+  "errors_by_source": {}
+}

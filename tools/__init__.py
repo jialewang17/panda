@@ -4,6 +4,8 @@ __all__ = [
     "panda_history_extractor",
     "neo4j_graph_writer",
     "neo4j_qa",
+    "qa_metrics",
+    "qa_evaluator",
 ]
 
 
@@ -21,4 +23,12 @@ def __getattr__(name: str):
         from tools.neo4j_qa import neo4j_qa
 
         return neo4j_qa
+    if name == "qa_evaluator":
+        from tools.qa_evaluator import main as qa_evaluator
+
+        return qa_evaluator
+    if name == "qa_metrics":
+        from tools import qa_metrics
+
+        return qa_metrics
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
