@@ -122,7 +122,7 @@ def print_welcome() -> None:
     console.print("[bold white]欢迎使用 AnyClaw - Agent智能助手[/bold white]")
     console.print()
     console.print("[yellow]可用命令：[/yellow]")
-    console.print("  [cyan]/new[/cyan]     - 开启新的会话")
+    console.print("  [cyan]/new[/cyan]     - 开启新的会话（创建后先选栏目：随便问问/知识/资料/谣言）")
     console.print("  [cyan]/memory[/cyan]  - 查看并恢复之前的会话")
     console.print("  [cyan]/models[/cyan]  - 查看所有模型配置")
     console.print("  [cyan]/tools[/cyan]   - 查看所有可用工具")

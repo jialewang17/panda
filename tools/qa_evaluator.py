@@ -336,9 +336,9 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--database", default="", help="Neo4j 数据库名，默认读取环境变量。")
     parser.add_argument(
         "--persona",
-        default="default",
-        choices=["default", "kid", "educator", "expert", "story"],
-        help="评测时使用的回答 persona。",
+        default="educator",
+        choices=["educator", "kid"],
+        help="评测时使用的回答 persona：educator / kid。",
     )
     parser.add_argument(
         "--strict",
@@ -376,7 +376,7 @@ def main() -> int:
                 qa_top_k=max(1, args.qa_top_k),
                 hit_at_k=max(1, args.hit_at_k),
                 database=str(args.database or ""),
-                persona=str(args.persona or "default"),
+                persona=str(args.persona or "educator"),
                 strict_mode=bool(args.strict_mode),
                 use_llm_judge=bool(args.use_llm_judge),
             )
@@ -389,7 +389,7 @@ def main() -> int:
             "qa_top_k": max(1, args.qa_top_k),
             "hit_at_k": max(1, args.hit_at_k),
             "database": str(args.database or ""),
-            "persona": str(args.persona or "default"),
+            "persona": str(args.persona or "educator"),
             "strict_mode": bool(args.strict_mode),
             "use_llm_judge": bool(args.use_llm_judge),
         },

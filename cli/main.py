@@ -92,7 +92,7 @@ def interactive() -> None:
                 # 处理其他未知命令
                 console.print(f"[yellow]未知命令: {user_input}[/yellow]")
                 console.print("[cyan]可用命令:[/cyan]")
-                console.print("  [cyan]/new[/cyan]     - 开启新的会话")
+                console.print("  [cyan]/new[/cyan]     - 开启新的会话（创建后先选栏目）")
                 console.print("  [cyan]/memory[/cyan]  - 查看并恢复之前的会话")
                 console.print("  [cyan]/models[/cyan]  - 查看所有模型配置")
                 console.print("  [cyan]/tools[/cyan]   - 查看所有可用工具")

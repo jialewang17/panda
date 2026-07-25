@@ -117,10 +117,12 @@ def _resolve_result_json(result_json: str, run_output_dir: str) -> Path:
 def _load_triples(payload: Dict[str, Any]) -> List[Dict[str, str]]:
     """从抽取结果 JSON 中加载三元组列表。"""
     triples: List[Dict[str, str]] = []
+    payload_category = str(payload.get("category", "")).strip()
     for file_item in payload.get("files", []):
         extracted = file_item.get("extracted", {})
         source_file = str(file_item.get("source_file", ""))
         topic = str(extracted.get("topic", file_item.get("topic", ""))).strip()
+        category = str(file_item.get("category", payload_category)).strip()
         for triple in extracted.get("relation_triples", []):
             if not isinstance(triple, dict):
                 continue
@@ -142,6 +144,7 @@ def _load_triples(payload: Dict[str, Any]) -> List[Dict[str, str]]:
                     "evidence": evidence,
                     "source_file": source_file,
                     "topic": topic,
+                    "category": category,
                 }
             )
     return triples
@@ -164,12 +167,25 @@ def _iter_triples_for_write(triples: Iterable[Dict[str, str]]) -> Iterable[Dict[
             "evidence": triple["evidence"],
             "source_file": triple["source_file"],
             "topic": triple.get("topic", ""),
+            "category": triple.get("category", ""),
         }
 
 
 def _clear_graph(driver: Any, database: str) -> None:
     with driver.session(database=database) as session:
         session.run("MATCH (n) DETACH DELETE n")
+
+
+def _clear_category_relations(driver: Any, database: str, category: str) -> int:
+    """仅删除指定栏目的关系，保留其他栏目图谱。"""
+    with driver.session(database=database) as session:
+        result = session.run(
+            "MATCH ()-[r]->() WHERE coalesce(r.category, '') = $category "
+            "WITH r DELETE r RETURN count(*) AS deleted",
+            category=category,
+        )
+        record = result.single()
+        return int(record["deleted"]) if record else 0
 
 
 def _load_graph_database_class() -> Any:
@@ -221,6 +237,7 @@ def _write_graph(driver: Any, database: str, triples: List[Dict[str, str]]) -> D
                 "r.evidence=$evidence, "
                 "r.source_file=$source_file, "
                 "r.topic=$topic, "
+                "r.category=$category, "
                 "r.last_updated=datetime()"
             )
             session.run(
@@ -231,6 +248,7 @@ def _write_graph(driver: Any, database: str, triples: List[Dict[str, str]]) -> D
                 evidence=item["evidence"],
                 source_file=item["source_file"],
                 topic=item.get("topic", ""),
+                category=item.get("category", ""),
             )
             rel_count += 1
     return {"nodes_merged": len(node_ids), "relations_merged": rel_count}
@@ -242,6 +260,7 @@ def neo4j_graph_writer(
     run_output_dir: str = "",
     database: str = "",
     clear_before_write: bool = False,
+    clear_category: str = "",
     dry_run: bool = False,
 ) -> str:
     """
@@ -251,6 +270,7 @@ def neo4j_graph_writer(
     - run_output_dir：运行目录路径（相对项目根），目录下应仅有一个结果 JSON。
     - database：Neo4j 数据库名，默认取 NEO4J_DATABASE 或 neo4j。
     - clear_before_write：写入前是否清空图谱。
+    - clear_category：写入前仅删除该栏目关系（如 熊猫谣言），优先于全量清空以外的局部替换。
     - dry_run：仅解析和统计，不执行写入。
     输出：JSON 字符串，包含写入统计与目标文件。
     """
@@ -263,6 +283,8 @@ def neo4j_graph_writer(
         "database": "",
         "dry_run": dry_run,
         "clear_before_write": clear_before_write,
+        "clear_category": clear_category,
+        "category_relations_deleted": 0,
     }
     try:
         json_path = _resolve_result_json(result_json=result_json, run_output_dir=run_output_dir)
@@ -285,6 +307,13 @@ def neo4j_graph_writer(
             driver.verify_connectivity()
             if clear_before_write:
                 _clear_graph(driver=driver, database=config.database)
+            elif clear_category.strip():
+                deleted = _clear_category_relations(
+                    driver=driver,
+                    database=config.database,
+                    category=clear_category.strip(),
+                )
+                result["category_relations_deleted"] = deleted
             write_stats = _write_graph(driver=driver, database=config.database, triples=triples)
             result.update(write_stats)
             result["ok"] = True
@@ -318,6 +347,11 @@ def _build_cli_parser() -> argparse.ArgumentParser:
         help="写入前清空数据库内现有图谱。",
     )
     parser.add_argument(
+        "--clear-category",
+        default="",
+        help="写入前仅删除指定栏目关系（如 熊猫谣言），保留其他栏目。",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="仅解析并统计，不执行写入。",
@@ -339,6 +373,7 @@ def main() -> int:
             "run_output_dir": args.run_output_dir,
             "database": args.database,
             "clear_before_write": args.clear,
+            "clear_category": args.clear_category,
             "dry_run": args.dry_run,
         }
     )
@@ -357,6 +392,9 @@ def main() -> int:
         print(f"triples_count: {parsed.get('triples_count', 0)}")
         print(f"nodes_merged: {parsed.get('nodes_merged', 0)}")
         print(f"relations_merged: {parsed.get('relations_merged', 0)}")
+        if parsed.get("clear_category"):
+            print(f"clear_category: {parsed.get('clear_category')}")
+            print(f"category_relations_deleted: {parsed.get('category_relations_deleted', 0)}")
         print(f"result_json_path: {parsed.get('result_json_path', '')}")
         if parsed.get("error"):
             print(f"error: {parsed['error']}")

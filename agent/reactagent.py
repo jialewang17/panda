@@ -204,9 +204,60 @@ def stream(
 
     # 设置任务ID（使用辅助函数，同时设置 ContextVar 和全局存储）
     set_task_id(task_id)
+
+    # 同步会话栏目模式与语气，供 neo4j_qa 自动生效
+    qa_mode = ""
+    qa_persona = ""
+    if task_id:
+        try:
+            from utils.session_manager import get_session_manager
+            from utils.qa_category_context import (
+                set_qa_category_mode,
+                set_qa_persona,
+                format_mode_label,
+                format_persona_label,
+            )
+
+            session_manager = get_session_manager()
+            session_data = session_manager.load_session(task_id)
+            if session_data:
+                qa_mode = str(session_data.get("qa_category_mode", "") or "").strip()
+                qa_persona = str(session_data.get("qa_persona", "") or "").strip()
+            set_qa_category_mode(qa_mode or None)
+            set_qa_persona(qa_persona or None)
+        except Exception:
+            qa_mode = ""
+            qa_persona = ""
     
     # 构建消息列表
     messages = []
+    if qa_mode or qa_persona:
+        try:
+            from utils.qa_category_context import MODE_AUTO, format_mode_label, format_persona_label
+
+            hints: list[str] = []
+            if qa_mode:
+                mode_text = format_mode_label(qa_mode)
+                if qa_mode == MODE_AUTO:
+                    hints.append(
+                        f"当前会话栏目模式：{mode_text}。\n"
+                        "回答熊猫相关问题时，请调用 neo4j_qa；可不传 category，"
+                        "工具会自动判断属于「熊猫知识 / 熊猫资料 / 熊猫谣言」后再检索。"
+                    )
+                else:
+                    hints.append(
+                        f"当前会话栏目模式：{mode_text}。\n"
+                        f"回答熊猫相关问题时，请调用 neo4j_qa，并将 category 设为「{qa_mode}」。"
+                    )
+            if qa_persona:
+                persona_text = format_persona_label(qa_persona)
+                hints.append(
+                    f"当前会话语气：{persona_text}。\n"
+                    f"调用 neo4j_qa 时请将 persona 设为「{qa_persona}」。"
+                )
+            messages.append(SystemMessage(content="\n".join(hints)))
+        except Exception:
+            pass
     ltm_context = format_relevant_memories_for_prompt(user_input, top_k=3)
     if ltm_context:
         messages.append(SystemMessage(content=ltm_context))

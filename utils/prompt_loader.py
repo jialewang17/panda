@@ -60,6 +60,48 @@ def get_system_prompt() -> str:
     return get_prompt_config().get("system_prompt", "").strip()
 
 
+_PERSONA_FALLBACK: Dict[str, str] = {
+    "kid": (
+        "语气：面向 6-10 岁小朋友的科普讲解员；用词简单、句子短；"
+        "多用类比；避免恐吓性描述；必要时用“我们可以理解为…”帮助理解。"
+    ),
+    "educator": "语气：耐心、鼓励式；像课堂老师；适当分点；避免堆砌术语。",
+}
+
+
+def get_persona_prompt(persona: str) -> str:
+    """
+    获取问答语气人设提示词。
+
+    优先从 config/prompt.yaml 的 persona 映射读取 prompt/persona/*.txt；
+    文件缺失时回退到内置默认文案。
+    """
+    key = str(persona or "educator").strip().lower() or "educator"
+    # 兼容旧参数名 default → 普通科普
+    if key == "default":
+        key = "educator"
+    raw = _load_prompt_yaml()
+    persona_cfg = raw.get("persona")
+    prompt_dir = get_prompt_dir()
+    if isinstance(persona_cfg, dict):
+        mapped = persona_cfg.get(key) or persona_cfg.get("educator")
+        if mapped:
+            file_path = (prompt_dir / str(mapped)).resolve()
+            if file_path.is_file():
+                return file_path.read_text(encoding="utf-8").strip()
+            text = str(mapped).strip()
+            if text and not text.endswith(".txt"):
+                return text
+    return _PERSONA_FALLBACK.get(key, _PERSONA_FALLBACK["educator"])
+
+
+def list_persona_keys() -> List[str]:
+    """列出已配置的 persona 键名。"""
+    raw = _load_prompt_yaml()
+    persona_cfg = raw.get("persona")
+    if isinstance(persona_cfg, dict) and persona_cfg:
+        return [str(k) for k in persona_cfg.keys()]
+    return list(_PERSONA_FALLBACK.keys())
 
 
 def format_tool_registry_for_prompt(tools: List[Any]) -> str:

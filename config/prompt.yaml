@@ -2,3 +2,9 @@
 
 # Agent 底座 system prompt
 system_prompt: system_prompt.txt
+
+# 问答语气人设（neo4j_qa persona）
+# 会话「普通科普」→ educator；「儿童科普」→ kid
+persona:
+  educator: persona/educator.txt
+  kid: persona/kid.txt

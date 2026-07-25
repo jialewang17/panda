@@ -36,6 +36,7 @@ class EnvConfig:
         self.DASHSCOPE_APIKEY: Optional[str] = os.environ.get("DASHSCOPE_APIKEY") or None
         self.DEEPSEEK_APIKEY: Optional[str] = os.environ.get("DEEPSEEK_APIKEY") or None
         self.KIMI_APIKEY: Optional[str] = os.environ.get("KIMI_APIKEY") or None
+        self.OPENAI_BASE_URL: Optional[str] = os.environ.get("OPENAI_BASE_URL") or None
 
     def get_api_key(self, env_var_name: str) -> Optional[str]:
         """根据配置中的 api_key_env 取对应 API Key。"""

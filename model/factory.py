@@ -64,8 +64,13 @@ def _resolve_provider_model_api_key(
     provider_val = str(provider_raw).strip().lower()
     model_val = str(model_raw).strip()
 
+    config_provider = str(config.get("provider") or "").strip().lower()
+    provider_overridden = bool(
+        provider_override
+        and str(provider_override).strip().lower() != config_provider
+    )
     api_key_env = (config.get("api_key_env") or "").strip()
-    if not api_key_env:
+    if provider_overridden or not api_key_env:
         api_key_env = _DEFAULT_API_KEY_ENV_BY_PROVIDER.get(
             provider_val,
             f"{provider_val.upper()}_APIKEY",
@@ -105,12 +110,16 @@ def _create_openai_compatible(
     - 使用 langchain_openai.ChatOpenAI
     - 通过 base_url 指向第三方 OpenAI-compatible endpoint
     """
-    # 流式场景下默认请求返回 usage（通过 model_kwargs 注入，避免触发「非默认参数」warning）
+    # 流式场景下默认请求返回 usage；非流式调用需避免携带 stream_options
     model_kwargs = kwargs.get("model_kwargs") if isinstance(kwargs.get("model_kwargs"), dict) else {}
-    if "stream_options" not in model_kwargs and "stream_options" not in kwargs:
-        model_kwargs["stream_options"] = {"include_usage": True}
+    streaming = kwargs.get("streaming", True)
+    if streaming is not False:
+        if "stream_options" not in model_kwargs and "stream_options" not in kwargs:
+            model_kwargs["stream_options"] = {"include_usage": True}
+    else:
+        model_kwargs.pop("stream_options", None)
+        kwargs.pop("stream_options", None)
     kwargs["model_kwargs"] = model_kwargs
-    # OpenAI 接口要求 stream_options 与 stream 同时显式开启
     kwargs.setdefault("streaming", True)
     try:
         return ChatOpenAI(model=model, api_key=api_key, base_url=base_url, **kwargs)
@@ -122,13 +131,22 @@ def _create_openai_compatible(
 
 # 创建openai模型接口
 def _create_openai(model: str, api_key: str, **kwargs: Any) -> Any:
-    # 流式场景下默认请求返回 usage（通过 model_kwargs 注入，避免触发「非默认参数」warning）
+    # 流式场景下默认请求返回 usage；非流式调用需避免携带 stream_options
     model_kwargs = kwargs.get("model_kwargs") if isinstance(kwargs.get("model_kwargs"), dict) else {}
-    if "stream_options" not in model_kwargs and "stream_options" not in kwargs:
-        model_kwargs["stream_options"] = {"include_usage": True}
+    streaming = kwargs.get("streaming", True)
+    if streaming is not False:
+        if "stream_options" not in model_kwargs and "stream_options" not in kwargs:
+            model_kwargs["stream_options"] = {"include_usage": True}
+    else:
+        model_kwargs.pop("stream_options", None)
+        kwargs.pop("stream_options", None)
     kwargs["model_kwargs"] = model_kwargs
-    # OpenAI 接口要求 stream_options 与 stream 同时显式开启
     kwargs.setdefault("streaming", True)
+
+    base_url = str(kwargs.pop("base_url", "") or get_env_config().OPENAI_BASE_URL or "").strip()
+    if base_url:
+        return _create_openai_compatible(model=model, api_key=api_key, base_url=base_url, **kwargs)
+
     try:
         return ChatOpenAI(model=model, api_key=api_key, **kwargs)
     except TypeError:

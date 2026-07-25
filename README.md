@@ -8,12 +8,14 @@
   - 失败重试与断点续跑
   - 支持“问题清单驱动”的二次定向抽取（补强细节事实）
   - 运行结果独立目录输出
+  - 支持语料栏目：`熊猫知识` / `熊猫谣言` / `熊猫资料`（入库时写入 `r.category`）
 - 图谱写入：`tools/neo4j_graph_writer.py`
   - 支持 Neo4j Aura
   - 关系类型使用抽取结果中的 `predicate`
-  - 节点/关系保存 `evidence` 与 `source_file`
+  - 节点/关系保存 `evidence`、`source_file`、`topic`、`category`
 - 图谱问答：`tools/neo4j_qa.py`
   - 两阶段检索（先文档候选，再关系精排）
+  - 可先选栏目再提问，按 `r.category` 缩小检索范围
   - 展示流程模块化：运行信息 -> Cypher 解析 -> 命中节点关系 -> 回答 -> 来源
   - 支持 persona（如 `kid`）
   - 支持来源文档展示、交互模式与问答 JSON 自动落盘
@@ -36,29 +38,49 @@ NEO4J_DATABASE=neo4j
 
 ## 常用命令
 
-### 1) 抽取目录下全部文档
+### 1) 按栏目抽取文档
+熊猫知识：
 ```bash
-python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --max-concurrency 5 --retry-failed-times 1
+python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --category "熊猫知识" --max-concurrency 5 --retry-failed-times 1
 ```
+
+熊猫谣言（建议用辟谣汇总，避免把谣言标题当事实）：
+```bash
+python -m tools.panda_history_extractor --docs-dir "docs/熊猫谣言" --category "熊猫谣言" --max-concurrency 5
+```
+
+熊猫资料（个体档案等）：
+```bash
+python -m tools.panda_history_extractor --docs-dir "docs/熊猫资料" --category "熊猫资料" --max-concurrency 3
+```
+
+`--category` 可省略：会按路径自动推断（`docs/熊猫谣言`、`docs/谣言与辟谣` → 熊猫谣言；`docs/熊猫资料` → 熊猫资料；其余默认熊猫知识）。
 
 基于细节问题清单做“基础抽取 + 二次定向抽取”：
 ```bash
-python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --focus-questions-json "docs/panda_detailed_questions.json" --max-concurrency 5
+python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --category "熊猫知识" --focus-questions-json "docs/panda_detailed_questions.json" --max-concurrency 5
 ```
 
 ### 2) 抽取单文件
 ```bash
-python -m tools.panda_history_extractor --md-path "docs/熊猫知识/【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md"
+python -m tools.panda_history_extractor --md-path "docs/熊猫知识/【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md" --category "熊猫知识"
 ```
 
 ### 3) 写入 Neo4j
+建议全量重载时先清空，再分别写入各栏目结果；只更新某一栏目时用 `--clear-category`：
 ```bash
-python -m tools.neo4j_graph_writer --result-json "data/wiki/<run_dir>/<result>.json"
+python -m tools.neo4j_graph_writer --result-json "data/wiki/<knowledge_run>/<result>.json" --clear
+python -m tools.neo4j_graph_writer --result-json "data/wiki/<rumor_run>/<result>.json"
+python -m tools.neo4j_graph_writer --result-json "data/wiki/<profile_run>/<result>.json"
+# 仅替换资料栏目：
+# python -m tools.neo4j_graph_writer --result-json "..." --clear-category "熊猫资料"
 ```
 
-### 4) 问答（单问）
+### 4) 问答（单问，指定栏目）
 ```bash
-python -m tools.neo4j_qa --question "大熊猫是怎么交流的" --persona kid --show-sources
+python -m tools.neo4j_qa --category "熊猫知识" --question "大熊猫是怎么交流的" --persona kid --show-sources
+python -m tools.neo4j_qa --category "熊猫谣言" --question "大熊猫是猫科动物吗" --show-sources
+python -m tools.neo4j_qa --category "熊猫资料" --question "和花是什么时候出生的" --show-sources
 ```
 说明：
 - `neo4j_qa` 每次结果会附带 `quality` 字段（0-100 分与等级）。
@@ -66,8 +88,9 @@ python -m tools.neo4j_qa --question "大熊猫是怎么交流的" --persona kid 
 
 ### 5) 问答（交互）
 ```bash
-python -m tools.neo4j_qa --interactive --persona default --show-sources
+python -m tools.neo4j_qa --interactive --persona educator --show-sources
 ```
+进入后会先选择栏目；也可随时用 `:category 熊猫知识|熊猫谣言|熊猫资料|全部` 切换。
 
 交互问答默认自动保存每轮 JSON 到 `sandbox/qa_sessions/`（可指定会话名）：
 ```bash
@@ -109,7 +132,10 @@ python -m tools.qa_evaluator --dataset "data/eval/qa_eval.jsonl" --use-llm-judge
 说明：`qa_evaluator` 会复用 `neo4j_qa` 的在线质量字段（如 `online_quality`），便于离线评测与在线表现对齐。
 
 ## 目录说明
-- `docs/熊猫知识/`：知识源文档
+- `docs/熊猫知识/`：知识源文档（栏目：熊猫知识）
+- `docs/熊猫谣言/`：辟谣文档（栏目：熊猫谣言）
+- `docs/熊猫资料/`：个体档案等资料（栏目：熊猫资料）
+- `docs/谣言与辟谣/`：谣言与辟谣原始/衍生文档
 - `tools/`：抽取、入库、问答工具
 - `scripts/`：辅助脚本（如 Neo4j schema 统计导出）
 - `data/wiki/`：抽取运行结果目录（按运行批次分组）
@@ -119,3 +145,5 @@ python -m tools.qa_evaluator --dataset "data/eval/qa_eval.jsonl" --use-llm-judge
 - 若 Aura 连接报认证错误，先检查 `NEO4J_URI/USERNAME/PASSWORD/DATABASE`。
 - 若要重跑某批次，优先使用 `--resume-run-output-dir` 续跑。
 - 生产数据谨慎使用 `neo4j_graph_writer --clear`。
+- 只更新某一栏目时，优先使用 `--clear-category <栏目名>`，避免误清其他栏目。
+- 重新全量入库时，建议先 `--clear` 再写入，避免旧关系缺少 `category`。

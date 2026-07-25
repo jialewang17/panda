@@ -30,6 +30,66 @@ from cli.display import (
 from cli.session_ui import show_session_selector
 from utils.message_utils import messages_from_session_data
 from utils.long_term_memory import append_turn_memory
+from utils.qa_category_context import (
+    format_mode_label,
+    format_persona_label,
+    normalize_qa_mode,
+    normalize_qa_persona,
+    set_qa_category_mode,
+    set_qa_persona,
+)
+
+
+def prompt_qa_category_mode() -> str:
+    """新建会话时选择问答栏目模式。"""
+    console.print()
+    console.print("[bold cyan]请选择本次会话的问答栏目：[/bold cyan]")
+    console.print("  [cyan][1][/cyan] 随便问问（系统自动判断栏目后再检索）")
+    console.print("  [cyan][2][/cyan] 熊猫知识")
+    console.print("  [cyan][3][/cyan] 熊猫资料")
+    console.print("  [cyan][4][/cyan] 熊猫谣言")
+    while True:
+        raw = Prompt.ask("请输入序号", default="1").strip()
+        try:
+            mode = normalize_qa_mode(raw)
+        except ValueError as exc:
+            console.print(f"[yellow]{exc}[/yellow]")
+            continue
+        if mode:
+            console.print(f"[green]已选择栏目：{format_mode_label(mode)}[/green]")
+            return mode
+        console.print("[yellow]请输入 1-4[/yellow]")
+
+
+def prompt_qa_persona() -> str:
+    """新建会话时选择对话语气。"""
+    console.print()
+    console.print("[bold cyan]请选择本次会话的对话语气：[/bold cyan]")
+    console.print("  [cyan][1][/cyan] 普通科普")
+    console.print("  [cyan][2][/cyan] 儿童科普")
+    while True:
+        raw = Prompt.ask("请输入序号", default="1").strip()
+        try:
+            persona = normalize_qa_persona(raw)
+        except ValueError as exc:
+            console.print(f"[yellow]{exc}[/yellow]")
+            continue
+        if persona:
+            console.print(f"[green]已选择语气：{format_persona_label(persona)}[/green]")
+            return persona
+        console.print("[yellow]请输入 1-2[/yellow]")
+
+
+def _apply_session_qa_context(session_data: Optional[Dict[str, Any]]) -> tuple[str, str]:
+    """从会话数据同步栏目与语气到上下文。"""
+    qa_mode = ""
+    qa_persona = ""
+    if session_data:
+        qa_mode = str(session_data.get("qa_category_mode", "") or "").strip()
+        qa_persona = str(session_data.get("qa_persona", "") or "").strip()
+    set_qa_category_mode(qa_mode or None)
+    set_qa_persona(qa_persona or None)
+    return qa_mode, qa_persona
 
 
 def run_session_query(
@@ -50,6 +110,10 @@ def run_session_query(
         Agent 的最终状态
     """
     session_manager = get_session_manager()
+    # 同步会话栏目/语气到工具上下文（neo4j_qa 会读取）
+    session_data = session_manager.load_session(task_id)
+    _apply_session_qa_context(session_data)
+
     token_tracker = TokenUsageTracker()
     last_printed_total_usage = {
         "prompt_tokens": 0,
@@ -684,6 +748,17 @@ def run_session_loop(task_id: Optional[str] = None) -> None:
         task_id = session_manager.create_session("新会话")
         ensure_task_dirs(task_id)
         print_status(f"会话已创建，任务 ID: {task_id}", "info")
+
+        # 新建会话后先选择栏目与语气
+        qa_mode = prompt_qa_category_mode()
+        qa_persona = prompt_qa_persona()
+        set_qa_category_mode(qa_mode)
+        set_qa_persona(qa_persona)
+        session_data = session_manager.load_session(task_id)
+        if session_data:
+            session_data["qa_category_mode"] = qa_mode
+            session_data["qa_persona"] = qa_persona
+            session_manager.save_session(task_id, session_data)
         
         # 直接显示 user 输入提示（带任务ID格式）
         task_id_display = task_id[:8] if task_id and len(task_id) > 8 else task_id if task_id else ""
@@ -698,6 +773,8 @@ def run_session_loop(task_id: Optional[str] = None) -> None:
         session_data = session_manager.load_session(task_id)
         if session_data:
             session_data["initial_query"] = initial_query
+            session_data["qa_category_mode"] = qa_mode
+            session_data["qa_persona"] = qa_persona
             # 关键修复：必须立即保存，否则会话列表/恢复时仍显示 create_session("新会话") 的占位描述
             session_manager.save_session(task_id, session_data, final_query=initial_query)
         
@@ -722,6 +799,20 @@ def run_session_loop(task_id: Optional[str] = None) -> None:
         ensure_task_dirs(task_id)
         print_status(f"已恢复会话: {task_id}", "info")
         print_status(f"描述: {session_data.get('description', 'N/A')}", "info")
+        qa_mode = str(session_data.get("qa_category_mode", "") or "").strip()
+        qa_persona = str(session_data.get("qa_persona", "") or "").strip()
+        if not qa_mode:
+            # 旧会话无栏目配置时，补选一次
+            qa_mode = prompt_qa_category_mode()
+            session_data["qa_category_mode"] = qa_mode
+        if not qa_persona:
+            qa_persona = prompt_qa_persona()
+            session_data["qa_persona"] = qa_persona
+        session_manager.save_session(task_id, session_data)
+        set_qa_category_mode(qa_mode)
+        set_qa_persona(qa_persona)
+        print_status(f"栏目模式: {format_mode_label(qa_mode)}", "info")
+        print_status(f"对话语气: {format_persona_label(qa_persona)}", "info")
         
         # 恢复消息
         previous_messages = messages_from_session_data(session_data)

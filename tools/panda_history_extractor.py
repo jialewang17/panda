@@ -26,6 +26,75 @@ DEFAULT_MD_PATH = "docs/熊猫知识/【熊猫知识】大熊猫历史 - 成都�
 PANDA_CANONICAL_NAME = "大熊猫"
 PANDA_ALIASES = {"熊猫", "猫熊", "黑白熊", "白熊", "花熊", "食铁兽"}
 TOPIC_CHOICES = ["生态关系", "生理构造", "疾病健康", "行为习性", "历史背景", "生存环境", "个体档案", "其他"]
+CATEGORY_KNOWLEDGE = "熊猫知识"
+CATEGORY_RUMOR = "熊猫谣言"
+CATEGORY_PROFILE = "熊猫资料"
+ALLOWED_CATEGORIES = (CATEGORY_KNOWLEDGE, CATEGORY_RUMOR, CATEGORY_PROFILE)
+
+
+def _normalize_category(raw: str) -> str:
+    """将用户输入规范化为栏目名；空字符串表示未指定。"""
+    text = str(raw or "").strip()
+    if not text:
+        return ""
+    aliases = {
+        "knowledge": CATEGORY_KNOWLEDGE,
+        "知识": CATEGORY_KNOWLEDGE,
+        CATEGORY_KNOWLEDGE: CATEGORY_KNOWLEDGE,
+        "rumor": CATEGORY_RUMOR,
+        "谣言": CATEGORY_RUMOR,
+        CATEGORY_RUMOR: CATEGORY_RUMOR,
+        "profile": CATEGORY_PROFILE,
+        "资料": CATEGORY_PROFILE,
+        "profiles": CATEGORY_PROFILE,
+        CATEGORY_PROFILE: CATEGORY_PROFILE,
+    }
+    key = text.lower() if text.isascii() else text
+    if key in aliases:
+        return aliases[key]
+    if text in ALLOWED_CATEGORIES:
+        return text
+    raise ValueError(f"不支持的栏目 category={text!r}，可选：{' / '.join(ALLOWED_CATEGORIES)}")
+
+
+def _infer_category_from_path(path_text: str, project_root: Path) -> str:
+    """根据 docs 路径推断栏目。"""
+    raw = str(path_text or "").strip()
+    if not raw:
+        return CATEGORY_KNOWLEDGE
+    path = Path(raw)
+    try:
+        rel = path.resolve().relative_to(project_root.resolve())
+        joined = rel.as_posix()
+    except Exception:
+        joined = path.as_posix()
+    if any(marker in joined for marker in ("熊猫谣言", "谣言与辟谣")):
+        return CATEGORY_RUMOR
+    if "熊猫资料" in joined:
+        return CATEGORY_PROFILE
+    return CATEGORY_KNOWLEDGE
+
+
+def _resolve_category(
+    *,
+    category: str,
+    md_path: str,
+    docs_dir: str,
+    project_root: Path,
+) -> str:
+    """优先使用显式 --category，否则按路径推断。"""
+    explicit = _normalize_category(category)
+    if explicit:
+        return explicit
+    hint = md_path.strip() or docs_dir.strip() or DEFAULT_PANDA_DOCS_DIR
+    return _infer_category_from_path(hint, project_root)
+
+
+def _stamp_files_category(files: List[Dict[str, Any]], category: str) -> None:
+    """为抽取结果中的每个文件条目写入 category。"""
+    for item in files:
+        if isinstance(item, dict):
+            item["category"] = category
 
 
 def _configure_warning_filters() -> None:
@@ -173,6 +242,33 @@ def _build_extraction_prompt(topic: str, text: str) -> str:
 """.strip()
 
 
+def _build_rumor_extraction_prompt(topic: str, text: str) -> str:
+    """辟谣文档专用抽取：只采信正确结论，禁止把谣言标题当事实。"""
+    return f"""
+你是大熊猫“辟谣知识图谱”抽取助手。文章主题是：{topic}
+本文是谣言与辟谣汇总：小节标题中的「谣言：…」是被驳斥的错误说法，不是事实。
+
+硬性规则：
+1. 只采信「正确结论（辟谣）」及正文要点中的正确事实；严禁把谣言标题/错误说法写成肯定性三元组。
+2. 不要输出“大熊猫是猫科动物”这类谣言断言；应输出辟谣后的正确关系，例如：大熊猫-分类属于-熊科。
+3. 每个辟谣小节尽量抽取 2-5 条可检索三元组，覆盖该节核心正确结论（分类、数量、行为、管理措施、天敌、栖息地等）。
+4. 仅基于原文，不得杜撰；evidence 用原文短句。
+5. relation_triples 每条含 subject/predicate/object/object_type/evidence。
+6. object_type 只能是 Species/Habitat/Biology/Behavior/Disease/Treatment/Person/Place/Alias/Other。
+7. 主语优先用明确名词（大熊猫/某个体名/某机构）；避免代词。
+8. predicate 用陈述性关系词（分类属于/主食为/有天敌/采取措施为/存活率超过 等），不要用问句。
+
+优先抽取类型：
+- 正确分类与演化结论（熊科、伪拇指功能、并非未进化等）
+- 食性/营养/繁殖/育幼的正确事实与数值
+- 保护管理措施（遗传管理、野化放归、国际合作）对谣言的澄清
+- 天敌、分布、保护等级等可核对事实
+
+文章正文：
+{text}
+""".strip()
+
+
 def _build_targeted_extraction_prompt(topic: str, text: str, questions: List[str]) -> str:
     """基于细节问题清单构建二次定向抽取提示词。"""
     question_block = "\n".join(f"- {q}" for q in questions if _clean_label(q))
@@ -196,6 +292,32 @@ def _build_targeted_extraction_prompt(topic: str, text: str, questions: List[str
 """.strip()
 
 
+def _build_rumor_targeted_extraction_prompt(topic: str, text: str, questions: List[str]) -> str:
+    """辟谣文档二次定向抽取：按问题补抽正确结论。"""
+    question_block = "\n".join(f"- {q}" for q in questions if _clean_label(q))
+    return f"""
+你是大熊猫“辟谣知识图谱”二次定向抽取助手。文章主题是：{topic}
+请按问题清单，为每条谣言补抽其「正确结论（辟谣）」中的事实三元组。
+
+硬性规则：
+1. 只采信正确结论/辟谣正文，禁止把「谣言：…」标题当作事实写入三元组。
+2. 每个问题尽量产出 1-4 条 relation_triples；原文没有则跳过，勿猜测。
+3. evidence 用原文短句；predicate 用陈述关系，禁止问句当谓词。
+4. 输出仍使用 ExtractionSchema。
+
+定向问题清单：
+{question_block if question_block else "- (无)"}
+
+文章正文：
+{text}
+""".strip()
+
+
+def _chunk_list(items: List[str], chunk_size: int) -> List[List[str]]:
+    size = max(1, int(chunk_size))
+    return [items[i : i + size] for i in range(0, len(items), size)]
+
+
 def _infer_topic_from_filename(file_path: Path) -> str:
     """根据文件名做轻量主题兜底，减少 topic 误判。"""
     name = file_path.name
@@ -207,6 +329,8 @@ def _infer_topic_from_filename(file_path: Path) -> str:
         (["历史", "认识"], "历史背景"),
         (["生存环境", "分布", "致危"], "生存环境"),
         (["育幼", "生长发育", "繁殖"], "个体档案"),
+        (["辟谣", "谣言"], "其他"),
+        (["资料"], "个体档案"),
     ]
     for keys, topic in mapping:
         if any(key in name for key in keys):
@@ -420,6 +544,7 @@ async def _extract_one_markdown_v2_async(
     extraction_chain_factory: Any,
     semaphore: asyncio.Semaphore,
     focus_questions: Optional[List[str]] = None,
+    rumor_mode: bool = False,
 ) -> Dict[str, Any]:
     async with semaphore:
         raw_text = file_path.read_text(encoding="utf-8")
@@ -432,8 +557,13 @@ async def _extract_one_markdown_v2_async(
             topic = filename_topic
 
         extraction_chain = extraction_chain_factory()
+        first_prompt = (
+            _build_rumor_extraction_prompt(topic, markdown_text)
+            if rumor_mode
+            else _build_extraction_prompt(topic, markdown_text)
+        )
         extraction_result: ExtractionSchema = await extraction_chain.ainvoke(
-            [HumanMessage(content=_build_extraction_prompt(topic, markdown_text))]
+            [HumanMessage(content=first_prompt)]
         )
 
         extracted: Dict[str, Any] = {
@@ -463,34 +593,44 @@ async def _extract_one_markdown_v2_async(
         # 第二阶段：针对细节问题做定向补抽，提升细粒度问答命中率。
         cleaned_questions = [q for q in (focus_questions or []) if _clean_label(str(q))]
         if cleaned_questions:
-            targeted_chain = extraction_chain_factory()
-            targeted_result: ExtractionSchema = await targeted_chain.ainvoke(
-                [HumanMessage(content=_build_targeted_extraction_prompt(topic, markdown_text, cleaned_questions))]
+            # 辟谣问题较多时分批，避免单次提示过长导致漏抽。
+            question_batches = (
+                _chunk_list(cleaned_questions, 8) if rumor_mode else [cleaned_questions]
             )
-            targeted_extracted: Dict[str, Any] = {
-                "topic": topic,
-                "times": _as_list(targeted_result.times),
-                "person_entities": _as_list(targeted_result.person_entities),
-                "place_entities": _as_list(targeted_result.place_entities),
-                "panda_aliases": _as_list(targeted_result.panda_aliases),
-                "companion_species": _as_list(targeted_result.companion_species),
-                "predator_species": _as_list(targeted_result.predator_species),
-                "habitats": _as_list(targeted_result.habitats),
-                "biology_terms": _as_list(targeted_result.biology_terms),
-                "behavior_terms": _as_list(targeted_result.behavior_terms),
-                "disease_terms": _as_list(targeted_result.disease_terms),
-                "treatment_terms": _as_list(targeted_result.treatment_terms),
-                "lifecycle_stages": _as_list(targeted_result.lifecycle_stages),
-                "reproduction_terms": _as_list(targeted_result.reproduction_terms),
-                "communication_terms": _as_list(targeted_result.communication_terms),
-                "threat_factors": _as_list(targeted_result.threat_factors),
-                "food_items": _as_list(targeted_result.food_items),
-                "food_parts": _as_list(targeted_result.food_parts),
-                "population_metrics": _as_list(targeted_result.population_metrics),
-                "taxonomy_terms": _as_list(targeted_result.taxonomy_terms),
-                "relation_triples": [triple.model_dump() for triple in targeted_result.relation_triples],
-            }
-            extracted = _merge_extracted_payload(extracted, targeted_extracted)
+            for batch in question_batches:
+                targeted_chain = extraction_chain_factory()
+                targeted_prompt = (
+                    _build_rumor_targeted_extraction_prompt(topic, markdown_text, batch)
+                    if rumor_mode
+                    else _build_targeted_extraction_prompt(topic, markdown_text, batch)
+                )
+                targeted_result: ExtractionSchema = await targeted_chain.ainvoke(
+                    [HumanMessage(content=targeted_prompt)]
+                )
+                targeted_extracted: Dict[str, Any] = {
+                    "topic": topic,
+                    "times": _as_list(targeted_result.times),
+                    "person_entities": _as_list(targeted_result.person_entities),
+                    "place_entities": _as_list(targeted_result.place_entities),
+                    "panda_aliases": _as_list(targeted_result.panda_aliases),
+                    "companion_species": _as_list(targeted_result.companion_species),
+                    "predator_species": _as_list(targeted_result.predator_species),
+                    "habitats": _as_list(targeted_result.habitats),
+                    "biology_terms": _as_list(targeted_result.biology_terms),
+                    "behavior_terms": _as_list(targeted_result.behavior_terms),
+                    "disease_terms": _as_list(targeted_result.disease_terms),
+                    "treatment_terms": _as_list(targeted_result.treatment_terms),
+                    "lifecycle_stages": _as_list(targeted_result.lifecycle_stages),
+                    "reproduction_terms": _as_list(targeted_result.reproduction_terms),
+                    "communication_terms": _as_list(targeted_result.communication_terms),
+                    "threat_factors": _as_list(targeted_result.threat_factors),
+                    "food_items": _as_list(targeted_result.food_items),
+                    "food_parts": _as_list(targeted_result.food_parts),
+                    "population_metrics": _as_list(targeted_result.population_metrics),
+                    "taxonomy_terms": _as_list(targeted_result.taxonomy_terms),
+                    "relation_triples": [triple.model_dump() for triple in targeted_result.relation_triples],
+                }
+                extracted = _merge_extracted_payload(extracted, targeted_extracted)
 
         legacy = {
             "时间": extracted["times"],
@@ -498,7 +638,13 @@ async def _extract_one_markdown_v2_async(
             "地点": extracted["place_entities"],
             "熊猫曾用名": extracted["panda_aliases"],
         }
-        return {"source_file": str(file_path), "topic": topic, "extracted": extracted, "legacy": legacy}
+        return {
+            "source_file": str(file_path),
+            "topic": topic,
+            "category": "",
+            "extracted": extracted,
+            "legacy": legacy,
+        }
 
 
 def _build_alias_map(files: List[Dict[str, Any]]) -> Dict[str, str]:
@@ -611,11 +757,12 @@ def _generate_neo4j_exports(files: List[Dict[str, Any]], output_dir: Path, outpu
     cypher_path = output_dir / f"{output_stem}_graph.cypher"
 
     nodes: set[Tuple[str, str]] = set()
-    rels: List[Tuple[str, str, str, str, str]] = []
+    rels: List[Tuple[str, str, str, str, str, str]] = []
     cypher_lines: List[str] = ["// Auto-generated by panda_history_extractor"]
 
     for item in files:
         source_file = item.get("source_file", "")
+        category = str(item.get("category", "")).strip()
         triples = item.get("extracted", {}).get("relation_triples", [])
         for triple in triples:
             if not isinstance(triple, dict):
@@ -634,7 +781,7 @@ def _generate_neo4j_exports(files: List[Dict[str, Any]], output_dir: Path, outpu
 
             nodes.add((subject, subject_label))
             nodes.add((obj, obj_label))
-            rels.append((subject, obj, rel_type, source_file, evidence))
+            rels.append((subject, obj, rel_type, source_file, evidence, category))
 
             cypher_lines.append(f"MERGE (a:{subject_label} {{id:'{subject}'}}) SET a.name='{subject}';")
             cypher_lines.append(f"MERGE (b:{obj_label} {{id:'{obj}'}}) SET b.name='{obj}';")
@@ -643,6 +790,7 @@ def _generate_neo4j_exports(files: List[Dict[str, Any]], output_dir: Path, outpu
                 + "MERGE (a)-[r:" + rel_type + "]->(b) "
                 + "SET r.source_file='" + source_file.replace("'", "\\'") + "', "
                 + "r.evidence='" + evidence.replace("'", "\\'") + "', "
+                + "r.category='" + category.replace("'", "\\'") + "', "
                 + "r.last_updated='" + datetime.now().isoformat() + "';"
             )
 
@@ -654,7 +802,7 @@ def _generate_neo4j_exports(files: List[Dict[str, Any]], output_dir: Path, outpu
 
     with rels_csv_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow([":START_ID", ":END_ID", ":TYPE", "source_file", "evidence"])
+        writer.writerow([":START_ID", ":END_ID", ":TYPE", "source_file", "evidence", "category"])
         for row in rels:
             writer.writerow(row)
 
@@ -749,6 +897,8 @@ def _load_focus_questions_map(project_root: Path, focus_questions_json: str) -> 
     {
       "groups": [{"doc_path":"docs/xx.md","questions":[...]}]
     }
+
+    同时按绝对路径与文件名建立索引，便于同一文档换目录后仍能命中。
     """
     if not focus_questions_json.strip():
         return {}
@@ -769,9 +919,23 @@ def _load_focus_questions_map(project_root: Path, focus_questions_json: str) -> 
             continue
         abs_doc = (project_root / doc_path).resolve()
         cleaned_questions = [_clean_label(str(q)) for q in questions if _clean_label(str(q))]
-        if cleaned_questions:
-            mapping[str(abs_doc)] = cleaned_questions
+        if not cleaned_questions:
+            continue
+        mapping[str(abs_doc)] = cleaned_questions
+        mapping[abs_doc.name] = cleaned_questions
     return mapping
+
+
+def _lookup_focus_questions(
+    focus_questions_by_source: Optional[Dict[str, List[str]]],
+    file_path: Path,
+) -> List[str]:
+    if not focus_questions_by_source:
+        return []
+    by_abs = focus_questions_by_source.get(str(file_path), [])
+    if by_abs:
+        return by_abs
+    return focus_questions_by_source.get(file_path.name, [])
 
 
 async def _run_attempt_with_progress(
@@ -786,6 +950,7 @@ async def _run_attempt_with_progress(
     checkpoint_path: Path,
     progress_callback: Optional[Callable[[str], None]] = None,
     focus_questions_by_source: Optional[Dict[str, List[str]]] = None,
+    rumor_mode: bool = False,
 ) -> List[Path]:
     topic_chain = llm.with_structured_output(TopicResult)
     semaphore = asyncio.Semaphore(max(1, max_concurrency))
@@ -800,7 +965,8 @@ async def _run_attempt_with_progress(
                 topic_chain=topic_chain,
                 extraction_chain_factory=extraction_chain_factory,
                 semaphore=semaphore,
-                focus_questions=(focus_questions_by_source or {}).get(str(file_path), []),
+                focus_questions=_lookup_focus_questions(focus_questions_by_source, file_path),
+                rumor_mode=rumor_mode,
             )
             return file_path, item, None
         except Exception as exc:
@@ -851,6 +1017,7 @@ async def _run_with_retry_and_resume_async(
     resume_enabled: bool,
     progress_callback: Optional[Callable[[str], None]] = None,
     focus_questions_by_source: Optional[Dict[str, List[str]]] = None,
+    rumor_mode: bool = False,
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, str]]]:
     """执行抽取，支持失败重试、断点续传和进度回调。"""
     checkpoint_path = _checkpoint_file_path(run_output_dir)
@@ -888,6 +1055,7 @@ async def _run_with_retry_and_resume_async(
             checkpoint_path=checkpoint_path,
             progress_callback=progress_callback,
             focus_questions_by_source=focus_questions_by_source,
+            rumor_mode=rumor_mode,
         )
         pending_files = failed_paths
 
@@ -908,6 +1076,7 @@ def panda_history_extractor(
     show_progress: bool = True,
     resume_run_output_dir: str = "",
     focus_questions_json: str = "",
+    category: str = "",
 ) -> str:
     """
     描述：主题驱动抽取熊猫知识，支持并发处理、Pydantic 结构化输出，并可导出 Neo4j CSV/Cypher。
@@ -921,12 +1090,15 @@ def panda_history_extractor(
     - show_progress：是否输出处理进度，默认 true。
     - resume_run_output_dir：指定已有 run_output_dir 进行续跑；为空则自动新建。
     - focus_questions_json：细节问题清单 JSON（相对项目根）。启用后将做二次定向抽取。
+    - category：语料栏目（熊猫知识 / 熊猫谣言 / 熊猫资料）；为空时按路径推断。
     输出：JSON 字符串，包含抽取结果与导出文件路径。
     """
     result_data: Dict[str, Any] = {
         "mode": "",
         "source_file": "",
         "source_dir": "",
+        "category": "",
+        "rumor_mode": False,
         "files_count": 0,
         "files": [],
         "alias_map": {},
@@ -943,6 +1115,15 @@ def panda_history_extractor(
     try:
         _configure_warning_filters()
         project_root = get_project_root()
+        resolved_category = _resolve_category(
+            category=category,
+            md_path=md_path,
+            docs_dir=docs_dir,
+            project_root=project_root,
+        )
+        result_data["category"] = resolved_category
+        rumor_mode = resolved_category == CATEGORY_RUMOR
+        result_data["rumor_mode"] = rumor_mode
         llm = get_element_extraction_model()
         focus_questions_map = _load_focus_questions_map(project_root, focus_questions_json)
         result_data["focus_questions_json"] = focus_questions_json
@@ -998,12 +1179,14 @@ def panda_history_extractor(
             resume_enabled=resume,
             progress_callback=progress_callback,
             focus_questions_by_source=focus_questions_map,
+            rumor_mode=rumor_mode,
         ))
 
         result_data["file_errors"] = file_errors
         if not files:
             raise RuntimeError("全部文件抽取失败，请检查 file_errors")
 
+        _stamp_files_category(files, resolved_category)
         result_data["files"] = files
         result_data["files_count"] = len(files)
         alias_map = _build_alias_map(files)
@@ -1079,6 +1262,11 @@ def _build_cli_parser() -> argparse.ArgumentParser:
         help="细节问题清单 JSON（相对项目根），用于二次定向抽取。",
     )
     parser.add_argument(
+        "--category",
+        default="",
+        help="语料栏目：熊猫知识 / 熊猫谣言 / 熊猫资料（也可用 knowledge/rumor/profile）。为空时按路径推断。",
+    )
+    parser.add_argument(
         "--no-progress",
         dest="show_progress",
         action="store_false",
@@ -1110,6 +1298,7 @@ def main() -> int:
             "show_progress": args.show_progress,
             "resume_run_output_dir": args.resume_run_output_dir,
             "focus_questions_json": args.focus_questions_json,
+            "category": args.category,
         }
     )
     try:
@@ -1124,6 +1313,8 @@ def main() -> int:
             print("=== panda_history_extractor ===")
             print(f"status: {'ERROR' if parsed.get('error') else 'OK'}")
             print(f"mode: {parsed.get('mode', '')}")
+            print(f"category: {parsed.get('category', '')}")
+            print(f"rumor_mode: {parsed.get('rumor_mode', False)}")
             print(f"success_files: {success_count}")
             print(f"failed_files: {failed_count}")
             if failed_files:

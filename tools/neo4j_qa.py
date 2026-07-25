@@ -22,6 +22,11 @@ from langchain_core.tools import tool
 from model.factory import get_text_generation_model
 from utils.env_loader import get_env_config
 
+CATEGORY_KNOWLEDGE = "熊猫知识"
+CATEGORY_RUMOR = "熊猫谣言"
+CATEGORY_PROFILE = "熊猫资料"
+ALLOWED_CATEGORIES = (CATEGORY_KNOWLEDGE, CATEGORY_RUMOR, CATEGORY_PROFILE)
+
 try:
     from rich.console import Console
     from rich.markdown import Markdown
@@ -44,6 +49,61 @@ class Neo4jConfig:
     username: str
     password: str
     database: str
+
+
+def _normalize_category(raw: str, *, allow_all: bool = True) -> str:
+    """规范化栏目名；空字符串表示不限制栏目（全部）。"""
+    text = str(raw or "").strip()
+    if not text:
+        return ""
+    aliases = {
+        "all": "",
+        "全部": "",
+        "*": "",
+        "knowledge": CATEGORY_KNOWLEDGE,
+        "知识": CATEGORY_KNOWLEDGE,
+        CATEGORY_KNOWLEDGE: CATEGORY_KNOWLEDGE,
+        "rumor": CATEGORY_RUMOR,
+        "谣言": CATEGORY_RUMOR,
+        CATEGORY_RUMOR: CATEGORY_RUMOR,
+        "profile": CATEGORY_PROFILE,
+        "资料": CATEGORY_PROFILE,
+        "profiles": CATEGORY_PROFILE,
+        CATEGORY_PROFILE: CATEGORY_PROFILE,
+    }
+    key = text.lower() if text.isascii() else text
+    if key in aliases:
+        value = aliases[key]
+        if value == "" and not allow_all:
+            raise ValueError("当前模式不允许选择全部栏目")
+        return value
+    if text in ALLOWED_CATEGORIES:
+        return text
+    raise ValueError(
+        f"不支持的栏目 category={text!r}，可选：{' / '.join(ALLOWED_CATEGORIES)}"
+        + (" / 全部" if allow_all else "")
+    )
+
+
+def _prompt_category_choice(default: str = CATEGORY_KNOWLEDGE) -> str:
+    """交互模式下让用户选择栏目。"""
+    print("请选择提问栏目：")
+    print(f"  [1] {CATEGORY_KNOWLEDGE}")
+    print(f"  [2] {CATEGORY_RUMOR}")
+    print(f"  [3] {CATEGORY_PROFILE}")
+    print("  [4] 全部（不限制栏目）")
+    raw = input(f"category> [{default}] ").strip()
+    if not raw:
+        return default
+    if raw in {"1", "知识", "knowledge", CATEGORY_KNOWLEDGE}:
+        return CATEGORY_KNOWLEDGE
+    if raw in {"2", "谣言", "rumor", CATEGORY_RUMOR}:
+        return CATEGORY_RUMOR
+    if raw in {"3", "资料", "profile", "profiles", CATEGORY_PROFILE}:
+        return CATEGORY_PROFILE
+    if raw in {"4", "全部", "all", "*"}:
+        return ""
+    return _normalize_category(raw, allow_all=True)
 
 
 def _load_graph_database_class() -> Any:
@@ -80,11 +140,42 @@ def _load_neo4j_config(database_override: str = "") -> Neo4jConfig:
 
 def _extract_keywords(question: str) -> List[str]:
     """从问题中提取关键词。"""
-    raw = re.findall(r"[\u4e00-\u9fffA-Za-z0-9_]+", question)
-    stop_words = {"什么", "哪些", "如何", "为什么", "怎么", "一下", "请问", "一下子", "关于", "容易", "是否"}
+    stop_words = {
+        "什么",
+        "哪些",
+        "如何",
+        "为什么",
+        "怎么",
+        "一下",
+        "请问",
+        "一下子",
+        "关于",
+        "容易",
+        "是否",
+        "是不是",
+        "还是",
+        "时候",
+        "吗",
+        "呢",
+        "吧",
+        "啊",
+        "嘛",
+        "么",
+        "的",
+        "了",
+        "在",
+        "不是",
+        "没有",
+    }
     zh_dict = [
         "大熊猫",
         "熊猫",
+        "猫科动物",
+        "浣熊科",
+        "猫科",
+        "熊科",
+        "活化石",
+        "伪拇指",
         "疾病",
         "治疗",
         "天敌",
@@ -119,21 +210,100 @@ def _extract_keywords(question: str) -> List[str]:
         "亚成年",
         "成年",
         "性成熟",
+        "分类",
+        "属于",
+        "出生",
+        "生日",
+        "谱系号",
+        "实验",
+        "采血",
+        "抽血",
+        "科研",
+        "伦理",
+        "虐待",
+        "辟谣",
+        "谣言",
+        # 常见个体名（熊猫资料）
+        "和花",
+        "和叶",
+        "成和花",
+        "七仔",
+        "丫丫",
+        "萌兰",
+        "家姐",
+        "加加",
+        "雅一",
+        "雅二",
+        "妹珠",
+        "星一",
+        "星二",
+        "皓月",
+        "正正",
+        "美兰",
+        "萌萌",
+        "盈盈",
+        "乐乐",
     ]
+    zh_dict_set = set(zh_dict)
     keywords: List[str] = []
     seen: set[str] = set()
-    for phrase in zh_dict:
-        if phrase in question and phrase not in seen:
-            seen.add(phrase)
-            keywords.append(phrase)
-    for token in raw:
+
+    def _add(token: str) -> None:
         key = token.strip()
-        if len(key) <= 1 or key in stop_words:
-            continue
-        if key not in seen:
-            seen.add(key)
-            keywords.append(key)
-    return keywords[:10]
+        if len(key) <= 1 or key in stop_words or key in seen:
+            return
+        # 整句级噪音：含疑问语气且过长，通常是未切分问句。
+        if len(key) >= 8 and any(ch in key for ch in "吗呢吧？?"):
+            return
+        # 过长且不在词典中的中文串，多半是未切开的整句片段。
+        if len(key) > 6 and re.fullmatch(r"[\u4e00-\u9fff]+", key) and key not in zh_dict_set:
+            return
+        seen.add(key)
+        keywords.append(key)
+
+    for phrase in sorted(zh_dict, key=len, reverse=True):
+        if phrase in question:
+            _add(phrase)
+
+    # 去掉问句套话后再切分；不要用「和/与/或/是」单字切开，以免拆掉「和花」等名字。
+    cleaned = question
+    for pattern in (
+        "是不是",
+        "是否",
+        "会不会",
+        "会被拿来",
+        "拿来做",
+        "用来做",
+        "拿来",
+        "用来",
+        "什么时候",
+        "什么时间",
+        "哪一年",
+        "哪天",
+        "哪些",
+        "什么",
+        "如何",
+        "为什么",
+        "怎么",
+        "请问",
+        "一下",
+        "会被",
+        "会不会被",
+    ):
+        cleaned = cleaned.replace(pattern, " ")
+    chunks = re.split(r"[吗呢吧啊嘛么的了，。？?！!、\s]+", cleaned)
+    for chunk in chunks:
+        # 再去掉句中判断词「是」，但保留以「是」开头以外的实体块
+        parts = re.split(r"是", chunk)
+        for part in parts:
+            for token in re.findall(r"[\u4e00-\u9fffA-Za-z0-9_]+", part):
+                _add(token)
+                if len(token) >= 2:
+                    for phrase in sorted(zh_dict, key=len, reverse=True):
+                        if phrase in token:
+                            _add(phrase)
+
+    return keywords[:15]
 
 
 def _build_intent_terms(question: str) -> List[str]:
@@ -158,6 +328,17 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["寿命", "最长寿", "年龄", "岁", "野外", "圈养", "存活"])
     if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢"]):
         terms.extend(["节约能量", "能量", "减少社会活动", "减小活动范围", "消耗", "代谢"])
+    # 分类/辟谣类问题：问“是不是猫科”时需召回“熊科/分类属于”等正确结论。
+    if any(token in q for token in ["猫科", "熊科", "浣熊", "分类", "属于", "什么科", "活化石", "伪拇指"]):
+        terms.extend(["分类", "分类属于", "属于", "熊科", "猫科", "浣熊科", "亚科", "分子生物学", "伪拇指", "活化石"])
+    # 个体档案：出生/生日/父母等
+    if any(token in q for token in ["出生", "生日", "诞", "出世", "哪天出生", "什么时候出生"]):
+        terms.extend(["出生", "出生于", "出生体重", "生日", "生日时间", "诞下", "双胞胎"])
+    if any(token in q for token in ["父亲", "母亲", "爸爸", "妈妈", "父母", "谱系"]):
+        terms.extend(["父亲", "母亲", "父母", "谱系号", "双胞胎"])
+    # 谣言：做实验/抽血等（正文常用“采血/科研”，需同义扩展）
+    if any(token in q for token in ["实验", "做实验", "抽血", "采血", "科研", "虐待", "电击", "近亲"]):
+        terms.extend(["采血", "抽血", "科研", "实验", "伦理委员会", "伦理", "声明", "致死", "贫血"])
     deduped: List[str] = []
     seen: set[str] = set()
     for term in terms:
@@ -194,6 +375,12 @@ def _detect_intent(question: str) -> str:
         return "lifespan"
     if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢"]):
         return "energy"
+    if any(token in q for token in ["猫科", "熊科", "浣熊", "分类", "属于", "什么科", "活化石", "伪拇指"]):
+        return "taxonomy"
+    if any(token in q for token in ["实验", "做实验", "抽血", "采血", "虐待", "电击", "近亲", "谣言", "辟谣"]):
+        return "rumor"
+    if any(token in q for token in ["出生", "生日", "诞", "出世", "父亲", "母亲", "爸爸", "妈妈", "谱系"]):
+        return "profile"
     return "general"
 
 
@@ -212,6 +399,9 @@ def _build_intent_predicates(intent: str) -> List[str]:
         "development": ["生长", "发育", "成长", "阶段", "月龄", "体重", "性成熟", "恒牙", "独立生活", "成年"],
         "lifespan": ["寿命", "最长寿", "年龄", "活", "存活", "出生于"],
         "energy": ["节约能量", "减少社会活动", "减小活动范围", "缩短怀孕期", "消耗", "代谢"],
+        "taxonomy": ["分类", "分类属于", "属于", "熊科", "亚科", "亲缘"],
+        "profile": ["出生", "出生于", "出生体重", "生日", "生日时间", "父亲", "母亲", "谱系号"],
+        "rumor": ["采血", "抽血", "科研", "伦理", "声明", "致死"],
     }
     return mapping.get(intent, [])
 
@@ -238,6 +428,10 @@ def _build_topic_filters(question: str, intent: str) -> List[str]:
         topics.extend(["个体档案", "行为习性", "生理构造"])
     if intent == "energy":
         topics.extend(["生理构造", "行为习性"])
+    if intent == "taxonomy":
+        topics.extend(["生理构造", "历史背景", "其他"])
+    if intent == "profile":
+        topics.append("个体档案")
 
     if any(token in q for token in ["生长", "发育", "月龄", "体重", "幼仔", "成年", "性成熟"]):
         topics.extend(["生理构造", "行为习性", "个体档案"])
@@ -314,6 +508,7 @@ def _select_candidate_sources(
     keywords: List[str],
     intent_terms: List[str],
     topic_filters: List[str],
+    category: str = "",
     top_n: int = 8,
 ) -> List[str]:
     """
@@ -326,10 +521,13 @@ def _select_candidate_sources(
     source_query = """
 UNWIND $terms AS t
 MATCH ()-[r]->()
+WHERE ($category = '') OR coalesce(r.category, '') = $category
 WITH t, r,
   (
     CASE WHEN size($topic_filters) > 0 AND coalesce(r.topic, '') IN $topic_filters THEN 8 ELSE 0 END +
     CASE WHEN coalesce(r.source_file, '') CONTAINS t THEN 6 ELSE 0 END +
+    CASE WHEN coalesce(startNode(r).id, '') = t THEN 8 ELSE 0 END +
+    CASE WHEN coalesce(startNode(r).id, '') CONTAINS t THEN 4 ELSE 0 END +
     CASE WHEN coalesce(r.predicate, '') CONTAINS t THEN 3 ELSE 0 END +
     CASE WHEN coalesce(endNode(r).id, '') CONTAINS t THEN 3 ELSE 0 END +
     CASE WHEN coalesce(r.evidence, '') CONTAINS t THEN 1 ELSE 0 END
@@ -342,11 +540,24 @@ ORDER BY score DESC
 LIMIT $top_n
 """
     terms = keywords + [term for term in intent_terms if term not in keywords]
-    rows = list(session.run(source_query, terms=terms[:20], topic_filters=topic_filters, top_n=max(1, top_n)))
+    rows = list(
+        session.run(
+            source_query,
+            terms=terms[:20],
+            topic_filters=topic_filters,
+            category=category or "",
+            top_n=max(1, top_n),
+        )
+    )
     return [str(r["source_file"]).strip() for r in rows if str(r["source_file"]).strip()]
 
 
-def _fetch_knowledge(question: str, top_k: int, database: str) -> List[Dict[str, str]]:
+def _fetch_knowledge(
+    question: str,
+    top_k: int,
+    database: str,
+    category: str = "",
+) -> List[Dict[str, str]]:
     """从 Neo4j 检索相关三元组。"""
     config = _load_neo4j_config(database_override=database)
     graph_database = _load_graph_database_class()
@@ -364,15 +575,18 @@ def _fetch_knowledge(question: str, top_k: int, database: str) -> List[Dict[str,
         query_terms = keywords or ["大熊猫"]
     require_intent = len(intent_terms) > 0
     min_total_score = 4 if len(query_terms) >= 2 else 1
+    category_filter = category or ""
 
     query = """
 UNWIND $query_terms AS kw
 MATCH (s)-[r]->(o)
+WHERE ($category = '') OR coalesce(r.category, '') = $category
 WITH s, r, o, kw,
   (
+    CASE WHEN coalesce(s.id, '') = kw THEN 12 ELSE 0 END +
+    CASE WHEN coalesce(s.id, '') CONTAINS kw THEN 6 ELSE 0 END +
     CASE WHEN coalesce(r.predicate, '') CONTAINS kw THEN 6 ELSE 0 END +
     CASE WHEN coalesce(o.id, '') CONTAINS kw THEN 4 ELSE 0 END +
-    CASE WHEN coalesce(s.id, '') CONTAINS kw THEN 3 ELSE 0 END +
     CASE WHEN coalesce(r.evidence, '') CONTAINS kw THEN 2 ELSE 0 END
   ) AS kw_score
 WHERE kw_score > 0
@@ -385,8 +599,16 @@ WITH s, r, o, score,
       WHEN coalesce(r.predicate, '') CONTAINS t OR coalesce(o.id, '') CONTAINS t OR coalesce(r.evidence, '') CONTAINS t
       THEN 2 ELSE 0
     END
-  ) AS intent_score
-WITH s, r, o, score, intent_score,
+  ) AS intent_score,
+  reduce(entity_bias = 0, e IN $entity_terms |
+    entity_bias +
+    CASE
+      WHEN coalesce(s.id, '') = e THEN 10
+      WHEN coalesce(s.id, '') CONTAINS e OR coalesce(r.evidence, '') CONTAINS e THEN 4
+      ELSE 0
+    END
+  ) AS entity_bias
+WITH s, r, o, score, intent_score, entity_bias,
   CASE
     WHEN size($topic_filters) = 0 THEN 0
     WHEN coalesce(r.topic, '') IN $topic_filters THEN 6
@@ -397,7 +619,7 @@ WITH s, r, o, score, intent_score,
   ) AS predicate_bias
 WHERE ((NOT $require_intent) OR intent_score > 0)
   AND ((NOT $require_topic) OR coalesce(r.topic, '') IN $topic_filters)
-  AND (score + intent_score + topic_bias + predicate_bias) >= $min_total_score
+  AND (score + intent_score + topic_bias + predicate_bias + entity_bias) >= $min_total_score
 RETURN
   coalesce(s.id, '') AS subject,
   coalesce(r.predicate, type(r)) AS predicate,
@@ -405,10 +627,17 @@ RETURN
   coalesce(r.evidence, '') AS evidence,
   coalesce(r.source_file, '') AS source_file,
   coalesce(r.topic, '') AS topic,
-  (score + intent_score + topic_bias + predicate_bias) AS total_score
+  coalesce(r.category, '') AS category,
+  (score + intent_score + topic_bias + predicate_bias + entity_bias) AS total_score
 ORDER BY total_score DESC, size(coalesce(r.evidence, '')) DESC
 LIMIT $top_k
 """
+    # 实体名优先：关键词中排除过泛词后，剩余短词常是个体名（如和花）。
+    entity_terms = [
+        t
+        for t in keywords
+        if t and t not in {"大熊猫", "熊猫", "出生", "生日", "分类", "属于"} and 1 < len(t) <= 6
+    ]
     try:
         with driver.session(database=config.database) as session:
             candidate_sources = _select_candidate_sources(
@@ -416,6 +645,7 @@ LIMIT $top_k
                 keywords=keywords,
                 intent_terms=intent_terms,
                 topic_filters=topic_filters,
+                category=category_filter,
                 top_n=8,
             )
             rows: List[Dict[str, str]] = []
@@ -429,9 +659,11 @@ LIMIT $top_k
                         intent_terms=intent_terms,
                         intent_predicates=intent_predicates,
                         topic_filters=topic_filters,
+                        entity_terms=entity_terms,
                         require_intent=require_intent,
                         require_topic=require_topic,
                         min_total_score=min_total_score,
+                        category=category_filter,
                         top_k=max(1, top_k),
                     )
                 ]
@@ -517,18 +749,10 @@ def _pick_supporting_sources(answer: str, evidences: List[Dict[str, Any]], limit
 
 
 def _persona_instructions(persona: str) -> str:
-    """回答语气/角色设定。"""
-    persona_map: Dict[str, str] = {
-        "default": "语气：清晰、客观、偏科普；适合成年人快速理解。",
-        "kid": (
-            "语气：面向 6-10 岁小朋友的科普讲解员；用词简单、句子短；"
-            "多用类比；避免恐吓性描述；必要时用“我们可以理解为…”帮助理解。"
-        ),
-        "educator": "语气：耐心、鼓励式；像课堂老师；适当分点；避免堆砌术语。",
-        "expert": "语气：专业、克制；术语可保留但需简短解释；结构更紧凑。",
-        "story": "语气：轻故事化但仍基于证据；不要编造情节；比喻要克制。",
-    }
-    return persona_map.get(persona.strip(), persona_map["default"])
+    """回答语气/角色设定（从 prompt/persona 加载）。"""
+    from utils.prompt_loader import get_persona_prompt
+
+    return get_persona_prompt(persona)
 
 
 def _get_console(*, use_rich: bool) -> Any:
@@ -553,6 +777,10 @@ def _strip_markdown_for_terminal(text: str) -> str:
     normalized = re.sub(r"^\s{0,3}#{1,6}\s*", "", normalized, flags=re.MULTILINE)
     normalized = normalized.replace("**", "").replace("__", "")
     normalized = normalized.replace("`", "")
+    # Windows 默认终端常见编码为 GBK，遇到 emoji/特殊符号会直接抛 UnicodeEncodeError。
+    # 这里做最小集合的兼容清理，避免影响正文中文内容。
+    for sym in ["✅", "⚠️", "⚠", "❌", "ℹ️", "ℹ", "🔍", "📌", "🚫"]:
+        normalized = normalized.replace(sym, "")
     # Windows 默认编码可能无法打印 '•'，改用 ASCII '-' 保证兼容。
     normalized = re.sub(r"^\s*[-*]\s+", "- ", normalized, flags=re.MULTILINE)
     normalized = re.sub(r"\n{3,}", "\n\n", normalized)
@@ -938,6 +1166,24 @@ def _evaluate_quality_by_llm(question: str, answer: str, evidences: List[Dict[st
     # 规则护栏：若直接拒答/暂无依据，则质量分必须很低（避免出现“拒答=满分”的误判）。
     no_evidence_phrase = "知识库暂无足够依据。"
     normalized_answer = (answer or "").strip()
+    # 强护栏：若本轮完全没有检索证据（evidences 为空），无论 fallback 还是其它模式，
+    # 质量评估都必须反映“groundedness 为 0 / 基于证据的可信度不足”，
+    # 否则容易出现“无证据却被打到 good（如 70 分）”的误判。
+    if not evidences:
+        has_no_evidence_phrase = no_evidence_phrase in normalized_answer
+        # 如果回答里已经明确声明“知识库暂无足够依据”，则更符合拒答/无证据场景；
+        # 否则说明模型在无证据前提下仍给出细节结论，置信度更低。
+        score = 10.0 if has_no_evidence_phrase else 25.0
+        return {
+            "mode": "no_evidence_guardrail",
+            "score_0_100": score,
+            "level": _score_to_level(score),
+            "correctness_0_5": 1.0 if score >= 25.0 else 0.0,
+            "completeness_0_5": 1.0 if score >= 25.0 else 0.0,
+            "groundedness_0_5": 0.0,
+            "concise_clarity_0_5": 2.0 if score >= 25.0 else 1.0,
+            "reason": "本轮没有检索证据（evidences 为空），因此 groundedness 必须为 0；即便为 fallback 模式提供一般性回答，也不应评为 good 级别。",
+        }
     if not normalized_answer or normalized_answer == no_evidence_phrase:
         score = 10.0 if evidences else 0.0
         return {
@@ -989,7 +1235,8 @@ def neo4j_qa(
     top_k: int = 20,
     database: str = "",
     strict_mode: bool = True,
-    persona: str = "default",
+    persona: str = "educator",
+    category: str = "",
 ) -> str:
     """
     描述：基于 Neo4j 图谱检索知识，并调用 Qwen-Plus 进行带证据回答。
@@ -998,7 +1245,8 @@ def neo4j_qa(
     - top_k：最多检索多少条关系，默认 20。
     - database：Neo4j 数据库名，默认读取 NEO4J_DATABASE 或 neo4j。
     - strict_mode：严格模式；证据不足时明确返回“暂无依据”。
-    - persona：回答语气/角色（default/kid/educator/expert/story）。
+    - persona：回答语气/角色（educator=普通科普 / kid=儿童科普）。
+    - category：栏目过滤（熊猫知识 / 熊猫谣言 / 熊猫资料）；空时读取会话栏目模式（含自动判断）。
     输出：JSON 字符串，包含 answer 与 evidences。
     """
     result: Dict[str, Any] = {
@@ -1006,7 +1254,9 @@ def neo4j_qa(
         "question": question,
         "top_k": max(1, top_k),
         "database": "",
-        "persona": persona.strip() or "default",
+        "category": "",
+        "category_mode": "",
+        "persona": persona.strip() or "educator",
         "answer_mode": "knowledge_base",
         "rows_count": 0,
         "answer": "",
@@ -1016,6 +1266,20 @@ def neo4j_qa(
         "quality": {},
     }
     try:
+        from utils.qa_category_context import resolve_effective_category, resolve_effective_persona
+
+        persona = resolve_effective_persona(persona)
+        result["persona"] = persona
+
+        if not str(category or "").strip():
+            resolved, mode_label = resolve_effective_category(question, explicit_category="")
+            category_filter = _normalize_category(resolved, allow_all=True)
+            result["category"] = category_filter or "全部"
+            result["category_mode"] = mode_label
+        else:
+            category_filter = _normalize_category(category, allow_all=True)
+            result["category"] = category_filter or "全部"
+            result["category_mode"] = category_filter or "全部"
         config = _load_neo4j_config(database_override=database)
         result["database"] = config.database
         intent = _detect_intent(question=question)
@@ -1031,7 +1295,12 @@ def neo4j_qa(
                 "params": {"top_k": max(1, top_k)},
                 "error": f"{type(exc).__name__}: {exc}",
             }
-        rows = _fetch_knowledge(question=question, top_k=max(1, top_k), database=config.database)
+        rows = _fetch_knowledge(
+            question=question,
+            top_k=max(1, top_k),
+            database=config.database,
+            category=category_filter,
+        )
         result["rows_count"] = len(rows)
         result["evidences"] = rows
         result["hit_graph"] = _build_hit_graph(rows)
@@ -1108,9 +1377,14 @@ def _build_cli_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--persona",
-        default="default",
-        choices=["default", "kid", "educator", "expert", "story"],
-        help="回答语气/角色：default/kid/educator/expert/story。",
+        default="educator",
+        choices=["educator", "kid"],
+        help="回答语气：educator=普通科普，kid=儿童科普。",
+    )
+    parser.add_argument(
+        "--category",
+        default="",
+        help="栏目过滤：熊猫知识 / 熊猫谣言 / 熊猫资料（也可用 knowledge/rumor/profile）；空表示不限制。交互模式未指定时会先提示选择。",
     )
     parser.add_argument(
         "--plain",
@@ -1155,6 +1429,7 @@ def _run_one_cli_query(
     save_json: bool,
     session_dir: Path | None,
     turn_index: int,
+    category: str = "",
 ) -> bool:
     result_json = neo4j_qa.invoke(
         {
@@ -1163,6 +1438,7 @@ def _run_one_cli_query(
             "database": database,
             "strict_mode": strict_mode,
             "persona": persona,
+            "category": category,
         }
     )
     try:
@@ -1190,19 +1466,35 @@ def main() -> int:
     parser = _build_cli_parser()
     args = parser.parse_args()
     use_rich = (not args.plain) and (Console is not None)
-    persona = str(args.persona or "default")
+    persona = str(args.persona or "educator")
     show_sources = bool(args.show_sources)
+    try:
+        category = _normalize_category(str(args.category or ""), allow_all=True)
+    except ValueError as exc:
+        parser.error(str(exc))
     session_dir = _build_session_dir(session_name=str(args.session_name or "")) if args.save_json else None
     if args.interactive:
+        if not str(args.category or "").strip():
+            try:
+                category = _prompt_category_choice(default=CATEGORY_KNOWLEDGE)
+            except (KeyboardInterrupt, EOFError):
+                print("\n已退出交互模式。")
+                return 0
+            except ValueError as exc:
+                print(f"栏目选择无效：{exc}")
+                return 1
+        category_label = category or "全部"
         if use_rich and Console is not None and Panel is not None and Markdown is not None:
             console = Console(highlight=False, soft_wrap=True)
             console.print(
                 Panel(
                     Markdown(
                         "进入 **Neo4j 问答交互模式**。\n\n"
+                        f"- 当前栏目：`{category_label}`\n"
                         "- 输入问题即可开始\n"
                         "- 输入 `exit` / `quit` 退出\n"
-                        "- 输入 `:persona kid` 切换为儿童科普语气（可选：`default/educator/expert/story`）\n"
+                        "- 输入 `:category 熊猫知识|熊猫谣言|熊猫资料|全部` 切换栏目\n"
+                        "- 输入 `:persona kid` 切换为儿童科普语气（可选：`educator/kid`）\n"
                         "- 输入 `:sources on` / `:sources off` 切换是否显示来源文档\n"
                         "- 输入 `:help` 查看帮助"
                     ),
@@ -1212,7 +1504,11 @@ def main() -> int:
             )
         else:
             print("进入 Neo4j 问答交互模式（输入 exit / quit 退出）")
-            print("命令：:persona <default|kid|educator|expert|story>  |  :sources on|off  |  :help")
+            print(f"当前栏目：{category_label}")
+            print(
+                "命令：:category <熊猫知识|熊猫谣言|熊猫资料|全部>  |  "
+                ":persona <educator|kid>  |  :sources on|off  |  :help"
+            )
         turn_index = 1
         while True:
             try:
@@ -1230,18 +1526,32 @@ def main() -> int:
                 cmd = parts[0].lower()
                 if cmd in {":help", ":h"}:
                     print("命令：")
-                    print("  :persona <default|kid|educator|expert|story>")
+                    print("  :category <熊猫知识|熊猫谣言|熊猫资料|全部>")
+                    print("  :persona <educator|kid>")
                     print("  :sources on|off")
                     print("  :help")
+                    continue
+                if cmd in {":category", ":cat", ":c"}:
+                    if len(parts) < 2:
+                        print(f"当前栏目: {category or '全部'}")
+                        continue
+                    try:
+                        category = _normalize_category(parts[1].strip(), allow_all=True)
+                    except ValueError as exc:
+                        print(str(exc))
+                        continue
+                    print(f"已切换栏目: {category or '全部'}")
                     continue
                 if cmd in {":persona", ":p"}:
                     if len(parts) < 2:
                         print(f"当前 persona: {persona}")
                         continue
                     next_persona = parts[1].strip().lower()
-                    allowed = {"default", "kid", "educator", "expert", "story"}
+                    if next_persona == "default":
+                        next_persona = "educator"
+                    allowed = {"educator", "kid"}
                     if next_persona not in allowed:
-                        print(f"不支持的 persona: {next_persona}，可选：{', '.join(sorted(allowed))}")
+                        print(f"不支持的 persona: {next_persona}，可选：educator（普通科普）, kid（儿童科普）")
                         continue
                     persona = next_persona
                     print(f"已切换 persona: {persona}")
@@ -1274,8 +1584,10 @@ def main() -> int:
                 save_json=bool(args.save_json),
                 session_dir=session_dir,
                 turn_index=turn_index,
+                category=category,
             )
             turn_index += 1
+        return 0
 
     if not args.question.strip():
         parser.error("非交互模式下必须提供 --question，或使用 --interactive")
@@ -1291,6 +1603,7 @@ def main() -> int:
         save_json=bool(args.save_json),
         session_dir=session_dir,
         turn_index=1,
+        category=category,
     )
     return 0 if ok else 1
 
