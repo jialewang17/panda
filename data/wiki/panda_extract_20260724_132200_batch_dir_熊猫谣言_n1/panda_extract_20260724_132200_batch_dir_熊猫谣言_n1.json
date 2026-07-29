@@ -1,0 +1,467 @@
+{
+  "mode": "batch_dir",
+  "source_file": "",
+  "source_dir": "D:\\panda\\docs\\熊猫谣言",
+  "category": "熊猫谣言",
+  "files_count": 1,
+  "files": [
+    {
+      "source_file": "D:\\panda\\docs\\熊猫谣言\\大熊猫辟谣汇总_仅辟谣.md",
+      "topic": "生理构造",
+      "category": "熊猫谣言",
+      "extracted": {
+        "topic": "生理构造",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [
+          "秦岭山系",
+          "四川",
+          "陕西",
+          "甘肃",
+          "孟菲斯动物园",
+          "华盛顿国家动物园",
+          "卧龙神树坪基地",
+          "成都基地",
+          "碧峰峡",
+          "北京动物园"
+        ],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [
+          "豺",
+          "豹",
+          "黄喉貂"
+        ],
+        "habitats": [
+          "雪地",
+          "森林阴影",
+          "秦岭",
+          "岷山",
+          "邛崃山",
+          "凉山",
+          "四川山区",
+          "陕西山区",
+          "甘肃山区"
+        ],
+        "biology_terms": [
+          "伪拇指",
+          "头骨和下颌肌肉强化",
+          "消化系统调整",
+          "肠道菌群适应纤维素分解",
+          "强壮的咀嚼肌和牙齿",
+          "延迟着床",
+          "短妊娠期",
+          "特殊肠道菌群（能分解纤维素）",
+          "竹子残渣（未完全消化的竹纤维）"
+        ],
+        "behavior_terms": [],
+        "disease_terms": [
+          "慢性肠炎",
+          "细菌感染引发的疾病",
+          "败血症",
+          "寄生虫感染（但检测为阴性）"
+        ],
+        "treatment_terms": [
+          "人工辅助育幼",
+          "激素监测",
+          "人工授精",
+          "电刺激采精",
+          "隔离检疫",
+          "常规寄生虫防治措施"
+        ],
+        "lifecycle_stages": [
+          "幼年阶段",
+          "发情期",
+          "妊娠期",
+          "产后休养期",
+          "断奶期",
+          "老年阶段"
+        ],
+        "reproduction_terms": [
+          "发情期",
+          "妊娠期",
+          "产后休养期",
+          "断奶期",
+          "假发情"
+        ],
+        "communication_terms": [],
+        "threat_factors": [
+          "栖息地破碎化",
+          "气候变化",
+          "天敌（豺、豹、黄喉貂）",
+          "细菌感染",
+          "寄生虫感染风险"
+        ],
+        "food_items": [
+          "竹子",
+          "竹笋",
+          "嫩叶",
+          "竹鼠",
+          "鸟类",
+          "腐肉",
+          "苹果",
+          "胡萝卜",
+          "特制窝窝头"
+        ],
+        "food_parts": [
+          "竹笋",
+          "嫩叶",
+          "高营养部位"
+        ],
+        "population_metrics": [
+          "野生大熊猫数量约1800只",
+          "圈养约600只",
+          "幼崽约100-150克",
+          "母体的1/900",
+          "每天摄入12-38公斤竹子",
+          "每天睡眠约10-12小时",
+          "每天进食10-16小时",
+          "每年仅发情1次",
+          "发情期极短（1-3天）",
+          "完全断奶一般在1岁左右",
+          "野生幼崽约1-1.5岁断奶",
+          "6-9个月龄开始逐步断奶",
+          "22岁（相当于人类70-80岁）"
+        ],
+        "taxonomy_terms": [
+          "熊科",
+          "大熊猫亚科",
+          "Ursidae"
+        ],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "伪拇指",
+            "object_type": "Biology",
+            "evidence": "发展出伪拇指（抓握竹子）、头骨和下颌肌肉强化（研磨竹子）、消化系统调整（肠道菌群适应纤维素分解）。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "头骨和下颌肌肉强化",
+            "object_type": "Biology",
+            "evidence": "发展出伪拇指（抓握竹子）、头骨和下颌肌肉强化（研磨竹子）、消化系统调整（肠道菌群适应纤维素分解）。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "消化系统调整",
+            "object_type": "Biology",
+            "evidence": "发展出伪拇指（抓握竹子）、头骨和下颌肌肉强化（研磨竹子）、消化系统调整（肠道菌群适应纤维素分解）。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "特殊肠道菌群（能分解纤维素）",
+            "object_type": "Biology",
+            "evidence": "拥有特殊的肠道菌群（能分解纤维素）、强壮的咀嚼肌和牙齿。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有",
+            "object": "强壮的咀嚼肌和牙齿",
+            "object_type": "Biology",
+            "evidence": "拥有特殊的肠道菌群（能分解纤维素）、强壮的咀嚼肌和牙齿。"
+          },
+          {
+            "subject": "伪拇指",
+            "predicate": "结构为",
+            "object": "腕骨特化形成的第六指",
+            "object_type": "Biology",
+            "evidence": "伪拇指是腕骨特化形成的第六指，专门用于抓握竹子。"
+          },
+          {
+            "subject": "伪拇指",
+            "predicate": "功能为",
+            "object": "抓握竹子",
+            "object_type": "Behavior",
+            "evidence": "伪拇指是腕骨特化形成的第六指，专门用于抓握竹子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有生理特征",
+            "object": "延迟着床",
+            "object_type": "Biology",
+            "evidence": "大熊猫幼崽确实很小（约100-150克，是母体的1/900），这是熊科动物的普遍特征（延迟着床、短妊娠期）。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "具有生理特征",
+            "object": "短妊娠期",
+            "object_type": "Biology",
+            "evidence": "大熊猫幼崽确实很小（约100-150克，是母体的1/900），这是熊科动物的普遍特征（延迟着床、短妊娠期）。"
+          },
+          {
+            "subject": "大熊猫幼崽",
+            "predicate": "出生体重约为",
+            "object": "100-150克",
+            "object_type": "Other",
+            "evidence": "大熊猫幼崽确实很小（约100-150克，是母体的1/900）"
+          },
+          {
+            "subject": "大熊猫幼崽",
+            "predicate": "出生体重占母体体重比例为",
+            "object": "1/900",
+            "object_type": "Other",
+            "evidence": "是母体的1/900"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日均竹子摄入量为",
+            "object": "12-38公斤",
+            "object_type": "Other",
+            "evidence": "它们每天摄入大量竹子（12-38公斤）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "优选采食部位包括",
+            "object": "竹笋",
+            "object_type": "Other",
+            "evidence": "通过选择性食用高营养部位（竹笋、嫩叶）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "优选采食部位包括",
+            "object": "嫩叶",
+            "object_type": "Other",
+            "evidence": "通过选择性食用高营养部位（竹笋、嫩叶）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "排泄物中含",
+            "object": "竹子残渣",
+            "object_type": "Biology",
+            "evidence": "网传“宝力”臀部流出“白线虫”实际上是竹子残渣，属于正常生理现象。大熊猫的消化系统无法完全分解竹子纤维，排泄物中残留竹子残渣是正常现象。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "消化特征为",
+            "object": "无法完全分解竹子纤维",
+            "object_type": "Biology",
+            "evidence": "大熊猫的消化系统无法完全分解竹子纤维"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "身体轻微抖动机制为",
+            "object": "肌肉放松或体温调节",
+            "object_type": "Biology",
+            "evidence": "大熊猫在休息或进食后可能出现身体轻微抖动，这通常是肌肉放松或体温调节的正常表现，并非疾病或虐待所致。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日均睡眠时长为",
+            "object": "10-12小时",
+            "object_type": "Other",
+            "evidence": "大熊猫每天睡眠约10-12小时，其余时间主要进食和活动。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日均进食时长为",
+            "object": "10-16小时",
+            "object_type": "Other",
+            "evidence": "由于竹子能量低，它们需要长时间进食（每天10-16小时）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "年发情次数为",
+            "object": "1次",
+            "object_type": "Other",
+            "evidence": "每年仅发情1次（春季），发情期极短（1-3天）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "发情期持续时间为",
+            "object": "1-3天",
+            "object_type": "Other",
+            "evidence": "每年仅发情1次（春季），发情期极短（1-3天）"
+          },
+          {
+            "subject": "圈养大熊猫幼崽",
+            "predicate": "完全断奶年龄为",
+            "object": "1岁左右",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫幼崽通常在6-9个月龄开始逐步断奶，但**完全断奶一般在1岁左右**，与野生环境下基本一致（野生幼崽约1-1.5岁断奶）。"
+          },
+          {
+            "subject": "野生大熊猫幼崽",
+            "predicate": "完全断奶年龄为",
+            "object": "1-1.5岁",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫幼崽通常在6-9个月龄开始逐步断奶，但**完全断奶一般在1岁左右**，与野生环境下基本一致（野生幼崽约1-1.5岁断奶）。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "老年阶段起始年龄约为",
+            "object": "22岁",
+            "object_type": "Other",
+            "evidence": "丫丫的消瘦主要源于**老年疾病**（当时已22岁，相当于人类70-80岁），包括慢性肠炎、牙齿磨损导致的进食困难，以及季节性脱毛。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "22岁大熊猫相当于人类年龄",
+            "object": "70-80岁",
+            "object_type": "Other",
+            "evidence": "丫丫的消瘦主要源于**老年疾病**（当时已22岁，相当于人类70-80岁）"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [
+          "秦岭山系",
+          "四川",
+          "陕西",
+          "甘肃",
+          "孟菲斯动物园",
+          "华盛顿国家动物园",
+          "卧龙神树坪基地",
+          "成都基地",
+          "碧峰峡",
+          "北京动物园"
+        ],
+        "熊猫曾用名": []
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "猫熊": "大熊猫",
+    "花熊": "大熊猫",
+    "熊猫": "大熊猫",
+    "食铁兽": "大熊猫",
+    "白熊": "大熊猫",
+    "黑白熊": "大熊猫"
+  },
+  "summary": {
+    "times": [],
+    "person_entities": [],
+    "place_entities": [
+      "北京动物园",
+      "华盛顿国家动物园",
+      "卧龙神树坪基地",
+      "四川",
+      "孟菲斯动物园",
+      "成都基地",
+      "甘肃",
+      "碧峰峡",
+      "秦岭山系",
+      "陕西"
+    ],
+    "panda_aliases": [],
+    "companion_species": [],
+    "predator_species": [
+      "豹",
+      "豺",
+      "黄喉貂"
+    ],
+    "habitats": [
+      "凉山",
+      "四川山区",
+      "岷山",
+      "森林阴影",
+      "甘肃山区",
+      "秦岭",
+      "邛崃山",
+      "陕西山区",
+      "雪地"
+    ],
+    "biology_terms": [
+      "伪拇指",
+      "头骨和下颌肌肉强化",
+      "延迟着床",
+      "强壮的咀嚼肌和牙齿",
+      "消化系统调整",
+      "特殊肠道菌群（能分解纤维素）",
+      "短妊娠期",
+      "竹子残渣（未完全消化的竹纤维）",
+      "肠道菌群适应纤维素分解"
+    ],
+    "behavior_terms": [],
+    "disease_terms": [
+      "寄生虫感染（但检测为阴性）",
+      "慢性肠炎",
+      "细菌感染引发的疾病",
+      "败血症"
+    ],
+    "treatment_terms": [
+      "人工授精",
+      "人工辅助育幼",
+      "常规寄生虫防治措施",
+      "激素监测",
+      "电刺激采精",
+      "隔离检疫"
+    ],
+    "lifecycle_stages": [
+      "产后休养期",
+      "发情期",
+      "妊娠期",
+      "幼年阶段",
+      "断奶期",
+      "老年阶段"
+    ],
+    "reproduction_terms": [
+      "产后休养期",
+      "假发情",
+      "发情期",
+      "妊娠期",
+      "断奶期"
+    ],
+    "communication_terms": [],
+    "threat_factors": [
+      "天敌（豺、豹、黄喉貂）",
+      "寄生虫感染风险",
+      "栖息地破碎化",
+      "气候变化",
+      "细菌感染"
+    ],
+    "food_items": [
+      "嫩叶",
+      "特制窝窝头",
+      "竹子",
+      "竹笋",
+      "竹鼠",
+      "胡萝卜",
+      "腐肉",
+      "苹果",
+      "鸟类"
+    ],
+    "food_parts": [
+      "嫩叶",
+      "竹笋",
+      "高营养部位"
+    ],
+    "population_metrics": [
+      "22岁（相当于人类70-80岁）",
+      "6-9个月龄开始逐步断奶",
+      "发情期极短（1-3天）",
+      "圈养约600只",
+      "完全断奶一般在1岁左右",
+      "幼崽约100-150克",
+      "母体的1/900",
+      "每天摄入12-38公斤竹子",
+      "每天睡眠约10-12小时",
+      "每天进食10-16小时",
+      "每年仅发情1次",
+      "野生大熊猫数量约1800只",
+      "野生幼崽约1-1.5岁断奶"
+    ],
+    "taxonomy_terms": [
+      "Ursidae",
+      "大熊猫亚科",
+      "熊科"
+    ]
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1\\panda_extract_20260724_132200_batch_dir_熊猫谣言_n1.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-07-24T13:21:59.245057"
+}

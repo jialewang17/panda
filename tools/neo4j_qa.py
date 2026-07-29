@@ -243,6 +243,60 @@ def _extract_keywords(question: str) -> List[str]:
         "萌萌",
         "盈盈",
         "乐乐",
+        "小优",
+        "火焰",
+        "成成",
+        "功仔",
+        "美香",
+        "睿宝",
+        "辉宝",
+        "新星",
+        "玲玲",
+        "巴斯",
+        "奇福",
+        "和盛",
+        "七喜",
+        "艾玖",
+        "伦伦",
+        "和雨",
+        "香香",
+        "华妮",
+        "成大",
+        "淼淼",
+        "兴兴",
+        "嫣嫣",
+        "梅兰",
+        "奥莉奥",
+        "雅莉",
+        "团团",
+        "圆圆",
+        "福宝",
+        "圆仔",
+        "八喜",
+        "祥祥",
+        "久久",
+        "欢欢",
+        "成功",
+        "盼盼",
+        "高高",
+        "莽仔",
+        "宝力",
+        "福菀",
+        "宝新",
+        "福茹",
+        "园润",
+        "心心",
+        "科比",
+        "润玥",
+        "安安",
+        "菜花园",
+        "玖菜花叶",
+        "四最",
+        "玖菜姐妹",
+        "国宝F4",
+        "菜菜",
+        "二狗",
+        "干饭能手",
     ]
     zh_dict_set = set(zh_dict)
     keywords: List[str] = []
@@ -260,6 +314,10 @@ def _extract_keywords(question: str) -> List[str]:
             return
         seen.add(key)
         keywords.append(key)
+
+    # 问句里的引号专名优先（如“菜花园”）
+    for m in re.finditer(r"[“「\"『]([^”」\"』]+)[”」\"』]", question):
+        _add(m.group(1))
 
     for phrase in sorted(zh_dict, key=len, reverse=True):
         if phrase in question:
@@ -326,6 +384,8 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["生长", "发育", "生长发育", "周期", "月龄", "幼仔", "亚成年", "成年", "性成熟", "体重", "恒牙"])
     if any(token in q for token in ["寿命", "最长寿", "年龄", "几岁", "活多久", "存活"]):
         terms.extend(["寿命", "最长寿", "年龄", "岁", "野外", "圈养", "存活"])
+    if any(token in q for token in ["去世", "死亡", "逝世", "离世", "去世年份", "哪年去世"]):
+        terms.extend(["去世", "死亡", "逝世", "离世", "逝世于", "去世年份", "死亡时间"])
     if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢"]):
         terms.extend(["节约能量", "能量", "减少社会活动", "减小活动范围", "消耗", "代谢"])
     # 分类/辟谣类问题：问“是不是猫科”时需召回“熊科/分类属于”等正确结论。
@@ -335,7 +395,17 @@ def _build_intent_terms(question: str) -> List[str]:
     if any(token in q for token in ["出生", "生日", "诞", "出世", "哪天出生", "什么时候出生"]):
         terms.extend(["出生", "出生于", "出生体重", "生日", "生日时间", "诞下", "双胞胎"])
     if any(token in q for token in ["父亲", "母亲", "爸爸", "妈妈", "父母", "谱系"]):
-        terms.extend(["父亲", "母亲", "父母", "谱系号", "双胞胎"])
+        terms.extend(["父亲", "母亲", "父母", "父亲为", "母亲为", "谱系号", "双胞胎"])
+    if any(token in q for token in ["昵称", "外号", "乳名", "又名", "叫什么", "小名"]):
+        terms.extend(["昵称", "昵称为", "外号", "外号为", "乳名", "乳名为", "又名", "认养名"])
+    if any(token in q for token in ["孩子", "子女", "育有", "后代", "宝宝", "幼崽", "产下", "诞下"]):
+        terms.extend(["育有", "子女", "孩子", "后代", "产下", "诞下", "双胞胎"])
+    if any(token in q for token in ["认养", "终生认养", "终身认养", "赞助"]):
+        terms.extend(["认养", "被认养于", "终生认养于", "终身认养", "认养名"])
+    if any(token in q for token in ["迁至", "迁居", "赴", "旅居", "现居", "返回", "回国"]):
+        terms.extend(["迁至", "赴", "返回", "旅居于", "现居地", "入驻"])
+    if any(token in q for token in ["组合", "成员", "姐妹花", "F4"]):
+        terms.extend(["组合", "属于组合", "成员为", "组合成员", "菜花园", "国宝F4"])
     # 谣言：做实验/抽血等（正文常用“采血/科研”，需同义扩展）
     if any(token in q for token in ["实验", "做实验", "抽血", "采血", "科研", "虐待", "电击", "近亲"]):
         terms.extend(["采血", "抽血", "科研", "实验", "伦理委员会", "伦理", "声明", "致死", "贫血"])
@@ -373,13 +443,43 @@ def _detect_intent(question: str) -> str:
         return "development"
     if any(token in q for token in ["寿命", "最长寿", "年龄", "几岁", "活多久", "存活"]):
         return "lifespan"
+    if any(token in q for token in ["去世", "死亡", "逝世", "离世", "去世年份"]):
+        return "death"
     if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢"]):
         return "energy"
     if any(token in q for token in ["猫科", "熊科", "浣熊", "分类", "属于", "什么科", "活化石", "伪拇指"]):
         return "taxonomy"
     if any(token in q for token in ["实验", "做实验", "抽血", "采血", "虐待", "电击", "近亲", "谣言", "辟谣"]):
         return "rumor"
-    if any(token in q for token in ["出生", "生日", "诞", "出世", "父亲", "母亲", "爸爸", "妈妈", "谱系"]):
+    if any(
+        token in q
+        for token in [
+            "出生",
+            "生日",
+            "诞",
+            "出世",
+            "父亲",
+            "母亲",
+            "父母",
+            "爸爸",
+            "妈妈",
+            "谱系",
+            "昵称",
+            "外号",
+            "乳名",
+            "又名",
+            "孩子",
+            "子女",
+            "育有",
+            "后代",
+            "认养",
+            "迁至",
+            "旅居",
+            "现居",
+            "组合",
+            "成员",
+        ]
+    ):
         return "profile"
     return "general"
 
@@ -398,9 +498,37 @@ def _build_intent_predicates(intent: str) -> List[str]:
         "communication": ["交流", "沟通", "气味标记", "标记", "声音", "叫声", "发情"],
         "development": ["生长", "发育", "成长", "阶段", "月龄", "体重", "性成熟", "恒牙", "独立生活", "成年"],
         "lifespan": ["寿命", "最长寿", "年龄", "活", "存活", "出生于"],
+        "death": ["去世", "死亡", "逝世", "离世", "逝世于", "去世年份", "死亡时间", "死亡日期"],
         "energy": ["节约能量", "减少社会活动", "减小活动范围", "缩短怀孕期", "消耗", "代谢"],
         "taxonomy": ["分类", "分类属于", "属于", "熊科", "亚科", "亲缘"],
-        "profile": ["出生", "出生于", "出生体重", "生日", "生日时间", "父亲", "母亲", "谱系号"],
+        "profile": [
+            "出生",
+            "出生于",
+            "出生体重",
+            "生日",
+            "生日时间",
+            "父亲",
+            "母亲",
+            "父母",
+            "父亲为",
+            "母亲为",
+            "谱系号",
+            "昵称为",
+            "又名",
+            "乳名为",
+            "外号为",
+            "认养名为",
+            "育有",
+            "被认养于",
+            "终生认养于",
+            "迁至",
+            "赴",
+            "返回",
+            "旅居于",
+            "现居地",
+            "属于组合",
+            "成员为",
+        ],
         "rumor": ["采血", "抽血", "科研", "伦理", "声明", "致死"],
     }
     return mapping.get(intent, [])
@@ -617,7 +745,11 @@ WITH s, r, o, score, intent_score, entity_bias,
   reduce(pred_score = 0, p IN $intent_predicates |
     pred_score + CASE WHEN coalesce(r.predicate, '') CONTAINS p THEN 3 ELSE 0 END
   ) AS predicate_bias
-WHERE ((NOT $require_intent) OR intent_score > 0)
+WHERE (
+    (NOT $require_intent)
+    OR intent_score > 0
+    OR entity_bias >= 10
+  )
   AND ((NOT $require_topic) OR coalesce(r.topic, '') IN $topic_filters)
   AND (score + intent_score + topic_bias + predicate_bias + entity_bias) >= $min_total_score
 RETURN
@@ -633,10 +765,24 @@ ORDER BY total_score DESC, size(coalesce(r.evidence, '')) DESC
 LIMIT $top_k
 """
     # 实体名优先：关键词中排除过泛词后，剩余短词常是个体名（如和花）。
+    entity_noise = {
+        "大熊猫",
+        "熊猫",
+        "出生",
+        "生日",
+        "分类",
+        "属于",
+        "父亲",
+        "母亲",
+        "父母",
+        "爸爸",
+        "妈妈",
+        "谱系",
+        "谱系号",
+        "双胞胎",
+    }
     entity_terms = [
-        t
-        for t in keywords
-        if t and t not in {"大熊猫", "熊猫", "出生", "生日", "分类", "属于"} and 1 < len(t) <= 6
+        t for t in keywords if t and t not in entity_noise and 1 < len(t) <= 6
     ]
     try:
         with driver.session(database=config.database) as session:
@@ -648,6 +794,9 @@ LIMIT $top_k
                 category=category_filter,
                 top_n=8,
             )
+            # 问到具体个体名时，不要被「父母/谱系号」意图源文件抢走，直接放开来源限制。
+            if entity_terms:
+                candidate_sources = []
             rows: List[Dict[str, str]] = []
             for require_topic in [bool(topic_filters), False]:
                 rows = [
@@ -1023,6 +1172,8 @@ def _generate_answer(question: str, rows: List[Dict[str, str]], strict_mode: boo
         "communication": "优先回答交流方式（气味标记/声音）及其作用场景。",
         "development": "优先回答生长发育阶段（如月龄、体重、独立与性成熟等）并按时间线组织。",
         "lifespan": "优先回答野外与圈养寿命范围、最长寿个体及相关数字信息。",
+        "death": "优先回答去世/逝世时间与年份，给出明确日期或年份。",
+        "profile": "优先回答个体出生、父母、谱系号、昵称、子女、认养、迁居等档案事实。",
         "energy": "优先回答节约能量策略（减少活动、缩小活动范围等）及其原因。",
     }.get(intent, "优先回答与问题最相关的事实。")
     system_prompt = (

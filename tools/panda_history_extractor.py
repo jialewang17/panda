@@ -212,10 +212,32 @@ def _build_extraction_prompt(topic: str, text: str) -> str:
         "行为习性": "重点抽取行为习性、行为发生环境及关系。",
         "历史背景": "重点抽取时间、人物、地点、熊猫曾用名及关系。",
         "生存环境": "重点抽取地理环境、植被、海拔、气候特征及关系。",
-        "个体档案": "重点抽取个体名、时间、地点和关键事件关系。",
+        "个体档案": (
+            "重点抽取个体名、时间、地点、亲属、昵称、认养、迁居和关键事件关系。"
+            "每条关系的 subject 必须是具体个体名（如“功仔”“美香”“大熊猫功仔”），"
+            "禁止用统称“大熊猫”作为个体档案的主语。"
+        ),
         "其他": "尽可能完整抽取实体与主谓宾关系。",
     }
     rules = topic_rules.get(topic, topic_rules["其他"])
+    subject_rule = (
+        "7. 尽量避免“它们/这种/这里”等代词作为实体；"
+        "个体档案主题下主语必须用具体个体名，不要用统称“大熊猫”。"
+        if topic == "个体档案"
+        else "7. 尽量避免“它们/这种/这里”等代词作为实体；主语优先使用明确名词（如“大熊猫/金丝猴/秦岭山系”等）。"
+    )
+    profile_checklist = ""
+    if topic == "个体档案":
+        profile_checklist = """
+个体档案强制覆盖（能抽尽抽，每只个体尽量齐全）：
+- 身份：谱系号、性别、出生时间/地点、出生体重、现居地
+- 称谓：昵称、又名、乳名、外号、认养名、曾用名（predicate 可用 昵称为/又名/乳名为/外号为/认养名为/曾用名）
+- 亲属：父亲为、母亲为、同胞兄弟姐妹、育有/诞下/产下的子女（子女逐个成条，不要只写“双胞胎”）
+- 社会关系：被…认养/终生认养、赞助、命名单位（object 用机构名）
+- 组合：属于组合、成员为（如“菜花园”“国宝F4”，每位成员单独成条）
+- 流转：迁至、赴、返回、旅居、放归、入住
+- 事件：生日活动、公开亮相、获奖、健康事件、逝世于/去世年份
+"""
     return f"""
 你是熊猫知识图谱抽取助手。文章主题是：{topic}
 任务要求：
@@ -225,8 +247,8 @@ def _build_extraction_prompt(topic: str, text: str) -> str:
 4. object_type 只能是 Species/Habitat/Biology/Behavior/Disease/Treatment/Person/Place/Alias/Other。
 5. 优先抽取“可检索、可回答”的事实：时间、数量、范围、因果、条件、阶段、行为机制。
 6. evidence 要尽量保留原文关键片段（短句级），不要只写概括。
-7. 尽量避免“它们/这种/这里”等代词作为实体；主语优先使用明确名词（如“大熊猫/金丝猴/秦岭山系”等）。
-
+{subject_rule}
+{profile_checklist}
 通用覆盖清单（能抽则抽）：
 - 分类与称谓：taxonomy_terms、panda_aliases、relation_triples（如 属于/曾用名/定名）
 - 种群与分布：population_metrics、place_entities、habitats、relation_triples（如 分布于/历史分布于/数量）
@@ -236,6 +258,40 @@ def _build_extraction_prompt(topic: str, text: str) -> str:
 - 疾病威胁：disease_terms、treatment_terms、threat_factors、relation_triples（如 由_引起/致危因素/影响因素）
 
 主题规则：{rules}
+
+文章正文：
+{text}
+""".strip()
+
+
+def _build_profile_extraction_prompt(text: str) -> str:
+    """熊猫资料栏目专用：强调昵称、子女、认养、迁居等可检索档案关系。"""
+    return f"""
+你是大熊猫“个体档案知识图谱”抽取助手。文档是多只大熊猫的档案汇编。
+
+硬性规则：
+1. 仅基于原文，不得杜撰。
+2. 每条 relation_triples 的 subject 必须是具体个体名（如“正正”“和花”“功仔”），禁止用统称“大熊猫”当主语。
+3. 一只个体尽量拆成多条短事实；子女、昵称、认养都要单独成条。
+4. object_type 只能是 Species/Habitat/Biology/Behavior/Disease/Treatment/Person/Place/Alias/Other。
+5. evidence 用原文短句。
+
+优先抽取并统一谓词（能抽尽抽）：
+- 谱系号 / 性别为 / 出生于 / 出生时间 / 出生体重 / 现居地
+- 昵称为 / 又名 / 乳名为 / 外号为 / 认养名为 / 曾用名
+- 父亲为 / 母亲为 / 同胞为 / 育有（每个孩子一条）
+- 被认养于 / 终生认养于（对象写公司、基金会、机构全名）
+- 属于组合 / 成员为（粉丝组合、展出组合等；每位成员单独成条）
+- 迁至 / 赴 / 返回 / 旅居于 / 放归于 / 入驻
+- 逝世于 / 去世年份 / 死亡时间
+- 公开亮相于 / 举办生日会于 / 参与活动
+
+示例：
+- 正正-昵称为-蒸包
+- 正正-育有-正仔
+- 正正-终生认养于-浙江正辉照明工程有限公司
+- 润玥-属于组合-菜花园
+- 菜花园-成员为-园润
 
 文章正文：
 {text}
@@ -441,11 +497,43 @@ _TOPIC_PREDICATE_WHITELIST: Dict[str, set[str]] = {
         "性成熟时间",
         "妊娠期范围",
         "出生时间",
+        "出生于",
+        "出生体重",
         "出生体重范围",
         "体重范围",
         "体长范围",
         "开始长出恒牙时间",
         "繁殖模式",
+        "谱系号",
+        "性别为",
+        "现居地",
+        "昵称为",
+        "又名",
+        "乳名为",
+        "外号为",
+        "认养名为",
+        "正式名为",
+        "曾用名",
+        "父亲为",
+        "母亲为",
+        "同胞为",
+        "育有",
+        "被认养于",
+        "终生认养于",
+        "迁至",
+        "赴",
+        "返回",
+        "旅居于",
+        "放归于",
+        "入驻",
+        "逝世于",
+        "去世年份",
+        "死亡时间",
+        "公开亮相于",
+        "举办生日会于",
+        "参与活动",
+        "属于组合",
+        "成员为",
     },
 }
 
@@ -495,11 +583,41 @@ _PREDICATE_TEMPLATES: List[Tuple[re.Pattern[str], str]] = [
     (re.compile(r"^(性成熟时间|性成熟)$"), "性成熟时间"),
     (re.compile(r"^(妊娠期范围|妊娠期)$"), "妊娠期范围"),
     (re.compile(r"^(出生时间)$"), "出生时间"),
+    (re.compile(r"^(出生于)$"), "出生于"),
     (re.compile(r"^(出生体重范围|出生体重)$"), "出生体重范围"),
     (re.compile(r"^(体重范围|体重)$"), "体重范围"),
     (re.compile(r"^(体长范围|体长)$"), "体长范围"),
     (re.compile(r"^(开始长出恒牙时间|长出恒牙时间)$"), "开始长出恒牙时间"),
     (re.compile(r"^(繁殖模式)$"), "繁殖模式"),
+    (re.compile(r"^(谱系号)$"), "谱系号"),
+    (re.compile(r"^(性别为|性别是|性别)$"), "性别为"),
+    (re.compile(r"^(现居地|现居于|现生活于|现居)$"), "现居地"),
+    (re.compile(r"^(昵称为|昵称是|昵称)$"), "昵称为"),
+    (re.compile(r"^(又名|又称)$"), "又名"),
+    (re.compile(r"^(乳名为|乳名是|乳名)$"), "乳名为"),
+    (re.compile(r"^(外号为|外号是|外号)$"), "外号为"),
+    (re.compile(r"^(认养名为|认养名)$"), "认养名为"),
+    (re.compile(r"^(正式名为|正式名字为|正式名)$"), "正式名为"),
+    (re.compile(r"^(父亲为|父亲是|其父为|其父是)$"), "父亲为"),
+    (re.compile(r"^(母亲为|母亲是|其母为|其母是)$"), "母亲为"),
+    (re.compile(r"^(同胞为|同胞是|同胞妹妹|同胞弟弟|同胎)$"), "同胞为"),
+    (re.compile(r"^(育有|产下|诞下|后代包括|子女为)$"), "育有"),
+    (re.compile(r"^(终生认养于|终身认养于|终生认养|终身认养)$"), "终生认养于"),
+    (re.compile(r"^(被认养于|认养于|被认养)$"), "被认养于"),
+    (re.compile(r"^(迁至|迁入)$"), "迁至"),
+    (re.compile(r"^(赴)$"), "赴"),
+    (re.compile(r"^(返回|归还|回国|归国)$"), "返回"),
+    (re.compile(r"^(旅居于|旅居)$"), "旅居于"),
+    (re.compile(r"^(放归于|放归)$"), "放归于"),
+    (re.compile(r"^(入驻|入住)$"), "入驻"),
+    (re.compile(r"^(逝世于|去世于)$"), "逝世于"),
+    (re.compile(r"^(去世年份)$"), "去世年份"),
+    (re.compile(r"^(死亡时间|死亡日期)$"), "死亡时间"),
+    (re.compile(r"^(公开亮相于|公开亮相)$"), "公开亮相于"),
+    (re.compile(r"^(举办生日会于|举办生日会|生日会)$"), "举办生日会于"),
+    (re.compile(r"^(参与活动)$"), "参与活动"),
+    (re.compile(r"^(属于组合|组合成员|成员属于)$"), "属于组合"),
+    (re.compile(r"^(成员为|组合成员为|成员包括)$"), "成员为"),
 ]
 
 
@@ -545,6 +663,7 @@ async def _extract_one_markdown_v2_async(
     semaphore: asyncio.Semaphore,
     focus_questions: Optional[List[str]] = None,
     rumor_mode: bool = False,
+    profile_mode: bool = False,
 ) -> Dict[str, Any]:
     async with semaphore:
         raw_text = file_path.read_text(encoding="utf-8")
@@ -555,13 +674,16 @@ async def _extract_one_markdown_v2_async(
         filename_topic = _infer_topic_from_filename(file_path)
         if topic == "其他" and filename_topic != "其他":
             topic = filename_topic
+        if profile_mode:
+            topic = "个体档案"
 
         extraction_chain = extraction_chain_factory()
-        first_prompt = (
-            _build_rumor_extraction_prompt(topic, markdown_text)
-            if rumor_mode
-            else _build_extraction_prompt(topic, markdown_text)
-        )
+        if rumor_mode:
+            first_prompt = _build_rumor_extraction_prompt(topic, markdown_text)
+        elif profile_mode:
+            first_prompt = _build_profile_extraction_prompt(markdown_text)
+        else:
+            first_prompt = _build_extraction_prompt(topic, markdown_text)
         extraction_result: ExtractionSchema = await extraction_chain.ainvoke(
             [HumanMessage(content=first_prompt)]
         )
@@ -592,18 +714,37 @@ async def _extract_one_markdown_v2_async(
 
         # 第二阶段：针对细节问题做定向补抽，提升细粒度问答命中率。
         cleaned_questions = [q for q in (focus_questions or []) if _clean_label(str(q))]
+        if profile_mode and not cleaned_questions:
+            cleaned_questions = [
+                "各只大熊猫的昵称、乳名、外号、认养名是什么？",
+                "各只大熊猫育有哪些子女？",
+                "各只大熊猫被哪些机构认养或终生认养？",
+                "各只大熊猫属于哪些组合？组合里还有谁？",
+                "各只大熊猫的迁居、旅居、返回地点有哪些？",
+            ]
         if cleaned_questions:
-            # 辟谣问题较多时分批，避免单次提示过长导致漏抽。
+            # 辟谣/资料问题较多时分批，避免单次提示过长导致漏抽。
             question_batches = (
-                _chunk_list(cleaned_questions, 8) if rumor_mode else [cleaned_questions]
+                _chunk_list(cleaned_questions, 8)
+                if (rumor_mode or profile_mode)
+                else [cleaned_questions]
             )
             for batch in question_batches:
                 targeted_chain = extraction_chain_factory()
-                targeted_prompt = (
-                    _build_rumor_targeted_extraction_prompt(topic, markdown_text, batch)
-                    if rumor_mode
-                    else _build_targeted_extraction_prompt(topic, markdown_text, batch)
-                )
+                if rumor_mode:
+                    targeted_prompt = _build_rumor_targeted_extraction_prompt(
+                        topic, markdown_text, batch
+                    )
+                elif profile_mode:
+                    targeted_prompt = (
+                        _build_profile_extraction_prompt(markdown_text)
+                        + "\n\n请额外针对以下问题补抽关系：\n"
+                        + "\n".join(f"- {q}" for q in batch)
+                    )
+                else:
+                    targeted_prompt = _build_targeted_extraction_prompt(
+                        topic, markdown_text, batch
+                    )
                 targeted_result: ExtractionSchema = await targeted_chain.ainvoke(
                     [HumanMessage(content=targeted_prompt)]
                 )
@@ -647,10 +788,22 @@ async def _extract_one_markdown_v2_async(
         }
 
 
-def _build_alias_map(files: List[Dict[str, Any]]) -> Dict[str, str]:
+def _build_alias_map(
+    files: List[Dict[str, Any]],
+    *,
+    fold_individual_aliases: bool = True,
+) -> Dict[str, str]:
+    """
+    构建曾用名/别名归一化映射。
+
+    fold_individual_aliases=True（知识/谣言语料）：把熊猫别名折叠为统称「大熊猫」。
+    fold_individual_aliases=False（熊猫资料/个体档案）：保留个体名，避免功仔/美香等被吞成「大熊猫」。
+    """
     alias_map: Dict[str, str] = {PANDA_CANONICAL_NAME: PANDA_CANONICAL_NAME}
     for alias in PANDA_ALIASES:
         alias_map[alias] = PANDA_CANONICAL_NAME
+    if not fold_individual_aliases:
+        return alias_map
     for item in files:
         extracted = item.get("extracted", {})
         for alias in extracted.get("panda_aliases", []):
@@ -951,6 +1104,7 @@ async def _run_attempt_with_progress(
     progress_callback: Optional[Callable[[str], None]] = None,
     focus_questions_by_source: Optional[Dict[str, List[str]]] = None,
     rumor_mode: bool = False,
+    profile_mode: bool = False,
 ) -> List[Path]:
     topic_chain = llm.with_structured_output(TopicResult)
     semaphore = asyncio.Semaphore(max(1, max_concurrency))
@@ -967,6 +1121,7 @@ async def _run_attempt_with_progress(
                 semaphore=semaphore,
                 focus_questions=_lookup_focus_questions(focus_questions_by_source, file_path),
                 rumor_mode=rumor_mode,
+                profile_mode=profile_mode,
             )
             return file_path, item, None
         except Exception as exc:
@@ -1018,6 +1173,7 @@ async def _run_with_retry_and_resume_async(
     progress_callback: Optional[Callable[[str], None]] = None,
     focus_questions_by_source: Optional[Dict[str, List[str]]] = None,
     rumor_mode: bool = False,
+    profile_mode: bool = False,
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, str]]]:
     """执行抽取，支持失败重试、断点续传和进度回调。"""
     checkpoint_path = _checkpoint_file_path(run_output_dir)
@@ -1056,6 +1212,7 @@ async def _run_with_retry_and_resume_async(
             progress_callback=progress_callback,
             focus_questions_by_source=focus_questions_by_source,
             rumor_mode=rumor_mode,
+            profile_mode=profile_mode,
         )
         pending_files = failed_paths
 
@@ -1099,6 +1256,7 @@ def panda_history_extractor(
         "source_dir": "",
         "category": "",
         "rumor_mode": False,
+        "profile_mode": False,
         "files_count": 0,
         "files": [],
         "alias_map": {},
@@ -1123,7 +1281,9 @@ def panda_history_extractor(
         )
         result_data["category"] = resolved_category
         rumor_mode = resolved_category == CATEGORY_RUMOR
+        profile_mode = resolved_category == CATEGORY_PROFILE
         result_data["rumor_mode"] = rumor_mode
+        result_data["profile_mode"] = profile_mode
         llm = get_element_extraction_model()
         focus_questions_map = _load_focus_questions_map(project_root, focus_questions_json)
         result_data["focus_questions_json"] = focus_questions_json
@@ -1180,6 +1340,7 @@ def panda_history_extractor(
             progress_callback=progress_callback,
             focus_questions_by_source=focus_questions_map,
             rumor_mode=rumor_mode,
+            profile_mode=profile_mode,
         ))
 
         result_data["file_errors"] = file_errors
@@ -1189,7 +1350,11 @@ def panda_history_extractor(
         _stamp_files_category(files, resolved_category)
         result_data["files"] = files
         result_data["files_count"] = len(files)
-        alias_map = _build_alias_map(files)
+        # 熊猫资料保留个体名，避免别名折叠导致无法按个体检索
+        alias_map = _build_alias_map(
+            files,
+            fold_individual_aliases=(resolved_category != CATEGORY_PROFILE),
+        )
         _normalize_triples(files, alias_map)
         result_data["alias_map"] = alias_map
         result_data["summary"] = _build_summary(files)
@@ -1315,6 +1480,7 @@ def main() -> int:
             print(f"mode: {parsed.get('mode', '')}")
             print(f"category: {parsed.get('category', '')}")
             print(f"rumor_mode: {parsed.get('rumor_mode', False)}")
+            print(f"profile_mode: {parsed.get('profile_mode', False)}")
             print(f"success_files: {success_count}")
             print(f"failed_files: {failed_count}")
             if failed_files:

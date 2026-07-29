@@ -1,0 +1,409 @@
+{
+  "mode": "single_file",
+  "source_file": "D:\\panda\\sandbox\\熊猫资料3_补录3只.md",
+  "source_dir": "",
+  "category": "熊猫资料",
+  "rumor_mode": false,
+  "files_count": 1,
+  "files": [
+    {
+      "source_file": "D:\\panda\\sandbox\\熊猫资料3_补录3只.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [
+          "迪普根",
+          "锦竹",
+          "爽爽",
+          "龙龙",
+          "旦旦"
+        ],
+        "place_entities": [
+          "神户市立王子动物园",
+          "卧龙中国保护大熊猫研究中心",
+          "柏林动物园",
+          "北京动物园",
+          "成都大熊猫繁育研究基地",
+          "广州动物园",
+          "德国柏林自然博物馆"
+        ],
+        "panda_aliases": [
+          "Schönheit",
+          "美美"
+        ],
+        "companion_species": [
+          "宝宝",
+          "梦梦",
+          "娇庆"
+        ],
+        "predator_species": [],
+        "habitats": [
+          "配备自动喷灌系统与专用玻璃温室的熊猫馆"
+        ],
+        "biology_terms": [
+          "胃功能衰竭"
+        ],
+        "behavior_terms": [
+          "采食时善用食材摆造型",
+          "散步迈'猫步'",
+          "休息时常调整姿态面向镜头"
+        ],
+        "disease_terms": [
+          "胃功能衰竭"
+        ],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "幼年",
+          "成年",
+          "终年22岁"
+        ],
+        "reproduction_terms": [
+          "人工授精",
+          "繁育困难",
+          "终止繁殖计划",
+          "产下双胞胎",
+          "诞下幼崽"
+        ],
+        "communication_terms": [],
+        "threat_factors": [
+          "呕吐物误吸入肺",
+          "繁育困难",
+          "胃功能衰竭"
+        ],
+        "food_items": [
+          "空运进口竹子",
+          "精饲料"
+        ],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "大熊猫嫣嫣",
+            "predicate": "由_带回",
+            "object": "迪普根",
+            "object_type": "Person",
+            "evidence": "1995年由柏林前市长迪普根访华期间带回"
+          },
+          {
+            "subject": "大熊猫嫣嫣",
+            "predicate": "外借至",
+            "object": "柏林动物园",
+            "object_type": "Place",
+            "evidence": "1995年由柏林前市长迪普根访华期间带回，作为中德大熊猫国际交流项目的一员外借至柏林动物园"
+          },
+          {
+            "subject": "大熊猫嫣嫣",
+            "predicate": "伴侣为",
+            "object": "宝宝",
+            "object_type": "Species",
+            "evidence": "伴侣为1980年作为国礼赠予该园的雄性大熊猫“宝宝”（Baobao）"
+          },
+          {
+            "subject": "大熊猫嫣嫣",
+            "predicate": "去世时间",
+            "object": "2007年3月26日",
+            "object_type": "Other",
+            "evidence": "2007年3月26日，嫣嫣在柏林动物园去世，终年22岁"
+          },
+          {
+            "subject": "大熊猫嫣嫣",
+            "predicate": "死因为",
+            "object": "胃功能衰竭",
+            "object_type": "Disease",
+            "evidence": "解剖显示其死因为胃功能衰竭"
+          },
+          {
+            "subject": "大熊猫嫣嫣",
+            "predicate": "标本展出地点",
+            "object": "德国柏林自然博物馆",
+            "object_type": "Place",
+            "evidence": "2015年1月13日，嫣嫣的标本在德国柏林自然博物馆首次公开展出"
+          },
+          {
+            "subject": "大熊猫嫣嫣",
+            "predicate": "标本首次公开展出时间",
+            "object": "2015年1月13日",
+            "object_type": "Other",
+            "evidence": "2015年1月13日，嫣嫣的标本在德国柏林自然博物馆首次公开展出"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "曾用名",
+            "object": "美美",
+            "object_type": "Alias",
+            "evidence": "雅莉幼时与姐姐被可口可乐公司终身认养，得名\"美美\""
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "出生时间",
+            "object": "2009年7月19日",
+            "object_type": "Other",
+            "evidence": "大熊猫雅莉，雌性，谱系号762，2009年7月19日生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "出生地",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "大熊猫雅莉，雌性，谱系号762，2009年7月19日生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "母亲为",
+            "object": "莉莉",
+            "object_type": "Species",
+            "evidence": "母亲为莉莉，与双胞胎姐姐文莉同为屏屏后代"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "双胞胎姐姐为",
+            "object": "文莉",
+            "object_type": "Species",
+            "evidence": "母亲为莉莉，与双胞胎姐姐文莉同为屏屏后代"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "借展地点",
+            "object": "广州动物园",
+            "object_type": "Place",
+            "evidence": "2013年赴广州动物园借展"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "借展时间",
+            "object": "2013年",
+            "object_type": "Other",
+            "evidence": "2013年赴广州动物园借展"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "产仔时间",
+            "object": "2016年",
+            "object_type": "Other",
+            "evidence": "2016年返川后产下双胞胎雅竹、雅韵"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "产仔时间",
+            "object": "2021年",
+            "object_type": "Other",
+            "evidence": "2021年诞下雅颂"
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "行为特征",
+            "object": "采食时善用食材摆造型",
+            "object_type": "Behavior",
+            "evidence": "行为特征鲜明：采食时善用食材摆造型，散步迈\"猫步\"，休息时常调整姿态面向镜头，被称作\"平面模特\""
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "行为特征",
+            "object": "散步迈\"猫步\"",
+            "object_type": "Behavior",
+            "evidence": "行为特征鲜明：采食时善用食材摆造型，散步迈\"猫步\"，休息时常调整姿态面向镜头，被称作\"平面模特\""
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "行为特征",
+            "object": "休息时常调整姿态面向镜头",
+            "object_type": "Behavior",
+            "evidence": "行为特征鲜明：采食时善用食材摆造型，散步迈\"猫步\"，休息时常调整姿态面向镜头，被称作\"平面模特\""
+          },
+          {
+            "subject": "大熊猫雅莉",
+            "predicate": "现居地",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "现生活于成都基地"
+          },
+          {
+            "subject": "大熊猫锦竹",
+            "predicate": "曾用名",
+            "object": "兴兴",
+            "object_type": "Alias",
+            "evidence": "兴兴(锦竹)和旦旦(爽爽)，它们于2000年7月抵日，经公开征集，更名为\"兴兴(锦竹)\"和\"旦旦(爽爽)\""
+          },
+          {
+            "subject": "大熊猫锦竹",
+            "predicate": "来源机构",
+            "object": "卧龙中国保护大熊猫研究中心",
+            "object_type": "Place",
+            "evidence": "两只大熊猫分别是来自卧龙中国保护大熊猫研究中心的\"锦竹\"和\"爽爽\""
+          },
+          {
+            "subject": "大熊猫锦竹",
+            "predicate": "生物学特征",
+            "object": "双性",
+            "object_type": "Biology",
+            "evidence": "锦竹是一只双性大熊猫"
+          },
+          {
+            "subject": "大熊猫锦竹",
+            "predicate": "返回时间",
+            "object": "2002年12月5日",
+            "object_type": "Other",
+            "evidence": "于2002年12月5日回到四川"
+          },
+          {
+            "subject": "大熊猫锦竹",
+            "predicate": "致繁育失败因素",
+            "object": "繁育困难",
+            "object_type": "Biology",
+            "evidence": "后因\"锦竹\"繁育困难，卧龙中国保护大熊猫研究中心于2002年底更换了一只雄性大熊猫\"龙龙\"到神户"
+          },
+          {
+            "subject": "大熊猫爽爽",
+            "predicate": "来源机构",
+            "object": "卧龙中国保护大熊猫研究中心",
+            "object_type": "Place",
+            "evidence": "两只大熊猫分别是来自卧龙中国保护大熊猫研究中心的\"锦竹\"和\"爽爽\""
+          },
+          {
+            "subject": "大熊猫爽爽",
+            "predicate": "曾用名",
+            "object": "旦旦",
+            "object_type": "Alias",
+            "evidence": "兴兴(锦竹)和旦旦(爽爽)，它们于2000年7月抵日，经公开征集，更名为\"兴兴(锦竹)\"和\"旦旦(爽爽)\""
+          },
+          {
+            "subject": "大熊猫龙龙",
+            "predicate": "死亡时间",
+            "object": "2010年9月9日",
+            "object_type": "Other",
+            "evidence": "2010年9月9日，日方为给雌性大熊猫\"旦旦\"进行人工授精，对\"兴兴(龙龙)\"实施麻醉采精，其在麻醉恢复过程中因呕吐物误吸入肺导致窒息死亡"
+          },
+          {
+            "subject": "大熊猫龙龙",
+            "predicate": "直接死因",
+            "object": "呕吐物误吸入肺导致窒息",
+            "object_type": "Disease",
+            "evidence": "2010年9月9日，日方为给雌性大熊猫\"旦旦\"进行人工授精，对\"兴兴(龙龙)\"实施麻醉采精，其在麻醉恢复过程中因呕吐物误吸入肺导致窒息死亡"
+          },
+          {
+            "subject": "大熊猫龙龙",
+            "predicate": "赔偿金额",
+            "object": "50万美元",
+            "object_type": "Other",
+            "evidence": "经中日联合专家组调查确认死因后，日本神户市按照合约向中国赔偿50万美元"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [
+          "迪普根",
+          "锦竹",
+          "爽爽",
+          "龙龙",
+          "旦旦"
+        ],
+        "地点": [
+          "神户市立王子动物园",
+          "卧龙中国保护大熊猫研究中心",
+          "柏林动物园",
+          "北京动物园",
+          "成都大熊猫繁育研究基地",
+          "广州动物园",
+          "德国柏林自然博物馆"
+        ],
+        "熊猫曾用名": [
+          "Schönheit",
+          "美美"
+        ]
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "食铁兽": "大熊猫",
+    "花熊": "大熊猫",
+    "熊猫": "大熊猫",
+    "猫熊": "大熊猫",
+    "白熊": "大熊猫",
+    "黑白熊": "大熊猫"
+  },
+  "summary": {
+    "times": [],
+    "person_entities": [
+      "旦旦",
+      "爽爽",
+      "迪普根",
+      "锦竹",
+      "龙龙"
+    ],
+    "place_entities": [
+      "北京动物园",
+      "卧龙中国保护大熊猫研究中心",
+      "广州动物园",
+      "德国柏林自然博物馆",
+      "成都大熊猫繁育研究基地",
+      "柏林动物园",
+      "神户市立王子动物园"
+    ],
+    "panda_aliases": [
+      "Schönheit",
+      "美美"
+    ],
+    "companion_species": [
+      "娇庆",
+      "宝宝",
+      "梦梦"
+    ],
+    "predator_species": [],
+    "habitats": [
+      "配备自动喷灌系统与专用玻璃温室的熊猫馆"
+    ],
+    "biology_terms": [
+      "胃功能衰竭"
+    ],
+    "behavior_terms": [
+      "休息时常调整姿态面向镜头",
+      "散步迈'猫步'",
+      "采食时善用食材摆造型"
+    ],
+    "disease_terms": [
+      "胃功能衰竭"
+    ],
+    "treatment_terms": [],
+    "lifecycle_stages": [
+      "幼年",
+      "成年",
+      "终年22岁"
+    ],
+    "reproduction_terms": [
+      "产下双胞胎",
+      "人工授精",
+      "繁育困难",
+      "终止繁殖计划",
+      "诞下幼崽"
+    ],
+    "communication_terms": [],
+    "threat_factors": [
+      "呕吐物误吸入肺",
+      "繁育困难",
+      "胃功能衰竭"
+    ],
+    "food_items": [
+      "空运进口竹子",
+      "精饲料"
+    ],
+    "food_parts": [],
+    "population_metrics": [],
+    "taxonomy_terms": []
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1\\panda_extract_20260729_173421_single_file_熊猫资料3_补录3只_n1.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-07-29T17:34:20.847603"
+}

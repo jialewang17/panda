@@ -1,0 +1,143 @@
+{
+  "updated_at": "2026-07-29T17:40:46.396143",
+  "results_by_source": {
+    "D:\\panda\\sandbox\\熊猫资料3_补录兴兴.md": {
+      "source_file": "D:\\panda\\sandbox\\熊猫资料3_补录兴兴.md",
+      "topic": "个体档案",
+      "category": "",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "2000年7月",
+          "2002年12月9日",
+          "2010年9月9日"
+        ],
+        "person_entities": [],
+        "place_entities": [
+          "日本神户市立王子动物园",
+          "卧龙中国保护大熊猫研究中心"
+        ],
+        "panda_aliases": [
+          "兴兴",
+          "锦竹",
+          "龙龙"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [
+          "呕吐物误吸入肺导致窒息"
+        ],
+        "treatment_terms": [
+          "麻醉采精",
+          "麻醉恢复过程"
+        ],
+        "lifecycle_stages": [],
+        "reproduction_terms": [
+          "人工授精",
+          "繁育困难"
+        ],
+        "communication_terms": [],
+        "threat_factors": [
+          "呕吐物误吸入肺"
+        ],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "兴兴",
+            "predicate": "旅居于",
+            "object": "日本神户市立王子动物园",
+            "object_type": "Place",
+            "evidence": "大熊猫兴兴，雄性，是中国与日本神户市立王子动物园大熊猫合作研究中的旅日个体。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "曾用名",
+            "object": "锦竹",
+            "object_type": "Alias",
+            "evidence": "2000年7月，卧龙中国保护大熊猫研究中心的锦竹赴日，经公开征集更名为兴兴，寓意兴旺安康；同期赴日的爽爽更名为旦旦。"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "更名为",
+            "object": "兴兴",
+            "object_type": "Alias",
+            "evidence": "2000年7月，卧龙中国保护大熊猫研究中心的锦竹赴日，经公开征集更名为兴兴，寓意兴旺安康；同期赴日的爽爽更名为旦旦。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "曾用名",
+            "object": "龙龙",
+            "object_type": "Alias",
+            "evidence": "因锦竹繁育困难，2002年12月9日，雄性大熊猫龙龙赴日接替锦竹，并继续使用兴兴一名。"
+          },
+          {
+            "subject": "龙龙",
+            "predicate": "更名为",
+            "object": "兴兴",
+            "object_type": "Alias",
+            "evidence": "因锦竹繁育困难，2002年12月9日，雄性大熊猫龙龙赴日接替锦竹，并继续使用兴兴一名。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "配对对象",
+            "object": "旦旦",
+            "object_type": "Person",
+            "evidence": "2010年9月9日，日方为给雌性大熊猫旦旦进行人工授精，对兴兴（龙龙）实施麻醉采精，其在麻醉恢复过程中因呕吐物误吸入肺导致窒息死亡。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "参与",
+            "object": "人工授精",
+            "object_type": "Behavior",
+            "evidence": "2010年9月9日，日方为给雌性大熊猫旦旦进行人工授精，对兴兴（龙龙）实施麻醉采精，其在麻醉恢复过程中因呕吐物误吸入肺导致窒息死亡。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "死因",
+            "object": "呕吐物误吸入肺导致窒息",
+            "object_type": "Disease",
+            "evidence": "2010年9月9日，日方为给雌性大熊猫旦旦进行人工授精，对兴兴（龙龙）实施麻醉采精，其在麻醉恢复过程中因呕吐物误吸入肺导致窒息死亡。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "接受",
+            "object": "麻醉采精",
+            "object_type": "Behavior",
+            "evidence": "2010年9月9日，日方为给雌性大熊猫旦旦进行人工授精，对兴兴（龙龙）实施麻醉采精，其在麻醉恢复过程中因呕吐物误吸入肺导致窒息死亡。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "赔偿金额",
+            "object": "50万美元",
+            "object_type": "Other",
+            "evidence": "经中日联合专家组调查确认死因后，日本神户市按照合约向中国赔偿50万美元。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "2000年7月",
+          "2002年12月9日",
+          "2010年9月9日"
+        ],
+        "人物": [],
+        "地点": [
+          "日本神户市立王子动物园",
+          "卧龙中国保护大熊猫研究中心"
+        ],
+        "熊猫曾用名": [
+          "兴兴",
+          "锦竹",
+          "龙龙"
+        ]
+      }
+    }
+  },
+  "errors_by_source": {}
+}

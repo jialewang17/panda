@@ -1,0 +1,505 @@
+{
+  "updated_at": "2026-04-29T16:29:00.918377",
+  "results_by_source": {
+    "D:\\panda\\docs\\谣言与辟谣\\大熊猫辟谣汇总_仅辟谣.md": {
+      "source_file": "D:\\panda\\docs\\谣言与辟谣\\大熊猫辟谣汇总_仅辟谣.md",
+      "topic": "历史背景",
+      "extracted": {
+        "topic": "历史背景",
+        "times": [
+          "约2000万年前",
+          "约700万年前",
+          "200万年前",
+          "过去300万年",
+          "2021年",
+          "2016年",
+          "2023年",
+          "2003年",
+          "2014年10月",
+          "2016年9月",
+          "2024年5月",
+          "2024年6月",
+          "2024-2025年",
+          "2025年7月"
+        ],
+        "person_entities": [
+          "Caro et al.",
+          "白某某",
+          "徐某"
+        ],
+        "place_entities": [
+          "四川",
+          "陕西",
+          "甘肃",
+          "秦岭",
+          "孟菲斯动物园",
+          "华盛顿国家动物园",
+          "韩国爱宝乐园",
+          "卧龙神树坪基地",
+          "都江堰市",
+          "成都",
+          "攀枝花"
+        ],
+        "panda_aliases": [
+          "活化石",
+          "国宝"
+        ],
+        "companion_species": [],
+        "predator_species": [
+          "豺",
+          "豹",
+          "黄喉貂"
+        ],
+        "habitats": [
+          "秦岭山系",
+          "岷山",
+          "邛崃山",
+          "凉山",
+          "四川、陕西和甘肃的山区"
+        ],
+        "biology_terms": [
+          "伪拇指",
+          "头骨和下颌肌肉强化",
+          "消化系统调整（肠道菌群适应纤维素分解）",
+          "延迟着床",
+          "短妊娠期",
+          "肠道菌群（能分解纤维素）",
+          "强壮的咀嚼肌和牙齿",
+          "腕骨特化形成的第六指"
+        ],
+        "behavior_terms": [],
+        "disease_terms": [
+          "慢性肠炎",
+          "细菌感染引发的疾病",
+          "全身性细菌感染导致败血症",
+          "寄生虫"
+        ],
+        "treatment_terms": [
+          "人工辅助育幼",
+          "激素监测",
+          "行为观察",
+          "人工授精",
+          "遗传管理计划",
+          "环境丰容",
+          "隔离检疫",
+          "寄生虫防治措施"
+        ],
+        "lifecycle_stages": [
+          "幼年阶段",
+          "性成熟",
+          "发情期",
+          "妊娠期",
+          "断奶期"
+        ],
+        "reproduction_terms": [
+          "发情期",
+          "延迟着床",
+          "短妊娠期",
+          "伪拇指",
+          "性成熟",
+          "妊娠期"
+        ],
+        "communication_terms": [],
+        "threat_factors": [
+          "栖息地破碎化",
+          "气候变化",
+          "竹子开花",
+          "寄生虫"
+        ],
+        "food_items": [
+          "竹子",
+          "竹笋",
+          "嫩叶",
+          "竹鼠",
+          "鸟类",
+          "腐肉",
+          "苹果",
+          "胡萝卜",
+          "特制窝窝头"
+        ],
+        "food_parts": [
+          "竹笋",
+          "嫩叶",
+          "高营养部位"
+        ],
+        "population_metrics": [
+          "野生大熊猫数量约1800只",
+          "圈养约600只",
+          "双胞胎存活率从不足50%提升至90%以上",
+          "圈养环境下幼崽存活率已超过90%",
+          "放归成功率已超过80%"
+        ],
+        "taxonomy_terms": [
+          "熊科（Ursidae）",
+          "大熊猫亚科",
+          "始熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "属于",
+            "object": "熊科",
+            "object_type": "Species",
+            "evidence": "现代分子生物学（DNA测序）明确将大熊猫归入**熊科（Ursidae）**，是其下的一个独立亚科（大熊猫亚科）。"
+          },
+          {
+            "subject": "大熊猫与熊科其他成员",
+            "predicate": "共同祖先生活于",
+            "object": "2000万年前",
+            "object_type": "Other",
+            "evidence": "大熊猫与熊科其他成员（如棕熊、黑熊）的共同祖先生活在约2000万年前"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "祖先开始转向植食性于",
+            "object": "700万年前",
+            "object_type": "Other",
+            "evidence": "化石证据显示，大熊猫的祖先（如始熊猫）在约700万年前就开始转向植食性，200万年前已高度依赖竹子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "高度依赖竹子于",
+            "object": "200万年前",
+            "object_type": "Other",
+            "evidence": "化石证据显示，大熊猫的祖先（如始熊猫）在约700万年前就开始转向植食性，200万年前已高度依赖竹子。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "种群扩张与收缩发生于",
+            "object": "300万年",
+            "object_type": "Other",
+            "evidence": "其基因组研究表明，大熊猫在过去300万年中经历了多次种群扩张和收缩"
+          },
+          {
+            "subject": "双重伪装假说",
+            "predicate": "提出",
+            "object": "Caro et al.",
+            "object_type": "Person",
+            "evidence": "2021年一项研究（Caro et al.）提出“双重伪装假说”：白色有助于在雪地中隐藏，黑色有助于在森林阴影中隐藏。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "有天敌",
+            "object": "豺",
+            "object_type": "Species",
+            "evidence": "大熊猫有天敌：豺、豹、黄喉貂等，尤其对幼崽构成威胁。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "有天敌",
+            "object": "豹",
+            "object_type": "Species",
+            "evidence": "大熊猫有天敌：豺、豹、黄喉貂等，尤其对幼崽构成威胁。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "有天敌",
+            "object": "黄喉貂",
+            "object_type": "Species",
+            "evidence": "大熊猫有天敌：豺、豹、黄喉貂等，尤其对幼崽构成威胁。"
+          },
+          {
+            "subject": "大熊猫幼崽",
+            "predicate": "出生体重为",
+            "object": "100-150克",
+            "object_type": "Other",
+            "evidence": "大熊猫幼崽确实很小（约100-150克，是母体的1/900）"
+          },
+          {
+            "subject": "大熊猫幼崽",
+            "predicate": "出生体重约为母体的",
+            "object": "1/900",
+            "object_type": "Other",
+            "evidence": "大熊猫幼崽确实很小（约100-150克，是母体的1/900）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "日均竹子摄入量为",
+            "object": "12-38公斤",
+            "object_type": "Other",
+            "evidence": "它们每天摄入大量竹子（12-38公斤）"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "补充食物",
+            "object": "苹果",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫会额外补充苹果、胡萝卜、特制窝窝头（含维生素、矿物质）"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "补充食物",
+            "object": "胡萝卜",
+            "object_type": "Species",
+            "evidence": "圈养大熊猫会额外补充苹果、胡萝卜、特制窝窝头（含维生素、矿物质）"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "补充食物",
+            "object": "特制窝窝头",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫会额外补充苹果、胡萝卜、特制窝窝头（含维生素、矿物质）"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "分布于",
+            "object": "四川",
+            "object_type": "Place",
+            "evidence": "野生大熊猫分布于四川、陕西和甘肃的山区，包括秦岭、岷山、邛崃山、凉山等山系。"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "分布于",
+            "object": "陕西",
+            "object_type": "Place",
+            "evidence": "野生大熊猫分布于四川、陕西和甘肃的山区，包括秦岭、岷山、邛崃山、凉山等山系。"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "分布于",
+            "object": "甘肃",
+            "object_type": "Place",
+            "evidence": "野生大熊猫分布于四川、陕西和甘肃的山区，包括秦岭、岷山、邛崃山、凉山等山系。"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "分布于",
+            "object": "秦岭",
+            "object_type": "Place",
+            "evidence": "野生大熊猫分布于四川、陕西和甘肃的山区，包括秦岭、岷山、邛崃山、凉山等山系。"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "分布于",
+            "object": "岷山",
+            "object_type": "Place",
+            "evidence": "野生大熊猫分布于四川、陕西和甘肃的山区，包括秦岭、岷山、邛崃山、凉山等山系。"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "分布于",
+            "object": "邛崃山",
+            "object_type": "Place",
+            "evidence": "野生大熊猫分布于四川、陕西和甘肃的山区，包括秦岭、岷山、邛崃山、凉山等山系。"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "分布于",
+            "object": "凉山",
+            "object_type": "Place",
+            "evidence": "野生大熊猫分布于四川、陕西和甘肃的山区，包括秦岭、岷山、邛崃山、凉山等山系。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名/亚种称谓",
+            "object": "陕西秦岭亚种",
+            "object_type": "Species",
+            "evidence": "陕西秦岭亚种（棕色大熊猫）与四川亚种有差异，体型略大、毛色偏棕。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "曾用名/亚种称谓",
+            "object": "棕色大熊猫",
+            "object_type": "Alias",
+            "evidence": "陕西秦岭亚种（棕色大熊猫）与四川亚种有差异，体型略大、毛色偏棕。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "IUCN保护等级调整于",
+            "object": "2016年",
+            "object_type": "Other",
+            "evidence": "世界自然保护联盟（IUCN）在2016年已将大熊猫从“濒危”降级为“易危”。"
+          },
+          {
+            "subject": "野生大熊猫数量约1800只",
+            "predicate": "统计时间为",
+            "object": "2023年",
+            "object_type": "Other",
+            "evidence": "截至2023年，野生大熊猫数量约1800只，圈养约600只。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野生种群数量为",
+            "object": "1800只",
+            "object_type": "Other",
+            "evidence": "截至2023年，野生大熊猫数量约1800只，圈养约600只。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "圈养种群数量为",
+            "object": "600只",
+            "object_type": "Other",
+            "evidence": "截至2023年，野生大熊猫数量约1800只，圈养约600只。"
+          },
+          {
+            "subject": "中国",
+            "predicate": "支撑野生大熊猫的竹林面积为",
+            "object": "600万公顷",
+            "object_type": "Other",
+            "evidence": "中国现有竹林面积超过600万公顷"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "年发情频次为",
+            "object": "1次",
+            "object_type": "Other",
+            "evidence": "大熊猫每年仅发情1次（春季），发情期极短（1-3天）"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "发情期持续时间为",
+            "object": "1-3天",
+            "object_type": "Other",
+            "evidence": "大熊猫每年仅发情1次（春季），发情期极短（1-3天）"
+          },
+          {
+            "subject": "圈养大熊猫幼崽",
+            "predicate": "开始逐步断奶于",
+            "object": "6-9个月龄",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫幼崽通常在6-9个月龄开始逐步断奶，但**完全断奶一般在1岁左右**，与野生环境下基本一致（野生幼崽约1-1.5岁断奶）。"
+          },
+          {
+            "subject": "圈养大熊猫幼崽",
+            "predicate": "完全断奶时间为",
+            "object": "1岁左右",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫幼崽通常在6-9个月龄开始逐步断奶，但**完全断奶一般在1岁左右**，与野生环境下基本一致（野生幼崽约1-1.5岁断奶）。"
+          },
+          {
+            "subject": "野生大熊猫幼崽",
+            "predicate": "野生幼崽完全断奶时间为",
+            "object": "1-1.5岁",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫幼崽通常在6-9个月龄开始逐步断奶，但**完全断奶一般在1岁左右**，与野生环境下基本一致（野生幼崽约1-1.5岁断奶）。"
+          },
+          {
+            "subject": "中国",
+            "predicate": "野化放归项目启动于",
+            "object": "2003年",
+            "object_type": "Other",
+            "evidence": "中国从2003年开始实施大熊猫野化放归项目"
+          },
+          {
+            "subject": "大熊猫野化放归项目",
+            "predicate": "成功放归统计截止于",
+            "object": "2023年",
+            "object_type": "Other",
+            "evidence": "截至2023年，已成功放归11只大熊猫（如“淘淘”“华妍”“张想”等）"
+          },
+          {
+            "subject": "大熊猫野化放归项目",
+            "predicate": "成功放归数量为",
+            "object": "11只",
+            "object_type": "Other",
+            "evidence": "截至2023年，已成功放归11只大熊猫（如“淘淘”“华妍”“张想”等）"
+          },
+          {
+            "subject": "大熊猫“和盛”",
+            "predicate": "死亡时间为",
+            "object": "2016年9月",
+            "object_type": "Other",
+            "evidence": "大熊猫“和盛”于2016年9月在野化放归期间死亡"
+          },
+          {
+            "subject": "大熊猫“雪雪”",
+            "predicate": "放归时间为",
+            "object": "2014年10月",
+            "object_type": "Other",
+            "evidence": "大熊猫“雪雪”于2014年10月放归，40天后死亡"
+          },
+          {
+            "subject": "大熊猫“雪雪”",
+            "predicate": "放归后存活时间为",
+            "object": "40天",
+            "object_type": "Other",
+            "evidence": "大熊猫“雪雪”于2014年10月放归，40天后死亡"
+          },
+          {
+            "subject": "四川成都、攀枝花等地警方",
+            "predicate": "网络谣言案件破获时间为",
+            "object": "2024-2025年",
+            "object_type": "Other",
+            "evidence": "2024-2025年，四川成都、攀枝花等地警方先后破获多起编造“大熊猫被虐待”的网络谣言案件。"
+          },
+          {
+            "subject": "都江堰市人民法院",
+            "predicate": "公开审理时间为",
+            "object": "2025年7月",
+            "object_type": "Other",
+            "evidence": "2025年7月，都江堰市人民法院对造谣者进行公开审理，两名被告人因编造、散布虚假信息罪被判刑。"
+          },
+          {
+            "subject": "旅美大熊猫“丫丫”",
+            "predicate": "赴美时间为",
+            "object": "2003年",
+            "object_type": "Other",
+            "evidence": "“丫丫”和“乐乐”于2003年赴美孟菲斯动物园。"
+          },
+          {
+            "subject": "旅美大熊猫“丫丫”",
+            "predicate": "旅居地为",
+            "object": "孟菲斯动物园",
+            "object_type": "Place",
+            "evidence": "“丫丫”和“乐乐”于2003年赴美孟菲斯动物园。"
+          },
+          {
+            "subject": "中国大熊猫保护研究中心",
+            "predicate": "辟谣发布时间为",
+            "object": "2024年5月",
+            "object_type": "Other",
+            "evidence": "2024年5月，中国大熊猫保护研究中心官方发布辟谣信息，针对“熊猫中心藏匿、虐待归国熊猫'美香'一家”等不实言论进行澄清。"
+          },
+          {
+            "subject": "中国大熊猫保护研究中心",
+            "predicate": "官方声明发布时间为",
+            "object": "2024年6月",
+            "object_type": "Other",
+            "evidence": "2024年6月，中国大熊猫保护研究中心于发布声明，对编造、传播大熊猫被虐待等不实信息……已报警处理。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "约2000万年前",
+          "约700万年前",
+          "200万年前",
+          "过去300万年",
+          "2021年",
+          "2016年",
+          "2023年",
+          "2003年",
+          "2014年10月",
+          "2016年9月",
+          "2024年5月",
+          "2024年6月",
+          "2024-2025年",
+          "2025年7月"
+        ],
+        "人物": [
+          "Caro et al.",
+          "白某某",
+          "徐某"
+        ],
+        "地点": [
+          "四川",
+          "陕西",
+          "甘肃",
+          "秦岭",
+          "孟菲斯动物园",
+          "华盛顿国家动物园",
+          "韩国爱宝乐园",
+          "卧龙神树坪基地",
+          "都江堰市",
+          "成都",
+          "攀枝花"
+        ],
+        "熊猫曾用名": [
+          "活化石",
+          "国宝"
+        ]
+      }
+    }
+  },
+  "errors_by_source": {}
+}
