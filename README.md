@@ -131,6 +131,30 @@ python -m tools.qa_evaluator --dataset "data/eval/qa_eval.jsonl" --use-llm-judge
 
 说明：`qa_evaluator` 会复用 `neo4j_qa` 的在线质量字段（如 `online_quality`），便于离线评测与在线表现对齐。
 
+### 7.1) 文档驱动自动出题 + 查漏补缺
+从 `docs/熊猫知识|熊猫谣言|熊猫资料` 自动出题，调用当前 `neo4j_qa` 作答，输出质量报告与补缺清单：
+
+```bash
+# 只出题
+python scripts/kb_doc_eval.py generate --categories 熊猫资料 --max-questions 40
+
+# 只评测已有集
+python scripts/kb_doc_eval.py run --dataset data/eval/kb_auto.jsonl
+
+# 出题+评测一条龙
+python scripts/kb_doc_eval.py all --categories 熊猫资料,熊猫谣言 --max-questions 30
+```
+
+跳过已测切块、换随机种子（便于挖新缺口）：
+```bash
+python scripts/kb_doc_eval.py all --categories 熊猫资料,熊猫谣言,熊猫知识 --max-questions 42 --per-chunk 1 --skip-tested --seed 20260730 --output data/eval/kb_auto_round5.jsonl
+```
+
+产物默认在 `reports/`：
+- `kb_eval_*.json`：汇总与逐题明细
+- `kb_gaps_*.jsonl`：缺口题与补缺建议
+- `kb_focus_questions_*.json`：可直接喂给 `panda_history_extractor --focus-questions-json`
+
 ## 目录说明
 - `docs/熊猫知识/`：知识源文档（栏目：熊猫知识）
 - `docs/熊猫谣言/`：辟谣文档（栏目：熊猫谣言）

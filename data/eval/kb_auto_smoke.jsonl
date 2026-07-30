@@ -1,0 +1,3 @@
+{"sample_id": "熊猫资料#和花__q1", "question": "和花的父母是谁？", "gold_answer": "母亲是成功，父亲是美兰", "gold_sources": ["熊猫资料.md"], "category": "熊猫资料", "fact_type": "父母", "doc_path": "docs/熊猫资料/熊猫资料.md", "chunk_id": "熊猫资料#和花", "evidence_span": "母亲为“洁癖公主”成功，父亲是海归大熊猫美兰。"}
+{"sample_id": "熊猫资料#和花__q2", "question": "和花的昵称是什么？", "gold_answer": "成和花", "gold_sources": ["熊猫资料.md"], "category": "熊猫资料", "fact_type": "昵称", "doc_path": "docs/熊猫资料/熊猫资料.md", "chunk_id": "熊猫资料#和花", "evidence_span": "和花，昵称“成和花”，谱系号1237，雌性大熊猫"}
+{"sample_id": "熊猫资料#和花__q3", "question": "和花被哪家公司认养并命名？", "gold_answer": "广东思宝不锈钢制品有限公司", "gold_sources": ["熊猫资料.md"], "category": "熊猫资料", "fact_type": "认养", "doc_path": "docs/熊猫资料/熊猫资料.md", "chunk_id": "熊猫资料#和花", "evidence_span": "2020年被广东思宝不锈钢制品有限公司认养并命名为“思宝”与“盼奥”。"}

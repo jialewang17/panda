@@ -1,0 +1,182 @@
+{
+  "timestamp": "2026-07-30T12:13:09.564389",
+  "dataset": "D:\\panda\\data\\eval\\kb_auto_smoke.jsonl",
+  "summary": {
+    "sample_count": 3,
+    "exact_match_avg": 0.0,
+    "char_f1_avg": 0.036374,
+    "hit@5_avg": 1.0,
+    "groundedness_avg": 0.04,
+    "ok_rate": 0.333333,
+    "no_hit_rate": 0.333333,
+    "gap_label_counts": {
+      "hallucination_risk": 1,
+      "no_hit": 1,
+      "ok": 1
+    },
+    "category_counts": {
+      "熊猫资料": 3
+    }
+  },
+  "details": [
+    {
+      "id": "熊猫资料#和花__q1",
+      "question": "和花的父母是谁？",
+      "gold_answer": "母亲是成功，父亲是美兰",
+      "predicted_answer": "1) 全面回答：  \n- **父母身份明确**：和花的父亲是海归大熊猫“美兰”，母亲是被称为“洁癖公主”的大熊猫“成功”。二者均为圈养环境下参与人工繁育的个体。  \n- **出生背景清晰**：和花于2020年7月4日与双胞胎妹妹“和叶”一同出生于成都大熊猫繁育研究基地月亮产房，属圈养繁育第三代个体，谱系号为1237。  \n- **昵称与命名体系完整**：“成和花”是其常用昵称（“成”取自母亲“成功”之首字），体现熊猫命名中常见的母系溯源惯例；同时被广东思宝不锈钢制品有限公司认养，获企业冠名“思宝”与“盼奥”，反映国内大熊猫认养文化中的双名并用现象。  \n- **成长轨迹典型**：作为基地重点培育的幼体代表，她与妹妹连续三年（2022–2024）在基地幼年园/园区内共同庆祝生日，体现圈养大熊猫幼崽标准化养育与公众教育融合的管理模式。  \n- **性别与生理特征确认**：为雌性大熊猫，初生体重200克，符合双胞胎幼崽偏低但健康的体重范围，属正常圈养繁殖产出。  \n\n2) 依据来源：  \n- 来源：D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+      "category": "熊猫资料",
+      "fact_type": "父母",
+      "doc_path": "docs/熊猫资料/熊猫资料.md",
+      "chunk_id": "熊猫资料#和花",
+      "evidence_span": "母亲为“洁癖公主”成功，父亲是海归大熊猫美兰。",
+      "exact_match": 0.0,
+      "char_f1": 0.047826,
+      "hit@5": 1.0,
+      "groundedness": 0.03,
+      "rows_count": 10,
+      "answer_mode": "knowledge_base",
+      "gap_label": "hallucination_risk",
+      "suggested_predicates": [
+        "父亲为",
+        "母亲为",
+        "父母"
+      ],
+      "gold_sources": [
+        "熊猫资料.md"
+      ],
+      "retrieved_sources_top10": [
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md"
+      ],
+      "online_quality": {
+        "mode": "llm_judge",
+        "score_0_100": 85.0,
+        "level": "excellent",
+        "correctness_0_5": 5.0,
+        "completeness_0_5": 4.0,
+        "groundedness_0_5": 5.0,
+        "concise_clarity_0_5": 3.0,
+        "reason": "事实准确且完全基于证据（父母、出生、昵称、谱系号、认养等均被多条证据支持），但回答冗长、结构过度复杂，堆砌非必要信息（如‘幼儿园全日制在读博士学历’‘熊大代表’等明显戏谑虚构内容未标注说明，损害专业性与简洁性）；问题仅问‘父母是谁’，核心答案应极简：美兰和成功，其余属冗余扩展。"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "熊猫资料#和花__q2",
+      "question": "和花的昵称是什么？",
+      "gold_answer": "成和花",
+      "predicted_answer": "1) 全面回答：  \n- **官方昵称**：“成和花”是和花最常被使用的正式昵称，源于其母亲“成功”的名字（“成”取自母名，“和花”为本名），体现谱系传承，也常见于基地官方介绍与媒体报道。  \n- **认养昵称/别名**：2020年被广东思宝不锈钢制品有限公司认养后，获两个认养名——“思宝”与“盼奥”，分别体现企业名称（思宝）与时代寓意（“盼奥”呼应奥运主题，当时正值北京冬奥会筹备期）。  \n- **日常称呼习惯**：公众及粉丝普遍简称为“和花”，与其双胞胎妹妹“和叶”形成对称昵称组合（“和花&和叶”），具有强辨识度与传播力；“成和花”多用于正式档案或科普场景。  \n- **无其他公开昵称记录**：知识库中未见如绰号（如“花花”“小花”等口语化变体）、网络热称或饲养员私下昵称等信息，目前所有昵称均有明确来源依据。  \n- **昵称使用场景差异**：  \n  • “成和花”用于学术谱系、基地档案及新闻通稿；  \n  • “思宝”“盼奥”主要用于企业联合宣传、公益项目及认养仪式；  \n  • 日常互动（如直播、短视频）中多直呼“和花”，亲切自然，符合大熊猫IP人格化传播特点。\n\n2) 依据来源：  \n- 来源：D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+      "category": "熊猫资料",
+      "fact_type": "昵称",
+      "doc_path": "docs/熊猫资料/熊猫资料.md",
+      "chunk_id": "熊猫资料#和花",
+      "evidence_span": "和花，昵称“成和花”，谱系号1237，雌性大熊猫",
+      "exact_match": 0.0,
+      "char_f1": 0.012146,
+      "hit@5": 1.0,
+      "groundedness": 0.0,
+      "rows_count": 10,
+      "answer_mode": "knowledge_base",
+      "gap_label": "no_hit",
+      "suggested_predicates": [
+        "昵称为",
+        "又名",
+        "乳名为",
+        "外号为",
+        "认养名为"
+      ],
+      "gold_sources": [
+        "熊猫资料.md"
+      ],
+      "retrieved_sources_top10": [
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md"
+      ],
+      "online_quality": {
+        "mode": "llm_judge",
+        "score_0_100": 95.0,
+        "level": "excellent",
+        "correctness_0_5": 5.0,
+        "completeness_0_5": 5.0,
+        "groundedness_0_5": 5.0,
+        "concise_clarity_0_5": 4.0,
+        "reason": "回答准确涵盖所有证据中提及的昵称（成和花、思宝、盼奥），逻辑清晰、分类合理，但‘幼儿园全日制在读博士学历’属明显虚构幽默表述，虽常见于网络传播，但未在evidences中出现且违背事实（大熊猫无学历概念），轻微损害groundedness；不过其余所有昵称及来源均严格对应证据，故groundedness仍判为5；concise_clarity扣1分因结构稍冗、存在非必要修饰语（如‘洁癖公主’未在evidences中作为正式称谓出现，属额外添加）"
+      },
+      "ok": true,
+      "error": ""
+    },
+    {
+      "id": "熊猫资料#和花__q3",
+      "question": "和花被哪家公司认养并命名？",
+      "gold_answer": "广东思宝不锈钢制品有限公司",
+      "predicted_answer": "1) 全面回答：  \n- **认养企业**：和花于2020年由广东思宝不锈钢制品有限公司正式认养。该公司是总部位于广东的知名不锈钢制品企业，长期支持大熊猫保护公益事业。  \n- **命名情况**：该公司为和花同时赋予两个认养名称——“思宝”与“盼奥”，体现企业品牌（“思宝”）与时代主题（“盼奥”寓意期盼奥运，呼应2022北京冬奥会）。  \n- **认养时间**：认养发生于2020年，即和花出生当年（2020年7月4日出生），属早期企业认养案例，具有纪念意义。  \n- **身份背景补充**：和花是成都大熊猫繁育研究基地自主繁育的雌性大熊猫（谱系号1237），与双胞胎妹妹和叶同胎出生；其母亲为明星母兽“成功”（绰号“洁癖公主”），父亲为旅美归国大熊猫“美兰”。  \n- **命名使用惯例**：“思宝”多用于企业宣传及认养标识场景，“盼奥”则常见于奥运主题联动活动，二者并行不冲突，均属官方认可的认养名。  \n- **管理归属**：和花始终在成都大熊猫繁育研究基地生活成长，未迁居或参与野化放归，属典型圈养个体，认养不改变其科研与保育管理归属。\n\n2) 依据来源：  \n- 来源：D:\\panda\\docs\\熊猫资料\\熊猫资料.md  \n- 来源：D:\\panda\\docs\\熊猫资料\\熊猫资料3.md",
+      "category": "熊猫资料",
+      "fact_type": "认养",
+      "doc_path": "docs/熊猫资料/熊猫资料.md",
+      "chunk_id": "熊猫资料#和花",
+      "evidence_span": "2020年被广东思宝不锈钢制品有限公司认养并命名为“思宝”与“盼奥”。",
+      "exact_match": 0.0,
+      "char_f1": 0.049149,
+      "hit@5": 1.0,
+      "groundedness": 0.09,
+      "rows_count": 10,
+      "answer_mode": "knowledge_base",
+      "gap_label": "ok",
+      "suggested_predicates": [
+        "被认养于",
+        "终生认养于",
+        "认养名为"
+      ],
+      "gold_sources": [
+        "熊猫资料.md"
+      ],
+      "retrieved_sources_top10": [
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料3.md",
+        "D:\\panda\\docs\\熊猫资料\\熊猫资料.md"
+      ],
+      "online_quality": {
+        "mode": "llm_judge",
+        "score_0_100": 90.0,
+        "level": "excellent",
+        "correctness_0_5": 5.0,
+        "completeness_0_5": 5.0,
+        "groundedness_0_5": 5.0,
+        "concise_clarity_0_5": 3.0,
+        "reason": "回答事实准确、覆盖问题全部核心要素（认养公司、命名）、严格基于证据（广东思宝认养并命名‘思宝’与‘盼奥’），但冗余信息过多（如学历戏称、管理归属、生日细节等未被问题要求且无证据支撑的表述），严重损害简洁性与清晰度。"
+      },
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "artifacts": {
+    "report": "D:\\panda\\reports\\kb_eval_20260730_121309.json",
+    "gaps": "D:\\panda\\reports\\kb_gaps_20260730_121309.jsonl",
+    "focus_questions": "D:\\panda\\reports\\kb_focus_questions_20260730_121309.json",
+    "gap_count": 2,
+    "focus_groups": 1
+  }
+}
