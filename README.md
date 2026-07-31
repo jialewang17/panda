@@ -76,6 +76,32 @@ python -m tools.neo4j_graph_writer --result-json "data/wiki/<profile_run>/<resul
 # python -m tools.neo4j_graph_writer --result-json "..." --clear-category "熊猫资料"
 ```
 
+### 3.1) 挖缺口定向补录（可复现写入）
+多轮评测补录已沉淀为正式产物（不依赖 `sandbox/` 手工 MERGE）：
+
+- `data/curated/kb_gap_facts_v1.json`：writer 兼容的抽取结果 JSON（当前约 179 条）
+- `docs/panda_gap_focus_questions.json`：二次定向抽取问题清单
+- `scripts/curate_gap_facts.py`：从本地 `sandbox/gap_fact_upsert*.json` 重新生成上述产物
+
+清库 / 换库后，用 writer **增量写入**即可恢复补录事实（不要加 `--clear`）：
+
+```bash
+python -m tools.neo4j_graph_writer --result-json "data/curated/kb_gap_facts_v1.json"
+```
+
+若希望从原文重新 LLM 抽取这些缺口事实（更慢，可与 seed 互补）：
+
+```bash
+python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --category "熊猫知识" --focus-questions-json "docs/panda_gap_focus_questions.json" --max-concurrency 3
+# 再把新 result_file_path 交给 neo4j_graph_writer（不加 --clear）
+```
+
+本地若仍有新的 `sandbox/gap_fact_upsert*.json`，可重新沉淀：
+
+```bash
+python scripts/curate_gap_facts.py
+```
+
 ### 4) 问答（单问，指定栏目）
 ```bash
 python -m tools.neo4j_qa --category "熊猫知识" --question "大熊猫是怎么交流的" --persona kid --show-sources
@@ -163,6 +189,7 @@ python scripts/kb_doc_eval.py all --categories 熊猫资料,熊猫谣言,熊猫�
 - `tools/`：抽取、入库、问答工具
 - `scripts/`：辅助脚本（如 Neo4j schema 统计导出）
 - `data/wiki/`：抽取运行结果目录（按运行批次分组）
+- `data/curated/`：可复现的定向补录种子（如 `kb_gap_facts_v1.json`）
 - `config/model.yaml`：模型配置（问答默认走 `text_generation`）
 
 ## 注意事项

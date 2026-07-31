@@ -1,0 +1,1620 @@
+{
+  "mode": "curated_gap_facts",
+  "description": "多轮挖缺口定向补录沉淀；可直接 neo4j_graph_writer 增量写入。",
+  "category": "",
+  "rumor_mode": false,
+  "files_count": 32,
+  "files": [
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202108021457]大熊猫奇妙课堂大熊猫的行为特征.md",
+      "source_file_rel": "docs/熊猫知识/[202108021457]大熊猫奇妙课堂大熊猫的行为特征.md",
+      "topic": "行为习性",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "行为习性",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "冬眠习性为",
+            "object": "不具有冬眠习性",
+            "object_type": "Behavior",
+            "evidence": "但是大熊猫并不像其他熊一样有着冬眠的习性，在严冬的时候，它们依旧会在雪地中寻找食物。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "气味标记方式为",
+            "object": "尿液或肛周腺体分泌物",
+            "object_type": "Behavior",
+            "evidence": "大熊猫有好几种做标记的方式，它们常用尿液或肛周腺体的分泌物来做标记，将分泌物涂在柱子、树桩、墙上、地上以及它们经常经过的地方。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202108101754]大熊猫奇妙课堂大熊猫的粪便青团.md",
+      "source_file_rel": "docs/熊猫知识/[202108101754]大熊猫奇妙课堂大熊猫的粪便青团.md",
+      "topic": "其他",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "其他",
+        "relation_triples": [
+          {
+            "subject": "大熊猫粪便",
+            "predicate": "可提取信息为",
+            "object": "DNA信息（性别、年龄、亲缘关系、种群数量）",
+            "object_type": "Other",
+            "evidence": "通过特殊仪器可以测得大熊猫的DNA信息，分析这些DNA信息，就可以了解大熊猫的性别,年龄,亲缘关系，种群数等。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202108141030]大熊猫奇妙课堂攻克三难.md",
+      "source_file_rel": "docs/熊猫知识/[202108141030]大熊猫奇妙课堂攻克三难.md",
+      "topic": "生理构造",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生理构造",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "一胎产仔数为",
+            "object": "1-2只",
+            "object_type": "Biology",
+            "evidence": "大熊猫一胎一般产1-2只幼仔，单胎和双胞胎的概率各占一半。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202108211030]大熊猫奇妙课堂大熊猫的邻居们.md",
+      "source_file_rel": "docs/熊猫知识/[202108211030]大熊猫奇妙课堂大熊猫的邻居们.md",
+      "topic": "生态关系",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生态关系",
+        "relation_triples": [
+          {
+            "subject": "羚牛",
+            "predicate": "保护级别为",
+            "object": "我国一级保护动物",
+            "object_type": "Other",
+            "evidence": "羚牛又叫扭角羚，主要分布在我国的西南山区和秦岭山脉，数量稀少，中国仅存数千头，是我国的一级保护动物。"
+          },
+          {
+            "subject": "豺",
+            "predicate": "保护级别为",
+            "object": "我国一级保护野生动物",
+            "object_type": "Other",
+            "evidence": "豺，是我国一级保护野生动物，主要袭击少年大熊猫或病弱老年个体。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202108312109]大熊猫奇妙课堂五一棚.md",
+      "source_file_rel": "docs/熊猫知识/[202108312109]大熊猫奇妙课堂五一棚.md",
+      "topic": "历史背景",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "历史背景",
+        "relation_triples": [
+          {
+            "subject": "五一棚",
+            "predicate": "得名原因为",
+            "object": "观察站帐篷距离水源地有51步台阶",
+            "object_type": "Other",
+            "evidence": "因为观察站的帐篷距离水源地有51步台阶，于是取名“五一棚”。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202109021950]大熊猫奇妙课堂大熊猫的病历本.md",
+      "source_file_rel": "docs/熊猫知识/[202109021950]大熊猫奇妙课堂大熊猫的病历本.md",
+      "topic": "生理构造",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生理构造",
+        "relation_triples": [
+          {
+            "subject": "野生大熊猫",
+            "predicate": "蛔虫感染率为",
+            "object": "100%",
+            "object_type": "Disease",
+            "evidence": "经科学家研究发现：野生大熊猫蛔虫感染率达到100%，甚至有一只野生大熊猫感染蛔虫数量达到1605条。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202109041000]大熊猫奇妙课堂大熊猫国际合作交流.md",
+      "source_file_rel": "docs/熊猫知识/[202109041000]大熊猫奇妙课堂大熊猫国际合作交流.md",
+      "topic": "历史背景",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "历史背景",
+        "relation_triples": [
+          {
+            "subject": "中国政府",
+            "predicate": "1972年赠美大熊猫为",
+            "object": "玲玲和兴兴",
+            "object_type": "Other",
+            "evidence": "中国政府决定赠送给美国人民一份国礼，即大熊猫“玲玲”“兴兴”。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202109071259]大熊猫奇妙课堂海归大熊猫.md",
+      "source_file_rel": "docs/熊猫知识/[202109071259]大熊猫奇妙课堂海归大熊猫.md",
+      "topic": "个体档案",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "个体档案",
+        "relation_triples": [
+          {
+            "subject": "福龙",
+            "predicate": "出生于",
+            "object": "奥地利美泉宫动物园",
+            "object_type": "Place",
+            "evidence": "大熊猫“福龙”2007年8月23日在奥地利美泉宫动物园出生，2009年11月回到中国大熊猫保护研究中心。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\[202109111000]大熊猫奇妙课堂大熊猫的保护.md",
+      "source_file_rel": "docs/熊猫知识/[202109111000]大熊猫奇妙课堂大熊猫的保护.md",
+      "topic": "生存环境",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生存环境",
+        "relation_triples": [
+          {
+            "subject": "全国圈养大熊猫",
+            "predicate": "2007年底数量为",
+            "object": "239只",
+            "object_type": "Other",
+            "evidence": "截至2007年底，全国圈养大熊猫数量达到239只，其中人工条件下繁育的个体超过70%。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\_curated_gap_facts.md",
+      "source_file_rel": "docs/熊猫知识/_curated_gap_facts.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "relation_triples": [
+          {
+            "subject": "和花",
+            "predicate": "母亲为",
+            "object": "成功",
+            "object_type": "Person",
+            "evidence": "和花母亲为成功"
+          },
+          {
+            "subject": "和花",
+            "predicate": "父亲为",
+            "object": "美兰",
+            "object_type": "Person",
+            "evidence": "和花父亲为美兰"
+          },
+          {
+            "subject": "和花",
+            "predicate": "昵称为",
+            "object": "成和花",
+            "object_type": "Other",
+            "evidence": "和花昵称为成和花"
+          },
+          {
+            "subject": "七仔",
+            "predicate": "育有",
+            "object": "秦华",
+            "object_type": "Person",
+            "evidence": "七仔育有秦华"
+          },
+          {
+            "subject": "七仔",
+            "predicate": "育有",
+            "object": "八仔",
+            "object_type": "Person",
+            "evidence": "七仔育有八仔"
+          },
+          {
+            "subject": "七仔",
+            "predicate": "育有",
+            "object": "荣荣",
+            "object_type": "Person",
+            "evidence": "七仔育有荣荣"
+          },
+          {
+            "subject": "萌兰",
+            "predicate": "父亲为",
+            "object": "美兰",
+            "object_type": "Person",
+            "evidence": "萌兰父亲为美兰"
+          },
+          {
+            "subject": "萌兰",
+            "predicate": "母亲为",
+            "object": "萌萌",
+            "object_type": "Person",
+            "evidence": "萌兰母亲为萌萌"
+          },
+          {
+            "subject": "萌兰",
+            "predicate": "昵称为",
+            "object": "西直门三太子",
+            "object_type": "Other",
+            "evidence": "萌兰昵称为西直门三太子"
+          },
+          {
+            "subject": "萌兰",
+            "predicate": "昵称为",
+            "object": "么么儿",
+            "object_type": "Other",
+            "evidence": "萌兰昵称为么么儿"
+          },
+          {
+            "subject": "萌兰",
+            "predicate": "谱系号",
+            "object": "954",
+            "object_type": "Other",
+            "evidence": "萌兰谱系号954"
+          },
+          {
+            "subject": "家姐",
+            "predicate": "父亲为",
+            "object": "乐乐",
+            "object_type": "Person",
+            "evidence": "家姐父亲为乐乐"
+          },
+          {
+            "subject": "家姐",
+            "predicate": "母亲为",
+            "object": "盈盈",
+            "object_type": "Person",
+            "evidence": "家姐母亲为盈盈"
+          },
+          {
+            "subject": "加加",
+            "predicate": "父亲为",
+            "object": "乐乐",
+            "object_type": "Person",
+            "evidence": "加加父亲为乐乐"
+          },
+          {
+            "subject": "加加",
+            "predicate": "母亲为",
+            "object": "盈盈",
+            "object_type": "Person",
+            "evidence": "加加母亲为盈盈"
+          },
+          {
+            "subject": "家姐",
+            "predicate": "乳名为",
+            "object": "家姐",
+            "object_type": "Other",
+            "evidence": "家姐乳名为家姐"
+          },
+          {
+            "subject": "家姐",
+            "predicate": "正式名为",
+            "object": "加加",
+            "object_type": "Other",
+            "evidence": "家姐正式名为加加"
+          },
+          {
+            "subject": "雅一",
+            "predicate": "母亲为",
+            "object": "星雅",
+            "object_type": "Person",
+            "evidence": "雅一母亲为星雅"
+          },
+          {
+            "subject": "雅一",
+            "predicate": "父亲为",
+            "object": "勇勇",
+            "object_type": "Person",
+            "evidence": "雅一父亲为勇勇"
+          },
+          {
+            "subject": "妹珠",
+            "predicate": "出生于",
+            "object": "广州长隆野生动物世界",
+            "object_type": "Place",
+            "evidence": "妹珠出生于广州长隆野生动物世界"
+          },
+          {
+            "subject": "妹珠",
+            "predicate": "母亲为",
+            "object": "萌萌",
+            "object_type": "Person",
+            "evidence": "妹珠母亲为萌萌"
+          },
+          {
+            "subject": "星一",
+            "predicate": "父亲为",
+            "object": "勇勇",
+            "object_type": "Person",
+            "evidence": "星一父亲为勇勇"
+          },
+          {
+            "subject": "星一",
+            "predicate": "母亲为",
+            "object": "星蓉",
+            "object_type": "Person",
+            "evidence": "星一母亲为星蓉"
+          },
+          {
+            "subject": "团团",
+            "predicate": "父亲为",
+            "object": "灵灵",
+            "object_type": "Person",
+            "evidence": "团团父亲为灵灵"
+          },
+          {
+            "subject": "团团",
+            "predicate": "母亲为",
+            "object": "华美",
+            "object_type": "Person",
+            "evidence": "团团母亲为华美"
+          },
+          {
+            "subject": "美兰",
+            "predicate": "父亲为",
+            "object": "洋洋",
+            "object_type": "Person",
+            "evidence": "美兰父亲为洋洋"
+          },
+          {
+            "subject": "美兰",
+            "predicate": "母亲为",
+            "object": "伦伦",
+            "object_type": "Person",
+            "evidence": "美兰母亲为伦伦"
+          },
+          {
+            "subject": "正正",
+            "predicate": "父亲为",
+            "object": "芦芦",
+            "object_type": "Person",
+            "evidence": "正正父亲为芦芦"
+          },
+          {
+            "subject": "正正",
+            "predicate": "母亲为",
+            "object": "喜妹",
+            "object_type": "Person",
+            "evidence": "正正母亲为喜妹"
+          },
+          {
+            "subject": "奥莉奥",
+            "predicate": "终生认养于",
+            "object": "亿滋集团",
+            "object_type": "Other",
+            "evidence": "奥莉奥终生认养于亿滋集团"
+          },
+          {
+            "subject": "奥莉奥",
+            "predicate": "终生认养于",
+            "object": "奥利奥饼干品牌",
+            "object_type": "Other",
+            "evidence": "奥莉奥终生认养于奥利奥饼干品牌"
+          },
+          {
+            "subject": "科比",
+            "predicate": "父亲为",
+            "object": "越越",
+            "object_type": "Person",
+            "evidence": "科比父亲为越越"
+          },
+          {
+            "subject": "科比",
+            "predicate": "母亲为",
+            "object": "苏苏",
+            "object_type": "Person",
+            "evidence": "科比母亲为苏苏"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "死因",
+            "object": "麻醉恢复过程中呕吐物误吸入肺导致窒息",
+            "object_type": "Other",
+            "evidence": "兴兴死因麻醉恢复过程中呕吐物误吸入肺导致窒息"
+          },
+          {
+            "subject": "龙龙",
+            "predicate": "死因",
+            "object": "麻醉恢复过程中呕吐物误吸入肺导致窒息",
+            "object_type": "Other",
+            "evidence": "龙龙死因麻醉恢复过程中呕吐物误吸入肺导致窒息"
+          },
+          {
+            "subject": "七喜",
+            "predicate": "母亲为",
+            "object": "奇福",
+            "object_type": "Person",
+            "evidence": "七喜母亲为奇福"
+          },
+          {
+            "subject": "七喜",
+            "predicate": "父亲为",
+            "object": "美兰",
+            "object_type": "Person",
+            "evidence": "七喜父亲为美兰"
+          },
+          {
+            "subject": "七喜",
+            "predicate": "谱系号",
+            "object": "925",
+            "object_type": "Other",
+            "evidence": "七喜谱系号925"
+          },
+          {
+            "subject": "七巧",
+            "predicate": "母亲为",
+            "object": "奇福",
+            "object_type": "Person",
+            "evidence": "七巧母亲为奇福"
+          },
+          {
+            "subject": "七巧",
+            "predicate": "父亲为",
+            "object": "美兰",
+            "object_type": "Person",
+            "evidence": "七巧父亲为美兰"
+          },
+          {
+            "subject": "美香",
+            "predicate": "母亲为",
+            "object": "雪雪",
+            "object_type": "Person",
+            "evidence": "美香母亲为雪雪"
+          },
+          {
+            "subject": "奇福",
+            "predicate": "母亲为",
+            "object": "奇缘",
+            "object_type": "Person",
+            "evidence": "奇福母亲为奇缘"
+          },
+          {
+            "subject": "奇福",
+            "predicate": "父亲为",
+            "object": "屏屏",
+            "object_type": "Person",
+            "evidence": "奇福父亲为屏屏"
+          },
+          {
+            "subject": "嫣嫣",
+            "predicate": "逝世于",
+            "object": "2007年3月26日",
+            "object_type": "Other",
+            "evidence": "嫣嫣逝世于2007年3月26日"
+          },
+          {
+            "subject": "嫣嫣",
+            "predicate": "去世年份",
+            "object": "2007年",
+            "object_type": "Other",
+            "evidence": "嫣嫣去世年份2007年"
+          },
+          {
+            "subject": "皓月",
+            "predicate": "母亲为",
+            "object": "喜妹",
+            "object_type": "Person",
+            "evidence": "皓月母亲为喜妹"
+          },
+          {
+            "subject": "皓月",
+            "predicate": "父亲为",
+            "object": "芦芦",
+            "object_type": "Person",
+            "evidence": "皓月父亲为芦芦"
+          },
+          {
+            "subject": "睿宝",
+            "predicate": "母亲为",
+            "object": "华妮",
+            "object_type": "Person",
+            "evidence": "睿宝母亲为华妮"
+          },
+          {
+            "subject": "睿宝",
+            "predicate": "父亲为",
+            "object": "园欣",
+            "object_type": "Person",
+            "evidence": "睿宝父亲为园欣"
+          },
+          {
+            "subject": "辉宝",
+            "predicate": "母亲为",
+            "object": "华妮",
+            "object_type": "Person",
+            "evidence": "辉宝母亲为华妮"
+          },
+          {
+            "subject": "辉宝",
+            "predicate": "父亲为",
+            "object": "园欣",
+            "object_type": "Person",
+            "evidence": "辉宝父亲为园欣"
+          },
+          {
+            "subject": "福宝",
+            "predicate": "母亲为",
+            "object": "华妮",
+            "object_type": "Person",
+            "evidence": "福宝母亲为华妮"
+          },
+          {
+            "subject": "福宝",
+            "predicate": "父亲为",
+            "object": "园欣",
+            "object_type": "Person",
+            "evidence": "福宝父亲为园欣"
+          },
+          {
+            "subject": "伦伦",
+            "predicate": "父亲为",
+            "object": "林楠",
+            "object_type": "Person",
+            "evidence": "伦伦父亲为林楠"
+          },
+          {
+            "subject": "伦伦",
+            "predicate": "母亲为",
+            "object": "冰冰",
+            "object_type": "Person",
+            "evidence": "伦伦母亲为冰冰"
+          },
+          {
+            "subject": "园润",
+            "predicate": "父亲为",
+            "object": "勇勇",
+            "object_type": "Person",
+            "evidence": "园润父亲为勇勇"
+          },
+          {
+            "subject": "园润",
+            "predicate": "母亲为",
+            "object": "园园",
+            "object_type": "Person",
+            "evidence": "园润母亲为园园"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\_curated_gap_facts.md",
+      "source_file_rel": "docs/熊猫知识/_curated_gap_facts.md",
+      "topic": "其他",
+      "category": "熊猫谣言",
+      "extracted": {
+        "topic": "其他",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "适应变化为",
+            "object": "伪拇指",
+            "object_type": "Other",
+            "evidence": "大熊猫适应变化为伪拇指"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "适应变化为",
+            "object": "头骨和下颌肌肉强化",
+            "object_type": "Other",
+            "evidence": "大熊猫适应变化为头骨和下颌肌肉强化"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "适应变化为",
+            "object": "消化系统调整",
+            "object_type": "Other",
+            "evidence": "大熊猫适应变化为消化系统调整"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "种群历史为",
+            "object": "多次种群扩张和收缩",
+            "object_type": "Other",
+            "evidence": "大熊猫种群历史为多次种群扩张和收缩"
+          },
+          {
+            "subject": "大熊猫黑白色",
+            "predicate": "伪装机制为",
+            "object": "双重伪装假说",
+            "object_type": "Other",
+            "evidence": "大熊猫黑白色伪装机制为双重伪装假说"
+          },
+          {
+            "subject": "双重伪装假说",
+            "predicate": "白色作用为",
+            "object": "在雪地中隐藏",
+            "object_type": "Other",
+            "evidence": "双重伪装假说白色作用为在雪地中隐藏"
+          },
+          {
+            "subject": "双重伪装假说",
+            "predicate": "黑色作用为",
+            "object": "在森林阴影中隐藏",
+            "object_type": "Other",
+            "evidence": "双重伪装假说黑色作用为在森林阴影中隐藏"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "天敌",
+            "object": "豺",
+            "object_type": "Other",
+            "evidence": "大熊猫天敌豺"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "天敌",
+            "object": "豹",
+            "object_type": "Other",
+            "evidence": "大熊猫天敌豹"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "天敌",
+            "object": "黄喉貂",
+            "object_type": "Other",
+            "evidence": "大熊猫天敌黄喉貂"
+          },
+          {
+            "subject": "大熊猫幼崽",
+            "predicate": "出生体重",
+            "object": "约100-150克",
+            "object_type": "Place",
+            "evidence": "大熊猫幼崽出生体重约100-150克"
+          },
+          {
+            "subject": "圈养大熊猫幼崽",
+            "predicate": "完全断奶于",
+            "object": "1岁左右",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫幼崽完全断奶于1岁左右"
+          },
+          {
+            "subject": "圈养大熊猫幼崽",
+            "predicate": "开始断奶于",
+            "object": "6-9个月龄",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫幼崽开始断奶于6-9个月龄"
+          },
+          {
+            "subject": "正规大熊猫保护机构",
+            "predicate": "管理措施为",
+            "object": "严禁动物表演",
+            "object_type": "Other",
+            "evidence": "正规大熊猫保护机构管理措施为严禁动物表演"
+          },
+          {
+            "subject": "正规大熊猫基地笼舍",
+            "predicate": "夏季温度上限",
+            "object": "26℃",
+            "object_type": "Other",
+            "evidence": "正规大熊猫基地笼舍夏季温度上限26℃"
+          },
+          {
+            "subject": "正规大熊猫基地笼舍",
+            "predicate": "冬季温度下限",
+            "object": "10℃",
+            "object_type": "Other",
+            "evidence": "正规大熊猫基地笼舍冬季温度下限10℃"
+          },
+          {
+            "subject": "大熊猫基地",
+            "predicate": "主要收入来源",
+            "object": "政府拨款和科研合作",
+            "object_type": "Other",
+            "evidence": "大熊猫基地主要收入来源政府拨款和科研合作"
+          },
+          {
+            "subject": "丫丫",
+            "predicate": "消瘦原因为",
+            "object": "老年疾病",
+            "object_type": "Other",
+            "evidence": "丫丫消瘦原因为老年疾病"
+          },
+          {
+            "subject": "丫丫",
+            "predicate": "消瘦相关疾病",
+            "object": "慢性肠炎",
+            "object_type": "Disease",
+            "evidence": "丫丫消瘦相关疾病慢性肠炎"
+          },
+          {
+            "subject": "丫丫",
+            "predicate": "消瘦相关疾病",
+            "object": "牙齿磨损导致的进食困难",
+            "object_type": "Disease",
+            "evidence": "丫丫消瘦相关疾病牙齿磨损导致的进食困难"
+          },
+          {
+            "subject": "犯罪嫌疑人",
+            "predicate": "捏造谣言为",
+            "object": "美香添添遭虐待",
+            "object_type": "Other",
+            "evidence": "犯罪嫌疑人捏造谣言为美香添添遭虐待"
+          },
+          {
+            "subject": "美香",
+            "predicate": "谣言内容为",
+            "object": "遭虐待",
+            "object_type": "Other",
+            "evidence": "美香谣言内容为遭虐待"
+          },
+          {
+            "subject": "添添",
+            "predicate": "谣言内容为",
+            "object": "遭虐待",
+            "object_type": "Other",
+            "evidence": "添添谣言内容为遭虐待"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "主动攻击",
+            "object": "人类",
+            "object_type": "Other",
+            "evidence": "大熊猫主动攻击人类"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "攻击触发条件",
+            "object": "护崽",
+            "object_type": "Other",
+            "evidence": "大熊猫攻击触发条件护崽"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "攻击触发条件",
+            "object": "受惊",
+            "object_type": "Other",
+            "evidence": "大熊猫攻击触发条件受惊"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "攻击触发条件",
+            "object": "发情期",
+            "object_type": "Other",
+            "evidence": "大熊猫攻击触发条件发情期"
+          },
+          {
+            "subject": "宝力白线虫传闻",
+            "predicate": "实际为",
+            "object": "竹子残渣",
+            "object_type": "Other",
+            "evidence": "宝力白线虫传闻实际为竹子残渣"
+          },
+          {
+            "subject": "白线虫",
+            "predicate": "实际为",
+            "object": "竹子残渣",
+            "object_type": "Other",
+            "evidence": "白线虫实际为竹子残渣"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "采血频率",
+            "object": "每年1-2次",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫采血频率每年1-2次"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "采血量上限",
+            "object": "不超过总血量的1%",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫采血量上限不超过总血量的1%"
+          },
+          {
+            "subject": "外源激素",
+            "predicate": "用途为",
+            "object": "提高自然交配或人工授精的成功率",
+            "object_type": "Other",
+            "evidence": "外源激素用途为提高自然交配或人工授精的成功率"
+          },
+          {
+            "subject": "圈养大熊猫繁殖",
+            "predicate": "激素用途",
+            "object": "提高自然交配或人工授精的成功率",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫繁殖激素用途提高自然交配或人工授精的成功率"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "繁殖间隔",
+            "object": "每2-3年",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫繁殖间隔每2-3年"
+          },
+          {
+            "subject": "截至2023年",
+            "predicate": "成功放归数量",
+            "object": "11只",
+            "object_type": "Other",
+            "evidence": "截至2023年成功放归数量11只"
+          },
+          {
+            "subject": "犯罪嫌疑人",
+            "predicate": "传播方式为",
+            "object": "短视频",
+            "object_type": "Other",
+            "evidence": "犯罪嫌疑人传播方式为短视频"
+          },
+          {
+            "subject": "犯罪嫌疑人",
+            "predicate": "传播方式为",
+            "object": "直播",
+            "object_type": "Other",
+            "evidence": "犯罪嫌疑人传播方式为直播"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "睡眠时长",
+            "object": "约10-12小时",
+            "object_type": "Other",
+            "evidence": "大熊猫睡眠时长约10-12小时"
+          },
+          {
+            "subject": "人工辅助育幼",
+            "predicate": "目的为",
+            "object": "提高双胞胎存活率",
+            "object_type": "Other",
+            "evidence": "人工辅助育幼目的为提高双胞胎存活率"
+          },
+          {
+            "subject": "正规大熊猫基地",
+            "predicate": "营养保障措施",
+            "object": "多种竹子轮换供应并搭配辅食",
+            "object_type": "Other",
+            "evidence": "正规大熊猫基地营养保障措施多种竹子轮换供应并搭配辅食"
+          },
+          {
+            "subject": "大熊猫粪便造纸",
+            "predicate": "工业使用情况",
+            "object": "很少使用",
+            "object_type": "Other",
+            "evidence": "大熊猫粪便造纸工业使用情况很少使用"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "补充食物",
+            "object": "小型动物或腐肉",
+            "object_type": "Other",
+            "evidence": "野生大熊猫补充食物小型动物或腐肉"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "补充食物",
+            "object": "竹鼠",
+            "object_type": "Other",
+            "evidence": "野生大熊猫补充食物竹鼠"
+          },
+          {
+            "subject": "电刺激采精",
+            "predicate": "麻醉方式",
+            "object": "全身麻醉",
+            "object_type": "Other",
+            "evidence": "电刺激采精麻醉方式全身麻醉"
+          },
+          {
+            "subject": "正规大熊猫保护机构",
+            "predicate": "近亲防范措施",
+            "object": "遗传管理计划与亲缘系数计算",
+            "object_type": "Other",
+            "evidence": "正规大熊猫保护机构近亲防范措施遗传管理计划与亲缘系数计算"
+          },
+          {
+            "subject": "大熊猫圈养",
+            "predicate": "主要目的",
+            "object": "保护遗传多样性与科研繁殖",
+            "object_type": "Other",
+            "evidence": "大熊猫圈养主要目的保护遗传多样性与科研繁殖"
+          },
+          {
+            "subject": "旅外大熊猫及幼崽",
+            "predicate": "所有权归属",
+            "object": "中国",
+            "object_type": "Other",
+            "evidence": "旅外大熊猫及幼崽所有权归属中国"
+          },
+          {
+            "subject": "福宝",
+            "predicate": "在韩健康状况",
+            "object": "健康状况良好",
+            "object_type": "Other",
+            "evidence": "福宝在韩健康状况健康状况良好"
+          },
+          {
+            "subject": "虚假虐待视频",
+            "predicate": "累计播放量",
+            "object": "超过54万次",
+            "object_type": "Other",
+            "evidence": "虚假虐待视频累计播放量超过54万次"
+          },
+          {
+            "subject": "大熊猫国际租借",
+            "predicate": "主要目的",
+            "object": "保护与科研合作",
+            "object_type": "Other",
+            "evidence": "大熊猫国际租借主要目的保护与科研合作"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\_curated_gap_facts.md",
+      "source_file_rel": "docs/熊猫知识/_curated_gap_facts.md",
+      "topic": "其他",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "其他",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "称为",
+            "object": "活化石",
+            "object_type": "Other",
+            "evidence": "大熊猫称为活化石"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "生存年限",
+            "object": "至少800万年",
+            "object_type": "Other",
+            "evidence": "大熊猫生存年限至少800万年"
+          },
+          {
+            "subject": "第一只大熊猫标本",
+            "predicate": "制作者",
+            "object": "戴维",
+            "object_type": "Other",
+            "evidence": "第一只大熊猫标本制作者戴维"
+          },
+          {
+            "subject": "第一只大熊猫标本",
+            "predicate": "展出于",
+            "object": "法国巴黎国家博物馆",
+            "object_type": "Other",
+            "evidence": "第一只大熊猫标本展出于法国巴黎国家博物馆"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "伞护种保护",
+            "object": "其他珍稀动物",
+            "object_type": "Other",
+            "evidence": "大熊猫伞护种保护其他珍稀动物"
+          },
+          {
+            "subject": "野生大熊猫",
+            "predicate": "繁殖季节",
+            "object": "每年四五月份",
+            "object_type": "Other",
+            "evidence": "野生大熊猫繁殖季节每年四五月份"
+          },
+          {
+            "subject": "第六指",
+            "predicate": "实际为",
+            "object": "伪拇指",
+            "object_type": "Other",
+            "evidence": "第六指实际为伪拇指"
+          },
+          {
+            "subject": "伪拇指",
+            "predicate": "来源于",
+            "object": "腕部籽骨特化",
+            "object_type": "Other",
+            "evidence": "伪拇指来源于腕部籽骨特化"
+          },
+          {
+            "subject": "大熊猫野化放归计划",
+            "predicate": "起始年份",
+            "object": "2003年",
+            "object_type": "Other",
+            "evidence": "大熊猫野化放归计划起始年份2003年"
+          },
+          {
+            "subject": "中国",
+            "predicate": "开始实施野化放归于",
+            "object": "2003年",
+            "object_type": "Other",
+            "evidence": "中国开始实施野化放归于2003年"
+          },
+          {
+            "subject": "雌性大熊猫",
+            "predicate": "发情次数",
+            "object": "每年一次",
+            "object_type": "Other",
+            "evidence": "雌性大熊猫发情次数每年一次"
+          },
+          {
+            "subject": "始熊猫化石",
+            "predicate": "出土于",
+            "object": "云南禄丰",
+            "object_type": "Place",
+            "evidence": "始熊猫化石出土于云南禄丰"
+          },
+          {
+            "subject": "始熊猫化石",
+            "predicate": "出土于",
+            "object": "云南元谋",
+            "object_type": "Place",
+            "evidence": "始熊猫化石出土于云南元谋"
+          },
+          {
+            "subject": "始熊猫",
+            "predicate": "化石产地",
+            "object": "云南禄丰和元谋",
+            "object_type": "Other",
+            "evidence": "始熊猫化石产地云南禄丰和元谋"
+          },
+          {
+            "subject": "野外大熊猫",
+            "predicate": "野外寿命",
+            "object": "18-20岁",
+            "object_type": "Other",
+            "evidence": "野外大熊猫野外寿命18-20岁"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外寿命",
+            "object": "18-20岁",
+            "object_type": "Other",
+            "evidence": "大熊猫野外寿命18-20岁"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "圈养寿命",
+            "object": "可超过30岁",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫圈养寿命可超过30岁"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "行走方式原因",
+            "object": "保存能量以适应低能量的食物",
+            "object_type": "Other",
+            "evidence": "大熊猫行走方式原因保存能量以适应低能量的食物"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "中文名为",
+            "object": "大熊猫",
+            "object_type": "Other",
+            "evidence": "大熊猫中文名为大熊猫"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "官方中文名称",
+            "object": "大熊猫",
+            "object_type": "Other",
+            "evidence": "大熊猫官方中文名称大熊猫"
+          },
+          {
+            "subject": "圈养大熊猫日粮",
+            "predicate": "竹子最低比例",
+            "object": "超过60%",
+            "object_type": "Other",
+            "evidence": "圈养大熊猫日粮竹子最低比例超过60%"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "消化系统特点",
+            "object": "更接近肉食动物但以竹子为食",
+            "object_type": "Other",
+            "evidence": "大熊猫消化系统特点更接近肉食动物但以竹子为食"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\_curated_gap_facts.md",
+      "source_file_rel": "docs/熊猫知识/_curated_gap_facts.md",
+      "topic": "生存环境",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生存环境",
+        "relation_triples": [
+          {
+            "subject": "野生大熊猫",
+            "predicate": "数量",
+            "object": "1864只",
+            "object_type": "Other",
+            "evidence": "野生大熊猫数量1864只"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外数量",
+            "object": "1864只",
+            "object_type": "Other",
+            "evidence": "大熊猫野外数量1864只"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\_curated_gap_facts.md",
+      "source_file_rel": "docs/熊猫知识/_curated_gap_facts.md",
+      "topic": "生理构造",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生理构造",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "采食部位",
+            "object": "竹子上部的枝叶",
+            "object_type": "Other",
+            "evidence": "大熊猫采食部位竹子上部的枝叶"
+          },
+          {
+            "subject": "小熊猫",
+            "predicate": "采食部位",
+            "object": "较低部位的竹叶",
+            "object_type": "Other",
+            "evidence": "小熊猫采食部位较低部位的竹叶"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\_curated_gap_facts.md",
+      "source_file_rel": "docs/熊猫知识/_curated_gap_facts.md",
+      "topic": "行为习性",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "行为习性",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "行为目的为",
+            "object": "保存能量",
+            "object_type": "Behavior",
+            "evidence": "大熊猫行为目的为保存能量"
+          },
+          {
+            "subject": "圈养大熊猫",
+            "predicate": "刻板行为原因",
+            "object": "感到无聊、孤单",
+            "object_type": "Behavior",
+            "evidence": "圈养大熊猫刻板行为原因感到无聊、孤单"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "气味标记作用",
+            "object": "标记领土以互相回避或相聚",
+            "object_type": "Behavior",
+            "evidence": "大熊猫气味标记作用标记领土以互相回避或相聚"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】外形特征 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】外形特征 - 成都大熊猫繁育研究基地.md",
+      "topic": "生理构造",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生理构造",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "尾长为",
+            "object": "100～120mm",
+            "object_type": "Biology",
+            "evidence": "尾长100～120mm。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "皮肤最厚处为",
+            "object": "10毫米",
+            "object_type": "Biology",
+            "evidence": "大熊猫皮肤厚，最厚处可达10毫米。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫分布和现状 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】大熊猫分布和现状 - 成都大熊猫繁育研究基地.md",
+      "topic": "生存环境",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生存环境",
+        "relation_triples": [
+          {
+            "subject": "全世界圈养大熊猫",
+            "predicate": "2020年数量为",
+            "object": "633只",
+            "object_type": "Other",
+            "evidence": "截止2020年，全世界圈养单位共圈养熊猫633只，成都大熊猫繁育研究基地圈养熊猫215只。"
+          },
+          {
+            "subject": "成都大熊猫繁育研究基地",
+            "predicate": "2020年圈养数量为",
+            "object": "215只",
+            "object_type": "Other",
+            "evidence": "截止2020年，全世界圈养单位共圈养熊猫633只，成都大熊猫繁育研究基地圈养熊猫215只。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "分布于",
+            "object": "秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系",
+            "object_type": "Place",
+            "evidence": "而现在我们只能在秦岭山系、岷山山系、邛崃山系、凉山和大、小相岭山系找到它们。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫历史 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】大熊猫历史 - 成都大熊猫繁育研究基地.md",
+      "topic": "历史背景",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "历史背景",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "科学发现时间为",
+            "object": "1869年3月",
+            "object_type": "Other",
+            "evidence": "1869年3月，法国博物学家阿尔芒 · 戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "科学发现者为",
+            "object": "阿尔芒·戴维神父",
+            "object_type": "Other",
+            "evidence": "1869年3月，法国博物学家阿尔芒 · 戴维神父（1826.9.7—1900.11.10），在四川雅安宝兴县的邓池沟（穆坪）教堂附近科学考察时，发现了当地人称为白熊、花熊的踪迹。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫生长发育 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】大熊猫生长发育 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "行为习性",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "1到3岁行为特点为",
+            "object": "最为活跃，大部分时间玩耍、探索和爬树",
+            "object_type": "Behavior",
+            "evidence": "大熊猫在1~3岁期间是最为活跃的时期，每天除了采食外，大部分时间都在玩耍、探索和爬树。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】大熊猫的朋友 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】大熊猫的朋友 - 成都大熊猫繁育研究基地.md",
+      "topic": "生态关系",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生态关系",
+        "relation_triples": [
+          {
+            "subject": "扭角羚",
+            "predicate": "冬季食用为",
+            "object": "已枯萎的竹叶（熊猫不吃）",
+            "object_type": "Other",
+            "evidence": "在冬季它们还吃熊猫不吃已枯萎的竹叶。"
+          },
+          {
+            "subject": "金丝猴",
+            "predicate": "科学名命名依据为",
+            "object": "根据一个著名的俄国美女",
+            "object_type": "Other",
+            "evidence": "它的科学名，由法国巴黎自然博物馆主任，根据一个著名的俄国美女而订的。"
+          },
+          {
+            "subject": "成都大熊猫繁育研究基地",
+            "predicate": "共存鸟类为",
+            "object": "红腹锦鸡",
+            "object_type": "Other",
+            "evidence": "大熊猫的朋友-红腹锦鸡（基地科普图示伴生鸟类）。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md",
+      "topic": "其他",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "其他",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "缺乏可见信号交流原因为",
+            "object": "常年生活在高山茂密薄雾竹林里，看不见彼此",
+            "object_type": "Other",
+            "evidence": "这都是因为大熊猫常年生活在高山上茂密的薄雾弥漫的竹林里面、看不见彼此而造成的。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "行为习性",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "不发声音情形为",
+            "object": "玩耍或表示友好、没有交配或好斗想法时",
+            "object_type": "Other",
+            "evidence": "当大熊猫在玩，或是简单地表示友好，没有交配或好斗的想法的时候，它们不会发出任何声音。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "气味标记方式为",
+            "object": "肛周腺分泌物涂抹在树干、竹子等物体上",
+            "object_type": "Behavior",
+            "evidence": "大熊猫将肛周腺体的分泌物涂在柱子、树桩、墙上、地上以及它们经常经过的地方。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】繁殖 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】繁殖 - 成都大熊猫繁育研究基地.md",
+      "topic": "其他",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "其他",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "婚姻制度为",
+            "object": "多雄多雌制",
+            "object_type": "Other",
+            "evidence": "在同一发情季节，一只雄性大熊猫可与多只雌性大熊猫交配，同样一只雌性大熊猫也可接受多只雄性的交配，因此在大熊猫世界的婚姻是多雄多雌制。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】育幼生长 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】育幼生长 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "行为习性",
+        "relation_triples": [
+          {
+            "subject": "大熊猫妈妈",
+            "predicate": "野外双胞胎策略为",
+            "object": "忽视或拒绝较弱的一个",
+            "object_type": "Behavior",
+            "evidence": "在野外，如果出生的是双胞胎（圈养下大熊猫产双胞胎比例近50%），大熊猫妈妈通常会忽视或拒绝较弱的一个，这能保证至少一只成活。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "隔年产子原因为",
+            "object": "妈妈需一年半到两年育幼，育幼期间不再繁殖",
+            "object_type": "Other",
+            "evidence": "因为大熊猫妈妈通常需要一年半到两年的时间来照顾她的孩子。大熊猫在育幼期间不会再繁殖，所以大熊猫一般是隔年产子。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】致危因素 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】致危因素 - 成都大熊猫繁育研究基地.md",
+      "topic": "生存环境",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生存环境",
+        "relation_triples": [
+          {
+            "subject": "竹子开花",
+            "predicate": "威胁原因为",
+            "object": "栖息地极小且相互隔离，无法迁徙寻找其他竹子",
+            "object_type": "Other",
+            "evidence": "但目前由于大熊猫栖息地极小且相互隔离，使得一旦竹子开花，而生活在“孤岛”上的大熊猫，就面临着缺少食物的困境。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】行为富化 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】行为富化 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "行为习性",
+        "relation_triples": [
+          {
+            "subject": "行为富化",
+            "predicate": "主要目的为",
+            "object": "改善圈养大熊猫的行为福利",
+            "object_type": "Other",
+            "evidence": "丰容是指通过构建和改变圈养动物的生活环境，改进喂食策略，使动物表现出正常的行为，为动物提供更多的选择机会，提高它们的生活质量。"
+          },
+          {
+            "subject": "丰容",
+            "predicate": "定义为",
+            "object": "构建改变生活环境并改进喂食策略，使动物表现正常行为",
+            "object_type": "Other",
+            "evidence": "丰容是指通过构建和改变圈养动物的生活环境，改进喂食策略，使动物表现出正常的行为，为动物提供更多的选择机会，提高它们的生活质量。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】行为特点 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】行为特点 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "行为习性",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "野外相遇行为为",
+            "object": "回避",
+            "object_type": "Behavior",
+            "evidence": "它们很少主动地攻击其他动物或人，在野外偶然相遇时，总是采用回避的方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "爬树原因为",
+            "object": "临近求婚期、逃避危险、弱者回避强者",
+            "object_type": "Behavior",
+            "evidence": "爬树的行为一般是临近求婚期，或逃避危险，或彼此相遇时弱者借以回避强者的一种方式。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "野外冲突原因为",
+            "object": "发情季节雄性争夺雌性",
+            "object_type": "Behavior",
+            "evidence": "在野外，大熊猫通常在发情季节发生冲突，特别是当三到四只雄性追求一只发情的雌性时。"
+          },
+          {
+            "subject": "大熊猫",
+            "predicate": "两次进食间睡眠时长为",
+            "object": "2~4个小时",
+            "object_type": "Other",
+            "evidence": "在野外，大熊猫在每两次进食的中间睡2~4个小时，平躺、侧躺、俯卧、伸展或蜷成一团都是它们喜好的睡觉方式。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】进食 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】进食 - 成都大熊猫繁育研究基地.md",
+      "topic": "行为习性",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "行为习性",
+        "relation_triples": [
+          {
+            "subject": "大熊猫",
+            "predicate": "采食部位顺序为",
+            "object": "竹笋、嫩竹、竹竿",
+            "object_type": "Biology",
+            "evidence": "优选采食的顺序为竹笋，嫩竹，竹竿。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫知识\\【熊猫知识】野外天敌 - 成都大熊猫繁育研究基地.md",
+      "source_file_rel": "docs/熊猫知识/【熊猫知识】野外天敌 - 成都大熊猫繁育研究基地.md",
+      "topic": "生态关系",
+      "category": "熊猫知识",
+      "extracted": {
+        "topic": "生态关系",
+        "relation_triples": [
+          {
+            "subject": "野外天敌",
+            "predicate": "主要袭击对象为",
+            "object": "幼仔和病弱年老者",
+            "object_type": "Other",
+            "evidence": "但是它们主要是袭击大熊猫的幼仔和病弱年老者，因为年轻体壮的大熊猫仍不失食肉祖先的凶猛，遇强不弱，令敌害生畏。"
+          },
+          {
+            "subject": "大熊猫野外天敌",
+            "predicate": "主要袭击对象为",
+            "object": "幼仔和病弱年老者",
+            "object_type": "Other",
+            "evidence": "但是它们主要是袭击大熊猫的幼仔和病弱年老者"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫谣言\\大熊猫辟谣汇总_仅辟谣.md",
+      "source_file_rel": "docs/熊猫谣言/大熊猫辟谣汇总_仅辟谣.md",
+      "topic": "其他",
+      "category": "熊猫谣言",
+      "extracted": {
+        "topic": "其他",
+        "relation_triples": [
+          {
+            "subject": "美香一家回国后遭藏匿虐待传闻",
+            "predicate": "辟谣结论为",
+            "object": "不实；官方澄清并规范隔离检疫与专业照料",
+            "object_type": "Other",
+            "evidence": "2024年5月，中国大熊猫保护研究中心官方发布辟谣信息，针对“熊猫中心藏匿、虐待归国熊猫'美香'一家”等不实言论进行澄清。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫资料\\熊猫资料2.md",
+      "source_file_rel": "docs/熊猫资料/熊猫资料2.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "relation_triples": [
+          {
+            "subject": "萌萌",
+            "predicate": "母亲为",
+            "object": "英英",
+            "object_type": "Person",
+            "evidence": "母亲为英英，父亲为灵灵，育有萌大、萌二、萌兰、萌宝、萌玉五只幼崽。"
+          },
+          {
+            "subject": "萌萌",
+            "predicate": "父亲为",
+            "object": "灵灵",
+            "object_type": "Person",
+            "evidence": "母亲为英英，父亲为灵灵，育有萌大、萌二、萌兰、萌宝、萌玉五只幼崽。"
+          }
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\docs\\熊猫资料\\熊猫资料3.md",
+      "source_file_rel": "docs/熊猫资料/熊猫资料3.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "relation_triples": [
+          {
+            "subject": "淼淼",
+            "predicate": "母亲为",
+            "object": "娇子",
+            "object_type": "Person",
+            "evidence": "大熊猫淼淼，雌性，谱系号855，2012年9月4日出生于成都大熊猫繁育研究基地，母亲娇子，父亲勇勇。"
+          },
+          {
+            "subject": "淼淼",
+            "predicate": "父亲为",
+            "object": "勇勇",
+            "object_type": "Person",
+            "evidence": "大熊猫淼淼，雌性，谱系号855，2012年9月4日出生于成都大熊猫繁育研究基地，母亲娇子，父亲勇勇。"
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "triple_count": 179,
+    "source_count": 32
+  },
+  "timestamp": "2026-07-31T17:19:38",
+  "schema_note": "compatible with tools/neo4j_graph_writer._load_triples"
+}
