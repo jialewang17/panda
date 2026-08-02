@@ -1,12 +1,21 @@
 (() => {
+  // 示例题均经 neo4j_qa 实跑校验（knowledge_base + 非拒答），勿随意改写措辞。
   const EXAMPLES = [
     { category: "熊猫知识", text: "大熊猫是否具有冬眠习性？" },
     { category: "熊猫知识", text: "大熊猫福龙是在哪里出生的？" },
-    { category: "熊猫谣言", text: "大熊猫是猫科动物吗？" },
-    { category: "熊猫资料", text: "和花的父母分别是谁？" },
     { category: "熊猫知识", text: "大熊猫的气味标记方式是什么？" },
     { category: "熊猫知识", text: "大熊猫在野外发生冲突的主要原因是什么？" },
+    { category: "熊猫谣言", text: "大熊猫是猫科动物吗？" },
+    { category: "熊猫谣言", text: "大熊猫属于浣熊科吗？" },
+    { category: "熊猫谣言", text: "大熊猫是濒危动物即将灭绝吗？" },
+    { category: "熊猫资料", text: "和花的父母分别是谁？" },
+    { category: "熊猫资料", text: "和花是什么时候出生的？" },
+    { category: "熊猫资料", text: "萌兰的父母是谁？" },
+    { category: "熊猫资料", text: "萌兰是什么时候出生的？" },
   ];
+
+  /** 「全部」时每个栏目各取几条，避免列表过长且栏目失衡。 */
+  const ALL_CATEGORY_QUOTA = 2;
 
   const el = {
     category: document.getElementById("category"),
@@ -378,14 +387,41 @@
     }
   }
 
-  function mountExamples() {
+  function examplesForCategory(category) {
+    const cat = (category || "全部").trim();
+    if (cat && cat !== "全部") {
+      return EXAMPLES.filter((item) => item.category === cat);
+    }
+    const picked = [];
+    const counts = {};
     EXAMPLES.forEach((item) => {
+      const n = counts[item.category] || 0;
+      if (n < ALL_CATEGORY_QUOTA) {
+        picked.push(item);
+        counts[item.category] = n + 1;
+      }
+    });
+    return picked;
+  }
+
+  function renderExamples() {
+    el.exampleButtons.innerHTML = "";
+    const items = examplesForCategory(el.category.value);
+    if (!items.length) {
+      const tip = document.createElement("span");
+      tip.className = "status";
+      tip.textContent = "当前栏目暂无示例问题";
+      el.exampleButtons.appendChild(tip);
+      return;
+    }
+    items.forEach((item) => {
       const btn = document.createElement("button");
       btn.type = "button";
       btn.textContent = item.text;
       btn.addEventListener("click", () => {
         el.category.value = item.category;
         el.question.value = item.text;
+        renderExamples();
         clearError();
         ask();
       });
@@ -394,6 +430,7 @@
   }
 
   el.askBtn.addEventListener("click", ask);
+  el.category.addEventListener("change", renderExamples);
   el.question.addEventListener("keydown", (ev) => {
     if (ev.key === "Enter" && (ev.ctrlKey || ev.metaKey)) {
       ev.preventDefault();
@@ -401,5 +438,6 @@
     }
   });
 
-  mountExamples();
+  renderExamples();
 })();
+
