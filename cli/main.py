@@ -40,7 +40,7 @@ def interactive() -> None:
             if user_input.strip().startswith("/"):
                 # 处理 /exit 命令
                 if user_input.strip() == "/exit":
-                    console.print(f"\n[cyan]感谢使用 [bold magenta]AnyClaw[/bold magenta]，再见！[/cyan]\n")
+                    console.print(f"\n[cyan]感谢使用 [bold magenta]Panda[/bold magenta]，再见！[/cyan]\n")
                     break
                 
                 # 处理 /new 命令
@@ -110,10 +110,10 @@ def interactive() -> None:
             console.print("[yellow]提示: 使用 '/new' 开启新会话，或使用 '/memory' 恢复之前的会话[/yellow]")
             
         except KeyboardInterrupt:
-            console.print(f"\n\n[cyan]感谢使用 [bold magenta]AnyClaw[/bold magenta]，再见！[/cyan]\n")
+            console.print(f"\n\n[cyan]感谢使用 [bold magenta]Panda[/bold magenta]，再见！[/cyan]\n")
             sys.exit(0)
         except EOFError:
-            console.print(f"\n\n[cyan]感谢使用 [bold magenta]AnyClaw[/bold magenta]，再见！[/cyan]\n")
+            console.print(f"\n\n[cyan]感谢使用 [bold magenta]Panda[/bold magenta]，再见！[/cyan]\n")
             sys.exit(0)
         except Exception as e:
             console.print(f"\n[red]❌[/red] [red]发生错误:[/red] [white]{str(e)}[/white]\n")

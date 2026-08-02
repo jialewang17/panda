@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>大熊猫知识库问答 · 演示</title>
+  <link rel="stylesheet" href="/static/app.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <p class="panda-logo" aria-label="PANDA">
+        <span class="l0">P</span><span class="l1">A</span><span class="l2">N</span><span class="l3">D</span><span class="l4">A</span>
+      </p>
+      <h1>大熊猫知识库问答</h1>
+      <p class="lead">基于 Neo4j 图谱检索的科普演示</p>
+    </header>
+
+    <main class="panel">
+      <section class="controls">
+        <label>
+          栏目
+          <select id="category">
+            <option value="全部">全部</option>
+            <option value="熊猫知识">熊猫知识</option>
+            <option value="熊猫谣言">熊猫谣言</option>
+            <option value="熊猫资料">熊猫资料</option>
+          </select>
+        </label>
+        <label>
+          语气
+          <select id="persona">
+            <option value="educator">普通科普</option>
+            <option value="kid">儿童科普</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="examples" aria-label="示例问题">
+        <p class="section-label">示例问题</p>
+        <div id="example-buttons" class="chips"></div>
+      </section>
+
+      <section class="ask">
+        <label for="question" class="section-label">问题</label>
+        <textarea id="question" rows="3" placeholder="例如：大熊猫是否具有冬眠习性？"></textarea>
+        <div class="ask-actions">
+          <button id="ask-btn" type="button">提问</button>
+          <span id="status" class="status" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <p id="error" class="error hidden" role="alert"></p>
+    </main>
+
+    <section id="result" class="result-stack hidden">
+      <div class="meta-row">
+        <span id="badge-mode" class="badge"></span>
+        <span id="badge-quality" class="badge muted"></span>
+        <span id="badge-cat" class="badge muted"></span>
+      </div>
+
+      <article class="card card-answer">
+        <header class="card-head">
+          <h2>回答</h2>
+          <span class="card-hint">要点分模块展示</span>
+        </header>
+        <div id="answer" class="answer"></div>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h2>命中关系</h2>
+          <span class="card-hint">图谱检索摘要</span>
+        </header>
+        <ul id="hits" class="relation-list"></ul>
+      </article>
+
+      <article class="card">
+        <header class="card-head">
+          <h2>来源文档</h2>
+          <span class="card-hint">知识库依据</span>
+        </header>
+        <ul id="sources" class="source-list"></ul>
+      </article>
+    </section>
+
+    <footer class="foot">
+      <code>python -m tools.qa_web</code>
+      ·
+      <code>python -m tools.neo4j_qa --interactive</code>
+    </footer>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

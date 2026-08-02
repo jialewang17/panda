@@ -4,6 +4,7 @@ __all__ = [
     "panda_history_extractor",
     "neo4j_graph_writer",
     "neo4j_qa",
+    "qa_web",
     "qa_metrics",
     "qa_evaluator",
 ]
@@ -23,6 +24,10 @@ def __getattr__(name: str):
         from tools.neo4j_qa import neo4j_qa
 
         return neo4j_qa
+    if name == "qa_web":
+        from tools import qa_web
+
+        return qa_web
     if name == "qa_evaluator":
         from tools.qa_evaluator import main as qa_evaluator
 

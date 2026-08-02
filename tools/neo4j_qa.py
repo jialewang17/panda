@@ -1693,6 +1693,7 @@ def _generate_answer(question: str, rows: List[Dict[str, str]], strict_mode: boo
         "当问题可分维度时，使用分点结构，不要只给一句话结论。"
         "依据部分保持最小化，只标注文档来源，不展开长证据句。"
         "避免机械重复。"
+        "语气正式，不要使用表情符号或装饰性符号（如 ✅ ❌ ⚠️ ★ 等）。"
         f"{_persona_instructions(persona)}"
     )
     if strict_mode:
@@ -1702,7 +1703,10 @@ def _generate_answer(question: str, rows: List[Dict[str, str]], strict_mode: boo
         f"知识库检索结果（最多 {len(rows)} 条）：\n{context_text}\n\n"
         f"回答偏好：{intent_hint}\n\n"
         "请输出：\n"
-        "1) 全面回答（建议 3-6 个要点，必要时分“野外/圈养”“原因/影响”等小节）\n"
+        "1) 全面回答：先用 1-2 句给出结论；再按主题分小节，"
+        "每节以具体主题名加冒号单独成行（例如「分类学归属：」），"
+        "下列用「- 」要点或短段落展开；不要输出“小节标题”字样"
+        "（建议 3-5 个小节，如定义/原因/场景差异/补充说明）\n"
         "2) 依据来源（精简列出 2-8 个来源文档，格式：- 来源：<source_file>）\n"
         "要求：依据只标注来源，不要复述大段证据原文。\n"
         "如果证据不足，直接回答“知识库暂无足够依据”。"
@@ -1720,6 +1724,7 @@ def _generate_fallback_answer(question: str, persona: str) -> str:
         "你是熊猫科普助手。当前知识库未命中证据。"
         "请基于通用知识谨慎回答，明确这是“非知识库证据回答”，避免编造具体数字与细节。"
         "若不确定，请明确说明不确定性。"
+        "语气正式，不要使用表情符号或装饰性符号。"
         f"{_persona_instructions(persona)}"
     )
     user_prompt = (

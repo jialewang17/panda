@@ -38,6 +38,13 @@ NEO4J_DATABASE=neo4j
 
 ## 常用命令
 
+### 0) 交互式 CLI 主入口
+```bash
+python -m cli.main
+```
+
+进入后可用 `/new` 开新会话、`/memory` 选历史会话、`/tools` / `/models` / `/skills` 查看状态，`/exit` 退出。
+
 ### 1) 按栏目抽取文档
 熊猫知识：
 ```bash
@@ -118,6 +125,21 @@ python -m tools.neo4j_qa --interactive --persona educator --show-sources
 ```
 进入后会先选择栏目；也可随时用 `:category 熊猫知识|熊猫谣言|熊猫资料|全部` 切换。
 
+### 5.1) 问答演示页（Web，保留终端）
+本地演示用轻量页面，后端复用同一套 `neo4j_qa`，**不替代**终端 CLI：
+
+```bash
+pip install fastapi uvicorn
+python -m tools.qa_web
+```
+
+浏览器打开 `http://127.0.0.1:8000/`。支持栏目/语气选择、示例问题、回答、来源与命中关系摘要。
+
+可选参数：
+```bash
+python -m tools.qa_web --host 127.0.0.1 --port 8000
+```
+
 交互问答默认自动保存每轮 JSON 到 `sandbox/qa_sessions/`（可指定会话名）：
 ```bash
 python -m tools.neo4j_qa --interactive --show-sources --session-name panda_demo
@@ -186,7 +208,9 @@ python scripts/kb_doc_eval.py all --categories 熊猫资料,熊猫谣言,熊猫�
 - `docs/熊猫谣言/`：辟谣文档（栏目：熊猫谣言）
 - `docs/熊猫资料/`：个体档案等资料（栏目：熊猫资料）
 - `docs/谣言与辟谣/`：谣言与辟谣原始/衍生文档
-- `tools/`：抽取、入库、问答工具
+- `cli/`：交互式 CLI 主入口（`python -m cli.main`）
+- `tools/`：抽取、入库、问答工具（含 `qa_web` 演示页入口）
+- `web/qa_demo/`：问答演示页静态资源
 - `scripts/`：辅助脚本（如 Neo4j schema 统计导出）
 - `data/wiki/`：抽取运行结果目录（按运行批次分组）
 - `data/curated/`：可复现的定向补录种子（如 `kb_gap_facts_v1.json`）

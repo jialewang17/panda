@@ -16,110 +16,69 @@ import re
 console = Console()
 
 def print_icon() -> None:
-    """打印 ANYCLAW 项目的 ASCII 图标（使用 Rich）"""
+    """打印 PANDA 项目的 ASCII 图标（使用 Rich）"""
     logo_text = Text()
+    colors = ("magenta", "yellow", "green", "cyan", "blue")
 
-    # A
-    logo_text.append("   █████╗   ", style="magenta")
-    # N
-    logo_text.append("███╗  ██╗", style="yellow")
-    logo_text.append("  ")
-    # Y
-    logo_text.append("██╗   ██╗", style="green")
-    logo_text.append("  ")
-    # C
-    logo_text.append(" ██████╗ ", style="cyan")
-    logo_text.append("  ")
-    # L
-    logo_text.append("██╗      ", style="blue")
-    logo_text.append("  ")
-    # A
-    logo_text.append(" █████╗ ", style="red")
-    logo_text.append("  ")
-    # W
-    logo_text.append("██╗    ██╗", style="magenta")
-    logo_text.append("\n")
+    # P / A / N / D / A — 每行五段字形
+    rows = [
+        (
+            "██████╗ ",
+            " █████╗ ",
+            "███╗   ██╗",
+            "██████╗ ",
+            " █████╗ ",
+        ),
+        (
+            "██╔══██╗",
+            "██╔══██╗",
+            "████╗  ██║",
+            "██╔══██╗",
+            "██╔══██╗",
+        ),
+        (
+            "██████╔╝",
+            "███████║",
+            "██╔██╗ ██║",
+            "██║  ██║",
+            "███████║",
+        ),
+        (
+            "██╔═══╝ ",
+            "██╔══██║",
+            "██║╚██╗██║",
+            "██║  ██║",
+            "██╔══██║",
+        ),
+        (
+            "██║     ",
+            "██║  ██║",
+            "██║ ╚████║",
+            "██████╔╝",
+            "██║  ██║",
+        ),
+        (
+            "╚═╝     ",
+            "╚═╝  ╚═╝",
+            "╚═╝  ╚═══╝",
+            "╚═════╝ ",
+            "╚═╝  ╚═╝",
+        ),
+    ]
 
-    # 第二行
-    logo_text.append("  ██╔══██╗  ", style="magenta")
-    logo_text.append("████╗ ██║", style="yellow")
-    logo_text.append("  ")
-    logo_text.append("╚██╗ ██╔╝", style="green")
-    logo_text.append("  ")
-    logo_text.append("██╔════╝ ", style="cyan")
-    logo_text.append("  ")
-    logo_text.append("██║      ", style="blue")
-    logo_text.append("  ")
-    logo_text.append("██╔══██╗", style="red")
-    logo_text.append("  ")
-    logo_text.append("██║    ██║", style="magenta")
-    logo_text.append("\n")
-
-    # 第三行
-    logo_text.append("  ███████║  ", style="magenta")
-    logo_text.append("██╔██╗██║", style="yellow")
-    logo_text.append("  ")
-    logo_text.append(" ╚████╔╝ ", style="green")
-    logo_text.append("  ")
-    logo_text.append("██║      ", style="cyan")
-    logo_text.append("  ")
-    logo_text.append("██║      ", style="blue")
-    logo_text.append("  ")
-    logo_text.append("███████║", style="red")
-    logo_text.append("  ")
-    logo_text.append("██║ █╗ ██║", style="magenta")
-    logo_text.append("\n")
-
-    # 第四行
-    logo_text.append("  ██╔══██║  ", style="magenta")
-    logo_text.append("██║╚████║", style="yellow")
-    logo_text.append("  ")
-    logo_text.append("  ╚██╔╝  ", style="green")
-    logo_text.append("  ")
-    logo_text.append("██║      ", style="cyan")
-    logo_text.append("  ")
-    logo_text.append("██║      ", style="blue")
-    logo_text.append("  ")
-    logo_text.append("██╔══██║", style="red")
-    logo_text.append("  ")
-    logo_text.append("██║███╗██║", style="magenta")
-    logo_text.append("\n")
-
-    # 第五行
-    logo_text.append("  ██║  ██║  ", style="magenta")
-    logo_text.append("██║ ╚███║", style="yellow")
-    logo_text.append("  ")
-    logo_text.append("   ██║   ", style="green")
-    logo_text.append("  ")
-    logo_text.append("╚██████╗ ", style="cyan")
-    logo_text.append("  ")
-    logo_text.append("███████╗ ", style="blue")
-    logo_text.append("  ")
-    logo_text.append("██║  ██║", style="red")
-    logo_text.append("  ")
-    logo_text.append("╚███╔███╔╝", style="magenta")
-    logo_text.append("\n")
-
-    # 第六行
-    logo_text.append("  ╚═╝  ╚═╝  ", style="magenta")
-    logo_text.append("╚═╝  ╚══╝", style="yellow")
-    logo_text.append("  ")
-    logo_text.append("   ╚═╝   ", style="green")
-    logo_text.append("  ")
-    logo_text.append(" ╚═════╝ ", style="cyan")
-    logo_text.append("  ")
-    logo_text.append("╚══════╝ ", style="blue")
-    logo_text.append("  ")
-    logo_text.append("╚═╝  ╚═╝", style="red")
-    logo_text.append("  ")
-    logo_text.append(" ╚══╝╚══╝ ", style="magenta")
+    for row in rows:
+        for i, part in enumerate(row):
+            logo_text.append(part, style=colors[i])
+            if i < len(row) - 1:
+                logo_text.append("  ")
+        logo_text.append("\n")
 
     console.print(logo_text)
     
 
 def print_welcome() -> None:
     """打印欢迎信息和可用命令（使用 Rich）"""
-    console.print("[bold white]欢迎使用 AnyClaw - Agent智能助手[/bold white]")
+    console.print("[bold white]欢迎使用 Panda - 大熊猫知识助手[/bold white]")
     console.print()
     console.print("[yellow]可用命令：[/yellow]")
     console.print("  [cyan]/new[/cyan]     - 开启新的会话（创建后先选栏目：随便问问/知识/资料/谣言）")

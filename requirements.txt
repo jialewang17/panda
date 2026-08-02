@@ -24,3 +24,7 @@ prompt-toolkit>=3.0.43
 
 # 图数据库
 neo4j>=5.0.0
+
+# 演示页 Web
+fastapi>=0.110.0
+uvicorn>=0.27.0

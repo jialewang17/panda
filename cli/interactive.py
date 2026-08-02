@@ -858,13 +858,13 @@ def run_session_loop(task_id: Optional[str] = None) -> None:
             session_data = session_manager.load_session(task_id)
             if session_data:
                 session_manager.save_session(task_id, session_data)
-            console.print(f"\n\n[cyan]会话已保存，感谢使用 [bold magenta]AnyClaw[/bold magenta]！[/cyan]\n")
+            console.print(f"\n\n[cyan]会话已保存，感谢使用 [bold magenta]Panda[/bold magenta]！[/cyan]\n")
             sys.exit(0)
         except EOFError:
             session_data = session_manager.load_session(task_id)
             if session_data:
                 session_manager.save_session(task_id, session_data)
-            console.print(f"\n\n[cyan]会话已保存，感谢使用 [bold magenta]AnyClaw[/bold magenta]！[/cyan]\n")
+            console.print(f"\n\n[cyan]会话已保存，感谢使用 [bold magenta]Panda[/bold magenta]！[/cyan]\n")
             sys.exit(0)
         except Exception as e:
             console.print(f"\n[red]发生错误: {str(e)}[/red]\n")
