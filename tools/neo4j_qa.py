@@ -20,6 +20,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.tools import tool
 
 from model.factory import get_text_generation_model
+from tools.qa_query_normalize import normalize_query
 from utils.env_loader import get_env_config
 
 CATEGORY_KNOWLEDGE = "熊猫知识"
@@ -206,7 +207,17 @@ def _extract_keywords(question: str) -> List[str]:
         "周期",
         "月龄",
         "体重",
+        "多重",
+        "几斤",
+        "体长",
+        "肩高",
+        "身高",
         "幼仔",
+        "父亲",
+        "母亲",
+        "父母",
+        "睡眠",
+        "冬眠",
         "亚成年",
         "成年",
         "性成熟",
@@ -394,8 +405,34 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["交流", "沟通", "气味标记", "声音交流", "叫声", "标记"])
     if any(token in q for token in ["生长", "发育", "生长发育", "周期", "月龄", "幼仔", "亚成年", "成年", "性成熟"]):
         terms.extend(["生长", "发育", "生长发育", "周期", "月龄", "幼仔", "亚成年", "成年", "性成熟", "体重", "恒牙"])
-    if any(token in q for token in ["寿命", "最长寿", "年龄", "几岁", "活多久", "存活"]):
-        terms.extend(["寿命", "最长寿", "年龄", "岁", "野外", "圈养", "存活"])
+    # 体重 / 体长（normalize 后口语也会变成这些标准词）
+    if any(
+        token in q
+        for token in ["体重", "多重", "有多重", "一般多重", "多重少", "几斤", "多重啊"]
+    ):
+        terms.extend(
+            [
+                "体重",
+                "体重范围",
+                "成年体重范围",
+                "野生个体体重范围",
+                "人工饲养个体体重范围",
+                "出生体重",
+            ]
+        )
+    if any(token in q for token in ["体长", "肩高", "身高", "多高", "多长", "身长"]):
+        terms.extend(
+            [
+                "体长",
+                "体长范围",
+                "成年体长范围",
+                "肩高",
+                "肩高范围",
+                "外形",
+            ]
+        )
+    if any(token in q for token in ["寿命", "最长寿", "年龄", "几岁", "活多久", "存活", "能活几年", "多老"]):
+        terms.extend(["寿命", "最长寿", "年龄", "岁", "野外", "圈养", "存活", "野外寿命", "圈养寿命"])
     if any(token in q for token in ["去世", "死亡", "逝世", "离世", "去世年份", "哪年去世"]):
         terms.extend(["去世", "死亡", "逝世", "离世", "逝世于", "去世年份", "死亡时间"])
     if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢"]):
@@ -403,8 +440,9 @@ def _build_intent_terms(question: str) -> List[str]:
     # 分类/辟谣类问题：问“是不是猫科”时需召回“熊科/分类属于”等正确结论。
     if any(token in q for token in ["猫科", "熊科", "浣熊", "分类", "属于", "什么科", "活化石", "伪拇指"]):
         terms.extend(["分类", "分类属于", "属于", "熊科", "猫科", "浣熊科", "亚科", "分子生物学", "伪拇指", "活化石"])
-    if any(token in q for token in ["数量", "多少只", "调查", "1864", "野外数量"]):
-        terms.extend(["数量", "野外数量", "1864", "调查", "野生大熊猫"])
+    if any(token in q for token in ["数量", "多少只", "调查", "1864", "野外数量", "多少", "几只", "现存"]):
+        if any(t in q for t in ["数量", "多少只", "野外", "调查", "几只", "现存", "多少", "圈养"]):
+            terms.extend(["数量", "野外数量", "1864", "调查", "野生大熊猫", "多少只"])
     if any(token in q for token in ["繁殖季节", "几月繁殖", "发情季节", "发情几次", "发情一次", "每年发情"]):
         terms.extend(["繁殖季节", "繁殖", "四五月份", "发情", "发情次数", "每年一次"])
     if any(token in q for token in ["断奶", "完全断奶", "几岁断奶"]):
@@ -427,6 +465,8 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["始熊猫", "始熊猫化石", "出土于", "化石产地", "禄丰", "元谋"])
     if any(token in q for token in ["采食", "部位", "枝叶", "小熊猫"]):
         terms.extend(["采食部位", "竹子上部的枝叶", "较低部位的竹叶", "小熊猫"])
+    if any(token in q for token in ["吃什么", "食物", "主食", "进食", "吃肉", "竹子"]):
+        terms.extend(["食物", "主食", "进食", "食用", "竹子", "采食", "吃什么"])
     if any(token in q for token in ["进化", "适应变化", "适应"]):
         terms.extend(["适应变化为", "伪拇指", "头骨和下颌肌肉强化", "消化系统调整"])
     if any(token in q for token in ["美香", "添添", "捏造", "不实信息", "虐待谣言"]):
@@ -444,7 +484,7 @@ def _build_intent_terms(question: str) -> List[str]:
     # 个体档案：出生/生日/父母等
     if any(token in q for token in ["出生", "生日", "诞", "出世", "哪天出生", "什么时候出生"]):
         terms.extend(["出生", "出生于", "出生体重", "生日", "生日时间", "诞下", "双胞胎"])
-    if any(token in q for token in ["父亲", "母亲", "爸爸", "妈妈", "父母", "谱系"]):
+    if any(token in q for token in ["父亲", "母亲", "爸爸", "妈妈", "父母", "谱系", "爹妈", "爸妈", "爹"]):
         terms.extend(["父亲", "母亲", "父母", "父亲为", "母亲为", "谱系号", "双胞胎"])
     if any(token in q for token in ["昵称", "外号", "乳名", "又名", "叫什么", "小名"]):
         terms.extend(["昵称", "昵称为", "外号", "外号为", "乳名", "乳名为", "又名", "认养名"])
@@ -488,8 +528,8 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["官方中文名称", "中文名为", "大熊猫"])
     if any(token in q for token in ["短视频", "直播", "传播方式", "捏造散布"]):
         terms.extend(["传播方式为", "短视频", "直播", "捏造谣言为"])
-    if any(token in q for token in ["睡眠", "睡多久", "睡眠时间"]):
-        terms.extend(["睡眠时长", "约10-12小时", "睡眠"])
+    if any(token in q for token in ["睡眠", "睡多久", "睡眠时间", "睡几小时", "爱睡觉"]):
+        terms.extend(["睡眠时长", "约10-12小时", "睡眠", "两次进食间睡眠时长为"])
     if any(token in q for token in ["双胞胎", "人工辅助育幼", "存活率"]):
         terms.extend(["人工辅助育幼", "提高双胞胎存活率", "目的为"])
     if any(token in q for token in ["营养均衡", "竹子品种", "轮换供应"]):
@@ -542,8 +582,8 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["缺乏可见信号交流原因为", "薄雾", "看不见彼此", "竹林"])
     if any(token in q for token in ["科学发现", "戴维", "1869", "发现者"]):
         terms.extend(["科学发现时间为", "科学发现者为", "1869年3月", "阿尔芒·戴维神父"])
-    if any(token in q for token in ["冬眠", "冬眠习性"]):
-        terms.extend(["冬眠习性为", "不具有冬眠习性", "雪地中寻找食物"])
+    if any(token in q for token in ["冬眠", "冬眠习性", "睡大觉"]):
+        terms.extend(["冬眠习性为", "不具有冬眠习性", "雪地中寻找食物", "冬眠"])
     if any(token in q for token in ["爬树", "求婚期"]):
         terms.extend(["爬树原因为", "临近求婚期", "逃避危险", "弱者回避强者"])
     if any(token in q for token in ["双胞胎", "较弱", "忽视", "拒绝", "如何选择"]):
@@ -624,7 +664,7 @@ def _detect_intent(question: str) -> str:
         return "development"
     if any(token in q for token in ["行为", "习性", "活动"]):
         return "behavior"
-    if any(token in q for token in ["采食", "部位", "食物", "吃什么", "进食", "主食"]):
+    if any(token in q for token in ["采食", "部位", "食物", "吃什么", "进食", "主食", "吃肉", "竹子"]):
         return "food"
     if any(token in q for token in ["消化", "胃", "肠", "盲肠"]):
         return "digestion"
@@ -632,7 +672,9 @@ def _detect_intent(question: str) -> str:
         return "communication"
     if any(token in q for token in ["生长", "发育", "生长发育", "周期", "月龄", "幼仔", "亚成年", "成年", "性成熟"]):
         return "development"
-    if any(token in q for token in ["寿命", "最长寿", "活多久", "存活", "野外寿命", "平均寿命"]) or (
+    if any(token in q for token in ["体重", "多重", "有多重", "一般多重", "几斤", "体长", "肩高", "身高", "多高", "多长"]):
+        return "development"
+    if any(token in q for token in ["寿命", "最长寿", "活多久", "存活", "野外寿命", "平均寿命", "能活几年", "多老"]) or (
         "几岁" in q and "断奶" not in q
     ):
         return "lifespan"
@@ -827,6 +869,11 @@ def _build_intent_predicates(intent: str) -> List[str]:
             "阶段",
             "月龄",
             "体重",
+            "体长",
+            "肩高",
+            "体长范围",
+            "成年体长范围",
+            "肩高范围",
             "性成熟",
             "恒牙",
             "独立生活",
@@ -972,8 +1019,13 @@ def _build_topic_filters(question: str, intent: str) -> List[str]:
         if any(token in q for token in ["繁殖", "发情", "断奶", "激素"]):
             topics.append("个体档案")
 
-    if any(token in q for token in ["生长", "发育", "月龄", "体重", "幼仔", "成年", "性成熟"]):
+    if any(
+        token in q
+        for token in ["生长", "发育", "月龄", "体重", "多重", "几斤", "体长", "肩高", "幼仔", "成年", "性成熟"]
+    ):
         topics.extend(["生理构造", "行为习性", "个体档案"])
+    if any(token in q for token in ["睡眠", "冬眠"]):
+        topics.extend(["行为习性", "生理构造"])
     if any(token in q for token in ["交流", "气味标记", "叫声", "沟通"]):
         topics.append("行为习性")
     if any(token in q for token in ["天敌", "伴生", "捕食", "采食部位", "小熊猫"]):
@@ -1103,11 +1155,13 @@ def _fetch_knowledge(
     config = _load_neo4j_config(database_override=database)
     graph_database = _load_graph_database_class()
     driver = graph_database.driver(config.uri, auth=(config.username, config.password))
-    keywords = _extract_keywords(question)
-    intent = _detect_intent(question)
-    intent_terms = _build_intent_terms(question)
+    # 先规范化口语问法，再抽词/识别意图，避免「换个说法就召不回」
+    query_text = normalize_query(question) or question
+    keywords = _extract_keywords(query_text)
+    intent = _detect_intent(query_text)
+    intent_terms = _build_intent_terms(query_text)
     intent_predicates = _build_intent_predicates(intent)
-    topic_filters = _build_topic_filters(question, intent)
+    topic_filters = _build_topic_filters(query_text, intent)
     if not keywords:
         keywords.append("大熊猫")
     keywords = _prepare_query_keywords(keywords)
@@ -1670,7 +1724,7 @@ def _print_cli_result(
 def _generate_answer(question: str, rows: List[Dict[str, str]], strict_mode: bool, persona: str) -> str:
     llm = get_text_generation_model()  # 由 config/model.yaml 的 text_generation 配置决定（当前为 qwen-plus）
     context_text = _build_context_rows(rows)
-    intent = _detect_intent(question)
+    intent = _detect_intent(normalize_query(question) or question)
     intent_hint = {
         "disease": "优先总结疾病类别、典型病名与症状线索。",
         "predator": "优先回答天敌名单与其威胁对象（幼仔/病弱个体等）。",
@@ -1949,10 +2003,12 @@ def neo4j_qa(
             result["category_mode"] = category_filter or "全部"
         config = _load_neo4j_config(database_override=database)
         result["database"] = config.database
-        intent = _detect_intent(question=question)
+        normalized_question = normalize_query(question) or question
+        result["normalized_question"] = normalized_question
+        intent = _detect_intent(question=normalized_question)
         try:
             result["query_plan"] = _build_cypher_preview(
-                question=question,
+                question=normalized_question,
                 intent=intent,
                 top_k=max(1, top_k),
             )
