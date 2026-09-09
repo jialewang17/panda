@@ -1,0 +1,1074 @@
+{
+  "updated_at": "2026-09-08T19:50:33.675071",
+  "results_by_source": {
+    "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图5\\gap_01.md": {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图5\\gap_01.md",
+      "topic": "个体档案",
+      "category": "",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "1989年",
+          "1992年冬季",
+          "1997年",
+          "2000年",
+          "2020年6月下旬",
+          "2020年8月",
+          "2020年9月9日",
+          "1999年8月21日",
+          "2004年3月13日",
+          "2008年",
+          "2023年11月",
+          "2004年",
+          "2005年",
+          "2007年",
+          "2010年",
+          "2012年",
+          "2013年",
+          "2018年",
+          "2019年",
+          "2022年11月19日",
+          "约1983年",
+          "1995年",
+          "2003年",
+          "2009年",
+          "2011年12月4日",
+          "1983年"
+        ],
+        "person_entities": [
+          "石石",
+          "白云",
+          "灵灵",
+          "团团",
+          "美灵",
+          "婷婷",
+          "伟伟",
+          "华龙",
+          "华奥",
+          "阳虎",
+          "嘉嘉",
+          "华荣",
+          "壹壹",
+          "玖玖",
+          "盟盟",
+          "金嘟嘟",
+          "美生",
+          "苏琳",
+          "珍珍",
+          "云子",
+          "小礼物",
+          "浙江正辉照明工程有限公司",
+          "中国大熊猫保护研究中心"
+        ],
+        "place_entities": [
+          "四川省凉山州雷波县",
+          "四川宝兴",
+          "美国圣地亚哥",
+          "台北动物园",
+          "卧龙",
+          "雅安碧峰峡",
+          "都江堰",
+          "四川省凉山州雷波县野外",
+          "卧龙自然保护区",
+          "中国大熊猫保护研究中心核桃坪野化培训基地",
+          "合肥逍遥津公园",
+          "深圳野生动物园",
+          "中国保护大熊猫研究中心雅安碧峰峡基地",
+          "美国圣地亚哥动物园",
+          "中国大熊猫保护研究中心卧龙基地",
+          "雅安碧峰峡基地",
+          "中国大熊猫保护研究中心都江堰基地"
+        ],
+        "panda_aliases": [
+          "雷雷",
+          "华美",
+          "Hua Mei",
+          "永巴",
+          "圆圆",
+          "福妮",
+          "福娃",
+          "园欣",
+          "沪宝",
+          "竹韵仔",
+          "龙欣仔",
+          "石石",
+          "白云",
+          "灵灵",
+          "团团",
+          "美灵",
+          "婷婷",
+          "伟伟",
+          "华龙",
+          "华奥",
+          "阳虎",
+          "嘉嘉",
+          "华荣",
+          "壹壹",
+          "玖玖",
+          "盟盟",
+          "金嘟嘟",
+          "美生",
+          "苏琳",
+          "珍珍",
+          "云子",
+          "小礼物"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "四川省凉山州雷波县野外",
+          "卧龙自然保护区",
+          "中国大熊猫保护研究中心核桃坪野化培训基地",
+          "合肥逍遥津公园",
+          "深圳野生动物园",
+          "中国保护大熊猫研究中心雅安碧峰峡基地",
+          "美国圣地亚哥动物园",
+          "中国大熊猫保护研究中心卧龙基地",
+          "雅安碧峰峡基地",
+          "中国大熊猫保护研究中心都江堰基地"
+        ],
+        "biology_terms": [
+          "癫痫",
+          "呼吸循环衰竭",
+          "运动功能丧失",
+          "生殖障碍",
+          "前掌重伤",
+          "截肢手术",
+          "老年病"
+        ],
+        "behavior_terms": [
+          "单前掌搂抱",
+          "叼衔"
+        ],
+        "disease_terms": [
+          "癫痫",
+          "呼吸循环衰竭",
+          "运动功能丧失",
+          "生殖障碍",
+          "前掌重伤",
+          "截肢手术",
+          "老年病"
+        ],
+        "treatment_terms": [
+          "激素治疗",
+          "截肢手术",
+          "老年病治疗"
+        ],
+        "lifecycle_stages": [
+          "幼仔",
+          "老年",
+          "母亲",
+          "海外友谊大使"
+        ],
+        "reproduction_terms": [
+          "繁育5胎6仔",
+          "存活5只",
+          "繁育6胎12仔",
+          "存活8只",
+          "一胎三胞胎",
+          "双胞胎",
+          "龙凤胎"
+        ],
+        "communication_terms": [
+          "网友曝光",
+          "虐待争议",
+          "园方回应"
+        ],
+        "threat_factors": [
+          "癫痫",
+          "呼吸循环衰竭",
+          "运动功能丧失",
+          "前掌重伤",
+          "生殖障碍"
+        ],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "雷雷",
+            "predicate": "谱系号",
+            "object": "374",
+            "object_type": "Other",
+            "evidence": "大熊猫雷雷（1989年－2020年9月9日），雌性，谱系号374，约1989年出生于四川省凉山州雷波县野外。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫雷雷（1989年－2020年9月9日），雌性，谱系号374，约1989年出生于四川省凉山州雷波县野外。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "出生于",
+            "object": "四川省凉山州雷波县野外",
+            "object_type": "Habitat",
+            "evidence": "大熊猫雷雷（1989年－2020年9月9日），雌性，谱系号374，约1989年出生于四川省凉山州雷波县野外。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "出生时间",
+            "object": "1989年",
+            "object_type": "Other",
+            "evidence": "大熊猫雷雷（1989年－2020年9月9日），雌性，谱系号374，约1989年出生于四川省凉山州雷波县野外。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "迁至",
+            "object": "卧龙自然保护区",
+            "object_type": "Habitat",
+            "evidence": "1992年冬季因前掌重伤被救助至卧龙自然保护区"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "接受治疗",
+            "object": "激素治疗",
+            "object_type": "Treatment",
+            "evidence": "1997年起通过激素治疗克服生殖障碍"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "圆圆",
+            "object_type": "Person",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "福妮",
+            "object_type": "Person",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "福娃",
+            "object_type": "Person",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "园欣",
+            "object_type": "Person",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "沪宝",
+            "object_type": "Person",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "患有",
+            "object": "癫痫",
+            "object_type": "Disease",
+            "evidence": "2020年6月下旬首次出现癫痫症状，8月发作频率增加导致运动功能丧失，9月9日因癫痫持续发作引发呼吸循环衰竭，经中国大熊猫保护研究中心全力救治无效死亡。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "患有",
+            "object": "运动功能丧失",
+            "object_type": "Disease",
+            "evidence": "2020年6月下旬首次出现癫痫症状，8月发作频率增加导致运动功能丧失，9月9日因癫痫持续发作引发呼吸循环衰竭，经中国大熊猫保护研究中心全力救治无效死亡。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "患有",
+            "object": "呼吸循环衰竭",
+            "object_type": "Disease",
+            "evidence": "2020年6月下旬首次出现癫痫症状，8月发作频率增加导致运动功能丧失，9月9日因癫痫持续发作引发呼吸循环衰竭，经中国大熊猫保护研究中心全力救治无效死亡。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "逝世于",
+            "object": "2020年9月9日",
+            "object_type": "Other",
+            "evidence": "2020年6月下旬首次出现癫痫症状，8月发作频率增加导致运动功能丧失，9月9日因癫痫持续发作引发呼吸循环衰竭，经中国大熊猫保护研究中心全力救治无效死亡。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "谱系号",
+            "object": "487",
+            "object_type": "Other",
+            "evidence": "华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "出生于",
+            "object": "美国圣地亚哥动物园",
+            "object_type": "Habitat",
+            "evidence": "华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "出生时间",
+            "object": "1999年8月21日",
+            "object_type": "Other",
+            "evidence": "华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "又名",
+            "object": "Hua Mei",
+            "object_type": "Alias",
+            "evidence": "华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "父亲为",
+            "object": "石石",
+            "object_type": "Person",
+            "evidence": "父母是1996年赴美参加中美大熊猫合作研究项目的大熊猫石石和白云"
+          },
+          {
+            "subject": "华美",
+            "predicate": "母亲为",
+            "object": "白云",
+            "object_type": "Person",
+            "evidence": "父母是1996年赴美参加中美大熊猫合作研究项目的大熊猫石石和白云"
+          },
+          {
+            "subject": "华美",
+            "predicate": "返回",
+            "object": "中国大熊猫保护研究中心卧龙基地",
+            "object_type": "Habitat",
+            "evidence": "2004年3月13日回到中国大熊猫保护研究中心卧龙基地"
+          },
+          {
+            "subject": "华美",
+            "predicate": "迁至",
+            "object": "雅安碧峰峡基地",
+            "object_type": "Habitat",
+            "evidence": "2008年因汶川大地震影响转移至雅安碧峰峡基地"
+          },
+          {
+            "subject": "华美",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心都江堰基地",
+            "object_type": "Habitat",
+            "evidence": "2023年11月搬迁至中国大熊猫保护研究中心都江堰基地。"
+          },
+          {
+            "subject": "团团",
+            "predicate": "父亲为",
+            "object": "灵灵",
+            "object_type": "Person",
+            "evidence": "2004年与雄性大熊猫灵灵自然交配后，于同年9月1日产下双胞胎儿子团团和美灵。"
+          },
+          {
+            "subject": "美灵",
+            "predicate": "父亲为",
+            "object": "灵灵",
+            "object_type": "Person",
+            "evidence": "2004年与雄性大熊猫灵灵自然交配后，于同年9月1日产下双胞胎儿子团团和美灵。"
+          },
+          {
+            "subject": "团团",
+            "predicate": "母亲为",
+            "object": "华美",
+            "object_type": "Person",
+            "evidence": "2004年与雄性大熊猫灵灵自然交配后，于同年9月1日产下双胞胎儿子团团和美灵。"
+          },
+          {
+            "subject": "美灵",
+            "predicate": "母亲为",
+            "object": "华美",
+            "object_type": "Person",
+            "evidence": "2004年与雄性大熊猫灵灵自然交配后，于同年9月1日产下双胞胎儿子团团和美灵。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "团团",
+            "object_type": "Person",
+            "evidence": "2004年与雄性大熊猫灵灵自然交配后，于同年9月1日产下双胞胎儿子团团和美灵。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "美灵",
+            "object_type": "Person",
+            "evidence": "2004年与雄性大熊猫灵灵自然交配后，于同年9月1日产下双胞胎儿子团团和美灵。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "婷婷",
+            "object_type": "Person",
+            "evidence": "2005年诞下双胞胎婷婷和伟伟"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "伟伟",
+            "object_type": "Person",
+            "evidence": "2005年诞下双胞胎婷婷和伟伟"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "华龙",
+            "object_type": "Person",
+            "evidence": "2007年生育双胞胎华龙和华奥"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "华奥",
+            "object_type": "Person",
+            "evidence": "2007年生育双胞胎华龙和华奥"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "阳虎",
+            "object_type": "Person",
+            "evidence": "2010年生育儿子阳虎（2012年去世）"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "嘉嘉",
+            "object_type": "Person",
+            "evidence": "2012年诞下女儿嘉嘉"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "华荣",
+            "object_type": "Person",
+            "evidence": "2013年生育儿子华荣"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "壹壹",
+            "object_type": "Person",
+            "evidence": "2018年产下龙凤胎壹壹和玖玖"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "玖玖",
+            "object_type": "Person",
+            "evidence": "2018年产下龙凤胎壹壹和玖玖"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "盟盟",
+            "object_type": "Person",
+            "evidence": "2019年诞下双胞胎女儿盟盟和金嘟嘟。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "金嘟嘟",
+            "object_type": "Person",
+            "evidence": "2019年诞下双胞胎女儿盟盟和金嘟嘟。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "美生",
+            "object_type": "Person",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "苏琳",
+            "object_type": "Person",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "珍珍",
+            "object_type": "Person",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "云子",
+            "object_type": "Person",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "小礼物",
+            "object_type": "Person",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "团团",
+            "predicate": "逝世于",
+            "object": "台北动物园",
+            "object_type": "Habitat",
+            "evidence": "2022年11月19日，长子团团在台北动物园去世。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "谱系号",
+            "object": "397",
+            "object_type": "Other",
+            "evidence": "永巴（约1983年-2011年12月4日），雌性大熊猫，谱系号397，约1983年生于四川宝兴野外。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "永巴（约1983年-2011年12月4日），雌性大熊猫，谱系号397，约1983年生于四川宝兴野外。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "出生于",
+            "object": "四川宝兴野外",
+            "object_type": "Habitat",
+            "evidence": "永巴（约1983年-2011年12月4日），雌性大熊猫，谱系号397，约1983年生于四川宝兴野外。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "出生时间",
+            "object": "约1983年",
+            "object_type": "Other",
+            "evidence": "永巴（约1983年-2011年12月4日），雌性大熊猫，谱系号397，约1983年生于四川宝兴野外。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "被称作",
+            "object": "传奇母亲",
+            "object_type": "Other",
+            "evidence": "1995年至2000年间繁育6胎12仔、存活8只，其中包括一胎三胞胎，被誉为传奇母亲。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心核桃坪野化培训基地",
+            "object_type": "Habitat",
+            "evidence": "1995年迁入中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "赴",
+            "object": "合肥逍遥津公园",
+            "object_type": "Habitat",
+            "evidence": "2003年赴合肥逍遥津公园"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "迁至",
+            "object": "深圳野生动物园",
+            "object_type": "Habitat",
+            "evidence": "2004年转至深圳野生动物园。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "涉及事件",
+            "object": "虐待争议",
+            "object_type": "Other",
+            "evidence": "2009年网友曝光其消瘦体态、排便困难及合影收费等问题，引发虐待争议。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "返回",
+            "object": "中国保护大熊猫研究中心雅安碧峰峡基地",
+            "object_type": "Habitat",
+            "evidence": "同年4月回归中国保护大熊猫研究中心雅安碧峰峡基地。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "逝世于",
+            "object": "2011年12月4日",
+            "object_type": "Other",
+            "evidence": "2011年12月4日以28岁高龄离世。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "谱系号",
+            "object": "374",
+            "object_type": "Other",
+            "evidence": "大熊猫雷雷（1989年－2020年9月9日），雌性，谱系号374，约1989年出生于四川省凉山州雷波县野外。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫雷雷（1989年－2020年9月9日），雌性，谱系号374，约1989年出生于四川省凉山州雷波县野外。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "出生于",
+            "object": "四川省凉山州雷波县野外",
+            "object_type": "Habitat",
+            "evidence": "大熊猫雷雷（1989年－2020年9月9日），雌性，谱系号374，约1989年出生于四川省凉山州雷波县野外。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "出生时间",
+            "object": "1989年",
+            "object_type": "Other",
+            "evidence": "大熊猫雷雷（1989年－2020年9月9日），雌性，谱系号374，约1989年出生于四川省凉山州雷波县野外。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "迁至",
+            "object": "卧龙自然保护区",
+            "object_type": "Habitat",
+            "evidence": "1992年冬季因前掌重伤被救助至卧龙自然保护区"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "接受治疗",
+            "object": "激素治疗",
+            "object_type": "Treatment",
+            "evidence": "1997年起通过激素治疗克服生殖障碍"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "圆圆",
+            "object_type": "Species",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "福妮",
+            "object_type": "Species",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "福娃",
+            "object_type": "Species",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "园欣",
+            "object_type": "Species",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "育有",
+            "object": "沪宝",
+            "object_type": "Species",
+            "evidence": "2000年当上母亲，共繁育5胎6仔，存活5只，后代包括赠台大熊猫圆圆及旅居澳大利亚的福妮（龙欣仔）、旅居马来西亚的福娃（龙欣仔）、旅居韩国的园欣（龙欣仔）、旅居新加坡的沪宝（竹韵仔）等海外友谊大使。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "逝世于",
+            "object": "2020年9月9日",
+            "object_type": "Other",
+            "evidence": "2020年6月下旬首次出现癫痫症状，8月发作频率增加导致运动功能丧失，9月9日因癫痫持续发作引发呼吸循环衰竭，经中国大熊猫保护研究中心全力救治无效死亡。"
+          },
+          {
+            "subject": "雷雷",
+            "predicate": "死因",
+            "object": "癫痫持续发作引发呼吸循环衰竭",
+            "object_type": "Disease",
+            "evidence": "2020年6月下旬首次出现癫痫症状，8月发作频率增加导致运动功能丧失，9月9日因癫痫持续发作引发呼吸循环衰竭，经中国大熊猫保护研究中心全力救治无效死亡。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "谱系号",
+            "object": "487",
+            "object_type": "Other",
+            "evidence": "大熊猫华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "出生于",
+            "object": "美国圣地亚哥动物园",
+            "object_type": "Habitat",
+            "evidence": "大熊猫华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "出生时间",
+            "object": "1999年8月21日",
+            "object_type": "Other",
+            "evidence": "大熊猫华美（Hua Mei），雌性大熊猫，谱系号487，1999年8月21日出生于美国圣地亚哥动物园。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "父亲为",
+            "object": "石石",
+            "object_type": "Species",
+            "evidence": "父母是1996年赴美参加中美大熊猫合作研究项目的大熊猫石石和白云"
+          },
+          {
+            "subject": "华美",
+            "predicate": "母亲为",
+            "object": "白云",
+            "object_type": "Species",
+            "evidence": "父母是1996年赴美参加中美大熊猫合作研究项目的大熊猫石石和白云"
+          },
+          {
+            "subject": "华美",
+            "predicate": "返回",
+            "object": "中国大熊猫保护研究中心卧龙基地",
+            "object_type": "Habitat",
+            "evidence": "2004年3月13日回到中国大熊猫保护研究中心卧龙基地"
+          },
+          {
+            "subject": "华美",
+            "predicate": "迁至",
+            "object": "雅安碧峰峡基地",
+            "object_type": "Habitat",
+            "evidence": "2008年因汶川大地震影响转移至雅安碧峰峡基地"
+          },
+          {
+            "subject": "华美",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心都江堰基地",
+            "object_type": "Habitat",
+            "evidence": "2023年11月搬迁至中国大熊猫保护研究中心都江堰基地。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "团团",
+            "object_type": "Species",
+            "evidence": "2004年与雄性大熊猫灵灵自然交配后，于同年9月1日产下双胞胎儿子团团和美灵。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "美灵",
+            "object_type": "Species",
+            "evidence": "2004年与雄性大熊猫灵灵自然交配后，于同年9月1日产下双胞胎儿子团团和美灵。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "婷婷",
+            "object_type": "Species",
+            "evidence": "2005年诞下双胞胎婷婷和伟伟"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "伟伟",
+            "object_type": "Species",
+            "evidence": "2005年诞下双胞胎婷婷和伟伟"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "华龙",
+            "object_type": "Species",
+            "evidence": "2007年生育双胞胎华龙和华奥"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "华奥",
+            "object_type": "Species",
+            "evidence": "2007年生育双胞胎华龙和华奥"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "阳虎",
+            "object_type": "Species",
+            "evidence": "2010年生育儿子阳虎（2012年去世）"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "嘉嘉",
+            "object_type": "Species",
+            "evidence": "2012年诞下女儿嘉嘉"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "华荣",
+            "object_type": "Species",
+            "evidence": "2013年生育儿子华荣"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "壹壹",
+            "object_type": "Species",
+            "evidence": "2018年产下龙凤胎壹壹和玖玖"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "玖玖",
+            "object_type": "Species",
+            "evidence": "2018年产下龙凤胎壹壹和玖玖"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "盟盟",
+            "object_type": "Species",
+            "evidence": "2019年诞下双胞胎女儿盟盟和金嘟嘟。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "育有",
+            "object": "金嘟嘟",
+            "object_type": "Species",
+            "evidence": "2019年诞下双胞胎女儿盟盟和金嘟嘟。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "美生",
+            "object_type": "Species",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "苏琳",
+            "object_type": "Species",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "珍珍",
+            "object_type": "Species",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "云子",
+            "object_type": "Species",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "华美",
+            "predicate": "同胞为",
+            "object": "小礼物",
+            "object_type": "Species",
+            "evidence": "其弟妹包括美生、苏琳、珍珍、云子和小礼物。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "谱系号",
+            "object": "397",
+            "object_type": "Other",
+            "evidence": "大熊猫永巴（约1983年-2011年12月4日），雌性大熊猫，谱系号397，约1983年生于四川宝兴野外。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫永巴（约1983年-2011年12月4日），雌性大熊猫，谱系号397，约1983年生于四川宝兴野外。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "出生于",
+            "object": "四川宝兴野外",
+            "object_type": "Habitat",
+            "evidence": "大熊猫永巴（约1983年-2011年12月4日），雌性大熊猫，谱系号397，约1983年生于四川宝兴野外。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "出生时间",
+            "object": "1983年",
+            "object_type": "Other",
+            "evidence": "约1983年生于四川宝兴野外。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "外号为",
+            "object": "传奇母亲",
+            "object_type": "Alias",
+            "evidence": "1995年至2000年间繁育6胎12仔、存活8只，其中包括一胎三胞胎，被誉为传奇母亲。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心核桃坪野化培训基地",
+            "object_type": "Habitat",
+            "evidence": "1995年迁入中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "赴",
+            "object": "合肥逍遥津公园",
+            "object_type": "Habitat",
+            "evidence": "2003年赴合肥逍遥津公园"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "迁至",
+            "object": "深圳野生动物园",
+            "object_type": "Habitat",
+            "evidence": "2004年转至深圳野生动物园。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "接受治疗",
+            "object": "老年病治疗",
+            "object_type": "Treatment",
+            "evidence": "2009年网友曝光其消瘦体态、排便困难及合影收费等问题，引发虐待争议。园方回应称已提供老年病治疗，否认虐待指控。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "返回",
+            "object": "中国保护大熊猫研究中心雅安碧峰峡基地",
+            "object_type": "Habitat",
+            "evidence": "同年4月回归中国保护大熊猫研究中心雅安碧峰峡基地。"
+          },
+          {
+            "subject": "永巴",
+            "predicate": "逝世于",
+            "object": "2011年12月4日",
+            "object_type": "Other",
+            "evidence": "2011年12月4日以28岁高龄离世。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "1989年",
+          "1992年冬季",
+          "1997年",
+          "2000年",
+          "2020年6月下旬",
+          "2020年8月",
+          "2020年9月9日",
+          "1999年8月21日",
+          "2004年3月13日",
+          "2008年",
+          "2023年11月",
+          "2004年",
+          "2005年",
+          "2007年",
+          "2010年",
+          "2012年",
+          "2013年",
+          "2018年",
+          "2019年",
+          "2022年11月19日",
+          "约1983年",
+          "1995年",
+          "2003年",
+          "2009年",
+          "2011年12月4日",
+          "1983年"
+        ],
+        "人物": [
+          "石石",
+          "白云",
+          "灵灵",
+          "团团",
+          "美灵",
+          "婷婷",
+          "伟伟",
+          "华龙",
+          "华奥",
+          "阳虎",
+          "嘉嘉",
+          "华荣",
+          "壹壹",
+          "玖玖",
+          "盟盟",
+          "金嘟嘟",
+          "美生",
+          "苏琳",
+          "珍珍",
+          "云子",
+          "小礼物",
+          "浙江正辉照明工程有限公司",
+          "中国大熊猫保护研究中心"
+        ],
+        "地点": [
+          "四川省凉山州雷波县",
+          "四川宝兴",
+          "美国圣地亚哥",
+          "台北动物园",
+          "卧龙",
+          "雅安碧峰峡",
+          "都江堰",
+          "四川省凉山州雷波县野外",
+          "卧龙自然保护区",
+          "中国大熊猫保护研究中心核桃坪野化培训基地",
+          "合肥逍遥津公园",
+          "深圳野生动物园",
+          "中国保护大熊猫研究中心雅安碧峰峡基地",
+          "美国圣地亚哥动物园",
+          "中国大熊猫保护研究中心卧龙基地",
+          "雅安碧峰峡基地",
+          "中国大熊猫保护研究中心都江堰基地"
+        ],
+        "熊猫曾用名": [
+          "雷雷",
+          "华美",
+          "Hua Mei",
+          "永巴",
+          "圆圆",
+          "福妮",
+          "福娃",
+          "园欣",
+          "沪宝",
+          "竹韵仔",
+          "龙欣仔",
+          "石石",
+          "白云",
+          "灵灵",
+          "团团",
+          "美灵",
+          "婷婷",
+          "伟伟",
+          "华龙",
+          "华奥",
+          "阳虎",
+          "嘉嘉",
+          "华荣",
+          "壹壹",
+          "玖玖",
+          "盟盟",
+          "金嘟嘟",
+          "美生",
+          "苏琳",
+          "珍珍",
+          "云子",
+          "小礼物"
+        ]
+      }
+    }
+  },
+  "errors_by_source": {}
+}

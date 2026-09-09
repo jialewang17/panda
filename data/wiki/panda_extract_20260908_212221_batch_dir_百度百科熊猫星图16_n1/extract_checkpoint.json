@@ -1,0 +1,488 @@
+{
+  "updated_at": "2026-09-08T21:23:47.391189",
+  "results_by_source": {
+    "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图16\\gap_01.md": {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图16\\gap_01.md",
+      "topic": "个体档案",
+      "category": "",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "2015年8月15日",
+          "2021年9月12日",
+          "2022年3月3日",
+          "2024年10月15日",
+          "2025年8月28日",
+          "2026年4月3日11时57分"
+        ],
+        "person_entities": [],
+        "place_entities": [
+          "中国大熊猫保护研究中心雅安碧峰峡基地",
+          "卧龙神树坪基地",
+          "美国华盛顿国家动物园"
+        ],
+        "panda_aliases": [
+          "美年达",
+          "美心",
+          "刀疤达",
+          "炸毛"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "中国大熊猫保护研究中心雅安碧峰峡基地",
+          "卧龙神树坪基地",
+          "美国华盛顿国家动物园"
+        ],
+        "biology_terms": [
+          "雌性",
+          "雄性",
+          "急性呼吸窘迫综合征",
+          "严重低氧血症",
+          "心衰"
+        ],
+        "behavior_terms": [
+          "性格文静"
+        ],
+        "disease_terms": [
+          "急性呼吸窘迫综合征",
+          "严重低氧血症",
+          "心衰"
+        ],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "家美",
+            "predicate": "谱系号",
+            "object": "973",
+            "object_type": "Other",
+            "evidence": "大熊猫家美（谱系号973）"
+          },
+          {
+            "subject": "家美",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "雌性大熊猫"
+          },
+          {
+            "subject": "家美",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡基地",
+            "object_type": "Habitat",
+            "evidence": "2015年8月15日出生于中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "家美",
+            "predicate": "出生时间",
+            "object": "2015年8月15日",
+            "object_type": "Biology",
+            "evidence": "2015年8月15日出生于中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "家美",
+            "predicate": "母亲为",
+            "object": "锦心",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫锦心"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "家和",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "震生",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "倩宝",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "念念",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "知路",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "荣荣",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "育有",
+            "object": "青仔",
+            "object_type": "Person",
+            "evidence": "2021年9月12日，家美与种公兽青青诞下龙凤胎青仔（美年达）和青宝（美心）"
+          },
+          {
+            "subject": "家美",
+            "predicate": "育有",
+            "object": "青宝",
+            "object_type": "Person",
+            "evidence": "2021年9月12日，家美与种公兽青青诞下龙凤胎青仔（美年达）和青宝（美心）"
+          },
+          {
+            "subject": "青仔",
+            "predicate": "又名",
+            "object": "美年达",
+            "object_type": "Alias",
+            "evidence": "青仔（美年达）"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "又名",
+            "object": "美心",
+            "object_type": "Alias",
+            "evidence": "青宝（美心）"
+          },
+          {
+            "subject": "青仔",
+            "predicate": "外号为",
+            "object": "刀疤达",
+            "object_type": "Alias",
+            "evidence": "青仔因母亲戳破鼻子短暂留过疤痕得名“刀疤达”"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "特征为",
+            "object": "炸毛",
+            "object_type": "Behavior",
+            "evidence": "青宝遗传妈妈的炸毛毛发，比哥哥脸大一圈。"
+          },
+          {
+            "subject": "青仔",
+            "predicate": "性格为",
+            "object": "文静",
+            "object_type": "Behavior",
+            "evidence": "这对龙凤胎性格文静。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "性格为",
+            "object": "文静",
+            "object_type": "Behavior",
+            "evidence": "这对龙凤胎性格文静。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "公开亮相于",
+            "object": "第九个“世界野生动植物日”代言大熊猫",
+            "object_type": "Other",
+            "evidence": "2022年3月3日，青宝与冰宝被选为第九个“世界野生动植物日”代言大熊猫"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "旅居于",
+            "object": "美国华盛顿国家动物园",
+            "object_type": "Habitat",
+            "evidence": "2024年10月15日，青宝与大熊猫宝力共同旅居美国华盛顿国家动物园"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "同胞为",
+            "object": "宝力",
+            "object_type": "Person",
+            "evidence": "2024年10月15日，青宝与大熊猫宝力共同旅居美国华盛顿国家动物园"
+          },
+          {
+            "subject": "家美",
+            "predicate": "出生于",
+            "object": "卧龙神树坪基地",
+            "object_type": "Habitat",
+            "evidence": "2025年8月28日，家美在卧龙神树坪基地诞下两个幼崽"
+          },
+          {
+            "subject": "家美",
+            "predicate": "出生时间",
+            "object": "2025年8月28日",
+            "object_type": "Biology",
+            "evidence": "2025年8月28日，家美在卧龙神树坪基地诞下两个幼崽"
+          },
+          {
+            "subject": "家美的大崽",
+            "predicate": "死亡时间",
+            "object": "2026年4月3日11时57分",
+            "object_type": "Biology",
+            "evidence": "大崽于2026年4月3日11时57分因急性呼吸窘迫综合征、严重低氧血症继发心衰，抢救无效死亡。"
+          },
+          {
+            "subject": "家美的大崽",
+            "predicate": "患有",
+            "object": "急性呼吸窘迫综合征",
+            "object_type": "Disease",
+            "evidence": "大崽于2026年4月3日11时57分因急性呼吸窘迫综合征、严重低氧血症继发心衰，抢救无效死亡。"
+          },
+          {
+            "subject": "家美的大崽",
+            "predicate": "患有",
+            "object": "严重低氧血症继发心衰",
+            "object_type": "Disease",
+            "evidence": "大崽于2026年4月3日11时57分因急性呼吸窘迫综合征、严重低氧血症继发心衰，抢救无效死亡。"
+          },
+          {
+            "subject": "家美",
+            "predicate": "谱系号",
+            "object": "973",
+            "object_type": "Other",
+            "evidence": "大熊猫家美（谱系号973）"
+          },
+          {
+            "subject": "家美",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "雌性大熊猫"
+          },
+          {
+            "subject": "家美",
+            "predicate": "出生地",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡基地",
+            "object_type": "Habitat",
+            "evidence": "2015年8月15日出生于中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "家美",
+            "predicate": "出生时间",
+            "object": "2015年8月15日",
+            "object_type": "Other",
+            "evidence": "2015年8月15日出生于中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "家美",
+            "predicate": "母亲为",
+            "object": "锦心",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫锦心"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "家和",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "震生",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "倩宝",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "念念",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "知路",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "同胞为",
+            "object": "荣荣",
+            "object_type": "Person",
+            "evidence": "与家和、震生、倩宝、念念、知路（善仔）、荣荣（锦小七）等为同母兄弟姐妹"
+          },
+          {
+            "subject": "家美",
+            "predicate": "育有",
+            "object": "青仔",
+            "object_type": "Person",
+            "evidence": "2021年9月12日，家美与种公兽青青诞下龙凤胎青仔（美年达）和青宝（美心）"
+          },
+          {
+            "subject": "家美",
+            "predicate": "育有",
+            "object": "青宝",
+            "object_type": "Person",
+            "evidence": "2021年9月12日，家美与种公兽青青诞下龙凤胎青仔（美年达）和青宝（美心）"
+          },
+          {
+            "subject": "青仔",
+            "predicate": "昵称为",
+            "object": "美年达",
+            "object_type": "Alias",
+            "evidence": "青仔（美年达）"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "昵称为",
+            "object": "美心",
+            "object_type": "Alias",
+            "evidence": "青宝（美心）"
+          },
+          {
+            "subject": "青仔",
+            "predicate": "外号为",
+            "object": "刀疤达",
+            "object_type": "Alias",
+            "evidence": "青仔因母亲戳破鼻子短暂留过疤痕得名“刀疤达”"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "外号为",
+            "object": "炸毛",
+            "object_type": "Alias",
+            "evidence": "青宝遗传妈妈的炸毛毛发"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "旅居于",
+            "object": "美国华盛顿国家动物园",
+            "object_type": "Habitat",
+            "evidence": "2024年10月15日，青宝与大熊猫宝力共同旅居美国华盛顿国家动物园"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "同胞为",
+            "object": "宝力",
+            "object_type": "Person",
+            "evidence": "2024年10月15日，青宝与大熊猫宝力共同旅居美国华盛顿国家动物园"
+          },
+          {
+            "subject": "家美",
+            "predicate": "出生地",
+            "object": "卧龙神树坪基地",
+            "object_type": "Habitat",
+            "evidence": "2025年8月28日，家美在卧龙神树坪基地诞下两个幼崽，其中大崽雄性、二崽雌性。"
+          },
+          {
+            "subject": "家美",
+            "predicate": "出生时间",
+            "object": "2025年8月28日",
+            "object_type": "Other",
+            "evidence": "2025年8月28日，家美在卧龙神树坪基地诞下两个幼崽，其中大崽雄性、二崽雌性。"
+          },
+          {
+            "subject": "家美的大崽",
+            "predicate": "死亡时间",
+            "object": "2026年4月3日11时57分",
+            "object_type": "Other",
+            "evidence": "大崽于2026年4月3日11时57分因急性呼吸窘迫综合征、严重低氧血症继发心衰，抢救无效死亡。"
+          },
+          {
+            "subject": "家美的大崽",
+            "predicate": "患有",
+            "object": "急性呼吸窘迫综合征",
+            "object_type": "Disease",
+            "evidence": "大崽于2026年4月3日11时57分因急性呼吸窘迫综合征、严重低氧血症继发心衰，抢救无效死亡。"
+          },
+          {
+            "subject": "家美的大崽",
+            "predicate": "患有",
+            "object": "严重低氧血症",
+            "object_type": "Disease",
+            "evidence": "大崽于2026年4月3日11时57分因急性呼吸窘迫综合征、严重低氧血症继发心衰，抢救无效死亡。"
+          },
+          {
+            "subject": "家美的大崽",
+            "predicate": "患有",
+            "object": "心衰",
+            "object_type": "Disease",
+            "evidence": "大崽于2026年4月3日11时57分因急性呼吸窘迫综合征、严重低氧血症继发心衰，抢救无效死亡。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "公开亮相于",
+            "object": "第九个“世界野生动植物日”",
+            "object_type": "Other",
+            "evidence": "2022年3月3日，青宝与冰宝被选为第九个“世界野生动植物日”代言大熊猫"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "同胞为",
+            "object": "冰宝",
+            "object_type": "Person",
+            "evidence": "2022年3月3日，青宝与冰宝被选为第九个“世界野生动植物日”代言大熊猫"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "父亲为",
+            "object": "青青",
+            "object_type": "Person",
+            "evidence": "其名源自父亲“青青”及“绿水青山”之意"
+          },
+          {
+            "subject": "青仔",
+            "predicate": "父亲为",
+            "object": "青青",
+            "object_type": "Person",
+            "evidence": "其名源自父亲“青青”及“绿水青山”之意"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "同胞为",
+            "object": "青仔",
+            "object_type": "Person",
+            "evidence": "青仔（美年达）和青宝（美心）"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "2015年8月15日",
+          "2021年9月12日",
+          "2022年3月3日",
+          "2024年10月15日",
+          "2025年8月28日",
+          "2026年4月3日11时57分"
+        ],
+        "人物": [],
+        "地点": [
+          "中国大熊猫保护研究中心雅安碧峰峡基地",
+          "卧龙神树坪基地",
+          "美国华盛顿国家动物园"
+        ],
+        "熊猫曾用名": [
+          "美年达",
+          "美心",
+          "刀疤达",
+          "炸毛"
+        ]
+      }
+    }
+  },
+  "errors_by_source": {}
+}

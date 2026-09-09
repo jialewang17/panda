@@ -1,0 +1,372 @@
+{
+  "updated_at": "2026-09-08T23:49:24.264432",
+  "results_by_source": {
+    "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图17\\gap_01.md": {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图17\\gap_01.md",
+      "topic": "个体档案",
+      "category": "",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [
+          "明-被认养于-美国银行家佛洛依德·丹吉尔·史密斯",
+          "明-被认养于-伦敦动物协会",
+          "明-父亲为-未知",
+          "明-母亲为-未知"
+        ],
+        "place_entities": [
+          "明-出生于-中国四川省",
+          "明-迁至-英国",
+          "明-迁至-伦敦动物园",
+          "明-旅居于-惠普斯奈德动物园",
+          "明-逝世于-伦敦动物园",
+          "明-旅居于-伦敦动物园",
+          "明-赴-英国",
+          "明-返回-无记录",
+          "明-放归于-无记录",
+          "明-入驻-伦敦动物园",
+          "明-入驻-惠普斯奈德动物园"
+        ],
+        "panda_aliases": [
+          "明-昵称为-明",
+          "明-曾用名-贝贝",
+          "明-又名-明",
+          "明-乳名为-贝贝"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "现居地-伦敦动物园",
+          "迁至-伦敦动物园",
+          "旅居于-惠普斯奈德动物园",
+          "现居地-惠普斯奈德动物园"
+        ],
+        "biology_terms": [
+          "谱系号-9",
+          "性别为-雌性",
+          "出生于-中国四川省",
+          "出生时间-约1937年",
+          "逝世于-伦敦动物园",
+          "死亡时间-1944年12月26日",
+          "去世年份-1944"
+        ],
+        "behavior_terms": [
+          "公开亮相于-卡通",
+          "公开亮相于-报刊",
+          "公开亮相于-电视节目",
+          "参与活动-二战期间以形象缓解英国民众压力",
+          "参与活动-受玛丽女王等王室成员接见",
+          "参与活动-空袭期间转移至惠普斯奈德动物园避难",
+          "公开亮相于-卡通、报刊及电视节目",
+          "公开亮相于-伦敦动物园",
+          "公开亮相于-惠普斯奈德动物园"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [
+          "昵称为-明",
+          "曾用名-贝贝"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "明-属于-大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "明",
+            "predicate": "谱系号",
+            "object": "9",
+            "object_type": "Other",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9，出生于中国四川省。"
+          },
+          {
+            "subject": "明",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9，出生于中国四川省。"
+          },
+          {
+            "subject": "明",
+            "predicate": "出生于",
+            "object": "中国四川省",
+            "object_type": "Place",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9，出生于中国四川省。"
+          },
+          {
+            "subject": "明",
+            "predicate": "出生时间",
+            "object": "约1937年",
+            "object_type": "Biology",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9，出生于中国四川省。"
+          },
+          {
+            "subject": "明",
+            "predicate": "死亡时间",
+            "object": "1944年12月26日",
+            "object_type": "Biology",
+            "evidence": "关于其死亡存在两种记载：伦敦动物园公告称其逝于1944年圣诞前夕，亦有报道称其于12月26日因不明病因死亡。"
+          },
+          {
+            "subject": "明",
+            "predicate": "去世年份",
+            "object": "1944",
+            "object_type": "Biology",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9，出生于中国四川省。"
+          },
+          {
+            "subject": "明",
+            "predicate": "被认养于",
+            "object": "美国银行家佛洛依德·丹吉尔·史密斯",
+            "object_type": "Person",
+            "evidence": "1938年被美国银行家佛洛依德·丹吉尔·史密斯收购后，与其他大熊猫经陆路辗转至中国香港，后由海路运抵英国，成为伦敦动物园的明星动物。"
+          },
+          {
+            "subject": "明",
+            "predicate": "被认养于",
+            "object": "伦敦动物协会",
+            "object_type": "Person",
+            "evidence": "幼崽“贝贝”被伦敦动物协会收养并更名为“明”。"
+          },
+          {
+            "subject": "明",
+            "predicate": "曾用名",
+            "object": "贝贝",
+            "object_type": "Alias",
+            "evidence": "幼崽“贝贝”被伦敦动物协会收养并更名为“明”。"
+          },
+          {
+            "subject": "明",
+            "predicate": "昵称为",
+            "object": "明",
+            "object_type": "Alias",
+            "evidence": "幼崽“贝贝”被伦敦动物协会收养并更名为“明”。"
+          },
+          {
+            "subject": "明",
+            "predicate": "迁至",
+            "object": "英国",
+            "object_type": "Place",
+            "evidence": "1938年被美国银行家佛洛依德·丹吉尔·史密斯收购后，与其他大熊猫经陆路辗转至中国香港，后由海路运抵英国，成为伦敦动物园的明星动物。"
+          },
+          {
+            "subject": "明",
+            "predicate": "迁至",
+            "object": "伦敦动物园",
+            "object_type": "Place",
+            "evidence": "1938年被美国银行家佛洛依德·丹吉尔·史密斯收购后，与其他大熊猫经陆路辗转至中国香港，后由海路运抵英国，成为伦敦动物园的明星动物。"
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "卡通",
+            "object_type": "Behavior",
+            "evidence": "1939年起频繁亮相卡通、报刊及电视节目"
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "报刊",
+            "object_type": "Behavior",
+            "evidence": "1939年起频繁亮相卡通、报刊及电视节目"
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "电视节目",
+            "object_type": "Behavior",
+            "evidence": "1939年起频繁亮相卡通、报刊及电视节目"
+          },
+          {
+            "subject": "明",
+            "predicate": "参与活动",
+            "object": "二战期间以形象缓解英国民众压力",
+            "object_type": "Behavior",
+            "evidence": "二战期间以其形象缓解英国民众压力，曾受玛丽女王等王室成员接见，并在空袭期间转移至惠普斯奈德动物园避难。"
+          },
+          {
+            "subject": "明",
+            "predicate": "参与活动",
+            "object": "受玛丽女王等王室成员接见",
+            "object_type": "Behavior",
+            "evidence": "二战期间以其形象缓解英国民众压力，曾受玛丽女王等王室成员接见，并在空袭期间转移至惠普斯奈德动物园避难。"
+          },
+          {
+            "subject": "明",
+            "predicate": "参与活动",
+            "object": "空袭期间转移至惠普斯奈德动物园避难",
+            "object_type": "Behavior",
+            "evidence": "二战期间以其形象缓解英国民众压力，曾受玛丽女王等王室成员接见，并在空袭期间转移至惠普斯奈德动物园避难。"
+          },
+          {
+            "subject": "明",
+            "predicate": "旅居于",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Place",
+            "evidence": "二战期间以其形象缓解英国民众压力，曾受玛丽女王等王室成员接见，并在空袭期间转移至惠普斯奈德动物园避难。"
+          },
+          {
+            "subject": "明",
+            "predicate": "逝世于",
+            "object": "伦敦动物园",
+            "object_type": "Place",
+            "evidence": "关于其死亡存在两种记载：伦敦动物园公告称其逝于1944年圣诞前夕，亦有报道称其于12月26日因不明病因死亡。"
+          },
+          {
+            "subject": "明",
+            "predicate": "谱系号",
+            "object": "9",
+            "object_type": "Other",
+            "evidence": "谱系号9"
+          },
+          {
+            "subject": "明",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "雌性大熊猫"
+          },
+          {
+            "subject": "明",
+            "predicate": "出生于",
+            "object": "中国四川省",
+            "object_type": "Place",
+            "evidence": "出生于中国四川省"
+          },
+          {
+            "subject": "明",
+            "predicate": "出生时间",
+            "object": "约1937年",
+            "object_type": "Biology",
+            "evidence": "约1937年"
+          },
+          {
+            "subject": "明",
+            "predicate": "死亡时间",
+            "object": "1944年12月26日",
+            "object_type": "Biology",
+            "evidence": "1944年12月26日因不明病因死亡"
+          },
+          {
+            "subject": "明",
+            "predicate": "现居地",
+            "object": "伦敦动物园",
+            "object_type": "Habitat",
+            "evidence": "成为伦敦动物园的明星动物"
+          },
+          {
+            "subject": "明",
+            "predicate": "现居地",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Habitat",
+            "evidence": "空袭期间转移至惠普斯奈德动物园避难"
+          },
+          {
+            "subject": "明",
+            "predicate": "乳名为",
+            "object": "贝贝",
+            "object_type": "Alias",
+            "evidence": "幼崽“贝贝”被伦敦动物协会收养并更名为“明”"
+          },
+          {
+            "subject": "明",
+            "predicate": "昵称为",
+            "object": "明",
+            "object_type": "Alias",
+            "evidence": "幼崽“贝贝”被伦敦动物协会收养并更名为“明”"
+          },
+          {
+            "subject": "明",
+            "predicate": "又名",
+            "object": "明",
+            "object_type": "Alias",
+            "evidence": "幼崽“贝贝”被伦敦动物协会收养并更名为“明”"
+          },
+          {
+            "subject": "明",
+            "predicate": "赴",
+            "object": "英国",
+            "object_type": "Place",
+            "evidence": "经陆路辗转至中国香港，后由海路运抵英国"
+          },
+          {
+            "subject": "明",
+            "predicate": "迁至",
+            "object": "英国",
+            "object_type": "Place",
+            "evidence": "经陆路辗转至中国香港，后由海路运抵英国"
+          },
+          {
+            "subject": "明",
+            "predicate": "旅居于",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Place",
+            "evidence": "空袭期间转移至惠普斯奈德动物园避难"
+          },
+          {
+            "subject": "明",
+            "predicate": "入驻",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Place",
+            "evidence": "空袭期间转移至惠普斯奈德动物园避难"
+          },
+          {
+            "subject": "明",
+            "predicate": "旅居于",
+            "object": "伦敦动物园",
+            "object_type": "Place",
+            "evidence": "成为伦敦动物园的明星动物"
+          },
+          {
+            "subject": "明",
+            "predicate": "入驻",
+            "object": "伦敦动物园",
+            "object_type": "Place",
+            "evidence": "成为伦敦动物园的明星动物"
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "卡通、报刊及电视节目",
+            "object_type": "Behavior",
+            "evidence": "1939年起频繁亮相卡通、报刊及电视节目"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [
+          "明-被认养于-美国银行家佛洛依德·丹吉尔·史密斯",
+          "明-被认养于-伦敦动物协会",
+          "明-父亲为-未知",
+          "明-母亲为-未知"
+        ],
+        "地点": [
+          "明-出生于-中国四川省",
+          "明-迁至-英国",
+          "明-迁至-伦敦动物园",
+          "明-旅居于-惠普斯奈德动物园",
+          "明-逝世于-伦敦动物园",
+          "明-旅居于-伦敦动物园",
+          "明-赴-英国",
+          "明-返回-无记录",
+          "明-放归于-无记录",
+          "明-入驻-伦敦动物园",
+          "明-入驻-惠普斯奈德动物园"
+        ],
+        "熊猫曾用名": [
+          "明-昵称为-明",
+          "明-曾用名-贝贝",
+          "明-又名-明",
+          "明-乳名为-贝贝"
+        ]
+      }
+    }
+  },
+  "errors_by_source": {}
+}

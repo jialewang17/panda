@@ -1,0 +1,2519 @@
+{
+  "summary": {
+    "created_at": "2026-09-09T16:04:16",
+    "rounds": 10,
+    "batch_size": 5,
+    "questions_per_panda": 2,
+    "seed": 42,
+    "dry_run": true,
+    "pool_size": 520,
+    "unique_names": 489,
+    "total_questions": 98,
+    "label_counts": {
+      "dry_run": 98
+    },
+    "gap_count": 0,
+    "gap_pandas": [],
+    "source_files": [
+      "百度百科熊猫星图4.md",
+      "百度百科熊猫星图5.md",
+      "百度百科熊猫星图6.md",
+      "百度百科熊猫星图7.md",
+      "百度百科熊猫星图8.md",
+      "百度百科熊猫星图9.md",
+      "百度百科熊猫星图10.md",
+      "百度百科熊猫星图11.md",
+      "百度百科熊猫星图12.md",
+      "百度百科熊猫星图13.md",
+      "百度百科熊猫星图14.md",
+      "百度百科熊猫星图15.md",
+      "百度百科熊猫星图16.md",
+      "百度百科熊猫星图17.md",
+      "百度百科熊猫星图18.md",
+      "百度百科熊猫星图19.md",
+      "百度百科熊猫星图20.md",
+      "百度百科熊猫星图21.md",
+      "百度百科熊猫星图22.md",
+      "熊猫资料.md",
+      "熊猫资料2.md",
+      "熊猫资料3.md"
+    ],
+    "report_path": "reports/starmap_kb_spotcheck_20260909_160416.json",
+    "gaps_path": "reports/starmap_kb_spotcheck_gaps_20260909_160416.jsonl",
+    "focus_path": "reports/starmap_kb_spotcheck_focus_20260909_160416.json"
+  },
+  "results": [
+    {
+      "round": 1,
+      "panda": "谊谊",
+      "dim": "birth_time",
+      "question": "大熊猫谊谊是什么时候出生的？",
+      "gold_answer": "2018年1月14日",
+      "gold_tokens": [
+        "2018年1月14日",
+        "2018"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图8.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "谊谊",
+      "dim": "sex",
+      "question": "大熊猫谊谊的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图8.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "琳琳",
+      "dim": "pedigree",
+      "question": "大熊猫琳琳的谱系号是多少？",
+      "gold_answer": "455",
+      "gold_tokens": [
+        "455",
+        "谱系号455",
+        "谱系号为455"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "琳琳",
+      "dim": "birth_place",
+      "question": "大熊猫琳琳出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "渝宝",
+      "dim": "parents",
+      "question": "大熊猫渝宝的父母是谁？",
+      "gold_answer": "母亲为兰香",
+      "gold_tokens": [
+        "兰香"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "渝宝",
+      "dim": "birth_place",
+      "question": "大熊猫渝宝出生在哪里？",
+      "gold_answer": "重庆动物园",
+      "gold_tokens": [
+        "重庆动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "龙升",
+      "dim": "pedigree",
+      "question": "大熊猫龙升的谱系号是多少？",
+      "gold_answer": "518",
+      "gold_tokens": [
+        "518",
+        "谱系号518",
+        "谱系号为518"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图14.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "龙升",
+      "dim": "birth_time",
+      "question": "大熊猫龙升是什么时候出生的？",
+      "gold_answer": "2000年",
+      "gold_tokens": [
+        "2000年",
+        "2000"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图14.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "雅雅",
+      "dim": "parents",
+      "question": "大熊猫雅雅的父母是谁？",
+      "gold_answer": "母亲为苏珊",
+      "gold_tokens": [
+        "苏珊"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 1,
+      "panda": "雅雅",
+      "dim": "birth_place",
+      "question": "大熊猫雅雅出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "洋洋",
+      "dim": "pedigree",
+      "question": "大熊猫洋洋的谱系号是多少？",
+      "gold_answer": "461",
+      "gold_tokens": [
+        "461",
+        "谱系号461",
+        "谱系号为461"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "洋洋",
+      "dim": "parents",
+      "question": "大熊猫洋洋的父母是谁？",
+      "gold_answer": "父亲为野生救助大熊猫振振，母亲为亚运公主",
+      "gold_tokens": [
+        "野生救助大熊猫振振",
+        "亚运公主"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "大美",
+      "dim": "parents",
+      "question": "大熊猫大美的父母是谁？",
+      "gold_answer": "父亲为美兰，母亲为成大",
+      "gold_tokens": [
+        "美兰",
+        "成大"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "nick",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "大美",
+      "dim": "sex",
+      "question": "大熊猫大美的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "nick",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "林冰",
+      "dim": "birth_place",
+      "question": "大熊猫林冰出生在哪里？",
+      "gold_answer": "泰国清迈动物园",
+      "gold_tokens": [
+        "泰国清迈动物园",
+        "泰国清迈动物"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "林冰",
+      "dim": "sex",
+      "question": "大熊猫林冰的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "武俊",
+      "dim": "pedigree",
+      "question": "大熊猫武俊的谱系号是多少？",
+      "gold_answer": "689",
+      "gold_tokens": [
+        "689",
+        "谱系号689",
+        "谱系号为689"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "武俊",
+      "dim": "sex",
+      "question": "大熊猫武俊的性别是什么？",
+      "gold_answer": "雄性",
+      "gold_tokens": [
+        "雄性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "爱浜",
+      "dim": "pedigree",
+      "question": "大熊猫爱浜的谱系号是多少？",
+      "gold_answer": "663",
+      "gold_tokens": [
+        "663",
+        "谱系号663",
+        "谱系号为663"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 2,
+      "panda": "爱浜",
+      "dim": "sex",
+      "question": "大熊猫爱浜的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "园子",
+      "dim": "pedigree",
+      "question": "大熊猫园子的谱系号是多少？",
+      "gold_answer": "736",
+      "gold_tokens": [
+        "736",
+        "谱系号736",
+        "谱系号为736"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "园子",
+      "dim": "sex",
+      "question": "大熊猫园子的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "和风",
+      "dim": "pedigree",
+      "question": "大熊猫和风的谱系号是多少？",
+      "gold_answer": "1028",
+      "gold_tokens": [
+        "1028",
+        "谱系号1028",
+        "谱系号为1028"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "和风",
+      "dim": "birth_place",
+      "question": "大熊猫和风出生在哪里？",
+      "gold_answer": "成都大熊猫繁育研究基地",
+      "gold_tokens": [
+        "成都大熊猫繁育研究基地",
+        "成都大熊猫繁",
+        "育研究基地"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "喜豆",
+      "dim": "pedigree",
+      "question": "大熊猫喜豆的谱系号是多少？",
+      "gold_answer": "654",
+      "gold_tokens": [
+        "654",
+        "谱系号654",
+        "谱系号为654"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "喜豆",
+      "dim": "parents",
+      "question": "大熊猫喜豆的父母是谁？",
+      "gold_answer": "母亲为毛毛",
+      "gold_tokens": [
+        "毛毛"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "禄禄仔",
+      "dim": "parents",
+      "question": "大熊猫禄禄仔的父母是谁？",
+      "gold_answer": "母亲为禄禄",
+      "gold_tokens": [
+        "禄禄"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "禄禄仔",
+      "dim": "birth_place",
+      "question": "大熊猫禄禄仔出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "安安",
+      "dim": "pedigree",
+      "question": "大熊猫安安的谱系号是多少？",
+      "gold_answer": "1183",
+      "gold_tokens": [
+        "1183",
+        "谱系号1183",
+        "谱系号为1183"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 3,
+      "panda": "安安",
+      "dim": "birth_time",
+      "question": "大熊猫安安是什么时候出生的？",
+      "gold_answer": "2019年6月28日",
+      "gold_tokens": [
+        "2019年6月28日",
+        "2019"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "中中",
+      "dim": "parents",
+      "question": "大熊猫中中的父母是谁？",
+      "gold_answer": "母亲为张卡",
+      "gold_tokens": [
+        "张卡"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "中中",
+      "dim": "sex",
+      "question": "大熊猫中中的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "缘小",
+      "dim": "pedigree",
+      "question": "大熊猫缘小的谱系号是多少？",
+      "gold_answer": "628",
+      "gold_tokens": [
+        "628",
+        "谱系号628",
+        "谱系号为628"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "缘小",
+      "dim": "parents",
+      "question": "大熊猫缘小的父母是谁？",
+      "gold_answer": "父亲为琳琳，母亲为奇缘",
+      "gold_tokens": [
+        "琳琳",
+        "奇缘"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "永巴",
+      "dim": "pedigree",
+      "question": "大熊猫永巴的谱系号是多少？",
+      "gold_answer": "397",
+      "gold_tokens": [
+        "397",
+        "谱系号397",
+        "谱系号为397"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "永巴",
+      "dim": "sex",
+      "question": "大熊猫永巴的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "乐乐",
+      "dim": "pedigree",
+      "question": "大熊猫乐乐的谱系号是多少？",
+      "gold_answer": "715",
+      "gold_tokens": [
+        "715",
+        "谱系号715",
+        "谱系号为715"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图22.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "乐乐",
+      "dim": "sex",
+      "question": "大熊猫乐乐的性别是什么？",
+      "gold_answer": "雄性",
+      "gold_tokens": [
+        "雄性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图22.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "梦梦",
+      "dim": "pedigree",
+      "question": "大熊猫梦梦的谱系号是多少？",
+      "gold_answer": "868",
+      "gold_tokens": [
+        "868",
+        "谱系号868",
+        "谱系号为868"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 4,
+      "panda": "梦梦",
+      "dim": "parents",
+      "question": "大熊猫梦梦的父母是谁？",
+      "gold_answer": "父亲为勇勇，母亲为二丫头",
+      "gold_tokens": [
+        "勇勇",
+        "二丫头"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "姚欣",
+      "dim": "pedigree",
+      "question": "大熊猫姚欣的谱系号是多少？",
+      "gold_answer": "760",
+      "gold_tokens": [
+        "760",
+        "谱系号760",
+        "谱系号为760"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图19.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "姚欣",
+      "dim": "sex",
+      "question": "大熊猫姚欣的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图19.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "和盛",
+      "dim": "pedigree",
+      "question": "大熊猫和盛的谱系号是多少？",
+      "gold_answer": "876",
+      "gold_tokens": [
+        "876",
+        "谱系号876",
+        "谱系号为876"
+      ],
+      "source_file": "docs/熊猫资料/熊猫资料3.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "father",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "和盛",
+      "dim": "parents",
+      "question": "大熊猫和盛的父母是谁？",
+      "gold_answer": "父亲为勇勇，母亲为成功",
+      "gold_tokens": [
+        "勇勇",
+        "成功"
+      ],
+      "source_file": "docs/熊猫资料/熊猫资料3.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "father",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "银柯",
+      "dim": "pedigree",
+      "question": "大熊猫银柯的谱系号是多少？",
+      "gold_answer": "744",
+      "gold_tokens": [
+        "744",
+        "谱系号744",
+        "谱系号为744"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "银柯",
+      "dim": "birth_time",
+      "question": "大熊猫银柯是什么时候出生的？",
+      "gold_answer": "2009年7月16日",
+      "gold_tokens": [
+        "2009年7月16日",
+        "2009"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "娇子",
+      "dim": "pedigree",
+      "question": "大熊猫娇子的谱系号是多少？",
+      "gold_answer": "425",
+      "gold_tokens": [
+        "425",
+        "谱系号425",
+        "谱系号为425"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "death",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "娇子",
+      "dim": "birth_time",
+      "question": "大熊猫娇子是什么时候出生的？",
+      "gold_answer": "1995年8月21日",
+      "gold_tokens": [
+        "1995年8月21日",
+        "1995"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "death",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "良浜",
+      "dim": "parents",
+      "question": "大熊猫良浜的父母是谁？",
+      "gold_answer": "父亲为哈兰，母亲为梅梅",
+      "gold_tokens": [
+        "哈兰",
+        "梅梅"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 5,
+      "panda": "良浜",
+      "dim": "birth_place",
+      "question": "大熊猫良浜出生在哪里？",
+      "gold_answer": "日本和歌山白浜野生动物园",
+      "gold_tokens": [
+        "日本和歌山白浜野生动物园",
+        "日本和歌山白",
+        "浜野生动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "元晶",
+      "dim": "birth_time",
+      "question": "大熊猫元晶是什么时候出生的？",
+      "gold_answer": "1978年",
+      "gold_tokens": [
+        "1978年",
+        "1978"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "元晶",
+      "dim": "birth_place",
+      "question": "大熊猫元晶出生在哪里？",
+      "gold_answer": "北京动物园",
+      "gold_tokens": [
+        "北京动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "雪宝",
+      "dim": "pedigree",
+      "question": "大熊猫雪宝的谱系号是多少？",
+      "gold_answer": "1117",
+      "gold_tokens": [
+        "1117",
+        "谱系号1117",
+        "谱系号为1117"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图4.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "雪宝",
+      "dim": "birth_place",
+      "question": "大熊猫雪宝出生在哪里？",
+      "gold_answer": "上海野生动物园",
+      "gold_tokens": [
+        "上海野生动物园",
+        "上海野生动物"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图4.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "宝哥",
+      "dim": "parents",
+      "question": "大熊猫宝哥的父母是谁？",
+      "gold_answer": "父亲为迎迎，母亲为海归大熊猫阿宝",
+      "gold_tokens": [
+        "迎迎",
+        "海归大熊猫阿宝"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "宝哥",
+      "dim": "sex",
+      "question": "大熊猫宝哥的性别是什么？",
+      "gold_answer": "雄性",
+      "gold_tokens": [
+        "雄性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "二顺",
+      "dim": "pedigree",
+      "question": "大熊猫二顺的谱系号是多少？",
+      "gold_answer": "676",
+      "gold_tokens": [
+        "676",
+        "谱系号676",
+        "谱系号为676"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "二顺",
+      "dim": "parents",
+      "question": "大熊猫二顺的父母是谁？",
+      "gold_answer": "父亲为灵灵，母亲为娅老二",
+      "gold_tokens": [
+        "灵灵",
+        "娅老二"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "萌玉",
+      "dim": "pedigree",
+      "question": "大熊猫萌玉的谱系号是多少？",
+      "gold_answer": "1123",
+      "gold_tokens": [
+        "1123",
+        "谱系号1123",
+        "谱系号为1123"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 6,
+      "panda": "萌玉",
+      "dim": "birth_place",
+      "question": "大熊猫萌玉出生在哪里？",
+      "gold_answer": "成都大熊猫繁育研究基地",
+      "gold_tokens": [
+        "成都大熊猫繁育研究基地",
+        "成都大熊猫繁",
+        "育研究基地"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "美美",
+      "dim": "pedigree",
+      "question": "大熊猫美美的谱系号是多少？",
+      "gold_answer": "152",
+      "gold_tokens": [
+        "152",
+        "谱系号152",
+        "谱系号为152"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "death",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "美美",
+      "dim": "birth_time",
+      "question": "大熊猫美美是什么时候出生的？",
+      "gold_answer": "1972年",
+      "gold_tokens": [
+        "1972年",
+        "1972"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "death",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "悦悦",
+      "dim": "pedigree",
+      "question": "大熊猫悦悦的谱系号是多少？",
+      "gold_answer": "969",
+      "gold_tokens": [
+        "969",
+        "谱系号969",
+        "谱系号为969"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "悦悦",
+      "dim": "birth_time",
+      "question": "大熊猫悦悦是什么时候出生的？",
+      "gold_answer": "2015年8月9日",
+      "gold_tokens": [
+        "2015年8月9日",
+        "2015"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "升谊",
+      "dim": "birth_time",
+      "question": "大熊猫升谊是什么时候出生的？",
+      "gold_answer": "2021年5月31日",
+      "gold_tokens": [
+        "2021年5月31日",
+        "2021"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "move"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "升谊",
+      "dim": "birth_place",
+      "question": "大熊猫升谊出生在哪里？",
+      "gold_answer": "马来西亚国家动物园",
+      "gold_tokens": [
+        "马来西亚国家动物园",
+        "马来西亚国家",
+        "动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "move"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "福伴",
+      "dim": "pedigree",
+      "question": "大熊猫福伴的谱系号是多少？",
+      "gold_answer": "1027",
+      "gold_tokens": [
+        "1027",
+        "谱系号1027",
+        "谱系号为1027"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "福伴",
+      "dim": "sex",
+      "question": "大熊猫福伴的性别是什么？",
+      "gold_answer": "雄性",
+      "gold_tokens": [
+        "雄性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "思一",
+      "dim": "birth_time",
+      "question": "大熊猫思一是什么时候出生的？",
+      "gold_answer": "2012年8月19日",
+      "gold_tokens": [
+        "2012年8月19日",
+        "2012"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 7,
+      "panda": "思一",
+      "dim": "sex",
+      "question": "大熊猫思一的性别是什么？",
+      "gold_answer": "雄性",
+      "gold_tokens": [
+        "雄性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "毛竹",
+      "dim": "parents",
+      "question": "大熊猫毛竹的父母是谁？",
+      "gold_answer": "父亲为海归大熊猫雄浜",
+      "gold_tokens": [
+        "海归大熊猫雄浜"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "毛竹",
+      "dim": "birth_place",
+      "question": "大熊猫毛竹出生在哪里？",
+      "gold_answer": "成都大熊猫繁育基地",
+      "gold_tokens": [
+        "成都大熊猫繁育基地",
+        "成都大熊猫繁",
+        "育基地"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "雪雪",
+      "dim": "birth_place",
+      "question": "大熊猫雪雪出生在哪里？",
+      "gold_answer": "四川省宝兴县野外",
+      "gold_tokens": [
+        "四川省宝兴县野外",
+        "四川省宝兴县",
+        "野外"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "雪雪",
+      "dim": "sex",
+      "question": "大熊猫雪雪的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "贝贝",
+      "dim": "pedigree",
+      "question": "大熊猫贝贝的谱系号是多少？",
+      "gold_answer": "978",
+      "gold_tokens": [
+        "978",
+        "谱系号978",
+        "谱系号为978"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "贝贝",
+      "dim": "sex",
+      "question": "大熊猫贝贝的性别是什么？",
+      "gold_answer": "雄性",
+      "gold_tokens": [
+        "雄性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "萌二",
+      "dim": "parents",
+      "question": "大熊猫萌二的父母是谁？",
+      "gold_answer": "父亲为勇勇，母亲为萌萌",
+      "gold_tokens": [
+        "勇勇",
+        "萌萌"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "dims": [
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "萌二",
+      "dim": "birth_time",
+      "question": "大熊猫萌二是什么时候出生的？",
+      "gold_answer": "2013年8月22日",
+      "gold_tokens": [
+        "2013年8月22日",
+        "2013"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "dims": [
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "泰山",
+      "dim": "pedigree",
+      "question": "大熊猫泰山的谱系号是多少？",
+      "gold_answer": "595",
+      "gold_tokens": [
+        "595",
+        "谱系号595",
+        "谱系号为595"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 8,
+      "panda": "泰山",
+      "dim": "birth_place",
+      "question": "大熊猫泰山出生在哪里？",
+      "gold_answer": "华盛顿国家动物园",
+      "gold_tokens": [
+        "华盛顿国家动物园",
+        "华盛顿国家动",
+        "物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 9,
+      "panda": "张卡",
+      "dim": "pedigree",
+      "question": "大熊猫张卡的谱系号是多少？",
+      "gold_answer": "505",
+      "gold_tokens": [
+        "505",
+        "谱系号505",
+        "谱系号为505"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 9,
+      "panda": "张卡",
+      "dim": "birth_place",
+      "question": "大熊猫张卡出生在哪里？",
+      "gold_answer": "四川宝兴蜂桶寨国家级自然保护区",
+      "gold_tokens": [
+        "四川宝兴蜂桶寨国家级自然保护区",
+        "四川宝兴蜂桶",
+        "寨国家级自然",
+        "保护区"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 9,
+      "panda": "明浜",
+      "dim": "pedigree",
+      "question": "大熊猫明浜的谱系号是多少？",
+      "gold_answer": "662",
+      "gold_tokens": [
+        "662",
+        "谱系号662",
+        "谱系号为662"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 9,
+      "panda": "明浜",
+      "dim": "birth_place",
+      "question": "大熊猫明浜出生在哪里？",
+      "gold_answer": "日本和歌山白浜野生动物园",
+      "gold_tokens": [
+        "日本和歌山白浜野生动物园",
+        "日本和歌山白",
+        "浜野生动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 9,
+      "panda": "蓝天",
+      "dim": "identity",
+      "question": "大熊猫蓝天的基本档案信息是什么？",
+      "gold_answer": "蓝天",
+      "gold_tokens": [
+        "蓝天"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图17.md",
+      "dims": [],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 9,
+      "panda": "坪坪",
+      "dim": "sex",
+      "question": "大熊猫坪坪的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图14.md",
+      "dims": [
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 9,
+      "panda": "水灵",
+      "dim": "pedigree",
+      "question": "大熊猫水灵的谱系号是多少？",
+      "gold_answer": "687",
+      "gold_tokens": [
+        "687",
+        "谱系号687",
+        "谱系号为687"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 9,
+      "panda": "水灵",
+      "dim": "sex",
+      "question": "大熊猫水灵的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "鑫宝",
+      "dim": "birth_time",
+      "question": "大熊猫鑫宝是什么时候出生的？",
+      "gold_answer": "2020年7月23日",
+      "gold_tokens": [
+        "2020年7月23日",
+        "2020"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "鑫宝",
+      "dim": "birth_place",
+      "question": "大熊猫鑫宝出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "move",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "津柯",
+      "dim": "pedigree",
+      "question": "大熊猫津柯的谱系号是多少？",
+      "gold_answer": "743",
+      "gold_tokens": [
+        "743",
+        "谱系号743",
+        "谱系号为743"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "津柯",
+      "dim": "birth_place",
+      "question": "大熊猫津柯出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "思念",
+      "dim": "pedigree",
+      "question": "大熊猫思念的谱系号是多少？",
+      "gold_answer": "961",
+      "gold_tokens": [
+        "961",
+        "谱系号961",
+        "谱系号为961"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "思念",
+      "dim": "birth_place",
+      "question": "大熊猫思念出生在哪里？",
+      "gold_answer": "成都大熊猫繁育研究基地",
+      "gold_tokens": [
+        "成都大熊猫繁育研究基地",
+        "成都大熊猫繁",
+        "育研究基地"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "冰冰",
+      "dim": "pedigree",
+      "question": "大熊猫冰冰的谱系号是多少？",
+      "gold_answer": "976",
+      "gold_tokens": [
+        "976",
+        "谱系号976",
+        "谱系号为976"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "冰冰",
+      "dim": "sex",
+      "question": "大熊猫冰冰的性别是什么？",
+      "gold_answer": "雌性",
+      "gold_tokens": [
+        "雌性"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "圆梦",
+      "dim": "pedigree",
+      "question": "大熊猫圆梦的谱系号是多少？",
+      "gold_answer": "1094",
+      "gold_tokens": [
+        "1094",
+        "谱系号1094",
+        "谱系号为1094"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    },
+    {
+      "round": 10,
+      "panda": "圆梦",
+      "dim": "birth_place",
+      "question": "大熊猫圆梦出生在哪里？",
+      "gold_answer": "法国博瓦勒野生动物园",
+      "gold_tokens": [
+        "法国博瓦勒野生动物园",
+        "法国博瓦勒野",
+        "生动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "dims": [
+        "birth_place",
+        "birth_time",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "ok": true,
+      "answer": "",
+      "rows_count": 0,
+      "gap_label": "dry_run",
+      "token_cover": 0.0
+    }
+  ]
+}

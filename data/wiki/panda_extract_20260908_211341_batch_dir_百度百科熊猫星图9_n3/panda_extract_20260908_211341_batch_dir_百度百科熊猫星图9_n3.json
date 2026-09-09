@@ -1,0 +1,984 @@
+{
+  "mode": "batch_dir",
+  "source_file": "",
+  "source_dir": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图9",
+  "category": "熊猫资料",
+  "rumor_mode": false,
+  "profile_mode": true,
+  "files_count": 3,
+  "files": [
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图9\\gap_01.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [
+          "成都大熊猫繁育研究基地",
+          "柏林动物园"
+        ],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [
+          "圆脸、短嘴筒特征",
+          "左前掌长有白毛，外形辨识度高"
+        ],
+        "behavior_terms": [
+          "性格温顺且适应力强",
+          "性格开朗活泼"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "梦梦",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫梦梦，雌性，谱系号868"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "谱系号",
+            "object": "868",
+            "object_type": "Other",
+            "evidence": "大熊猫梦梦，雌性，谱系号868"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2013年7月10日生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "出生时间",
+            "object": "2013年7月10日",
+            "object_type": "Biology",
+            "evidence": "2013年7月10日生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "出生体重范围",
+            "object": "105克",
+            "object_type": "Biology",
+            "evidence": "初生体重105克"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "母亲为",
+            "object": "二丫头",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫二丫头"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "父亲为",
+            "object": "勇勇",
+            "object_type": "Person",
+            "evidence": "父亲为大熊猫勇勇"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "旅居于",
+            "object": "柏林动物园",
+            "object_type": "Habitat",
+            "evidence": "2017年6月参与中德科研合作，旅居柏林动物园15年"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "育有",
+            "object": "梦想",
+            "object_type": "Person",
+            "evidence": "2019年9月首次产下雄性双胞胎‘梦想’‘梦圆’"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "育有",
+            "object": "梦圆",
+            "object_type": "Person",
+            "evidence": "2019年9月首次产下雄性双胞胎‘梦想’‘梦圆’"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "育有",
+            "object": "梦好",
+            "object_type": "Person",
+            "evidence": "2024年8月再诞雌性双胞胎‘梦好’‘梦甜’"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "育有",
+            "object": "梦甜",
+            "object_type": "Person",
+            "evidence": "2024年8月再诞雌性双胞胎‘梦好’‘梦甜’"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "又名",
+            "object": "中国梦",
+            "object_type": "Other",
+            "evidence": "其名源自‘中国梦’理念"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "公开亮相于",
+            "object": "2024年10月",
+            "object_type": "Other",
+            "evidence": "2024年10月起分批公开亮相"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "公开亮相于",
+            "object": "2024年12月",
+            "object_type": "Other",
+            "evidence": "2024年12月定名后正式展出"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫妮可，雄性，谱系号1081"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "谱系号",
+            "object": "1081",
+            "object_type": "Other",
+            "evidence": "大熊猫妮可，雄性，谱系号1081"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "出生时间",
+            "object": "2017年7月20日",
+            "object_type": "Biology",
+            "evidence": "2017年7月20日与双胞胎妹妹“妮娜”一同出生"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "母亲为",
+            "object": "妮妮",
+            "object_type": "Person",
+            "evidence": "母亲为“妮妮”"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "同胞为",
+            "object": "妮娜",
+            "object_type": "Person",
+            "evidence": "2017年7月20日与双胞胎妹妹“妮娜”一同出生"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "谱系号",
+            "object": "868",
+            "object_type": "Other",
+            "evidence": "谱系号868"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "昵称为",
+            "object": "中国梦",
+            "object_type": "Other",
+            "evidence": "其名源自‘中国梦’理念"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "旅居于",
+            "object": "2017年6月",
+            "object_type": "Biology",
+            "evidence": "2017年6月参与中德科研合作，旅居柏林动物园15年"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "参与活动",
+            "object": "中德大熊猫合作",
+            "object_type": "Other",
+            "evidence": "2019年9月首次产下雄性双胞胎‘梦想’‘梦圆’，为中德大熊猫合作首例新生儿"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "谱系号",
+            "object": "1081",
+            "object_type": "Other",
+            "evidence": "谱系号1081"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "出生体重范围",
+            "object": "203克",
+            "object_type": "Biology",
+            "evidence": "初生体重203克"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [
+          "成都大熊猫繁育研究基地",
+          "柏林动物园"
+        ],
+        "熊猫曾用名": []
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图9\\gap_02.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "2016年6月23日",
+          "2017年3月28日",
+          "10月11日",
+          "2018年12月14日",
+          "2019年6月18日",
+          "1985年",
+          "2008年4月30日",
+          "1992年11月5日",
+          "2007年8月",
+          "2008年初",
+          "2008年4月29日",
+          "2017年10月11日"
+        ],
+        "person_entities": [
+          "星雅",
+          "和风",
+          "悠悠",
+          "童童",
+          "双双"
+        ],
+        "place_entities": [
+          "成都大熊猫繁育研究基地",
+          "都江堰熊猫谷",
+          "上海动物园",
+          "北京动物园",
+          "日本上野动物园",
+          "墨西哥"
+        ],
+        "panda_aliases": [
+          "风光兄弟"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "成都大熊猫繁育研究基地",
+          "都江堰熊猫谷",
+          "上海动物园",
+          "北京动物园",
+          "日本上野动物园",
+          "墨西哥"
+        ],
+        "biology_terms": [
+          "毛色很白",
+          "眼圈不大但眼间距稍宽",
+          "耳朵比较小",
+          "脑门有点大，略‘秃’",
+          "秀气可爱"
+        ],
+        "behavior_terms": [
+          "吃货",
+          "性格温柔",
+          "战斗力比较弱"
+        ],
+        "disease_terms": [
+          "身体浮肿",
+          "食欲减退",
+          "心脏及肾脏衰竭体征"
+        ],
+        "treatment_terms": [
+          "集中治疗"
+        ],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [
+          "风光兄弟",
+          "被大家爱称为‘风光兄弟’"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "星光",
+            "predicate": "谱系号",
+            "object": "999",
+            "object_type": "Other",
+            "evidence": "星光，雄性大熊猫，谱系号999"
+          },
+          {
+            "subject": "星光",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "星光，雄性大熊猫"
+          },
+          {
+            "subject": "星光",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2016年6月23日和双胞胎妹妹“星辰”出生在成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "星光",
+            "predicate": "出生时间",
+            "object": "2016年6月23日",
+            "object_type": "Other",
+            "evidence": "2016年6月23日和双胞胎妹妹“星辰”出生在成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "星光",
+            "predicate": "母亲为",
+            "object": "星雅",
+            "object_type": "Person",
+            "evidence": "母亲是大熊猫星雅"
+          },
+          {
+            "subject": "星光",
+            "predicate": "迁至",
+            "object": "都江堰熊猫谷",
+            "object_type": "Habitat",
+            "evidence": "2017年3月28日，搬家到都江堰熊猫谷"
+          },
+          {
+            "subject": "星光",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "10月11日回到熊猫基地"
+          },
+          {
+            "subject": "星光",
+            "predicate": "迁至",
+            "object": "都江堰熊猫谷",
+            "object_type": "Habitat",
+            "evidence": "2018年12月14日，搬家到都江堰熊猫谷"
+          },
+          {
+            "subject": "星光",
+            "predicate": "赴",
+            "object": "上海动物园",
+            "object_type": "Habitat",
+            "evidence": "2019年6月18日，和“和风”一起出差至上海动物园"
+          },
+          {
+            "subject": "星光",
+            "predicate": "昵称为",
+            "object": "风光兄弟",
+            "object_type": "Alias",
+            "evidence": "它与“和风”被大家爱称为“风光兄弟”"
+          },
+          {
+            "subject": "星光",
+            "predicate": "同胞为",
+            "object": "和风",
+            "object_type": "Person",
+            "evidence": "它与“和风”被大家爱称为“风光兄弟”"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "出生时间",
+            "object": "1985年",
+            "object_type": "Other",
+            "evidence": "陵陵（1985年－2008年4月30日）是1985年生于北京动物园的雄性大熊猫。"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "出生于",
+            "object": "北京动物园",
+            "object_type": "Habitat",
+            "evidence": "陵陵（1985年－2008年4月30日）是1985年生于北京动物园的雄性大熊猫。"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "陵陵（1985年－2008年4月30日）是1985年生于北京动物园的雄性大熊猫。"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "死亡时间",
+            "object": "2008年4月30日",
+            "object_type": "Other",
+            "evidence": "2008年4月30日"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "去世年份",
+            "object": "2008",
+            "object_type": "Other",
+            "evidence": "2008年4月30日"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "迁至",
+            "object": "日本上野动物园",
+            "object_type": "Habitat",
+            "evidence": "1992年11月5日，作为中日邦交正常化20周年的交换，被转移至日本上野动物园"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "同胞为",
+            "object": "童童",
+            "object_type": "Person",
+            "evidence": "上野动物园曾尝试使陵陵与同园雌性大熊猫童童及从墨西哥请来的大熊猫“双双”进行交配繁殖，陵陵为此曾往返墨西哥三次"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "同胞为",
+            "object": "双双",
+            "object_type": "Person",
+            "evidence": "上野动物园曾尝试使陵陵与同园雌性大熊猫童童及从墨西哥请来的大熊猫“双双”进行交配繁殖，陵陵为此曾往返墨西哥三次"
+          },
+          {
+            "subject": "星光",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "星光，雄性大熊猫，谱系号999"
+          },
+          {
+            "subject": "星光",
+            "predicate": "谱系号",
+            "object": "999",
+            "object_type": "Other",
+            "evidence": "谱系号999"
+          },
+          {
+            "subject": "星光",
+            "predicate": "旅居于",
+            "object": "上海动物园",
+            "object_type": "Habitat",
+            "evidence": "2019年6月18日，和“和风”一起出差至上海动物园"
+          },
+          {
+            "subject": "星光",
+            "predicate": "外号为",
+            "object": "风光兄弟",
+            "object_type": "Alias",
+            "evidence": "它与“和风”被大家爱称为“风光兄弟”"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "陵陵（1985年－2008年4月30日）是1985年生于北京动物园的雄性大熊猫"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "出生时间",
+            "object": "1985年",
+            "object_type": "Biology",
+            "evidence": "1985年生于北京动物园"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "出生于",
+            "object": "北京动物园",
+            "object_type": "Habitat",
+            "evidence": "1985年生于北京动物园"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "逝世于",
+            "object": "2008年4月30日",
+            "object_type": "Biology",
+            "evidence": "次日死亡"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "旅居于",
+            "object": "墨西哥",
+            "object_type": "Habitat",
+            "evidence": "陵陵为此曾往返墨西哥三次"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "同胞为",
+            "object": "童童",
+            "object_type": "Person",
+            "evidence": "上野动物园曾尝试使陵陵与同园雌性大熊猫童童及从墨西哥请来的大熊猫“双双”进行交配繁殖"
+          },
+          {
+            "subject": "陵陵",
+            "predicate": "同胞为",
+            "object": "双双",
+            "object_type": "Person",
+            "evidence": "上野动物园曾尝试使陵陵与同园雌性大熊猫童童及从墨西哥请来的大熊猫“双双”进行交配繁殖"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "2016年6月23日",
+          "2017年3月28日",
+          "10月11日",
+          "2018年12月14日",
+          "2019年6月18日",
+          "1985年",
+          "2008年4月30日",
+          "1992年11月5日",
+          "2007年8月",
+          "2008年初",
+          "2008年4月29日",
+          "2017年10月11日"
+        ],
+        "人物": [
+          "星雅",
+          "和风",
+          "悠悠",
+          "童童",
+          "双双"
+        ],
+        "地点": [
+          "成都大熊猫繁育研究基地",
+          "都江堰熊猫谷",
+          "上海动物园",
+          "北京动物园",
+          "日本上野动物园",
+          "墨西哥"
+        ],
+        "熊猫曾用名": [
+          "风光兄弟"
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图9\\gap_03.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "2007年8月13日",
+          "1999年11月28日",
+          "2021年9月27日",
+          "2021年4月下旬",
+          "5月16日",
+          "9月初",
+          "1972年",
+          "9月27日"
+        ],
+        "person_entities": [],
+        "place_entities": [
+          "美国",
+          "成都大熊猫繁育研究基地"
+        ],
+        "panda_aliases": [
+          "星蓉",
+          "兴兴"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "成都大熊猫繁育研究基地"
+        ],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [
+          "去分化脂肪肉瘤",
+          "多器官衰竭",
+          "肾衰竭",
+          "肿瘤转移至心、肺、肾等器官"
+        ],
+        "treatment_terms": [
+          "肿瘤消融切除术及髋关节重建术"
+        ],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [
+          "流质营养液"
+        ],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "兴兴",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫，4月16日抵达美国，1999年11月28日因肾衰竭被施行安乐死。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "出生于",
+            "object": "1972年",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫，4月16日抵达美国，1999年11月28日因肾衰竭被施行安乐死。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "逝世于",
+            "object": "1999年11月28日",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫，4月16日抵达美国，1999年11月28日因肾衰竭被施行安乐死。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "旅居于",
+            "object": "美国",
+            "object_type": "Place",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫，4月16日抵达美国，1999年11月28日因肾衰竭被施行安乐死。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "出生时间",
+            "object": "2007年8月13日",
+            "object_type": "Biology",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "谱系号",
+            "object": "680",
+            "object_type": "Other",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "现居地",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "父亲为",
+            "object": "科比",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "母亲为",
+            "object": "二丫头",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "育有",
+            "object": "星一",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "育有",
+            "object": "星二",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "同胞为",
+            "object": "小丫头",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "同胞为",
+            "object": "星雅",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头，育有子嗣星一、星二，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "接受治疗",
+            "object": "肿瘤消融切除术及髋关节重建术",
+            "object_type": "Treatment",
+            "evidence": "5月16日接受肿瘤消融切除术及髋关节重建术，摘除约500克肿瘤组织，术后依赖流质营养液维持。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "逝世于",
+            "object": "2021年9月27日",
+            "object_type": "Biology",
+            "evidence": "9月初其采食量持续减少，最终于9月27日因肿瘤转移至心、肺、肾等器官导致多器官衰竭死亡。"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "旅居于",
+            "object": "美国",
+            "object_type": "Place",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫，4月16日抵达美国"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "出生于",
+            "object": "1972年",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "逝世于",
+            "object": "1999年11月28日",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "谱系号",
+            "object": "680",
+            "object_type": "Other",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "父亲为",
+            "object": "科比",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "母亲为",
+            "object": "二丫头",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，父母为大熊猫科比和二丫头"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "育有",
+            "object": "星一",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，育有子嗣星一、星二"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "育有",
+            "object": "星二",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，育有子嗣星一、星二"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "同胞为",
+            "object": "小丫头",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "同胞为",
+            "object": "星雅",
+            "object_type": "Person",
+            "evidence": "大熊猫星蓉（2007年8月13日-2021年9月27日），雌性，谱系号680，出生于成都大熊猫繁育研究基地，同胞包括小丫头、星雅等。"
+          },
+          {
+            "subject": "星蓉",
+            "predicate": "肿瘤扩散至",
+            "object": "胸膜",
+            "object_type": "Biology",
+            "evidence": "解剖显示肿瘤已扩散至胸膜，造成多器官损伤。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "2007年8月13日",
+          "1999年11月28日",
+          "2021年9月27日",
+          "2021年4月下旬",
+          "5月16日",
+          "9月初",
+          "1972年",
+          "9月27日"
+        ],
+        "人物": [],
+        "地点": [
+          "美国",
+          "成都大熊猫繁育研究基地"
+        ],
+        "熊猫曾用名": [
+          "星蓉",
+          "兴兴"
+        ]
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "花熊": "大熊猫",
+    "猫熊": "大熊猫",
+    "食铁兽": "大熊猫",
+    "白熊": "大熊猫",
+    "黑白熊": "大熊猫",
+    "熊猫": "大熊猫"
+  },
+  "summary": {
+    "times": [
+      "10月11日",
+      "1972年",
+      "1985年",
+      "1992年11月5日",
+      "1999年11月28日",
+      "2007年8月",
+      "2007年8月13日",
+      "2008年4月29日",
+      "2008年4月30日",
+      "2008年初",
+      "2016年6月23日",
+      "2017年10月11日",
+      "2017年3月28日",
+      "2018年12月14日",
+      "2019年6月18日",
+      "2021年4月下旬",
+      "2021年9月27日",
+      "5月16日",
+      "9月27日",
+      "9月初"
+    ],
+    "person_entities": [
+      "双双",
+      "和风",
+      "悠悠",
+      "星雅",
+      "童童"
+    ],
+    "place_entities": [
+      "上海动物园",
+      "北京动物园",
+      "墨西哥",
+      "成都大熊猫繁育研究基地",
+      "日本上野动物园",
+      "柏林动物园",
+      "美国",
+      "都江堰熊猫谷"
+    ],
+    "panda_aliases": [
+      "兴兴",
+      "星蓉",
+      "风光兄弟"
+    ],
+    "companion_species": [],
+    "predator_species": [],
+    "habitats": [
+      "上海动物园",
+      "北京动物园",
+      "墨西哥",
+      "成都大熊猫繁育研究基地",
+      "日本上野动物园",
+      "都江堰熊猫谷"
+    ],
+    "biology_terms": [
+      "圆脸、短嘴筒特征",
+      "左前掌长有白毛，外形辨识度高",
+      "毛色很白",
+      "眼圈不大但眼间距稍宽",
+      "秀气可爱",
+      "耳朵比较小",
+      "脑门有点大，略‘秃’"
+    ],
+    "behavior_terms": [
+      "吃货",
+      "性格开朗活泼",
+      "性格温柔",
+      "性格温顺且适应力强",
+      "战斗力比较弱"
+    ],
+    "disease_terms": [
+      "去分化脂肪肉瘤",
+      "多器官衰竭",
+      "心脏及肾脏衰竭体征",
+      "肾衰竭",
+      "肿瘤转移至心、肺、肾等器官",
+      "身体浮肿",
+      "食欲减退"
+    ],
+    "treatment_terms": [
+      "肿瘤消融切除术及髋关节重建术",
+      "集中治疗"
+    ],
+    "lifecycle_stages": [],
+    "reproduction_terms": [],
+    "communication_terms": [
+      "被大家爱称为‘风光兄弟’",
+      "风光兄弟"
+    ],
+    "threat_factors": [],
+    "food_items": [
+      "流质营养液"
+    ],
+    "food_parts": [],
+    "population_metrics": [],
+    "taxonomy_terms": [
+      "大熊猫"
+    ]
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3\\panda_extract_20260908_211341_batch_dir_百度百科熊猫星图9_n3.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-09-08T21:13:41.016685"
+}

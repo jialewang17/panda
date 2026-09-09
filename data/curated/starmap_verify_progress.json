@@ -1,0 +1,500 @@
+{
+  "updated_at": "2026-09-08 23:57:46",
+  "runs": [
+    {
+      "at": "2026-09-08 16:55:09",
+      "file": "docs/熊猫资料/百度百科熊猫星图4.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图4.json",
+      "coverage": 0.88,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 18:12:50",
+      "file": "docs/熊猫资料/百度百科熊猫星图4.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图4.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 18:20:13",
+      "file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图5.json",
+      "coverage": 0.88,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 19:50:54",
+      "file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图5.json",
+      "coverage": 0.88,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 20:09:49",
+      "file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图5.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 20:28:31",
+      "file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图6.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 20:30:36",
+      "file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图6.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 20:58:18",
+      "file": "docs/熊猫资料/百度百科熊猫星图7.md",
+      "status": "failed",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图7.json",
+      "coverage": 0.8,
+      "error": "RuntimeError: 补抽失败 code=1; stdout=[Resume] loaded checkpoint: done=0 failed=0 pending=1\n[Attempt 1/2] 1/1 FAILED | done_total=0/1 failed_total=1 | gap_01.md\n[Attempt 2/2] 1/1 FAILED | done_total=0/1 failed_total=1 | gap_01.md\n=== panda_history_extractor ===\nstatus: ERROR\nmode: batch_dir\ncategory: 熊猫"
+    },
+    {
+      "at": "2026-09-08 21:00:45",
+      "file": "docs/熊猫资料/百度百科熊猫星图7.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图7.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:02:45",
+      "file": "docs/熊猫资料/百度百科熊猫星图8.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图8.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:12:36",
+      "file": "docs/熊猫资料/百度百科熊猫星图8.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图8.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:12:36",
+      "file": "docs/熊猫资料/百度百科熊猫星图4.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图4.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:16:04",
+      "file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图9.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:16:05",
+      "file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图9.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:16:05",
+      "file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图10.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:16:05",
+      "file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图11.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:18:49",
+      "file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图12.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:18:50",
+      "file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图12.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:22:09",
+      "file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图13.json",
+      "coverage": 0.88,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:22:09",
+      "file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图13.json",
+      "coverage": 0.88,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:22:10",
+      "file": "docs/熊猫资料/百度百科熊猫星图14.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图14.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:22:10",
+      "file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图15.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:24:02",
+      "file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图16.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:24:02",
+      "file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图16.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:25:57",
+      "file": "docs/熊猫资料/百度百科熊猫星图17.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图17.json",
+      "coverage": 0.88,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:25:57",
+      "file": "docs/熊猫资料/百度百科熊猫星图17.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图17.json",
+      "coverage": 0.88,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:28:29",
+      "file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图18.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:28:30",
+      "file": "docs/熊猫资料/百度百科熊猫星图19.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图19.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:28:30",
+      "file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图20.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:28:30",
+      "file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图21.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:30:03",
+      "file": "docs/熊猫资料/百度百科熊猫星图22.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图22.json",
+      "coverage": 0.9,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 21:30:03",
+      "file": "docs/熊猫资料/百度百科熊猫星图22.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图22.json",
+      "coverage": 0.9,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:12:28",
+      "file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图9.json",
+      "coverage": 0.8,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:12:28",
+      "file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图12.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:12:29",
+      "file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图13.json",
+      "coverage": 0.88,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:12:29",
+      "file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图16.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:12:29",
+      "file": "docs/熊猫资料/百度百科熊猫星图17.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图17.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:12:29",
+      "file": "docs/熊猫资料/百度百科熊猫星图22.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图22.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:34:40",
+      "file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图9.json",
+      "coverage": 0.84,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:34:40",
+      "file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图13.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:34:40",
+      "file": "docs/熊猫资料/百度百科熊猫星图17.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图17.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:49:30",
+      "file": "docs/熊猫资料/百度百科熊猫星图17.md",
+      "status": "needs_fix",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图17.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:55:59",
+      "file": "docs/熊猫资料/百度百科熊猫星图17.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图17.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 23:57:46",
+      "file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "status": "verified",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图9.json",
+      "coverage": 1.0,
+      "error": ""
+    }
+  ],
+  "file_status": {
+    "docs/熊猫资料/百度百科熊猫星图4.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:12:36",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图4.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图5.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 20:09:49",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图5.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图6.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 20:30:36",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图6.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图7.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:00:45",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图7.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图8.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:12:36",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图8.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图9.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 23:57:46",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图9.json",
+      "coverage": 1.0,
+      "error": "",
+      "fix_result_json": "data/wiki/panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2/panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2.json",
+      "fix_result_jsons": [
+        "data/wiki/panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2/panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2.json"
+      ]
+    },
+    "docs/熊猫资料/百度百科熊猫星图10.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:16:05",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图10.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图11.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:16:05",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图11.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图12.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 23:12:28",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图12.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图13.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 23:34:40",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图13.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图14.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:22:10",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图14.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图15.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:22:10",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图15.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图16.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 23:12:29",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图16.json",
+      "coverage": 0.96,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图17.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 23:55:59",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图17.json",
+      "coverage": 1.0,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图18.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:28:29",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图18.json",
+      "coverage": 0.92,
+      "error": "",
+      "fix_result_json": "data/wiki/panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2/panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2.json",
+      "fix_result_jsons": [
+        "data/wiki/panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2/panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2.json"
+      ]
+    },
+    "docs/熊猫资料/百度百科熊猫星图19.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:28:30",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图19.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图20.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:28:30",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图20.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图21.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 21:28:30",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图21.json",
+      "coverage": 0.92,
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图22.md": {
+      "status": "verified",
+      "done_at": "2026-09-08 23:12:29",
+      "report": "data/curated/starmap_verify_reports/百度百科熊猫星图22.json",
+      "coverage": 1.0,
+      "error": ""
+    }
+  }
+}

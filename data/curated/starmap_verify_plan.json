@@ -1,0 +1,40 @@
+{
+  "title": "百度百科熊猫星图多轮核验计划（熊猫资料）",
+  "category": "熊猫资料",
+  "source_glob": "docs/熊猫资料/百度百科熊猫星图{N}.md",
+  "policy": {
+    "files": "4-22",
+    "per_day": 1,
+    "coverage_threshold": 0.9,
+    "hard_dims": ["pedigree", "father", "mother", "birth_time"],
+    "full_reextract_gap_ratio": 0.4,
+    "note": "对照 profile 抽取规范与熊猫资料.md/2/3 档案密度；原文应有字段须覆盖。默认缺口补抽增量写库，不加 --clear。"
+  },
+  "commands": {
+    "status": "python scripts/verify_starmap_daily.py --status",
+    "audit": "python scripts/verify_starmap_daily.py --day 1",
+    "fix": "python scripts/verify_starmap_daily.py --day 1 --fix",
+    "self_check": "python scripts/verify_starmap_daily.py --self-check"
+  },
+  "items": [
+    {"day": 1, "date": "2026-09-07", "file": "docs/熊猫资料/百度百科熊猫星图4.md", "status": "pending"},
+    {"day": 2, "date": "2026-09-08", "file": "docs/熊猫资料/百度百科熊猫星图5.md", "status": "pending"},
+    {"day": 3, "date": "2026-09-09", "file": "docs/熊猫资料/百度百科熊猫星图6.md", "status": "pending"},
+    {"day": 4, "date": "2026-09-10", "file": "docs/熊猫资料/百度百科熊猫星图7.md", "status": "pending"},
+    {"day": 5, "date": "2026-09-11", "file": "docs/熊猫资料/百度百科熊猫星图8.md", "status": "pending"},
+    {"day": 6, "date": "2026-09-12", "file": "docs/熊猫资料/百度百科熊猫星图9.md", "status": "pending"},
+    {"day": 7, "date": "2026-09-13", "file": "docs/熊猫资料/百度百科熊猫星图10.md", "status": "pending"},
+    {"day": 8, "date": "2026-09-14", "file": "docs/熊猫资料/百度百科熊猫星图11.md", "status": "pending"},
+    {"day": 9, "date": "2026-09-15", "file": "docs/熊猫资料/百度百科熊猫星图12.md", "status": "pending"},
+    {"day": 10, "date": "2026-09-16", "file": "docs/熊猫资料/百度百科熊猫星图13.md", "status": "pending"},
+    {"day": 11, "date": "2026-09-17", "file": "docs/熊猫资料/百度百科熊猫星图14.md", "status": "pending"},
+    {"day": 12, "date": "2026-09-18", "file": "docs/熊猫资料/百度百科熊猫星图15.md", "status": "pending"},
+    {"day": 13, "date": "2026-09-19", "file": "docs/熊猫资料/百度百科熊猫星图16.md", "status": "pending"},
+    {"day": 14, "date": "2026-09-20", "file": "docs/熊猫资料/百度百科熊猫星图17.md", "status": "pending"},
+    {"day": 15, "date": "2026-09-21", "file": "docs/熊猫资料/百度百科熊猫星图18.md", "status": "pending"},
+    {"day": 16, "date": "2026-09-22", "file": "docs/熊猫资料/百度百科熊猫星图19.md", "status": "pending"},
+    {"day": 17, "date": "2026-09-23", "file": "docs/熊猫资料/百度百科熊猫星图20.md", "status": "pending"},
+    {"day": 18, "date": "2026-09-24", "file": "docs/熊猫资料/百度百科熊猫星图21.md", "status": "pending"},
+    {"day": 19, "date": "2026-09-25", "file": "docs/熊猫资料/百度百科熊猫星图22.md", "status": "pending"}
+  ]
+}

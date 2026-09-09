@@ -342,6 +342,19 @@ def _extract_keywords(question: str) -> List[str]:
     for m in re.finditer(r"[“「\"『]([^”」\"』]+)[”」\"』]", question):
         _add(m.group(1))
 
+    # 「大熊猫青宝 / 熊猫美美」显式抽出个体短名，避免整词无法匹配节点 id
+    # 在「出生/谱系」等字段词前截断，避免吃进「雪宝出生」
+    for m in re.finditer(
+        r"(?:大)?熊猫\s*([^\s，,。．；;：:？?！!、的了在是为被把给与和出]{1,12})",
+        question,
+    ):
+        _add(m.group(1).strip())
+    for m in re.finditer(
+        r"(?:大)?熊猫\s*([\u4e00-\u9fff]{1,8})(?=出生|谱系|父母|父亲|母亲|性别|昵称|又名)",
+        question,
+    ):
+        _add(m.group(1).strip())
+
     for phrase in sorted(zh_dict, key=len, reverse=True):
         if phrase in question:
             _add(phrase)
@@ -652,9 +665,12 @@ def _detect_intent(question: str) -> str:
         return "companion"
     if any(token in q for token in ["始熊猫", "化石", "禄丰", "元谋", "五一棚", "1972", "玲玲", "兴兴"]):
         return "history"
-    if any(token in q for token in ["福龙", "出生于", "哪里出生", "在哪里出生"]) or (
+    if any(token in q for token in ["福龙", "出生于", "哪里出生", "在哪里出生", "出生于哪里", "出生在哪里"]) or (
         "出生" in q and any(t in q for t in ["福龙", "福虎", "福豹", "美泉宫"])
     ):
+        return "profile"
+    # 「大熊猫X出生在哪里」优先个体档案，避免被泛化「哪里」打成栖息地意图
+    if "出生" in q and any(t in q for t in ["哪里", "哪儿", "何地"]):
         return "profile"
     if any(token in q for token in ["栖息", "居住", "分布", "哪里", "环境"]):
         return "habitat"
@@ -1061,8 +1077,21 @@ def _rank_and_dedup_rows(rows: List[Dict[str, str]]) -> List[Dict[str, str]]:
     return deduped
 
 
+def _strip_panda_name_prefix(token: str) -> str:
+    """去掉「大熊猫/熊猫」前缀，得到个体短名（大熊猫青宝 -> 青宝）。"""
+    item = str(token or "").strip()
+    if not item:
+        return ""
+    for prefix in ("大熊猫", "熊猫"):
+        if item.startswith(prefix) and len(item) > len(prefix):
+            rest = item[len(prefix) :].strip()
+            if rest:
+                return rest
+    return item
+
+
 def _prepare_query_keywords(keywords: List[str]) -> List[str]:
-    """去除过于泛化的词，避免检索被“大熊猫”等高频词污染。"""
+    """去除过于泛化的词，并展开「大熊猫X」为短名 X，避免检索对不上节点 id。"""
     deduped: List[str] = []
     seen: set[str] = set()
     for token in keywords:
@@ -1071,6 +1100,10 @@ def _prepare_query_keywords(keywords: List[str]) -> List[str]:
             continue
         seen.add(item)
         deduped.append(item)
+        short = _strip_panda_name_prefix(item)
+        if short and short != item and short not in seen:
+            seen.add(short)
+            deduped.append(short)
     if len(deduped) <= 1:
         return deduped
     generic = {"大熊猫", "熊猫"}
@@ -1165,6 +1198,8 @@ def _fetch_knowledge(
     if not keywords:
         keywords.append("大熊猫")
     keywords = _prepare_query_keywords(keywords)
+    # 有明确个体名时，不要把「父亲为/母亲为」等意图谓词塞进 UNWIND 检索词，
+    # 否则会淹没目标个体的谱系号/出生于等关系；谓词偏好仍由 intent_predicates 加分。
     query_terms = _merge_query_terms(keywords, intent_terms, intent_predicates)
     if not query_terms:
         query_terms = keywords or ["大熊猫"]
@@ -1247,10 +1282,60 @@ LIMIT $top_k
         "谱系",
         "谱系号",
         "双胞胎",
+        "多少",
+        "哪些",
+        "什么",
+        "哪里",
+        "哪儿",
+        "何地",
     }
-    entity_terms = [
-        t for t in keywords if t and t not in entity_noise and 1 < len(t) <= 6
-    ]
+    entity_terms: List[str] = []
+    entity_seen: set[str] = set()
+    for t in keywords:
+        if not t or t in entity_noise:
+            continue
+        for cand in (t, _strip_panda_name_prefix(t)):
+            if not cand:
+                continue
+            cand = cand.rstrip("的了吗呢吧啊")
+            if (
+                not cand
+                or cand in entity_noise
+                or cand in entity_seen
+                or cand.startswith("大熊猫")
+                or cand.startswith("熊猫")
+            ):
+                continue
+            if not (1 < len(cand) <= 6):
+                continue
+            entity_seen.add(cand)
+            entity_terms.append(cand)
+    # 锁定个体后收窄 query_terms，避免全家谱父母关系抢占 top_k
+    if entity_terms:
+        focused_intent = [
+            t
+            for t in intent_terms
+            if t
+            not in {
+                "父亲",
+                "母亲",
+                "父母",
+                "父亲为",
+                "母亲为",
+                "双胞胎",
+                "数量",
+                "野外数量",
+                "多少只",
+                "1864",
+                "调查",
+                "野生大熊猫",
+            }
+        ]
+        query_terms = _merge_query_terms(keywords, focused_intent)
+        if not query_terms:
+            query_terms = list(entity_terms) + ["谱系号", "出生于"]
+        require_intent = False
+        min_total_score = 8
     try:
         with driver.session(database=config.database) as session:
             candidate_sources = _select_candidate_sources(

@@ -1,0 +1,1013 @@
+{
+  "summary": {
+    "created_at": "2026-09-09T16:53:12",
+    "source_gaps": "reports/starmap_kb_spotcheck_gaps_20260909_160431.jsonl",
+    "fix_result_json": "data/wiki/panda_extract_20260909_163646_batch_dir_starmap_spotcheck_fix_n13/panda_extract_20260909_163646_batch_dir_starmap_spotcheck_fix_n13.json",
+    "total": 28,
+    "label_counts_after": {
+      "ok": 8,
+      "no_hit": 20
+    },
+    "improved": 8,
+    "still_gap": [
+      {
+        "round": 1,
+        "panda": "琳琳",
+        "dim": "birth_place",
+        "question": "大熊猫琳琳出生在哪里？",
+        "gold_answer": "中国大熊猫保护研究中心",
+        "gold_tokens": [
+          "中国大熊猫保护研究中心",
+          "中国大熊猫保",
+          "护研究中心"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 1,
+        "panda": "渝宝",
+        "dim": "birth_place",
+        "question": "大熊猫渝宝出生在哪里？",
+        "gold_answer": "重庆动物园",
+        "gold_tokens": [
+          "重庆动物园"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 1,
+        "panda": "龙升",
+        "dim": "pedigree",
+        "question": "大熊猫龙升的谱系号是多少？",
+        "gold_answer": "518",
+        "gold_tokens": [
+          "518",
+          "谱系号518",
+          "谱系号为518"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图14.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 19,
+        "answer": "知识库暂无足够依据。\n\n在提供的19条知识库检索结果中，仅有一条提及“龙升”：  \n- 第3条明确指出“龙升 -[母亲为]-> 月月”，但未提供其出生日期、出生地、谱系号、性别、父亲信息或其他档案细节。  \n其余条目均未出现“龙升”这一名称，也无任何与之关联的谱系号、繁育记录、迁居或认养信息。  \n\n由于谱系号是大熊猫个体在《中国大熊猫谱系》中的唯一编号，需由官方繁育机构（如成都大熊猫繁育研究基地、中国大熊猫保护研究中心）在幼仔出生并完成登记后正式赋予，而当前知识库中缺乏该个体的登记级信息，无法推定或补全其谱系号。\n\n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图14.md",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 1,
+        "panda": "雅雅",
+        "dim": "birth_place",
+        "question": "大熊猫雅雅出生在哪里？",
+        "gold_answer": "中国大熊猫保护研究中心",
+        "gold_tokens": [
+          "中国大熊猫保护研究中心",
+          "中国大熊猫保",
+          "护研究中心"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图13.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 2,
+        "panda": "林冰",
+        "dim": "birth_place",
+        "question": "大熊猫林冰出生在哪里？",
+        "gold_answer": "泰国清迈动物园",
+        "gold_tokens": [
+          "泰国清迈动物园",
+          "泰国清迈动物"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 3,
+        "panda": "禄禄仔",
+        "dim": "birth_place",
+        "question": "大熊猫禄禄仔出生在哪里？",
+        "gold_answer": "中国大熊猫保护研究中心",
+        "gold_tokens": [
+          "中国大熊猫保护研究中心",
+          "中国大熊猫保",
+          "护研究中心"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 5,
+        "panda": "良浜",
+        "dim": "birth_place",
+        "question": "大熊猫良浜出生在哪里？",
+        "gold_answer": "日本和歌山白浜野生动物园",
+        "gold_tokens": [
+          "日本和歌山白浜野生动物园",
+          "日本和歌山白",
+          "浜野生动物园"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 6,
+        "panda": "元晶",
+        "dim": "birth_place",
+        "question": "大熊猫元晶出生在哪里？",
+        "gold_answer": "北京动物园",
+        "gold_tokens": [
+          "北京动物园"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 6,
+        "panda": "雪宝",
+        "dim": "birth_place",
+        "question": "大熊猫雪宝出生在哪里？",
+        "gold_answer": "上海野生动物园",
+        "gold_tokens": [
+          "上海野生动物园",
+          "上海野生动物"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图4.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 6,
+        "panda": "萌玉",
+        "dim": "birth_place",
+        "question": "大熊猫萌玉出生在哪里？",
+        "gold_answer": "成都大熊猫繁育研究基地",
+        "gold_tokens": [
+          "成都大熊猫繁育研究基地",
+          "成都大熊猫繁",
+          "育研究基地"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 7,
+        "panda": "悦悦",
+        "dim": "pedigree",
+        "question": "大熊猫悦悦的谱系号是多少？",
+        "gold_answer": "969",
+        "gold_tokens": [
+          "969",
+          "谱系号969",
+          "谱系号为969"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图20.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。\n\n检索结果中虽多次提及“悦悦”，但均未提供其谱系号信息：\n\n- 条目3和4确认悦悦的父母为大熊猫琳琳和婷婷；  \n- 条目20明确其出生于2015年8月9日，地点为广州长隆野生动物世界；  \n- 条目16提到另一只名为“加悦悦”的个体（为旅加大熊猫二顺所生），但该“加悦悦”属境外出生、带“加”字前缀的命名体系，与广州长隆出生的悦悦无证据表明为同一实体；  \n- 其余条目涉及其他熊猫个体（如奇福、大双、功仔、莽仔、渝爱等）的谱系号，但未关联到悦悦。\n\n因此，关于“大熊猫悦悦”的谱系号，当前知识库未收录该关键档案信息。\n\n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图20.md  \n- 来源：D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图17\\part_02.md",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 7,
+        "panda": "升谊",
+        "dim": "birth_place",
+        "question": "大熊猫升谊出生在哪里？",
+        "gold_answer": "马来西亚国家动物园",
+        "gold_tokens": [
+          "马来西亚国家动物园",
+          "马来西亚国家",
+          "动物园"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图16.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 8,
+        "panda": "毛竹",
+        "dim": "birth_place",
+        "question": "大熊猫毛竹出生在哪里？",
+        "gold_answer": "成都大熊猫繁育基地",
+        "gold_tokens": [
+          "成都大熊猫繁育基地",
+          "成都大熊猫繁",
+          "育基地"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 8,
+        "panda": "雪雪",
+        "dim": "birth_place",
+        "question": "大熊猫雪雪出生在哪里？",
+        "gold_answer": "四川省宝兴县野外",
+        "gold_tokens": [
+          "四川省宝兴县野外",
+          "四川省宝兴县",
+          "野外"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 8,
+        "panda": "泰山",
+        "dim": "birth_place",
+        "question": "大熊猫泰山出生在哪里？",
+        "gold_answer": "华盛顿国家动物园",
+        "gold_tokens": [
+          "华盛顿国家动物园",
+          "华盛顿国家动",
+          "物园"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 9,
+        "panda": "张卡",
+        "dim": "birth_place",
+        "question": "大熊猫张卡出生在哪里？",
+        "gold_answer": "四川宝兴蜂桶寨国家级自然保护区",
+        "gold_tokens": [
+          "四川宝兴蜂桶寨国家级自然保护区",
+          "四川宝兴蜂桶",
+          "寨国家级自然",
+          "保护区"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 9,
+        "panda": "明浜",
+        "dim": "birth_place",
+        "question": "大熊猫明浜出生在哪里？",
+        "gold_answer": "日本和歌山白浜野生动物园",
+        "gold_tokens": [
+          "日本和歌山白浜野生动物园",
+          "日本和歌山白",
+          "浜野生动物园"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 10,
+        "panda": "鑫宝",
+        "dim": "birth_place",
+        "question": "大熊猫鑫宝出生在哪里？",
+        "gold_answer": "中国大熊猫保护研究中心",
+        "gold_tokens": [
+          "中国大熊猫保护研究中心",
+          "中国大熊猫保",
+          "护研究中心"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 10,
+        "panda": "津柯",
+        "dim": "birth_place",
+        "question": "大熊猫津柯出生在哪里？",
+        "gold_answer": "中国大熊猫保护研究中心",
+        "gold_tokens": [
+          "中国大熊猫保护研究中心",
+          "中国大熊猫保",
+          "护研究中心"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图18.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "round": 10,
+        "panda": "思念",
+        "dim": "birth_place",
+        "question": "大熊猫思念出生在哪里？",
+        "gold_answer": "成都大熊猫繁育研究基地",
+        "gold_tokens": [
+          "成都大熊猫繁育研究基地",
+          "成都大熊猫繁",
+          "育研究基地"
+        ],
+        "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+        "gap_label_before": "no_hit",
+        "gap_label_after": "no_hit",
+        "token_cover_before": 0.0,
+        "token_cover_after": 0.0,
+        "rows_count": 20,
+        "answer": "知识库暂无足够依据。",
+        "ok": true,
+        "error": ""
+      }
+    ]
+  },
+  "results": [
+    {
+      "round": 1,
+      "panda": "琳琳",
+      "dim": "pedigree",
+      "question": "大熊猫琳琳的谱系号是多少？",
+      "gold_answer": "455",
+      "gold_tokens": [
+        "455",
+        "谱系号455",
+        "谱系号为455"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "ok",
+      "token_cover_before": 0.0,
+      "token_cover_after": 1.0,
+      "rows_count": 19,
+      "answer": "大熊猫琳琳的谱系号是455。\n\n基本信息：  \n- 琳琳为雄性大熊猫，生于1997年8月2日，卒于2015年11月6日，享年18岁3个月。  \n\n谱系编号：  \n- 其官方登记谱系号为455，该编号由中国大熊猫保护研究中心统一编制，用于全国圈养大熊猫谱系档案管理。  \n\n出生与饲养机构：  \n- 出生于中国大熊猫保护研究中心核桃坪野化培训基地（注意：该基地属圈养繁育体系中的野化培训单元，非完全野外环境）。  \n- 核桃坪基地自2000年代初起承担大熊猫野化放归前期培训任务，琳琳作为早期在此出生的个体，具有承前启后的种群代表性。  \n\n父母与后代：  \n- 父亲为新兴（谱系号未在知识库中直接提供），母亲为白雪（谱系号亦未提供）；二者均为圈养种群重要繁殖个体。  \n- 琳琳作为种公兽参与多胎繁殖，已知后代包括：网网（谱系号620）、蜀云等，体现其在谱系延续中的实际贡献。  \n\n补充说明：  \n- 谱系号455表明琳琳属于中国圈养大熊猫种群早期系统化建档阶段的个体（谱系号1号为1963年出生的“美美”），其编号顺序反映其在1990年代中后期种群扩繁进程中的位置。  \n- 琳琳未参与野外放归，其一生主要在核桃坪基地生活，符合当时以“人工繁育支撑野化研究”的阶段性定位。\n\n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图5.md  \n- 来源：D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图10\\part_04.md  \n- 来源：D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图10\\part_02.md",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 1,
+      "panda": "琳琳",
+      "dim": "birth_place",
+      "question": "大熊猫琳琳出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 1,
+      "panda": "渝宝",
+      "dim": "birth_place",
+      "question": "大熊猫渝宝出生在哪里？",
+      "gold_answer": "重庆动物园",
+      "gold_tokens": [
+        "重庆动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 1,
+      "panda": "龙升",
+      "dim": "pedigree",
+      "question": "大熊猫龙升的谱系号是多少？",
+      "gold_answer": "518",
+      "gold_tokens": [
+        "518",
+        "谱系号518",
+        "谱系号为518"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图14.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 19,
+      "answer": "知识库暂无足够依据。\n\n在提供的19条知识库检索结果中，仅有一条提及“龙升”：  \n- 第3条明确指出“龙升 -[母亲为]-> 月月”，但未提供其出生日期、出生地、谱系号、性别、父亲信息或其他档案细节。  \n其余条目均未出现“龙升”这一名称，也无任何与之关联的谱系号、繁育记录、迁居或认养信息。  \n\n由于谱系号是大熊猫个体在《中国大熊猫谱系》中的唯一编号，需由官方繁育机构（如成都大熊猫繁育研究基地、中国大熊猫保护研究中心）在幼仔出生并完成登记后正式赋予，而当前知识库中缺乏该个体的登记级信息，无法推定或补全其谱系号。\n\n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图14.md",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 1,
+      "panda": "雅雅",
+      "dim": "birth_place",
+      "question": "大熊猫雅雅出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 2,
+      "panda": "林冰",
+      "dim": "birth_place",
+      "question": "大熊猫林冰出生在哪里？",
+      "gold_answer": "泰国清迈动物园",
+      "gold_tokens": [
+        "泰国清迈动物园",
+        "泰国清迈动物"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 3,
+      "panda": "园子",
+      "dim": "pedigree",
+      "question": "大熊猫园子的谱系号是多少？",
+      "gold_answer": "736",
+      "gold_tokens": [
+        "736",
+        "谱系号736",
+        "谱系号为736"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "ok",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.6667,
+      "rows_count": 20,
+      "answer": "大熊猫园子的谱系号是736。\n\n基本信息：  \n- 园子，又名圆仔，是一只雄性大熊猫，2008年9月6日出生于成都大熊猫繁育研究基地。  \n- 初生体重为152克，属正常新生大熊猫体重范围。\n\n亲缘关系：  \n- 母亲为园园（谱系号561），父亲为屏屏（曾为被救助的野生大熊猫，亦为奇福、奇妙等个体的父亲）。  \n- 屏屏在圈养繁育中具有重要地位，参与多胎繁殖，其后代分布于多个动物园及科研基地。\n\n后代情况：  \n- 园子作为父亲已育有后代，例如旅法大熊猫“欢欢”所生的双胞胎——欢黎黎与圆嘟嘟（2021年8月2日出生于法国博瓦勒动物园），其中圆嘟嘟的母亲为欢欢，父亲即为园子。  \n- 这表明园子不仅完成国内繁育任务，也参与了国际合作繁育项目。\n\n命名与身份辨析：  \n- “园子”与“圆仔”为同一熊猫的常用名与昵称，需注意区别于其他名称相近个体（如“园园”“圆圆”“圆仔”在不同语境下可能指代不同熊猫，但本例中明确指向谱系号736的雄性个体）。  \n- 其名字“园子”可能源于母亲“园园”的命名逻辑，体现中国大熊猫命名中常见的家族关联传统。\n\n保护与科研意义：  \n- 作为2008年汶川地震后成都基地较早出生的一批幼崽之一（虽非最早，如奇福生于同年7月），园子的成长与繁育反映了灾后大熊猫人工繁育体系的持续恢复能力。  \n- 其谱系号736位于中国大熊猫谱系登记序列中段，说明其属于21世纪初圈养种群快速扩繁阶段的重要成员。\n\n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图6.md  \n- 来源：D:\\panda\\docs\\熊猫资料\\熊猫资料3.md  \n- 来源：D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图7\\part_01.md",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 3,
+      "panda": "禄禄仔",
+      "dim": "birth_place",
+      "question": "大熊猫禄禄仔出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 3,
+      "panda": "安安",
+      "dim": "pedigree",
+      "question": "大熊猫安安的谱系号是多少？",
+      "gold_answer": "1183",
+      "gold_tokens": [
+        "1183",
+        "谱系号1183",
+        "谱系号为1183"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "ok",
+      "token_cover_before": 0.0,
+      "token_cover_after": 1.0,
+      "rows_count": 20,
+      "answer": "大熊猫安安存在多个同名个体，知识库中明确记载了至少三位名为“安安”的大熊猫，分别对应不同出生时间、地点、谱系号及生平经历。其中，谱系号为1183的安安是2019年出生于卧龙神树坪基地的圈养个体；谱系号为327的安安是1986年出生于四川宝兴野外、后被救助并赠与香港的著名长寿个体；另有一位2013年出生于陕西秦岭的安安，但其谱系号未在知识库中给出。\n\n因此，针对问题“大熊猫安安的谱系号是多少？”，需依据具体所指个体予以区分。若无额外限定条件（如出生年份、所在地或父母信息），则无法唯一确定单一谱系号。\n\n以下按最常被检索及资料最完整的两位主要个体分别说明：\n\n谱系号确认：  \n- 谱系号1183对应2019年6月28日出生于中国大熊猫保护研究中心卧龙神树坪基地的雄性大熊猫安安；  \n- 谱系号327对应1986年出生于四川宝兴县野外、2022年于香港海洋公园去世的雄性大熊猫安安。\n\n出生背景：  \n- 1183号安安为人工繁育个体，出生地为卧龙神树坪基地，属中国大熊猫保护研究中心管理体系下的圈养种群；  \n- 327号安安为野生出生个体，幼年在四川宝兴被发现并实施救助，后纳入圈养管理，是早期野捕转圈养代表之一；  \n- 另一位2013年出生于陕西省珍稀野生动物抢救饲养研究中心（现秦岭大熊猫研究中心）的安安，知识库未提供其谱系号。\n\n父母信息：  \n- 1183号安安的母亲为林冰（知识库条目1、4、5、11）；另有条目提及母亲为珠珠（条目8），但该信息与其他多项一致证据冲突，暂视为记录歧义或同名误标；  \n- 327号安安为野外出生，父母未知，知识库未记载其亲缘关系（条目3、9）；  \n- 2013年陕西出生的安安，知识库未提供父母信息（条目18、19）。\n\n公众认知与重要性：  \n- 谱系号327的安安具有极高公众知名度：1999年作为国礼赠予香港，与雌性大熊猫佳佳共同生活于香",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 4,
+      "panda": "梦梦",
+      "dim": "pedigree",
+      "question": "大熊猫梦梦的谱系号是多少？",
+      "gold_answer": "868",
+      "gold_tokens": [
+        "868",
+        "谱系号868",
+        "谱系号为868"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "ok",
+      "token_cover_before": 0.0,
+      "token_cover_after": 1.0,
+      "rows_count": 20,
+      "answer": "1) 全面回答：  \n大熊猫梦梦的谱系号为868。她是一只雌性大熊猫，父母分别为大熊猫勇勇（父亲）和二丫头（母亲），相关信息在熊猫谱系档案中有明确登记。\n\n谱系号：  \n- 梦梦的官方谱系号为868，该编号属于中国大熊猫谱系登记体系中的唯一识别码，用于追踪其血缘、繁育及个体管理信息。  \n\n亲缘关系：  \n- 父亲为大熊猫勇勇，母亲为大熊猫二丫头，这一亲子关系在多个来源中一致确认。  \n- 勇勇亦为其他知名个体（如和盛）的父亲，显示其在圈养种群繁育中具有重要地位。  \n\n出生与归属：  \n- 知识库未提供梦梦的具体出生日期、出生地及是否参与过交流、野化或认养等后续经历；其基础档案目前仅涵盖谱系号与双亲信息。  \n\n分类学与保护背景：  \n- 作为圈养大熊猫个体，梦梦属于食肉目熊科大熊猫属（Ailuropoda melanoleuca），其谱系号纳入全国大熊猫谱系簿统一管理，服务于物种遗传多样性保护与科学繁育规划。  \n\n补充说明：  \n- 谱系号868表明梦梦出生于21世纪初至中期的圈养繁殖高峰期，大致时间可能在2000年代中后期（参考邻近编号个体如功仔711、奇福709、莽仔829的时间分布），但知识库未给出确切出生年份，故不作推定。  \n\n依据来源：  \n- 来源: D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图9.md  \n- 来源: D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图9.md",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 5,
+      "panda": "良浜",
+      "dim": "birth_place",
+      "question": "大熊猫良浜出生在哪里？",
+      "gold_answer": "日本和歌山白浜野生动物园",
+      "gold_tokens": [
+        "日本和歌山白浜野生动物园",
+        "日本和歌山白",
+        "浜野生动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 6,
+      "panda": "元晶",
+      "dim": "birth_place",
+      "question": "大熊猫元晶出生在哪里？",
+      "gold_answer": "北京动物园",
+      "gold_tokens": [
+        "北京动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 6,
+      "panda": "雪宝",
+      "dim": "birth_place",
+      "question": "大熊猫雪宝出生在哪里？",
+      "gold_answer": "上海野生动物园",
+      "gold_tokens": [
+        "上海野生动物园",
+        "上海野生动物"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图4.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 6,
+      "panda": "萌玉",
+      "dim": "pedigree",
+      "question": "大熊猫萌玉的谱系号是多少？",
+      "gold_answer": "1123",
+      "gold_tokens": [
+        "1123",
+        "谱系号1123",
+        "谱系号为1123"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "ok",
+      "token_cover_before": 0.0,
+      "token_cover_after": 1.0,
+      "rows_count": 20,
+      "answer": "大熊猫萌玉的谱系号是1123。\n\n基本信息：  \n- 萌玉为雌性大熊猫，2018年5月23日出生于成都大熊猫繁育研究基地。  \n- 其母亲为北京动物园大熊猫萌萌，父亲为四川大熊猫美兰。\n\n谱系编号：  \n- 萌玉的正式谱系号为1123，该编号由中国大熊猫谱系登记系统统一编制，用于标识其在人工圈养种群中的个体序位及遗传谱系位置。\n\n亲缘关系：  \n- 母亲萌萌（北京动物园个体），父亲美兰（来自四川的大熊猫），属跨机构配对繁殖个案，体现国内圈养种群间基因交流的实践。  \n- 该配对未见于知识库中其他个体记录，目前仅确认萌玉为其唯一已知后代。\n\n出生与饲养背景：  \n- 尽管父母分属不同单位，萌玉本人出生并早期饲养于成都大熊猫繁育研究基地，符合我国多数圈养大熊猫幼崽在专业繁育基地集中哺育与成长的常规管理路径。\n\n补充说明：  \n- 谱系号1123表明其属于我国圈养大熊猫谱系中较晚出生的一代（2010年代后期），对应谱系总规模已逾千只的阶段；该编号本身不直接反映血缘亲疏，但结合父母谱系信息可追溯其家族分支。\n\n来源：  \n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图12.md",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 6,
+      "panda": "萌玉",
+      "dim": "birth_place",
+      "question": "大熊猫萌玉出生在哪里？",
+      "gold_answer": "成都大熊猫繁育研究基地",
+      "gold_tokens": [
+        "成都大熊猫繁育研究基地",
+        "成都大熊猫繁",
+        "育研究基地"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 7,
+      "panda": "美美",
+      "dim": "pedigree",
+      "question": "大熊猫美美的谱系号是多少？",
+      "gold_answer": "152",
+      "gold_tokens": [
+        "152",
+        "谱系号152",
+        "谱系号为152"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "ok",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.6667,
+      "rows_count": 20,
+      "answer": "结论：大熊猫美美存在多位同名个体，知识库中明确记载谱系号的有三位，分别为谱系号152、217和1143；其中谱系号217与“成成”“蓉浜”的母亲身份相吻合，属最常被文献引述的“美美”，应为问题所指主体。\n\n出生信息：  \n- 美美（谱系号217）出生于1969年，卒于2005年7月12日，出生地为四川省美姑县野外。  \n- 另有记录称其出生于1972年（谱系号152），但该条目未提及其后代关系，且卒年为1992年，与作为成成、蓉浜之母的时间线不符。  \n- 谱系号1143的美美出生时间为2018年7月25日，地点为中国大熊猫保护研究中心核桃坪野化培训基地，属新生代个体，不可能是成成（1985年出生）之母。\n\n亲缘关系：  \n- 美美（谱系号217）是成成（谱系号297）的母亲，成成为“成家班”始祖，育有成功、花嘴巴等后代。  \n- 美美（谱系号217）亦是蓉浜（谱系号389）的母亲，蓉浜1992年出生，1997年去世。  \n- 其母亲为野生救助个体草草，表明美美属人工圈养早期一代，具有重要谱系奠基意义。\n\n谱系号差异说明：  \n- 谱系号152见于一份标注1972年出生、1992年去世的记录，时间跨度与作为成成之母（成成1985年出生）存在逻辑冲突，可能为另一只同名个体或早期登记误差。  \n- 谱系号1143对应2018年出生的年轻个体，属第三代圈养熊猫，与前述两位无亲缘重叠，属同名不同个体。  \n- 中国大熊猫谱系编号由“中国大熊猫保护研究中心”统一管理，同一时期不会重复编号；不同编号指向不同个体，需结合出生年份、父母、后代交叉验证。\n\n补充说明：  \n- “美美”是大熊猫圈养种群中高频使用的昵称，历史上至少有十余只个体使用该名，常见于成都动物园、卧龙基地及各繁育单位。  \n- 在缺乏唯一标识（如身份证号、DNA档案编号）的情况下，须严格依据出生年份、父母、后代、栖息地等",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 7,
+      "panda": "悦悦",
+      "dim": "pedigree",
+      "question": "大熊猫悦悦的谱系号是多少？",
+      "gold_answer": "969",
+      "gold_tokens": [
+        "969",
+        "谱系号969",
+        "谱系号为969"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。\n\n检索结果中虽多次提及“悦悦”，但均未提供其谱系号信息：\n\n- 条目3和4确认悦悦的父母为大熊猫琳琳和婷婷；  \n- 条目20明确其出生于2015年8月9日，地点为广州长隆野生动物世界；  \n- 条目16提到另一只名为“加悦悦”的个体（为旅加大熊猫二顺所生），但该“加悦悦”属境外出生、带“加”字前缀的命名体系，与广州长隆出生的悦悦无证据表明为同一实体；  \n- 其余条目涉及其他熊猫个体（如奇福、大双、功仔、莽仔、渝爱等）的谱系号，但未关联到悦悦。\n\n因此，关于“大熊猫悦悦”的谱系号，当前知识库未收录该关键档案信息。\n\n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图20.md  \n- 来源：D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图17\\part_02.md",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 7,
+      "panda": "升谊",
+      "dim": "birth_place",
+      "question": "大熊猫升谊出生在哪里？",
+      "gold_answer": "马来西亚国家动物园",
+      "gold_tokens": [
+        "马来西亚国家动物园",
+        "马来西亚国家",
+        "动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 8,
+      "panda": "毛竹",
+      "dim": "parents",
+      "question": "大熊猫毛竹的父母是谁？",
+      "gold_answer": "父亲为海归大熊猫雄浜",
+      "gold_tokens": [
+        "海归大熊猫雄浜"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "ok",
+      "token_cover_before": 0.0,
+      "token_cover_after": 1.0,
+      "rows_count": 20,
+      "answer": "大熊猫毛竹的父母是母亲毛毛、父亲雄浜。\n\n出生信息：  \n- 毛竹为雌性大熊猫，出生于2014年7月26日；  \n- 出生地为成都大熊猫繁育研究基地（部分资料称“成都大熊猫繁育基地”，二者指同一机构）；  \n- 与另一只大熊猫毛笋为龙凤胎（毛笋为雌性，毛竹为雄性——但知识库明确标注毛竹性别为雌性，毛笋亦为雌性，故实际应为同性双胞胎；此处以知识库为准，即二者均为雌性，属同卵或异卵双生，但未说明是否单卵）。\n\n父母身份：  \n- 母亲为大熊猫毛毛，系2008年北京奥运会吉祥物“晶晶”的原型，具有重要文化象征意义；  \n- 父亲为海归大熊猫雄浜，曾旅居海外（具体国家未说明），后回国参与圈养种群繁育。\n\n谱系与亲属关系：  \n- 毛竹无提供谱系号，知识库中未见其官方谱系编号记录；  \n- 其同胞为毛笋（同日出生、同父母，谱系号919），二者为双胞胎姐妹；  \n- 毛毛作为母亲，还育有其他后代（知识库未列全），但毛竹与毛笋是其知名子代。\n\n补充说明：  \n- “毛竹”一名取自竹类植物，延续了成都基地以竹命名熊猫幼崽的传统（如毛笋、竹韵、翠翠等）；  \n- 雄浜作为父亲，在圈养种群遗传管理中具有一定代表性，其后代分布于多个合作繁育单位；  \n- 毛毛与雄浜的配对属于人工辅助交配或自然交配成功案例，体现成都基地在大熊猫繁殖技术上的实践成果。\n\n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图15.md  \n- 来源：D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图15\\part_03.md  \n- 来源：D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图8\\part_02.md",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 8,
+      "panda": "毛竹",
+      "dim": "birth_place",
+      "question": "大熊猫毛竹出生在哪里？",
+      "gold_answer": "成都大熊猫繁育基地",
+      "gold_tokens": [
+        "成都大熊猫繁育基地",
+        "成都大熊猫繁",
+        "育基地"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 8,
+      "panda": "雪雪",
+      "dim": "birth_place",
+      "question": "大熊猫雪雪出生在哪里？",
+      "gold_answer": "四川省宝兴县野外",
+      "gold_tokens": [
+        "四川省宝兴县野外",
+        "四川省宝兴县",
+        "野外"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 8,
+      "panda": "泰山",
+      "dim": "birth_place",
+      "question": "大熊猫泰山出生在哪里？",
+      "gold_answer": "华盛顿国家动物园",
+      "gold_tokens": [
+        "华盛顿国家动物园",
+        "华盛顿国家动",
+        "物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 9,
+      "panda": "张卡",
+      "dim": "pedigree",
+      "question": "大熊猫张卡的谱系号是多少？",
+      "gold_answer": "505",
+      "gold_tokens": [
+        "505",
+        "谱系号505",
+        "谱系号为505"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "ok",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.6667,
+      "rows_count": 20,
+      "answer": "大熊猫张卡的谱系号是505。\n\n基本信息：  \n- 张卡为雌性野生大熊猫，2000年秋出生于四川宝兴蜂桶寨国家级自然保护区，属典型的野外出生个体，后纳入中国大熊猫谱系管理体系。  \n\n谱系号确认：  \n- 其谱系号明确记载为505，该编号属于中国大熊猫保护研究中心建立的全国大熊猫谱系登记系统中的正式编号，用于唯一标识个体及其血缘关系。  \n\n亲子关系：  \n- 张卡是张梦（谱系号916）和张想的母亲，两者的父亲均为野生大熊猫白杨，表明张卡在圈养半野化环境中成功参与繁殖，并育有至少两只后代。  \n\n野外来源与保护意义：  \n- 作为宝兴蜂桶寨自然保护区出生的野生个体，张卡代表了岷山山系大熊猫种群的遗传资源，其谱系号505也反映其在早期谱系建档阶段即被纳入监测与管理，具有重要的种质保存价值。  \n\n补充说明：  \n- 目前知识库中未提及张卡的死亡时间、现存状态、是否参与野化放归、具体救助或捕获时间等信息；亦无其配偶白杨的谱系号记录。  \n\n- 来源：D:\\panda\\sandbox\\starmap_spotcheck_fix\\百度百科熊猫星图12.md  \n- 来源：D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图14\\part_02.md  \n- 来源：D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图6\\gap_01.md",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 9,
+      "panda": "张卡",
+      "dim": "birth_place",
+      "question": "大熊猫张卡出生在哪里？",
+      "gold_answer": "四川宝兴蜂桶寨国家级自然保护区",
+      "gold_tokens": [
+        "四川宝兴蜂桶寨国家级自然保护区",
+        "四川宝兴蜂桶",
+        "寨国家级自然",
+        "保护区"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 9,
+      "panda": "明浜",
+      "dim": "birth_place",
+      "question": "大熊猫明浜出生在哪里？",
+      "gold_answer": "日本和歌山白浜野生动物园",
+      "gold_tokens": [
+        "日本和歌山白浜野生动物园",
+        "日本和歌山白",
+        "浜野生动物园"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 10,
+      "panda": "鑫宝",
+      "dim": "birth_place",
+      "question": "大熊猫鑫宝出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 10,
+      "panda": "津柯",
+      "dim": "birth_place",
+      "question": "大熊猫津柯出生在哪里？",
+      "gold_answer": "中国大熊猫保护研究中心",
+      "gold_tokens": [
+        "中国大熊猫保护研究中心",
+        "中国大熊猫保",
+        "护研究中心"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    },
+    {
+      "round": 10,
+      "panda": "思念",
+      "dim": "birth_place",
+      "question": "大熊猫思念出生在哪里？",
+      "gold_answer": "成都大熊猫繁育研究基地",
+      "gold_tokens": [
+        "成都大熊猫繁育研究基地",
+        "成都大熊猫繁",
+        "育研究基地"
+      ],
+      "source_file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "gap_label_before": "no_hit",
+      "gap_label_after": "no_hit",
+      "token_cover_before": 0.0,
+      "token_cover_after": 0.0,
+      "rows_count": 20,
+      "answer": "知识库暂无足够依据。",
+      "ok": true,
+      "error": ""
+    }
+  ]
+}

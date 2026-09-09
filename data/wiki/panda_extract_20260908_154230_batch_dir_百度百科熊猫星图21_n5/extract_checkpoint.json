@@ -1,0 +1,11 @@
+{
+  "updated_at": "2026-09-08T15:46:07.607335",
+  "results_by_source": {},
+  "errors_by_source": {
+    "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图21\\part_02.md": "APIConnectionError: Connection error.",
+    "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图21\\part_01.md": "APIConnectionError: Connection error.",
+    "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图21\\part_03.md": "APIConnectionError: Connection error.",
+    "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图21\\part_04.md": "APIConnectionError: Connection error.",
+    "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图21\\part_05.md": "APIConnectionError: Connection error."
+  }
+}

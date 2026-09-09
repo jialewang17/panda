@@ -1,0 +1,439 @@
+{
+  "mode": "batch_dir",
+  "source_file": "",
+  "source_dir": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图22",
+  "category": "熊猫资料",
+  "rumor_mode": false,
+  "profile_mode": true,
+  "files_count": 1,
+  "files": [
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图22\\gap_01.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [
+          "梅清-性别为-雌性",
+          "绅威-性别为-雄性"
+        ],
+        "place_entities": [
+          "广州长隆野生动物世界-属于-Place"
+        ],
+        "panda_aliases": [
+          "亲亲-又名-亲亲",
+          "爱爱-又名-爱爱",
+          "国庆-又名-国庆"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "亲亲-现居地-广州长隆野生动物世界",
+          "爱爱-现居地-广州长隆野生动物世界",
+          "国庆-现居地-广州长隆野生动物世界"
+        ],
+        "biology_terms": [
+          "亲亲-谱系号-未提供",
+          "爱爱-谱系号-未提供",
+          "国庆-谱系号-未提供",
+          "亲亲-性别为-雄性",
+          "爱爱-性别为-雄性",
+          "国庆-性别为-雄性",
+          "亲亲-出生于-广州长隆野生动物世界",
+          "爱爱-出生于-广州长隆野生动物世界",
+          "国庆-出生于-广州长隆野生动物世界",
+          "亲亲-出生时间-2016年10月9日",
+          "爱爱-出生时间-2016年10月9日",
+          "国庆-出生时间-2019年9月30日13:50",
+          "亲亲-出生体重-未提供",
+          "爱爱-出生体重-未提供",
+          "国庆-出生体重-未提供",
+          "亲亲-父亲为-绅威",
+          "爱爱-父亲为-绅威",
+          "国庆-父亲为-绅威",
+          "亲亲-母亲为-梅清",
+          "爱爱-母亲为-梅清",
+          "国庆-母亲为-梅清"
+        ],
+        "behavior_terms": [
+          "亲亲-昵称为-亲亲",
+          "爱爱-昵称为-爱爱",
+          "国庆-昵称为-国庆"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [
+          "亲亲-同胞为-爱爱",
+          "爱爱-同胞为-亲亲"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "亲亲",
+            "predicate": "母亲为",
+            "object": "梅清",
+            "object_type": "Person",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子，出生地是广州长隆野生动物世界。"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "母亲为",
+            "object": "梅清",
+            "object_type": "Person",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子，出生地是广州长隆野生动物世界。"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "父亲为",
+            "object": "绅威",
+            "object_type": "Person",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子，出生地是广州长隆野生动物世界。"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "父亲为",
+            "object": "绅威",
+            "object_type": "Person",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子，出生地是广州长隆野生动物世界。"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "出生时间",
+            "object": "2016年10月9日",
+            "object_type": "Biology",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”。"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "出生时间",
+            "object": "2016年10月9日",
+            "object_type": "Biology",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”。"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "出生于",
+            "object": "广州长隆野生动物世界",
+            "object_type": "Place",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”。"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "出生于",
+            "object": "广州长隆野生动物世界",
+            "object_type": "Place",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”。"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "出生时间",
+            "object": "2019年9月30日13:50",
+            "object_type": "Biology",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”。"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "出生于",
+            "object": "广州长隆野生动物世界",
+            "object_type": "Place",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”。"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "昵称为",
+            "object": "国庆",
+            "object_type": "Alias",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”。"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "昵称为",
+            "object": "亲亲",
+            "object_type": "Alias",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”。"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "昵称为",
+            "object": "爱爱",
+            "object_type": "Alias",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”。"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "同胞为",
+            "object": "爱爱",
+            "object_type": "Biology",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "同胞为",
+            "object": "亲亲",
+            "object_type": "Biology",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "母亲为",
+            "object": "梅清",
+            "object_type": "Person",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”。"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "父亲为",
+            "object": "绅威",
+            "object_type": "Person",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”。"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "母亲为",
+            "object": "梅清",
+            "object_type": "Person",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "父亲为",
+            "object": "绅威",
+            "object_type": "Person",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "母亲为",
+            "object": "梅清",
+            "object_type": "Person",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "父亲为",
+            "object": "绅威",
+            "object_type": "Person",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "出生于",
+            "object": "广州长隆野生动物世界",
+            "object_type": "Place",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "出生于",
+            "object": "广州长隆野生动物世界",
+            "object_type": "Place",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "出生时间",
+            "object": "2016年10月9日",
+            "object_type": "Biology",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "出生时间",
+            "object": "2016年10月9日",
+            "object_type": "Biology",
+            "evidence": "2016年10月9日，“梅清”再次在长隆诞下熊猫双胞胎“亲亲”“爱爱”"
+          },
+          {
+            "subject": "亲亲",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子"
+          },
+          {
+            "subject": "爱爱",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫亲亲爱爱是大熊猫梅清与绅威于2016年所生的一对双胞胎儿子"
+          },
+          {
+            "subject": "隆隆",
+            "predicate": "母亲为",
+            "object": "梅清",
+            "object_type": "Person",
+            "evidence": "2013年7月31日，“梅清”在长隆野生动物世界诞下华南地区首只大熊猫宝宝“隆隆”"
+          },
+          {
+            "subject": "隆隆",
+            "predicate": "出生于",
+            "object": "广州长隆野生动物世界",
+            "object_type": "Place",
+            "evidence": "2013年7月31日，“梅清”在长隆野生动物世界诞下华南地区首只大熊猫宝宝“隆隆”"
+          },
+          {
+            "subject": "隆隆",
+            "predicate": "出生时间",
+            "object": "2013年7月31日",
+            "object_type": "Biology",
+            "evidence": "2013年7月31日，“梅清”在长隆野生动物世界诞下华南地区首只大熊猫宝宝“隆隆”"
+          },
+          {
+            "subject": "隆隆",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "2013年7月31日，“梅清”在长隆野生动物世界诞下华南地区首只大熊猫宝宝“隆隆”"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "母亲为",
+            "object": "梅清",
+            "object_type": "Person",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "父亲为",
+            "object": "绅威",
+            "object_type": "Person",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "出生于",
+            "object": "广州长隆野生动物世界",
+            "object_type": "Place",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "出生时间",
+            "object": "2019年9月30日",
+            "object_type": "Biology",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”"
+          },
+          {
+            "subject": "国庆",
+            "predicate": "昵称为",
+            "object": "国庆",
+            "object_type": "Alias",
+            "evidence": "2019年9月30日13:50产下熊猫小宝宝，取名“国庆”"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [
+          "梅清-性别为-雌性",
+          "绅威-性别为-雄性"
+        ],
+        "地点": [
+          "广州长隆野生动物世界-属于-Place"
+        ],
+        "熊猫曾用名": [
+          "亲亲-又名-亲亲",
+          "爱爱-又名-爱爱",
+          "国庆-又名-国庆"
+        ]
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "食铁兽": "大熊猫",
+    "花熊": "大熊猫",
+    "白熊": "大熊猫",
+    "熊猫": "大熊猫",
+    "猫熊": "大熊猫",
+    "黑白熊": "大熊猫"
+  },
+  "summary": {
+    "times": [],
+    "person_entities": [
+      "梅清-性别为-雌性",
+      "绅威-性别为-雄性"
+    ],
+    "place_entities": [
+      "广州长隆野生动物世界-属于-Place"
+    ],
+    "panda_aliases": [
+      "亲亲-又名-亲亲",
+      "国庆-又名-国庆",
+      "爱爱-又名-爱爱"
+    ],
+    "companion_species": [],
+    "predator_species": [],
+    "habitats": [
+      "亲亲-现居地-广州长隆野生动物世界",
+      "国庆-现居地-广州长隆野生动物世界",
+      "爱爱-现居地-广州长隆野生动物世界"
+    ],
+    "biology_terms": [
+      "亲亲-出生于-广州长隆野生动物世界",
+      "亲亲-出生体重-未提供",
+      "亲亲-出生时间-2016年10月9日",
+      "亲亲-性别为-雄性",
+      "亲亲-母亲为-梅清",
+      "亲亲-父亲为-绅威",
+      "亲亲-谱系号-未提供",
+      "国庆-出生于-广州长隆野生动物世界",
+      "国庆-出生体重-未提供",
+      "国庆-出生时间-2019年9月30日13:50",
+      "国庆-性别为-雄性",
+      "国庆-母亲为-梅清",
+      "国庆-父亲为-绅威",
+      "国庆-谱系号-未提供",
+      "爱爱-出生于-广州长隆野生动物世界",
+      "爱爱-出生体重-未提供",
+      "爱爱-出生时间-2016年10月9日",
+      "爱爱-性别为-雄性",
+      "爱爱-母亲为-梅清",
+      "爱爱-父亲为-绅威",
+      "爱爱-谱系号-未提供"
+    ],
+    "behavior_terms": [
+      "亲亲-昵称为-亲亲",
+      "国庆-昵称为-国庆",
+      "爱爱-昵称为-爱爱"
+    ],
+    "disease_terms": [],
+    "treatment_terms": [],
+    "lifecycle_stages": [],
+    "reproduction_terms": [],
+    "communication_terms": [
+      "亲亲-同胞为-爱爱",
+      "爱爱-同胞为-亲亲"
+    ],
+    "threat_factors": [],
+    "food_items": [],
+    "food_parts": [],
+    "population_metrics": [],
+    "taxonomy_terms": []
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1\\panda_extract_20260908_212842_batch_dir_百度百科熊猫星图22_n1.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-09-08T21:28:41.659181"
+}

@@ -1,0 +1,4260 @@
+{
+  "mode": "batch_dir",
+  "source_file": "",
+  "source_dir": "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图19",
+  "category": "熊猫资料",
+  "rumor_mode": false,
+  "profile_mode": true,
+  "files_count": 5,
+  "files": [
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图19\\part_01.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "2010年8月23日",
+          "2010年12月13日",
+          "2011年3月24日",
+          "2012年",
+          "2012年11月8日",
+          "2013年1月30日",
+          "2018年6月20日",
+          "2019年8月28日",
+          "2023年5月",
+          "2026年7月",
+          "2013年8月14日",
+          "2013年11月28日",
+          "2015年11月7日",
+          "2007年8月23日",
+          "2013年3月23日",
+          "2021年",
+          "2007年11月1日",
+          "2007年12月4日",
+          "2009年8月23日",
+          "2009年11月18日",
+          "2009年11月20日",
+          "2013年8月8日",
+          "2014年底",
+          "2018年底-2019年初",
+          "2009年9月27日",
+          "2015年",
+          "2023年",
+          "16岁"
+        ],
+        "person_entities": [
+          "阳阳",
+          "龙徽",
+          "瑛华",
+          "白杨",
+          "帼帼",
+          "欢欢",
+          "范德贝伦",
+          "库尔茨",
+          "姚蔓"
+        ],
+        "place_entities": [
+          "奥地利维也纳美泉宫动物园",
+          "中国大熊猫保护研究中心碧峰峡基地",
+          "济南野生动物世界熊猫馆",
+          "中国大熊猫保护研究中心神树坪基地",
+          "南京汤山紫清湖旅游区熊猫馆",
+          "中国大熊猫保护研究中心都江堰基地",
+          "阆中熊猫乐园",
+          "成都大熊猫繁育研究基地",
+          "北京动物园",
+          "温岭熊猫馆",
+          "雅安碧峰峡",
+          "南京汤山紫清湖野生动物世界",
+          "奥地利维也纳",
+          "维也纳",
+          "雅安",
+          "南京汤山",
+          "成都",
+          "北京",
+          "温岭",
+          "阆中"
+        ],
+        "panda_aliases": [
+          "福虎",
+          "福豹",
+          "福龙",
+          "福禄",
+          "姚欣"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "奥地利维也纳美泉宫动物园",
+          "中国大熊猫保护研究中心碧峰峡基地",
+          "济南野生动物世界熊猫馆",
+          "中国大熊猫保护研究中心神树坪基地",
+          "南京汤山紫清湖旅游区熊猫馆",
+          "中国大熊猫保护研究中心都江堰基地",
+          "阆中熊猫乐园",
+          "成都大熊猫繁育研究基地",
+          "北京动物园",
+          "温岭熊猫馆",
+          "中国大熊猫保护研究中心雅安碧峰峡基地"
+        ],
+        "biology_terms": [
+          "海豚额头",
+          "小鸟眼圈",
+          "性格敏感",
+          "特别爱干净",
+          "最爱吃水果和窝窝头",
+          "谱系号",
+          "出生体重",
+          "成年体重"
+        ],
+        "behavior_terms": [
+          "翻跟斗",
+          "隔栏相望",
+          "通过气味与声音进行交流",
+          "性格安静喜独处",
+          "性格敏感，特别爱干净",
+          "最爱吃水果和窝窝头"
+        ],
+        "disease_terms": [
+          "嘴角生疮"
+        ],
+        "treatment_terms": [
+          "中国大熊猫保护研究中心专家指导下的治疗",
+          "园区在中国大熊猫保护研究中心专家指导下进行治疗"
+        ],
+        "lifecycle_stages": [],
+        "reproduction_terms": [
+          "自然受孕",
+          "人工饲养",
+          "自然孕育"
+        ],
+        "communication_terms": [
+          "通过气味与声音进行交流"
+        ],
+        "threat_factors": [],
+        "food_items": [
+          "水果",
+          "窝窝头",
+          "主食竹"
+        ],
+        "food_parts": [],
+        "population_metrics": [
+          "体重53公斤",
+          "体重55公斤",
+          "成年体重达118公斤"
+        ],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "福虎",
+            "predicate": "出生于",
+            "object": "奥地利维也纳美泉宫动物园",
+            "object_type": "Place",
+            "evidence": "大熊猫福虎是2010年8月23日出生于奥地利维也纳美泉宫动物园的雄性大熊猫"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "出生时间",
+            "object": "2010年8月23日",
+            "object_type": "Biology",
+            "evidence": "大熊猫福虎是2010年8月23日出生于奥地利维也纳美泉宫动物园的雄性大熊猫"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫福虎是2010年8月23日出生于奥地利维也纳美泉宫动物园的雄性大熊猫"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "父亲为",
+            "object": "阳阳",
+            "object_type": "Person",
+            "evidence": "其父母为中国赠奥大熊猫阳阳和龙徽"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "母亲为",
+            "object": "龙徽",
+            "object_type": "Person",
+            "evidence": "其父母为中国赠奥大熊猫阳阳和龙徽"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "同胞为",
+            "object": "福龙",
+            "object_type": "Person",
+            "evidence": "是它们的第二个孩子"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "同胞为",
+            "object": "福凤",
+            "object_type": "Person",
+            "evidence": "是它们的第二个孩子"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "同胞为",
+            "object": "福伴",
+            "object_type": "Person",
+            "evidence": "是它们的第二个孩子"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "昵称为",
+            "object": "福虎",
+            "object_type": "Alias",
+            "evidence": "经奥地利民众投票及中国政府认可得名“福虎”"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "出生时间",
+            "object": "2010年12月13日",
+            "object_type": "Biology",
+            "evidence": "于2010年12月13日举行命名仪式"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "公开亮相于",
+            "object": "美泉宫动物园",
+            "object_type": "Place",
+            "evidence": "2011年3月24日，福虎在美泉宫动物园进行了出生后的首次户外活动"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "举办生日会于",
+            "object": "奥地利",
+            "object_type": "Place",
+            "evidence": "2012年，福虎在奥地利度过了两岁生日"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "返回",
+            "object": "中国大熊猫保护研究中心碧峰峡基地",
+            "object_type": "Place",
+            "evidence": "根据中奥协议，福虎于2012年11月8日回到中国大熊猫保护研究中心碧峰峡基地"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "赴",
+            "object": "济南野生动物世界熊猫馆",
+            "object_type": "Place",
+            "evidence": "回国后，福虎于2013年1月30日借展于济南野生动物世界熊猫馆"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心神树坪基地",
+            "object_type": "Place",
+            "evidence": "2018年6月20日，福虎转移至中国大熊猫保护研究中心神树坪基地"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "入驻",
+            "object": "南京汤山紫清湖旅游区熊猫馆",
+            "object_type": "Place",
+            "evidence": "2019年8月28日，福虎与其他大熊猫一同落户南京汤山紫清湖旅游区熊猫馆"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "现居地",
+            "object": "55公斤",
+            "object_type": "Biology",
+            "evidence": "截至2023年5月检疫期间，福虎体重从53公斤增长至55公斤"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "接受治疗于",
+            "object": "中国大熊猫保护研究中心",
+            "object_type": "Person",
+            "evidence": "园区在中国大熊猫保护研究中心专家指导下进行治疗"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "谱系号",
+            "object": "887",
+            "object_type": "Other",
+            "evidence": "福豹，雄性大熊猫，谱系号887"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "出生于",
+            "object": "奥地利维也纳美泉宫动物园",
+            "object_type": "Place",
+            "evidence": "福豹，雄性大熊猫，谱系号887，2013年8月14日出生于奥地利维也纳美泉宫动物园"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "出生时间",
+            "object": "2013年8月14日",
+            "object_type": "Biology",
+            "evidence": "福豹，雄性大熊猫，谱系号887，2013年8月14日出生于奥地利维也纳美泉宫动物园"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "福豹，雄性大熊猫，谱系号887，2013年8月14日出生于奥地利维也纳美泉宫动物园"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "父亲为",
+            "object": "阳阳",
+            "object_type": "Person",
+            "evidence": "父母为中国旅奥大熊猫阳阳和龙徽"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "母亲为",
+            "object": "龙徽",
+            "object_type": "Person",
+            "evidence": "父母为中国旅奥大熊猫阳阳和龙徽"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "同胞为",
+            "object": "福龙",
+            "object_type": "Person",
+            "evidence": "其兄弟姐妹包括福龙、福虎、福凤、福伴"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "同胞为",
+            "object": "福虎",
+            "object_type": "Person",
+            "evidence": "其兄弟姐妹包括福龙、福虎、福凤、福伴"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "同胞为",
+            "object": "福凤",
+            "object_type": "Person",
+            "evidence": "其兄弟姐妹包括福龙、福虎、福凤、福伴"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "同胞为",
+            "object": "福伴",
+            "object_type": "Person",
+            "evidence": "其兄弟姐妹包括福龙、福虎、福凤、福伴"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "昵称为",
+            "object": "福豹",
+            "object_type": "Alias",
+            "evidence": "2013年11月28日获名\"福豹\""
+          },
+          {
+            "subject": "福豹",
+            "predicate": "赴",
+            "object": "中国大熊猫保护研究中心都江堰基地",
+            "object_type": "Place",
+            "evidence": "根据中奥科研协议，福豹于2015年11月7日经26小时运输抵达中国大熊猫保护研究中心都江堰基地"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "迁至",
+            "object": "南京汤山紫清湖野生动物世界",
+            "object_type": "Place",
+            "evidence": "2019年8月28日迁徙至南京汤山紫清湖野生动物世界"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "出生体重范围",
+            "object": "118公斤",
+            "object_type": "Biology",
+            "evidence": "成年体重达118公斤"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "谱系号",
+            "object": "685",
+            "object_type": "Other",
+            "evidence": "福龙，雄性大熊猫，谱系号685，2007年8月23日出生在奥地利维也纳美泉宫动物园"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "出生于",
+            "object": "奥地利维也纳美泉宫动物园",
+            "object_type": "Place",
+            "evidence": "福龙，雄性大熊猫，谱系号685，2007年8月23日出生在奥地利维也纳美泉宫动物园"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "出生时间",
+            "object": "2007年8月23日",
+            "object_type": "Biology",
+            "evidence": "福龙，雄性大熊猫，谱系号685，2007年8月23日出生在奥地利维也纳美泉宫动物园"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "福龙，雄性大熊猫，谱系号685，2007年8月23日出生在奥地利维也纳美泉宫动物园"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "父亲为",
+            "object": "阳阳",
+            "object_type": "Person",
+            "evidence": "父母是大熊猫阳阳和龙徽"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "母亲为",
+            "object": "龙徽",
+            "object_type": "Person",
+            "evidence": "父母是大熊猫阳阳和龙徽"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "赴",
+            "object": "阆中熊猫乐园",
+            "object_type": "Place",
+            "evidence": "2013年3月23日，出差至阆中熊猫乐园"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "迁至",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "2021年搬家到成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "昵称为",
+            "object": "福龙",
+            "object_type": "Alias",
+            "evidence": "2007年11月1日，被正式命名为“福龙”"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "公开亮相于",
+            "object": "美泉宫动物园",
+            "object_type": "Place",
+            "evidence": "2007年12月4日，在美泉宫动物园举行了冠名仪式"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "举办生日会于",
+            "object": "维也纳",
+            "object_type": "Place",
+            "evidence": "2009年8月23日，在维也纳度过了两周岁生日"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "返回",
+            "object": "中国保护大熊猫研究中心雅安碧峰峡基地",
+            "object_type": "Place",
+            "evidence": "根据中奥协议，福龙在年满两周岁后返回中国，于2009年11月18日从美泉宫动物园启程，2009年11月20日回到中国，被送往中国保护大熊猫研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "谱系号",
+            "object": "883",
+            "object_type": "Other",
+            "evidence": "福禄，雌性大熊猫，谱系号883。2013年8月8日出生于中国大熊猫保护研究中心雅安碧峰峡"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡",
+            "object_type": "Place",
+            "evidence": "福禄，雌性大熊猫，谱系号883。2013年8月8日出生于中国大熊猫保护研究中心雅安碧峰峡"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "出生时间",
+            "object": "2013年8月8日",
+            "object_type": "Biology",
+            "evidence": "福禄，雌性大熊猫，谱系号883。2013年8月8日出生于中国大熊猫保护研究中心雅安碧峰峡"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "福禄，雌性大熊猫，谱系号883。2013年8月8日出生于中国大熊猫保护研究中心雅安碧峰峡"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "母亲为",
+            "object": "瑛华",
+            "object_type": "Person",
+            "evidence": "母亲是大熊猫瑛华，父亲是大熊猫白杨"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "父亲为",
+            "object": "白杨",
+            "object_type": "Person",
+            "evidence": "母亲是大熊猫瑛华，父亲是大熊猫白杨"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "身体特征为",
+            "object": "海豚额头",
+            "object_type": "Biology",
+            "evidence": "来自著名的“英英家族”，有祖传的海豚额头和小鸟眼圈，性格敏感，特别爱干净"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "身体特征为",
+            "object": "小鸟眼圈",
+            "object_type": "Biology",
+            "evidence": "来自著名的“英英家族”，有祖传的海豚额头和小鸟眼圈，性格敏感，特别爱干净"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "行为特征为",
+            "object": "性格敏感",
+            "object_type": "Behavior",
+            "evidence": "来自著名的“英英家族”，有祖传的海豚额头和小鸟眼圈，性格敏感，特别爱干净"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "行为特征为",
+            "object": "特别爱干净",
+            "object_type": "Behavior",
+            "evidence": "来自著名的“英英家族”，有祖传的海豚额头和小鸟眼圈，性格敏感，特别爱干净"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "返回",
+            "object": "北京动物园",
+            "object_type": "Place",
+            "evidence": "2014年底回到北京动物园"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "迁至",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "2018年底-2019年初被交换到成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "同胞为",
+            "object": "大白兔",
+            "object_type": "Person",
+            "evidence": "福禄的兄弟姐妹有大白兔、华生、大熊猫点点、大熊猫福星、福涛、福琳、福将、大熊猫华宝"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "同胞为",
+            "object": "华生",
+            "object_type": "Person",
+            "evidence": "福禄的兄弟姐妹有大白兔、华生、大熊猫点点、大熊猫福星、福涛、福琳、福将、大熊猫华宝"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "同胞为",
+            "object": "点点",
+            "object_type": "Person",
+            "evidence": "福禄的兄弟姐妹有大白兔、华生、大熊猫点点、大熊猫福星、福涛、福琳、福将、大熊猫华宝"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "同胞为",
+            "object": "福星",
+            "object_type": "Person",
+            "evidence": "福禄的兄弟姐妹有大白兔、华生、大熊猫点点、大熊猫福星、福涛、福琳、福将、大熊猫华宝"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "同胞为",
+            "object": "福涛",
+            "object_type": "Person",
+            "evidence": "福禄的兄弟姐妹有大白兔、华生、大熊猫点点、大熊猫福星、福涛、福琳、福将、大熊猫华宝"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "同胞为",
+            "object": "福琳",
+            "object_type": "Person",
+            "evidence": "福禄的兄弟姐妹有大白兔、华生、大熊猫点点、大熊猫福星、福涛、福琳、福将、大熊猫华宝"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "同胞为",
+            "object": "福将",
+            "object_type": "Person",
+            "evidence": "福禄的兄弟姐妹有大白兔、华生、大熊猫点点、大熊猫福星、福涛、福琳、福将、大熊猫华宝"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "同胞为",
+            "object": "华宝",
+            "object_type": "Person",
+            "evidence": "福禄的兄弟姐妹有大白兔、华生、大熊猫点点、大熊猫福星、福涛、福琳、福将、大熊猫华宝"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "育有",
+            "object": "福双",
+            "object_type": "Person",
+            "evidence": "子女有福双、大熊猫福菀、大熊猫福茹"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "育有",
+            "object": "福菀",
+            "object_type": "Person",
+            "evidence": "子女有福双、大熊猫福菀、大熊猫福茹"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "育有",
+            "object": "福茹",
+            "object_type": "Person",
+            "evidence": "子女有福双、大熊猫福菀、大熊猫福茹"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "谱系号",
+            "object": "760",
+            "object_type": "Other",
+            "evidence": "姚欣，雌性大熊猫，谱系号760，2009年9月27日出生在中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡基地",
+            "object_type": "Place",
+            "evidence": "姚欣，雌性大熊猫，谱系号760，2009年9月27日出生在中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "出生时间",
+            "object": "2009年9月27日",
+            "object_type": "Biology",
+            "evidence": "姚欣，雌性大熊猫，谱系号760，2009年9月27日出生在中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "姚欣，雌性大熊猫，谱系号760，2009年9月27日出生在中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "母亲为",
+            "object": "帼帼",
+            "object_type": "Person",
+            "evidence": "母亲是大熊猫帼帼"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "同胞为",
+            "object": "姚蔓",
+            "object_type": "Person",
+            "evidence": "姚欣与双胞胎姐姐姚蔓出生时便受到国际关注"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "赴",
+            "object": "温岭熊猫馆",
+            "object_type": "Place",
+            "evidence": "姚欣于4岁时来到温岭熊猫馆新家，初到时高兴地翻起了跟斗"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "行为特征为",
+            "object": "翻跟斗",
+            "object_type": "Behavior",
+            "evidence": "姚欣于4岁时来到温岭熊猫馆新家，初到时高兴地翻起了跟斗"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "配对对象为",
+            "object": "欢欢",
+            "object_type": "Person",
+            "evidence": "2015年，姚欣与雄性大熊猫欢欢“配对”"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "行为特征为",
+            "object": "隔栏相望",
+            "object_type": "Behavior",
+            "evidence": "由于受限相关规定，姚欣与欢欢曾只能隔栏相望"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "现居地",
+            "object": "2000平方米的熊猫馆",
+            "object_type": "Habitat",
+            "evidence": "截至2023年，姚欣与欢欢共同生活在占地2000平方米的熊猫馆内"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "年龄为",
+            "object": "16岁",
+            "object_type": "Biology",
+            "evidence": "姚欣度过16岁生日"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "食物偏好为",
+            "object": "水果",
+            "object_type": "Biology",
+            "evidence": "其“最爱吃水果和窝窝头”"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "食物偏好为",
+            "object": "窝窝头",
+            "object_type": "Biology",
+            "evidence": "其“最爱吃水果和窝窝头”"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "赴",
+            "object": "济南野生动物世界熊猫馆",
+            "object_type": "Habitat",
+            "evidence": "福虎于2013年1月30日借展于济南野生动物世界熊猫馆"
+          },
+          {
+            "subject": "福虎",
+            "predicate": "现体重",
+            "object": "55公斤",
+            "object_type": "Biology",
+            "evidence": "截至2023年5月检疫期间，福虎体重从53公斤增长至55公斤"
+          },
+          {
+            "subject": "福豹",
+            "predicate": "成年体重",
+            "object": "118公斤",
+            "object_type": "Biology",
+            "evidence": "成年体重达118公斤"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "父亲为",
+            "object": "阳阳",
+            "object_type": "Person",
+            "evidence": "福龙，雄性大熊猫，谱系号685，2007年8月23日出生在奥地利维也纳美泉宫动物园，父母是大熊猫阳阳和龙徽"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "母亲为",
+            "object": "龙徽",
+            "object_type": "Person",
+            "evidence": "福龙，雄性大熊猫，谱系号685，2007年8月23日出生在奥地利维也纳美泉宫动物园，父母是大熊猫阳阳和龙徽"
+          },
+          {
+            "subject": "福龙",
+            "predicate": "返回",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡基地",
+            "object_type": "Habitat",
+            "evidence": "根据中奥协议，福龙在年满两周岁后返回中国，于2009年11月18日从美泉宫动物园启程，2009年11月20日回到中国，被送往中国保护大熊猫研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "福禄，雌性大熊猫，谱系号883。"
+          },
+          {
+            "subject": "福禄",
+            "predicate": "谱系号",
+            "object": "883",
+            "object_type": "Biology",
+            "evidence": "福禄，雌性大熊猫，谱系号883。"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "赴",
+            "object": "温岭熊猫馆",
+            "object_type": "Habitat",
+            "evidence": "姚欣于4岁时来到温岭熊猫馆新家"
+          },
+          {
+            "subject": "姚欣",
+            "predicate": "育有",
+            "object": "欢欢",
+            "object_type": "Person",
+            "evidence": "姚欣与欢欢“配对”"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "2010年8月23日",
+          "2010年12月13日",
+          "2011年3月24日",
+          "2012年",
+          "2012年11月8日",
+          "2013年1月30日",
+          "2018年6月20日",
+          "2019年8月28日",
+          "2023年5月",
+          "2026年7月",
+          "2013年8月14日",
+          "2013年11月28日",
+          "2015年11月7日",
+          "2007年8月23日",
+          "2013年3月23日",
+          "2021年",
+          "2007年11月1日",
+          "2007年12月4日",
+          "2009年8月23日",
+          "2009年11月18日",
+          "2009年11月20日",
+          "2013年8月8日",
+          "2014年底",
+          "2018年底-2019年初",
+          "2009年9月27日",
+          "2015年",
+          "2023年",
+          "16岁"
+        ],
+        "人物": [
+          "阳阳",
+          "龙徽",
+          "瑛华",
+          "白杨",
+          "帼帼",
+          "欢欢",
+          "范德贝伦",
+          "库尔茨",
+          "姚蔓"
+        ],
+        "地点": [
+          "奥地利维也纳美泉宫动物园",
+          "中国大熊猫保护研究中心碧峰峡基地",
+          "济南野生动物世界熊猫馆",
+          "中国大熊猫保护研究中心神树坪基地",
+          "南京汤山紫清湖旅游区熊猫馆",
+          "中国大熊猫保护研究中心都江堰基地",
+          "阆中熊猫乐园",
+          "成都大熊猫繁育研究基地",
+          "北京动物园",
+          "温岭熊猫馆",
+          "雅安碧峰峡",
+          "南京汤山紫清湖野生动物世界",
+          "奥地利维也纳",
+          "维也纳",
+          "雅安",
+          "南京汤山",
+          "成都",
+          "北京",
+          "温岭",
+          "阆中"
+        ],
+        "熊猫曾用名": [
+          "福虎",
+          "福豹",
+          "福龙",
+          "福禄",
+          "姚欣"
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图19\\part_02.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [
+          "北京动物园",
+          "莫斯科动物园",
+          "中国大熊猫保护研究中心",
+          "日本和歌山白浜野生动物园",
+          "成都大熊猫繁育研究基地",
+          "唐山动物园",
+          "四川平武野外",
+          "厦门海沧野生动物园",
+          "中国大熊猫保护研究中心核桃坪野化培训基地",
+          "奥地利美泉宫动物园"
+        ],
+        "panda_aliases": [
+          "梅浜-昵称为-梅浜",
+          "奥林匹亚-昵称为-奥林匹亚",
+          "福娃-昵称为-福娃",
+          "梅兰-昵称为-梅兰"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "园园-现居地-中国大熊猫保护研究中心",
+          "梅浜-现居地-唐山动物园",
+          "奥林匹亚-现居地-成都大熊猫繁育研究基地",
+          "唐唐-现居地-厦门海沧野生动物园",
+          "龙徽-现居地-奥地利美泉宫动物园"
+        ],
+        "biology_terms": [
+          "梅浜-出生体重-135克",
+          "梅兰-出生体重-135克"
+        ],
+        "behavior_terms": [
+          "园园-谱系号-488",
+          "园园-性别为-雄性",
+          "园园-出生于-北京动物园",
+          "园园-出生时间-1999年",
+          "园园-父亲为-良良",
+          "园园-母亲为-永永",
+          "园园-同胞为-弟弟（夭折）",
+          "园园-迁至-莫斯科动物园",
+          "园园-赴-莫斯科动物园",
+          "园园-返回-中国大熊猫保护研究中心",
+          "园园-育有-多个子女",
+          "梅浜-谱系号-737",
+          "梅浜-性别为-雌性",
+          "梅浜-出生于-日本和歌山白浜野生动物园",
+          "梅浜-出生时间-2008年9月13日",
+          "梅浜-父亲为-永明",
+          "梅浜-母亲为-良浜",
+          "梅浜-同胞为-永浜",
+          "梅浜-返回-中国成都大熊猫繁育研究基地",
+          "梅浜-育有-梅兰",
+          "梅浜-迁至-唐山动物园",
+          "梅浜-旅居于-唐山动物园",
+          "梅浜-赴-唐山动物园",
+          "奥林匹亚-谱系号-947",
+          "奥林匹亚-性别为-雌性",
+          "奥林匹亚-出生于-成都大熊猫繁育研究基地",
+          "奥林匹亚-出生时间-2015年6月22日",
+          "奥林匹亚-同胞为-福娃",
+          "奥林匹亚-母亲为-科琳",
+          "奥林匹亚-育有-雌性幼仔（2022年9月产下）",
+          "唐唐-谱系号-446",
+          "唐唐-性别为-雌性",
+          "唐唐-出生于-四川平武野外",
+          "唐唐-出生时间-1987年",
+          "唐唐-逝世于-厦门海沧野生动物园",
+          "唐唐-去世年份-2010年",
+          "唐唐-死亡时间-2010年8月22日",
+          "龙徽-谱系号-526",
+          "龙徽-性别为-雄性",
+          "龙徽-出生于-中国大熊猫保护研究中心核桃坪野化培训基地",
+          "龙徽-出生时间-2000年9月26日",
+          "龙徽-父亲为-新兴",
+          "龙徽-母亲为-唐唐",
+          "龙徽-旅居于-奥地利美泉宫动物园",
+          "龙徽-赴-奥地利美泉宫动物园",
+          "龙徽-逝世于-奥地利",
+          "龙徽-去世年份-2016年",
+          "龙徽-死亡时间-2016年12月9日"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [
+          "奥林匹亚-公开亮相于-成都大熊猫繁育研究基地",
+          "梅浜-公开亮相于-唐山动物园",
+          "梅浜-公开亮相于-成都大熊猫繁育研究基地",
+          "龙徽-公开亮相于-奥地利美泉宫动物园"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "园园",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫园园，雄性，谱系号488"
+          },
+          {
+            "subject": "园园",
+            "predicate": "谱系号",
+            "object": "488",
+            "object_type": "Other",
+            "evidence": "大熊猫园园，雄性，谱系号488"
+          },
+          {
+            "subject": "园园",
+            "predicate": "出生于",
+            "object": "北京动物园",
+            "object_type": "Place",
+            "evidence": "1999年出生于北京动物园"
+          },
+          {
+            "subject": "园园",
+            "predicate": "出生时间",
+            "object": "1999年",
+            "object_type": "Biology",
+            "evidence": "1999年出生于北京动物园"
+          },
+          {
+            "subject": "园园",
+            "predicate": "父亲为",
+            "object": "良良",
+            "object_type": "Person",
+            "evidence": "父亲是良良，母亲是永永"
+          },
+          {
+            "subject": "园园",
+            "predicate": "母亲为",
+            "object": "永永",
+            "object_type": "Person",
+            "evidence": "父亲是良良，母亲是永永"
+          },
+          {
+            "subject": "园园",
+            "predicate": "赴",
+            "object": "莫斯科动物园",
+            "object_type": "Place",
+            "evidence": "曾在2001年前往莫斯科动物园生活过一段时间"
+          },
+          {
+            "subject": "园园",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心",
+            "object_type": "Place",
+            "evidence": "2004年与大哥迎迎(谱系号369)、外甥女甜甜一起被换亲到中国大熊猫保护研究中心"
+          },
+          {
+            "subject": "园园",
+            "predicate": "育有",
+            "object": "多个子女",
+            "object_type": "Other",
+            "evidence": "在那里育有多个子女"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "梅浜，雌性大熊猫，谱系号737"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "谱系号",
+            "object": "737",
+            "object_type": "Other",
+            "evidence": "梅浜，雌性大熊猫，谱系号737"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "出生于",
+            "object": "日本和歌山白浜野生动物园",
+            "object_type": "Place",
+            "evidence": "2008年9月13日与双胞胎弟弟永浜出生于日本和歌山白浜野生动物园"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "出生时间",
+            "object": "2008年9月13日",
+            "object_type": "Biology",
+            "evidence": "2008年9月13日与双胞胎弟弟永浜出生于日本和歌山白浜野生动物园"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "父亲为",
+            "object": "永明",
+            "object_type": "Person",
+            "evidence": "父母为旅日大熊猫永明和良浜"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "母亲为",
+            "object": "良浜",
+            "object_type": "Person",
+            "evidence": "父母为旅日大熊猫永明和良浜"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "2013年2月26日，梅浜与永浜返回中国成都大熊猫繁育研究基地接受隔离检疫"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "育有",
+            "object": "梅兰",
+            "object_type": "Person",
+            "evidence": "2016年5月29日，梅浜在成都产下体重135克的雌性幼仔梅兰"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "迁至",
+            "object": "唐山动物园",
+            "object_type": "Place",
+            "evidence": "2018年5月，梅浜与双喜被转运至唐山动物园进行为期三年的借展，并于5月19日正式对外展出"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "属于组合",
+            "object": "浜家族",
+            "object_type": "Other",
+            "evidence": "其所属“浜家族”为中国海外最大大熊猫家族"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "奥林匹亚，雌性大熊猫，谱系号947"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "谱系号",
+            "object": "947",
+            "object_type": "Other",
+            "evidence": "奥林匹亚，雌性大熊猫，谱系号947"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "2015年6月22日与双胞胎妹妹福娃出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "出生时间",
+            "object": "2015年6月22日",
+            "object_type": "Biology",
+            "evidence": "2015年6月22日与双胞胎妹妹福娃出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "母亲为",
+            "object": "科琳",
+            "object_type": "Person",
+            "evidence": "母亲为科琳"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "育有",
+            "object": "一雌性幼仔",
+            "object_type": "Other",
+            "evidence": "2022年9月，奥林匹亚首次产下一雌性幼仔"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "唐唐（1987年—2010年8月22日），雌性大熊猫，谱系号446，1987年生于四川平武野外"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "谱系号",
+            "object": "446",
+            "object_type": "Other",
+            "evidence": "唐唐（1987年—2010年8月22日），雌性大熊猫，谱系号446，1987年生于四川平武野外"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "出生于",
+            "object": "四川平武野外",
+            "object_type": "Habitat",
+            "evidence": "1987年生于四川平武野外"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "出生时间",
+            "object": "1987年",
+            "object_type": "Biology",
+            "evidence": "1987年生于四川平武野外"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "被发现于",
+            "object": "四川省平武县",
+            "object_type": "Place",
+            "evidence": "1994年被发现于四川省平武县"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心",
+            "object_type": "Place",
+            "evidence": "1997年搬至中国大熊猫保护研究中心"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "赴",
+            "object": "厦门海沧野生动物园",
+            "object_type": "Place",
+            "evidence": "2009年出差至厦门海沧野生动物园"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "逝世于",
+            "object": "厦门海沧野生动物园",
+            "object_type": "Place",
+            "evidence": "2010年8月22日，唐唐去世于厦门海沧野生动物园"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "死亡时间",
+            "object": "2010年8月22日",
+            "object_type": "Biology",
+            "evidence": "2010年8月22日，唐唐去世于厦门海沧野生动物园"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "龙徽（2000年9月26日-2016年12月9日），雄性大熊猫，谱系号526，2000年9月26日生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "谱系号",
+            "object": "526",
+            "object_type": "Other",
+            "evidence": "龙徽（2000年9月26日-2016年12月9日），雄性大熊猫，谱系号526，2000年9月26日生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心核桃坪野化培训基地",
+            "object_type": "Place",
+            "evidence": "2000年9月26日生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "出生时间",
+            "object": "2000年9月26日",
+            "object_type": "Biology",
+            "evidence": "2000年9月26日生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "父亲为",
+            "object": "新兴",
+            "object_type": "Person",
+            "evidence": "父母是大熊猫新兴和唐唐"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "母亲为",
+            "object": "唐唐",
+            "object_type": "Person",
+            "evidence": "父母是大熊猫新兴和唐唐"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "旅居于",
+            "object": "奥地利美泉宫动物园",
+            "object_type": "Place",
+            "evidence": "2003年3月，龙徽与雌性大熊猫阳阳一同前往奥地利美泉宫动物园，正式开启了中奥大熊猫保护研究合作，于3月14日晚入住熊猫馆开始旅居生活"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "同胞为",
+            "object": "阳阳",
+            "object_type": "Person",
+            "evidence": "2003年3月，龙徽与雌性大熊猫阳阳一同前往奥地利美泉宫动物园，正式开启了中奥大熊猫保护研究合作，于3月14日晚入住熊猫馆开始旅居生活"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "育有",
+            "object": "5个孩子",
+            "object_type": "Other",
+            "evidence": "在奥地利期间，龙徽与阳阳成功繁育了5个孩子"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "逝世于",
+            "object": "奥地利",
+            "object_type": "Place",
+            "evidence": "2016年12月9日，龙徽因肿瘤手术麻醉期间停止心跳，在奥地利去世"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "死亡时间",
+            "object": "2016年12月9日",
+            "object_type": "Biology",
+            "evidence": "2016年12月9日，龙徽因肿瘤手术麻醉期间停止心跳，在奥地利去世"
+          },
+          {
+            "subject": "园园",
+            "predicate": "谱系号",
+            "object": "488",
+            "object_type": "Other",
+            "evidence": "大熊猫园园，雄性，谱系号488，1999年出生于北京动物园"
+          },
+          {
+            "subject": "园园",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫园园，雄性，谱系号488，1999年出生于北京动物园"
+          },
+          {
+            "subject": "园园",
+            "predicate": "出生于",
+            "object": "北京动物园",
+            "object_type": "Place",
+            "evidence": "大熊猫园园，雄性，谱系号488，1999年出生于北京动物园"
+          },
+          {
+            "subject": "园园",
+            "predicate": "出生时间",
+            "object": "1999年",
+            "object_type": "Other",
+            "evidence": "大熊猫园园，雄性，谱系号488，1999年出生于北京动物园"
+          },
+          {
+            "subject": "园园",
+            "predicate": "同胞为",
+            "object": "弟弟（夭折）",
+            "object_type": "Other",
+            "evidence": "同胞弟弟出生不久即夭折"
+          },
+          {
+            "subject": "园园",
+            "predicate": "迁至",
+            "object": "莫斯科动物园",
+            "object_type": "Place",
+            "evidence": "曾在2001年前往莫斯科动物园生活过一段时间"
+          },
+          {
+            "subject": "园园",
+            "predicate": "返回",
+            "object": "中国大熊猫保护研究中心",
+            "object_type": "Place",
+            "evidence": "2004年与大哥迎迎(谱系号369)、外甥女甜甜一起被换亲到中国大熊猫保护研究中心"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "谱系号",
+            "object": "737",
+            "object_type": "Other",
+            "evidence": "梅浜，雌性大熊猫，谱系号737，2008年9月13日与双胞胎弟弟永浜出生于日本和歌山白浜野生动物园"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "梅浜，雌性大熊猫，谱系号737，2008年9月13日与双胞胎弟弟永浜出生于日本和歌山白浜野生动物园"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "出生于",
+            "object": "日本和歌山白浜野生动物园",
+            "object_type": "Place",
+            "evidence": "梅浜，雌性大熊猫，谱系号737，2008年9月13日与双胞胎弟弟永浜出生于日本和歌山白浜野生动物园"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "出生时间",
+            "object": "2008年9月13日",
+            "object_type": "Other",
+            "evidence": "梅浜，雌性大熊猫，谱系号737，2008年9月13日与双胞胎弟弟永浜出生于日本和歌山白浜野生动物园"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "同胞为",
+            "object": "永浜",
+            "object_type": "Person",
+            "evidence": "2008年9月13日与双胞胎弟弟永浜出生于日本和歌山白浜野生动物园"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "返回",
+            "object": "中国成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "2013年2月26日，梅浜与永浜返回中国成都大熊猫繁育研究基地接受隔离检疫"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "旅居于",
+            "object": "唐山动物园",
+            "object_type": "Place",
+            "evidence": "2018年5月，梅浜与双喜被转运至唐山动物园进行为期三年的借展，并于5月19日正式对外展出"
+          },
+          {
+            "subject": "梅浜",
+            "predicate": "赴",
+            "object": "唐山动物园",
+            "object_type": "Place",
+            "evidence": "2018年5月，梅浜与双喜被转运至唐山动物园进行为期三年的借展，并于5月19日正式对外展出"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "谱系号",
+            "object": "947",
+            "object_type": "Other",
+            "evidence": "奥林匹亚，雌性大熊猫，谱系号947，2015年6月22日与双胞胎妹妹福娃出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "奥林匹亚，雌性大熊猫，谱系号947，2015年6月22日与双胞胎妹妹福娃出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "奥林匹亚，雌性大熊猫，谱系号947，2015年6月22日与双胞胎妹妹福娃出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "出生时间",
+            "object": "2015年6月22日",
+            "object_type": "Other",
+            "evidence": "奥林匹亚，雌性大熊猫，谱系号947，2015年6月22日与双胞胎妹妹福娃出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "同胞为",
+            "object": "福娃",
+            "object_type": "Person",
+            "evidence": "2015年6月22日与双胞胎妹妹福娃出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "奥林匹亚",
+            "predicate": "育有",
+            "object": "雌性幼仔（2022年9月产下）",
+            "object_type": "Other",
+            "evidence": "2022年9月，奥林匹亚首次产下一雌性幼仔"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "出生于",
+            "object": "四川平武野外",
+            "object_type": "Place",
+            "evidence": "唐唐（1987年—2010年8月22日），雌性大熊猫，谱系号446，1987年生于四川平武野外"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "出生时间",
+            "object": "1987年",
+            "object_type": "Other",
+            "evidence": "唐唐（1987年—2010年8月22日），雌性大熊猫，谱系号446，1987年生于四川平武野外"
+          },
+          {
+            "subject": "唐唐",
+            "predicate": "去世年份",
+            "object": "2010年",
+            "object_type": "Other",
+            "evidence": "2010年8月22日，唐唐去世于厦门海沧野生动物园"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心核桃坪野化培训基地",
+            "object_type": "Place",
+            "evidence": "龙徽（2000年9月26日-2016年12月9日），雄性大熊猫，谱系号526，2000年9月26日生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "出生时间",
+            "object": "2000年9月26日",
+            "object_type": "Other",
+            "evidence": "龙徽（2000年9月26日-2016年12月9日），雄性大熊猫，谱系号526，2000年9月26日生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "赴",
+            "object": "奥地利美泉宫动物园",
+            "object_type": "Place",
+            "evidence": "2003年3月，龙徽与雌性大熊猫阳阳一同前往奥地利美泉宫动物园，正式开启了中奥大熊猫保护研究合作，于3月14日晚入住熊猫馆开始旅居生活"
+          },
+          {
+            "subject": "龙徽",
+            "predicate": "去世年份",
+            "object": "2016年",
+            "object_type": "Other",
+            "evidence": "2016年12月9日，龙徽因肿瘤手术麻醉期间停止心跳，在奥地利去世"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [
+          "北京动物园",
+          "莫斯科动物园",
+          "中国大熊猫保护研究中心",
+          "日本和歌山白浜野生动物园",
+          "成都大熊猫繁育研究基地",
+          "唐山动物园",
+          "四川平武野外",
+          "厦门海沧野生动物园",
+          "中国大熊猫保护研究中心核桃坪野化培训基地",
+          "奥地利美泉宫动物园"
+        ],
+        "熊猫曾用名": [
+          "梅浜-昵称为-梅浜",
+          "奥林匹亚-昵称为-奥林匹亚",
+          "福娃-昵称为-福娃",
+          "梅兰-昵称为-梅兰"
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图19\\part_03.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "2000年8月6日",
+          "2002年",
+          "2006年9月22日",
+          "2008年3月1日",
+          "2004年8月26日",
+          "2007年7月5日",
+          "2008年8月24日",
+          "2008年",
+          "2009年10月21日",
+          "2012年11月8日",
+          "2013年1月31日",
+          "2013年3月28日",
+          "2015年4月30日",
+          "2015年6月1日",
+          "2019年",
+          "2020年",
+          "2024年7月5日"
+        ],
+        "person_entities": [
+          "白雪",
+          "帼帼",
+          "蜀庆",
+          "屏屏",
+          "琳琳",
+          "娅娅",
+          "耀耀",
+          "亮亮",
+          "平平",
+          "安安",
+          "丫丫",
+          "秦川",
+          "佳佳",
+          "园园",
+          "秦华",
+          "蜀蓉",
+          "蜀祥",
+          "蜀云",
+          "健健",
+          "康康",
+          "心心"
+        ],
+        "place_entities": [
+          "秦岭",
+          "浙江正辉照明工程有限公司",
+          "中央政府",
+          "澳门特区政府",
+          "中国大熊猫保护研究中心核桃坪野化培训基地",
+          "陕西珍稀野生动物抢救饲养研究中心",
+          "成都大熊猫繁育研究基地",
+          "湖北安吉竹博园",
+          "广西柳州动物园",
+          "澳门石排湾郊野公园"
+        ],
+        "panda_aliases": [
+          "蒸包",
+          "段正勇",
+          "开开",
+          "心心"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "中国大熊猫保护研究中心核桃坪野化培训基地",
+          "陕西珍稀野生动物抢救饲养研究中心",
+          "成都大熊猫繁育研究基地",
+          "湖北安吉竹博园",
+          "广西柳州动物园",
+          "澳门石排湾郊野公园"
+        ],
+        "biology_terms": [
+          "妊娠期105天",
+          "2020年产仔创下该中心雌性大熊猫最高生产年龄及最多产仔数量纪录",
+          "蠕形螨呈阴性"
+        ],
+        "behavior_terms": [
+          "清晨蹬水嬉戏",
+          "午后连续数小时进食约70公斤竹笋",
+          "喜爱爬树玩耍",
+          "性格傲娇且独立",
+          "经常与饲养员斗智斗勇",
+          "性格傲娇且独立，经常与饲养员斗智斗勇"
+        ],
+        "disease_terms": [
+          "急性异物性肺炎休克"
+        ],
+        "treatment_terms": [
+          "隔离检疫",
+          "后续将根据复检结果制定治疗方案",
+          "抢救无效",
+          "检测显示蠕形螨呈阴性，后续将根据复检结果制定治疗方案"
+        ],
+        "lifecycle_stages": [],
+        "reproduction_terms": [
+          "自然交配成功率",
+          "人工授精",
+          "妊娠期105天"
+        ],
+        "communication_terms": [
+          "澳门呼名延续‘开开’寓意生活安康",
+          "澳门特区政府通过公开征名为幼崽命名",
+          "被网友昵称为“段正勇”",
+          "其澳门呼名延续“开开”寓意生活安康"
+        ],
+        "threat_factors": [],
+        "food_items": [
+          "竹笋",
+          "榴莲",
+          "西瓜",
+          "玉米"
+        ],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "珠珠",
+            "predicate": "谱系号",
+            "object": "509",
+            "object_type": "Other",
+            "evidence": "珠珠，雌性大熊猫，谱系号509，2000年8月6日出生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "珠珠，雌性大熊猫，谱系号509，2000年8月6日出生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心核桃坪野化培训基地",
+            "object_type": "Habitat",
+            "evidence": "珠珠，雌性大熊猫，谱系号509，2000年8月6日出生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "出生时间",
+            "object": "2000年8月6日",
+            "object_type": "Biology",
+            "evidence": "珠珠，雌性大熊猫，谱系号509，2000年8月6日出生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "母亲为",
+            "object": "白雪",
+            "object_type": "Person",
+            "evidence": "其母亲为秦岭野生大熊猫白雪"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "迁至",
+            "object": "陕西珍稀野生动物抢救饲养研究中心",
+            "object_type": "Habitat",
+            "evidence": "2002年转入陕西珍稀野生动物抢救饲养研究中心"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "秦川",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园（妊娠期105天），以及2020年20岁时产下的末子秦华。其中2020年产仔创下该中心雌性大熊猫最高生产年龄及最多产仔数量纪录，其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "佳佳",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园（妊娠期105天），以及2020年20岁时产下的末子秦华。其中2020年产仔创下该中心雌性大熊猫最高生产年龄及最多产仔数量纪录，其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "园园",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园（妊娠期105天），以及2020年20岁时产下的末子秦华。其中2020年产仔创下该中心雌性大熊猫最高生产年龄及最多产仔数量纪录，其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "秦华",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园（妊娠期105天），以及2020年20岁时产下的末子秦华。其中2020年产仔创下该中心雌性大熊猫最高生产年龄及最多产仔数量纪录，其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "丫丫",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园（妊娠期105天），以及2020年20岁时产下的末子秦华。其中2020年产仔创下该中心雌性大熊猫最高生产年龄及最多产仔数量纪录，其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "安安",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园（妊娠期105天），以及2020年20岁时产下的末子秦华。其中2020年产仔创下该中心雌性大熊猫最高生产年龄及最多产仔数量纪录，其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "谱系号",
+            "object": "653",
+            "object_type": "Other",
+            "evidence": "大熊猫美安（2006年9月22日-2008年3月1日）是出生于中国大熊猫保护研究中心核桃坪基地的雌性大熊猫，谱系号653。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫美安（2006年9月22日-2008年3月1日）是出生于中国大熊猫保护研究中心核桃坪基地的雌性大熊猫，谱系号653。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心核桃坪基地",
+            "object_type": "Habitat",
+            "evidence": "大熊猫美安（2006年9月22日-2008年3月1日）是出生于中国大熊猫保护研究中心核桃坪基地的雌性大熊猫，谱系号653。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "出生时间",
+            "object": "2006年9月22日",
+            "object_type": "Biology",
+            "evidence": "大熊猫美安（2006年9月22日-2008年3月1日）是出生于中国大熊猫保护研究中心核桃坪基地的雌性大熊猫，谱系号653。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "母亲为",
+            "object": "帼帼",
+            "object_type": "Person",
+            "evidence": "其母亲为著名大熊猫帼帼（谱系号434）。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "同胞为",
+            "object": "耀耀",
+            "object_type": "Person",
+            "evidence": "美安的兄弟姐妹包括耀耀、亮亮、平平、安安等。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "同胞为",
+            "object": "亮亮",
+            "object_type": "Person",
+            "evidence": "美安的兄弟姐妹包括耀耀、亮亮、平平、安安等。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "同胞为",
+            "object": "平平",
+            "object_type": "Person",
+            "evidence": "美安的兄弟姐妹包括耀耀、亮亮、平平、安安等。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "同胞为",
+            "object": "安安",
+            "object_type": "Person",
+            "evidence": "美安的兄弟姐妹包括耀耀、亮亮、平平、安安等。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "死亡时间",
+            "object": "2008年3月1日",
+            "object_type": "Biology",
+            "evidence": "2008年3月1日因急性异物性肺炎休克抢救无效去世。"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "谱系号",
+            "object": "584",
+            "object_type": "Other",
+            "evidence": "大熊猫勇勇，雄性，谱系号584，2004年8月26日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫勇勇，雄性，谱系号584，2004年8月26日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "大熊猫勇勇，雄性，谱系号584，2004年8月26日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "出生时间",
+            "object": "2004年8月26日",
+            "object_type": "Biology",
+            "evidence": "大熊猫勇勇，雄性，谱系号584，2004年8月26日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "母亲为",
+            "object": "蜀庆",
+            "object_type": "Person",
+            "evidence": "母亲为蜀庆，父亲系野外大熊猫屏屏。"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "父亲为",
+            "object": "屏屏",
+            "object_type": "Person",
+            "evidence": "母亲为蜀庆，父亲系野外大熊猫屏屏。"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "昵称为",
+            "object": "段正勇",
+            "object_type": "Alias",
+            "evidence": "被网友昵称为“段正勇”"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "谱系号",
+            "object": "666",
+            "object_type": "Other",
+            "evidence": "大熊猫蜀琳，2007年7月5日出生于成都大熊猫繁育研究基地的雄性大熊猫，谱系号666"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫蜀琳，2007年7月5日出生于成都大熊猫繁育研究基地的雄性大熊猫，谱系号666"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "大熊猫蜀琳，2007年7月5日出生于成都大熊猫繁育研究基地的雄性大熊猫，谱系号666"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "出生时间",
+            "object": "2007年7月5日",
+            "object_type": "Biology",
+            "evidence": "大熊猫蜀琳，2007年7月5日出生于成都大熊猫繁育研究基地的雄性大熊猫，谱系号666"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "父亲为",
+            "object": "琳琳",
+            "object_type": "Person",
+            "evidence": "父亲为琳琳，母亲为蜀庆"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "母亲为",
+            "object": "蜀庆",
+            "object_type": "Person",
+            "evidence": "父亲为琳琳，母亲为蜀庆"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "同胞为",
+            "object": "勇勇",
+            "object_type": "Person",
+            "evidence": "兄弟姐妹包括勇勇、蜀蓉、蜀祥、蜀云"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "同胞为",
+            "object": "蜀蓉",
+            "object_type": "Person",
+            "evidence": "兄弟姐妹包括勇勇、蜀蓉、蜀祥、蜀云"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "同胞为",
+            "object": "蜀祥",
+            "object_type": "Person",
+            "evidence": "兄弟姐妹包括勇勇、蜀蓉、蜀祥、蜀云"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "同胞为",
+            "object": "蜀云",
+            "object_type": "Person",
+            "evidence": "兄弟姐妹包括勇勇、蜀蓉、蜀祥、蜀云"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "于2012年11月8日从外派地点返回基地。"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "赴",
+            "object": "湖北安吉竹博园",
+            "object_type": "Habitat",
+            "evidence": "2009年10月21日以“科普大使”身份前往湖北安吉竹博园。"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "赴",
+            "object": "广西柳州动物园",
+            "object_type": "Habitat",
+            "evidence": "2013年1月31日赴广西柳州动物园，并于2013年3月28日起正式长期驻留。"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "入驻",
+            "object": "广西柳州动物园",
+            "object_type": "Habitat",
+            "evidence": "2013年1月31日赴广西柳州动物园，并于2013年3月28日起正式长期驻留。"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "举办生日会于",
+            "object": "广西柳州动物园",
+            "object_type": "Place",
+            "evidence": "2024年7月5日，蜀琳在柳州动物园度过了17岁生日……7月5日，柳州动物园为蜀琳举办了18岁生日会。"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "谱系号",
+            "object": "726",
+            "object_type": "Other",
+            "evidence": "娅林（别名：开开），雄性大熊猫，谱系号726，2008年8月24日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "娅林（别名：开开），雄性大熊猫，谱系号726，2008年8月24日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "娅林（别名：开开），雄性大熊猫，谱系号726，2008年8月24日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "出生时间",
+            "object": "2008年8月24日",
+            "object_type": "Biology",
+            "evidence": "娅林（别名：开开），雄性大熊猫，谱系号726，2008年8月24日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "又名",
+            "object": "开开",
+            "object_type": "Alias",
+            "evidence": "娅林（别名：开开）"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "父亲为",
+            "object": "屏屏",
+            "object_type": "Person",
+            "evidence": "父亲为屏屏，母亲为娅娅。"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "母亲为",
+            "object": "娅娅",
+            "object_type": "Person",
+            "evidence": "父亲为屏屏，母亲为娅娅。"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "被认养于",
+            "object": "中央政府",
+            "object_type": "Person",
+            "evidence": "2015年作为中央政府庆祝澳门回归15周年的礼物，与雌性大熊猫蜀蓉共同赠予澳门，其澳门呼名延续“开开”寓意生活安康。"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "旅居于",
+            "object": "澳门",
+            "object_type": "Place",
+            "evidence": "2015年作为中央政府庆祝澳门回归15周年的礼物，与雌性大熊猫蜀蓉共同赠予澳门，其澳门呼名延续“开开”寓意生活安康。"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "公开亮相于",
+            "object": "澳门石排湾郊野公园",
+            "object_type": "Habitat",
+            "evidence": "2015年4月30日乘专机抵澳后接受隔离检疫，同年6月1日正式在澳门石排湾郊野公园亮相。"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "育有",
+            "object": "健健",
+            "object_type": "Person",
+            "evidence": "后与蜀蓉（心心）诞下双胞胎“健健”和“康康”"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "育有",
+            "object": "康康",
+            "object_type": "Person",
+            "evidence": "后与蜀蓉（心心）诞下双胞胎“健健”和“康康”"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "珠珠，雌性大熊猫，谱系号509"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "出生时间",
+            "object": "2000年8月6日",
+            "object_type": "Biology",
+            "evidence": "2000年8月6日出生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心核桃坪野化培训基地",
+            "object_type": "Habitat",
+            "evidence": "2000年8月6日出生于中国大熊猫保护研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "谱系号",
+            "object": "509",
+            "object_type": "Other",
+            "evidence": "谱系号509"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "母亲为",
+            "object": "白雪",
+            "object_type": "Person",
+            "evidence": "母亲为秦岭野生大熊猫白雪"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "秦川",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园……以及2020年20岁时产下的末子秦华。其中……其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "佳佳",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园……以及2020年20岁时产下的末子秦华。其中……其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "园园",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园……以及2020年20岁时产下的末子秦华。其中……其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "秦华",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园……以及2020年20岁时产下的末子秦华。其中……其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "丫丫",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园……以及2020年20岁时产下的末子秦华。其中……其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "珠珠",
+            "predicate": "育有",
+            "object": "安安",
+            "object_type": "Person",
+            "evidence": "共繁育7只幼崽，包括2008年长子秦川、2019年通过人工授精诞下的龙凤胎佳佳和园园……以及2020年20岁时产下的末子秦华。其中……其他子女包括丫丫、安安等。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "美安（2006年9月22日-2008年3月1日）是出生于中国大熊猫保护研究中心核桃坪基地的雌性大熊猫，谱系号653。"
+          },
+          {
+            "subject": "美安",
+            "predicate": "出生时间",
+            "object": "2006年9月22日",
+            "object_type": "Biology",
+            "evidence": "2006年9月22日-2008年3月1日"
+          },
+          {
+            "subject": "美安",
+            "predicate": "死亡时间",
+            "object": "2008年3月1日",
+            "object_type": "Biology",
+            "evidence": "2006年9月22日-2008年3月1日"
+          },
+          {
+            "subject": "美安",
+            "predicate": "谱系号",
+            "object": "653",
+            "object_type": "Other",
+            "evidence": "谱系号653"
+          },
+          {
+            "subject": "美安",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心核桃坪基地",
+            "object_type": "Habitat",
+            "evidence": "出生于中国大熊猫保护研究中心核桃坪基地"
+          },
+          {
+            "subject": "美安",
+            "predicate": "母亲为",
+            "object": "帼帼",
+            "object_type": "Person",
+            "evidence": "其母亲为著名大熊猫帼帼（谱系号434）"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "勇勇，雄性，谱系号584，2004年8月26日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "出生时间",
+            "object": "2004年8月26日",
+            "object_type": "Biology",
+            "evidence": "2004年8月26日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2004年8月26日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "谱系号",
+            "object": "584",
+            "object_type": "Other",
+            "evidence": "谱系号584"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "母亲为",
+            "object": "蜀庆",
+            "object_type": "Person",
+            "evidence": "母亲为蜀庆，父亲系野外大熊猫屏屏"
+          },
+          {
+            "subject": "勇勇",
+            "predicate": "父亲为",
+            "object": "屏屏",
+            "object_type": "Person",
+            "evidence": "母亲为蜀庆，父亲系野外大熊猫屏屏"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "蜀琳，2007年7月5日出生于成都大熊猫繁育研究基地的雄性大熊猫，谱系号666"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "出生时间",
+            "object": "2007年7月5日",
+            "object_type": "Biology",
+            "evidence": "2007年7月5日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2007年7月5日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "谱系号",
+            "object": "666",
+            "object_type": "Other",
+            "evidence": "谱系号666"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2012年11月8日从外派地点返回基地"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "赴",
+            "object": "湖北安吉竹博园",
+            "object_type": "Habitat",
+            "evidence": "2009年10月21日以“科普大使”身份前往湖北安吉竹博园"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "旅居于",
+            "object": "广西柳州动物园",
+            "object_type": "Habitat",
+            "evidence": "2013年1月31日赴广西柳州动物园，并于2013年3月28日起正式长期驻留。"
+          },
+          {
+            "subject": "蜀琳",
+            "predicate": "现居地",
+            "object": "广西柳州动物园",
+            "object_type": "Habitat",
+            "evidence": "2024年7月5日，蜀琳在柳州动物园度过了17岁生日……7月5日，柳州动物园为蜀琳举办了18岁生日会。"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "出生时间",
+            "object": "2008年8月24日",
+            "object_type": "Biology",
+            "evidence": "2008年8月24日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2008年8月24日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "谱系号",
+            "object": "726",
+            "object_type": "Other",
+            "evidence": "谱系号726"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "父亲为",
+            "object": "屏屏",
+            "object_type": "Person",
+            "evidence": "父亲为屏屏，母亲为娅娅"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "母亲为",
+            "object": "娅娅",
+            "object_type": "Person",
+            "evidence": "父亲为屏屏，母亲为娅娅"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "认养名为",
+            "object": "开开",
+            "object_type": "Alias",
+            "evidence": "其澳门呼名延续“开开”寓意生活安康"
+          },
+          {
+            "subject": "娅林",
+            "predicate": "赴",
+            "object": "澳门",
+            "object_type": "Place",
+            "evidence": "2015年作为中央政府庆祝澳门回归15周年的礼物，与雌性大熊猫蜀蓉共同赠予澳门"
+          },
+          {
+            "subject": "蜀蓉",
+            "predicate": "又名",
+            "object": "心心",
+            "object_type": "Alias",
+            "evidence": "蜀蓉（心心）"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "2000年8月6日",
+          "2002年",
+          "2006年9月22日",
+          "2008年3月1日",
+          "2004年8月26日",
+          "2007年7月5日",
+          "2008年8月24日",
+          "2008年",
+          "2009年10月21日",
+          "2012年11月8日",
+          "2013年1月31日",
+          "2013年3月28日",
+          "2015年4月30日",
+          "2015年6月1日",
+          "2019年",
+          "2020年",
+          "2024年7月5日"
+        ],
+        "人物": [
+          "白雪",
+          "帼帼",
+          "蜀庆",
+          "屏屏",
+          "琳琳",
+          "娅娅",
+          "耀耀",
+          "亮亮",
+          "平平",
+          "安安",
+          "丫丫",
+          "秦川",
+          "佳佳",
+          "园园",
+          "秦华",
+          "蜀蓉",
+          "蜀祥",
+          "蜀云",
+          "健健",
+          "康康",
+          "心心"
+        ],
+        "地点": [
+          "秦岭",
+          "浙江正辉照明工程有限公司",
+          "中央政府",
+          "澳门特区政府",
+          "中国大熊猫保护研究中心核桃坪野化培训基地",
+          "陕西珍稀野生动物抢救饲养研究中心",
+          "成都大熊猫繁育研究基地",
+          "湖北安吉竹博园",
+          "广西柳州动物园",
+          "澳门石排湾郊野公园"
+        ],
+        "熊猫曾用名": [
+          "蒸包",
+          "段正勇",
+          "开开",
+          "心心"
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图19\\part_04.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "1992年9月4日",
+          "1997年7月17日",
+          "1994年9月",
+          "2007年8月13日",
+          "2012年1月11日",
+          "2013年8月27日",
+          "2016年6月23日",
+          "2019年8月9日",
+          "2010年8月4日",
+          "2017年9月28日",
+          "2010年9月8日",
+          "2017年7月20日",
+          "2025年11月27日",
+          "2026年1月6日"
+        ],
+        "person_entities": [
+          "印尼总统普拉博沃",
+          "越越",
+          "美美",
+          "冰星",
+          "二丫头",
+          "园园",
+          "娜娜",
+          "晔晔",
+          "武岗",
+          "妮妮",
+          "妮可",
+          "大妮",
+          "小妮"
+        ],
+        "place_entities": [
+          "成都",
+          "日本和歌山县白浜",
+          "山西太原",
+          "印度尼西亚",
+          "西爪哇省茂物",
+          "雅安碧峰峡"
+        ],
+        "panda_aliases": [
+          "蓉浜",
+          "星雅",
+          "彩陶",
+          "湖春",
+          "妮娜",
+          "越越",
+          "美美",
+          "永明",
+          "冰星",
+          "二丫头",
+          "星蓉",
+          "园园",
+          "娜娜",
+          "晔晔",
+          "武岗",
+          "妮妮",
+          "妮可",
+          "大妮",
+          "小妮",
+          "雅一",
+          "雅二",
+          "星光",
+          "星辰",
+          "星晴",
+          "Satrio Wiratama",
+          "Rio",
+          "蒸包"
+        ],
+        "companion_species": [
+          "大熊猫",
+          "熊猫"
+        ],
+        "predator_species": [],
+        "habitats": [
+          "成都动物园",
+          "成都大熊猫繁育研究基地",
+          "中国大熊猫保护研究中心雅安碧峰峡基地",
+          "日本和歌山县白浜野生动物园",
+          "山西太原动物园",
+          "印度尼西亚野生动物园",
+          "西爪哇省茂物野生动物园",
+          "熊猫谷",
+          "印度尼西亚西爪哇省茂物野生动物园"
+        ],
+        "biology_terms": [
+          "初生体重91克",
+          "体重达91公斤",
+          "雄性",
+          "雌性",
+          "性情稳重且食性广泛",
+          "生长发育良好"
+        ],
+        "behavior_terms": [
+          "冥想“猫生”",
+          "性格文静",
+          "喜欢吃竹笋、苹果",
+          "与同伴相处和睦",
+          "喜欢呆在树叉上冥想“猫生”"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [
+          "幼崽",
+          "龙凤胎",
+          "双胞胎",
+          "雌性",
+          "雄性"
+        ],
+        "reproduction_terms": [
+          "龙凤胎",
+          "双胞胎",
+          "自然繁殖",
+          "人工繁育",
+          "野培",
+          "龙凤胎雅一、雅二",
+          "野培龙凤胎星光、星辰",
+          "雌性幼崽星晴",
+          "印尼首只大熊猫幼仔"
+        ],
+        "communication_terms": [
+          "昵称",
+          "乳名",
+          "外号",
+          "曾用名",
+          "认养名",
+          "又名"
+        ],
+        "threat_factors": [],
+        "food_items": [
+          "竹笋",
+          "苹果"
+        ],
+        "food_parts": [
+          "树叉"
+        ],
+        "population_metrics": [
+          "谱系号389",
+          "谱系号681",
+          "谱系号680",
+          "谱系号475",
+          "谱系号445",
+          "谱系号1082"
+        ],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "蓉浜",
+            "predicate": "出生于",
+            "object": "成都动物园",
+            "object_type": "Place",
+            "evidence": "大熊猫蓉浜（1992年9月4日-1997年7月17日）出生于成都动物园，谱系号389，父亲为越越，母亲为美美。"
+          },
+          {
+            "subject": "蓉浜",
+            "predicate": "谱系号",
+            "object": "389",
+            "object_type": "Other",
+            "evidence": "大熊猫蓉浜（1992年9月4日-1997年7月17日）出生于成都动物园，谱系号389，父亲为越越，母亲为美美。"
+          },
+          {
+            "subject": "蓉浜",
+            "predicate": "父亲为",
+            "object": "越越",
+            "object_type": "Person",
+            "evidence": "大熊猫蓉浜（1992年9月4日-1997年7月17日）出生于成都动物园，谱系号389，父亲为越越，母亲为美美。"
+          },
+          {
+            "subject": "蓉浜",
+            "predicate": "母亲为",
+            "object": "美美",
+            "object_type": "Person",
+            "evidence": "大熊猫蓉浜（1992年9月4日-1997年7月17日）出生于成都动物园，谱系号389，父亲为越越，母亲为美美。"
+          },
+          {
+            "subject": "蓉浜",
+            "predicate": "赴",
+            "object": "日本和歌山县白浜野生动物园",
+            "object_type": "Place",
+            "evidence": "1994年9月，蓉浜与雄性大熊猫永明赴日本和歌山县白浜野生动物园，开启为期10年的\"中日大熊猫国际合作繁殖计划\""
+          },
+          {
+            "subject": "蓉浜",
+            "predicate": "死亡时间",
+            "object": "1997年7月17日",
+            "object_type": "Other",
+            "evidence": "蓉浜于1997年7月17日去世"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "大熊猫星雅（谱系号681）是2007年8月13日出生于成都大熊猫繁育研究基地的雌性大熊猫"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "谱系号",
+            "object": "681",
+            "object_type": "Other",
+            "evidence": "大熊猫星雅（谱系号681）是2007年8月13日出生于成都大熊猫繁育研究基地的雌性大熊猫"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "出生时间",
+            "object": "2007年8月13日",
+            "object_type": "Other",
+            "evidence": "大熊猫星雅（谱系号681）是2007年8月13日出生于成都大熊猫繁育研究基地的雌性大熊猫"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫星雅（谱系号681）是2007年8月13日出生于成都大熊猫繁育研究基地的雌性大熊猫"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "父亲为",
+            "object": "冰星",
+            "object_type": "Person",
+            "evidence": "父亲为人工繁育个体冰星（谱系号475），母亲是大熊猫二丫头（谱系号445）"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "母亲为",
+            "object": "二丫头",
+            "object_type": "Person",
+            "evidence": "父亲为人工繁育个体冰星（谱系号475），母亲是大熊猫二丫头（谱系号445）"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "同胞为",
+            "object": "星蓉",
+            "object_type": "Person",
+            "evidence": "与同胞姐姐星蓉（谱系号680）组成基地首对人工繁育大熊猫双胞胎组合。"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "入驻",
+            "object": "熊猫谷",
+            "object_type": "Place",
+            "evidence": "2012年1月11日，星雅作为首批6只大熊猫之一入驻熊猫谷参与野化放归项目。"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "育有",
+            "object": "雅一",
+            "object_type": "Person",
+            "evidence": "2013年8月27日首次产下龙凤胎雅一、雅二"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "育有",
+            "object": "雅二",
+            "object_type": "Person",
+            "evidence": "2013年8月27日首次产下龙凤胎雅一、雅二"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "育有",
+            "object": "星光",
+            "object_type": "Person",
+            "evidence": "2016年6月23日诞下全球首例人工圈养大熊猫野培龙凤胎星光、星辰"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "育有",
+            "object": "星辰",
+            "object_type": "Person",
+            "evidence": "2016年6月23日诞下全球首例人工圈养大熊猫野培龙凤胎星光、星辰"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "育有",
+            "object": "星晴",
+            "object_type": "Person",
+            "evidence": "2019年8月9日第三次产下雌性幼崽星晴"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡基地",
+            "object_type": "Place",
+            "evidence": "大熊猫彩陶是2010年8月4日出生于中国大熊猫保护研究中心雅安碧峰峡基地的雄性大熊猫，父母为大熊猫园园和娜娜。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "出生时间",
+            "object": "2010年8月4日",
+            "object_type": "Other",
+            "evidence": "大熊猫彩陶是2010年8月4日出生于中国大熊猫保护研究中心雅安碧峰峡基地的雄性大熊猫，父母为大熊猫园园和娜娜。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫彩陶是2010年8月4日出生于中国大熊猫保护研究中心雅安碧峰峡基地的雄性大熊猫，父母为大熊猫园园和娜娜。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "父亲为",
+            "object": "园园",
+            "object_type": "Person",
+            "evidence": "父母为大熊猫园园和娜娜。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "母亲为",
+            "object": "娜娜",
+            "object_type": "Person",
+            "evidence": "父母为大熊猫园园和娜娜。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "迁至",
+            "object": "山西太原动物园",
+            "object_type": "Place",
+            "evidence": "2013年5月30日首次被外派至山西太原动物园"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "赴",
+            "object": "印度尼西亚",
+            "object_type": "Place",
+            "evidence": "2017年9月28日赴印度尼西亚开展为期10年的科研合作。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "同胞为",
+            "object": "湖春",
+            "object_type": "Person",
+            "evidence": "2017年9月28日与同伴湖春共同赴印度尼西亚开展为期10年的科研合作，成为首对旅居印尼的中国大熊猫。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "昵称为",
+            "object": "Satrio Wiratama",
+            "object_type": "Alias",
+            "evidence": "该幼仔由旅居印尼的中国雄性大熊猫“彩陶”和雌性大熊猫“湖春”所生。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡基地",
+            "object_type": "Place",
+            "evidence": "大熊猫湖春是旅居印度尼西亚开展科研合作的雌性大熊猫，2010年9月8日出生于中国大熊猫保护研究中心雅安碧峰峡基地，母亲为大熊猫晔晔，父亲为大熊猫武岗。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "出生时间",
+            "object": "2010年9月8日",
+            "object_type": "Other",
+            "evidence": "大熊猫湖春是旅居印度尼西亚开展科研合作的雌性大熊猫，2010年9月8日出生于中国大熊猫保护研究中心雅安碧峰峡基地，母亲为大熊猫晔晔，父亲为大熊猫武岗。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫湖春是旅居印度尼西亚开展科研合作的雌性大熊猫，2010年9月8日出生于中国大熊猫保护研究中心雅安碧峰峡基地，母亲为大熊猫晔晔，父亲为大熊猫武岗。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "母亲为",
+            "object": "晔晔",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫晔晔，父亲为大熊猫武岗。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "父亲为",
+            "object": "武岗",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫晔晔，父亲为大熊猫武岗。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "赴",
+            "object": "山西太原动物园",
+            "object_type": "Place",
+            "evidence": "2013年5月，湖春曾与彩陶一同赴山西太原动物园开展交流。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "赴",
+            "object": "印度尼西亚野生动物园",
+            "object_type": "Place",
+            "evidence": "2017年9月，湖春作为中国首对旅居印尼的大熊猫，与彩陶启程前往印度尼西亚野生动物园，开启为期十年的科研合作。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "育有",
+            "object": "Satrio Wiratama",
+            "object_type": "Person",
+            "evidence": "2025年11月27日，湖春在茂物野生动物园通过自然繁殖计划成功产下幼崽"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "又名",
+            "object": "Satrio Wiratama",
+            "object_type": "Alias",
+            "evidence": "印尼总统普拉博沃为其命名为“Satrio Wiratama”（昵称“Rio”）"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "昵称为",
+            "object": "Rio",
+            "object_type": "Alias",
+            "evidence": "印尼总统普拉博沃为其命名为“Satrio Wiratama”（昵称“Rio”）"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "谱系号",
+            "object": "1082",
+            "object_type": "Other",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "出生时间",
+            "object": "2017年7月20日",
+            "object_type": "Other",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "出生体重范围",
+            "object": "91克",
+            "object_type": "Biology",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "母亲为",
+            "object": "妮妮",
+            "object_type": "Person",
+            "evidence": "母亲是大熊猫妮妮"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "同胞为",
+            "object": "妮可",
+            "object_type": "Person",
+            "evidence": "双胞胎哥哥是妮可"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "同胞为",
+            "object": "大妮",
+            "object_type": "Person",
+            "evidence": "兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "同胞为",
+            "object": "小妮",
+            "object_type": "Person",
+            "evidence": "兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "父亲为",
+            "object": "冰星",
+            "object_type": "Person",
+            "evidence": "大熊猫星雅（谱系号681）是2007年8月13日出生于成都大熊猫繁育研究基地的雌性大熊猫，父亲为人工繁育个体冰星（谱系号475），母亲是大熊猫二丫头（谱系号445）"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "母亲为",
+            "object": "二丫头",
+            "object_type": "Person",
+            "evidence": "大熊猫星雅（谱系号681）是2007年8月13日出生于成都大熊猫繁育研究基地的雌性大熊猫，父亲为人工繁育个体冰星（谱系号475），母亲是大熊猫二丫头（谱系号445）"
+          },
+          {
+            "subject": "星雅",
+            "predicate": "出生体重范围",
+            "object": "91公斤",
+            "object_type": "Biology",
+            "evidence": "其体重达91公斤，生长发育良好，性情稳重且食性广泛。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "父亲为",
+            "object": "园园",
+            "object_type": "Person",
+            "evidence": "大熊猫彩陶是2010年8月4日出生于中国大熊猫保护研究中心雅安碧峰峡基地的雄性大熊猫，父母为大熊猫园园和娜娜。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "母亲为",
+            "object": "娜娜",
+            "object_type": "Person",
+            "evidence": "大熊猫彩陶是2010年8月4日出生于中国大熊猫保护研究中心雅安碧峰峡基地的雄性大熊猫，父母为大熊猫园园和娜娜。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "旅居于",
+            "object": "印度尼西亚",
+            "object_type": "Place",
+            "evidence": "2017年9月28日与同伴湖春共同赴印度尼西亚开展为期10年的科研合作，成为首对旅居印尼的中国大熊猫。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "昵称为",
+            "object": "Rio",
+            "object_type": "Alias",
+            "evidence": "该幼仔由旅居印尼的中国雄性大熊猫“彩陶”和雌性大熊猫“湖春”所生。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "母亲为",
+            "object": "晔晔",
+            "object_type": "Person",
+            "evidence": "大熊猫湖春是旅居印度尼西亚开展科研合作的雌性大熊猫，2010年9月8日出生于中国大熊猫保护研究中心雅安碧峰峡基地，母亲为大熊猫晔晔，父亲为大熊猫武岗。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "父亲为",
+            "object": "武岗",
+            "object_type": "Person",
+            "evidence": "大熊猫湖春是旅居印度尼西亚开展科研合作的雌性大熊猫，2010年9月8日出生于中国大熊猫保护研究中心雅安碧峰峡基地，母亲为大熊猫晔晔，父亲为大熊猫武岗。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "旅居于",
+            "object": "印度尼西亚",
+            "object_type": "Place",
+            "evidence": "2017年9月，湖春作为中国首对旅居印尼的大熊猫，与彩陶启程前往印度尼西亚野生动物园，开启为期十年的科研合作。"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "昵称为",
+            "object": "Satrio Wiratama",
+            "object_type": "Alias",
+            "evidence": "2025年11月27日，湖春在茂物野生动物园通过自然繁殖计划成功产下幼崽，印尼总统普拉博沃为其命名为“Satrio Wiratama”（昵称“Rio”）"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "昵称为",
+            "object": "Rio",
+            "object_type": "Alias",
+            "evidence": "2025年11月27日，湖春在茂物野生动物园通过自然繁殖计划成功产下幼崽，印尼总统普拉博沃为其命名为“Satrio Wiratama”（昵称“Rio”）"
+          },
+          {
+            "subject": "湖春",
+            "predicate": "育有",
+            "object": "Satrio Wiratama",
+            "object_type": "Person",
+            "evidence": "该幼仔由旅居印尼的中国雄性大熊猫“彩陶”和雌性大熊猫“湖春”所生。"
+          },
+          {
+            "subject": "彩陶",
+            "predicate": "育有",
+            "object": "Satrio Wiratama",
+            "object_type": "Person",
+            "evidence": "该幼仔由旅居印尼的中国雄性大熊猫“彩陶”和雌性大熊猫“湖春”所生。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "母亲为",
+            "object": "妮妮",
+            "object_type": "Person",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "同胞为",
+            "object": "妮可",
+            "object_type": "Person",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "同胞为",
+            "object": "大妮",
+            "object_type": "Person",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "同胞为",
+            "object": "小妮",
+            "object_type": "Person",
+            "evidence": "妮娜（谱系号1082），雌性大熊猫，2017年7月20日出生于成都大熊猫繁育研究基地，初生体重91克，母亲是大熊猫妮妮，双胞胎哥哥是妮可，兄弟姐妹包括大妮和小妮。"
+          },
+          {
+            "subject": "妮娜",
+            "predicate": "出生体重范围",
+            "object": "91克",
+            "object_type": "Biology",
+            "evidence": "初生体重91克"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "1992年9月4日",
+          "1997年7月17日",
+          "1994年9月",
+          "2007年8月13日",
+          "2012年1月11日",
+          "2013年8月27日",
+          "2016年6月23日",
+          "2019年8月9日",
+          "2010年8月4日",
+          "2017年9月28日",
+          "2010年9月8日",
+          "2017年7月20日",
+          "2025年11月27日",
+          "2026年1月6日"
+        ],
+        "人物": [
+          "印尼总统普拉博沃",
+          "越越",
+          "美美",
+          "冰星",
+          "二丫头",
+          "园园",
+          "娜娜",
+          "晔晔",
+          "武岗",
+          "妮妮",
+          "妮可",
+          "大妮",
+          "小妮"
+        ],
+        "地点": [
+          "成都",
+          "日本和歌山县白浜",
+          "山西太原",
+          "印度尼西亚",
+          "西爪哇省茂物",
+          "雅安碧峰峡"
+        ],
+        "熊猫曾用名": [
+          "蓉浜",
+          "星雅",
+          "彩陶",
+          "湖春",
+          "妮娜",
+          "越越",
+          "美美",
+          "永明",
+          "冰星",
+          "二丫头",
+          "星蓉",
+          "园园",
+          "娜娜",
+          "晔晔",
+          "武岗",
+          "妮妮",
+          "妮可",
+          "大妮",
+          "小妮",
+          "雅一",
+          "雅二",
+          "星光",
+          "星辰",
+          "星晴",
+          "Satrio Wiratama",
+          "Rio",
+          "蒸包"
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_ingest_chunks\\百度百科熊猫星图19\\part_05.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "1996年8月12日",
+          "2014年10月14日",
+          "2000年7月",
+          "2001年",
+          "2004年",
+          "2005年",
+          "2007年",
+          "2011年",
+          "1986年9月",
+          "2009年12月8日",
+          "2015年8月7日",
+          "2016年2月6日",
+          "2016年3月26日",
+          "2021年",
+          "2021年9月21日",
+          "2022年3月31日",
+          "2025年",
+          "2014年8月16日",
+          "2015年4月9日",
+          "2019年8月10日",
+          "2020年4月9日凌晨",
+          "2020年8月28日",
+          "2021年2月22日"
+        ],
+        "person_entities": [
+          "盼盼",
+          "永巴",
+          "妮妮",
+          "青青",
+          "绣球",
+          "水秀"
+        ],
+        "place_entities": [
+          "四川宝兴",
+          "陕西野生动物保护中心",
+          "成都大熊猫繁育研究基地",
+          "都江堰熊猫谷",
+          "中国大熊猫保护研究中心都江堰基地",
+          "中国大熊猫保护研究中心雅安碧峰峡基地",
+          "中国大熊猫保护研究中心卧龙神树坪基地"
+        ],
+        "panda_aliases": [
+          "兴兴",
+          "身残志坚的娃娃鱼",
+          "小泥球",
+          "QQ糖少女",
+          "志坚"
+        ],
+        "companion_species": [
+          "旦旦",
+          "骄阳"
+        ],
+        "predator_species": [],
+        "habitats": [
+          "中国保护大熊猫研究中心核桃坪野化培训基地",
+          "日本神户王子动物园",
+          "雅安碧峰峡基地",
+          "成都大熊猫繁育研究基地",
+          "都江堰熊猫谷",
+          "中国大熊猫保护研究中心卧龙神树坪基地",
+          "中国大熊猫保护研究中心都江堰基地",
+          "神树坪基地幼儿园室外运动场",
+          "都江堰熊猫乐园",
+          "半野化环境"
+        ],
+        "biology_terms": [
+          "雌性",
+          "雄性",
+          "生殖器异常",
+          "染色体检测确认性别为雌性",
+          "腹腔镜探查手术复位卵巢位置",
+          "急性出血性胃肠炎",
+          "窒息死亡",
+          "交配异常",
+          "丰容吊球绳缠绕颈部",
+          "因丰容吊球绳缠绕颈部窒息死亡"
+        ],
+        "behavior_terms": [
+          "攀爬树木",
+          "被母亲频繁移动而浑身沾泥",
+          "独自玩耍",
+          "幼年时期常因被母亲频繁移动而浑身沾泥",
+          "尤其喜爱攀爬树木",
+          "截至2023年7月，该个体已展现出典型的大熊猫习性",
+          "因独特的体态特征被观众称为“QQ糖少女”",
+          "大熊猫优悠和骄阳曾经形影不离"
+        ],
+        "disease_terms": [
+          "急性出血性胃肠炎",
+          "生殖器异常",
+          "窒息"
+        ],
+        "treatment_terms": [
+          "腹腔镜探查手术复位卵巢位置"
+        ],
+        "lifecycle_stages": [
+          "幼年",
+          "幼崽",
+          "幼年时期",
+          "育有子女"
+        ],
+        "reproduction_terms": [
+          "产下双胞胎",
+          "诞下",
+          "繁育",
+          "育有",
+          "产下双胞胎锦心、锦意",
+          "诞下草根",
+          "诞下雌性幼崽禄禄仔",
+          "诞下雄性幼崽檂檂"
+        ],
+        "communication_terms": [
+          "全球征名",
+          "昵称",
+          "别名",
+          "乳名",
+          "外号",
+          "认养名",
+          "曾用名",
+          "经全球征名确定名称",
+          "因幼年爬行姿态被昵称为“身残志坚的娃娃鱼”"
+        ],
+        "threat_factors": [
+          "丰容吊球绳缠绕颈部"
+        ],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "锦竹",
+            "predicate": "谱系号",
+            "object": "437",
+            "object_type": "Other",
+            "evidence": "锦竹（1996年8月12日-2014年10月14日），谱系号437，雌性大熊猫，出生于中国保护大熊猫研究中心核桃坪野化培训基地，父母为盼盼和永巴"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "锦竹（1996年8月12日-2014年10月14日），谱系号437，雌性大熊猫"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "出生于",
+            "object": "中国保护大熊猫研究中心核桃坪野化培训基地",
+            "object_type": "Habitat",
+            "evidence": "锦竹（1996年8月12日-2014年10月14日），谱系号437，雌性大熊猫，出生于中国保护大熊猫研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "出生时间",
+            "object": "1996年8月12日",
+            "object_type": "Other",
+            "evidence": "锦竹（1996年8月12日-2014年10月14日）"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "父亲为",
+            "object": "盼盼",
+            "object_type": "Person",
+            "evidence": "父母为盼盼和永巴"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "母亲为",
+            "object": "永巴",
+            "object_type": "Person",
+            "evidence": "父母为盼盼和永巴"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "育有",
+            "object": "锦心",
+            "object_type": "Person",
+            "evidence": "育有锦心、锦意、草根三女"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "育有",
+            "object": "锦意",
+            "object_type": "Person",
+            "evidence": "育有锦心、锦意、草根三女"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "育有",
+            "object": "草根",
+            "object_type": "Person",
+            "evidence": "育有锦心、锦意、草根三女"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "旅居于",
+            "object": "日本神户王子动物园",
+            "object_type": "Habitat",
+            "evidence": "锦竹于2000年7月旅居日本神户王子动物园"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "又名",
+            "object": "兴兴",
+            "object_type": "Alias",
+            "evidence": "与旦旦共同更名为“兴兴”和“旦旦”"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "2004年染色体检测确认性别为雌性"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "接受治疗",
+            "object": "腹腔镜探查手术复位卵巢位置",
+            "object_type": "Treatment",
+            "evidence": "2005年通过腹腔镜探查手术复位卵巢位置"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "育有",
+            "object": "锦心",
+            "object_type": "Person",
+            "evidence": "2007年产下双胞胎锦心、锦意"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "育有",
+            "object": "锦意",
+            "object_type": "Person",
+            "evidence": "2007年产下双胞胎锦心、锦意"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "育有",
+            "object": "草根",
+            "object_type": "Person",
+            "evidence": "2011年在半野化环境中诞下草根"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "死亡时间",
+            "object": "2014年10月14日",
+            "object_type": "Other",
+            "evidence": "2014年10月14日，锦竹与草根在野化训练中死亡，死因不明"
+          },
+          {
+            "subject": "新兴",
+            "predicate": "谱系号",
+            "object": "329",
+            "object_type": "Other",
+            "evidence": "新兴（1986年9月-2009年12月8日），雄性，1986年9月出生于四川宝兴，谱系号329"
+          },
+          {
+            "subject": "新兴",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "新兴（1986年9月-2009年12月8日），雄性"
+          },
+          {
+            "subject": "新兴",
+            "predicate": "出生于",
+            "object": "四川宝兴",
+            "object_type": "Place",
+            "evidence": "1986年9月出生于四川宝兴"
+          },
+          {
+            "subject": "新兴",
+            "predicate": "逝世于",
+            "object": "2009年12月8日",
+            "object_type": "Other",
+            "evidence": "新兴（1986年9月-2009年12月8日）"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "谱系号",
+            "object": "965",
+            "object_type": "Other",
+            "evidence": "大妮，雌性大熊猫，谱系号965，别名志坚，2015年8月7日出生于成都大熊猫繁育研究基地，母亲为大熊猫妮妮"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大妮，雌性大熊猫"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "又名",
+            "object": "志坚",
+            "object_type": "Alias",
+            "evidence": "别名志坚"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2015年8月7日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "出生时间",
+            "object": "2015年8月7日",
+            "object_type": "Other",
+            "evidence": "2015年8月7日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "母亲为",
+            "object": "妮妮",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫妮妮"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "同胞为",
+            "object": "小妮",
+            "object_type": "Person",
+            "evidence": "大妮与妹妹小妮出生"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "昵称为",
+            "object": "身残志坚的娃娃鱼",
+            "object_type": "Alias",
+            "evidence": "因幼年爬行姿态被昵称为“身残志坚的娃娃鱼”"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "迁至",
+            "object": "都江堰熊猫谷",
+            "object_type": "Habitat",
+            "evidence": "2016年3月26日迁居都江堰熊猫谷生活"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2021年返回成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "出生时间",
+            "object": "2021年9月21日",
+            "object_type": "Other",
+            "evidence": "优悠，2021年9月21日出生于中国大熊猫保护研究中心卧龙神树坪基地的雌性大熊猫"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心卧龙神树坪基地",
+            "object_type": "Habitat",
+            "evidence": "优悠，2021年9月21日出生于中国大熊猫保护研究中心卧龙神树坪基地的雌性大熊猫"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "雌性大熊猫"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "父亲为",
+            "object": "青青",
+            "object_type": "Person",
+            "evidence": "其父母为大熊猫青青和绣球"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "母亲为",
+            "object": "绣球",
+            "object_type": "Person",
+            "evidence": "其父母为大熊猫青青和绣球"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "昵称为",
+            "object": "小泥球",
+            "object_type": "Alias",
+            "evidence": "由此获得“小泥球”的昵称"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "行为偏好",
+            "object": "攀爬树木",
+            "object_type": "Behavior",
+            "evidence": "尤其喜爱攀爬树木"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "昵称为",
+            "object": "QQ糖少女",
+            "object_type": "Alias",
+            "evidence": "被观众称为“QQ糖少女”"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "同胞为",
+            "object": "骄阳",
+            "object_type": "Person",
+            "evidence": "大熊猫优悠和骄阳曾经形影不离"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "谱系号",
+            "object": "936",
+            "object_type": "Other",
+            "evidence": "禄禄，雌性大熊猫，谱系号936，2014年8月16日出生于中国大熊猫保护研究中心雅安碧峰峡基地，母亲为水秀"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "雌性大熊猫"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡基地",
+            "object_type": "Habitat",
+            "evidence": "2014年8月16日出生于中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "出生时间",
+            "object": "2014年8月16日",
+            "object_type": "Other",
+            "evidence": "2014年8月16日出生于中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "母亲为",
+            "object": "水秀",
+            "object_type": "Person",
+            "evidence": "母亲为水秀"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "傲傲",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "峰峰",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "怡然",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "怡畅",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "华阳",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "禧禧",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "宝来",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "璨璨",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "绣球",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "秀阳",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "茅茅",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "同胞为",
+            "object": "秀辰",
+            "object_type": "Person",
+            "evidence": "同母兄弟姐妹包括傲傲、峰峰、怡然、怡畅、华阳、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "育有",
+            "object": "禄禄仔",
+            "object_type": "Person",
+            "evidence": "育有子女禄禄仔和檂檂"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "育有",
+            "object": "檂檂",
+            "object_type": "Person",
+            "evidence": "育有子女禄禄仔和檂檂"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心都江堰基地",
+            "object_type": "Habitat",
+            "evidence": "2015年4月9日迁至中国大熊猫保护研究中心都江堰基地"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "育有",
+            "object": "禄禄仔",
+            "object_type": "Person",
+            "evidence": "2019年8月10日诞下雌性幼崽禄禄仔"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "育有",
+            "object": "檂檂",
+            "object_type": "Person",
+            "evidence": "2020年8月28日诞下雄性幼崽檂檂（谱系号1257）"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "谱系号",
+            "object": "437",
+            "object_type": "Other",
+            "evidence": "锦竹（1996年8月12日-2014年10月14日），谱系号437，雌性大熊猫"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "出生于",
+            "object": "中国保护大熊猫研究中心核桃坪野化培训基地",
+            "object_type": "Habitat",
+            "evidence": "出生于中国保护大熊猫研究中心核桃坪野化培训基地"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "出生时间",
+            "object": "1996年8月12日",
+            "object_type": "Other",
+            "evidence": "1996年8月12日"
+          },
+          {
+            "subject": "锦竹",
+            "predicate": "旅居于",
+            "object": "日本神户王子动物园",
+            "object_type": "Place",
+            "evidence": "于2000年7月旅居日本神户王子动物园"
+          },
+          {
+            "subject": "新兴",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "新兴（1986年9月-2009年12月8日），雄性，1986年9月出生于四川宝兴，谱系号329"
+          },
+          {
+            "subject": "新兴",
+            "predicate": "出生时间",
+            "object": "1986年9月",
+            "object_type": "Other",
+            "evidence": "1986年9月出生于四川宝兴"
+          },
+          {
+            "subject": "新兴",
+            "predicate": "死亡时间",
+            "object": "2009年12月8日",
+            "object_type": "Other",
+            "evidence": "2009年12月8日"
+          },
+          {
+            "subject": "大妮",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大妮，雌性大熊猫，谱系号965，别名志坚，2015年8月7日出生于成都大熊猫繁育研究基地，母亲为大熊猫妮妮"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "优悠，2021年9月21日出生于中国大熊猫保护研究中心卧龙神树坪基地的雌性大熊猫"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "昵称为",
+            "object": "QQ糖少女",
+            "object_type": "Alias",
+            "evidence": "在2025年播出的《成长吧！大熊猫2025》节目中，优悠因独特的体态特征被观众称为“QQ糖少女”"
+          },
+          {
+            "subject": "优悠",
+            "predicate": "终生认养于",
+            "object": "优必选科技",
+            "object_type": "Person",
+            "evidence": "2022年3月31日，优必选科技与中国大熊猫保护研究中心达成合作，终身认养一只与迪拜世博会中国馆熊猫机器人同名的大熊猫"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "禄禄，雌性大熊猫，谱系号936，2014年8月16日出生于中国大熊猫保护研究中心雅安碧峰峡基地，母亲为水秀"
+          },
+          {
+            "subject": "禄禄",
+            "predicate": "迁至",
+            "object": "都江堰熊猫乐园",
+            "object_type": "Place",
+            "evidence": "2021年2月22日母子迁至都江堰熊猫乐园生活"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "1996年8月12日",
+          "2014年10月14日",
+          "2000年7月",
+          "2001年",
+          "2004年",
+          "2005年",
+          "2007年",
+          "2011年",
+          "1986年9月",
+          "2009年12月8日",
+          "2015年8月7日",
+          "2016年2月6日",
+          "2016年3月26日",
+          "2021年",
+          "2021年9月21日",
+          "2022年3月31日",
+          "2025年",
+          "2014年8月16日",
+          "2015年4月9日",
+          "2019年8月10日",
+          "2020年4月9日凌晨",
+          "2020年8月28日",
+          "2021年2月22日"
+        ],
+        "人物": [
+          "盼盼",
+          "永巴",
+          "妮妮",
+          "青青",
+          "绣球",
+          "水秀"
+        ],
+        "地点": [
+          "四川宝兴",
+          "陕西野生动物保护中心",
+          "成都大熊猫繁育研究基地",
+          "都江堰熊猫谷",
+          "中国大熊猫保护研究中心都江堰基地",
+          "中国大熊猫保护研究中心雅安碧峰峡基地",
+          "中国大熊猫保护研究中心卧龙神树坪基地"
+        ],
+        "熊猫曾用名": [
+          "兴兴",
+          "身残志坚的娃娃鱼",
+          "小泥球",
+          "QQ糖少女",
+          "志坚"
+        ]
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "猫熊": "大熊猫",
+    "花熊": "大熊猫",
+    "黑白熊": "大熊猫",
+    "食铁兽": "大熊猫",
+    "熊猫": "大熊猫",
+    "白熊": "大熊猫"
+  },
+  "summary": {
+    "times": [
+      "16岁",
+      "1986年9月",
+      "1992年9月4日",
+      "1994年9月",
+      "1996年8月12日",
+      "1997年7月17日",
+      "2000年7月",
+      "2000年8月6日",
+      "2001年",
+      "2002年",
+      "2004年",
+      "2004年8月26日",
+      "2005年",
+      "2006年9月22日",
+      "2007年",
+      "2007年11月1日",
+      "2007年12月4日",
+      "2007年7月5日",
+      "2007年8月13日",
+      "2007年8月23日",
+      "2008年",
+      "2008年3月1日",
+      "2008年8月24日",
+      "2009年10月21日",
+      "2009年11月18日",
+      "2009年11月20日",
+      "2009年12月8日",
+      "2009年8月23日",
+      "2009年9月27日",
+      "2010年12月13日",
+      "2010年8月23日",
+      "2010年8月4日",
+      "2010年9月8日",
+      "2011年",
+      "2011年3月24日",
+      "2012年",
+      "2012年11月8日",
+      "2012年1月11日",
+      "2013年11月28日",
+      "2013年1月30日",
+      "2013年1月31日",
+      "2013年3月23日",
+      "2013年3月28日",
+      "2013年8月14日",
+      "2013年8月27日",
+      "2013年8月8日",
+      "2014年10月14日",
+      "2014年8月16日",
+      "2014年底",
+      "2015年",
+      "2015年11月7日",
+      "2015年4月30日",
+      "2015年4月9日",
+      "2015年6月1日",
+      "2015年8月7日",
+      "2016年2月6日",
+      "2016年3月26日",
+      "2016年6月23日",
+      "2017年7月20日",
+      "2017年9月28日",
+      "2018年6月20日",
+      "2018年底-2019年初",
+      "2019年",
+      "2019年8月10日",
+      "2019年8月28日",
+      "2019年8月9日",
+      "2020年",
+      "2020年4月9日凌晨",
+      "2020年8月28日",
+      "2021年",
+      "2021年2月22日",
+      "2021年9月21日",
+      "2022年3月31日",
+      "2023年",
+      "2023年5月",
+      "2024年7月5日",
+      "2025年",
+      "2025年11月27日",
+      "2026年1月6日",
+      "2026年7月"
+    ],
+    "person_entities": [
+      "丫丫",
+      "二丫头",
+      "亮亮",
+      "佳佳",
+      "健健",
+      "冰星",
+      "印尼总统普拉博沃",
+      "园园",
+      "大妮",
+      "妮可",
+      "妮妮",
+      "姚蔓",
+      "娅娅",
+      "娜娜",
+      "安安",
+      "小妮",
+      "屏屏",
+      "帼帼",
+      "平平",
+      "库尔茨",
+      "康康",
+      "心心",
+      "晔晔",
+      "欢欢",
+      "武岗",
+      "水秀",
+      "永巴",
+      "琳琳",
+      "瑛华",
+      "白杨",
+      "白雪",
+      "盼盼",
+      "秦华",
+      "秦川",
+      "绣球",
+      "美美",
+      "耀耀",
+      "范德贝伦",
+      "蜀云",
+      "蜀庆",
+      "蜀祥",
+      "蜀蓉",
+      "越越",
+      "阳阳",
+      "青青",
+      "龙徽"
+    ],
+    "place_entities": [
+      "中国大熊猫保护研究中心",
+      "中国大熊猫保护研究中心卧龙神树坪基地",
+      "中国大熊猫保护研究中心核桃坪野化培训基地",
+      "中国大熊猫保护研究中心碧峰峡基地",
+      "中国大熊猫保护研究中心神树坪基地",
+      "中国大熊猫保护研究中心都江堰基地",
+      "中国大熊猫保护研究中心雅安碧峰峡基地",
+      "中央政府",
+      "北京",
+      "北京动物园",
+      "南京汤山",
+      "南京汤山紫清湖旅游区熊猫馆",
+      "南京汤山紫清湖野生动物世界",
+      "印度尼西亚",
+      "厦门海沧野生动物园",
+      "唐山动物园",
+      "四川宝兴",
+      "四川平武野外",
+      "奥地利维也纳",
+      "奥地利维也纳美泉宫动物园",
+      "奥地利美泉宫动物园",
+      "山西太原",
+      "广西柳州动物园",
+      "成都",
+      "成都大熊猫繁育研究基地",
+      "日本和歌山县白浜",
+      "日本和歌山白浜野生动物园",
+      "济南野生动物世界熊猫馆",
+      "浙江正辉照明工程有限公司",
+      "温岭",
+      "温岭熊猫馆",
+      "湖北安吉竹博园",
+      "澳门特区政府",
+      "澳门石排湾郊野公园",
+      "秦岭",
+      "维也纳",
+      "莫斯科动物园",
+      "西爪哇省茂物",
+      "都江堰熊猫谷",
+      "阆中",
+      "阆中熊猫乐园",
+      "陕西珍稀野生动物抢救饲养研究中心",
+      "陕西野生动物保护中心",
+      "雅安",
+      "雅安碧峰峡"
+    ],
+    "panda_aliases": [
+      "QQ糖少女",
+      "Rio",
+      "Satrio Wiratama",
+      "二丫头",
+      "兴兴",
+      "冰星",
+      "园园",
+      "大妮",
+      "奥林匹亚-昵称为-奥林匹亚",
+      "妮可",
+      "妮妮",
+      "妮娜",
+      "姚欣",
+      "娜娜",
+      "小妮",
+      "小泥球",
+      "开开",
+      "彩陶",
+      "心心",
+      "志坚",
+      "星光",
+      "星晴",
+      "星蓉",
+      "星辰",
+      "星雅",
+      "晔晔",
+      "梅兰-昵称为-梅兰",
+      "梅浜-昵称为-梅浜",
+      "武岗",
+      "段正勇",
+      "永明",
+      "湖春",
+      "福娃-昵称为-福娃",
+      "福禄",
+      "福虎",
+      "福豹",
+      "福龙",
+      "美美",
+      "蒸包",
+      "蓉浜",
+      "越越",
+      "身残志坚的娃娃鱼",
+      "雅一",
+      "雅二"
+    ],
+    "companion_species": [
+      "大熊猫",
+      "旦旦",
+      "熊猫",
+      "骄阳"
+    ],
+    "predator_species": [],
+    "habitats": [
+      "中国保护大熊猫研究中心核桃坪野化培训基地",
+      "中国大熊猫保护研究中心卧龙神树坪基地",
+      "中国大熊猫保护研究中心核桃坪野化培训基地",
+      "中国大熊猫保护研究中心碧峰峡基地",
+      "中国大熊猫保护研究中心神树坪基地",
+      "中国大熊猫保护研究中心都江堰基地",
+      "中国大熊猫保护研究中心雅安碧峰峡基地",
+      "北京动物园",
+      "半野化环境",
+      "南京汤山紫清湖旅游区熊猫馆",
+      "印度尼西亚西爪哇省茂物野生动物园",
+      "印度尼西亚野生动物园",
+      "唐唐-现居地-厦门海沧野生动物园",
+      "园园-现居地-中国大熊猫保护研究中心",
+      "奥地利维也纳美泉宫动物园",
+      "奥林匹亚-现居地-成都大熊猫繁育研究基地",
+      "山西太原动物园",
+      "广西柳州动物园",
+      "成都动物园",
+      "成都大熊猫繁育研究基地",
+      "日本和歌山县白浜野生动物园",
+      "日本神户王子动物园",
+      "梅浜-现居地-唐山动物园",
+      "济南野生动物世界熊猫馆",
+      "温岭熊猫馆",
+      "湖北安吉竹博园",
+      "澳门石排湾郊野公园",
+      "熊猫谷",
+      "神树坪基地幼儿园室外运动场",
+      "西爪哇省茂物野生动物园",
+      "都江堰熊猫乐园",
+      "都江堰熊猫谷",
+      "阆中熊猫乐园",
+      "陕西珍稀野生动物抢救饲养研究中心",
+      "雅安碧峰峡基地",
+      "龙徽-现居地-奥地利美泉宫动物园"
+    ],
+    "biology_terms": [
+      "2020年产仔创下该中心雌性大熊猫最高生产年龄及最多产仔数量纪录",
+      "丰容吊球绳缠绕颈部",
+      "交配异常",
+      "体重达91公斤",
+      "出生体重",
+      "初生体重91克",
+      "因丰容吊球绳缠绕颈部窒息死亡",
+      "妊娠期105天",
+      "小鸟眼圈",
+      "急性出血性胃肠炎",
+      "性情稳重且食性广泛",
+      "性格敏感",
+      "成年体重",
+      "最爱吃水果和窝窝头",
+      "染色体检测确认性别为雌性",
+      "梅兰-出生体重-135克",
+      "梅浜-出生体重-135克",
+      "海豚额头",
+      "特别爱干净",
+      "生殖器异常",
+      "生长发育良好",
+      "窒息死亡",
+      "腹腔镜探查手术复位卵巢位置",
+      "蠕形螨呈阴性",
+      "谱系号",
+      "雄性",
+      "雌性"
+    ],
+    "behavior_terms": [
+      "与同伴相处和睦",
+      "冥想“猫生”",
+      "午后连续数小时进食约70公斤竹笋",
+      "唐唐-出生于-四川平武野外",
+      "唐唐-出生时间-1987年",
+      "唐唐-去世年份-2010年",
+      "唐唐-性别为-雌性",
+      "唐唐-死亡时间-2010年8月22日",
+      "唐唐-谱系号-446",
+      "唐唐-逝世于-厦门海沧野生动物园",
+      "喜欢吃竹笋、苹果",
+      "喜欢呆在树叉上冥想“猫生”",
+      "喜爱爬树玩耍",
+      "因独特的体态特征被观众称为“QQ糖少女”",
+      "园园-出生于-北京动物园",
+      "园园-出生时间-1999年",
+      "园园-同胞为-弟弟（夭折）",
+      "园园-性别为-雄性",
+      "园园-母亲为-永永",
+      "园园-父亲为-良良",
+      "园园-育有-多个子女",
+      "园园-谱系号-488",
+      "园园-赴-莫斯科动物园",
+      "园园-迁至-莫斯科动物园",
+      "园园-返回-中国大熊猫保护研究中心",
+      "大熊猫优悠和骄阳曾经形影不离",
+      "奥林匹亚-出生于-成都大熊猫繁育研究基地",
+      "奥林匹亚-出生时间-2015年6月22日",
+      "奥林匹亚-同胞为-福娃",
+      "奥林匹亚-性别为-雌性",
+      "奥林匹亚-母亲为-科琳",
+      "奥林匹亚-育有-雌性幼仔（2022年9月产下）",
+      "奥林匹亚-谱系号-947",
+      "尤其喜爱攀爬树木",
+      "幼年时期常因被母亲频繁移动而浑身沾泥",
+      "性格傲娇且独立",
+      "性格傲娇且独立，经常与饲养员斗智斗勇",
+      "性格安静喜独处",
+      "性格敏感，特别爱干净",
+      "性格文静",
+      "截至2023年7月，该个体已展现出典型的大熊猫习性",
+      "攀爬树木",
+      "最爱吃水果和窝窝头",
+      "梅浜-出生于-日本和歌山白浜野生动物园",
+      "梅浜-出生时间-2008年9月13日",
+      "梅浜-同胞为-永浜",
+      "梅浜-性别为-雌性",
+      "梅浜-旅居于-唐山动物园",
+      "梅浜-母亲为-良浜",
+      "梅浜-父亲为-永明",
+      "梅浜-育有-梅兰",
+      "梅浜-谱系号-737",
+      "梅浜-赴-唐山动物园",
+      "梅浜-迁至-唐山动物园",
+      "梅浜-返回-中国成都大熊猫繁育研究基地",
+      "清晨蹬水嬉戏",
+      "独自玩耍",
+      "经常与饲养员斗智斗勇",
+      "翻跟斗",
+      "被母亲频繁移动而浑身沾泥",
+      "通过气味与声音进行交流",
+      "隔栏相望",
+      "龙徽-出生于-中国大熊猫保护研究中心核桃坪野化培训基地",
+      "龙徽-出生时间-2000年9月26日",
+      "龙徽-去世年份-2016年",
+      "龙徽-性别为-雄性",
+      "龙徽-旅居于-奥地利美泉宫动物园",
+      "龙徽-死亡时间-2016年12月9日",
+      "龙徽-母亲为-唐唐",
+      "龙徽-父亲为-新兴",
+      "龙徽-谱系号-526",
+      "龙徽-赴-奥地利美泉宫动物园",
+      "龙徽-逝世于-奥地利"
+    ],
+    "disease_terms": [
+      "嘴角生疮",
+      "急性出血性胃肠炎",
+      "急性异物性肺炎休克",
+      "生殖器异常",
+      "窒息"
+    ],
+    "treatment_terms": [
+      "中国大熊猫保护研究中心专家指导下的治疗",
+      "后续将根据复检结果制定治疗方案",
+      "园区在中国大熊猫保护研究中心专家指导下进行治疗",
+      "抢救无效",
+      "检测显示蠕形螨呈阴性，后续将根据复检结果制定治疗方案",
+      "腹腔镜探查手术复位卵巢位置",
+      "隔离检疫"
+    ],
+    "lifecycle_stages": [
+      "双胞胎",
+      "幼崽",
+      "幼年",
+      "幼年时期",
+      "育有子女",
+      "雄性",
+      "雌性",
+      "龙凤胎"
+    ],
+    "reproduction_terms": [
+      "产下双胞胎",
+      "产下双胞胎锦心、锦意",
+      "人工授精",
+      "人工繁育",
+      "人工饲养",
+      "印尼首只大熊猫幼仔",
+      "双胞胎",
+      "妊娠期105天",
+      "繁育",
+      "育有",
+      "自然交配成功率",
+      "自然受孕",
+      "自然孕育",
+      "自然繁殖",
+      "诞下",
+      "诞下草根",
+      "诞下雄性幼崽檂檂",
+      "诞下雌性幼崽禄禄仔",
+      "野培",
+      "野培龙凤胎星光、星辰",
+      "雌性幼崽星晴",
+      "龙凤胎",
+      "龙凤胎雅一、雅二"
+    ],
+    "communication_terms": [
+      "乳名",
+      "全球征名",
+      "其澳门呼名延续“开开”寓意生活安康",
+      "别名",
+      "又名",
+      "因幼年爬行姿态被昵称为“身残志坚的娃娃鱼”",
+      "外号",
+      "奥林匹亚-公开亮相于-成都大熊猫繁育研究基地",
+      "昵称",
+      "曾用名",
+      "梅浜-公开亮相于-唐山动物园",
+      "梅浜-公开亮相于-成都大熊猫繁育研究基地",
+      "澳门呼名延续‘开开’寓意生活安康",
+      "澳门特区政府通过公开征名为幼崽命名",
+      "经全球征名确定名称",
+      "被网友昵称为“段正勇”",
+      "认养名",
+      "通过气味与声音进行交流",
+      "龙徽-公开亮相于-奥地利美泉宫动物园"
+    ],
+    "threat_factors": [
+      "丰容吊球绳缠绕颈部"
+    ],
+    "food_items": [
+      "主食竹",
+      "榴莲",
+      "水果",
+      "玉米",
+      "窝窝头",
+      "竹笋",
+      "苹果",
+      "西瓜"
+    ],
+    "food_parts": [
+      "树叉"
+    ],
+    "population_metrics": [
+      "体重53公斤",
+      "体重55公斤",
+      "成年体重达118公斤",
+      "谱系号1082",
+      "谱系号389",
+      "谱系号445",
+      "谱系号475",
+      "谱系号680",
+      "谱系号681"
+    ],
+    "taxonomy_terms": [
+      "大熊猫"
+    ]
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5\\panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-09-08T14:55:23.646844"
+}

@@ -1,0 +1,486 @@
+{
+  "updated_at": "2026-09-08T21:18:33.937714",
+  "results_by_source": {
+    "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图12\\gap_01.md": {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图12\\gap_01.md",
+      "topic": "个体档案",
+      "category": "",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "1990年",
+          "2010年7月22日",
+          "2016年10月4日",
+          "2026年2月9日"
+        ],
+        "person_entities": [
+          "杨某某"
+        ],
+        "place_entities": [
+          "四川宝兴",
+          "济南",
+          "上海",
+          "杭州",
+          "泉城济南"
+        ],
+        "panda_aliases": [
+          "龙古",
+          "泉泉",
+          "半半"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "四川宝兴野外",
+          "中国大熊猫保护研究中心",
+          "济南动物园",
+          "上海野生动物园",
+          "杭州野生动物世界"
+        ],
+        "biology_terms": [
+          "雌性",
+          "出生体重113.2克",
+          "双胞胎哥哥为月月",
+          "与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥）",
+          "属于英英家族",
+          "大圆脸",
+          "银杏状耳朵",
+          "肺水肿",
+          "呼吸衰竭",
+          "氯气等刺激性气体"
+        ],
+        "behavior_terms": [
+          "贵妃坐",
+          "拆家"
+        ],
+        "disease_terms": [
+          "肺水肿",
+          "呼吸衰竭"
+        ],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [
+          "生育5胎7崽",
+          "5胎7崽"
+        ],
+        "communication_terms": [
+          "吃播姿势"
+        ],
+        "threat_factors": [
+          "优氯净产生毒气",
+          "氯气等刺激性气体"
+        ],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "泉泉",
+            "predicate": "又名",
+            "object": "龙古",
+            "object_type": "Alias",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "谱系号",
+            "object": "414",
+            "object_type": "Other",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "出生于",
+            "object": "四川宝兴野外",
+            "object_type": "Habitat",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "出生时间",
+            "object": "1990年",
+            "object_type": "Biology",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "出生体重",
+            "object": "约130千克",
+            "object_type": "Biology",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心",
+            "object_type": "Habitat",
+            "evidence": "1995年转入中国大熊猫保护研究中心"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "迁至",
+            "object": "济南动物园",
+            "object_type": "Habitat",
+            "evidence": "2007年9月借展至济南动物园"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "昵称为",
+            "object": "泉泉",
+            "object_type": "Alias",
+            "evidence": "2007年12月经征名定名“泉泉”，象征其与泉城济南的关联。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "死亡时间",
+            "object": "2010年7月22日",
+            "object_type": "Biology",
+            "evidence": "2010年7月22日，济南动物园熊猫馆因相连防空洞内燃烧优氯净产生毒气……泉泉吸入过量氯气等刺激性气体引发肺水肿及呼吸衰竭死亡。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "患有",
+            "object": "肺水肿",
+            "object_type": "Disease",
+            "evidence": "2010年7月22日，济南动物园熊猫馆因相连防空洞内燃烧优氯净产生毒气……泉泉吸入过量氯气等刺激性气体引发肺水肿及呼吸衰竭死亡。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "患有",
+            "object": "呼吸衰竭",
+            "object_type": "Disease",
+            "evidence": "2010年7月22日，济南动物园熊猫馆因相连防空洞内燃烧优氯净产生毒气……泉泉吸入过量氯气等刺激性气体引发肺水肿及呼吸衰竭死亡。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "出生时间",
+            "object": "2016年10月4日",
+            "object_type": "Biology",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "出生于",
+            "object": "上海野生动物园",
+            "object_type": "Habitat",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "母亲为",
+            "object": "优优",
+            "object_type": "Person",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "同胞为",
+            "object": "月月",
+            "object_type": "Person",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "属于家族",
+            "object": "英英家族",
+            "object_type": "Other",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "有血缘关系",
+            "object": "福宝",
+            "object_type": "Person",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "出生体重",
+            "object": "113.2克",
+            "object_type": "Biology",
+            "evidence": "出生体重113.2克；"
+          },
+          {
+            "subject": "半半",
+            "predicate": "昵称为",
+            "object": "半半",
+            "object_type": "Alias",
+            "evidence": "出生第200天被命名为“半半”，寓意“陪伴”。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "迁至",
+            "object": "杭州野生动物世界",
+            "object_type": "Habitat",
+            "evidence": "2021年3月迁居杭州野生动物世界"
+          },
+          {
+            "subject": "半半",
+            "predicate": "行为表现",
+            "object": "贵妃坐",
+            "object_type": "Behavior",
+            "evidence": "因“贵妃坐”吃播姿势和拆家行为广受游客喜爱"
+          },
+          {
+            "subject": "半半",
+            "predicate": "行为表现",
+            "object": "拆家",
+            "object_type": "Behavior",
+            "evidence": "因“贵妃坐”吃播姿势和拆家行为广受游客喜爱"
+          },
+          {
+            "subject": "半半",
+            "predicate": "死亡时间",
+            "object": "2026年2月9日",
+            "object_type": "Biology",
+            "evidence": "2026年2月9日因病救治无效死亡。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "又名",
+            "object": "龙古",
+            "object_type": "Alias",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "谱系号",
+            "object": "414",
+            "object_type": "Biology",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "出生于",
+            "object": "四川宝兴野外",
+            "object_type": "Habitat",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "出生时间",
+            "object": "1990年",
+            "object_type": "Biology",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "出生体重",
+            "object": "约130千克",
+            "object_type": "Biology",
+            "evidence": "大熊猫泉泉（1990年-2010年7月22日），又名龙古，雌性，谱系号414，体重约130千克，1990年生于四川宝兴野外。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心",
+            "object_type": "Habitat",
+            "evidence": "1995年转入中国大熊猫保护研究中心"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "旅居于",
+            "object": "济南动物园",
+            "object_type": "Habitat",
+            "evidence": "2007年9月借展至济南动物园"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "昵称为",
+            "object": "泉泉",
+            "object_type": "Alias",
+            "evidence": "2007年12月经征名定名“泉泉”，象征其与泉城济南的关联。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "外号为",
+            "object": "英雄母亲",
+            "object_type": "Alias",
+            "evidence": "因生育5胎7崽被称为“英雄母亲”"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "死亡时间",
+            "object": "2010年7月22日",
+            "object_type": "Biology",
+            "evidence": "2010年7月22日，济南动物园熊猫馆因相连防空洞内燃烧优氯净产生毒气……泉泉吸入过量氯气等刺激性气体引发肺水肿及呼吸衰竭死亡。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "死因是",
+            "object": "肺水肿及呼吸衰竭",
+            "object_type": "Disease",
+            "evidence": "2010年7月22日，济南动物园熊猫馆因相连防空洞内燃烧优氯净产生毒气……泉泉吸入过量氯气等刺激性气体引发肺水肿及呼吸衰竭死亡。"
+          },
+          {
+            "subject": "泉泉",
+            "predicate": "现居地",
+            "object": "山东省",
+            "object_type": "Place",
+            "evidence": "泉泉生前为山东省唯一长期借展大熊猫"
+          },
+          {
+            "subject": "半半",
+            "predicate": "昵称为",
+            "object": "半半",
+            "object_type": "Alias",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "出生于",
+            "object": "上海野生动物园",
+            "object_type": "Habitat",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "出生时间",
+            "object": "2016年10月4日",
+            "object_type": "Biology",
+            "evidence": "大熊猫半半（2016年10月4日－2026年2月9日），雌性大熊猫，2016年10月4日出生于上海野生动物园，母亲为优优，属于英英家族，与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥），双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "出生体重",
+            "object": "113.2克",
+            "object_type": "Biology",
+            "evidence": "出生体重113.2克；"
+          },
+          {
+            "subject": "半半",
+            "predicate": "乳名为",
+            "object": "半半",
+            "object_type": "Alias",
+            "evidence": "出生第200天被命名为“半半”，寓意“陪伴”。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "母亲为",
+            "object": "优优",
+            "object_type": "Person",
+            "evidence": "母亲为优优"
+          },
+          {
+            "subject": "半半",
+            "predicate": "同胞为",
+            "object": "月月",
+            "object_type": "Person",
+            "evidence": "双胞胎哥哥为月月。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "属于家族",
+            "object": "英英家族",
+            "object_type": "Other",
+            "evidence": "属于英英家族"
+          },
+          {
+            "subject": "半半",
+            "predicate": "亲属为",
+            "object": "福宝",
+            "object_type": "Person",
+            "evidence": "与旅韩大熊猫福宝有血缘关系（半半为福宝的姨姥姥）"
+          },
+          {
+            "subject": "半半",
+            "predicate": "迁至",
+            "object": "杭州野生动物世界",
+            "object_type": "Habitat",
+            "evidence": "2021年3月迁居杭州野生动物世界"
+          },
+          {
+            "subject": "半半",
+            "predicate": "行为特征为",
+            "object": "贵妃坐",
+            "object_type": "Behavior",
+            "evidence": "因“贵妃坐”吃播姿势和拆家行为广受游客喜爱"
+          },
+          {
+            "subject": "半半",
+            "predicate": "行为特征为",
+            "object": "拆家",
+            "object_type": "Behavior",
+            "evidence": "因“贵妃坐”吃播姿势和拆家行为广受游客喜爱"
+          },
+          {
+            "subject": "半半",
+            "predicate": "外号为",
+            "object": "杭州地区文旅活动形象代言熊",
+            "object_type": "Alias",
+            "evidence": "成为杭州地区文旅活动形象代言熊。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "死亡时间",
+            "object": "2026年2月9日",
+            "object_type": "Biology",
+            "evidence": "2026年2月9日因病救治无效死亡。"
+          },
+          {
+            "subject": "半半",
+            "predicate": "死因是",
+            "object": "病",
+            "object_type": "Disease",
+            "evidence": "2026年2月9日因病救治无效死亡。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "1990年",
+          "2010年7月22日",
+          "2016年10月4日",
+          "2026年2月9日"
+        ],
+        "人物": [
+          "杨某某"
+        ],
+        "地点": [
+          "四川宝兴",
+          "济南",
+          "上海",
+          "杭州",
+          "泉城济南"
+        ],
+        "熊猫曾用名": [
+          "龙古",
+          "泉泉",
+          "半半"
+        ]
+      }
+    }
+  },
+  "errors_by_source": {}
+}

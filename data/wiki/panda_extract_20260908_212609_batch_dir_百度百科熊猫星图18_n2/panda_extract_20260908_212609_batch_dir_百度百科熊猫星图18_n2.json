@@ -1,0 +1,889 @@
+{
+  "mode": "batch_dir",
+  "source_file": "",
+  "source_dir": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图18",
+  "category": "熊猫资料",
+  "rumor_mode": false,
+  "profile_mode": true,
+  "files_count": 2,
+  "files": [
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图18\\gap_01.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "1995年8月21日",
+          "2024年5月13日",
+          "1996年",
+          "2001年",
+          "2006年",
+          "2007年",
+          "2010年",
+          "2013年",
+          "2014年",
+          "2016年",
+          "2018年",
+          "2019年",
+          "2022年",
+          "2006年8月30日",
+          "2013年8月6日",
+          "2016年8月15日",
+          "2022年6月15日"
+        ],
+        "person_entities": [
+          "成都卷烟厂",
+          "茶百道"
+        ],
+        "place_entities": [
+          "成都",
+          "都江堰",
+          "湖州",
+          "福州",
+          "德国",
+          "云南",
+          "河南",
+          "成都大熊猫繁育研究基地",
+          "都江堰繁育野放研究中心",
+          "都江堰熊猫谷",
+          "大相岭放归基地",
+          "云南野生动物园",
+          "成都动物园",
+          "河南五龙山野生动物王国"
+        ],
+        "panda_aliases": [
+          "Mother Jiao",
+          "娇子-昵称为-娇子",
+          "大娇-昵称为-大娇",
+          "大娇-外文名为-Mother Jiao"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "成都大熊猫繁育研究基地",
+          "都江堰繁育野放研究中心",
+          "都江堰熊猫谷",
+          "大相岭放归基地",
+          "云南野生动物园",
+          "成都动物园",
+          "河南五龙山野生动物王国",
+          "湖州",
+          "福州",
+          "德国"
+        ],
+        "biology_terms": [
+          "雌性",
+          "雄性",
+          "双胞胎",
+          "龙凤胎",
+          "三胞胎",
+          "跨夜龙凤胎"
+        ],
+        "behavior_terms": [
+          "人工辅助",
+          "人工协助喂养",
+          "独立育幼",
+          "频繁亮相公益广告"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [
+          "人工辅助",
+          "人工协助喂养"
+        ],
+        "lifecycle_stages": [],
+        "reproduction_terms": [
+          "产下首仔",
+          "产下跨夜龙凤胎",
+          "产下三胞胎",
+          "产下雌性双胞胎",
+          "产下雄性幼崽"
+        ],
+        "communication_terms": [
+          "命名",
+          "入选‘成都千年信物’",
+          "入选‘成都十大名片’"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "娇子",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "娇子，雌性大熊猫，谱系号425，（1995年8月21日-2024年5月13日）出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "谱系号",
+            "object": "425",
+            "object_type": "Other",
+            "evidence": "娇子，雌性大熊猫，谱系号425，（1995年8月21日-2024年5月13日）出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "娇子，雌性大熊猫，谱系号425，（1995年8月21日-2024年5月13日）出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "出生时间",
+            "object": "1995年8月21日",
+            "object_type": "Other",
+            "evidence": "娇子，雌性大熊猫，谱系号425，（1995年8月21日-2024年5月13日）出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "死亡时间",
+            "object": "2024年5月13日",
+            "object_type": "Other",
+            "evidence": "（1995年8月21日-2024年5月13日）"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "父亲为",
+            "object": "冰冰",
+            "object_type": "Person",
+            "evidence": "父母为冰冰和林楠"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "母亲为",
+            "object": "林楠",
+            "object_type": "Person",
+            "evidence": "父母为冰冰和林楠"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "被认养于",
+            "object": "成都卷烟厂",
+            "object_type": "Person",
+            "evidence": "1996年被成都卷烟厂认养并命名"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "育有",
+            "object": "小娇",
+            "object_type": "Person",
+            "evidence": "其存活后代包括小娇、大娇、娇庆等"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "育有",
+            "object": "大娇",
+            "object_type": "Person",
+            "evidence": "其存活后代包括小娇、大娇、娇庆等"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "育有",
+            "object": "娇庆",
+            "object_type": "Person",
+            "evidence": "其存活后代包括小娇、大娇、娇庆等"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "迁至",
+            "object": "都江堰繁育野放研究中心",
+            "object_type": "Habitat",
+            "evidence": "2014年迁至都江堰繁育野放研究中心"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2016年返回成都基地"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大娇（外文名：Mother Jiao），雌性大熊猫，谱系号645，2006年8月30日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "谱系号",
+            "object": "645",
+            "object_type": "Other",
+            "evidence": "大娇（外文名：Mother Jiao），雌性大熊猫，谱系号645，2006年8月30日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "大娇（外文名：Mother Jiao），雌性大熊猫，谱系号645，2006年8月30日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "出生时间",
+            "object": "2006年8月30日",
+            "object_type": "Other",
+            "evidence": "大娇（外文名：Mother Jiao），雌性大熊猫，谱系号645，2006年8月30日出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "母亲为",
+            "object": "娇子",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫娇子"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "同胞为",
+            "object": "小娇",
+            "object_type": "Person",
+            "evidence": "同胞包括小娇、娇阳、科琳等7只大熊猫"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "同胞为",
+            "object": "娇阳",
+            "object_type": "Person",
+            "evidence": "同胞包括小娇、娇阳、科琳等7只大熊猫"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "同胞为",
+            "object": "科琳",
+            "object_type": "Person",
+            "evidence": "同胞包括小娇、娇阳、科琳等7只大熊猫"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "育有",
+            "object": "倩倩",
+            "object_type": "Person",
+            "evidence": "育有倩倩、囡囡、娇奥、娇毅四只幼崽"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "育有",
+            "object": "囡囡",
+            "object_type": "Person",
+            "evidence": "育有倩倩、囡囡、娇奥、娇毅四只幼崽"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "育有",
+            "object": "娇奥",
+            "object_type": "Person",
+            "evidence": "育有倩倩、囡囡、娇奥、娇毅四只幼崽"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "育有",
+            "object": "娇毅",
+            "object_type": "Person",
+            "evidence": "育有倩倩、囡囡、娇奥、娇毅四只幼崽"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "外文名为",
+            "object": "Mother Jiao",
+            "object_type": "Alias",
+            "evidence": "大娇（外文名：Mother Jiao）"
+          },
+          {
+            "subject": "倩倩",
+            "predicate": "迁至",
+            "object": "都江堰熊猫谷",
+            "object_type": "Habitat",
+            "evidence": "2013年8月6日首次产下雌性双胞胎倩倩和囡囡，其中倩倩于2014年转移至都江堰熊猫谷，2019年转入大相岭放归基地"
+          },
+          {
+            "subject": "倩倩",
+            "predicate": "迁至",
+            "object": "大相岭放归基地",
+            "object_type": "Habitat",
+            "evidence": "2013年8月6日首次产下雌性双胞胎倩倩和囡囡，其中倩倩于2014年转移至都江堰熊猫谷，2019年转入大相岭放归基地"
+          },
+          {
+            "subject": "囡囡",
+            "predicate": "赴",
+            "object": "云南野生动物园",
+            "object_type": "Habitat",
+            "evidence": "囡囡2016年赴云南野生动物园，2018年定居成都动物园"
+          },
+          {
+            "subject": "囡囡",
+            "predicate": "定居于",
+            "object": "成都动物园",
+            "object_type": "Habitat",
+            "evidence": "囡囡2016年赴云南野生动物园，2018年定居成都动物园"
+          },
+          {
+            "subject": "娇奥",
+            "predicate": "迁至",
+            "object": "河南五龙山野生动物王国",
+            "object_type": "Habitat",
+            "evidence": "2016年8月15日诞下雄性幼崽娇奥，该幼崽2018年被送往河南五龙山野生动物王国"
+          },
+          {
+            "subject": "娇毅",
+            "predicate": "终生认养于",
+            "object": "茶百道",
+            "object_type": "Person",
+            "evidence": "2022年6月15日再度产下雄性幼崽娇毅，其被茶百道终身认养并命名为“茶茶”"
+          },
+          {
+            "subject": "娇毅",
+            "predicate": "认养名为",
+            "object": "茶茶",
+            "object_type": "Alias",
+            "evidence": "2022年6月15日再度产下雄性幼崽娇毅，其被茶百道终身认养并命名为“茶茶”"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "娇子，雌性大熊猫，谱系号425"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "谱系号",
+            "object": "425",
+            "object_type": "Other",
+            "evidence": "娇子，雌性大熊猫，谱系号425"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "（1995年8月21日-2024年5月13日）出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "出生时间",
+            "object": "1995年8月21日",
+            "object_type": "Biology",
+            "evidence": "（1995年8月21日-2024年5月13日）出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "逝世于",
+            "object": "2024年5月13日",
+            "object_type": "Disease",
+            "evidence": "（1995年8月21日-2024年5月13日）出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "育有",
+            "object": "小娇",
+            "object_type": "Species",
+            "evidence": "其生育经历曲折……2013年以18岁高龄产下成都基地首例大熊猫三胞胎。娇子存活后代包括小娇、大娇、娇庆等。"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "育有",
+            "object": "大娇",
+            "object_type": "Species",
+            "evidence": "其生育经历曲折……2013年以18岁高龄产下成都基地首例大熊猫三胞胎。娇子存活后代包括小娇、大娇、娇庆等。"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "育有",
+            "object": "娇庆",
+            "object_type": "Species",
+            "evidence": "其生育经历曲折……2013年以18岁高龄产下成都基地首例大熊猫三胞胎。娇子存活后代包括小娇、大娇、娇庆等。"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "迁至",
+            "object": "都江堰繁育野放研究中心",
+            "object_type": "Habitat",
+            "evidence": "2014年迁至都江堰繁育野放研究中心，2016年返回成都基地。"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2014年迁至都江堰繁育野放研究中心，2016年返回成都基地。"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "旅居于",
+            "object": "湖州",
+            "object_type": "Place",
+            "evidence": "其子嗣分布于湖州、福州、德国等多地。"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "旅居于",
+            "object": "福州",
+            "object_type": "Place",
+            "evidence": "其子嗣分布于湖州、福州、德国等多地。"
+          },
+          {
+            "subject": "娇子",
+            "predicate": "旅居于",
+            "object": "德国",
+            "object_type": "Place",
+            "evidence": "其子嗣分布于湖州、福州、德国等多地。"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大娇（外文名：Mother Jiao），雌性大熊猫，谱系号645"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "谱系号",
+            "object": "645",
+            "object_type": "Other",
+            "evidence": "大娇（外文名：Mother Jiao），雌性大熊猫，谱系号645"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2006年8月30日出生于成都大熊猫繁育研究基地。"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "出生时间",
+            "object": "2006年8月30日",
+            "object_type": "Biology",
+            "evidence": "2006年8月30日出生于成都大熊猫繁育研究基地。"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "育有",
+            "object": "倩倩",
+            "object_type": "Species",
+            "evidence": "育有倩倩、囡囡、娇奥、娇毅四只幼崽。"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "育有",
+            "object": "囡囡",
+            "object_type": "Species",
+            "evidence": "育有倩倩、囡囡、娇奥、娇毅四只幼崽。"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "育有",
+            "object": "娇奥",
+            "object_type": "Species",
+            "evidence": "育有倩倩、囡囡、娇奥、娇毅四只幼崽。"
+          },
+          {
+            "subject": "大娇",
+            "predicate": "育有",
+            "object": "娇毅",
+            "object_type": "Species",
+            "evidence": "育有倩倩、囡囡、娇奥、娇毅四只幼崽。"
+          },
+          {
+            "subject": "倩倩",
+            "predicate": "迁至",
+            "object": "都江堰熊猫谷",
+            "object_type": "Habitat",
+            "evidence": "2013年8月6日首次产下雌性双胞胎倩倩和囡囡，其中倩倩于2014年转移至都江堰熊猫谷，2019年转入大相岭放归基地；囡囡2016年赴云南野生动物园，2018年定居成都动物园。"
+          },
+          {
+            "subject": "倩倩",
+            "predicate": "迁至",
+            "object": "大相岭放归基地",
+            "object_type": "Habitat",
+            "evidence": "2013年8月6日首次产下雌性双胞胎倩倩和囡囡，其中倩倩于2014年转移至都江堰熊猫谷，2019年转入大相岭放归基地；囡囡2016年赴云南野生动物园，2018年定居成都动物园。"
+          },
+          {
+            "subject": "囡囡",
+            "predicate": "赴",
+            "object": "云南野生动物园",
+            "object_type": "Habitat",
+            "evidence": "2013年8月6日首次产下雌性双胞胎倩倩和囡囡，其中倩倩于2014年转移至都江堰熊猫谷，2019年转入大相岭放归基地；囡囡2016年赴云南野生动物园，2018年定居成都动物园。"
+          },
+          {
+            "subject": "囡囡",
+            "predicate": "定居于",
+            "object": "成都动物园",
+            "object_type": "Habitat",
+            "evidence": "2013年8月6日首次产下雌性双胞胎倩倩和囡囡，其中倩倩于2014年转移至都江堰熊猫谷，2019年转入大相岭放归基地；囡囡2016年赴云南野生动物园，2018年定居成都动物园。"
+          },
+          {
+            "subject": "娇奥",
+            "predicate": "被送往",
+            "object": "河南五龙山野生动物王国",
+            "object_type": "Habitat",
+            "evidence": "2016年8月15日诞下雄性幼崽娇奥，该幼崽2018年被送往河南五龙山野生动物王国。"
+          },
+          {
+            "subject": "娇毅",
+            "predicate": "终生认养于",
+            "object": "茶百道",
+            "object_type": "Person",
+            "evidence": "2022年6月15日再度产下雄性幼崽娇毅，其被茶百道终身认养并命名为“茶茶”，因头顶黑色呆毛特征被称为“最强天线”宝宝。"
+          },
+          {
+            "subject": "娇毅",
+            "predicate": "认养名为",
+            "object": "茶茶",
+            "object_type": "Alias",
+            "evidence": "2022年6月15日再度产下雄性幼崽娇毅，其被茶百道终身认养并命名为“茶茶”，因头顶黑色呆毛特征被称为“最强天线”宝宝。"
+          },
+          {
+            "subject": "娇毅",
+            "predicate": "外号为",
+            "object": "最强天线",
+            "object_type": "Alias",
+            "evidence": "2022年6月15日再度产下雄性幼崽娇毅，其被茶百道终身认养并命名为“茶茶”，因头顶黑色呆毛特征被称为“最强天线”宝宝。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "1995年8月21日",
+          "2024年5月13日",
+          "1996年",
+          "2001年",
+          "2006年",
+          "2007年",
+          "2010年",
+          "2013年",
+          "2014年",
+          "2016年",
+          "2018年",
+          "2019年",
+          "2022年",
+          "2006年8月30日",
+          "2013年8月6日",
+          "2016年8月15日",
+          "2022年6月15日"
+        ],
+        "人物": [
+          "成都卷烟厂",
+          "茶百道"
+        ],
+        "地点": [
+          "成都",
+          "都江堰",
+          "湖州",
+          "福州",
+          "德国",
+          "云南",
+          "河南",
+          "成都大熊猫繁育研究基地",
+          "都江堰繁育野放研究中心",
+          "都江堰熊猫谷",
+          "大相岭放归基地",
+          "云南野生动物园",
+          "成都动物园",
+          "河南五龙山野生动物王国"
+        ],
+        "熊猫曾用名": [
+          "Mother Jiao",
+          "娇子-昵称为-娇子",
+          "大娇-昵称为-大娇",
+          "大娇-外文名为-Mother Jiao"
+        ]
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图18\\gap_02.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [
+          "美美-出生于-四川省美姑县",
+          "美美-迁至-桂林动物园",
+          "美美-旅居于-桂林动物园",
+          "美美-逝世于-桂林动物园"
+        ],
+        "panda_aliases": [
+          "美美-昵称为-美美",
+          "美美-又名-美美"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [
+          "美美-属于-熊科大熊猫属哺乳动物"
+        ],
+        "behavior_terms": [],
+        "disease_terms": [
+          "美美-患有-呼吸及肾功能衰竭",
+          "美美-患有-子宫癌肿块",
+          "美美-患有-胆囊质地脆弱"
+        ],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "美美",
+            "predicate": "谱系号",
+            "object": "217",
+            "object_type": "Other",
+            "evidence": "大熊猫美美（谱系号217）"
+          },
+          {
+            "subject": "美美",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "雌性"
+          },
+          {
+            "subject": "美美",
+            "predicate": "出生于",
+            "object": "四川省美姑县",
+            "object_type": "Place",
+            "evidence": "（1969年-2005年7月12日）生于四川省美姑县"
+          },
+          {
+            "subject": "美美",
+            "predicate": "出生时间",
+            "object": "1969年",
+            "object_type": "Other",
+            "evidence": "（1969年-2005年7月12日）生于四川省美姑县"
+          },
+          {
+            "subject": "美美",
+            "predicate": "死亡时间",
+            "object": "2005年7月12日",
+            "object_type": "Other",
+            "evidence": "2005年7月因呼吸及肾功能衰竭死亡"
+          },
+          {
+            "subject": "美美",
+            "predicate": "迁至",
+            "object": "桂林动物园",
+            "object_type": "Place",
+            "evidence": "同年9月经特批转移至桂林动物园"
+          },
+          {
+            "subject": "美美",
+            "predicate": "现居地",
+            "object": "桂林动物园",
+            "object_type": "Place",
+            "evidence": "美美在桂林生活20年间"
+          },
+          {
+            "subject": "美美",
+            "predicate": "昵称为",
+            "object": "美美",
+            "object_type": "Alias",
+            "evidence": "因被捕获于美姑县且体形硕大得名"
+          },
+          {
+            "subject": "美美",
+            "predicate": "经历事件",
+            "object": "四川卧龙保护区竹子开花事件",
+            "object_type": "Other",
+            "evidence": "为1985年四川卧龙保护区竹子开花事件中的幸存者"
+          },
+          {
+            "subject": "美美",
+            "predicate": "逝世于",
+            "object": "七星景区",
+            "object_type": "Place",
+            "evidence": "七星景区为其举行送别仪式"
+          },
+          {
+            "subject": "美美",
+            "predicate": "谱系号",
+            "object": "217",
+            "object_type": "Other",
+            "evidence": "大熊猫美美（谱系号217），雌性，（1969年-2005年7月12日）生于四川省美姑县"
+          },
+          {
+            "subject": "美美",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫美美（谱系号217），雌性"
+          },
+          {
+            "subject": "美美",
+            "predicate": "死亡时间",
+            "object": "2005年7月12日",
+            "object_type": "Biology",
+            "evidence": "2005年7月因呼吸及肾功能衰竭死亡，终年36岁"
+          },
+          {
+            "subject": "美美",
+            "predicate": "又名",
+            "object": "美美",
+            "object_type": "Alias",
+            "evidence": "因被捕获于美姑县且体形硕大得名"
+          },
+          {
+            "subject": "美美",
+            "predicate": "曾居于",
+            "object": "四川卧龙保护区",
+            "object_type": "Place",
+            "evidence": "为1985年四川卧龙保护区竹子开花事件中的幸存者"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [
+          "美美-出生于-四川省美姑县",
+          "美美-迁至-桂林动物园",
+          "美美-旅居于-桂林动物园",
+          "美美-逝世于-桂林动物园"
+        ],
+        "熊猫曾用名": [
+          "美美-昵称为-美美",
+          "美美-又名-美美"
+        ]
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "熊猫": "大熊猫",
+    "白熊": "大熊猫",
+    "花熊": "大熊猫",
+    "食铁兽": "大熊猫",
+    "黑白熊": "大熊猫",
+    "猫熊": "大熊猫"
+  },
+  "summary": {
+    "times": [
+      "1995年8月21日",
+      "1996年",
+      "2001年",
+      "2006年",
+      "2006年8月30日",
+      "2007年",
+      "2010年",
+      "2013年",
+      "2013年8月6日",
+      "2014年",
+      "2016年",
+      "2016年8月15日",
+      "2018年",
+      "2019年",
+      "2022年",
+      "2022年6月15日",
+      "2024年5月13日"
+    ],
+    "person_entities": [
+      "成都卷烟厂",
+      "茶百道"
+    ],
+    "place_entities": [
+      "云南",
+      "云南野生动物园",
+      "大相岭放归基地",
+      "德国",
+      "成都",
+      "成都动物园",
+      "成都大熊猫繁育研究基地",
+      "河南",
+      "河南五龙山野生动物王国",
+      "湖州",
+      "福州",
+      "美美-出生于-四川省美姑县",
+      "美美-旅居于-桂林动物园",
+      "美美-迁至-桂林动物园",
+      "美美-逝世于-桂林动物园",
+      "都江堰",
+      "都江堰熊猫谷",
+      "都江堰繁育野放研究中心"
+    ],
+    "panda_aliases": [
+      "Mother Jiao",
+      "大娇-外文名为-Mother Jiao",
+      "大娇-昵称为-大娇",
+      "娇子-昵称为-娇子",
+      "美美-又名-美美",
+      "美美-昵称为-美美"
+    ],
+    "companion_species": [],
+    "predator_species": [],
+    "habitats": [
+      "云南野生动物园",
+      "大相岭放归基地",
+      "德国",
+      "成都动物园",
+      "成都大熊猫繁育研究基地",
+      "河南五龙山野生动物王国",
+      "湖州",
+      "福州",
+      "都江堰熊猫谷",
+      "都江堰繁育野放研究中心"
+    ],
+    "biology_terms": [
+      "三胞胎",
+      "双胞胎",
+      "美美-属于-熊科大熊猫属哺乳动物",
+      "跨夜龙凤胎",
+      "雄性",
+      "雌性",
+      "龙凤胎"
+    ],
+    "behavior_terms": [
+      "人工协助喂养",
+      "人工辅助",
+      "独立育幼",
+      "频繁亮相公益广告"
+    ],
+    "disease_terms": [
+      "美美-患有-呼吸及肾功能衰竭",
+      "美美-患有-子宫癌肿块",
+      "美美-患有-胆囊质地脆弱"
+    ],
+    "treatment_terms": [
+      "人工协助喂养",
+      "人工辅助"
+    ],
+    "lifecycle_stages": [],
+    "reproduction_terms": [
+      "产下三胞胎",
+      "产下跨夜龙凤胎",
+      "产下雄性幼崽",
+      "产下雌性双胞胎",
+      "产下首仔"
+    ],
+    "communication_terms": [
+      "入选‘成都十大名片’",
+      "入选‘成都千年信物’",
+      "命名"
+    ],
+    "threat_factors": [],
+    "food_items": [],
+    "food_parts": [],
+    "population_metrics": [],
+    "taxonomy_terms": []
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2\\panda_extract_20260908_212609_batch_dir_百度百科熊猫星图18_n2.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-09-08T21:26:08.459054"
+}

@@ -1,0 +1,433 @@
+{
+  "mode": "batch_dir",
+  "source_file": "",
+  "source_dir": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图17",
+  "category": "熊猫资料",
+  "rumor_mode": false,
+  "profile_mode": true,
+  "files_count": 1,
+  "files": [
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图17\\gap_01.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [
+          "明-被认养于-美国银行家佛洛依德·丹吉尔·史密斯",
+          "明-被认养于-伦敦动物协会",
+          "明-父亲为-未知",
+          "明-母亲为-未知"
+        ],
+        "place_entities": [
+          "明-出生于-中国四川省",
+          "明-迁至-英国",
+          "明-迁至-伦敦动物园",
+          "明-旅居于-惠普斯奈德动物园",
+          "明-逝世于-伦敦动物园",
+          "明-旅居于-伦敦动物园",
+          "明-赴-英国",
+          "明-返回-无记录",
+          "明-放归于-无记录",
+          "明-入驻-伦敦动物园",
+          "明-入驻-惠普斯奈德动物园"
+        ],
+        "panda_aliases": [
+          "明-昵称为-明",
+          "明-曾用名-贝贝",
+          "明-又名-明",
+          "明-乳名为-贝贝"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "现居地-伦敦动物园",
+          "迁至-伦敦动物园",
+          "旅居于-惠普斯奈德动物园",
+          "现居地-惠普斯奈德动物园"
+        ],
+        "biology_terms": [
+          "谱系号-9",
+          "性别为-雌性",
+          "出生于-中国四川省",
+          "出生时间-约1937年",
+          "逝世于-伦敦动物园",
+          "死亡时间-1944年12月26日",
+          "去世年份-1944"
+        ],
+        "behavior_terms": [
+          "公开亮相于-卡通",
+          "公开亮相于-报刊",
+          "公开亮相于-电视节目",
+          "参与活动-二战期间以形象缓解英国民众压力",
+          "参与活动-受玛丽女王等王室成员接见",
+          "参与活动-空袭期间转移至惠普斯奈德动物园避难",
+          "公开亮相于-卡通、报刊及电视节目",
+          "公开亮相于-伦敦动物园",
+          "公开亮相于-惠普斯奈德动物园"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [
+          "昵称为-明",
+          "曾用名-贝贝"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "明-属于-大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "明",
+            "predicate": "被认养于",
+            "object": "美国银行家佛洛依德·丹吉尔·史密斯",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "被认养于",
+            "object": "伦敦动物协会",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "出生于",
+            "object": "中国四川省",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "迁至",
+            "object": "英国",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "迁至",
+            "object": "伦敦动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "旅居于",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "逝世于",
+            "object": "伦敦动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "旅居于",
+            "object": "伦敦动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "赴",
+            "object": "英国",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "入驻",
+            "object": "伦敦动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "入驻",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "昵称为",
+            "object": "明",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "曾用名",
+            "object": "贝贝",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "又名",
+            "object": "明",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "乳名为",
+            "object": "贝贝",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "谱系号",
+            "object": "9",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "出生时间",
+            "object": "约1937年",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "死亡时间",
+            "object": "1944年12月26日",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "去世年份",
+            "object": "1944",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "卡通",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "报刊",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "电视节目",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "参与活动",
+            "object": "二战期间以形象缓解英国民众压力",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "参与活动",
+            "object": "受玛丽女王等王室成员接见",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "参与活动",
+            "object": "空袭期间转移至惠普斯奈德动物园避难",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "卡通、报刊及电视节目",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "伦敦动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "公开亮相于",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "现居地",
+            "object": "伦敦动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "现居地",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Other",
+            "evidence": ""
+          },
+          {
+            "subject": "明",
+            "predicate": "属于",
+            "object": "大熊猫",
+            "object_type": "Other",
+            "evidence": ""
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [
+          "明-被认养于-美国银行家佛洛依德·丹吉尔·史密斯",
+          "明-被认养于-伦敦动物协会",
+          "明-父亲为-未知",
+          "明-母亲为-未知"
+        ],
+        "地点": [
+          "明-出生于-中国四川省",
+          "明-迁至-英国",
+          "明-迁至-伦敦动物园",
+          "明-旅居于-惠普斯奈德动物园",
+          "明-逝世于-伦敦动物园",
+          "明-旅居于-伦敦动物园",
+          "明-赴-英国",
+          "明-返回-无记录",
+          "明-放归于-无记录",
+          "明-入驻-伦敦动物园",
+          "明-入驻-惠普斯奈德动物园"
+        ],
+        "熊猫曾用名": [
+          "明-昵称为-明",
+          "明-曾用名-贝贝",
+          "明-又名-明",
+          "明-乳名为-贝贝"
+        ]
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "猫熊": "大熊猫",
+    "食铁兽": "大熊猫",
+    "熊猫": "大熊猫",
+    "黑白熊": "大熊猫",
+    "白熊": "大熊猫",
+    "花熊": "大熊猫"
+  },
+  "summary": {
+    "times": [],
+    "person_entities": [
+      "明-母亲为-未知",
+      "明-父亲为-未知",
+      "明-被认养于-伦敦动物协会",
+      "明-被认养于-美国银行家佛洛依德·丹吉尔·史密斯"
+    ],
+    "place_entities": [
+      "明-入驻-伦敦动物园",
+      "明-入驻-惠普斯奈德动物园",
+      "明-出生于-中国四川省",
+      "明-放归于-无记录",
+      "明-旅居于-伦敦动物园",
+      "明-旅居于-惠普斯奈德动物园",
+      "明-赴-英国",
+      "明-迁至-伦敦动物园",
+      "明-迁至-英国",
+      "明-返回-无记录",
+      "明-逝世于-伦敦动物园"
+    ],
+    "panda_aliases": [
+      "明-乳名为-贝贝",
+      "明-又名-明",
+      "明-昵称为-明",
+      "明-曾用名-贝贝"
+    ],
+    "companion_species": [],
+    "predator_species": [],
+    "habitats": [
+      "旅居于-惠普斯奈德动物园",
+      "现居地-伦敦动物园",
+      "现居地-惠普斯奈德动物园",
+      "迁至-伦敦动物园"
+    ],
+    "biology_terms": [
+      "出生于-中国四川省",
+      "出生时间-约1937年",
+      "去世年份-1944",
+      "性别为-雌性",
+      "死亡时间-1944年12月26日",
+      "谱系号-9",
+      "逝世于-伦敦动物园"
+    ],
+    "behavior_terms": [
+      "公开亮相于-伦敦动物园",
+      "公开亮相于-卡通",
+      "公开亮相于-卡通、报刊及电视节目",
+      "公开亮相于-惠普斯奈德动物园",
+      "公开亮相于-报刊",
+      "公开亮相于-电视节目",
+      "参与活动-二战期间以形象缓解英国民众压力",
+      "参与活动-受玛丽女王等王室成员接见",
+      "参与活动-空袭期间转移至惠普斯奈德动物园避难"
+    ],
+    "disease_terms": [],
+    "treatment_terms": [],
+    "lifecycle_stages": [],
+    "reproduction_terms": [],
+    "communication_terms": [
+      "昵称为-明",
+      "曾用名-贝贝"
+    ],
+    "threat_factors": [],
+    "food_items": [],
+    "food_parts": [],
+    "population_metrics": [],
+    "taxonomy_terms": [
+      "明-属于-大熊猫"
+    ]
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1\\panda_extract_20260908_234815_batch_dir_百度百科熊猫星图17_n1.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-09-08T23:48:14.919968"
+}

@@ -1,0 +1,409 @@
+{
+  "mode": "batch_dir",
+  "source_file": "",
+  "source_dir": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图9",
+  "category": "熊猫资料",
+  "rumor_mode": false,
+  "profile_mode": true,
+  "files_count": 2,
+  "files": [
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图9\\gap_01.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "梦梦",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫梦梦，雌性"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "谱系号",
+            "object": "868",
+            "object_type": "Other",
+            "evidence": "谱系号868"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "出生时间",
+            "object": "2013年7月10日",
+            "object_type": "Biology",
+            "evidence": "2013年7月10日生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "2013年7月10日生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "出生体重范围",
+            "object": "105克",
+            "object_type": "Biology",
+            "evidence": "初生体重105克"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "母亲为",
+            "object": "二丫头",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫二丫头"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "父亲为",
+            "object": "勇勇",
+            "object_type": "Person",
+            "evidence": "父亲为大熊猫勇勇"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "昵称为",
+            "object": "中国梦",
+            "object_type": "Other",
+            "evidence": "其名源自‘中国梦’理念"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "旅居于",
+            "object": "柏林动物园",
+            "object_type": "Place",
+            "evidence": "2017年6月参与中德科研合作，旅居柏林动物园15年"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "育有",
+            "object": "梦想",
+            "object_type": "Person",
+            "evidence": "2019年9月首次产下雄性双胞胎‘梦想’‘梦圆’"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "育有",
+            "object": "梦圆",
+            "object_type": "Person",
+            "evidence": "2019年9月首次产下雄性双胞胎‘梦想’‘梦圆’"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "育有",
+            "object": "梦好",
+            "object_type": "Person",
+            "evidence": "2024年8月再诞雌性双胞胎‘梦好’‘梦甜’"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "育有",
+            "object": "梦甜",
+            "object_type": "Person",
+            "evidence": "2024年8月再诞雌性双胞胎‘梦好’‘梦甜’"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "公开亮相于",
+            "object": "2024年10月",
+            "object_type": "Other",
+            "evidence": "2024年10月起分批公开亮相"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫妮可，雄性"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "谱系号",
+            "object": "1081",
+            "object_type": "Other",
+            "evidence": "谱系号1081"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "出生于成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "出生时间",
+            "object": "2017年7月20日",
+            "object_type": "Biology",
+            "evidence": "2017年7月20日与双胞胎妹妹“妮娜”一同出生"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "母亲为",
+            "object": "妮妮",
+            "object_type": "Person",
+            "evidence": "母亲为“妮妮”"
+          },
+          {
+            "subject": "妮可",
+            "predicate": "同胞为",
+            "object": "妮娜",
+            "object_type": "Person",
+            "evidence": "2017年7月20日与双胞胎妹妹“妮娜”一同出生"
+          },
+          {
+            "subject": "梦梦",
+            "predicate": "公开亮相于",
+            "object": "2024年12月",
+            "object_type": "Behavior",
+            "evidence": "2024年12月定名后正式展出"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图9\\gap_02.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "星光",
+            "predicate": "谱系号",
+            "object": "999",
+            "object_type": "Other",
+            "evidence": "星光，雄性大熊猫，谱系号999"
+          },
+          {
+            "subject": "星光",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "星光，雄性大熊猫，谱系号999"
+          },
+          {
+            "subject": "星光",
+            "predicate": "出生时间",
+            "object": "2016年6月23日",
+            "object_type": "Biology",
+            "evidence": "2016年6月23日和双胞胎妹妹“星辰”出生在成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "星光",
+            "predicate": "出生于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2016年6月23日和双胞胎妹妹“星辰”出生在成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "星光",
+            "predicate": "母亲为",
+            "object": "星雅",
+            "object_type": "Person",
+            "evidence": "母亲是大熊猫星雅"
+          },
+          {
+            "subject": "星光",
+            "predicate": "迁至",
+            "object": "都江堰熊猫谷",
+            "object_type": "Habitat",
+            "evidence": "2017年3月28日，搬家到都江堰熊猫谷"
+          },
+          {
+            "subject": "星光",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "10月11日回到熊猫基地"
+          },
+          {
+            "subject": "星光",
+            "predicate": "迁至",
+            "object": "都江堰熊猫谷",
+            "object_type": "Habitat",
+            "evidence": "2018年12月14日，搬家到都江堰熊猫谷"
+          },
+          {
+            "subject": "星光",
+            "predicate": "赴",
+            "object": "上海动物园",
+            "object_type": "Habitat",
+            "evidence": "2019年6月18日，和“和风”一起出差至上海动物园"
+          },
+          {
+            "subject": "星光",
+            "predicate": "昵称为",
+            "object": "风光兄弟",
+            "object_type": "Alias",
+            "evidence": "它与“和风”被大家爱称为“风光兄弟”"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "出生时间",
+            "object": "1972年",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "死亡时间",
+            "object": "1999年11月28日",
+            "object_type": "Biology",
+            "evidence": "1999年11月28日因肾衰竭被施行安乐死"
+          },
+          {
+            "subject": "星光",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "星光，雄性大熊猫"
+          },
+          {
+            "subject": "星光",
+            "predicate": "旅居于",
+            "object": "上海动物园",
+            "object_type": "Habitat",
+            "evidence": "2019年6月18日，和“和风”一起出差至上海动物园"
+          },
+          {
+            "subject": "星光",
+            "predicate": "属于组合",
+            "object": "和风",
+            "object_type": "Species",
+            "evidence": "它与“和风”被大家爱称为“风光兄弟”"
+          },
+          {
+            "subject": "风光兄弟",
+            "predicate": "成员为",
+            "object": "星光",
+            "object_type": "Species",
+            "evidence": "它与“和风”被大家爱称为“风光兄弟”"
+          },
+          {
+            "subject": "风光兄弟",
+            "predicate": "成员为",
+            "object": "和风",
+            "object_type": "Species",
+            "evidence": "它与“和风”被大家爱称为“风光兄弟”"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "死亡时间",
+            "object": "1999年11月28日",
+            "object_type": "Biology",
+            "evidence": "兴兴（1972年-1999年11月28日）赠送给美国的雄性大熊猫"
+          },
+          {
+            "subject": "兴兴",
+            "predicate": "赴",
+            "object": "美国",
+            "object_type": "Place",
+            "evidence": "4月16日抵达美国"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "花熊": "大熊猫",
+    "食铁兽": "大熊猫",
+    "黑白熊": "大熊猫",
+    "熊猫": "大熊猫",
+    "猫熊": "大熊猫",
+    "白熊": "大熊猫"
+  },
+  "summary": {
+    "times": [],
+    "person_entities": [],
+    "place_entities": [],
+    "panda_aliases": [],
+    "companion_species": [],
+    "predator_species": [],
+    "habitats": [],
+    "biology_terms": [],
+    "behavior_terms": [],
+    "disease_terms": [],
+    "treatment_terms": [],
+    "lifecycle_stages": [],
+    "reproduction_terms": [],
+    "communication_terms": [],
+    "threat_factors": [],
+    "food_items": [],
+    "food_parts": [],
+    "population_metrics": [],
+    "taxonomy_terms": []
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2\\panda_extract_20260908_235635_batch_dir_百度百科熊猫星图9_n2.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-09-08T23:56:34.645798"
+}

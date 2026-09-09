@@ -1,0 +1,786 @@
+{
+  "file": "docs/熊猫资料/百度百科熊猫星图13.md",
+  "day": 10,
+  "result_json": "data/wiki/panda_extract_20260908_104222_batch_dir_百度百科熊猫星图13_n5/panda_extract_20260908_104222_batch_dir_百度百科熊猫星图13_n5.json",
+  "audited_at": "2026-09-08 23:34:40",
+  "entry_count": 25,
+  "triple_count": 493,
+  "round1": {
+    "entry_count": 25,
+    "triple_count": 493,
+    "unique_subjects": 36,
+    "matched_subjects": 25,
+    "unmatched_names": [],
+    "issues": [],
+    "ok": true
+  },
+  "round2": {
+    "coverage": 0.96,
+    "field_recall": 0.9937,
+    "gap_count": 1,
+    "hard_gap_count": 0,
+    "field_miss_counts": {
+      "sex": 1
+    },
+    "gap_pandas": [
+      {
+        "name": "细佬",
+        "matched_subject": "细佬",
+        "triple_preds": 10,
+        "expected": [
+          "birth_time",
+          "mother",
+          "nick",
+          "sex"
+        ],
+        "got": [
+          "birth_time",
+          "mother",
+          "nick"
+        ],
+        "missing": [
+          "sex"
+        ],
+        "hard_missing": [],
+        "ok": false
+      }
+    ],
+    "hard_gap_names": [],
+    "soft_gap_names": [
+      "细佬"
+    ],
+    "passed": true
+  },
+  "round2_per_panda": [
+    {
+      "name": "友友",
+      "matched_subject": "友友",
+      "triple_preds": 15,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "雅奥",
+      "matched_subject": "雅奥",
+      "triple_preds": 15,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "爱浜",
+      "matched_subject": "爱浜",
+      "triple_preds": 10,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "雅雅",
+      "matched_subject": "雅雅",
+      "triple_preds": 9,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "奇珍",
+      "matched_subject": "奇珍",
+      "triple_preds": 7,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "晓晓",
+      "matched_subject": "晓晓",
+      "triple_preds": 12,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "乐生",
+      "matched_subject": "乐生",
+      "triple_preds": 12,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "云子",
+      "matched_subject": "云子",
+      "triple_preds": 15,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "鹏鹏",
+      "matched_subject": "鹏鹏",
+      "triple_preds": 12,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "结浜",
+      "matched_subject": "结浜",
+      "triple_preds": 12,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "蜀蓉",
+      "matched_subject": "蜀蓉",
+      "triple_preds": 11,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "五一",
+      "matched_subject": "五一",
+      "triple_preds": 9,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "盼青",
+      "matched_subject": "盼青",
+      "triple_preds": 8,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "mother",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "mother",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "华宝",
+      "matched_subject": "华宝",
+      "triple_preds": 10,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "好好",
+      "matched_subject": "好好",
+      "triple_preds": 13,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "华豹",
+      "matched_subject": "华豹",
+      "triple_preds": 10,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "洋洋",
+      "matched_subject": "洋洋",
+      "triple_preds": 13,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "金宝宝",
+      "matched_subject": "金宝宝",
+      "triple_preds": 10,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "依宝",
+      "matched_subject": "依宝",
+      "triple_preds": 9,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "福凤",
+      "matched_subject": "福凤",
+      "triple_preds": 13,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "沪宝",
+      "matched_subject": "沪宝",
+      "triple_preds": 10,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "秦秦",
+      "matched_subject": "秦秦",
+      "triple_preds": 10,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "细佬",
+      "matched_subject": "细佬",
+      "triple_preds": 10,
+      "expected": [
+        "birth_time",
+        "mother",
+        "nick",
+        "sex"
+      ],
+      "got": [
+        "birth_time",
+        "mother",
+        "nick"
+      ],
+      "missing": [
+        "sex"
+      ],
+      "hard_missing": [],
+      "ok": false
+    },
+    {
+      "name": "叻叻",
+      "matched_subject": "叻叻",
+      "triple_preds": 10,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "艾伦",
+      "matched_subject": "艾伦",
+      "triple_preds": 13,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    }
+  ],
+  "round3": {
+    "samples": [
+      "细佬",
+      "友友",
+      "雅奥"
+    ],
+    "non_canonical_predicates": [
+      {
+        "predicate": "出生体重范围",
+        "count": 17
+      },
+      {
+        "predicate": "返回时间",
+        "count": 7
+      },
+      {
+        "predicate": "确诊为",
+        "count": 5
+      },
+      {
+        "predicate": "同居于",
+        "count": 3
+      },
+      {
+        "predicate": "诊断出",
+        "count": 2
+      },
+      {
+        "predicate": "治疗为",
+        "count": 2
+      },
+      {
+        "predicate": "死因是",
+        "count": 1
+      },
+      {
+        "predicate": "经手术治疗",
+        "count": 1
+      },
+      {
+        "predicate": "出发地",
+        "count": 1
+      },
+      {
+        "predicate": "经...检查确诊为",
+        "count": 1
+      },
+      {
+        "predicate": "被救助于",
+        "count": 1
+      },
+      {
+        "predicate": "外孙女为",
+        "count": 1
+      },
+      {
+        "predicate": "外祖母为",
+        "count": 1
+      },
+      {
+        "predicate": "行为为",
+        "count": 1
+      },
+      {
+        "predicate": "体长范围",
+        "count": 1
+      }
+    ],
+    "qa_checks": [
+      {
+        "name": "细佬",
+        "matched_subject": "细佬",
+        "question": "细佬的父母是谁",
+        "expect_parent": true,
+        "has_parent_triple": true,
+        "ok": true,
+        "mode": "local_graph_spotcheck"
+      },
+      {
+        "name": "友友",
+        "matched_subject": "友友",
+        "question": "友友的父母是谁",
+        "expect_parent": true,
+        "has_parent_triple": true,
+        "ok": true,
+        "mode": "local_graph_spotcheck"
+      },
+      {
+        "name": "雅奥",
+        "matched_subject": "雅奥",
+        "question": "雅奥的父母是谁",
+        "expect_parent": true,
+        "has_parent_triple": true,
+        "ok": true,
+        "mode": "local_graph_spotcheck"
+      }
+    ],
+    "passed": true,
+    "skip_qa": true
+  },
+  "gap_ratio": 0.04,
+  "suggest_full_reextract": false,
+  "passed": true,
+  "thresholds": {
+    "coverage": 0.9,
+    "hard_dims": [
+      "birth_time",
+      "father",
+      "mother",
+      "pedigree"
+    ],
+    "full_reextract_gap_ratio": 0.4
+  }
+}

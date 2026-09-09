@@ -1,0 +1,282 @@
+{
+  "updated_at": "2026-09-08 16:24:38",
+  "runs": [
+    {
+      "at": "2026-09-07 15:14:31",
+      "file": "docs/熊猫资料/百度百科熊猫星图4.md",
+      "status": "failed",
+      "result_json": "",
+      "error": "RuntimeError: 写入 Neo4j 失败 code=1; stdout==== neo4j_graph_writer ===\nstatus: ERROR\ndatabase: \ntriples_count: 0\nnodes_merged: 0\nrelations_merged: 0\nresult_json_path: \n; stderr=Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"D:\\panda\\tools\\neo4j_graph_writer.py\", line 405, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"D:\\panda\\tools\\neo4j_graph_writer.py\", line 400, in main\n    print(f"
+    },
+    {
+      "at": "2026-09-07 15:42:17",
+      "file": "docs/熊猫资料/百度百科熊猫星图4.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260907_150640_batch_dir_百度百科熊猫星图4_n5/panda_extract_20260907_150640_batch_dir_百度百科熊猫星图4_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-07 15:55:44",
+      "file": "docs/熊猫资料/百度百科熊猫星图5.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260907_154317_batch_dir_百度百科熊猫星图5_n5/panda_extract_20260907_154317_batch_dir_百度百科熊猫星图5_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-07 17:21:53",
+      "file": "docs/熊猫资料/百度百科熊猫星图6.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260907_171423_batch_dir_百度百科熊猫星图6_n5/panda_extract_20260907_171423_batch_dir_百度百科熊猫星图6_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-07 17:56:00",
+      "file": "docs/熊猫资料/百度百科熊猫星图7.md",
+      "status": "failed",
+      "result_json": "",
+      "error": "RuntimeError: 抽取失败 code=1073807364; stdout=; stderr="
+    },
+    {
+      "at": "2026-09-07 22:13:48",
+      "file": "docs/熊猫资料/百度百科熊猫星图7.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260907_220511_batch_dir_百度百科熊猫星图7_n5/panda_extract_20260907_220511_batch_dir_百度百科熊猫星图7_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-07 22:49:22",
+      "file": "docs/熊猫资料/百度百科熊猫星图8.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260907_224117_batch_dir_百度百科熊猫星图8_n5/panda_extract_20260907_224117_batch_dir_百度百科熊猫星图8_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-07 23:43:02",
+      "file": "docs/熊猫资料/百度百科熊猫星图9.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260907_233457_batch_dir_百度百科熊猫星图9_n5/panda_extract_20260907_233457_batch_dir_百度百科熊猫星图9_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-07 23:54:36",
+      "file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "status": "failed",
+      "result_json": "",
+      "error": "RuntimeError: 写入 Neo4j 失败 code=1073807364; stdout=; stderr="
+    },
+    {
+      "at": "2026-09-08 10:02:18",
+      "file": "docs/熊猫资料/百度百科熊猫星图10.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_094214_batch_dir_百度百科熊猫星图10_n5/panda_extract_20260908_094214_batch_dir_百度百科熊猫星图10_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 10:15:58",
+      "file": "docs/熊猫资料/百度百科熊猫星图11.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_100650_batch_dir_百度百科熊猫星图11_n5/panda_extract_20260908_100650_batch_dir_百度百科熊猫星图11_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 10:39:41",
+      "file": "docs/熊猫资料/百度百科熊猫星图12.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_103148_batch_dir_百度百科熊猫星图12_n5/panda_extract_20260908_103148_batch_dir_百度百科熊猫星图12_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 10:51:23",
+      "file": "docs/熊猫资料/百度百科熊猫星图13.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_104222_batch_dir_百度百科熊猫星图13_n5/panda_extract_20260908_104222_batch_dir_百度百科熊猫星图13_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 11:03:46",
+      "file": "docs/熊猫资料/百度百科熊猫星图14.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_105450_batch_dir_百度百科熊猫星图14_n5/panda_extract_20260908_105450_batch_dir_百度百科熊猫星图14_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 11:19:14",
+      "file": "docs/熊猫资料/百度百科熊猫星图15.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_111124_batch_dir_百度百科熊猫星图15_n5/panda_extract_20260908_111124_batch_dir_百度百科熊猫星图15_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 11:33:07",
+      "file": "docs/熊猫资料/百度百科熊猫星图16.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_112634_batch_dir_百度百科熊猫星图16_n5/panda_extract_20260908_112634_batch_dir_百度百科熊猫星图16_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 11:48:17",
+      "file": "docs/熊猫资料/百度百科熊猫星图17.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_114122_batch_dir_百度百科熊猫星图17_n5/panda_extract_20260908_114122_batch_dir_百度百科熊猫星图17_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 13:41:45",
+      "file": "docs/熊猫资料/百度百科熊猫星图18.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_131906_batch_dir_百度百科熊猫星图18_n5/panda_extract_20260908_131906_batch_dir_百度百科熊猫星图18_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 15:02:31",
+      "file": "docs/熊猫资料/百度百科熊猫星图19.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5/panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 15:13:36",
+      "file": "docs/熊猫资料/百度百科熊猫星图20.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_150628_batch_dir_百度百科熊猫星图20_n5/panda_extract_20260908_150628_batch_dir_百度百科熊猫星图20_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 15:46:08",
+      "file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "status": "failed",
+      "result_json": "",
+      "error": "RuntimeError: 抽取失败 code=1; stdout=AILED | done_total=0/5 failed_total=4 | part_04.md\n[Attempt 1/2] 5/5 FAILED | done_total=0/5 failed_total=5 | part_05.md\n[Attempt 2/2] 1/5 FAILED | done_total=0/5 failed_total=5 | part_01.md\n[Attempt 2/2] 2/5 FAILED | done_total=0/5 failed_total=5 | part_03.md\n[Attempt 2/2] 3/5 FAILED | done_total=0/5 failed_total=5 | part_02.md\n[Attempt 2/2] 4/5 FAILED | done_total=0/5 failed_total=5 | part_04.md\n[Attempt 2/2] 5/5 FAILED | done_total=0/5 failed_total=5 | part_0"
+    },
+    {
+      "at": "2026-09-08 16:14:13",
+      "file": "docs/熊猫资料/百度百科熊猫星图21.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_155232_batch_dir_百度百科熊猫星图21_n5/panda_extract_20260908_155232_batch_dir_百度百科熊猫星图21_n5.json",
+      "error": ""
+    },
+    {
+      "at": "2026-09-08 16:24:38",
+      "file": "docs/熊猫资料/百度百科熊猫星图22.md",
+      "status": "done",
+      "result_json": "data/wiki/panda_extract_20260908_162119_batch_dir_百度百科熊猫星图22_n2/panda_extract_20260908_162119_batch_dir_百度百科熊猫星图22_n2.json",
+      "error": ""
+    }
+  ],
+  "file_status": {
+    "docs/熊猫资料/百度百科熊猫星图4.md": {
+      "status": "done",
+      "done_at": "2026-09-07 15:42:17",
+      "result_json": "data/wiki/panda_extract_20260907_150640_batch_dir_百度百科熊猫星图4_n5/panda_extract_20260907_150640_batch_dir_百度百科熊猫星图4_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图5.md": {
+      "status": "done",
+      "done_at": "2026-09-07 15:55:44",
+      "result_json": "data/wiki/panda_extract_20260907_154317_batch_dir_百度百科熊猫星图5_n5/panda_extract_20260907_154317_batch_dir_百度百科熊猫星图5_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图6.md": {
+      "status": "done",
+      "done_at": "2026-09-07 17:21:53",
+      "result_json": "data/wiki/panda_extract_20260907_171423_batch_dir_百度百科熊猫星图6_n5/panda_extract_20260907_171423_batch_dir_百度百科熊猫星图6_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图7.md": {
+      "status": "done",
+      "done_at": "2026-09-07 22:13:48",
+      "result_json": "data/wiki/panda_extract_20260907_220511_batch_dir_百度百科熊猫星图7_n5/panda_extract_20260907_220511_batch_dir_百度百科熊猫星图7_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图8.md": {
+      "status": "done",
+      "done_at": "2026-09-07 22:49:22",
+      "result_json": "data/wiki/panda_extract_20260907_224117_batch_dir_百度百科熊猫星图8_n5/panda_extract_20260907_224117_batch_dir_百度百科熊猫星图8_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图9.md": {
+      "status": "done",
+      "done_at": "2026-09-07 23:43:02",
+      "result_json": "data/wiki/panda_extract_20260907_233457_batch_dir_百度百科熊猫星图9_n5/panda_extract_20260907_233457_batch_dir_百度百科熊猫星图9_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图10.md": {
+      "status": "done",
+      "done_at": "2026-09-08 10:02:18",
+      "result_json": "data/wiki/panda_extract_20260908_094214_batch_dir_百度百科熊猫星图10_n5/panda_extract_20260908_094214_batch_dir_百度百科熊猫星图10_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图11.md": {
+      "status": "done",
+      "done_at": "2026-09-08 10:15:58",
+      "result_json": "data/wiki/panda_extract_20260908_100650_batch_dir_百度百科熊猫星图11_n5/panda_extract_20260908_100650_batch_dir_百度百科熊猫星图11_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图12.md": {
+      "status": "done",
+      "done_at": "2026-09-08 10:39:41",
+      "result_json": "data/wiki/panda_extract_20260908_103148_batch_dir_百度百科熊猫星图12_n5/panda_extract_20260908_103148_batch_dir_百度百科熊猫星图12_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图13.md": {
+      "status": "done",
+      "done_at": "2026-09-08 10:51:23",
+      "result_json": "data/wiki/panda_extract_20260908_104222_batch_dir_百度百科熊猫星图13_n5/panda_extract_20260908_104222_batch_dir_百度百科熊猫星图13_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图14.md": {
+      "status": "done",
+      "done_at": "2026-09-08 11:03:46",
+      "result_json": "data/wiki/panda_extract_20260908_105450_batch_dir_百度百科熊猫星图14_n5/panda_extract_20260908_105450_batch_dir_百度百科熊猫星图14_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图15.md": {
+      "status": "done",
+      "done_at": "2026-09-08 11:19:14",
+      "result_json": "data/wiki/panda_extract_20260908_111124_batch_dir_百度百科熊猫星图15_n5/panda_extract_20260908_111124_batch_dir_百度百科熊猫星图15_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图16.md": {
+      "status": "done",
+      "done_at": "2026-09-08 11:33:07",
+      "result_json": "data/wiki/panda_extract_20260908_112634_batch_dir_百度百科熊猫星图16_n5/panda_extract_20260908_112634_batch_dir_百度百科熊猫星图16_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图17.md": {
+      "status": "done",
+      "done_at": "2026-09-08 11:48:17",
+      "result_json": "data/wiki/panda_extract_20260908_114122_batch_dir_百度百科熊猫星图17_n5/panda_extract_20260908_114122_batch_dir_百度百科熊猫星图17_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图18.md": {
+      "status": "done",
+      "done_at": "2026-09-08 13:41:45",
+      "result_json": "data/wiki/panda_extract_20260908_131906_batch_dir_百度百科熊猫星图18_n5/panda_extract_20260908_131906_batch_dir_百度百科熊猫星图18_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图19.md": {
+      "status": "done",
+      "done_at": "2026-09-08 15:02:31",
+      "result_json": "data/wiki/panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5/panda_extract_20260908_145524_batch_dir_百度百科熊猫星图19_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图20.md": {
+      "status": "done",
+      "done_at": "2026-09-08 15:13:36",
+      "result_json": "data/wiki/panda_extract_20260908_150628_batch_dir_百度百科熊猫星图20_n5/panda_extract_20260908_150628_batch_dir_百度百科熊猫星图20_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图21.md": {
+      "status": "done",
+      "done_at": "2026-09-08 16:14:13",
+      "result_json": "data/wiki/panda_extract_20260908_155232_batch_dir_百度百科熊猫星图21_n5/panda_extract_20260908_155232_batch_dir_百度百科熊猫星图21_n5.json",
+      "error": ""
+    },
+    "docs/熊猫资料/百度百科熊猫星图22.md": {
+      "status": "done",
+      "done_at": "2026-09-08 16:24:38",
+      "result_json": "data/wiki/panda_extract_20260908_162119_batch_dir_百度百科熊猫星图22_n2/panda_extract_20260908_162119_batch_dir_百度百科熊猫星图22_n2.json",
+      "error": ""
+    }
+  }
+}

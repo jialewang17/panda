@@ -109,6 +109,30 @@ python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --categor
 python scripts/curate_gap_facts.py
 ```
 
+### 3.2) 百度百科星图分卷按日入库（熊猫资料）
+星图分卷 `百度百科熊猫星图4.md`～`22.md` 按日抽取并**增量**写入 Neo4j，丰富个体档案。计划与进度见：
+
+- `docs/熊猫资料/百度百科星图入库计划.md`
+- `data/curated/starmap_ingest_plan.json`
+
+```bash
+python scripts/ingest_starmap_daily.py --status
+python scripts/ingest_starmap_daily.py
+# 预览：python scripts/ingest_starmap_daily.py --dry-run
+```
+
+### 3.3) 星图分卷多轮核验与补齐（熊猫资料）
+入库完成后，对星图4～22 逐卷对照金标准档案做覆盖核验；未达标则缺口补抽并增量写库。计划见：
+
+- `docs/熊猫资料/百度百科星图核验计划.md`
+- `data/curated/starmap_verify_plan.json`
+
+```bash
+python scripts/verify_starmap_daily.py --self-check
+python scripts/verify_starmap_daily.py --status
+python scripts/verify_starmap_daily.py --day 1 --fix
+```
+
 ### 4) 问答（单问，指定栏目）
 ```bash
 python -m tools.neo4j_qa --category "熊猫知识" --question "大熊猫是怎么交流的" --persona kid --show-sources

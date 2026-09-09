@@ -1,0 +1,339 @@
+{
+  "file": "docs/熊猫资料/百度百科熊猫星图22.md",
+  "day": 19,
+  "result_json": "data/wiki/panda_extract_20260908_162119_batch_dir_百度百科熊猫星图22_n2/panda_extract_20260908_162119_batch_dir_百度百科熊猫星图22_n2.json",
+  "audited_at": "2026-09-08 23:12:29",
+  "entry_count": 10,
+  "triple_count": 162,
+  "round1": {
+    "entry_count": 10,
+    "triple_count": 162,
+    "unique_subjects": 16,
+    "matched_subjects": 10,
+    "unmatched_names": [],
+    "issues": [],
+    "ok": true
+  },
+  "round2": {
+    "coverage": 1.0,
+    "field_recall": 1.0,
+    "gap_count": 0,
+    "hard_gap_count": 0,
+    "field_miss_counts": {},
+    "gap_pandas": [],
+    "hard_gap_names": [],
+    "soft_gap_names": [],
+    "passed": true
+  },
+  "round2_per_panda": [
+    {
+      "name": "玲琅",
+      "matched_subject": "玲琅",
+      "triple_preds": 5,
+      "expected": [
+        "birth_time",
+        "mother",
+        "sex"
+      ],
+      "got": [
+        "birth_time",
+        "mother",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "欣欣",
+      "matched_subject": "欣欣",
+      "triple_preds": 11,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "竹韵",
+      "matched_subject": "竹韵",
+      "triple_preds": 15,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "child",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "新月",
+      "matched_subject": "新月",
+      "triple_preds": 11,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "乐乐",
+      "matched_subject": "乐乐",
+      "triple_preds": 9,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "mother",
+        "move",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "香果",
+      "matched_subject": "香果",
+      "triple_preds": 12,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "father",
+        "mother",
+        "move",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "香冰",
+      "matched_subject": "香冰",
+      "triple_preds": 13,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "nick",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "家和",
+      "matched_subject": "家和",
+      "triple_preds": 10,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "death",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "园园",
+      "matched_subject": "园园",
+      "triple_preds": 6,
+      "expected": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "got": [
+        "birth_place",
+        "birth_time",
+        "father",
+        "mother",
+        "pedigree",
+        "sex"
+      ],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    },
+    {
+      "name": "亲亲爱爱",
+      "matched_subject": "亲亲爱爱",
+      "triple_preds": 1,
+      "expected": [],
+      "got": [],
+      "missing": [],
+      "hard_missing": [],
+      "ok": true
+    }
+  ],
+  "round3": {
+    "samples": [
+      "玲琅",
+      "欣欣",
+      "竹韵"
+    ],
+    "non_canonical_predicates": [
+      {
+        "predicate": "祖先为",
+        "count": 2
+      },
+      {
+        "predicate": "食物来源",
+        "count": 2
+      },
+      {
+        "predicate": "祖父母为",
+        "count": 2
+      },
+      {
+        "predicate": "出生体重范围",
+        "count": 2
+      },
+      {
+        "predicate": "死亡原因",
+        "count": 2
+      },
+      {
+        "predicate": "展现出",
+        "count": 1
+      },
+      {
+        "predicate": "举办活动于",
+        "count": 1
+      },
+      {
+        "predicate": "亲属为",
+        "count": 1
+      }
+    ],
+    "qa_checks": [
+      {
+        "name": "玲琅",
+        "matched_subject": "玲琅",
+        "question": "玲琅的父母是谁",
+        "expect_parent": true,
+        "has_parent_triple": true,
+        "ok": true,
+        "mode": "local_graph_spotcheck"
+      },
+      {
+        "name": "欣欣",
+        "matched_subject": "欣欣",
+        "question": "欣欣的父母是谁",
+        "expect_parent": true,
+        "has_parent_triple": true,
+        "ok": true,
+        "mode": "local_graph_spotcheck"
+      },
+      {
+        "name": "竹韵",
+        "matched_subject": "竹韵",
+        "question": "竹韵的父母是谁",
+        "expect_parent": true,
+        "has_parent_triple": true,
+        "ok": true,
+        "mode": "local_graph_spotcheck"
+      }
+    ],
+    "passed": true,
+    "skip_qa": true
+  },
+  "gap_ratio": 0.0,
+  "suggest_full_reextract": false,
+  "passed": true,
+  "thresholds": {
+    "coverage": 0.9,
+    "hard_dims": [
+      "birth_time",
+      "father",
+      "mother",
+      "pedigree"
+    ],
+    "full_reextract_gap_ratio": 0.4
+  }
+}

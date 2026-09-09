@@ -1,0 +1,587 @@
+{
+  "mode": "batch_dir",
+  "source_file": "",
+  "source_dir": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图8",
+  "category": "熊猫资料",
+  "rumor_mode": false,
+  "profile_mode": true,
+  "files_count": 2,
+  "files": [
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图8\\gap_01.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "水秀",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫水秀，雌性，谱系号698"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "谱系号",
+            "object": "698",
+            "object_type": "Other",
+            "evidence": "大熊猫水秀，雌性，谱系号698"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "出生于",
+            "object": "四川省绵阳市北川县水秀村",
+            "object_type": "Place",
+            "evidence": "2008年3月22日，因在四川省绵阳市北川县水秀村被救助而得名"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "出生时间",
+            "object": "2008年3月22日",
+            "object_type": "Biology",
+            "evidence": "2008年3月22日，因在四川省绵阳市北川县水秀村被救助而得名"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心雅安碧峰峡基地",
+            "object_type": "Place",
+            "evidence": "2009年3月11日，搬家至中国大熊猫保护研究中心雅安碧峰峡基地"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "傲傲",
+            "object_type": "Species",
+            "evidence": "2010年首次产下龙凤胎傲傲、峰峰"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "峰峰",
+            "object_type": "Species",
+            "evidence": "2010年首次产下龙凤胎傲傲、峰峰"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "怡然",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "怡畅",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "华阳",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "禄禄",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "禧禧",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "宝来",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "璨璨",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "绣球",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "秀阳",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "茅茅",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "育有",
+            "object": "秀辰",
+            "object_type": "Species",
+            "evidence": "其子女包括傲傲、峰峰、怡然、怡畅、华阳、禄禄、禧禧、宝来、璨璨、绣球、秀阳、茅茅、秀辰等"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "迁至",
+            "object": "都江堰基地",
+            "object_type": "Place",
+            "evidence": "2015年4月9日，搬家至都江堰基地"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫谊谊是2018年1月14日出生于马来西亚国家动物园的雌性大熊猫"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "出生时间",
+            "object": "2018年1月14日",
+            "object_type": "Biology",
+            "evidence": "大熊猫谊谊是2018年1月14日出生于马来西亚国家动物园的雌性大熊猫"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "出生于",
+            "object": "马来西亚国家动物园",
+            "object_type": "Place",
+            "evidence": "大熊猫谊谊是2018年1月14日出生于马来西亚国家动物园的雌性大熊猫"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "父亲为",
+            "object": "兴兴",
+            "object_type": "Species",
+            "evidence": "父母为中国旅居大熊猫\"兴兴\"（谱系号638）和\"靓靓\"（谱系号637）"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "母亲为",
+            "object": "靓靓",
+            "object_type": "Species",
+            "evidence": "父母为中国旅居大熊猫\"兴兴\"（谱系号638）和\"靓靓\"（谱系号637）"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "昵称为",
+            "object": "谊谊",
+            "object_type": "Alias",
+            "evidence": "其名字寓意中马友谊，于2019年8月正式命名"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "返回",
+            "object": "四川",
+            "object_type": "Place",
+            "evidence": "最终于2023年8月30日平安抵达四川进行隔离检疫"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "被救助于",
+            "object": "四川省绵阳市北川县水秀村",
+            "object_type": "Place",
+            "evidence": "2008年3月22日，因在四川省绵阳市北川县水秀村被救助而得名"
+          },
+          {
+            "subject": "水秀",
+            "predicate": "昵称为",
+            "object": "水秀",
+            "object_type": "Alias",
+            "evidence": "2008年3月22日，因在四川省绵阳市北川县水秀村被救助而得名"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "返回",
+            "object": "四川",
+            "object_type": "Place",
+            "evidence": "原计划2020年4月返回中国因疫情滞留，最终于2023年8月30日平安抵达四川进行隔离检疫"
+          },
+          {
+            "subject": "谊谊",
+            "predicate": "返回时间",
+            "object": "2023年8月30日",
+            "object_type": "Other",
+            "evidence": "原计划2020年4月返回中国因疫情滞留，最终于2023年8月30日平安抵达四川进行隔离检疫"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图8\\gap_02.md",
+      "topic": "个体档案",
+      "category": "熊猫资料",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [
+          "秋浜-被认养于-日本热心“熊猫粉”",
+          "秋浜-被认养于-深圳野生动物园（科研交流期间）",
+          "永明",
+          "梅梅",
+          "隆浜"
+        ],
+        "place_entities": [
+          "秋浜-出生于-日本和歌山白浜野生动物园",
+          "秋浜-落户-成都大熊猫繁育研究基地",
+          "秋浜-迁至-深圳野生动物园",
+          "秋浜-赴-深圳野生动物园",
+          "秋浜-返回-中国",
+          "日本和歌山白浜野生动物园",
+          "成都大熊猫繁育研究基地",
+          "深圳野生动物园"
+        ],
+        "panda_aliases": [
+          "秋浜-又名-秋大爷",
+          "秋大爷"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "秋浜-现居地-深圳野生动物园",
+          "秋浜-迁至-深圳野生动物园",
+          "秋浜-赴-深圳野生动物园",
+          "秋浜-返回-中国",
+          "秋浜-落户-成都大熊猫繁育研究基地"
+        ],
+        "biology_terms": [
+          "秋浜-谱系号-未提供",
+          "秋浜-性别为-雄性",
+          "秋浜-出生于-日本和歌山白浜野生动物园",
+          "秋浜-出生时间-2003年9月8日",
+          "秋浜-出生体重-未提供",
+          "秋浜-父亲为-永明",
+          "秋浜-母亲为-梅梅",
+          "秋浜-同胞为-隆浜"
+        ],
+        "behavior_terms": [
+          "秋浜-昵称为-秋大爷",
+          "秋浜-属于组合-浜家族",
+          "浜家族-成员为-秋浜",
+          "秋浜-公开亮相于-成都大熊猫繁育研究基地",
+          "秋浜-举办生日会于-深圳野生动物园",
+          "秋浜-参与活动-深圳野生动物园22岁生日会"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [
+          "秋浜-育有-未提供具体子代名（仅知育有4个子女、8个外孙）"
+        ],
+        "communication_terms": [
+          "秋浜-被认养于-未提供",
+          "秋浜-终生认养于-未提供"
+        ],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "秋浜",
+            "predicate": "性别为",
+            "object": "雄性",
+            "object_type": "Biology",
+            "evidence": "大熊猫秋浜是2003年9月8日与双胞胎兄长隆浜共同出生于日本和歌山白浜野生动物园的雄性大熊猫"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "出生于",
+            "object": "日本和歌山白浜野生动物园",
+            "object_type": "Place",
+            "evidence": "大熊猫秋浜是2003年9月8日与双胞胎兄长隆浜共同出生于日本和歌山白浜野生动物园的雄性大熊猫"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "出生时间",
+            "object": "2003年9月8日",
+            "object_type": "Biology",
+            "evidence": "大熊猫秋浜是2003年9月8日与双胞胎兄长隆浜共同出生于日本和歌山白浜野生动物园的雄性大熊猫"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "父亲为",
+            "object": "永明",
+            "object_type": "Person",
+            "evidence": "其父母为旅日大熊猫永明和梅梅"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "母亲为",
+            "object": "梅梅",
+            "object_type": "Person",
+            "evidence": "其父母为旅日大熊猫永明和梅梅"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "返回",
+            "object": "中国",
+            "object_type": "Place",
+            "evidence": "2007年10月28日，秋浜与隆浜返回中国，落户成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "迁至",
+            "object": "深圳野生动物园",
+            "object_type": "Place",
+            "evidence": "2017年4月7日起，秋浜被外派至深圳野生动物园开展科研交流"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "赴",
+            "object": "深圳野生动物园",
+            "object_type": "Place",
+            "evidence": "2017年4月7日起，秋浜被外派至深圳野生动物园开展科研交流"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "现居地",
+            "object": "深圳野生动物园",
+            "object_type": "Habitat",
+            "evidence": "截至2024年7月，秋浜仍在深圳参与相关科研展示活动"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "属于组合",
+            "object": "浜家族",
+            "object_type": "Other",
+            "evidence": "秋浜作为“浜家族”成员"
+          },
+          {
+            "subject": "浜家族",
+            "predicate": "成员为",
+            "object": "秋浜",
+            "object_type": "Other",
+            "evidence": "秋浜作为“浜家族”成员"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "昵称为",
+            "object": "秋大爷",
+            "object_type": "Alias",
+            "evidence": "被网友称为“秋大爷”"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "又名",
+            "object": "秋大爷",
+            "object_type": "Alias",
+            "evidence": "被网友称为“秋大爷”"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "公开亮相于",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Place",
+            "evidence": "2008年1月29日结束检疫后正式与公众见面"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "举办生日会于",
+            "object": "深圳野生动物园",
+            "object_type": "Place",
+            "evidence": "如9月7日，园方为其提前举办了22岁生日会"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "被认养于",
+            "object": "日本热心“熊猫粉”",
+            "object_type": "Person",
+            "evidence": "2018年6月3日，曾有日本热心“熊猫粉”专程组团前来深圳看望它"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "返回",
+            "object": "成都大熊猫繁育研究基地",
+            "object_type": "Habitat",
+            "evidence": "2007年10月28日，秋浜与隆浜返回中国，落户成都大熊猫繁育研究基地"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "昵称为",
+            "object": "秋大爷",
+            "object_type": "Alias",
+            "evidence": "秋浜作为“浜家族”成员，育有4个子女、8个外孙，被网友称为“秋大爷”"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "育有",
+            "object": "4个子女",
+            "object_type": "Biology",
+            "evidence": "秋浜作为“浜家族”成员，育有4个子女、8个外孙"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "育有",
+            "object": "8个外孙",
+            "object_type": "Biology",
+            "evidence": "秋浜作为“浜家族”成员，育有4个子女、8个外孙"
+          },
+          {
+            "subject": "秋浜",
+            "predicate": "同胞为",
+            "object": "隆浜",
+            "object_type": "Person",
+            "evidence": "秋浜是2003年9月8日与双胞胎兄长隆浜共同出生于……"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [
+          "秋浜-被认养于-日本热心“熊猫粉”",
+          "秋浜-被认养于-深圳野生动物园（科研交流期间）",
+          "永明",
+          "梅梅",
+          "隆浜"
+        ],
+        "地点": [
+          "秋浜-出生于-日本和歌山白浜野生动物园",
+          "秋浜-落户-成都大熊猫繁育研究基地",
+          "秋浜-迁至-深圳野生动物园",
+          "秋浜-赴-深圳野生动物园",
+          "秋浜-返回-中国",
+          "日本和歌山白浜野生动物园",
+          "成都大熊猫繁育研究基地",
+          "深圳野生动物园"
+        ],
+        "熊猫曾用名": [
+          "秋浜-又名-秋大爷",
+          "秋大爷"
+        ]
+      }
+    }
+  ],
+  "alias_map": {
+    "大熊猫": "大熊猫",
+    "熊猫": "大熊猫",
+    "猫熊": "大熊猫",
+    "黑白熊": "大熊猫",
+    "花熊": "大熊猫",
+    "白熊": "大熊猫",
+    "食铁兽": "大熊猫"
+  },
+  "summary": {
+    "times": [],
+    "person_entities": [
+      "梅梅",
+      "永明",
+      "秋浜-被认养于-日本热心“熊猫粉”",
+      "秋浜-被认养于-深圳野生动物园（科研交流期间）",
+      "隆浜"
+    ],
+    "place_entities": [
+      "成都大熊猫繁育研究基地",
+      "日本和歌山白浜野生动物园",
+      "深圳野生动物园",
+      "秋浜-出生于-日本和歌山白浜野生动物园",
+      "秋浜-落户-成都大熊猫繁育研究基地",
+      "秋浜-赴-深圳野生动物园",
+      "秋浜-迁至-深圳野生动物园",
+      "秋浜-返回-中国"
+    ],
+    "panda_aliases": [
+      "秋大爷",
+      "秋浜-又名-秋大爷"
+    ],
+    "companion_species": [],
+    "predator_species": [],
+    "habitats": [
+      "秋浜-现居地-深圳野生动物园",
+      "秋浜-落户-成都大熊猫繁育研究基地",
+      "秋浜-赴-深圳野生动物园",
+      "秋浜-迁至-深圳野生动物园",
+      "秋浜-返回-中国"
+    ],
+    "biology_terms": [
+      "秋浜-出生于-日本和歌山白浜野生动物园",
+      "秋浜-出生体重-未提供",
+      "秋浜-出生时间-2003年9月8日",
+      "秋浜-同胞为-隆浜",
+      "秋浜-性别为-雄性",
+      "秋浜-母亲为-梅梅",
+      "秋浜-父亲为-永明",
+      "秋浜-谱系号-未提供"
+    ],
+    "behavior_terms": [
+      "浜家族-成员为-秋浜",
+      "秋浜-举办生日会于-深圳野生动物园",
+      "秋浜-公开亮相于-成都大熊猫繁育研究基地",
+      "秋浜-参与活动-深圳野生动物园22岁生日会",
+      "秋浜-属于组合-浜家族",
+      "秋浜-昵称为-秋大爷"
+    ],
+    "disease_terms": [],
+    "treatment_terms": [],
+    "lifecycle_stages": [],
+    "reproduction_terms": [
+      "秋浜-育有-未提供具体子代名（仅知育有4个子女、8个外孙）"
+    ],
+    "communication_terms": [
+      "秋浜-终生认养于-未提供",
+      "秋浜-被认养于-未提供"
+    ],
+    "threat_factors": [],
+    "food_items": [],
+    "food_parts": [],
+    "population_metrics": [],
+    "taxonomy_terms": []
+  },
+  "neo4j_exports": {
+    "nodes_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2_nodes.csv",
+    "rels_csv_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2_rels.csv",
+    "cypher_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2_graph.cypher"
+  },
+  "file_errors": [],
+  "run_output_dir": "D:\\panda\\data\\wiki\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2",
+  "result_file_path": "D:\\panda\\data\\wiki\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2\\panda_extract_20260908_210115_batch_dir_百度百科熊猫星图8_n2.json",
+  "focus_questions_json": "",
+  "focus_questions_enabled_files": 0,
+  "timestamp": "2026-09-08T21:01:14.511167"
+}

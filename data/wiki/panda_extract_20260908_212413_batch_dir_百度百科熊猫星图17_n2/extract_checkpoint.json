@@ -1,0 +1,650 @@
+{
+  "updated_at": "2026-09-08T21:25:42.062193",
+  "results_by_source": {
+    "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图17\\gap_02.md": {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图17\\gap_02.md",
+      "topic": "个体档案",
+      "category": "",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [],
+        "person_entities": [],
+        "place_entities": [],
+        "panda_aliases": [],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [],
+        "biology_terms": [],
+        "behavior_terms": [],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [],
+        "relation_triples": [
+          {
+            "subject": "迎迎",
+            "predicate": "谱系号",
+            "object": "165",
+            "object_type": "Other",
+            "evidence": "大熊猫迎迎（外文名：Ying Ying），谱系号165"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "出生于",
+            "object": "1975年6月7日",
+            "object_type": "Biology",
+            "evidence": "（1975年6月7日-1989年1月29日）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "逝世于",
+            "object": "1989年1月29日",
+            "object_type": "Biology",
+            "evidence": "（1975年6月7日-1989年1月29日）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "出生于",
+            "object": "四川宝兴县",
+            "object_type": "Place",
+            "evidence": "于四川宝兴县野外被郑振泉、闫振和救护"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "外文名为",
+            "object": "Ying Ying",
+            "object_type": "Alias",
+            "evidence": "外文名：Ying Ying"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "又名",
+            "object": "Ying Ying",
+            "object_type": "Alias",
+            "evidence": "外文名：Ying Ying"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "旅居于",
+            "object": "墨西哥查普特佩克动物园",
+            "object_type": "Habitat",
+            "evidence": "9月10日与雄性大熊猫贝贝作为中墨建交礼物被赠予墨西哥查普特佩克动物园，赴墨时体重仅26公斤"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "育有",
+            "object": "朵蔚",
+            "object_type": "Species",
+            "evidence": "1981年7月21日诞下雌性幼崽朵蔚（谱系号234）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "育有",
+            "object": "亮亮",
+            "object_type": "Species",
+            "evidence": "1983年雌性亮亮"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "育有",
+            "object": "秀华",
+            "object_type": "Species",
+            "evidence": "1985年双胞胎秀华（存活者谱系号291）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "育有",
+            "object": "双双",
+            "object_type": "Species",
+            "evidence": "1987年双胞胎双双（存活者谱系号332）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "父亲为",
+            "object": "贝贝",
+            "object_type": "Species",
+            "evidence": "与雄性大熊猫贝贝作为中墨建交礼物被赠予墨西哥查普特佩克动物园"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "外文名为",
+            "object": "Ying Ying",
+            "object_type": "Alias",
+            "evidence": "大熊猫迎迎（外文名：Ying Ying）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "谱系号",
+            "object": "165",
+            "object_type": "Other",
+            "evidence": "谱系号165"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "出生时间",
+            "object": "1975年6月7日",
+            "object_type": "Biology",
+            "evidence": "（1975年6月7日-1989年1月29日）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "死亡时间",
+            "object": "1989年1月29日",
+            "object_type": "Biology",
+            "evidence": "（1975年6月7日-1989年1月29日）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "出生于",
+            "object": "四川宝兴县",
+            "object_type": "Place",
+            "evidence": "于四川宝兴县野外被郑振泉、闫振和救护"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "出生体重",
+            "object": "26公斤",
+            "object_type": "Biology",
+            "evidence": "赴墨时体重仅26公斤"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "迁至",
+            "object": "北京动物园",
+            "object_type": "Place",
+            "evidence": "同年8月4日移送北京动物园"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "赴",
+            "object": "墨西哥查普特佩克动物园",
+            "object_type": "Place",
+            "evidence": "9月10日与雄性大熊猫贝贝作为中墨建交礼物被赠予墨西哥查普特佩克动物园"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "逝世于",
+            "object": "墨西哥",
+            "object_type": "Place",
+            "evidence": "1989年1月29日在墨逝世"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "父亲为",
+            "object": "贝贝",
+            "object_type": "Person",
+            "evidence": "迎迎与贝贝在墨西哥共产5胎7仔，存活4只。"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "育有",
+            "object": "朵蔚",
+            "object_type": "Person",
+            "evidence": "1981年7月21日诞下雌性幼崽朵蔚（谱系号234）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "育有",
+            "object": "亮亮",
+            "object_type": "Person",
+            "evidence": "1983年雌性亮亮"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "育有",
+            "object": "秀华",
+            "object_type": "Person",
+            "evidence": "1985年双胞胎秀华（存活者谱系号291）"
+          },
+          {
+            "subject": "迎迎",
+            "predicate": "育有",
+            "object": "双双",
+            "object_type": "Person",
+            "evidence": "1987年双胞胎双双（存活者谱系号332）"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [],
+        "人物": [],
+        "地点": [],
+        "熊猫曾用名": []
+      }
+    },
+    "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图17\\gap_01.md": {
+      "source_file": "D:\\panda\\sandbox\\starmap_verify_chunks\\百度百科熊猫星图17\\gap_01.md",
+      "topic": "个体档案",
+      "category": "",
+      "extracted": {
+        "topic": "个体档案",
+        "times": [
+          "2021年9月12日",
+          "2022年3月3日",
+          "2024年10月15日",
+          "2025年1月24日",
+          "2025年9月",
+          "约1937年",
+          "1938年",
+          "1939年",
+          "1944年12月26日",
+          "1944年圣诞前夕",
+          "2015年"
+        ],
+        "person_entities": [
+          "佛洛依德·丹吉尔·史密斯",
+          "玛丽女王"
+        ],
+        "place_entities": [
+          "中国四川省",
+          "中国香港",
+          "英国",
+          "美国首都华盛顿",
+          "伦敦",
+          "惠普斯奈德",
+          "青宝-现居地-美国华盛顿国家动物园",
+          "明-现居地-英国伦敦动物园",
+          "明-迁至-英国伦敦动物园",
+          "明-旅居于-英国伦敦动物园",
+          "明-返回-惠普斯奈德动物园",
+          "青宝-赴-美国华盛顿国家动物园",
+          "青宝-旅居于-美国华盛顿国家动物园"
+        ],
+        "panda_aliases": [
+          "美心",
+          "明",
+          "青宝-昵称为-美心",
+          "明-又名-贝贝"
+        ],
+        "companion_species": [],
+        "predator_species": [],
+        "habitats": [
+          "中国大熊猫保护研究中心卧龙神树坪基地",
+          "中国大熊猫保护研究中心都江堰基地",
+          "美国华盛顿国家动物园",
+          "史密森学会国家动物园",
+          "伦敦动物园",
+          "惠普斯奈德动物园"
+        ],
+        "biology_terms": [
+          "雌性",
+          "左臀部有两个深色斑块",
+          "面部特征蓬松"
+        ],
+        "behavior_terms": [
+          "性格独立",
+          "喜爱攀爬活动"
+        ],
+        "disease_terms": [],
+        "treatment_terms": [],
+        "lifecycle_stages": [],
+        "reproduction_terms": [],
+        "communication_terms": [],
+        "threat_factors": [],
+        "food_items": [],
+        "food_parts": [],
+        "population_metrics": [],
+        "taxonomy_terms": [
+          "大熊猫"
+        ],
+        "relation_triples": [
+          {
+            "subject": "青宝",
+            "predicate": "谱系号",
+            "object": "1375",
+            "object_type": "Other",
+            "evidence": "大熊猫青宝，雌性大熊猫，谱系号1375"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫青宝，雌性大熊猫，谱系号1375"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心卧龙神树坪基地",
+            "object_type": "Habitat",
+            "evidence": "2021年9月12日出生于中国大熊猫保护研究中心卧龙神树坪基地"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "出生时间",
+            "object": "2021年9月12日",
+            "object_type": "Other",
+            "evidence": "2021年9月12日出生于中国大熊猫保护研究中心卧龙神树坪基地"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "母亲为",
+            "object": "家美",
+            "object_type": "Person",
+            "evidence": "母亲为大熊猫家美"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "同胞为",
+            "object": "青仔",
+            "object_type": "Person",
+            "evidence": "与双胞胎哥哥青仔同胎"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "又名",
+            "object": "美心",
+            "object_type": "Alias",
+            "evidence": "又名美心"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "旅居于",
+            "object": "美国华盛顿国家动物园",
+            "object_type": "Habitat",
+            "evidence": "2024年10月15日，青宝与雄性大熊猫宝力从中国大熊猫保护研究中心都江堰基地启程，搭乘专机前往美国华盛顿国家动物园开展为期10年的合作研究。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心都江堰基地",
+            "object_type": "Habitat",
+            "evidence": "2024年10月15日，青宝与雄性大熊猫宝力从中国大熊猫保护研究中心都江堰基地启程，搭乘专机前往美国华盛顿国家动物园开展为期10年的合作研究。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "公开亮相于",
+            "object": "美国华盛顿国家动物园",
+            "object_type": "Place",
+            "evidence": "次日抵达美国后，经过三个月适应期，于当地时间2025年1月24日在该动物园首次公开亮相。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "举办生日会于",
+            "object": "史密森学会国家动物园",
+            "object_type": "Place",
+            "evidence": "2025年9月，旅美大熊猫“青宝”的4岁生日派对在位于美国首都华盛顿的史密森学会国家动物园举行。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "行为特征为",
+            "object": "性格独立",
+            "object_type": "Behavior",
+            "evidence": "其面部特征蓬松，左臀部有两个深色斑块，性格独立且喜爱攀爬活动。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "行为特征为",
+            "object": "喜爱攀爬活动",
+            "object_type": "Behavior",
+            "evidence": "其面部特征蓬松，左臀部有两个深色斑块，性格独立且喜爱攀爬活动。"
+          },
+          {
+            "subject": "明",
+            "predicate": "谱系号",
+            "object": "9",
+            "object_type": "Other",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9，出生于中国四川省。"
+          },
+          {
+            "subject": "明",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9，出生于中国四川省。"
+          },
+          {
+            "subject": "明",
+            "predicate": "出生于",
+            "object": "中国四川省",
+            "object_type": "Place",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9，出生于中国四川省。"
+          },
+          {
+            "subject": "明",
+            "predicate": "出生时间",
+            "object": "1937年",
+            "object_type": "Other",
+            "evidence": "明（约1937年—1944年12月26日）"
+          },
+          {
+            "subject": "明",
+            "predicate": "死亡时间",
+            "object": "1944年12月26日",
+            "object_type": "Other",
+            "evidence": "明（约1937年—1944年12月26日）"
+          },
+          {
+            "subject": "明",
+            "predicate": "逝世于",
+            "object": "1944年圣诞前夕",
+            "object_type": "Other",
+            "evidence": "关于其死亡存在两种记载：伦敦动物园公告称其逝于1944年圣诞前夕，亦有报道称其于12月26日因不明病因死亡。"
+          },
+          {
+            "subject": "明",
+            "predicate": "被认养于",
+            "object": "佛洛依德·丹吉尔·史密斯",
+            "object_type": "Person",
+            "evidence": "1938年被美国银行家佛洛依德·丹吉尔·史密斯收购后，与其他大熊猫经陆路辗转至中国香港，后由海路运抵英国，成为伦敦动物园的明星动物。"
+          },
+          {
+            "subject": "明",
+            "predicate": "现居地",
+            "object": "伦敦动物园",
+            "object_type": "Habitat",
+            "evidence": "1938年被美国银行家佛洛依德·丹吉尔·史密斯收购后……成为伦敦动物园的明星动物。"
+          },
+          {
+            "subject": "明",
+            "predicate": "被接见于",
+            "object": "玛丽女王",
+            "object_type": "Person",
+            "evidence": "曾受玛丽女王等王室成员接见"
+          },
+          {
+            "subject": "明",
+            "predicate": "迁至",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Habitat",
+            "evidence": "并在空袭期间转移至惠普斯奈德动物园避难。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "谱系号",
+            "object": "1375",
+            "object_type": "Other",
+            "evidence": "大熊猫青宝，雌性大熊猫，谱系号1375"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "大熊猫青宝，雌性大熊猫"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "出生时间",
+            "object": "2021年9月12日",
+            "object_type": "Biology",
+            "evidence": "2021年9月12日出生于中国大熊猫保护研究中心卧龙神树坪基地"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "出生于",
+            "object": "中国大熊猫保护研究中心卧龙神树坪基地",
+            "object_type": "Habitat",
+            "evidence": "2021年9月12日出生于中国大熊猫保护研究中心卧龙神树坪基地"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "母亲为",
+            "object": "家美",
+            "object_type": "Species",
+            "evidence": "母亲为大熊猫家美"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "同胞为",
+            "object": "青仔",
+            "object_type": "Species",
+            "evidence": "与双胞胎哥哥青仔同胎"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "又名",
+            "object": "美心",
+            "object_type": "Alias",
+            "evidence": "又名美心"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "昵称为",
+            "object": "青宝",
+            "object_type": "Alias",
+            "evidence": "其名“青宝”于2022年3月3日第九个“世界野生动植物日”通过征名确定"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "赴",
+            "object": "美国华盛顿国家动物园",
+            "object_type": "Place",
+            "evidence": "2024年10月15日，青宝与雄性大熊猫宝力从中国大熊猫保护研究中心都江堰基地启程，搭乘专机前往美国华盛顿国家动物园开展为期10年的合作研究。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "迁至",
+            "object": "中国大熊猫保护研究中心都江堰基地",
+            "object_type": "Place",
+            "evidence": "2024年10月15日，青宝与雄性大熊猫宝力从中国大熊猫保护研究中心都江堰基地启程，搭乘专机前往美国华盛顿国家动物园开展为期10年的合作研究。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "公开亮相于",
+            "object": "美国华盛顿国家动物园",
+            "object_type": "Place",
+            "evidence": "次日抵达美国后，经过三个月适应期，于当地时间2025年1月24日在该动物园首次公开亮相。"
+          },
+          {
+            "subject": "青宝",
+            "predicate": "举办生日会于",
+            "object": "美国华盛顿国家动物园",
+            "object_type": "Place",
+            "evidence": "2025年9月，旅美大熊猫“青宝”的4岁生日派对在位于美国首都华盛顿的史密森学会国家动物园举行。"
+          },
+          {
+            "subject": "明",
+            "predicate": "谱系号",
+            "object": "9",
+            "object_type": "Other",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫，谱系号9"
+          },
+          {
+            "subject": "明",
+            "predicate": "性别为",
+            "object": "雌性",
+            "object_type": "Biology",
+            "evidence": "明（约1937年—1944年12月26日），雌性大熊猫"
+          },
+          {
+            "subject": "明",
+            "predicate": "出生于",
+            "object": "中国四川省",
+            "object_type": "Habitat",
+            "evidence": "出生于中国四川省"
+          },
+          {
+            "subject": "明",
+            "predicate": "迁至",
+            "object": "英国伦敦动物园",
+            "object_type": "Place",
+            "evidence": "1938年被美国银行家佛洛依德·丹吉尔·史密斯收购后，与其他大熊猫经陆路辗转至中国香港，后由海路运抵英国，成为伦敦动物园的明星动物。"
+          },
+          {
+            "subject": "明",
+            "predicate": "旅居于",
+            "object": "英国伦敦动物园",
+            "object_type": "Place",
+            "evidence": "1938年被美国银行家佛洛依德·丹吉尔·史密斯收购后，与其他大熊猫经陆路辗转至中国香港，后由海路运抵英国，成为伦敦动物园的明星动物。"
+          },
+          {
+            "subject": "明",
+            "predicate": "返回",
+            "object": "惠普斯奈德动物园",
+            "object_type": "Place",
+            "evidence": "并在空袭期间转移至惠普斯奈德动物园避难。"
+          },
+          {
+            "subject": "明",
+            "predicate": "又名",
+            "object": "贝贝",
+            "object_type": "Alias",
+            "evidence": "幼崽“贝贝”被伦敦动物协会收养并更名为“明”"
+          },
+          {
+            "subject": "明",
+            "predicate": "死亡时间",
+            "object": "1944年12月26日",
+            "object_type": "Biology",
+            "evidence": "关于其死亡存在两种记载：伦敦动物园公告称其逝于1944年圣诞前夕，亦有报道称其于12月26日因不明病因死亡。"
+          },
+          {
+            "subject": "明",
+            "predicate": "去世年份",
+            "object": "1944",
+            "object_type": "Biology",
+            "evidence": "关于其死亡存在两种记载：伦敦动物园公告称其逝于1944年圣诞前夕，亦有报道称其于12月26日因不明病因死亡。"
+          }
+        ]
+      },
+      "legacy": {
+        "时间": [
+          "2021年9月12日",
+          "2022年3月3日",
+          "2024年10月15日",
+          "2025年1月24日",
+          "2025年9月",
+          "约1937年",
+          "1938年",
+          "1939年",
+          "1944年12月26日",
+          "1944年圣诞前夕",
+          "2015年"
+        ],
+        "人物": [
+          "佛洛依德·丹吉尔·史密斯",
+          "玛丽女王"
+        ],
+        "地点": [
+          "中国四川省",
+          "中国香港",
+          "英国",
+          "美国首都华盛顿",
+          "伦敦",
+          "惠普斯奈德",
+          "青宝-现居地-美国华盛顿国家动物园",
+          "明-现居地-英国伦敦动物园",
+          "明-迁至-英国伦敦动物园",
+          "明-旅居于-英国伦敦动物园",
+          "明-返回-惠普斯奈德动物园",
+          "青宝-赴-美国华盛顿国家动物园",
+          "青宝-旅居于-美国华盛顿国家动物园"
+        ],
+        "熊猫曾用名": [
+          "美心",
+          "明",
+          "青宝-昵称为-美心",
+          "明-又名-贝贝"
+        ]
+      }
+    }
+  },
+  "errors_by_source": {}
+}

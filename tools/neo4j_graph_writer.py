@@ -99,17 +99,30 @@ def _resolve_result_json(result_json: str, run_output_dir: str) -> Path:
     """解析结果 JSON 文件路径。"""
     project_root = get_project_root()
     if result_json.strip():
-        path = (project_root / result_json).resolve()
+        raw = Path(result_json.strip())
+        path = raw.resolve() if raw.is_absolute() else (project_root / raw).resolve()
         if not path.exists():
             raise FileNotFoundError(f"结果 JSON 不存在: {path}")
         return path
     if run_output_dir.strip():
-        run_dir = (project_root / run_output_dir).resolve()
+        raw_dir = Path(run_output_dir.strip())
+        run_dir = (
+            raw_dir.resolve()
+            if raw_dir.is_absolute()
+            else (project_root / raw_dir).resolve()
+        )
         if not run_dir.exists() or not run_dir.is_dir():
             raise NotADirectoryError(f"运行目录不存在: {run_dir}")
-        json_files = sorted(run_dir.glob("*.json"))
+        json_files = sorted(
+            p
+            for p in run_dir.glob("*.json")
+            if "checkpoint" not in p.name
+            and not p.name.endswith(("_nodes.json", "_rels.json"))
+        )
         if len(json_files) != 1:
-            raise FileNotFoundError(f"运行目录下期望恰好 1 个 JSON，实际 {len(json_files)} 个: {run_dir}")
+            raise FileNotFoundError(
+                f"运行目录下期望恰好 1 个 JSON，实际 {len(json_files)} 个: {run_dir}"
+            )
         return json_files[0]
     raise ValueError("请提供 result_json 或 run_output_dir 其中之一。")
 
@@ -364,6 +377,13 @@ def _build_cli_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def _safe_print(text: str) -> None:
+    try:
+        print(text)
+    except UnicodeEncodeError:
+        sys.stdout.buffer.write((text + "\n").encode("utf-8", "replace"))
+
+
 def main() -> int:
     parser = _build_cli_parser()
     args = parser.parse_args()
@@ -380,24 +400,26 @@ def main() -> int:
     try:
         parsed = json.loads(result_json)
     except Exception:
-        print(result_json)
+        _safe_print(result_json)
         return 1
 
     if args.verbose:
-        print(json.dumps(parsed, ensure_ascii=False, indent=2))
+        _safe_print(json.dumps(parsed, ensure_ascii=False, indent=2))
     else:
-        print("=== neo4j_graph_writer ===")
-        print(f"status: {'OK' if parsed.get('ok') else 'ERROR'}")
-        print(f"database: {parsed.get('database', '')}")
-        print(f"triples_count: {parsed.get('triples_count', 0)}")
-        print(f"nodes_merged: {parsed.get('nodes_merged', 0)}")
-        print(f"relations_merged: {parsed.get('relations_merged', 0)}")
+        _safe_print("=== neo4j_graph_writer ===")
+        _safe_print(f"status: {'OK' if parsed.get('ok') else 'ERROR'}")
+        _safe_print(f"database: {parsed.get('database', '')}")
+        _safe_print(f"triples_count: {parsed.get('triples_count', 0)}")
+        _safe_print(f"nodes_merged: {parsed.get('nodes_merged', 0)}")
+        _safe_print(f"relations_merged: {parsed.get('relations_merged', 0)}")
         if parsed.get("clear_category"):
-            print(f"clear_category: {parsed.get('clear_category')}")
-            print(f"category_relations_deleted: {parsed.get('category_relations_deleted', 0)}")
-        print(f"result_json_path: {parsed.get('result_json_path', '')}")
+            _safe_print(f"clear_category: {parsed.get('clear_category')}")
+            _safe_print(
+                f"category_relations_deleted: {parsed.get('category_relations_deleted', 0)}"
+            )
+        _safe_print(f"result_json_path: {parsed.get('result_json_path', '')}")
         if parsed.get("error"):
-            print(f"error: {parsed['error']}")
+            _safe_print(f"error: {parsed['error']}")
     return 0 if parsed.get("ok") else 1
 
 
