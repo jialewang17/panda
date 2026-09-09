@@ -40,7 +40,7 @@
   - rows=1 mode=knowledge_base
 - [no_hit][熊猫知识][其他] 成都大熊猫繁育研究基地的伴生动物相关知识栏目名称是什么？
   - gold: 【熊猫知识】伴生动物
-  - doc: docs/熊猫知识/【熊猫知识】伴生动物 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_026_伴生动物.md
   - rows=15 mode=knowledge_base
 - [hallucination_risk][熊猫谣言][其他] 大熊猫在进化过程中发生了哪些显著的适应变化？
   - gold: 发展出伪拇指、头骨和下颌肌肉强化、消化系统调整。
@@ -68,7 +68,7 @@
   - rows=0 mode=llm_fallback
 - [no_hit][熊猫知识][分布] 最古老的大熊猫成员始熊猫的化石出土于哪里？
   - gold: 云南禄丰和元谋两地
-  - doc: docs/熊猫知识/【熊猫知识】大熊猫历史 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_029_大熊猫历史.md
   - rows=15 mode=knowledge_base
 - [hallucination_risk][熊猫谣言][保护] 大熊猫基地的主要收入来源是什么？
   - gold: 政府拨款和科研合作
@@ -76,7 +76,7 @@
   - rows=10 mode=knowledge_base
 - [no_hit][熊猫知识][食性] 大熊猫和小熊猫在采食竹子部位上有何不同？
   - gold: 大熊猫多吃竹子上部的枝叶，小熊猫采食较低部位的竹叶。
-  - doc: docs/熊猫知识/【熊猫知识】大熊猫的朋友 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_031_大熊猫的朋友.md
   - rows=15 mode=knowledge_base
 - [no_hit][熊猫谣言][天敌] 大熊猫是否可能主动攻击人类？
   - gold: 是，尤其在护崽、受惊或发情期可能主动攻击人类。
@@ -84,7 +84,7 @@
   - rows=15 mode=knowledge_base
 - [no_hit][熊猫知识][行为] 我国从哪一年开始实施大熊猫野化放归计划？
   - gold: 2003年
-  - doc: docs/熊猫知识/[202109251447]大熊猫奇妙课堂大熊猫野化放归.md
+  - doc: docs/熊猫知识/熊猫知识_025_大熊猫奇妙课堂大熊猫野化放归.md
   - rows=0 mode=llm_fallback
 - [hallucination_risk][熊猫资料][父母] 大熊猫正正的父母分别是谁？
   - gold: 父亲是芦芦，母亲是喜妹。
@@ -96,7 +96,7 @@
   - rows=6 mode=knowledge_base
 - [no_hit][熊猫知识][繁殖] 雌性大熊猫每年发情几次？
   - gold: 一次
-  - doc: docs/熊猫知识/【熊猫知识】繁殖 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_036_繁殖.md
   - rows=15 mode=knowledge_base
 - [no_hit][熊猫谣言][其他] 中国正规大熊猫基地的笼舍室内温度夏季控制在多少摄氏度以下？
   - gold: 26℃

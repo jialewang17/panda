@@ -30,23 +30,23 @@
 ## no_hit 优先清单
 - [熊猫知识] 与大熊猫共存于成都大熊猫繁育研究基地的鸟类是什么？
   - gold: 红腹锦鸡
-  - doc: docs/熊猫知识/【熊猫知识】大熊猫的朋友 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_031_大熊猫的朋友.md
   - rows=0 mode=llm_fallback
 - [熊猫知识] 成都大熊猫繁育研究基地的官方网址是什么？
   - gold: https://www.panda.org.cn/cn/education/database/kpzs/2023-07-03/361.html
-  - doc: docs/熊猫知识/【熊猫知识】繁殖 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_036_繁殖.md
   - rows=0 mode=llm_fallback
 - [熊猫知识] 五一棚为什么得名？
   - gold: 因为观察站的帐篷距离水源地有51步台阶。
-  - doc: docs/熊猫知识/[202108312109]大熊猫奇妙课堂五一棚.md
+  - doc: docs/熊猫知识/熊猫知识_014_大熊猫奇妙课堂五一棚.md
   - rows=1 mode=knowledge_base
 - [熊猫知识] 大熊猫“福龙”是在哪里出生的？
   - gold: 奥地利美泉宫动物园
-  - doc: docs/熊猫知识/[202109071259]大熊猫奇妙课堂海归大熊猫.md
+  - doc: docs/熊猫知识/熊猫知识_017_大熊猫奇妙课堂海归大熊猫.md
   - rows=20 mode=knowledge_base
 - [熊猫知识] 大熊猫在不同季节采食竹子部位的顺序是什么？
   - gold: 竹笋、嫩竹、竹竿
-  - doc: docs/熊猫知识/【熊猫知识】进食 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_042_进食.md
   - rows=19 mode=knowledge_base
 
 ## hallucination_risk / partial

@@ -36,39 +36,39 @@
 ## no_hit 优先清单
 - [熊猫知识] 大熊猫粪便中能提取出什么信息用于分析种群特征？
   - gold: DNA信息，可分析性别、年龄、亲缘关系和种群数量。
-  - doc: docs/熊猫知识/[202108101754]大熊猫奇妙课堂大熊猫的粪便青团.md
+  - doc: docs/熊猫知识/熊猫知识_007_大熊猫奇妙课堂大熊猫的粪便青团.md
   - rows=20 mode=knowledge_base
 - [熊猫知识] 大熊猫的婚姻制度是什么？
   - gold: 多雄多雌制
-  - doc: docs/熊猫知识/【熊猫知识】繁殖 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_036_繁殖.md
   - rows=0 mode=llm_fallback
 - [熊猫知识] 大熊猫在野外偶然与其他动物或人相遇时通常会采取什么行为？
   - gold: 采用回避的方式
-  - doc: docs/熊猫知识/【熊猫知识】行为特点 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_040_行为特点.md
   - rows=20 mode=knowledge_base
 - [熊猫知识] 截至2020年，全世界圈养大熊猫总数是多少？
   - gold: 633只
-  - doc: docs/熊猫知识/【熊猫知识】大熊猫分布和现状 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_028_大熊猫分布和现状.md
   - rows=2 mode=knowledge_base
 - [熊猫知识] 截至2007年底，全国圈养大熊猫数量是多少只？
   - gold: 239只
-  - doc: docs/熊猫知识/[202109111000]大熊猫奇妙课堂大熊猫的保护.md
+  - doc: docs/熊猫知识/熊猫知识_019_大熊猫奇妙课堂大熊猫的保护.md
   - rows=20 mode=knowledge_base
 - [熊猫知识] 为什么竹子开花目前会威胁到大熊猫的生存？
   - gold: 因为大熊猫栖息地极小且相互隔离，导致其无法迁徙寻找其他竹子。
-  - doc: docs/熊猫知识/【熊猫知识】致危因素 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_038_致危因素.md
   - rows=5 mode=knowledge_base
 - [熊猫知识] 大熊猫的尾长范围是多少？
   - gold: 100～120mm
-  - doc: docs/熊猫知识/【熊猫知识】外形特征 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_027_外形特征.md
   - rows=0 mode=llm_fallback
 - [熊猫知识] 大熊猫皮肤最厚处可达多少毫米？
   - gold: 10毫米
-  - doc: docs/熊猫知识/【熊猫知识】外形特征 - 成都大熊猫繁育研究基地.md
+  - doc: docs/熊猫知识/熊猫知识_027_外形特征.md
   - rows=20 mode=knowledge_base
 - [熊猫知识] 野生大熊猫蛔虫感染率是多少？
   - gold: 100%
-  - doc: docs/熊猫知识/[202109021950]大熊猫奇妙课堂大熊猫的病历本.md
+  - doc: docs/熊猫知识/熊猫知识_015_大熊猫奇妙课堂大熊猫的病历本.md
   - rows=0 mode=llm_fallback
 
 ## hallucination_risk / partial

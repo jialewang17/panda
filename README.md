@@ -63,14 +63,38 @@ python -m tools.panda_history_extractor --docs-dir "docs/熊猫资料" --categor
 
 `--category` 可省略：会按路径自动推断（`docs/熊猫谣言`、`docs/谣言与辟谣` → 熊猫谣言；`docs/熊猫资料` → 熊猫资料；其余默认熊猫知识）。
 
-基于细节问题清单做“基础抽取 + 二次定向抽取”：
+基于问题清单做“基础抽取 + 二次定向抽取”（`--focus-questions-json`）：
+
+| 文件 | 用途 |
+|------|------|
+| `docs/panda_detailed_questions.json` | 按文档整理的**细节题库**，首次/加细抽取时把文中细点抽成三元组 |
+| `docs/panda_gap_focus_questions.json` | 评测挖缺口后沉淀的**补缺题库**，二次定向补抽查漏 |
+
 ```bash
+# 细节加细抽取
 python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --category "熊猫知识" --focus-questions-json "docs/panda_detailed_questions.json" --max-concurrency 5
+
+# 缺口定向补抽（更慢，可与 curated seed 互补）
+python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --category "熊猫知识" --focus-questions-json "docs/panda_gap_focus_questions.json" --max-concurrency 3
+```
+
+### 1.1) 熊猫知识文档编号
+`docs/熊猫知识/` 已统一为可递增编号，便于后续新增：
+
+- 命名：`熊猫知识_{NNN}_{标题}.md`（当前约 `001`–`044`，下一个可用 **`045`**）
+- 说明：`docs/熊猫知识/README_编号说明.md`
+- 旧→新映射：`data/curated/panda_knowledge_source_map.json`（改名时同步迁移了 Neo4j 的 `r.source_file` / `n.source_files`，并保留 `source_file_prev`）
+
+新增文档请按下一个编号命名后再抽取入库；若需重跑改名迁移：
+
+```bash
+python scripts/renumber_panda_knowledge_docs.py --dry-run
+python scripts/renumber_panda_knowledge_docs.py --apply
 ```
 
 ### 2) 抽取单文件
 ```bash
-python -m tools.panda_history_extractor --md-path "docs/熊猫知识/【熊猫知识】气味标记 - 成都大熊猫繁育研究基地.md" --category "熊猫知识"
+python -m tools.panda_history_extractor --md-path "docs/熊猫知识/熊猫知识_032_气味标记.md" --category "熊猫知识"
 ```
 
 ### 3) 写入 Neo4j
@@ -96,13 +120,6 @@ python -m tools.neo4j_graph_writer --result-json "data/wiki/<profile_run>/<resul
 python -m tools.neo4j_graph_writer --result-json "data/curated/kb_gap_facts_v1.json"
 ```
 
-若希望从原文重新 LLM 抽取这些缺口事实（更慢，可与 seed 互补）：
-
-```bash
-python -m tools.panda_history_extractor --docs-dir "docs/熊猫知识" --category "熊猫知识" --focus-questions-json "docs/panda_gap_focus_questions.json" --max-concurrency 3
-# 再把新 result_file_path 交给 neo4j_graph_writer（不加 --clear）
-```
-
 本地若仍有新的 `sandbox/gap_fact_upsert*.json`，可重新沉淀：
 
 ```bash
@@ -113,7 +130,7 @@ python scripts/curate_gap_facts.py
 星图分卷 `百度百科熊猫星图4.md`～`22.md` 按日抽取并**增量**写入 Neo4j，丰富个体档案。计划与进度见：
 
 - `docs/熊猫资料/百度百科星图入库计划.md`
-- `data/curated/starmap_ingest_plan.json`
+- `data/curated/starmap_ingest_plan.json` / `starmap_ingest_progress.json`
 
 ```bash
 python scripts/ingest_starmap_daily.py --status
@@ -125,13 +142,24 @@ python scripts/ingest_starmap_daily.py
 入库完成后，对星图4～22 逐卷对照金标准档案做覆盖核验；未达标则缺口补抽并增量写库。计划见：
 
 - `docs/熊猫资料/百度百科星图核验计划.md`
-- `data/curated/starmap_verify_plan.json`
+- `data/curated/starmap_verify_plan.json` / `starmap_verify_progress.json`
+- 核验报告：`data/curated/starmap_verify_reports/`
 
 ```bash
 python scripts/verify_starmap_daily.py --self-check
 python scripts/verify_starmap_daily.py --status
 python scripts/verify_starmap_daily.py --day 1 --fix
 ```
+
+### 3.4) 星图/金标准随机抽检（熊猫资料）
+从星图4～22 与 `熊猫资料.md` / `2` / `3` 每批随机抽 5 只熊猫，调用 `neo4j_qa` 做查漏补缺（默认 10 轮）：
+
+```bash
+python scripts/starmap_kb_spotcheck.py --dry-run
+python scripts/starmap_kb_spotcheck.py --rounds 10 --batch-size 5 --seed 42
+```
+
+产物在 `reports/starmap_kb_spotcheck_*.json`（含 gaps / focus）；可用 focus 对缺口个体定向补抽后增量写库（参考近期 `sandbox/starmap_spotcheck_fix/` 流程与 `data/curated/starmap_spotcheck_focus_fix.json`）。
 
 ### 4) 问答（单问，指定栏目）
 ```bash
@@ -188,7 +216,7 @@ python scripts/inspect_neo4j_schema.py --database 941568f4 --output "sandbox/neo
 ### 7) 评估知识库问答效果（准确率/命中率）
 先准备 JSONL 评测集（每行一个问题）：
 ```json
-{"id":"q1","question":"大熊猫幼仔一般在哪里出生？","gold_answer":"一般出生在母兽搭建的产仔巢（树洞或岩洞）中。","gold_sources":["【熊猫知识】繁殖 - 成都大熊猫繁育研究基地.md"]}
+{"id":"q1","question":"大熊猫幼仔一般在哪里出生？","gold_answer":"一般出生在母兽搭建的产仔巢（树洞或岩洞）中。","gold_sources":["熊猫知识_036_繁殖.md"]}
 ```
 
 运行评测：
@@ -228,16 +256,19 @@ python scripts/kb_doc_eval.py all --categories 熊猫资料,熊猫谣言,熊猫�
 - `kb_focus_questions_*.json`：可直接喂给 `panda_history_extractor --focus-questions-json`
 
 ## 目录说明
-- `docs/熊猫知识/`：知识源文档（栏目：熊猫知识）
+- `docs/熊猫知识/`：知识源文档（栏目：熊猫知识；统一编号 `熊猫知识_NNN_标题.md`）
+- `docs/熊猫资料/`：个体档案与百度百科星图分卷（栏目：熊猫资料）
 - `docs/熊猫谣言/`：辟谣文档（栏目：熊猫谣言）
-- `docs/熊猫资料/`：个体档案等资料（栏目：熊猫资料）
 - `docs/谣言与辟谣/`：谣言与辟谣原始/衍生文档
+- `docs/panda_detailed_questions.json`：熊猫知识细节抽取题库
+- `docs/panda_gap_focus_questions.json`：挖缺口二次定向抽取题库
 - `cli/`：交互式 CLI 主入口（`python -m cli.main`）
 - `tools/`：抽取、入库、问答工具（含 `qa_web` 演示页入口）
 - `web/qa_demo/`：问答演示页静态资源
-- `scripts/`：辅助脚本（如 Neo4j schema 统计导出）
+- `scripts/`：辅助脚本（入库/核验/抽检/编号迁移、schema 统计等）
 - `data/wiki/`：抽取运行结果目录（按运行批次分组）
-- `data/curated/`：可复现的定向补录种子（如 `kb_gap_facts_v1.json`）
+- `data/curated/`：可复现产物（缺口 seed、星图进度、知识文档旧→新映射等）
+- `reports/`：评测与抽检报告
 - `config/model.yaml`：模型配置（问答默认走 `text_generation`）
 
 ## 注意事项
@@ -246,3 +277,5 @@ python scripts/kb_doc_eval.py all --categories 熊猫资料,熊猫谣言,熊猫�
 - 生产数据谨慎使用 `neo4j_graph_writer --clear`。
 - 只更新某一栏目时，优先使用 `--clear-category <栏目名>`，避免误清其他栏目。
 - 重新全量入库时，建议先 `--clear` 再写入，避免旧关系缺少 `category`。
+- 熊猫知识文档请按编号规则新增；改名后务必同步 `source_file`（可用 `renumber_panda_knowledge_docs.py`），以免溯源断链。
+- `sandbox/` 为本地任务产出目录，默认不入库 git。
