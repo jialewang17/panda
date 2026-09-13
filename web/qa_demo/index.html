@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>大熊猫知识库问答 · 演示</title>
-  <link rel="stylesheet" href="/static/app.css" />
+  <link rel="stylesheet" href="/static/app.css?v=20260913j" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,80 +12,248 @@
 <body>
   <div class="page">
     <header class="hero">
-      <p class="panda-logo" aria-label="PANDA">
-        <span class="l0">P</span><span class="l1">A</span><span class="l2">N</span><span class="l3">D</span><span class="l4">A</span>
-      </p>
-      <h1>大熊猫知识库问答</h1>
-      <p class="lead">基于 Neo4j 图谱检索的科普演示</p>
-    </header>
-
-    <main class="panel">
-      <section class="controls">
-        <label>
-          栏目
-          <select id="category">
-            <option value="全部">全部</option>
-            <option value="熊猫知识">熊猫知识</option>
-            <option value="熊猫谣言">熊猫谣言</option>
-            <option value="熊猫资料">熊猫资料</option>
-          </select>
-        </label>
-        <label>
-          语气
-          <select id="persona">
-            <option value="educator">普通科普</option>
-            <option value="kid">儿童科普</option>
-          </select>
-        </label>
-      </section>
-
-      <section class="examples" aria-label="示例问题">
-        <p class="section-label">示例问题</p>
-        <div id="example-buttons" class="chips"></div>
-      </section>
-
-      <section class="ask">
-        <label for="question" class="section-label">问题</label>
-        <textarea id="question" rows="3" placeholder="例如：大熊猫是否具有冬眠习性？"></textarea>
-        <div class="ask-actions">
-          <button id="ask-btn" type="button">提问</button>
-          <span id="status" class="status" aria-live="polite"></span>
-        </div>
-      </section>
-
-      <p id="error" class="error hidden" role="alert"></p>
-    </main>
-
-    <section id="result" class="result-stack hidden">
-      <div class="meta-row">
-        <span id="badge-mode" class="badge"></span>
-        <span id="badge-quality" class="badge muted"></span>
-        <span id="badge-cat" class="badge muted"></span>
+      <div class="hero-copy">
+        <p class="panda-logo" aria-label="PANDA">
+          <span class="l0">P</span><span class="l1">A</span><span class="l2">N</span><span class="l3">D</span><span class="l4">A</span>
+        </p>
+        <h1>大熊猫知识库问答</h1>
+        <p class="lead">知识图谱驱动的熊猫科普问答</p>
+        <p class="lead-note">问题会被识别为实体与关系，并通过 Neo4j 知识图谱检索相关知识，生成有依据的科普回答。</p>
+        <ul class="fact-tags" aria-label="熊猫科普信息">
+          <li>国家一级保护动物</li>
+          <li>中国特有物种</li>
+          <li>食肉目 · 熊科</li>
+          <li>竹食适应</li>
+        </ul>
       </div>
 
-      <article class="card card-answer">
-        <header class="card-head">
-          <h2>回答</h2>
-          <span class="card-hint">要点分模块展示</span>
-        </header>
-        <div id="answer" class="answer"></div>
-      </article>
+      <figure class="neo-sketch" aria-label="Neo4j 知识图谱问答流程">
+        <div class="neo-sketch-body">
+          <svg viewBox="0 0 280 132" role="img">
+            <defs>
+              <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                <path d="M0,0 L6,3 L0,6 Z" fill="#8daa78"/>
+              </marker>
+            </defs>
+            <!-- top: 提问 → 识别 -->
+            <line x1="118" y1="34" x2="148" y2="34" stroke="#8daa78" stroke-width="1.5" marker-end="url(#arrow)"/>
+            <!-- right down: 识别 → Neo4j -->
+            <line x1="202" y1="52" x2="202" y2="78" stroke="#8daa78" stroke-width="1.5" marker-end="url(#arrow)"/>
+            <!-- bottom: Neo4j → 答案 (leftward) -->
+            <line x1="162" y1="98" x2="132" y2="98" stroke="#8daa78" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-      <article class="card">
-        <header class="card-head">
-          <h2>命中关系</h2>
-          <span class="card-hint">图谱检索摘要</span>
-        </header>
-        <ul id="hits" class="relation-list"></ul>
-      </article>
+            <rect x="16" y="16" width="100" height="36" rx="12" fill="#edf3e9" stroke="#4f7a5a" stroke-width="1.2"/>
+            <text x="66" y="39" text-anchor="middle" font-size="12" fill="#1f2923" font-family="PingFang SC, Microsoft YaHei, sans-serif">用户提问</text>
 
-      <article class="card">
-        <header class="card-head">
-          <h2>来源文档</h2>
-          <span class="card-hint">知识库依据</span>
-        </header>
-        <ul id="sources" class="source-list"></ul>
-      </article>
+            <rect x="154" y="16" width="110" height="36" rx="12" fill="#fcfbf7" stroke="#4f7a5a" stroke-width="1.2"/>
+            <text x="209" y="39" text-anchor="middle" font-size="12" fill="#1f2923" font-family="PingFang SC, Microsoft YaHei, sans-serif">实体关系识别</text>
+
+            <rect x="154" y="80" width="110" height="36" rx="12" fill="#245c45"/>
+            <text x="209" y="103" text-anchor="middle" font-size="12" font-weight="700" fill="#fcfbf7" font-family="PingFang SC, Microsoft YaHei, sans-serif">Neo4j 图谱检索</text>
+
+            <rect x="16" y="80" width="100" height="36" rx="12" fill="#edf3e9" stroke="#4f7a5a" stroke-width="1.2"/>
+            <text x="66" y="103" text-anchor="middle" font-size="12" fill="#1f2923" font-family="PingFang SC, Microsoft YaHei, sans-serif">科普答案</text>
+          </svg>
+        </div>
+        <figcaption>问答流程：提问 → 识别 → 检索 → 回答</figcaption>
+      </figure>
+    </header>
+
+    <section class="explore-section">
+      <header class="section-heading">
+        <h2>熊猫知识探索中心</h2>
+        <p>向知识图谱提问，同时了解大熊猫的生态与分类知识。</p>
+      </header>
+
+      <div class="explore-grid">
+        <div class="ask-column">
+          <main class="panel">
+            <header class="panel-head">
+              <div>
+                <h2 class="panel-title">熊猫知识探索</h2>
+                <p class="panel-desc">选择领域，向知识图谱提问</p>
+              </div>
+            </header>
+
+            <section class="controls">
+              <label>
+                栏目
+                <select id="category">
+                  <option value="全部">全部</option>
+                  <option value="熊猫知识">熊猫知识</option>
+                  <option value="熊猫谣言">熊猫谣言</option>
+                  <option value="熊猫资料">熊猫资料</option>
+                </select>
+              </label>
+              <label>
+                语气
+                <select id="persona">
+                  <option value="educator">普通科普</option>
+                  <option value="kid">儿童科普</option>
+                </select>
+              </label>
+            </section>
+
+            <section class="examples" aria-label="示例问题">
+              <p class="section-label">示例问题</p>
+              <div id="example-buttons" class="chips"></div>
+            </section>
+
+            <section class="ask">
+              <label for="question" class="section-label">问题</label>
+              <textarea id="question" rows="2" placeholder="例如：大熊猫是否具有冬眠习性？"></textarea>
+              <div class="ask-actions">
+                <button id="ask-btn" type="button">提问</button>
+                <span id="status" class="status" aria-live="polite"></span>
+                <span class="ask-source">知识来源：Neo4j 熊猫知识图谱</span>
+              </div>
+            </section>
+
+            <p id="error" class="error hidden" role="alert"></p>
+          </main>
+
+          <section class="result-panel" aria-label="回答结果">
+            <div class="result-empty">
+              <div class="result-empty-deco" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <h3>等待你的提问</h3>
+              <p>系统将根据知识图谱中的实体与关系，生成有依据的熊猫科普回答。</p>
+              <p class="result-empty-flow">实体识别 → 图谱检索 → 科普答案</p>
+            </div>
+
+            <section id="result" class="result-stack hidden">
+              <header class="result-panel-head">
+                <h2>知识解析</h2>
+                <p>图谱检索结果</p>
+              </header>
+              <div class="meta-row">
+                <span id="badge-mode" class="badge"></span>
+                <span id="badge-quality" class="badge muted"></span>
+                <span id="badge-cat" class="badge muted"></span>
+              </div>
+
+              <article class="card card-answer">
+                <header class="card-head">
+                  <h2>回答</h2>
+                  <span class="card-hint">要点分模块展示</span>
+                </header>
+                <div id="answer" class="answer"></div>
+              </article>
+
+              <article class="card">
+                <header class="card-head">
+                  <h2>命中关系</h2>
+                  <span class="card-hint">图谱检索摘要</span>
+                </header>
+                <ul id="hits" class="relation-list"></ul>
+              </article>
+
+              <article class="card">
+                <header class="card-head">
+                  <h2>来源文档</h2>
+                  <span class="card-hint">知识库依据</span>
+                </header>
+                <ul id="sources" class="source-list"></ul>
+              </article>
+            </section>
+          </section>
+        </div>
+
+        <aside class="observe" aria-label="熊猫科普">
+          <div class="observe-panel">
+            <header class="observe-head">
+              <h2 class="observe-title">熊猫观察站</h2>
+              <p class="observe-desc">静态科普速览</p>
+            </header>
+
+            <section class="side-section">
+              <h3>熊猫小档案</h3>
+              <dl class="profile">
+                <div>
+                  <dt>学名</dt>
+                  <dd><em>Ailuropoda melanoleuca</em></dd>
+                </div>
+                <div>
+                  <dt>分类</dt>
+                  <dd>食肉目 · 熊科</dd>
+                </div>
+                <div>
+                  <dt>主要食物</dt>
+                  <dd>竹类植物</dd>
+                </div>
+                <div>
+                  <dt>保护级别</dt>
+                  <dd>国家一级保护动物</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="side-section side-section-tip">
+              <h3>今日熊猫知识</h3>
+              <p>大熊猫虽然主要以竹子为食，但从生物分类上依然属于<strong>食肉目 · 熊科</strong>。</p>
+            </section>
+
+            <section class="side-section">
+              <h3>你知道吗？</h3>
+              <p>大熊猫一天的大部分时间，都与进食和休息有关。</p>
+            </section>
+
+            <section class="side-section side-section-last">
+              <h3>熊猫知识图谱</h3>
+              <p class="graph-caption">知识库中的实体与关系结构</p>
+              <div class="mini-graph" aria-hidden="true">
+                <svg viewBox="0 0 260 200" role="img">
+                  <circle cx="130" cy="100" r="58" fill="none" stroke="#d7e3d5" stroke-width="1" stroke-dasharray="3 4" opacity="0.7"/>
+
+                  <g fill="none" stroke="#8daa78" stroke-width="1.6">
+                    <line x1="130" y1="100" x2="52" y2="36"/>
+                    <line x1="130" y1="100" x2="208" y2="36"/>
+                    <line x1="130" y1="100" x2="52" y2="164"/>
+                    <line x1="130" y1="100" x2="208" y2="164"/>
+                  </g>
+
+                  <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+                    <rect x="72" y="58" width="40" height="16" rx="8" fill="#fcfbf7" stroke="#c5d6c4" stroke-width="1"/>
+                    <text x="92" y="69.5" text-anchor="middle" font-size="9" fill="#4f7a5a">栖息地</text>
+
+                    <rect x="148" y="58" width="34" height="16" rx="8" fill="#fcfbf7" stroke="#c5d6c4" stroke-width="1"/>
+                    <text x="165" y="69.5" text-anchor="middle" font-size="9" fill="#4f7a5a">食物</text>
+
+                    <rect x="74" y="126" width="34" height="16" rx="8" fill="#fcfbf7" stroke="#c5d6c4" stroke-width="1"/>
+                    <text x="91" y="137.5" text-anchor="middle" font-size="9" fill="#4f7a5a">谱系</text>
+
+                    <rect x="148" y="126" width="34" height="16" rx="8" fill="#fcfbf7" stroke="#c5d6c4" stroke-width="1"/>
+                    <text x="165" y="137.5" text-anchor="middle" font-size="9" fill="#4f7a5a">分类</text>
+                  </g>
+
+                  <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+                    <rect x="12" y="16" width="80" height="32" rx="16" fill="#edf3e9" stroke="#4f7a5a" stroke-width="1.3"/>
+                    <text x="52" y="36" text-anchor="middle" font-size="11.5" fill="#1f2923">四川山区</text>
+
+                    <rect x="168" y="16" width="80" height="32" rx="16" fill="#edf3e9" stroke="#4f7a5a" stroke-width="1.3"/>
+                    <text x="208" y="36" text-anchor="middle" font-size="11.5" fill="#1f2923">竹类植物</text>
+
+                    <rect x="12" y="152" width="80" height="32" rx="16" fill="#fcfbf7" stroke="#cfc9bc" stroke-width="1.3"/>
+                    <text x="52" y="172" text-anchor="middle" font-size="11.5" fill="#1f2923">熊猫个体</text>
+
+                    <rect x="168" y="152" width="80" height="32" rx="16" fill="#fcfbf7" stroke="#cfc9bc" stroke-width="1.3"/>
+                    <text x="208" y="172" text-anchor="middle" font-size="11.5" fill="#1f2923">熊科</text>
+                  </g>
+
+                  <circle cx="130" cy="100" r="30" fill="#245c45"/>
+                  <circle cx="130" cy="100" r="30" fill="none" stroke="#1d4e3b" stroke-width="1.5"/>
+                  <text x="130" y="105" text-anchor="middle" fill="#fcfbf7" font-size="13" font-weight="700" font-family="PingFang SC, Microsoft YaHei, sans-serif">大熊猫</text>
+                </svg>
+              </div>
+              <ul class="graph-legend">
+                <li><span class="lg-dot lg-entity"></span>实体节点</li>
+                <li><span class="lg-pill"></span>关系标签</li>
+              </ul>
+            </section>
+          </div>
+        </aside>
+      </div>
     </section>
 
     <footer class="foot">
@@ -94,6 +262,6 @@
       <code>python -m tools.neo4j_qa --interactive</code>
     </footer>
   </div>
-  <script src="/static/app.js"></script>
+  <script src="/static/app.js?v=20260913j"></script>
 </body>
 </html>

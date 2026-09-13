@@ -431,6 +431,9 @@
 
   el.askBtn.addEventListener("click", ask);
   el.category.addEventListener("change", renderExamples);
+  el.question.addEventListener("input", () => {
+    if ((el.question.value || "").trim()) clearError();
+  });
   el.question.addEventListener("keydown", (ev) => {
     if (ev.key === "Enter" && (ev.ctrlKey || ev.metaKey)) {
       ev.preventDefault();
