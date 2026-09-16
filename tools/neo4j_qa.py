@@ -266,6 +266,10 @@ def _extract_keywords(question: str) -> List[str]:
         "巴斯",
         "奇福",
         "和盛",
+        "雪雪",
+        "淘淘",
+        "华妍",
+        "张想",
         "七喜",
         "艾玖",
         "伦伦",
@@ -446,16 +450,37 @@ def _build_intent_terms(question: str) -> List[str]:
         )
     if any(token in q for token in ["寿命", "最长寿", "年龄", "几岁", "活多久", "存活", "能活几年", "多老"]):
         terms.extend(["寿命", "最长寿", "年龄", "岁", "野外", "圈养", "存活", "野外寿命", "圈养寿命"])
-    if any(token in q for token in ["去世", "死亡", "逝世", "离世", "去世年份", "哪年去世"]):
+    if any(token in q for token in ["去世", "死亡", "逝世", "离世", "去世年份", "哪年去世"]) and not any(
+        t in q for t in ["母幼", "人工辅助育幼", "分离母幼", "放归"]
+    ):
         terms.extend(["去世", "死亡", "逝世", "离世", "逝世于", "去世年份", "死亡时间"])
     if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢"]):
         terms.extend(["节约能量", "能量", "减少社会活动", "减小活动范围", "消耗", "代谢"])
     # 分类/辟谣类问题：问“是不是猫科”时需召回“熊科/分类属于”等正确结论。
-    if any(token in q for token in ["猫科", "熊科", "浣熊", "分类", "属于", "什么科", "活化石", "伪拇指"]):
+    # 注意：不要用裸「属于」触发（如「属于残忍虐待」会污染检索）。
+    if any(token in q for token in ["猫科", "熊科", "浣熊", "分类", "什么科", "活化石", "伪拇指"]) or (
+        "属于" in q and any(t in q for t in ["科", "亚科", "分类", "浣熊", "熊科", "猫科"])
+    ):
         terms.extend(["分类", "分类属于", "属于", "熊科", "猫科", "浣熊科", "亚科", "分子生物学", "伪拇指", "活化石"])
+    if any(token in q for token in ["濒危", "灭绝", "易危", "IUCN", "红色名录", "保护等级"]):
+        terms.extend(
+            [
+                "IUCN",
+                "IUCN保护等级为",
+                "易危",
+                "濒危",
+                "降级",
+                "2016",
+                "1800",
+                "野生种群数量约为",
+                "野外数量",
+            ]
+        )
     if any(token in q for token in ["数量", "多少只", "调查", "1864", "野外数量", "多少", "几只", "现存"]):
         if any(t in q for t in ["数量", "多少只", "野外", "调查", "几只", "现存", "多少", "圈养"]):
-            terms.extend(["数量", "野外数量", "1864", "调查", "野生大熊猫", "多少只"])
+            terms.extend(["数量", "野外数量", "1864", "1800", "调查", "野生大熊猫", "多少只", "易危", "IUCN"])
+    if any(token in q for token in ["只生活", "只分布", "仅分布", "生活在四川", "只在四川", "分布在哪", "分布省份"]):
+        terms.extend(["野生分布于", "分布于", "四川", "陕西", "甘肃", "秦岭", "分布"])
     if any(token in q for token in ["繁殖季节", "几月繁殖", "发情季节", "发情几次", "发情一次", "每年发情"]):
         terms.extend(["繁殖季节", "繁殖", "四五月份", "发情", "发情次数", "每年一次"])
     if any(token in q for token in ["断奶", "完全断奶", "几岁断奶"]):
@@ -472,8 +497,77 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["白线虫", "实际为", "竹子残渣", "宝力白线虫传闻"])
     if any(token in q for token in ["主动攻击", "攻击人类", "危险动物", "护崽"]):
         terms.extend(["主动攻击", "攻击触发条件", "护崽", "受惊", "发情期", "人类"])
-    if any(token in q for token in ["野化放归", "放归计划", "哪一年开始", "2003"]):
-        terms.extend(["起始年份", "开始实施野化放归于", "2003年", "野化放归"])
+    if any(
+        token in q
+        for token in ["野化放归", "放归计划", "哪一年开始", "2003", "放归", "放归失败", "无法生存"]
+    ):
+        terms.extend(
+            [
+                "起始年份",
+                "开始实施野化放归于",
+                "2003年",
+                "野化放归",
+                "母兽带崽",
+                "成功放归数量",
+                "成功放归数量为",
+                "11只",
+                "淘淘",
+            ]
+        )
+        # 问及失败/死亡/具体早期个案时，优先召回和盛、雪雪死因证据，避免只命中成功案例。
+        if any(
+            token in q
+            for token in ["失败", "死亡", "去世", "和盛", "雪雪", "祥祥", "个案", "败血症", "细菌感染"]
+        ):
+            terms.extend(
+                [
+                    "和盛",
+                    "雪雪",
+                    "祥祥",
+                    "野化放归期间死亡于",
+                    "野化放归于",
+                    "放归后存活时间约为",
+                    "死因诊断为",
+                    "疑似死因为",
+                    "败血症",
+                    "细菌感染",
+                    "个体死亡不等于",
+                    "项目失败",
+                    "母兽带崽",
+                    "2014年10月",
+                    "2016年9月",
+                    "40天",
+                ]
+            )
+    if any(token in q for token in ["母幼", "分离母幼", "强行分离", "人工辅助育幼", "轮换", "育幼"]):
+        terms.extend(
+            [
+                "人工辅助育幼",
+                "提高双胞胎存活率",
+                "目的为",
+                "双胞胎",
+                "轮换",
+                "幼崽存活率超过",
+                "90%",
+            ]
+        )
+    if any(token in q for token in ["动保", "网暴", "饲养员", "团伙", "敛财", "警情"]) or (
+        "专家" in q and any(t in q for t in ["网暴", "动保", "抹黑", "诋毁"])
+    ):
+        terms.extend(
+            [
+                "编造",
+                "造谣",
+                "捏造谣言为",
+                "谣言内容为",
+                "短视频",
+                "直播",
+                "非法获利方式包括",
+                "白某某",
+                "都江堰",
+                "传播方式为",
+            ]
+        )
     if any(token in q for token in ["始熊猫", "化石", "禄丰", "元谋"]):
         terms.extend(["始熊猫", "始熊猫化石", "出土于", "化石产地", "禄丰", "元谋"])
     if any(token in q for token in ["采食", "部位", "枝叶", "小熊猫"]):
@@ -512,7 +606,19 @@ def _build_intent_terms(question: str) -> List[str]:
     # 谣言：做实验/抽血等（正文常用“采血/科研”，需同义扩展）
     if any(token in q for token in ["抽血", "采血", "采血频率"]):
         terms.extend(["采血", "抽血", "采血频率", "采血量上限", "每年1-2次", "健康检查", "总血量"])
-    elif any(token in q for token in ["实验", "做实验", "科研", "虐待", "电击", "近亲"]):
+    elif any(token in q for token in ["电击", "电刺激", "取精", "采精"]):
+        # 电击取精类问题优先召回麻醉/采精事实，避免被泛化「虐待」三元组淹没。
+        terms.extend(
+            [
+                "电刺激采精",
+                "电击取精",
+                "麻醉方式",
+                "全身麻醉",
+                "专业兽医",
+                "微电流",
+            ]
+        )
+    elif any(token in q for token in ["实验", "做实验", "科研", "虐待", "近亲"]):
         terms.extend(
             [
                 "采血",
@@ -541,8 +647,21 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["官方中文名称", "中文名为", "大熊猫"])
     if any(token in q for token in ["短视频", "直播", "传播方式", "捏造散布"]):
         terms.extend(["传播方式为", "短视频", "直播", "捏造谣言为"])
-    if any(token in q for token in ["睡眠", "睡多久", "睡眠时间", "睡几小时", "爱睡觉"]):
-        terms.extend(["睡眠时长", "约10-12小时", "睡眠", "两次进食间睡眠时长为"])
+    if any(
+        token in q
+        for token in ["睡眠", "睡多久", "睡眠时间", "睡几小时", "爱睡觉", "睡20", "要睡", "很懒", "非常懒"]
+    ):
+        terms.extend(
+            [
+                "睡眠时长",
+                "每日睡眠时长为",
+                "日均睡眠时长为",
+                "约10-12小时",
+                "10-12小时",
+                "睡眠",
+                "两次进食间睡眠时长为",
+            ]
+        )
     if any(token in q for token in ["双胞胎", "人工辅助育幼", "存活率"]):
         terms.extend(["人工辅助育幼", "提高双胞胎存活率", "目的为"])
     if any(token in q for token in ["营养均衡", "竹子品种", "轮换供应"]):
@@ -551,8 +670,17 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["大熊猫粪便造纸", "工业使用情况", "很少使用"])
     if any(token in q for token in ["竹鼠", "腐肉", "补充蛋白质", "小型动物"]):
         terms.extend(["补充食物", "小型动物或腐肉", "竹鼠", "鸟类"])
-    if any(token in q for token in ["电刺激", "采精", "全身麻醉"]):
-        terms.extend(["电刺激采精", "麻醉方式", "全身麻醉"])
+    if any(token in q for token in ["电刺激", "电击", "采精", "取精", "全身麻醉"]):
+        terms.extend(
+            [
+                "电刺激采精",
+                "电击取精",
+                "麻醉方式",
+                "全身麻醉",
+                "专业兽医",
+                "微电流",
+            ]
+        )
     if any(token in q for token in ["近亲", "亲缘系数", "遗传管理"]):
         terms.extend(["近亲防范措施", "遗传管理计划与亲缘系数计算", "亲缘系数"])
     if any(token in q for token in ["圈养的主要原因", "圈养目的", "为什么圈养"]):
@@ -575,8 +703,12 @@ def _build_intent_terms(question: str) -> List[str]:
         terms.extend(["婚姻制度为", "多雄多雌制", "发情季节"])
     if any(token in q for token in ["回避", "偶然相遇", "野外相遇"]):
         terms.extend(["野外相遇行为为", "回避", "很少主动地攻击"])
-    if any(token in q for token in ["圈养", "633", "239", "多少只"]) and any(
-        token in q for token in ["圈养", "2020", "2007", "全世界", "全国", "总数", "数量"]
+    if (
+        any(token in q for token in ["633", "239"])
+        or (
+            "圈养" in q
+            and any(token in q for token in ["2020", "2007", "全世界", "全国", "总数", "数量", "多少只", "多少"])
+        )
     ):
         terms.extend(["2020年数量为", "2007年底数量为", "2007年底圈养数量为", "633只", "239只", "圈养"])
     if "2007" in q:
@@ -649,7 +781,7 @@ def _build_intent_terms(question: str) -> List[str]:
         if term and term not in seen:
             seen.add(term)
             deduped.append(term)
-    return deduped[:20]
+    return deduped[:30]
 
 
 def _detect_intent(question: str) -> str:
@@ -674,7 +806,7 @@ def _detect_intent(question: str) -> str:
         return "profile"
     if any(token in q for token in ["栖息", "居住", "分布", "哪里", "环境"]):
         return "habitat"
-    if any(token in q for token in ["历史", "发现", "定名", "野化放归", "起始年份"]):
+    if any(token in q for token in ["历史", "发现", "定名"]):
         return "history"
     if any(token in q for token in ["断奶", "发情几次", "发情一次", "每年发情", "多久繁殖", "繁殖间隔", "外源激素"]):
         return "development"
@@ -694,6 +826,31 @@ def _detect_intent(question: str) -> str:
         "几岁" in q and "断奶" not in q
     ):
         return "lifespan"
+    # 谣言场景里的「幼崽死亡/放归失败」优先按辟谣意图，避免被 history/死亡意图抢走。
+    if any(
+        token in q
+        for token in [
+            "母幼",
+            "分离母幼",
+            "人工辅助育幼",
+            "电击",
+            "电刺激",
+            "取精",
+            "采精",
+            "濒危",
+            "灭绝",
+            "易危",
+            "放归",
+            "野化放归",
+            "睡20",
+            "要睡",
+            "非常懒",
+            "只生活",
+            "动保",
+            "网暴",
+        ]
+    ):
+        return "rumor"
     if any(token in q for token in ["去世", "死亡", "逝世", "离世", "去世年份", "死因", "去世原因"]):
         return "death"
     if any(token in q for token in ["节约能量", "能量", "减少活动", "活动范围", "消耗", "代谢", "慢吞吞", "行走方式"]):
@@ -713,6 +870,8 @@ def _detect_intent(question: str) -> str:
             "采血",
             "虐待",
             "电击",
+            "电刺激",
+            "取精",
             "近亲",
             "谣言",
             "辟谣",
@@ -725,6 +884,12 @@ def _detect_intent(question: str) -> str:
             "消瘦",
             "捏造",
             "不实信息",
+            "濒危",
+            "灭绝",
+            "放归",
+            "动保",
+            "网暴",
+            "母幼",
         ]
     ):
         if "天敌" in q:
@@ -986,17 +1151,32 @@ def _build_intent_predicates(intent: str) -> List[str]:
             "用途为",
             "繁殖间隔",
             "成功放归数量",
+            "成功放归数量为",
+            "母兽带崽",
+            "野化放归期间死亡于",
+            "野化放归于",
+            "放归后存活时间约为",
+            "死因诊断为",
+            "疑似死因为",
+            "个体死亡不等于",
             "传播方式为",
             "睡眠时长",
+            "每日睡眠时长为",
+            "日均睡眠时长为",
             "目的为",
+            "人工辅助育幼",
             "营养保障措施",
             "工业使用情况",
             "补充食物",
             "麻醉方式",
+            "电刺激采精",
             "近亲防范措施",
             "主要目的",
             "所有权归属",
             "累计播放量",
+            "IUCN保护等级为",
+            "野生分布于",
+            "非法获利方式包括",
         ],
     }
     return mapping.get(intent, [])
@@ -1030,23 +1210,42 @@ def _build_topic_filters(question: str, intent: str) -> List[str]:
         topics.append("个体档案")
     if intent == "rumor":
         topics.append("其他")
-        if any(token in q for token in ["采血", "抽血", "激素", "寿命", "疾病", "健康"]):
+        if any(token in q for token in ["采血", "抽血", "激素", "寿命", "疾病", "健康", "电击", "电刺激"]):
             topics.append("生理构造")
-        if any(token in q for token in ["繁殖", "发情", "断奶", "激素"]):
+        if any(token in q for token in ["繁殖", "发情", "断奶", "激素", "母幼", "育幼", "双胞胎"]):
             topics.append("个体档案")
+        if any(token in q for token in ["睡眠", "懒", "放归", "分布", "四川", "濒危", "灭绝"]):
+            topics.extend(["行为习性", "生存环境"])
 
     if any(
         token in q
         for token in ["生长", "发育", "月龄", "体重", "多重", "几斤", "体长", "肩高", "幼仔", "成年", "性成熟"]
     ):
         topics.extend(["生理构造", "行为习性", "个体档案"])
-    if any(token in q for token in ["睡眠", "冬眠"]):
+    if any(token in q for token in ["睡眠", "冬眠", "要睡", "很懒", "非常懒"]):
         topics.extend(["行为习性", "生理构造"])
     if any(token in q for token in ["交流", "气味标记", "叫声", "沟通"]):
         topics.append("行为习性")
     if any(token in q for token in ["天敌", "伴生", "捕食", "采食部位", "小熊猫"]):
         topics.append("生态关系")
-    if any(token in q for token in ["野化放归", "始熊猫", "化石", "断奶", "笼舍", "表演", "白线虫"]):
+    if any(
+        token in q
+        for token in [
+            "野化放归",
+            "放归",
+            "始熊猫",
+            "化石",
+            "断奶",
+            "笼舍",
+            "表演",
+            "白线虫",
+            "母幼",
+            "动保",
+            "网暴",
+            "濒危",
+            "灭绝",
+        ]
+    ):
         topics.append("其他")
 
     deduped: List[str] = []
@@ -1200,7 +1399,11 @@ def _fetch_knowledge(
     keywords = _prepare_query_keywords(keywords)
     # 有明确个体名时，不要把「父亲为/母亲为」等意图谓词塞进 UNWIND 检索词，
     # 否则会淹没目标个体的谱系号/出生于等关系；谓词偏好仍由 intent_predicates 加分。
-    query_terms = _merge_query_terms(keywords, intent_terms, intent_predicates)
+    # 辟谣意图同理：泛化 rumor predicates 会淹没「电刺激采精/易危」等关键证据。
+    if intent in {"profile", "rumor"}:
+        query_terms = _merge_query_terms(keywords, intent_terms)
+    else:
+        query_terms = _merge_query_terms(keywords, intent_terms, intent_predicates)
     if not query_terms:
         query_terms = keywords or ["大熊猫"]
     require_intent = len(intent_terms) > 0

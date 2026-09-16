@@ -1556,6 +1556,62 @@
             "object": "不实；官方澄清并规范隔离检疫与专业照料",
             "object_type": "Other",
             "evidence": "2024年5月，中国大熊猫保护研究中心官方发布辟谣信息，针对“熊猫中心藏匿、虐待归国熊猫'美香'一家”等不实言论进行澄清。"
+          },
+          {
+            "subject": "和盛",
+            "predicate": "野化放归期间死亡于",
+            "object": "2016年9月",
+            "object_type": "Other",
+            "evidence": "大熊猫“和盛”于2016年9月在野化放归期间死亡，经专家诊断，是因遭受不明动物攻击造成全身性细菌感染导致败血症致死，并非“训练失败”或“管理不当”。"
+          },
+          {
+            "subject": "和盛",
+            "predicate": "死因诊断为",
+            "object": "不明动物攻击致全身性细菌感染引发败血症",
+            "object_type": "Disease",
+            "evidence": "大熊猫“和盛”于2016年9月在野化放归期间死亡，经专家诊断，是因遭受不明动物攻击造成全身性细菌感染导致败血症致死，并非“训练失败”或“管理不当”。"
+          },
+          {
+            "subject": "雪雪",
+            "predicate": "野化放归于",
+            "object": "2014年10月",
+            "object_type": "Other",
+            "evidence": "大熊猫“雪雪”于2014年10月放归，40天后死亡，疑似死于细菌感染引发的疾病。"
+          },
+          {
+            "subject": "雪雪",
+            "predicate": "放归后存活时间约为",
+            "object": "40天",
+            "object_type": "Other",
+            "evidence": "大熊猫“雪雪”于2014年10月放归，40天后死亡，疑似死于细菌感染引发的疾病。"
+          },
+          {
+            "subject": "雪雪",
+            "predicate": "疑似死因为",
+            "object": "细菌感染引发的疾病",
+            "object_type": "Disease",
+            "evidence": "大熊猫“雪雪”于2014年10月放归，40天后死亡，疑似死于细菌感染引发的疾病。"
+          },
+          {
+            "subject": "野化放归",
+            "predicate": "培训方法为",
+            "object": "母兽带崽",
+            "object_type": "Other",
+            "evidence": "目前采用的“母兽带崽”野化培训方法（即让圈养母熊猫在模拟野外环境中教会幼崽生存技能）已显著提高放归成功率。"
+          },
+          {
+            "subject": "野化放归",
+            "predicate": "个体死亡不等于",
+            "object": "项目失败",
+            "object_type": "Other",
+            "evidence": "早期放归个案（如“和盛”“雪雪”“祥祥”）的死亡为改进培训方案提供了宝贵经验，是野化放归科学探索过程中的正常代价。"
+          },
+          {
+            "subject": "野化放归早期个案",
+            "predicate": "包括",
+            "object": "和盛、雪雪、祥祥",
+            "object_type": "Other",
+            "evidence": "早期放归个案（如“和盛”“雪雪”“祥祥”）的死亡为改进培训方案提供了宝贵经验，是野化放归科学探索过程中的正常代价。"
           }
         ]
       }
@@ -1612,9 +1668,9 @@
     }
   ],
   "summary": {
-    "triple_count": 179,
+    "triple_count": 187,
     "source_count": 32
   },
-  "timestamp": "2026-07-31T17:19:38",
+  "timestamp": "2026-09-15T15:40:00",
   "schema_note": "compatible with tools/neo4j_graph_writer._load_triples"
 }
